@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FitBoost — 다음 중량까지 계산하는 운동 기록</title>
+<meta name="description" content="근력과 유산소를 기록하고, 쌓인 기록으로 다음에 들 중량을 계산하는 운동 일지. 루틴·커스텀 운동·기록 무제한. 한국어, 영어, 일본어, 중국어 지원.">
+<meta name="theme-color" content="#08080A">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FitBoost — 다음 중량까지 계산하는 운동 기록">
+<meta property="og:description" content="루틴도 커스텀 운동도 기록도 무제한. 12회 이하 완료 세트로 추정 1RM을 계산하고 다음 세트 중량을 제안합니다.">
+<meta property="og:image" content="assets/screens/home.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="./">
+      <img class="brand__mark" src="assets/mark.svg" alt="" width="26" height="26">
+      <span class="brand__word">Fit<span class="brand__boost">Boost</span></span>
+    </a>
+    <div class="nav__links">
+      <a href="#features">기능</a>
+      <a href="#pricing">요금</a>
+      <a href="support.html">지원</a>
+      <a href="privacy.html">개인정보</a>
+    </div>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap hero__inner">
+    <span class="hero__eyebrow">운동 535종 · 5개 언어</span>
+    <h1>
+      <span class="w" style="--i:0">기록을</span><br>
+      <span class="w" style="--i:1">다음</span>
+      <span class="w" style="--i:2">행동으로.</span>
+    </h1>
+    <p class="hero__lede">
+      근력과 유산소를 기록하면, 쌓인 기록이 다음에 들 중량을 계산합니다.
+    </p>
+
+    <div class="badges">
+      <a class="badge badge--soon" href="#" aria-label="App Store에서 다운로드 (준비 중)">
+        <img src="assets/badges/appstore-ko.svg" alt="App Store에서 다운로드" height="54">
+      </a>
+      <a class="badge badge--soon" href="#" aria-label="Google Play에서 받기 (준비 중)">
+        <img src="assets/badges/googleplay-ko.png" alt="Google Play에서 받기" height="54">
+      </a>
+    </div>
+    <p class="badges__note">iOS · Android 출시 준비 중입니다.</p>
+  </div>
+  <span class="hero__cue" aria-hidden="true"></span>
+</header>
+
+<div class="wrap">
+  <div class="stats reveal">
+    <div class="stat">
+      <span class="stat__num" data-count="535">535</span>
+      <span class="stat__label">수록 운동</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num" data-count="5">5</span>
+      <span class="stat__label">지원 언어</span>
+    </div>
+    <div class="stat">
+      <span class="stat__num" data-count="0" data-text="무제한">무제한</span>
+      <span class="stat__label">루틴 · 기록</span>
+    </div>
+  </div>
+</div>
+
+<section id="features">
+  <div class="wrap showcase">
+    <div class="showcase__sticky">
+      <div class="phone">
+        <div class="phone__screen">
+          <img src="assets/screens/home.png" alt="FitBoost 홈 화면" class="is-active">
+          <img src="assets/screens/guide.png" alt="운동 수행 가이드 화면">
+          <img src="assets/screens/stats.png" alt="근육 피로도 통계 화면">
+          <img src="assets/screens/record.png" alt="달력형 운동 기록 화면">
+        </div>
+      </div>
+    </div>
+
+    <div class="showcase__steps">
+      <article class="step is-current" data-step="0">
+        <span class="step__num">01</span>
+        <h3>두 번의 탭으로 남깁니다</h3>
+        <p>
+          세트, 무게, 횟수를 빠르게 기록합니다. 직전 기록 불러오기와
+          모든 세트 한 번에 완료로 반복 입력을 줄였습니다.
+          진행 중이던 운동은 앱을 닫아도 그대로 이어집니다.
+        </p>
+      </article>
+
+      <article class="step" data-step="1">
+        <span class="step__num">02</span>
+        <h3>535종 전부에 수행 가이드</h3>
+        <p>
+          모든 운동에 시작 자세, 수행 순서, 호흡, 주의사항이 있습니다.
+          부위와 장비로 걸러 찾고, 핵심 큐는 강조로 바로 눈에 들어옵니다.
+        </p>
+      </article>
+
+      <article class="step" data-step="2">
+        <span class="step__num">03</span>
+        <h3>몸으로 읽는 통계</h3>
+        <p>
+          어느 부위를 얼마나 썼는지 인체 그림 위에 피로도로 표시합니다.
+          주간 볼륨, 근육 밸런스, 근력 추세를 함께 봅니다.
+        </p>
+      </article>
+
+      <article class="step" data-step="3">
+        <span class="step__num">04</span>
+        <h3>달력에 쌓이는 기록</h3>
+        <p>
+          월·주·일 보기로 기록을 훑고, 사진과 신체 기록까지 한자리에서
+          관리합니다. 지난 운동을 그대로 불러와 다시 시작할 수 있습니다.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="statement">
+  <div class="wrap">
+    <p class="section__eyebrow reveal">Science</p>
+    <h2>추측 대신 <em>계산</em>.</h2>
+    <p class="section__lede reveal">
+      12회 이하의 완료 세트에서 Epley · Brzycki · Lombardi 추정식의 중앙값으로
+      1RM을 계산합니다. RIR을 남기면 남은 반복 수까지 반영해 정확도가 올라갑니다.
+    </p>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <p class="section__eyebrow reveal">Features</p>
+    <h2 class="reveal">기록이 쌓이면 할 수 있는 일.</h2>
+    <p class="gallery__hint reveal">옆으로 밀어 보세요 →</p>
+  </div>
+
+  <div class="gallery">
+    <div class="card reveal" style="--i:0">
+      <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16.6 9.4 11.2 13 14.8 20 7.4M14.6 7.4H20v5.4"/></svg></div>
+      <h3>다음 중량 제안</h3>
+      <p>최근 기록과 RIR, 운동별 최소 증량 단위를 반영해 다음 세트와 다음 운동의 무게를 제시합니다.</p>
+    </div>
+    <div class="card reveal" style="--i:1">
+      <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4.2 20h15.6M7.6 20v-6.6M12 20V8.8M16.4 20V4.6"/></svg></div>
+      <h3>정체 감지</h3>
+      <p>추정 1RM 향상이 멈추면 알려 줍니다. 근력 추세와 함께 무엇을 바꿔야 할지 보여 줍니다.</p>
+    </div>
+    <div class="card reveal" style="--i:2">
+      <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M8.4 12h7.2M2.6 10.4v3.2M21.4 10.4v3.2"/><rect x="4.6" y="8.4" width="3.8" height="7.2" rx="1.6"/><rect x="15.6" y="8.4" width="3.8" height="7.2" rx="1.6"/></svg></div>
+      <h3>원판 계산</h3>
+      <p>목표 중량에 맞춰 바벨 양쪽에 무엇을 끼워야 하는지 계산합니다.</p>
+    </div>
+    <div class="card reveal" style="--i:3">
+      <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="13.4" r="7"/><path d="M12 9.6v3.8l2.8 1.8M9.4 3.2h5.2M12 3.2v3.2"/></svg></div>
+      <h3>휴식 타이머</h3>
+      <p>세트를 완료하면 자동으로 시작합니다. 앱을 닫아도 종료 시점에 알려 줍니다.</p>
+    </div>
+    <div class="card reveal" style="--i:4">
+      <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3.6" y="5.4" width="16.8" height="15" rx="3.4"/><path d="M3.6 9.8h16.8M8.2 3.4V7M15.8 3.4V7M8.4 15l2.6 2.4 4.8-4.8"/></svg></div>
+      <h3>운동 계획</h3>
+      <p>반복 일정을 등록하고 시작 전에 알림을 받습니다. 루틴을 날짜에 붙여 계획합니다.</p>
+    </div>
+    <div class="card reveal" style="--i:5">
+      <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2.8c3.6 3.8 5.8 6 5.8 10.2 0 3.6-2.6 7.2-5.8 7.2s-5.8-3.6-5.8-7.2c0-2.6 1.2-4.2 2.8-6 .4 2 1.2 3 2.2 3.6-.2-3.2 0-5.6.8-7.8Z"/></svg></div>
+      <h3>유산소도 함께</h3>
+      <p>러닝, 사이클, 로잉을 시간·거리·칼로리로 기록하고 근력과 한 세션에 담습니다.</p>
+    </div>
+  </div>
+</section>
+
+<section id="pricing">
+  <div class="wrap">
+    <p class="section__eyebrow reveal">Pricing</p>
+    <h2 class="reveal">무료가 체험판이 아닙니다.</h2>
+    <p class="section__lede reveal">
+      루틴도 커스텀 운동도 기록도 개수 제한이 없습니다.
+      PRO는 개수를 풀어 주는 대신 계산을 더 깊게 합니다.
+    </p>
+
+    <div class="tiers">
+      <div class="tier tier--free reveal" style="--i:0">
+        <span class="tier__name">무료</span>
+        <h3>끝까지 씁니다</h3>
+        <p>무료에서 벽에 부딪히는 일은 없습니다.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>루틴 무제한</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>커스텀 운동 무제한</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>운동 기록 무제한</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>운동 535종과 수행 가이드</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>3·5·8·10회 예상 중량</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>근육 피로도와 주간 통계</li>
+        </ul>
+      </div>
+
+      <div class="tier tier--pro reveal" style="--i:1">
+        <span class="tier__name">PRO</span>
+        <h3>계산을 더 깊게</h3>
+        <p>다음에 얼마를 들지 계산해 줍니다.</p>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>1–15회 개인 반복-중량 곡선</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>다음 세트·다음 운동 권장 중량</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>정체 감지와 고급 통계</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>원판 계산</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>주간 코칭 리포트</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="m5 12.6 4.8 4.6L19 6.8"/></svg>광고 제거</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="text-align:center">
+    <p class="section__eyebrow reveal">Languages</p>
+    <h2 class="reveal">쓰는 말로 씁니다.</h2>
+    <p class="section__lede reveal" style="margin-inline:auto">
+      화면 문구부터 운동 부위와 장비 이름, 날짜와 단위 표기까지 언어를 따라갑니다.
+    </p>
+    <div class="langs">
+      <span class="lang reveal" style="--i:0">한국어</span>
+      <span class="lang reveal" style="--i:1">English</span>
+      <span class="lang reveal" style="--i:2">日本語</span>
+      <span class="lang reveal" style="--i:3">简体中文</span>
+      <span class="lang reveal" style="--i:4">繁體中文</span>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap" style="text-align:center">
+    <h2 class="reveal">지금 시작하세요.</h2>
+    <p class="section__lede reveal" style="margin-inline:auto">
+      계정 없이 바로 기록할 수 있습니다.
+    </p>
+    <div class="badges reveal">
+      <a class="badge badge--soon" href="#" aria-label="App Store에서 다운로드 (준비 중)">
+        <img src="assets/badges/appstore-ko.svg" alt="App Store에서 다운로드" height="54">
+      </a>
+      <a class="badge badge--soon" href="#" aria-label="Google Play에서 받기 (준비 중)">
+        <img src="assets/badges/googleplay-ko.png" alt="Google Play에서 받기" height="54">
+      </a>
+    </div>
+    <p class="badges__note reveal">iOS · Android 출시 준비 중입니다.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap footer__row">
+    <div>© 2026 FitBoost. All rights reserved.</div>
+    <div class="footer__links">
+      <a href="support.html">지원</a>
+      <a href="privacy.html">개인정보 처리방침</a>
+      <a href="terms.html">이용약관</a>
+      <a href="https://github.com/bbdyno/FitBoost">GitHub</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/site.js" defer></script>
+</body>
+</html>

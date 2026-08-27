@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" role="img" aria-label="FitBoost">
+  <rect width="48" height="48" rx="11.4" fill="#C5F04A"/>
+  <g fill="none" stroke="#0B0B0F" stroke-width="4.6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M10 33.4 19.6 23.8 26 30.2 38 17.4"/>
+    <path d="M29.6 16.2h9v9"/>
+  </g>
+</svg>
