@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FitBoost 받기</title>
+<meta name="description" content="근력과 유산소를 기록하고, 쌓인 기록으로 다음에 들 중량을 계산하는 운동 일지.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#08080A">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website">
+<meta property="og:title" content="FitBoost — 다음 중량까지 계산하는 운동 기록">
+<meta property="og:description" content="루틴도 커스텀 운동도 기록도 무제한. iOS와 Android에서 받을 수 있습니다.">
+<meta property="og:image" content="https://bbdyno.github.io/FitBoost-Site/assets/screens/home.png">
+<meta name="twitter:card" content="summary_large_image">
+<script>
+// 공유한 링크 하나로 기기에 맞는 스토어에 보낸다. 누가 공유한 링크인지는
+// ?c= 값으로 받아 스토어 쪽 유입 통계(App Store 캠페인, Play 리퍼러)에 넘긴다.
+// 이 페이지 자체는 아무것도 저장하거나 보내지 않는다.
+(function () {
+  var raw = new URLSearchParams(location.search).get('c') || '';
+  // App Store 캠페인 이름은 30자까지다. 주소에 그대로 들어가므로 안전한 글자만 남긴다.
+  var campaign = raw.toLowerCase().replace(/[^a-z0-9_-]/g, '').slice(0, 30) || 'site';
+
+  var appStore = 'https://apps.apple.com/app/apple-store/id6805938033?pt=118731534&ct=' +
+    campaign + '&mt=8';
+  var referrer = 'utm_source=' + campaign + '&utm_medium=referral&utm_campaign=' + campaign;
+  var play = 'https://play.google.com/store/apps/details?id=com.bbdyno.app.fitboost&referrer=' +
+    encodeURIComponent(referrer);
+
+  window.fitboostStoreLinks = { appStore: appStore, play: play };
+
+  var ua = navigator.userAgent || '';
+  // iPadOS는 데스크톱 Safari인 척하므로 터치 지점 수로 가려낸다.
+  var isApple = /iPhone|iPad|iPod/.test(ua) ||
+    (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+  if (isApple) location.replace(appStore);
+  else if (/Android/.test(ua)) location.replace(play);
+})();
+</script>
+<link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="wrap nav__inner">
+    <a class="brand" href="./">
+      <img class="brand__mark" src="assets/mark.svg" alt="" width="26" height="26">
+      <span class="brand__word">Fit<span class="brand__boost">Boost</span></span>
+    </a>
+  </div>
+</nav>
+
+<!-- 휴대폰에서는 위 스크립트가 바로 스토어로 넘긴다. 아래는 컴퓨터로 열었거나
+     자동으로 넘어가지 않았을 때 보이는 화면이다. -->
+<main class="doc wrap">
+  <h1>FitBoost 받기</h1>
+  <p>쓰는 기기에 맞는 스토어를 골라 주세요.</p>
+  <div class="badges">
+    <a class="badge" id="go-appstore"
+       href="https://apps.apple.com/app/apple-store/id6805938033?pt=118731534&ct=site&mt=8">
+      <img src="assets/badges/appstore-ko.svg" alt="App Store에서 다운로드" height="54">
+    </a>
+    <a class="badge" id="go-play"
+       href="https://play.google.com/store/apps/details?id=com.bbdyno.app.fitboost&referrer=utm_source%3Dsite%26utm_medium%3Dreferral%26utm_campaign%3Dsite">
+      <img src="assets/badges/googleplay-ko.png" alt="Google Play에서 받기" height="54">
+    </a>
+  </div>
+</main>
+<script>
+(function () {
+  var links = window.fitboostStoreLinks;
+  if (!links) return;
+  document.getElementById('go-appstore').href = links.appStore;
+  document.getElementById('go-play').href = links.play;
+})();
+</script>
+</body>
+</html>
