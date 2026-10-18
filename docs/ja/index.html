@@ -193,6 +193,99 @@
   </div>
 </section>
 
+<!-- 6½. PRO+ 코칭: 세로 스크롤로 카드가 옆으로 흐른다 -->
+<section class="plus dark" id="plus" data-scene="plus">
+  <div class="plus__stick">
+    <div class="wrap plus__head">
+      <p class="label"><span class="label__n">05</span>PRO+ コーチング</p>
+      <h2>計画からその日の重量まで組むコーチング。</h2>
+      <p class="lede">PROのすべての機能に加えて、目標と大会日からプログラムを組み、その日のコンディションに合わせて重量とセット数を調整します。</p>
+    </div>
+    <div class="plus__rail">
+      <div class="plus__track">
+
+        <article class="pc">
+          <h3>ブロックピリオダイゼーション</h3><p>目標と大会日から組むブロックピリオダイゼーション</p>
+          <div class="blocks" aria-hidden="true">
+            <div class="blocks__row">
+              <i class="b1" style="--w:4"><b>筋肥大</b><span>4週</span></i>
+              <i class="b2" style="--w:4"><b>筋力</b><span>4週</span></i>
+              <i class="b3" style="--w:3"><b>ピーキング</b><span>3週</span></i>
+              <i class="b4" style="--w:1"><b>テーパー</b></i>
+            </div>
+            <div class="blocks__meet"><span>大会</span></div>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>その日のコンディション</h3><p>睡眠・筋肉痛・ストレス・HRVでその日の強度を調整</p>
+          <ul class="ready" aria-hidden="true">
+            <li><span>睡眠</span><b>7.5h</b><i style="--v:.8"></i></li>
+            <li><span>筋肉痛</span><b>少ない</b><i style="--v:.75"></i></li>
+            <li><span>ストレス</span><b>普通</b><i class="mid" style="--v:.5"></i></li>
+            <li><span>HRV</span><b>58 ms</b><i style="--v:.65"></i></li>
+          </ul>
+          <p class="pc__out" aria-hidden="true"><span>今日の強度</span><b>95%</b></p>
+        </article>
+
+        <article class="pc">
+          <h3>セット中の自動調整</h3><p>トップセットのRPEでバックオフ重量をその場で調整</p>
+          <div class="auto" aria-hidden="true">
+            <div class="auto__row"><span>トップセット</span><b>140 kg × 3</b><em>RPE 9.5</em></div>
+            <div class="auto__arrow"></div>
+            <div class="auto__row auto__row--on"><span>バックオフ · 計画より下げる</span><b>125 kg × 5</b><s>130 kg</s></div>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>ディロードの提案</h3><p>パフォーマンスと疲労の推移からディロードを提案</p>
+          <svg class="trend" viewBox="0 0 300 120" aria-hidden="true">
+            <polyline class="trend__perf" points="0,92 40,78 80,64 120,54 160,49 200,48 240,50 280,52"/>
+            <polyline class="trend__fat" points="0,104 40,98 80,92 120,82 160,70 200,56 240,40 280,28"/>
+          </svg>
+          <p class="trend__key" aria-hidden="true"><span class="k1">パフォーマンス</span><span class="k2">疲労</span></p>
+          <p class="pc__out" aria-hidden="true"><span>来週</span><b class="txt">ディロード</b></p>
+        </article>
+
+        <article class="pc">
+          <h3>部位別の週間セット数</h3><p>部位別の週間セット数とMEV・MRVの目安</p>
+          <div class="vol" aria-hidden="true">
+            <div style="--v:12"><span>胸</span><i></i><b>12</b></div>
+            <div style="--v:16"><span>背中</span><i></i><b>16</b></div>
+            <div class="lo" style="--v:7"><span>脚</span><i></i><b>7</b></div>
+            <div style="--v:14"><span>肩</span><i></i><b>14</b></div>
+            <div class="hi" style="--v:21"><span>腕</span><i></i><b>21</b></div>
+            <p class="vol__key"><span>MEV 10</span><span>MRV 20</span></p>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>栄養目標</h3><p>体重の推移で毎週変わるカロリーとPFC</p>
+          <div class="food" aria-hidden="true">
+            <p class="food__kcal"><b>2,450</b><span>kcal · 1日の目標</span></p>
+            <div class="food__bar"><i class="p" style="--v:27"></i><i class="c" style="--v:45"></i><i class="f" style="--v:28"></i></div>
+            <p class="food__key"><span class="p">たんぱく質 165 g</span><span class="c">炭水化物 275 g</span><span class="f">脂質 76 g</span></p>
+            <p class="food__trend">体重の推移 週−0.3 kg · 目標どおり</p>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>ウォームアップ自動入力</h3><p>本番の重量とバーの重量に合わせて、ウォームアップを段階的に入れます。</p>
+          <ol class="ramp" aria-hidden="true">
+            <li style="--v:.19"><span>20 kg × 10</span><i></i></li>
+            <li style="--v:.57"><span>60 kg × 5</span><i></i></li>
+            <li style="--v:.76"><span>80 kg × 3</span><i></i></li>
+            <li style="--v:.9"><span>95 kg × 1</span><i></i></li>
+            <li class="main" style="--v:1"><span>105 kg × 5 · 本セット</span><i></i></li>
+          </ol>
+        </article>
+
+      </div>
+    </div>
+    <div class="wrap"><div class="plus__bar" aria-hidden="true"><i></i></div></div>
+  </div>
+</section>
+
 <!-- 7. 나머지 기능 타일 -->
 <section class="more">
   <div class="wrap">
@@ -280,7 +373,7 @@
 <!-- 8. 시계 -->
 <section class="watch dark">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">05</span>ウォッチ</p>
+    <p class="label reveal"><span class="label__n">06</span>ウォッチ</p>
     <h2 class="reveal">セットは手首で終わらせる。</h2>
     <p class="lede reveal">セットを終えて強度を選ぶと休憩タイマーが動き、終わると振動で知らせます。プランクのような時間種目も、ウォッチで秒表示のまま調整できます。</p>
 
@@ -304,7 +397,7 @@
 <!-- 9. 운동 사전 -->
 <section class="lib">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">06</span>種目辞典</p>
+    <p class="label reveal"><span class="label__n">07</span>種目辞典</p>
     <div class="lib__head">
       <div class="lib__num reveal"><span data-count="1690">1,690</span></div>
       <div>
@@ -322,7 +415,7 @@
 <!-- 10. 요금 -->
 <section class="price" id="pricing">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">07</span>料金</p>
+    <p class="label reveal"><span class="label__n">08</span>料金</p>
     <h2 class="reveal">記録は無料で、無制限。</h2>
     <p class="lede reveal">積み重ねた記録が計算の材料なので、記録は制限しません。PROはその記録で、計算をもっと深くします。</p>
 
@@ -342,7 +435,7 @@
         <h3>PRO+</h3>
         <p class="plan__price">月額・年額プラン</p>
         <p class="plan__inc">PROの全機能に加えて</p>
-        <ul><li>ブロック周期化プログラム</li><li>当日のコンディションに合わせた強度</li><li>筋肉別の週間セット数調整</li><li>ウォームアップの事前設定と自動入力</li><li>栄養目標</li></ul>
+        <ul><li>ブロックピリオダイゼーション</li><li>その日のコンディションに合わせた強度</li><li>セット中のバックオフ重量調整</li><li>ディロードの提案</li><li>部位別の週間セット数</li><li>ウォームアップの事前設定と自動入力</li><li>栄養目標</li></ul>
       </article>
     </div>
     <p class="price__note reveal">サブスクリプションはAppleまたはGoogleアカウントで決済され、いつでもストアから解約できます。価格は購入画面に表示される金額をご確認ください。</p>

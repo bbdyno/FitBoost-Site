@@ -49,9 +49,15 @@
     },
     "exercise": "Barbell Squat",
     "target": "3 sets · 8 reps",
-    "b1": { "head": "Next set 102.5 kg", "body": "That looked easy. Adding 2.5 kg." },
+    "b1": {
+      "head": "Next set 102.5 kg",
+      "body": "That looked easy. Adding 2.5 kg."
+    },
     "rest": "Rest · longer after a hard set",
-    "b2": { "head": "That's it for today", "body": "Your reps dropped 25%. Pick it up next session." }
+    "b2": {
+      "head": "That's it for today",
+      "body": "Your reps dropped 25%. Pick it up next session."
+    }
   },
   "prog": {
     "label": "Routine auto progression",
@@ -81,6 +87,68 @@
     "minus": "Less weight",
     "plus": "More weight",
     "unit": "Unit"
+  },
+  "plus": {
+    "label": "PRO+ coaching",
+    "title": "Coaching that plans the block and sets the day.",
+    "body": "Everything in PRO, plus a program built around your goal and meet date, with weight and sets adjusted day by day.",
+    "plan": {
+      "t": "Block periodization",
+      "b": "Block-periodized program built around your goal and meet date",
+      "p1": "Hypertrophy",
+      "p2": "Strength",
+      "p3": "Peaking",
+      "p4": "Taper",
+      "wk": " wk",
+      "meet": "Meet"
+    },
+    "ready": {
+      "t": "Daily readiness",
+      "b": "Daily intensity tuned to sleep, soreness, stress and HRV",
+      "sleep": "Sleep",
+      "sore": "Soreness",
+      "stress": "Stress",
+      "low": "Low",
+      "mid": "Medium",
+      "today": "Today's intensity"
+    },
+    "auto": {
+      "t": "In-session autoregulation",
+      "b": "Back-off loads adjusted on the spot from your top-set RPE",
+      "top": "Top set",
+      "back": "Back-off · eased from plan"
+    },
+    "deload": {
+      "t": "Deload suggestions",
+      "b": "Deloads suggested from performance and fatigue trends",
+      "perf": "Performance",
+      "fat": "Fatigue",
+      "next": "Next week",
+      "badge": "Deload"
+    },
+    "vol": {
+      "t": "Weekly sets per muscle",
+      "b": "Weekly sets per muscle against MEV and MRV",
+      "chest": "Chest",
+      "back": "Back",
+      "legs": "Legs",
+      "shoulders": "Shoulders",
+      "arms": "Arms"
+    },
+    "food": {
+      "t": "Nutrition targets",
+      "b": "Calories and macros that adapt weekly to your weight trend",
+      "day": "daily target",
+      "p": "Protein",
+      "c": "Carbs",
+      "f": "Fat",
+      "trend": "Weight trend −0.3 kg/week · on track"
+    },
+    "warm": {
+      "t": "Warm-up auto-fill",
+      "b": "Fills in warm-up steps to match your working weight and your bar.",
+      "main": "working set"
+    }
   },
   "more": {
     "title": "And there's more.",
@@ -194,6 +262,8 @@
       "items": [
         "Block-periodized program",
         "Daily intensity tuned to readiness",
+        "Back-off loads adjusted mid-session",
+        "Deload suggestions",
         "Weekly sets per muscle",
         "Plan and auto-fill warm-up sets",
         "Nutrition targets"
