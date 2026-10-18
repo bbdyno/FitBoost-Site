@@ -1,0 +1,208 @@
+{
+  "meta": {
+    "title": "FitBoost — The workout log that picks your next weight",
+    "description": "Log a set, say how hard it was, and FitBoost sizes your next set and tells you when to stop. Recovery map, routine auto progression, plate math and 1,690 exercises. Workout records stay free and unlimited."
+  },
+  "nav": {
+    "label": "Main menu",
+    "features": "Features",
+    "pricing": "Pricing",
+    "support": "Support",
+    "language": "Choose language",
+    "download": "Download"
+  },
+  "stores": {
+    "apple": "Download on the App Store",
+    "google": "Get it on Google Play"
+  },
+  "footer": {
+    "label": "Site links",
+    "tagline": "The workout log that picks your next weight",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Use"
+  },
+  "hero": {
+    "chip": "iPhone · Android · three watches",
+    "title": "Next set.<br>How much?",
+    "lede": "Finish a set, log how hard it was, and FitBoost works out your next weight. Your workout records are free, with no cap.",
+    "tagRir": "2 reps left in the tank",
+    "tagNext": "Next set",
+    "tagRest": "Rest"
+  },
+  "say": {
+    "text": "A training log shouldn't just sit there. FitBoost uses your history to set <em>today's weight</em>, <em>your rest</em> and <em>when to stop</em>."
+  },
+  "coach": {
+    "label": "In-workout coach",
+    "title": "Every set resets the weight for the next one.",
+    "s1": {
+      "title": "Log the effort",
+      "body": "Finish a set and pick how many more reps you had left. Your next set's weight changes right away."
+    },
+    "s2": {
+      "title": "Rest that fits",
+      "body": "The harder that set was, the longer you rest. A notification calls you back."
+    },
+    "s3": {
+      "title": "Knows when you're done",
+      "body": "When fatigue starts costing you reps, it tells you to call it a day. The more you train, the better it learns your own stopping point."
+    },
+    "exercise": "Barbell Squat",
+    "target": "3 sets · 8 reps",
+    "b1": { "head": "Next set 102.5 kg", "body": "That looked easy. Adding 2.5 kg." },
+    "rest": "Rest · longer after a hard set",
+    "b2": { "head": "That's it for today", "body": "Your reps dropped 25%. Pick it up next session." }
+  },
+  "prog": {
+    "label": "Routine auto progression",
+    "title": "Hit your reps and it goes up. Miss and it waits.",
+    "body": "Start a routine and today's weights and reps come from your last sessions. Miss twice in a row and it eases off; come back from a long break and it starts you gently. Each kind of equipment uses its own step.",
+    "next": "Next",
+    "keyUp": "Hit the target, go up",
+    "keyHold": "Missed, hold",
+    "keyDown": "Missed twice, ease off"
+  },
+  "recov": {
+    "label": "Recovery map",
+    "title": "See what's still recovering, right on your body.",
+    "body": "Recent effort and time since each session show how recovered each muscle is. On days you'd hit something still sore, the home screen tells you first.",
+    "after": "after leg day",
+    "tired": "Fatigued",
+    "mid": "Recovering",
+    "ready": "Recovered",
+    "painHead": "Pain notes",
+    "painBody": "Log where it hurts and the lifts that use that muscle get lighter, with substitutes suggested."
+  },
+  "plates": {
+    "label": "Plate math",
+    "title": "See exactly what goes on each side.",
+    "body": "Add your bar and the plates you own to see what to load and in what order. Suggested weights snap to loads you can actually build. Try it.",
+    "perSide": "Each side",
+    "minus": "Less weight",
+    "plus": "More weight",
+    "unit": "Unit"
+  },
+  "more": {
+    "title": "And there's more.",
+    "program": {
+      "title": "Build a program",
+      "body": "Pick your goal, experience, days per week, session length and equipment, and get a weekly plan saved as routines. Muscles you want to rest are left out; the ones you want to grow get more work.",
+      "c1": "Muscle",
+      "c2": "Strength",
+      "c3": "4 days",
+      "c4": "60 min",
+      "d1": "Mon",
+      "d2": "Tue",
+      "d3": "Wed",
+      "d4": "Thu",
+      "d5": "Fri",
+      "w1": "Upper A",
+      "w2": "Lower A",
+      "w3": "Upper B",
+      "w4": "Lower B",
+      "rest": "Rest"
+    },
+    "balance": {
+      "title": "Strength balance",
+      "body": "Compares your five big lifts against typical ratios and adds a set or an accessory where one lags.",
+      "squat": "Squat",
+      "bench": "Bench",
+      "dead": "Deadlift",
+      "ohp": "Overhead",
+      "row": "Row"
+    },
+    "cardio": {
+      "title": "Cardio calories",
+      "body": "Fill in calories and distance from treadmill speed and incline, or erg pace and watts.",
+      "note": "Treadmill · 6.5 km/h · 8% incline · 30 min"
+    },
+    "sets": {
+      "title": "Warm-ups · supersets · timed sets",
+      "body": "Plan warm-up sets apart from working sets, pair two exercises as a superset, and log planks in seconds.",
+      "pair": "Pull-up + Dip",
+      "plank": "Plank"
+    },
+    "trainer": {
+      "title": "Reports for your trainer",
+      "body": "Pick a date range and send a workout report. Trainers keep each client's log separate.",
+      "doc": "Workout report",
+      "range": "Sep 1 – Sep 30 · 14 workouts"
+    },
+    "rm": {
+      "title": "Estimated 1RM",
+      "body": "Completed sets of 12 reps or fewer go through Epley, Brzycki and Lombardi, and we take the median. Log RIR and it gets sharper."
+    },
+    "sync": {
+      "title": "Sync across devices",
+      "body": "No sign-up needed. iCloud or Google Drive keeps your devices in sync, for free.",
+      "file": "Backup file"
+    },
+    "units": {
+      "title": "kg and lb",
+      "body": "Set one unit for the whole app, or a different one per exercise."
+    }
+  },
+  "watch": {
+    "label": "Watch",
+    "title": "Finish the set on your wrist.",
+    "body": "Finish a set and pick the effort. The rest timer starts, and a tap on your wrist says when it's time to go. Timed moves like planks show in seconds, and you can adjust them right on the watch.",
+    "rest": "Rest",
+    "next": "Next",
+    "effort": "Reps left?",
+    "plank": "Plank",
+    "set": "Set"
+  },
+  "lib": {
+    "label": "Exercise library",
+    "title": "1,690 exercises, each with a picture and a guide.",
+    "body": "Setup, steps, breathing and precautions. Filter by muscle and equipment, with functional moves like burpees and man makers included."
+  },
+  "price": {
+    "label": "Pricing",
+    "title": "Your records are free. No cap.",
+    "body": "Your history is what the math runs on, so logging is never locked. PRO takes that history further.",
+    "free": {
+      "name": "Free",
+      "price": "$0",
+      "items": [
+        "Unlimited workout records",
+        "1,690 exercises with guides",
+        "Recovery map and pain notes",
+        "Program builder",
+        "Plate calculator",
+        "Device sync and backup files",
+        "3 routines, 5 custom exercises"
+      ]
+    },
+    "pro": {
+      "price": "$2.99/mo · $22.99/yr",
+      "inc": "Everything in Free, plus",
+      "items": [
+        "In-workout coach",
+        "Routine auto progression",
+        "Targets that learn from you",
+        "Strength balance fixes",
+        "Plateau alerts and gym-ready loads",
+        "Personal 1–15 rep load curve",
+        "Weekly coaching report",
+        "Unlimited routines and exercises"
+      ]
+    },
+    "plus": {
+      "price": "$5.99/mo · $44.99/yr",
+      "inc": "Everything in PRO, plus",
+      "items": [
+        "Block-periodized program",
+        "Daily intensity tuned to readiness",
+        "Weekly sets per muscle",
+        "Plan and auto-fill warm-up sets",
+        "Nutrition targets"
+      ]
+    },
+    "note": "Subscriptions are billed through your Apple or Google account and can be canceled in the store at any time. Prices shown are in US dollars; the price in your store's purchase sheet applies."
+  },
+  "end": {
+    "title": "Start with<br>today's set.",
+    "body": "No sign-up. Use it in Korean, English, Japanese, Simplified Chinese or Traditional Chinese."
+  }
+}

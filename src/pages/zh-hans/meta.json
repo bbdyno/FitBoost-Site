@@ -1,0 +1,14 @@
+{
+  "privacy": {
+    "title": "隐私政策",
+    "description": "说明 FitBoost 处理哪些信息，以及这些信息保存在何处。"
+  },
+  "terms": {
+    "title": "使用条款",
+    "description": "FitBoost 使用条款。"
+  },
+  "support": {
+    "title": "支持",
+    "description": "FitBoost 常见问题与联系方式。"
+  }
+}
