@@ -1,0 +1,14 @@
+{
+  "privacy": {
+    "title": "Privacy Policy",
+    "description": "What information FitBoost handles and where it is kept."
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "description": "The FitBoost terms of use."
+  },
+  "support": {
+    "title": "Support",
+    "description": "Answers to common FitBoost questions and how to contact us."
+  }
+}
