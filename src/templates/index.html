@@ -171,6 +171,99 @@
   </div>
 </section>
 
+<!-- 6½. PRO+ 코칭: 세로 스크롤로 카드가 옆으로 흐른다 -->
+<section class="plus dark" id="plus" data-scene="plus">
+  <div class="plus__stick">
+    <div class="wrap plus__head">
+      <p class="label"><span class="label__n">05</span>{{plus.label}}</p>
+      <h2>{{plus.title}}</h2>
+      <p class="lede">{{plus.body}}</p>
+    </div>
+    <div class="plus__rail">
+      <div class="plus__track">
+
+        <article class="pc">
+          <h3>{{plus.plan.t}}</h3><p>{{plus.plan.b}}</p>
+          <div class="blocks" aria-hidden="true">
+            <div class="blocks__row">
+              <i class="b1" style="--w:4"><b>{{plus.plan.p1}}</b><span>4{{plus.plan.wk}}</span></i>
+              <i class="b2" style="--w:4"><b>{{plus.plan.p2}}</b><span>4{{plus.plan.wk}}</span></i>
+              <i class="b3" style="--w:3"><b>{{plus.plan.p3}}</b><span>3{{plus.plan.wk}}</span></i>
+              <i class="b4" style="--w:1"><b>{{plus.plan.p4}}</b></i>
+            </div>
+            <div class="blocks__meet"><span>{{plus.plan.meet}}</span></div>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>{{plus.ready.t}}</h3><p>{{plus.ready.b}}</p>
+          <ul class="ready" aria-hidden="true">
+            <li><span>{{plus.ready.sleep}}</span><b>7.5h</b><i style="--v:.8"></i></li>
+            <li><span>{{plus.ready.sore}}</span><b>{{plus.ready.low}}</b><i style="--v:.75"></i></li>
+            <li><span>{{plus.ready.stress}}</span><b>{{plus.ready.mid}}</b><i class="mid" style="--v:.5"></i></li>
+            <li><span>HRV</span><b>58 ms</b><i style="--v:.65"></i></li>
+          </ul>
+          <p class="pc__out" aria-hidden="true"><span>{{plus.ready.today}}</span><b>95%</b></p>
+        </article>
+
+        <article class="pc">
+          <h3>{{plus.auto.t}}</h3><p>{{plus.auto.b}}</p>
+          <div class="auto" aria-hidden="true">
+            <div class="auto__row"><span>{{plus.auto.top}}</span><b>140 kg × 3</b><em>RPE 9.5</em></div>
+            <div class="auto__arrow"></div>
+            <div class="auto__row auto__row--on"><span>{{plus.auto.back}}</span><b>125 kg × 5</b><s>130 kg</s></div>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>{{plus.deload.t}}</h3><p>{{plus.deload.b}}</p>
+          <svg class="trend" viewBox="0 0 300 120" aria-hidden="true">
+            <polyline class="trend__perf" points="0,92 40,78 80,64 120,54 160,49 200,48 240,50 280,52"/>
+            <polyline class="trend__fat" points="0,104 40,98 80,92 120,82 160,70 200,56 240,40 280,28"/>
+          </svg>
+          <p class="trend__key" aria-hidden="true"><span class="k1">{{plus.deload.perf}}</span><span class="k2">{{plus.deload.fat}}</span></p>
+          <p class="pc__out" aria-hidden="true"><span>{{plus.deload.next}}</span><b class="txt">{{plus.deload.badge}}</b></p>
+        </article>
+
+        <article class="pc">
+          <h3>{{plus.vol.t}}</h3><p>{{plus.vol.b}}</p>
+          <div class="vol" aria-hidden="true">
+            <div style="--v:12"><span>{{plus.vol.chest}}</span><i></i><b>12</b></div>
+            <div style="--v:16"><span>{{plus.vol.back}}</span><i></i><b>16</b></div>
+            <div class="lo" style="--v:7"><span>{{plus.vol.legs}}</span><i></i><b>7</b></div>
+            <div style="--v:14"><span>{{plus.vol.shoulders}}</span><i></i><b>14</b></div>
+            <div class="hi" style="--v:21"><span>{{plus.vol.arms}}</span><i></i><b>21</b></div>
+            <p class="vol__key"><span>MEV 10</span><span>MRV 20</span></p>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>{{plus.food.t}}</h3><p>{{plus.food.b}}</p>
+          <div class="food" aria-hidden="true">
+            <p class="food__kcal"><b>2,450</b><span>kcal · {{plus.food.day}}</span></p>
+            <div class="food__bar"><i class="p" style="--v:27"></i><i class="c" style="--v:45"></i><i class="f" style="--v:28"></i></div>
+            <p class="food__key"><span class="p">{{plus.food.p}} 165 g</span><span class="c">{{plus.food.c}} 275 g</span><span class="f">{{plus.food.f}} 76 g</span></p>
+            <p class="food__trend">{{plus.food.trend}}</p>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>{{plus.warm.t}}</h3><p>{{plus.warm.b}}</p>
+          <ol class="ramp" aria-hidden="true">
+            <li style="--v:.19"><span>20 kg × 10</span><i></i></li>
+            <li style="--v:.57"><span>60 kg × 5</span><i></i></li>
+            <li style="--v:.76"><span>80 kg × 3</span><i></i></li>
+            <li style="--v:.9"><span>95 kg × 1</span><i></i></li>
+            <li class="main" style="--v:1"><span>105 kg × 5 · {{plus.warm.main}}</span><i></i></li>
+          </ol>
+        </article>
+
+      </div>
+    </div>
+    <div class="wrap"><div class="plus__bar" aria-hidden="true"><i></i></div></div>
+  </div>
+</section>
+
 <!-- 7. 나머지 기능 타일 -->
 <section class="more">
   <div class="wrap">
@@ -258,7 +351,7 @@
 <!-- 8. 시계 -->
 <section class="watch dark">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">05</span>{{watch.label}}</p>
+    <p class="label reveal"><span class="label__n">06</span>{{watch.label}}</p>
     <h2 class="reveal">{{watch.title}}</h2>
     <p class="lede reveal">{{watch.body}}</p>
 
@@ -282,7 +375,7 @@
 <!-- 9. 운동 사전 -->
 <section class="lib">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">06</span>{{lib.label}}</p>
+    <p class="label reveal"><span class="label__n">07</span>{{lib.label}}</p>
     <div class="lib__head">
       <div class="lib__num reveal"><span data-count="1690">1,690</span></div>
       <div>
@@ -300,7 +393,7 @@
 <!-- 10. 요금 -->
 <section class="price" id="pricing">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">07</span>{{price.label}}</p>
+    <p class="label reveal"><span class="label__n">08</span>{{price.label}}</p>
     <h2 class="reveal">{{price.title}}</h2>
     <p class="lede reveal">{{price.body}}</p>
 

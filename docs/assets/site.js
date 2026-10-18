@@ -137,9 +137,30 @@
     });
   }
 
+  /* ── PRO+ 코칭: 세로로 내리는 만큼 카드 줄이 옆으로 간다 ── */
+  var plus = $('[data-scene="plus"]');
+  var plusTrack = plus && $('.plus__track', plus);
+  var plusTrend = plus && $('.trend', plus);
+  var plusRun = 0;
+  function sizePlus() {
+    if (!plus || reduce) return;
+    plusRun = Math.max(0, plusTrack.scrollWidth - window.innerWidth);
+    // 카드 줄을 다 보는 거리 + 들어올 때와 나갈 때 머무는 여유
+    plus.style.height = (window.innerHeight * 1.5 + plusRun) + 'px';
+  }
+  function scenePlus(p) {
+    var k = range(p, .1, .9);
+    plusTrack.style.setProperty('--x', (plusRun * k).toFixed(1));
+    plus.style.setProperty('--p', k.toFixed(4));
+    if (plusTrend) plusTrend.style.setProperty('--draw', reduce ? 1 : range(k, .3, .6).toFixed(3));
+  }
+  sizePlus();
+  window.addEventListener('resize', sizePlus);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(function () { sizePlus(); request(); });
+
   /* ── 장면 돌리기 ──────────────────────────────────── */
   var scenes = [
-    [hero, sceneHero], [say, sceneSay], [coach, sceneCoach], [recov, sceneRecov]
+    [hero, sceneHero], [say, sceneSay], [coach, sceneCoach], [recov, sceneRecov], [plus, scenePlus]
   ].filter(function (s) { return s[0]; });
 
   function progress(el) {

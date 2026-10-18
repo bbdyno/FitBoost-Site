@@ -206,6 +206,99 @@
   </div>
 </section>
 
+<!-- 6½. PRO+ 코칭: 세로 스크롤로 카드가 옆으로 흐른다 -->
+<section class="plus dark" id="plus" data-scene="plus">
+  <div class="plus__stick">
+    <div class="wrap plus__head">
+      <p class="label"><span class="label__n">05</span>PRO+ 코칭</p>
+      <h2>계획부터 그날 무게까지 짜 주는 코칭.</h2>
+      <p class="lede">PRO의 모든 기능에 더해, 목표와 대회 날짜로 계획을 짜고 그날 컨디션에 따라 무게와 세트를 맞춥니다.</p>
+    </div>
+    <div class="plus__rail">
+      <div class="plus__track">
+
+        <article class="pc">
+          <h3>블록 주기화 계획</h3><p>목표와 대회 날짜로 짜는 블록 주기화 계획</p>
+          <div class="blocks" aria-hidden="true">
+            <div class="blocks__row">
+              <i class="b1" style="--w:4"><b>근비대</b><span>4주</span></i>
+              <i class="b2" style="--w:4"><b>근력</b><span>4주</span></i>
+              <i class="b3" style="--w:3"><b>피킹</b><span>3주</span></i>
+              <i class="b4" style="--w:1"><b>테이퍼</b></i>
+            </div>
+            <div class="blocks__meet"><span>대회</span></div>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>그날 컨디션</h3><p>수면·근육통·스트레스·HRV로 그날 강도 조절</p>
+          <ul class="ready" aria-hidden="true">
+            <li><span>수면</span><b>7.5h</b><i style="--v:.8"></i></li>
+            <li><span>근육통</span><b>적음</b><i style="--v:.75"></i></li>
+            <li><span>스트레스</span><b>보통</b><i class="mid" style="--v:.5"></i></li>
+            <li><span>HRV</span><b>58 ms</b><i style="--v:.65"></i></li>
+          </ul>
+          <p class="pc__out" aria-hidden="true"><span>오늘 강도</span><b>95%</b></p>
+        </article>
+
+        <article class="pc">
+          <h3>세트 중 자동 조절</h3><p>탑셋 RPE로 백오프 무게를 그 자리에서 조정</p>
+          <div class="auto" aria-hidden="true">
+            <div class="auto__row"><span>탑셋</span><b>140 kg × 3</b><em>RPE 9.5</em></div>
+            <div class="auto__arrow"></div>
+            <div class="auto__row auto__row--on"><span>백오프 · 계획보다 낮춤</span><b>125 kg × 5</b><s>130 kg</s></div>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>디로드 제안</h3><p>성과와 피로 추세를 읽고 디로드 제안</p>
+          <svg class="trend" viewBox="0 0 300 120" aria-hidden="true">
+            <polyline class="trend__perf" points="0,92 40,78 80,64 120,54 160,49 200,48 240,50 280,52"/>
+            <polyline class="trend__fat" points="0,104 40,98 80,92 120,82 160,70 200,56 240,40 280,28"/>
+          </svg>
+          <p class="trend__key" aria-hidden="true"><span class="k1">성과</span><span class="k2">피로</span></p>
+          <p class="pc__out" aria-hidden="true"><span>다음 주</span><b class="txt">디로드</b></p>
+        </article>
+
+        <article class="pc">
+          <h3>근육별 주간 세트</h3><p>근육별 주간 세트와 MEV·MRV 기준</p>
+          <div class="vol" aria-hidden="true">
+            <div style="--v:12"><span>가슴</span><i></i><b>12</b></div>
+            <div style="--v:16"><span>등</span><i></i><b>16</b></div>
+            <div class="lo" style="--v:7"><span>하체</span><i></i><b>7</b></div>
+            <div style="--v:14"><span>어깨</span><i></i><b>14</b></div>
+            <div class="hi" style="--v:21"><span>팔</span><i></i><b>21</b></div>
+            <p class="vol__key"><span>MEV 10</span><span>MRV 20</span></p>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>영양 목표</h3><p>체중 추세로 매주 바뀌는 열량과 탄단지</p>
+          <div class="food" aria-hidden="true">
+            <p class="food__kcal"><b>2,450</b><span>kcal · 하루 목표</span></p>
+            <div class="food__bar"><i class="p" style="--v:27"></i><i class="c" style="--v:45"></i><i class="f" style="--v:28"></i></div>
+            <p class="food__key"><span class="p">단백질 165 g</span><span class="c">탄수화물 275 g</span><span class="f">지방 76 g</span></p>
+            <p class="food__trend">체중 추세 주당 −0.3 kg · 목표대로</p>
+          </div>
+        </article>
+
+        <article class="pc">
+          <h3>웜업 자동 채우기</h3><p>본 무게와 봉 무게에 맞춰 웜업 세트를 단계별로 채웁니다.</p>
+          <ol class="ramp" aria-hidden="true">
+            <li style="--v:.19"><span>20 kg × 10</span><i></i></li>
+            <li style="--v:.57"><span>60 kg × 5</span><i></i></li>
+            <li style="--v:.76"><span>80 kg × 3</span><i></i></li>
+            <li style="--v:.9"><span>95 kg × 1</span><i></i></li>
+            <li class="main" style="--v:1"><span>105 kg × 5 · 본 세트</span><i></i></li>
+          </ol>
+        </article>
+
+      </div>
+    </div>
+    <div class="wrap"><div class="plus__bar" aria-hidden="true"><i></i></div></div>
+  </div>
+</section>
+
 <!-- 7. 나머지 기능 타일 -->
 <section class="more">
   <div class="wrap">
@@ -293,7 +386,7 @@
 <!-- 8. 시계 -->
 <section class="watch dark">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">05</span>시계</p>
+    <p class="label reveal"><span class="label__n">06</span>시계</p>
     <h2 class="reveal">손목에서 세트를 끝냅니다.</h2>
     <p class="lede reveal">세트를 끝내고 강도를 고르면 휴식 타이머가 돌고, 끝나면 진동으로 알려 줍니다. 플랭크 같은 시간 운동도 시계에서 초로 보고 고칩니다.</p>
 
@@ -317,7 +410,7 @@
 <!-- 9. 운동 사전 -->
 <section class="lib">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">06</span>운동 사전</p>
+    <p class="label reveal"><span class="label__n">07</span>운동 사전</p>
     <div class="lib__head">
       <div class="lib__num reveal"><span data-count="1690">1,690</span></div>
       <div>
@@ -335,7 +428,7 @@
 <!-- 10. 요금 -->
 <section class="price" id="pricing">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">07</span>요금</p>
+    <p class="label reveal"><span class="label__n">08</span>요금</p>
     <h2 class="reveal">기록은 무료로, 무제한.</h2>
     <p class="lede reveal">쌓인 기록이 계산의 재료라서 기록은 막지 않습니다. PRO는 그 기록으로 계산을 더 깊게 합니다.</p>
 
@@ -355,7 +448,7 @@
         <h3>PRO+</h3>
         <p class="plan__price">월 ₩9,900 · 연 ₩69,000</p>
         <p class="plan__inc">PRO의 모든 기능에 더해</p>
-        <ul><li>블록 주기화 계획</li><li>그날 컨디션에 맞춘 강도</li><li>근육별 주간 세트 수 조정</li><li>웜업 세트 미리 짜기 · 자동 채우기</li><li>영양 목표</li></ul>
+        <ul><li>블록 주기화 계획</li><li>그날 컨디션에 맞춘 강도</li><li>세트 중 백오프 무게 조정</li><li>디로드 제안</li><li>근육별 주간 세트 수</li><li>웜업 세트 미리 짜기 · 자동 채우기</li><li>영양 목표</li></ul>
       </article>
     </div>
     <p class="price__note reveal">구독은 Apple 또는 Google 계정으로 결제되며 언제든 스토어에서 해지할 수 있습니다. 실제 가격은 구매 화면에 표시되는 금액을 따릅니다.</p>

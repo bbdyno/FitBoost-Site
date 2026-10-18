@@ -390,6 +390,119 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 .rack__side { margin: 12px 0 0; font-weight: 700; font-size: 16px; display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
 .rack__side .chip { font-family: var(--display); font-weight: 400; font-size: 17px; padding: 3px 10px; border-radius: 8px; color: var(--white); }
 
+/* ── 6½. PRO+ 코칭: 세로 스크롤로 카드 줄이 옆으로 간다 ─── */
+
+.plus { height: 360vh; }            /* site.js가 카드 줄 길이에 맞춰 다시 정한다 */
+.plus__stick { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; gap: clamp(22px, 4vh, 44px); overflow: hidden; }
+.plus h2 { font-size: clamp(32px, 4.4vw, 58px); }
+.plus .lede { margin-top: 14px; }
+.plus .pro { color: var(--lime); opacity: 1; }
+.plus__rail { overflow: visible; }
+.plus__track {
+  display: flex; gap: 16px; width: max-content;
+  padding: 0 max(var(--pad), calc((100vw - var(--wrap)) / 2 + var(--pad)));
+  transform: translate3d(calc(var(--x, 0) * -1px), 0, 0); will-change: transform;
+}
+.pc {
+  flex: none; width: clamp(272px, 27vw, 340px); min-height: clamp(360px, 46vh, 420px);
+  background: var(--ink-2); border-radius: var(--r); padding: 24px; display: flex; flex-direction: column; gap: 8px;
+  box-shadow: 0 0 0 1px var(--line-d);
+}
+.pc h3 { font-size: 20px; }
+.pc > p { margin: 0; font-size: 15px; color: var(--mute-d); line-height: 1.5; }
+.pc__out { margin: auto 0 0 !important; display: flex; align-items: baseline; justify-content: space-between; gap: 10px; padding-top: 14px; border-top: 1px solid var(--line-d); color: var(--mute-d) !important; font-size: 14px !important; font-weight: 600; }
+.pc__out b { font-family: var(--display); font-weight: 400; font-size: 34px; line-height: 1; color: var(--lime); letter-spacing: .01em; }
+.pc__out b.txt { font-family: var(--sans); font-weight: 800; font-size: 24px; letter-spacing: -.03em; }
+.plus__bar { height: 3px; border-radius: 3px; background: var(--line-d); overflow: hidden; max-width: 320px; }
+.plus__bar i { display: block; height: 100%; width: 100%; background: var(--lime); transform-origin: left; transform: scaleX(var(--p, 0)); }
+
+.blocks { margin-top: auto; display: grid; gap: 10px; }
+.blocks__row { display: flex; gap: 4px; }
+.blocks__row i { flex: var(--w) 1 0; min-width: 0; height: 118px; border-radius: 12px; padding: 9px 8px; display: flex; flex-direction: column; justify-content: space-between; font-style: normal; }
+.blocks__row b { font-size: 12px; font-weight: 800; line-height: 1.2; overflow-wrap: anywhere; }
+.blocks__row span { font-family: var(--display); font-size: 18px; }
+.b1 { background: #3A4A14; color: #E4F6A8; }
+.b2 { background: #6F8F1E; color: #F4FBDD; }
+.b3 { background: var(--lime); color: var(--ink); }
+.b4 { background: #F4F4F2; color: var(--ink); align-items: center; }
+.b4 b { writing-mode: vertical-rl; }
+.blocks__meet { display: flex; justify-content: flex-end; }
+.blocks__meet span { font-size: 12px; font-weight: 800; padding: 4px 10px; border-radius: 99px; background: var(--red); color: #fff; position: relative; }
+.blocks__meet span::before { content: ""; position: absolute; right: 14px; top: -9px; border: 5px solid transparent; border-bottom-color: var(--red); }
+
+.ready { list-style: none; margin: auto 0 0; padding: 0; display: grid; gap: 9px; }
+.ready li { display: grid; grid-template-columns: 1fr auto; gap: 4px 10px; font-size: 13px; font-weight: 700; }
+.ready span { color: var(--mute-d); }
+.ready i { grid-column: 1 / -1; height: 6px; border-radius: 6px; background: linear-gradient(90deg, var(--lime) calc(var(--v) * 100%), var(--ink-3) 0); }
+.ready i.mid { background: linear-gradient(90deg, var(--amber) calc(var(--v) * 100%), var(--ink-3) 0); }
+
+.auto { margin-top: auto; display: grid; gap: 6px; }
+.auto__row { background: var(--ink-3); border-radius: 16px; padding: 12px 14px; display: grid; grid-template-columns: 1fr auto; gap: 2px 8px; }
+.auto__row span { grid-column: 1 / -1; font-size: 12px; font-weight: 700; color: var(--mute-d); }
+.auto__row b { font-size: 19px; letter-spacing: -.01em; }
+.auto__row em { font-style: normal; font-size: 13px; font-weight: 800; color: var(--amber); align-self: center; }
+.auto__row s { font-size: 13px; color: var(--mute-d); align-self: center; }
+.auto__row--on { background: var(--lime); color: var(--ink); }
+.auto__row--on span, .auto__row--on s { color: rgba(13, 13, 14, .6); }
+.auto__arrow { height: 22px; position: relative; }
+.auto__arrow::before { content: ""; position: absolute; left: 50%; top: 2px; width: 2px; height: 14px; background: var(--mute-d); }
+.auto__arrow::after { content: ""; position: absolute; left: calc(50% - 4px); top: 12px; border: 5px solid transparent; border-top-color: var(--mute-d); }
+
+.trend { width: 100%; height: auto; margin-top: auto; overflow: visible; }
+.trend polyline { fill: none; stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 400; stroke-dashoffset: calc(400 * (1 - var(--draw, 1))); }
+.trend__perf { stroke: var(--lime); }
+.trend__fat { stroke: var(--red); }
+.trend__key { margin: 0 !important; display: flex; gap: 14px; font-size: 12px !important; font-weight: 700; }
+.trend__key span::before { content: ""; display: inline-block; width: 10px; height: 3px; border-radius: 2px; margin-right: 6px; vertical-align: 3px; }
+.trend__key .k1::before { background: var(--lime); }
+.trend__key .k2::before { background: var(--red); }
+
+.vol { margin-top: auto; display: grid; gap: 8px; position: relative; }
+.vol div { display: grid; grid-template-columns: 64px 1fr 22px; align-items: center; gap: 8px; font-size: 13px; font-weight: 700; }
+.vol span { color: var(--mute-d); }
+.vol b { font-family: var(--display); font-weight: 400; font-size: 16px; text-align: right; }
+.vol i {
+  height: 10px; border-radius: 10px; position: relative;
+  background:
+    linear-gradient(90deg, transparent calc(10 / 24 * 100% - 1px), rgba(255,255,255,.55) 0 calc(10 / 24 * 100% + 1px), transparent 0 calc(20 / 24 * 100% - 1px), rgba(255,255,255,.55) 0 calc(20 / 24 * 100% + 1px), transparent 0),
+    linear-gradient(90deg, var(--lime) calc(var(--v) / 24 * 100%), var(--ink-3) 0);
+}
+.vol .lo i { background:
+    linear-gradient(90deg, transparent calc(10 / 24 * 100% - 1px), rgba(255,255,255,.55) 0 calc(10 / 24 * 100% + 1px), transparent 0 calc(20 / 24 * 100% - 1px), rgba(255,255,255,.55) 0 calc(20 / 24 * 100% + 1px), transparent 0),
+    linear-gradient(90deg, var(--amber) calc(var(--v) / 24 * 100%), var(--ink-3) 0); }
+.vol .hi i { background:
+    linear-gradient(90deg, transparent calc(10 / 24 * 100% - 1px), rgba(255,255,255,.55) 0 calc(10 / 24 * 100% + 1px), transparent 0 calc(20 / 24 * 100% - 1px), rgba(255,255,255,.55) 0 calc(20 / 24 * 100% + 1px), transparent 0),
+    linear-gradient(90deg, var(--red) calc(var(--v) / 24 * 100%), var(--ink-3) 0); }
+.vol__key { margin: 2px 0 0; display: flex; justify-content: space-between; padding: 0 30px 0 72px; font-size: 11px; font-weight: 800; color: var(--mute-d); }
+
+.food { margin-top: auto; display: grid; gap: 10px; }
+.food__kcal { margin: 0; display: flex; align-items: baseline; gap: 8px; }
+.food__kcal b { font-family: var(--display); font-weight: 400; font-size: 52px; line-height: 1; color: var(--lime); }
+.food__kcal span { font-size: 13px; font-weight: 700; color: var(--mute-d); }
+.food__bar { display: flex; gap: 3px; height: 12px; }
+.food__bar i { flex: var(--v) 1 0; border-radius: 4px; }
+.food .p { --dot: #7FD4FF; }
+.food .c { --dot: var(--lime); }
+.food .f { --dot: var(--amber); }
+.food__bar i { background: var(--dot); }
+.food__key { margin: 0; display: flex; flex-wrap: wrap; gap: 4px 12px; font-size: 12px; font-weight: 700; color: var(--mute-d); }
+.food__key span::before { content: ""; display: inline-block; width: 8px; height: 8px; border-radius: 50%; background: var(--dot); margin-right: 5px; }
+.food__trend { margin: 0; font-size: 13px; font-weight: 700; padding: 8px 12px; border-radius: 12px; background: var(--ink-3); }
+
+.ramp { list-style: none; margin: auto 0 0; padding: 0; display: grid; gap: 6px; }
+.ramp li { display: grid; grid-template-columns: 1fr; position: relative; font-size: 13px; font-weight: 700; }
+.ramp span { position: relative; z-index: 1; padding: 7px 10px; }
+.ramp i { position: absolute; inset: 0; width: calc(var(--v) * 100%); border-radius: 10px; background: var(--ink-3); }
+.ramp .main i { background: var(--lime); }
+.ramp .main span { color: var(--ink); }
+
+@media (max-width: 760px) {
+  .plus__stick { padding-top: 56px; gap: 18px; }
+  .plus .lede { display: none; }
+  .plus h2 { font-size: clamp(28px, 7vw, 40px); }
+  .pc { width: 78vw; min-height: 0; height: min(54vh, 420px); }
+}
+
 /* ── 7. 기능 타일 ──────────────────────────────────── */
 
 .more { padding: clamp(100px, 14vw, 180px) 0; background: var(--white); }
@@ -573,8 +686,10 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 /* ── 움직임 줄이기 ─────────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
-  .hero, .say, .coach, .recov { height: auto; }
-  .hero__stick, .say__stick, .coach__stick, .recov__stick { position: relative; height: auto; min-height: 0; padding: 80px 0; }
+  .hero, .say, .coach, .recov, .plus { height: auto !important; }
+  .hero__stick, .say__stick, .coach__stick, .recov__stick, .plus__stick { position: relative; height: auto; min-height: 0; padding: 80px 0; }
+  .plus__rail { overflow-x: auto; }
+  .plus__track { transform: none; }
   .hero__stick { min-height: 92vh; }
   .js .reveal, .bar, .tag, .set, .bubble, .rest { opacity: 1 !important; transform: none !important; transition: none !important; }
   .say__text .w { color: var(--ink); }
