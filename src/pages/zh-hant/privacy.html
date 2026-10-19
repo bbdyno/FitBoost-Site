@@ -42,6 +42,10 @@
 <h3>通知（選用）</h3>
 <p>休息計時器與訓練行程通知<strong>直接在裝置上</strong>產生，不使用推播伺服器。</p>
 
+<h3>取得應用程式設定與更新提示</h3>
+<p>應用程式會從 Google 的 <strong>Firebase Remote Config</strong> 取得設定值，用於開啟或關閉廣告、調整廣告頻率與位置，以及決定需要提示更新的版本。此時，Firebase 安裝 ID（每次安裝應用程式時新產生的隨機識別碼）、應用程式版本、裝置類型、語言與時區會傳送給 Google。</p>
+<p>為確認是否有新版本，應用程式在 Android 上會向 Google Play、在 iPhone 上會向 Apple 的應用程式資訊查詢（itunes.apple.com）詢問本應用程式的最新版本。不會傳送訓練紀錄或個人資料。</p>
+
 <h3>使用統計資料</h3>
 <p>為了解哪些功能被使用並改善應用程式，我們透過 Google 的 <strong>Firebase Analytics</strong> 蒐集使用統計資料。蒐集的內容如下：</p>
 <ul>
@@ -76,6 +80,11 @@
       <td>應用程式使用事件、應用程式執行個體 ID、國家或地區、裝置與應用程式版本</td>
     </tr>
     <tr>
+      <td>Google Firebase Remote Config</td>
+      <td>取得廣告與更新提示的設定值</td>
+      <td>Firebase 安裝 ID、應用程式版本、裝置類型、語言與時區</td>
+    </tr>
+    <tr>
       <td>Apple App Store</td>
       <td>訂閱付款與收據驗證</td>
       <td>交易資訊（由 Apple 處理）</td>
@@ -90,11 +99,10 @@
 
 <h3>廣告</h3>
 <p>免費使用期間，應用程式會顯示 Google AdMob 廣告，包括訓練畫面與休息計時器等多個畫面上的橫幅及其他廣告、穿插在清單中的廣告、在完成訓練等自然空檔顯示的全螢幕廣告、開啟應用程式時的廣告，以及由您自行選擇觀看的獎勵廣告。訓練過程中不會顯示覆蓋整個畫面的廣告，付款畫面不會顯示廣告。</p>
-<p>為顯示廣告並衡量成效，廣告識別碼、裝置與應用程式資訊，以及根據 IP 位址推測的大略位置會傳送給 Google。訓練與身體紀錄不會用於廣告。在 iPhone 上，僅在您允許追蹤時才會使用廣告識別碼（IDFA），否則會顯示非個人化廣告。在歐洲經濟區與英國，您可以在應用程式首次顯示的同意視窗中選擇是否接收個人化廣告。</p>
+<p>為顯示廣告並衡量成效，廣告識別碼、裝置與應用程式資訊，以及根據 IP 位址推測的大略位置會傳送給 Google。訓練與身體紀錄不會用於廣告。在 iPhone 上，應用程式不會請求追蹤許可，也不會讀取廣告識別碼（IDFA），顯示的是非個人化廣告。在 Android 上，廣告識別碼（AAID）會傳送給 Google，目前顯示的是非個人化廣告。若改為個人化廣告，我們會先更新本文件。在歐洲經濟區與英國，您可以在應用程式首次顯示的同意視窗以及選單中的「廣告隱私設定」裡選擇或變更廣告同意。</p>
 <p><strong>訂閱 PRO 或 PRO+ 後，所有廣告都會消失。</strong></p>
 <ul>
   <li>Google 廣告政策：<a href="https://policies.google.com/technologies/ads" rel="noopener">policies.google.com/technologies/ads</a></li>
-  <li>iOS：設定 → 隱私權與安全性 → 追蹤</li>
   <li>Android：設定 → Google → 廣告</li>
 </ul>
 
