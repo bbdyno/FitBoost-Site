@@ -85,6 +85,10 @@
 <h3>通知（可选）</h3>
 <p>休息计时器和训练日程通知<strong>直接在设备上</strong>生成，不使用推送服务器。</p>
 
+<h3>获取应用设置与更新提示</h3>
+<p>应用会从 Google 的 <strong>Firebase Remote Config</strong> 获取设置值，用于开启或关闭广告、调整广告频率和位置，以及确定需要提示更新的版本。此时，Firebase 安装 ID（每次安装应用时新生成的随机标识符）、应用版本、设备类型、语言和时区会发送给 Google。</p>
+<p>为确认是否有新版本，应用在 Android 上会向 Google Play、在 iPhone 上会向 Apple 的应用信息查询（itunes.apple.com）询问本应用的最新版本。不会发送训练记录或个人信息。</p>
+
 <h3>使用统计数据</h3>
 <p>为了解哪些功能被使用并改进应用，我们通过 Google 的 <strong>Firebase Analytics</strong> 收集使用统计数据。收集的内容如下：</p>
 <ul>
@@ -119,6 +123,11 @@
       <td>应用使用事件、应用实例 ID、国家或地区、设备及应用版本</td>
     </tr>
     <tr>
+      <td>Google Firebase Remote Config</td>
+      <td>获取广告和更新提示的设置值</td>
+      <td>Firebase 安装 ID、应用版本、设备类型、语言和时区</td>
+    </tr>
+    <tr>
       <td>Apple App Store</td>
       <td>订阅付款及收据验证</td>
       <td>交易信息（由 Apple 处理）</td>
@@ -133,11 +142,10 @@
 
 <h3>广告</h3>
 <p>免费使用期间，应用会显示 Google AdMob 广告，包括训练页面和休息计时器等多个页面上的横幅及其他广告、列表中穿插的广告、在完成训练等自然间歇时显示的全屏广告、打开应用时的广告，以及由您自行选择观看的激励广告。训练过程中不会显示覆盖整个屏幕的广告，付款页面不会显示广告。</p>
-<p>为展示广告并衡量效果，广告标识符、设备及应用信息以及根据 IP 地址推测的大致位置会发送给 Google。训练和身体记录不会用于广告。在 iPhone 上，仅当您允许跟踪时才会使用广告标识符（IDFA），否则显示非个性化广告。在欧洲经济区和英国，您可以在应用首次显示的同意窗口中选择是否接收个性化广告。</p>
+<p>为展示广告并衡量效果，广告标识符、设备及应用信息以及根据 IP 地址推测的大致位置会发送给 Google。训练和身体记录不会用于广告。在 iPhone 上，应用不会请求跟踪许可，也不会读取广告标识符（IDFA），显示的是非个性化广告。在 Android 上，广告标识符（AAID）会发送给 Google，目前显示的是非个性化广告。如果改为个性化广告，我们会先更新本文件。在欧洲经济区和英国，您可以在应用首次显示的同意窗口以及菜单中的“广告隐私设置”里选择或更改广告同意。</p>
 <p><strong>订阅 PRO 或 PRO+ 后，所有广告都将消失。</strong></p>
 <ul>
   <li>Google 广告政策：<a href="https://policies.google.com/technologies/ads" rel="noopener">policies.google.com/technologies/ads</a></li>
-  <li>iOS：设置 → 隐私与安全性 → 跟踪</li>
   <li>Android：设置 → Google → 广告</li>
 </ul>
 

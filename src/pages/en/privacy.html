@@ -42,6 +42,10 @@
 <h3>Notifications (optional)</h3>
 <p>Rest timer and workout schedule notifications are generated <strong>directly on your device</strong>. We do not use a push server.</p>
 
+<h3>App settings and update notices</h3>
+<p>The app receives settings from Google's <strong>Firebase Remote Config</strong> that turn ads on or off, change how often and where they appear, and set which versions are asked to update. For this, the Firebase installation ID (a random identifier created each time the app is installed), the app version, the device type, and the language and time zone are sent to Google.</p>
+<p>To check whether a new version is available, the app asks Google Play on Android, and Apple's app lookup (itunes.apple.com) on iPhone, for the latest version of this app. Your workout records and personal information are not sent.</p>
+
 <h3>Usage statistics</h3>
 <p>To understand which features are used and to improve the app, we collect usage statistics with Google's <strong>Firebase Analytics</strong>. We collect the following.</p>
 <ul>
@@ -76,6 +80,11 @@
       <td>App usage events, app instance ID, country, device and app version</td>
     </tr>
     <tr>
+      <td>Google Firebase Remote Config</td>
+      <td>Receiving settings for ads and update notices</td>
+      <td>Firebase installation ID, app version, device type, language and time zone</td>
+    </tr>
+    <tr>
       <td>Apple App Store</td>
       <td>Subscription payments and receipt verification</td>
       <td>Transaction information (handled by Apple)</td>
@@ -90,11 +99,10 @@
 
 <h3>Ads</h3>
 <p>While you use FitBoost for free, ads from Google AdMob appear: banners and other ads on many screens, including the workout screen and the rest timer; ads mixed into lists; full-screen ads at natural breaks such as after you finish a workout; ads when you open the app; and rewarded ads that you choose to watch. We do not show full-screen ads in the middle of a workout, and we do not show ads on payment screens.</p>
-<p>To show ads and measure their performance, the advertising identifier, device and app information, and an approximate location estimated from your IP address are sent to Google. Your workout and body records are not used for ads. On iPhone, the advertising identifier (IDFA) is used only if you allow tracking; otherwise you see non-personalized ads. In the European Economic Area and the UK, you can choose whether to receive personalized ads in the consent dialog shown the first time in the app.</p>
+<p>To show ads and measure their performance, the advertising identifier, device and app information, and an approximate location estimated from your IP address are sent to Google. Your workout and body records are not used for ads. On iPhone, the app does not ask for tracking permission and does not read the advertising identifier (IDFA); you see non-personalized ads. On Android, the advertising identifier (AAID) is sent to Google, and the app currently shows non-personalized ads. If we switch to personalized ads, we will update this document first. In the European Economic Area and the UK, you can give or change your ad consent in the consent dialog shown the first time in the app and in Ad privacy settings in the menu.</p>
 <p><strong>Subscribing to PRO or PRO+ removes all ads.</strong></p>
 <ul>
   <li>Google advertising policy: <a href="https://policies.google.com/technologies/ads" rel="noopener">policies.google.com/technologies/ads</a></li>
-  <li>iOS: Settings → Privacy &amp; Security → Tracking</li>
   <li>Android: Settings → Google → Ads</li>
 </ul>
 
