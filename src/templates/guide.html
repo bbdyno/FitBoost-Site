@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="{{htmlLang}}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>{{docTitle}} — FitBoost</title>
+<meta name="description" content="{{docDescription}}">
+<meta name="theme-color" content="#EDEDE8">
+<link rel="icon" href="{{root}}assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="{{root}}assets/icon-180.png">
+<link rel="canonical" href="{{siteUrl}}{{path}}">
+{{alternates}}
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="{{root}}assets/site.css">
+</head>
+<body class="lang-{{lang}} page-doc page-guide">
+
+{{nav}}
+
+<main class="doc guide wrap">
+{{content}}
+</main>
+
+{{footer}}
+
+<script src="{{root}}assets/site.js" defer></script>
+<script src="{{root}}assets/guide.js" defer></script>
+</body>
+</html>

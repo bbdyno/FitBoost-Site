@@ -1,0 +1,40 @@
+<section id="plates" data-ask="バーにどのプレートを付ければいいですか|プレート計算機の使い方|片側に何キロ付けますか" data-keys="プレート バーベル バー 片側 計算 付ける 重量">
+<h2>プレート計算機</h2>
+<p class="lead">目標重量を入れると、片側に付けるプレートを案内します。無料です。</p>
+<p>{{> tabMenu}}の{{> calculators}}欄で{{> plateChip}}をタップします。バーの重さと手持ちのプレートは<a href="#equipment">{{> gymTitle}}</a>に合わせ、計算機内の{{> plateCalcChange}}で別の器具を選びます。</p>
+</section>
+
+<section id="one-rm" data-ask="1RMの計算方法|最大重量を推定したい|5x5や531の重量を計算" data-keys="1rm 最大重量 推定 計算機 強度 プログラム 5x5 531 gvt パーセント">
+<h2>1RMと強度プログラムの計算機</h2>
+<p class="lead">重量と回数（15回以下）を入れると1RMを推定します。</p>
+<p>{{> l1rmCalculator}}で{{> oneRmToProgram}}をタップすると{{> programCalculator}}に進み、その1RMから5×5、5/3/1、8/6/3、GVTのセットごとの重量を計算します。</p>
+</section>
+
+<section id="calculators" data-ask="有酸素のカロリー計算|1日のカロリー計算|PFC計算機|ランニングマシンのカロリー" data-keys="カロリー 有酸素 ランニングマシン トレッドミル ローイング エルゴ マクロ pfc たんぱく質 計算機">
+<h2>有酸素・カロリー・マクロ計算機</h2>
+<p class="lead">{{> tabMenu}}の{{> calculators}}欄から有酸素、カロリー、マクロの計算機を開きます。</p>
+<ul>
+<li>{{> cardioCalculatorTitle}}：ランニングマシンの速度・傾斜やエルゴのペースから消費カロリーを計算します。</li>
+<li>{{> calorieCalculator}}：運動強度（MET）と時間、体重から消費カロリーを推定します。</li>
+<li>{{> macroCalculator}}：目標カロリーと炭水化物・たんぱく質・脂質を計算します。</li>
+</ul>
+<p>すべてのツールは{{> tabMenu > menuAllTools}}にまとまっています。</p>
+</section>
+
+<section id="equipment" data-ask="ジムのプレートに合わせて重量を提案してほしい|バーの重さを変えたい|ダンベルの重量間隔を設定|器具を登録" data-keys="器具 ジム バー バーベル プレート ダンベル ケトルベル マシン 間隔 登録 プロフィール">
+<h2>マイ器具</h2>
+<p class="lead">バーとプレート、ダンベル・ケトルベルの間隔、マシン1段の重さを入れておくと、プレート計算がその器具に合わせられます。</p>
+<p>{{> tabMenu > setAppSettings > settingsWorkout > gymTitle}}で開きます。無料は1か所だけ登録でき、複数の場所の登録や、おすすめ重量をその器具で作れる重量に合わせる機能はPROです。</p>
+</section>
+
+<section id="glossary" data-ask="ドロップセットとは|トレーニング用語の意味が知りたい|RPEとは|用語集" data-keys="用語 用語集 意味 定義 ドロップセット rpe rir ディロード トップセット スーパーセット amrap">
+<h2>トレーニング用語集</h2>
+<p class="lead">ドロップセットやRPEのような見慣れない言葉を{{> tabMenu > glTitle}}で調べられます。</p>
+<p>用語はセット・強度・計画の3つに分かれ、それぞれ何か、どうやるか、いつ使うか、注意点を書いています。</p>
+</section>
+
+<section id="inbody" data-ask="InBodyの結果を入れたい|体組成データを取り込む" data-keys="inbody インボディ 体組成 体脂肪 骨格筋 csv json 取り込み 読み込み">
+<h2>体組成データの読み込み</h2>
+<p class="lead">体組成の測定結果をCSVかJSONファイルから読み込み、身体記録に入れます。</p>
+<p>{{> tabMenu > menuAllTools > importBodyComposition}}でファイルを選びます。</p>
+</section>

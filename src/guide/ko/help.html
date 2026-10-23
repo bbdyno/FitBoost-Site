@@ -1,0 +1,77 @@
+<section id="watch" data-ask="시계가 연결이 안 돼요|시계 연결 안 됨|애플워치에 FitBoost가 안 보여요|갤럭시워치 연결 안 됨|시계로 보내지 못했어요" data-keys="시계 워치 연결 안됨 실패 오류 대기 설치 짝 페어링">
+<h2>시계가 연결되지 않을 때</h2>
+<p class="lead">{{> tabMenu > setAppSettings > setWatch}}의 {{> setWatchStatus}}에 뜨는 문구로 원인을 찾습니다.</p>
+<ul>
+<li>{{" watchNotPaired}}: 휴대폰과 시계가 짝지어져 있는지 시계 앱(Watch 앱·Galaxy Wearable)에서 확인하세요.</li>
+<li>{{" watchAppMissing}}: <a href="watch.html#apple-watch">Apple Watch</a>나 <a href="watch.html#galaxy-watch">갤럭시 워치</a>에 FitBoost를 설치하세요.</li>
+<li>{{" watchWaiting}}: 시계에서 FitBoost를 한 번 열어 두세요.</li>
+<li>{{" watchUnsupported}}: 이 휴대폰에서는 시계를 쓸 수 없습니다.</li>
+</ul>
+<p>{{> setWatchLink}}가 켜져 있는지도 확인하세요. 운동을 시계로 보내려면 휴대폰에서 운동을 먼저 시작해야 합니다.</p>
+</section>
+
+<section id="garmin" data-ask="가민이 연결이 안 돼요|가민 커넥트 앱 설치하라고 떠요" data-keys="가민 garmin 실패 커넥트 connect iq 오류 안됨">
+<h2>가민이 연결되지 않을 때</h2>
+<p class="lead">{{> setGarminConnect}}를 누르면 뜨는 문구를 따라갑니다.</p>
+<ul>
+<li>{{" setGarminNeedsApp}}: 휴대폰에 가민 커넥트 앱을 설치하고 시계를 연결합니다.</li>
+<li>{{" setGarminChoose}}: 가민 커넥트 앱이 열리면 FitBoost를 쓸 시계를 고릅니다.</li>
+<li>{{" setGarminInstallWatchApp}}</li>
+</ul>
+<p>시계에서 FitBoost를 열었는데 운동이 안 오면 휴대폰에서 운동을 먼저 시작했는지 확인하세요. 자세한 순서는 <a href="watch.html#garmin">가민 시계 연결하기</a>에 있습니다.</p>
+</section>
+
+<section id="sync" data-ask="동기화가 안 돼요|아이클라우드 동기화 실패|구글 드라이브 권한|다른 기기에 기록이 안 보여요" data-keys="동기화 실패 안됨 오류 아이클라우드 구글드라이브 권한 저장공간 업데이트 인터넷">
+<h2>동기화가 안 될 때</h2>
+<p class="lead">{{> tabMenu > setAppSettings > cloudSyncTitle}}에 뜨는 문구를 확인합니다.</p>
+<ul>
+<li>{{" cloudSyncFailICloudSignedOut}}</li>
+<li>{{" cloudSyncFailDrivePermission}}</li>
+<li>{{" cloudSyncFailQuotaICloud}} / {{" cloudSyncFailQuotaDrive}}: 저장 공간을 비우거나 늘리세요.</li>
+<li>{{" cloudSyncFailUpdateRequired}}</li>
+<li>{{" cloudSyncFailNetwork}}</li>
+</ul>
+<p>두 기기가 같은 iCloud 또는 Google 계정인지, 둘 다 동기화를 켰는지 확인하세요. iPhone과 Android끼리는 동기화되지 않습니다. <a href="sync.html#new-phone">백업 파일로 옮기세요</a>.</p>
+</section>
+
+<section id="backup" data-ask="백업 파일이 안 열려요|백업 암호를 잊어버렸어요|백업 파일 오류|암호가 맞지 않습니다|회원 파일이 아니에요라고 떠요" data-keys="백업 불러오기 실패 오류 손상 암호 비밀번호 잊어버림 까먹음 회원파일 업데이트">
+<h2>백업 파일이 열리지 않을 때</h2>
+<p class="lead">불러오기에 실패해도 이 기기의 기록은 그대로입니다. 뜬 문구를 확인하세요.</p>
+<ul>
+<li>{{" backupErrorNotBackup}}: .fitboost 파일인지 확인하세요.</li>
+<li>{{" backupErrorNewer}}</li>
+<li>{{" backupErrorCorrupt}}: 파일을 다시 받아 보세요.</li>
+<li>{{" backupWrongPassword}}: 만들 때 건 암호를 넣어야 합니다. 잊은 암호는 찾을 수 없습니다.</li>
+<li>{{" memberImportNotMember}}</li>
+</ul>
+</section>
+
+<section id="pro-missing" data-ask="PRO를 샀는데 적용이 안 돼요|결제했는데 PRO가 안 돼요|구독했는데 무료로 나와요|아이폰에서 산 PRO를 안드로이드에서" data-keys="구독 결제 적용 안됨 무료 복원 pro 프로 사라짐 다른기기">
+<h2>구독했는데 PRO가 안 보일 때</h2>
+<p class="lead">FitBoost PRO 화면에서 {{> restorePurchases}}을 누르세요.</p>
+<p>결제한 Apple 또는 Google 계정으로 로그인되어 있어야 합니다. iPhone에서 산 구독은 Android에서, Android에서 산 구독은 iPhone에서 복원되지 않습니다. 자세한 내용은 <a href="subscription.html#restore">구매 복원</a>을 보세요.</p>
+</section>
+
+<section id="workout-lost" data-ask="운동을 끝냈는데 기록이 없어요|운동 기록이 저장되지 않았어요|방금 한 운동이 사라졌어요" data-keys="기록 없음 사라짐 저장 안됨 운동종료 운동완료 날아감">
+<h2>방금 한 운동이 기록에 없을 때</h2>
+<p class="lead">운동을 {{> workoutFinish}}로 끝냈다면 저장되지 않습니다. 기록은 {{> finishWorkout}}을 눌러야 남습니다.</p>
+<p>이미 없어진 운동은 {{> tabRecord > histAddWorkout > recordPastWorkout}}로 다시 적어 넣을 수 있습니다. 가민 시계로 한 운동이라면 휴대폰을 가까이 두고 시계 앱에서 다시 보내 보세요.</p>
+</section>
+
+<section id="cant-start" data-ask="빠른기록이 안 열려요|진행 중인 운동을 먼저 완료해 주세요라고 떠요|새 운동이 시작이 안 돼요" data-keys="진행중 운동 먼저 완료 빠른기록 안열림 시작 안됨">
+<h2>진행 중인 운동이 있다고 할 때</h2>
+<p class="lead">{{" finishWorkoutProgressFirst}} 문구가 뜨면 열려 있는 운동이 있는 것입니다.</p>
+<p>{{> tabHome}} 오늘 카드의 {{> homeContinueWorkout}} 버튼으로 돌아가 {{> finishWorkout}}을 누르거나, 필요 없으면 {{> workoutFinish}}로 버린 뒤 다시 시작하세요.</p>
+</section>
+
+<section id="health" data-ask="건강 앱 연결이 안 돼요|애플 건강에 운동이 안 들어가요|새로 가져올 운동이 없다고 떠요" data-keys="건강 연결 실패 권한 헬스 healthkit health connect 가져오기 없음">
+<h2>건강 앱 연결이 안 될 때</h2>
+<p class="lead">{{" setHealthLinkFailed}} 문구가 뜨면 기기의 건강 앱 권한을 확인합니다.</p>
+<p>iPhone은 설정 → 개인정보 보호 및 보안 → 건강 → FitBoost에서, Android는 Health Connect의 앱 권한에서 FitBoost가 허용되어 있는지 확인하세요. {{" setWatchImportEmpty}}는 최근 30일에 새로 가져올 운동이 없다는 뜻입니다.</p>
+</section>
+
+<section id="notifications" data-ask="휴식 타이머 알림이 안 와요|잠금화면에 운동이 안 보여요|라이브 액티비티가 안 떠요" data-keys="알림 안옴 권한 타이머 잠금화면 라이브 액티비티 실시간 현황">
+<h2>알림·잠금화면이 안 보일 때</h2>
+<p class="lead">{{" setNotificationPermissionDenied}}</p>
+<p>잠금화면 라이브 액티비티가 꺼져 있으면 앱이 {{" surfaceTurnOnInSettings}}라고 안내합니다. 알림도 허용해야 보입니다. <a href="settings.html#widgets">위젯과 잠금화면</a>도 보세요.</p>
+</section>

@@ -1,0 +1,53 @@
+<section id="create" data-ask="ルーティンの作り方|新しいルーティンを追加|過去のワークアウトをルーティンにしたい|ルーティンはいくつまで作れますか" data-keys="ルーティン 作る 追加 新規 テンプレート 保存 取り込み 上限 3つ">
+<h2>ルーティンを作る</h2>
+<p class="lead">{{> tabHome}}の{{> homeMyRoutines}}欄で{{> actionAdd}}をタップします。</p>
+<ol class="steps">
+<li>{{> tabHome}}の{{> homeMyRoutines}}欄で{{> actionAdd}}をタップします。</li>
+<li>{{> createEmptyRoutine}}か{{> importFromPastRecord}}を選びます。</li>
+<li>種目とセットを入れて保存します。</li>
+</ol>
+<p>無料ではルーティンを3つまで作れ、PROは無制限です。ワークアウトを終えるときに、変えた構成をルーティンに反映することもできます。</p>
+</section>
+
+<section id="manage" data-ask="ルーティンを編集したい|ルーティンを削除|ルーティンをコピーしたい|ルーティン一覧はどこですか" data-keys="ルーティン 編集 修正 複製 コピー 削除 一覧 おすすめ 人気 公開">
+<h2>ルーティンの編集・複製・削除</h2>
+<p class="lead">ルーティン画面でルーティンの⋯をタップすると、{{> routineEdit}}、{{> duplicateRoutine}}、{{> deleteRoutine}}が表示されます。</p>
+<p>ルーティン画面は{{> tabHome}}の今日のカードの⋯ → {{> chooseRoutine}}で開きます。{{> homeMyRoutines}}、{{> popularPublic}}、{{> scheduledWorkouts}}の3つのタブがあり、{{> popularPublic}}では{{> fitboostPicks}}から選んで使えます。</p>
+<p class="tip">ルーティンを削除すると、そのルーティンで入れた予定と通知も一緒に削除されます。</p>
+</section>
+
+<section id="auto-increase" data-ask="ルーティンの重量を自動で上げたい|漸進性過負荷を自動で|次はどれくらい重量を上げればいいですか" data-keys="自動 増量 重量 上げる 漸進性過負荷 プログレッション ルーティン">
+<h2>重量を自動で上げる <span class="pro">PRO</span></h2>
+<p class="lead">ルーティン編集で{{> progToggleTitle}}をオンにすると、前回すべてのセットで目標回数をこなした種目は、次回の重量を上げておきます。</p>
+<p>ワークアウト中にセットごとに次の重量を案内する機能は、<a href="coach.html#next-weight">ワークアウト中のコーチ</a>を見てください。</p>
+</section>
+
+<section id="builder" data-ask="プログラムを組んでくれますか|自分に合うプログラムを作る|初心者で何をすればいいかわからない|週3日のプログラム|分割メニューのおすすめ" data-keys="プログラム 組む おすすめ ルーティン 初心者 分割 週3日 週4日 目標 器具 自宅 ジム 自重">
+<h2>自分に合うプログラムを作る</h2>
+<p class="lead">目標・スケジュール・器具を選ぶと、1週間のプログラムを組んでルーティンとして保存します。</p>
+<ol class="steps">
+<li>{{> tabHome > homePrograms > builderEntryTitle}}をタップします。</li>
+<li>目標、トレーニング経験・週の日数・1回の時間、器具（ジム・自宅のダンベル・自重）を選びます。</li>
+<li>有酸素、もっと鍛えたい部位、休ませる部位を決めて{{> builderGenerate}}をタップします。</li>
+<li>プレビューを確認してルーティンとして保存します。</li>
+</ol>
+<p>重量は前もって入れず、トレーニング当日の記録を見て決めます。無料はルーティン3つの上限内で保存でき、{{> builderShuffle}}と{{> builderRegenTitle}}はPROです。</p>
+</section>
+
+<section id="programs" data-ask="既存のプログラムに沿ってやりたい|有名なトレーニングプログラム|プログラムの始め方" data-keys="プログラム 既存 有名 取り組む 開始 予定 ボディビル パワーリフティング">
+<h2>用意されたプログラムに取り組む</h2>
+<p class="lead">{{> tabHome > homePrograms}}の下のほうから用意されたプログラムを選んで{{> startProgram}}をタップすると、予定がホームに入ります。</p>
+<p>同じ画面の上には{{> builderEntryTitle}}、<a href="coach.html#circuit">{{> circuitTitle}}</a>、<a href="coach.html#hybrid">{{> hybridTitle}}</a>の入口があります。</p>
+</section>
+
+<section id="custom-exercise" data-ask="一覧にない種目を追加したい|自分の種目を作る|自分の種目はいくつまで作れますか" data-keys="自分の種目 カスタム 追加 ない種目 作成 上限 5つ">
+<h2>自分の種目</h2>
+<p class="lead">一覧にない種目は{{> homeExerciseList > addCustomExercise}}で作ります。</p>
+<p>記録方法（重量・回数、時間など）、主働筋、片側ずつ行う種目かどうかを決めます。無料は5つまで、PROは無制限です。</p>
+</section>
+
+<section id="exercise-list" data-ask="種目のやり方を見たい|フォームの説明|この種目の代わりにできる種目|種目を検索" data-keys="種目一覧 フォーム やり方 説明 ガイド 注意点 コツ 代替 検索 お気に入り 1690">
+<h2>種目一覧と実施ガイド</h2>
+<p class="lead">{{> tabMenu > homeExerciseList}}で1,690種目を探し、種目を開いて説明と注意点を見ます。</p>
+<p>種目の画面には{{> instructions}}、注意点、コツ、自分の記録と統計、{{> alternatives}}があり、{{> logThisExercise}}からすぐ記録を始められます。名前で探したり部位・器具で絞り込んだりでき、よく行う種目はお気に入りに入れておけます。</p>
+</section>

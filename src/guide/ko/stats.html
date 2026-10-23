@@ -1,0 +1,40 @@
+<section id="overview" data-ask="통계 탭에서 뭘 볼 수 있나요|이번 주 운동량 보기|지난주와 비교|볼륨 그래프" data-keys="통계 그래프 볼륨 추세 이번주 지난주 비교 목표 사용근육 기간">
+<h2>통계 탭에서 보는 것</h2>
+<p class="lead">{{> tabStats}}에는 이번 주 목표와 근육 회복, 근력 균형, 볼륨 추세가 위에서부터 차례로 있습니다.</p>
+<ul>
+<li>{{> statsWeekVsLastWeek}}: 이번 주 운동을 지난주와 비교합니다.</li>
+<li>{{> volumeProgressTrend}}, {{> statsPeriodVolume}}: 볼륨이 어떻게 늘었는지 봅니다.</li>
+<li>{{> musclesUsed}}: 7일·30일·90일·전체 기간에 쓴 근육을 봅니다.</li>
+<li>{{> deeperAnalysis}}: {{> smartWeightGuide}}와 {{> weeklyCoachingReport}}로 들어갑니다.</li>
+</ul>
+</section>
+
+<section id="recovery" data-ask="근육 회복은 어떻게 계산하나요|어느 부위가 아직 덜 회복됐나요|오늘 어디 운동해야 하나요|회복 지도" data-keys="회복 근육 피로 지도 부위 쉬기 수면 통증 회복도 퍼센트">
+<h2>근육 회복 지도</h2>
+<p class="lead">부위마다 얼마나 회복됐는지 몸 그림으로 보여 줍니다. 무료입니다.</p>
+<p>여유를 4회 이하로 남긴 힘든 세트를 세어, 주동근은 한 세트, 함께 쓴 근육은 반 세트로 넣습니다. <a href="health.html#what">건강 앱</a>에서 가져온 수면이 6시간보다 짧으면 회복을 늦게 잡습니다. 아픈 곳은 {{> painRecordAction}}으로 남길 수 있습니다.</p>
+</section>
+
+<section id="balance" data-ask="근력 균형이 뭔가요|스쿼트 벤치 데드 비율|약한 부위 보완|내 근력 수준" data-keys="근력 균형 비율 3대 스쿼트 벤치 데드리프트 약점 보완 처방 수준 체중대비">
+<h2>근력 균형</h2>
+<p class="lead">최근 8주 기록으로 스쿼트·벤치 프레스·데드리프트 같은 리프트끼리의 비율을 보여 줍니다.</p>
+<p>리프트별 추정 1RM과 체중 대비 수준, 모자란 쪽을 채우는 보완 처방을 루틴에 넣는 것은 PRO입니다. 수준은 프로필에 성별이 있어야 보입니다.</p>
+</section>
+
+<section id="weight-guide" data-ask="몇 회에 몇 킬로를 들어야 하나요|반복 횟수별 무게|스마트 중량 가이드|1RM으로 훈련 무게 계산" data-keys="중량 가이드 반복 횟수 무게 3회 5회 8회 10회 1rm 추정 곡선">
+<h2>스마트 중량 가이드</h2>
+<p class="lead">운동을 고르면 반복 수마다 들 수 있는 무게와 훈련에 권하는 무게를 보여 줍니다.</p>
+<p>{{> tabStats > deeperAnalysis > smartWeightGuide}}에서 엽니다. 무료는 3·5·8·10회 기본 추정값이고, PRO는 내 기록으로 그린 1–15회 반복-중량 곡선으로 다음 무게를 맞춥니다.</p>
+</section>
+
+<section id="weekly-report" data-ask="주간 리포트는 어디서 보나요|이번 주 운동 요약|정체기인지 알고 싶어요" data-keys="주간 리포트 요약 코칭 정체 다음주 제안 분석">
+<h2>주간 코칭 리포트 <span class="pro">PRO</span></h2>
+<p class="lead">한 주를 요약하고 정체 신호와 다음 운동 제안을 보여 줍니다.</p>
+<p>{{> tabStats > deeperAnalysis > weeklyCoachingReport}}에서 엽니다. 리포트의 세트 수 제안을 루틴에 바로 반영하는 것은 PRO+입니다.</p>
+</section>
+
+<section id="share" data-ask="기록을 사진으로 공유하고 싶어요|인스타에 올릴 기록 카드|운동 기록 공유" data-keys="공유 카드 이미지 사진 인스타 sns 자랑 복사">
+<h2>기록 카드 공유</h2>
+<p class="lead">{{> tabStats}}의 {{> shareCardsTooltip}} 버튼으로 기록을 그림 카드로 만들어 다른 앱에 보냅니다.</p>
+<p>한 번의 운동을 글로 보내려면 {{> tabRecord}}에서 기록의 ⋯ → {{> copySharing}}를 씁니다.</p>
+</section>

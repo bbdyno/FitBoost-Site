@@ -26,3 +26,20 @@ python3 tools/build.py
 
 공유 미리보기 그림 `docs/assets/og.png`는 `src/og.html`을 크롬으로 찍어 만듭니다.
 명령은 그 파일 머리에 있습니다.
+
+## 사용 가이드
+
+`docs/guide/`(언어별 `docs/<언어>/guide/`)의 사용 가이드와 물어보기 검색도 같은
+빌드로 만듭니다. 쓰는 규칙은 `tools/guide.py` 머리에 있습니다.
+
+- `src/guide/<언어>/meta.json` 주제 순서·제목·설명과 첫 화면의 자주 찾는 것
+- `src/guide/<언어>/<주제>.html` 주제 본문. 섹션 하나가 검색 항목 하나입니다.
+- `src/guide/<언어>/queries.json` 검색 시험. 질의마다 기대한 섹션이 1위여야 합니다.
+- `src/templates/guide.html` 가이드 틀, `docs/assets/guide.js` 검색과 물어보기 (직접 고침)
+
+메뉴·버튼 이름은 `{{> tabMenu > setAppSettings}}`처럼 앱 문구 키로 적고, 빌드가 옆 폴더의
+앱 저장소(`../FitBoost/lib/l10n/`) 문구로 바꿔 넣습니다. 앱 저장소가 다른 곳에 있으면
+`FITBOOST_APP=경로`로 알려 줍니다. 앱에서 메뉴 이름을 바꿨으면 이 빌드를 다시 돌려
+가이드에도 반영합니다. 키가 없어졌거나, 언어끼리 주제·섹션 구성이 다르거나, 다른 언어
+본문에 한국어가 남았거나, 검색 시험이 어긋나면 빌드가 멈춥니다. 검색 시험에는 `node`가
+필요합니다.

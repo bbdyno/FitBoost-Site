@@ -1,0 +1,61 @@
+<section id="units" data-ask="想改成磅|磅|设置为公斤|更改单位|改成英里" data-keys="单位 磅 lb lbs 公斤 千克 kg 英里 公里 km 重量单位 距离">
+<h2>重量和距离单位</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsGeneral}} 的 {{> setWeightUnit}} 中选择公斤或磅。</p>
+<p>杠铃片计算也会使用所选单位。同一页面还能更改 {{> setLengthUnit}} 和 {{> setWeekStart}}。只想让某个动作用磅记录，可在训练中点 ⋯ → {{> exerciseUnitToLb}}。</p>
+</section>
+
+<section id="language" data-ask="想更改语言|改成英文|支持日语和中文吗" data-keys="语言 英文 英语 日语 中文 韩语 翻译 language">
+<h2>语言</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsLanguage}} 中可选择韩语、英语、日语、简体中文和繁体中文。</p>
+<p>选择 {{> langSystem}} 会跟随设备语言。</p>
+</section>
+
+<section id="theme" data-ask="深色模式|更改主题颜色|让屏幕暗一点" data-keys="深色模式 暗黑模式 浅色 主题 颜色 外观">
+<h2>外观与主题</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsAppearance}} 中选择浅色、深色或 {{> appearanceSystem}}，并在 {{> settingsTheme}} 中选择强调色。</p>
+</section>
+
+<section id="rest-timer" data-ask="更改默认休息时长|关闭休息提示音|熄屏后计时器也要响|自动调整休息时长" data-keys="休息 计时 默认 时长 提示音 声音 音量 后台 倒计时 自动调整 步长">
+<h2>休息计时设置</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsRestTimer}} 中设置默认休息时长、提示音和计时器的行为。</p>
+<ul>
+<li>{{> setDefaultRest}}、{{> setRestStep}}、{{> setRestSound}}</li>
+<li>{{> setBackgroundTimer}}：离开应用后计时器继续运行，结束时提醒你。</li>
+<li>{{> setAdaptiveRest}}：根据刚完成那组的强度和动作类型决定下一次休息。你自己设置的休息，以及例行训练和计划中的休息保持不变。</li>
+</ul>
+</section>
+
+<section id="workout-settings" data-ask="关闭训练中教练建议|用 RIR 代替 RPE|同一个动作加两次|训练时屏幕不熄灭" data-keys="训练 例行 设置 教练 建议 rpe rir 重复 滑动 删除 下一动作 屏幕 常亮">
+<h2>训练与例行设置</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsWorkout}} 中调整训练页面的行为。</p>
+<ul>
+<li>{{> gymTitle}}：填写你的杠铃杆、杠铃片和哑铃。</li>
+<li>RPE/RIR：选择用哪种方式记录每组强度。</li>
+<li>{{> setSessionCoach}}：开关训练中的下一组重量建议。</li>
+<li>{{> setAllowDuplicate}}、{{> setSwipeDeleteSet}}、{{> setAutoAdvance}}</li>
+</ul>
+<p>想在训练中保持屏幕常亮，请打开 {{> settingsGeneral}} 的 {{> setKeepAwake}}。重量每次增加多少，在 {{> settingsKeyboard}} 的 {{> setWeightStep}} 中设置。</p>
+</section>
+
+<section id="notifications" data-ask="接收训练提醒|训练计划提醒|关闭通知" data-keys="通知 推送 日程 提醒 计时 权限">
+<h2>通知</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsNotification}} 中开关 {{> setNotifyBackgroundTimer}} 和 {{> setNotifySchedule}}。</p>
+<p>收不到通知时，请在设备设置中确认已允许 FitBoost 的通知。</p>
+</section>
+
+<section id="widgets" data-ask="添加主屏幕小组件|在锁屏显示训练|实时活动|灵动岛" data-keys="小组件 锁屏 实时活动 灵动岛 实时通知 主屏幕 自定义">
+<h2>小组件与锁屏</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > surfaceSettingsTitle}} 中选择 {{> surfaceTabLive}} 或 {{> surfaceTabWidgets}}。</p>
+<ul>
+<li>免费可使用今日训练小组件。其他小组件、自定义和锁屏实时活动（Android 为实时通知）属于 PRO。状态、恢复和教练计划小组件属于 PRO+。</li>
+<li>实时活动需要 iOS 16.1 或更高版本。</li>
+<li>iPhone：长按主屏幕，点左上角的编辑 → 添加小组件，找到 FitBoost。</li>
+<li>Android：长按主屏幕，打开小组件，找到 FitBoost。</li>
+</ul>
+</section>
+
+<section id="delete-all" data-ask="删除所有记录重新开始|重置数据|想注销" data-keys="重置 全部删除 清空 重新开始 注销">
+<h2>删除所有记录</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings}} 最下方的 {{> settingsDeleteLocalData}} 中删除这台设备上的全部记录。</p>
+<p class="tip">无法撤销。删除前请先创建<a href="sync.html#backup">备份文件</a>。</p>
+</section>

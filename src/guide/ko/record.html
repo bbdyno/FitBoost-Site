@@ -1,0 +1,84 @@
+<section id="start-workout" data-ask="운동을 시작하려면|운동 기록은 어떻게 시작하나요|루틴으로 운동 시작|자유롭게 운동하고 싶어요" data-keys="시작 운동시작 오늘 자유 운동 루틴 기록하기">
+<h2>운동 시작하기</h2>
+<p class="lead">{{> tabHome}}의 오늘 카드에서 {{> actionStart}}를 누르면 됩니다. 루틴이 없으면 빈 운동으로 시작해 자유롭게 기록합니다.</p>
+<ol class="steps">
+<li>{{> tabHome}}의 오늘 카드에서 {{> actionStart}}를 누릅니다.</li>
+<li>다른 루틴으로 하려면 카드의 ⋯에서 {{> chooseRoutine}}을 고릅니다.</li>
+<li>운동을 더하고 세트를 기록합니다.</li>
+</ol>
+<p>{{> tabHome > homeMyRoutines}}에서 루틴을 바로 시작하거나, {{> tabRecord > histAddWorkout > workoutStart}}로 시작할 수도 있습니다.</p>
+</section>
+
+<section id="sets" data-ask="세트는 어떻게 기록하나요|세트 완료 체크|웜업 세트 드롭 세트 표시|세트 휴식 시간을 따로 정하고 싶어요" data-keys="세트 체크 완료 무게 횟수 반복 웜업 드롭 실패 그립 세트타입">
+<h2>세트 기록하기</h2>
+<p class="lead">무게와 횟수를 적고 세트 줄의 체크를 누르면 그 세트가 끝납니다.</p>
+<ul>
+<li>한꺼번에 끝내려면 {{> completeAllSets}}를 누릅니다.</li>
+<li>세트 번호를 누르면 그 세트를 자세히 고치는 창이 열립니다. 세트 타입(웜업·드롭·실패 등), 그립, 강도, 그 세트만의 휴식 시간을 정합니다.</li>
+</ul>
+</section>
+
+<section id="effort" data-ask="세트 강도는 어떻게 남기나요|RPE RIR 입력|이번 세트 어땠나요가 떠요|여유 몇 개 남았는지 적기" data-keys="강도 rpe rir 여유 힘듦 한계 적당 운동자각도 남은횟수">
+<h2>세트 강도 남기기</h2>
+<p class="lead">세트를 끝내면 {{" effortQuickTitle}} 창이 뜹니다. 네 단계 중 하나를 고르면 다음 무게 계산에 반영됩니다.</p>
+<p>숫자로 남기려면 같은 창의 {{> effortQuickDetail}}를 눌러 RIR(남은 반복 수)이나 RPE(6–10)를 적습니다. 어느 쪽으로 받을지는 {{> tabMenu > setAppSettings > settingsWorkout}}의 RPE/RIR에서 바꿉니다.</p>
+</section>
+
+<section id="rest-timer" data-ask="휴식 타이머 쓰는 법|쉬는 시간을 늘리고 싶어요|휴식 타이머 건너뛰기|타이머가 안 떠요" data-keys="휴식 타이머 쉬는시간 인터벌 카운트다운 10초">
+<h2>휴식 타이머</h2>
+<p class="lead">세트를 끝내면 {{> workoutRestTimer}}가 돕니다. 10초씩 줄이거나 늘리고, 멈추거나 건너뛸 수 있습니다.</p>
+<p>기본 휴식 시간, 알림음, 화면을 꺼도 도는 타이머 같은 것은 타이머 안의 {{> restTimerOpenSettings}}나 <a href="settings.html#rest-timer">설정</a>에서 정합니다.</p>
+</section>
+
+<section id="exercise-menu" data-ask="운동을 다른 운동으로 바꾸고 싶어요|슈퍼세트 만들기|운동 중에 아픈 곳이 있어요|이 운동만 파운드로" data-keys="대체 교체 바꾸기 슈퍼세트 통증 아파요 부상 제거 삭제 파운드 lb">
+<h2>운동별 메뉴</h2>
+<p class="lead">운동 이름 옆 ⋯를 누르면 그 운동만 바꾸는 메뉴가 열립니다.</p>
+<ul>
+<li>{{> swapExercise}}: 같은 부위의 다른 운동으로 바꿉니다.</li>
+<li>{{> setUpSuperset}}: 다른 운동과 묶어 번갈아 합니다.</li>
+<li>{{> painHereAction}}: 아픈 부위를 남기면 그 부위를 쓰는 운동에서 무게를 낮추거나 다른 운동으로 바꾸라고 알려 줍니다. 등급과 상관없이 씁니다.</li>
+<li>{{> exerciseUnitToLb}}: 그 운동만 파운드로 기록합니다.</li>
+<li>{{> notes}}, {{> removeExercise}}도 여기 있습니다.</li>
+</ul>
+</section>
+
+<section id="finish" data-ask="운동을 끝내려면|운동 완료와 운동 종료 차이|운동 저장하는 법|운동을 끝냈는데 기록이 없어요" data-keys="끝내기 종료 완료 저장 마치기 요약 별점 메모 사라짐">
+<h2>운동 끝내기</h2>
+<p class="lead">아래쪽 {{> finishWorkout}}을 눌러야 기록이 저장됩니다.</p>
+<ol class="steps">
+<li>{{> finishWorkout}}을 누릅니다.</li>
+<li>체크하지 않은 세트가 있으면 {{> finishUncheckedComplete}}와 {{> finishUncheckedSkip}} 중에서 고릅니다.</li>
+<li>루틴으로 시작했다면 바꾼 구성을 루틴에도 반영할지 고릅니다.</li>
+<li>요약 화면에서 볼륨·시간·사용 근육을 보고, 별점과 {{> workoutNotes}}를 남깁니다.</li>
+</ol>
+<p class="tip">위쪽 메뉴의 {{> workoutFinish}}는 저장하지 않고 버리는 버튼입니다. {{" endThisWorkout}} {{" currentRecordWonTBeSaved}} 창이 뜨면 취소하고 {{> finishWorkout}}을 누르세요.</p>
+</section>
+
+<section id="past" data-ask="이미 한 운동을 나중에 기록하고 싶어요|어제 운동을 깜빡했어요|빠른기록은 뭔가요|지난 날짜로 기록 추가" data-keys="빠른기록 지난 어제 깜빡 나중에 과거 날짜 추가 예정">
+<h2>이미 한 운동 기록하기</h2>
+<p class="lead">{{> tabHome}}의 {{> homeQuickRecord}}이나 {{> tabRecord > histAddWorkout > recordPastWorkout}}로 지난 운동을 날짜와 함께 적어 넣습니다.</p>
+<p>같은 메뉴의 {{> homeAddScheduled}}로 앞으로 할 운동을 일정에 넣을 수도 있습니다. 진행 중인 운동이 있으면 {{> homeQuickRecord}}이 열리지 않으니 먼저 그 운동을 끝내 주세요.</p>
+</section>
+
+<section id="edit" data-ask="지난 기록을 고치고 싶어요|운동 기록 삭제|기록 삭제|날짜를 잘못 넣었어요|무게를 잘못 적었어요" data-keys="수정 편집 고치기 삭제 지우기 날짜 시간 잘못 복구">
+<h2>지난 기록 고치기·지우기</h2>
+<p class="lead">{{> tabRecord}}에서 기록 줄의 ⋯를 누르면 고치거나 지울 수 있습니다.</p>
+<ul>
+<li>{{> historyEditWorkout}}: 운동과 세트를 고칩니다. 고친 내용은 통계와 다음 무게 계산에 바로 반영됩니다.</li>
+<li>{{> historyEditDateNote}}: 날짜를 옮기거나 메모를 바꿉니다.</li>
+<li>{{> startFromThisRecord}}: 같은 구성으로 오늘 다시 합니다.</li>
+<li>{{> actionDelete}}: 지운 기록은 되살릴 수 없습니다.</li>
+</ul>
+</section>
+
+<section id="body" data-ask="몸무게 기록하는 법|체중 변화 기록|눈바디 사진 남기기|체지방률 기록" data-keys="몸무게 체중 체지방 골격근 신체 인바디 눈바디 사진 포토 바디프로필">
+<h2>체중과 사진 기록</h2>
+<p class="lead">{{> tabRecord}}의 {{> body}} 칸에서 {{> histAddBody}}로 체중·체지방률·골격근량을 남깁니다.</p>
+<p>몸 사진은 {{> photos}} 칸의 {{> histAddPhoto}}로 남깁니다. 남긴 체중은 근력 균형의 체중 대비 수준, 유산소 칼로리 계산, 영양 목표에 쓰입니다. 체성분 측정 결과는 <a href="tools.html#inbody">파일로 불러올 수도 있습니다</a>.</p>
+</section>
+
+<section id="notes" data-ask="메모는 어디에 남기나요|운동 자세 메모|메모를 모아 보고 싶어요|사진이나 동영상 첨부" data-keys="메모 노트 사진 동영상 영상 자세 고정 전체메모">
+<h2>메모</h2>
+<p class="lead">운동 중에는 운동별 ⋯ → {{> notes}}, 끝난 뒤에는 요약 화면의 {{> workoutNotes}}에 남깁니다.</p>
+<p>자세처럼 계속 볼 메모는 {{> homeExerciseList}}에서 운동을 열고 {{> addExerciseNote}}로 남기세요. 사진·동영상을 붙이고 위에 고정할 수 있습니다. 모든 메모는 {{> tabMenu > menuAllMemos}}에서 모아 봅니다.</p>
+</section>

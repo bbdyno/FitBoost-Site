@@ -1,0 +1,77 @@
+<section id="watch" data-ask="手錶連不上|手錶連線不了|Apple Watch 上沒有 FitBoost|Galaxy Watch 連不上|傳送到手錶失敗" data-keys="手錶 連線 連不上 失敗 錯誤 等待 安裝 配對">
+<h2>手錶連不上時</h2>
+<p class="lead">根據 {{> tabMenu > setAppSettings > setWatch}} 中 {{> setWatchStatus}} 顯示的文字找出原因。</p>
+<ul>
+<li>{{" watchNotPaired}}請在手錶的配套 App（Watch App 或 Galaxy Wearable）中確認手機和手錶已配對。</li>
+<li>{{" watchAppMissing}}請在 <a href="watch.html#apple-watch">Apple Watch</a> 或 <a href="watch.html#galaxy-watch">Galaxy Watch</a> 上安裝 FitBoost。</li>
+<li>{{" watchWaiting}}請在手錶上開啟一次 FitBoost。</li>
+<li>{{" watchUnsupported}}這台手機無法使用手錶。</li>
+</ul>
+<p>也請確認 {{> setWatchLink}} 已開啟。要把訓練傳送到手錶，需要先在手機上開始訓練。</p>
+</section>
+
+<section id="garmin" data-ask="Garmin 連不上|提示先安裝 Garmin Connect" data-keys="garmin 佳明 失敗 connect iq 錯誤 連不上">
+<h2>Garmin 連不上時</h2>
+<p class="lead">按點選 {{> setGarminConnect}} 時顯示的文字操作。</p>
+<ul>
+<li>{{" setGarminNeedsApp}}在手機上安裝 Garmin Connect App 並連線手錶。</li>
+<li>{{" setGarminChoose}}開啟 Garmin Connect App 後，選擇要用於 FitBoost 的手錶。</li>
+<li>{{" setGarminInstallWatchApp}}</li>
+</ul>
+<p>在手錶上開啟 FitBoost 卻收不到訓練時，請確認是否先在手機上開始了訓練。詳細步驟見<a href="watch.html#garmin">連線 Garmin 手錶</a>。</p>
+</section>
+
+<section id="sync" data-ask="同步不了|iCloud 同步失敗|Google 雲端硬碟權限|另一台裝置上看不到記錄" data-keys="同步 失敗 不了 錯誤 icloud google drive 雲端硬碟 權限 空間 更新 網路">
+<h2>同步不了時</h2>
+<p class="lead">檢視 {{> tabMenu > setAppSettings > cloudSyncTitle}} 中顯示的文字。</p>
+<ul>
+<li>{{" cloudSyncFailICloudSignedOut}}</li>
+<li>{{" cloudSyncFailDrivePermission}}</li>
+<li>{{" cloudSyncFailQuotaICloud}} / {{" cloudSyncFailQuotaDrive}}請清理或增加儲存空間。</li>
+<li>{{" cloudSyncFailUpdateRequired}}</li>
+<li>{{" cloudSyncFailNetwork}}</li>
+</ul>
+<p>請確認兩台裝置使用同一個 iCloud 或 Google 帳戶，並且都開啟了同步。iPhone 和 Android 之間不會同步，請<a href="sync.html#new-phone">用備份檔案轉移</a>。</p>
+</section>
+
+<section id="backup" data-ask="備份檔案打不開|忘記備份密碼|備份檔案出錯|密碼不正確|提示不是學員檔案" data-keys="備份 匯入 失敗 錯誤 損壞 密碼 忘記 學員檔案 更新">
+<h2>備份檔案打不開時</h2>
+<p class="lead">匯入失敗時，這台裝置上的記錄保持不變。請檢視顯示的文字。</p>
+<ul>
+<li>{{" backupErrorNotBackup}}請確認是 .fitboost 檔案。</li>
+<li>{{" backupErrorNewer}}</li>
+<li>{{" backupErrorCorrupt}}請重新取得檔案試試。</li>
+<li>{{" backupWrongPassword}}需要輸入建立時設定的密碼。忘記的密碼無法找回。</li>
+<li>{{" memberImportNotMember}}</li>
+</ul>
+</section>
+
+<section id="pro-missing" data-ask="買了 PRO 卻沒生效|付款了但 PRO 沒開通|訂閱了還是顯示免費|在 iPhone 買的 PRO 想在 Android 用" data-keys="訂閱 付款 購買 沒生效 免費 恢復 pro 不見了 其他裝置">
+<h2>訂閱後 PRO 沒顯示時</h2>
+<p class="lead">請在 FitBoost PRO 頁面點選 {{> restorePurchases}}。</p>
+<p>需要登入付款時使用的 Apple 或 Google 帳戶。在 iPhone 上購買的訂閱無法在 Android 上還原，在 Android 上購買的也無法在 iPhone 上還原。詳情見<a href="subscription.html#restore">還原購買</a>。</p>
+</section>
+
+<section id="workout-lost" data-ask="結束了但記錄裡沒有|訓練沒有儲存|剛才的訓練不見了" data-keys="記錄 沒有 不見了 沒儲存 不儲存並結束 完成訓練 丟失">
+<h2>剛才的訓練不在記錄裡時</h2>
+<p class="lead">用 {{> workoutFinish}} 結束的訓練不會儲存。只有點選 {{> finishWorkout}} 才會留下記錄。</p>
+<p>丟失的訓練可以用 {{> tabRecord > histAddWorkout > recordPastWorkout}} 重新錄入。如果是在 Garmin 手錶上做的訓練，請把手機放在附近，從手錶 App 再傳送一次。</p>
+</section>
+
+<section id="cant-start" data-ask="快速記錄打不開|提示請先完成進行中的訓練|無法開始新的訓練" data-keys="進行中 訓練 先完成 快速記錄 打不開 無法開始">
+<h2>提示有進行中的訓練時</h2>
+<p class="lead">看到 {{" finishWorkoutProgressFirst}} 時，說明還有未結束的訓練。</p>
+<p>用 {{> tabHome}} 今日卡片上的 {{> homeContinueWorkout}} 回去並點選 {{> finishWorkout}}；如果不需要，就用 {{> workoutFinish}} 丟棄後重新開始。</p>
+</section>
+
+<section id="health" data-ask="健康 App 連不上|訓練沒進 Apple 健康|提示沒有可匯入的新記錄" data-keys="健康 連線 失敗 權限 healthkit health connect 匯入 沒有">
+<h2>健康 App 連不上時</h2>
+<p class="lead">看到 {{" setHealthLinkFailed}} 時，請檢查裝置上的健康權限。</p>
+<p>iPhone 請在設定 → 隱私權與安全性 → 健康 → FitBoost 中，Android 請在 Health Connect 的 App 權限中確認已允許 FitBoost。{{" setWatchImportEmpty}}表示最近 30 天沒有可匯入的新訓練。</p>
+</section>
+
+<section id="notifications" data-ask="收不到休息計時提醒|鎖定畫面上不顯示訓練|即時動態不出現" data-keys="通知 收不到 權限 計時 鎖定畫面 即時動態">
+<h2>通知或鎖定畫面不顯示時</h2>
+<p class="lead">看到 {{" setNotificationPermissionDenied}}時，請在裝置設定中允許 FitBoost 的通知。</p>
+<p>即時動態關閉時，App 會提示 {{" surfaceTurnOnInSettings}}。還需要允許通知。也請看<a href="settings.html#widgets">小工具與鎖定畫面</a>。</p>
+</section>

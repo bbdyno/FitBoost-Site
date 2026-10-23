@@ -30,6 +30,7 @@
     <nav class="nav__links" aria-label="Main menu">
       <a href="./#features">Features</a>
       <a href="./#pricing">Pricing</a>
+      <a href="guide/">Guide</a>
       <a href="support.html">Support</a>
     </nav>
     <details class="langs">
@@ -45,6 +46,16 @@
 <p class="doc__meta">Last updated: October 19, 2026 · Contact: <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a></p>
 
 <p>If you get stuck or have an idea for improving the app, please email us. For bugs, a screenshot and the steps you tapped through help us find the problem much faster.</p>
+
+<div class="g-callout">
+  <p>The <strong>User Guide</strong> explains each feature, and you can ask it what you want to do. <a href="guide/">Open the guide</a></p>
+  <form class="g-find g-find--wide" action="guide/" role="search" data-base="guide/">
+  <label class="sr" for="g-find-q">Search the guide</label>
+  <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="Search the guide"
+    role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
+  <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
+</form>
+</div>
 
 <h2>Frequently asked questions</h2>
 
@@ -173,6 +184,7 @@
       <p>The workout log that picks your next weight</p>
     </div>
     <nav class="foot__links" aria-label="Site links">
+      <a href="guide/">Guide</a>
       <a href="support.html">Support</a>
       <a href="privacy.html">Privacy Policy</a>
       <a href="terms.html">Terms of Use</a>
@@ -183,5 +195,6 @@
 </footer>
 
 <script src="../assets/site.js" defer></script>
+<script src="../assets/guide.js" defer></script>
 </body>
 </html>

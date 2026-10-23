@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="zh-Hans">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>健康应用 — FitBoost</title>
+<meta name="description" content="把训练写入 Apple 健康和 Health Connect，并读取睡眠和心率。">
+<meta name="theme-color" content="#EDEDE8">
+<link rel="icon" href="../../assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<link rel="canonical" href="https://bbdyno.github.io/FitBoost-Site/zh-hans/guide/health.html">
+<link rel="alternate" hreflang="ko" href="https://bbdyno.github.io/FitBoost-Site/guide/health.html">
+<link rel="alternate" hreflang="en" href="https://bbdyno.github.io/FitBoost-Site/en/guide/health.html">
+<link rel="alternate" hreflang="ja" href="https://bbdyno.github.io/FitBoost-Site/ja/guide/health.html">
+<link rel="alternate" hreflang="zh-Hans" href="https://bbdyno.github.io/FitBoost-Site/zh-hans/guide/health.html">
+<link rel="alternate" hreflang="zh-Hant" href="https://bbdyno.github.io/FitBoost-Site/zh-hant/guide/health.html">
+<link rel="alternate" hreflang="x-default" href="https://bbdyno.github.io/FitBoost-Site/guide/health.html">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body class="lang-zh-hans page-doc page-guide">
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="../" aria-label="FitBoost">
+      <img src="../../assets/icon.webp" alt="" width="30" height="30">
+      <span>FitBoost</span>
+    </a>
+    <nav class="nav__links" aria-label="主菜单">
+      <a href="../#features">功能</a>
+      <a href="../#pricing">价格</a>
+      <a href="../guide/" aria-current="page">指南</a>
+      <a href="../support.html">支持</a>
+    </nav>
+    <details class="langs">
+      <summary aria-label="选择语言"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></svg><span>简体中文</span></summary>
+      <ul><li><a href="../../guide/health.html" data-lang="ko" lang="ko">한국어</a></li><li><a href="../../en/guide/health.html" data-lang="en" lang="en">English</a></li><li><a href="../../ja/guide/health.html" data-lang="ja" lang="ja">日本語</a></li><li><a href="../../zh-hans/guide/health.html" data-lang="zh-hans" lang="zh-Hans" aria-current="true">简体中文</a></li><li><a href="../../zh-hant/guide/health.html" data-lang="zh-hant" lang="zh-Hant">繁體中文</a></li></ul>
+    </details>
+    <a class="nav__cta" href="../#download">下载</a>
+  </div>
+</header>
+
+<main class="doc guide wrap">
+<nav class="g-crumb" aria-label="当前位置"><a href="./">使用指南</a></nav>
+<h1>健康应用</h1>
+<p class="g-lede">把训练写入 Apple 健康和 Health Connect，并读取睡眠和心率。</p>
+<form class="g-find" action="./" role="search" data-base="./">
+  <label class="sr" for="g-find-q">搜索指南</label>
+  <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="搜索指南"
+    role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
+  <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
+</form>
+<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#connect">连接健康应用</a></li><li><a href="#what">交换的数据</a></li><li><a href="#import">导入手表训练</a></li><li><a href="#merge">合并重复的训练</a></li></ol></nav>
+<section class="g-sec" id="connect">
+<h2>连接健康应用</h2>
+<p class="lead">iPhone 连接 Apple 健康，Android 连接 Health Connect。免费。</p>
+<ol class="steps">
+<li>在 <span class="ui"><b>菜单</b></span> 中打开 <span class="ui"><b>Apple 健康（HealthKit）</b></span> 或 <span class="ui"><b>Health Connect</b></span>。</li>
+<li>打开 <span class="ui"><b>Apple Health 与 Health Connect</b></span>，在弹出的权限页面中允许要共享的项目。</li>
+</ol>
+<p>同一页面还有 <span class="ui"><b>导入手表训练</b></span> 和 <span class="ui"><b>合并重复的训练</b></span>。</p>
+</section>
+
+<section class="g-sec" id="what">
+<h2>交换的数据</h2>
+<p class="lead">把完成的训练写入健康应用，并读取手表训练以及心率、睡眠和体重。</p>
+<ul>
+<li>写入：完成的力量和有氧训练。只有力量训练时记为力量训练，混有有氧时记为交叉训练。</li>
+<li>读取：手表和健康应用中的训练与心率，以及用于状态和恢复计算的睡眠、HRV、静息心率和体重。</li>
+</ul>
+<p>Android 会请求步数权限，是因为读取训练时会一并读取步数。</p>
+</section>
+
+<section class="g-sec" id="import">
+<h2>导入手表训练</h2>
+<p class="lead">把健康应用中最近 30 天的训练导入 FitBoost 记录。</p>
+<p>在<a href="#connect">健康应用连接页面</a>点击 <span class="ui"><b>导入手表训练</b></span>。FitBoost 自己写入的训练不会再次导入。</p>
+</section>
+
+<section class="g-sec" id="merge">
+<h2>合并重复的训练</h2>
+<p class="lead">同一时间有多条重叠的记录时，用 <span class="ui"><b>合并重复的训练</b></span> 只保留一条。</p>
+<p>会保留在 FitBoost 中记录的那条或信息最多的那条，删除其余的。删除的记录不会再导入。</p>
+</section>
+<nav class="g-pager" aria-label="其他主题"><a class="g-pager__prev" href="watch.html"><small>上一篇</small>智能手表</a><a class="g-pager__next" href="sync.html"><small>下一篇</small>同步与备份</a></nav>
+<p class="g-contact">仍未解决？请发送邮件至 <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>，并附上设备型号和应用版本。</p>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <img src="../../assets/icon.webp" alt="" width="28" height="28">
+      <p>算出下次该举多重的力量训练记录</p>
+    </div>
+    <nav class="foot__links" aria-label="网站信息">
+      <a href="../guide/">指南</a>
+      <a href="../support.html">支持</a>
+      <a href="../privacy.html">隐私政策</a>
+      <a href="../terms.html">使用条款</a>
+      <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>
+    </nav>
+    <p class="foot__copy">© 2026 FitBoost</p>
+  </div>
+</footer>
+
+<script src="../../assets/site.js" defer></script>
+<script src="../../assets/guide.js" defer></script>
+</body>
+</html>

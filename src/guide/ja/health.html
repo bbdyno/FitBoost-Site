@@ -1,0 +1,31 @@
+<section id="connect" data-ask="ヘルスケアにワークアウトを記録したい|Apple Healthと連携|Health Connectと連携|ヘルスケアの権限を許可" data-keys="ヘルスケア ヘルス apple health healthkit health connect 連携 権限">
+<h2>ヘルスケアとつなぐ</h2>
+<p class="lead">iPhoneはApple Health、AndroidはHealth Connectとつなぎます。無料です。</p>
+<ol class="steps">
+<li>{{> tabMenu}}で{{> healthKitTitle}}か{{> healthConnectTitle}}を開きます。</li>
+<li>{{> setHealthLink}}をオンにし、表示される権限画面でやり取りする項目を許可します。</li>
+</ol>
+<p>同じ画面に{{> setWatchImport}}と{{> setHealthMergeDuplicates}}もあります。</p>
+</section>
+
+<section id="what" data-ask="ヘルスケアと何をやり取りしますか|睡眠データを使いますか|心拍数を取り込みますか|歩数の権限はなぜ必要ですか" data-keys="やり取り 睡眠 心拍 hrv 安静時心拍 体重 歩数 権限 カロリー 距離">
+<h2>やり取りするもの</h2>
+<p class="lead">終えたワークアウトをヘルスケアに送り、ウォッチのワークアウトや心拍・睡眠・体重を取り込みます。</p>
+<ul>
+<li>送るもの：終えた筋トレ・有酸素のワークアウト。筋トレだけなら筋トレ、有酸素が混ざればクロストレーニングとして残します。</li>
+<li>取り込むもの：ウォッチとヘルスケアのワークアウト・心拍数、コンディションと回復の計算に使う睡眠・HRV・安静時心拍・体重。</li>
+</ul>
+<p>Androidで歩数の権限を求めるのは、ワークアウトを読み込むときに歩数も一緒に読むためです。</p>
+</section>
+
+<section id="import" data-ask="ウォッチで行ったワークアウトを取り込みたい|ほかのアプリのワークアウトを読み込む|スマートウォッチの記録を取り込む" data-keys="取り込み 読み込み ウォッチ ワークアウト ほかのアプリ 30日">
+<h2>スマートウォッチの記録を取り込む</h2>
+<p class="lead">ヘルスケアにたまった直近30日のワークアウトをFitBoostの記録に取り込みます。</p>
+<p><a href="#connect">ヘルスケア連携の画面</a>で{{> setWatchImport}}をタップします。FitBoostが送ったワークアウトは取り込み直しません。</p>
+</section>
+
+<section id="merge" data-ask="同じワークアウトが2回記録された|記録が重複している|重複したワークアウトをまとめる" data-keys="重複 2回 二重 重なり まとめる 同じ時間 整理">
+<h2>重複したワークアウトをまとめる</h2>
+<p class="lead">同じ時間に重なった記録が複数あるときは、{{> setHealthMergeDuplicates}}で1つだけ残します。</p>
+<p>FitBoostで記録したものか情報が最も多いものを残し、残りは削除します。削除した記録は取り込み直しません。</p>
+</section>

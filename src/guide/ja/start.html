@@ -1,0 +1,28 @@
+<section id="first-run" data-ask="インストールしたら何をすればいいですか|初めてアプリを開きました|始め方|最初に何を入力しますか" data-keys="初めて インストール 始め方 オンボーディング プロフィール ニックネーム 性別 生まれ年 身長 体重 スクワット">
+<h2>初めて開いたら</h2>
+<p class="lead">紹介画面を3枚めくり、プロフィールを5つ入力すればすぐに記録できます。</p>
+<ol class="steps">
+<li>紹介画面をめくり、最後の画面で開始をタップします。</li>
+<li>ニックネーム、性別、生まれ年、身長と体重を入力します。</li>
+<li>スクワットの推定1RMを入力します。わからない場合は、わからないという選択肢を選べます。</li>
+</ol>
+<p>入力した情報はおすすめ重量と消費カロリーの計算に使います。重量単位（kg・lb）は端末の地域設定で決まり、あとから<a href="settings.html#units">設定で変更できます</a>。</p>
+</section>
+
+<section id="account" data-ask="会員登録は必要ですか|アカウントを作る必要がありますか|ログインはどこからしますか|記録はどこに保存されますか" data-keys="登録 会員登録 アカウント ログイン パスワード 保存 サーバー">
+<h2>アカウントは不要です</h2>
+<p class="lead">登録もログインも不要です。記録はこの端末に保存されます。</p>
+<p>ニックネームは {{> tabMenu > menuAccountPill > editProfile}} で変更します。記録は当社のサーバーに送られないため、端末をなくしても記録を守れるよう<a href="sync.html#sync">デバイス間の同期</a>や<a href="sync.html#backup">バックアップファイル</a>を使ってください。</p>
+</section>
+
+<section id="tabs" data-ask="画面の構成はどうなっていますか|下のタブには何がありますか|どこに何がありますか" data-keys="タブ 画面 構成 ホーム 記録 統計 コーチ メニュー">
+<h2>画面の構成</h2>
+<p class="lead">下のタブは {{> tabHome}}、{{> tabRecord}}、{{> tabStats}}、{{> tabCoach}}、{{> tabMenu}} の5つです。</p>
+<ul>
+<li>{{> tabHome}}：今日のワークアウト、{{> homeQuickRecord}}、{{> homePrograms}}、{{> homeMyRoutines}}があります。</li>
+<li>{{> tabRecord}}：過去のワークアウトを日付ごとに見て、編集や削除をします。</li>
+<li>{{> tabStats}}：今週の目標、筋肉の回復、筋力バランス、ボリュームの推移を見ます。</li>
+<li>{{> tabCoach}}：PRO+のブロックプログラムとコンディションに合わせたコーチングです。PRO+でない場合は紹介だけが表示されます。</li>
+<li>{{> tabMenu}}：{{> setAppSettings}}、{{> backupTitle}}、{{> trainerShareTitle}}、計算機、ヘルスケア連携があります。</li>
+</ul>
+</section>

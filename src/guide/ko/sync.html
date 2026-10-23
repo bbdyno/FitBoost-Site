@@ -1,0 +1,56 @@
+<section id="sync" data-ask="아이폰과 아이패드 기록을 맞추고 싶어요|기기 간 동기화 켜기|아이클라우드 동기화|구글 드라이브 동기화" data-keys="동기화 싱크 아이클라우드 icloud 구글드라이브 google drive 아이패드 태블릿 여러 기기 자동">
+<h2>기기 간 동기화</h2>
+<p class="lead">같은 계정의 기기끼리 기록을 자동으로 맞춥니다. iPhone·iPad는 iCloud, Android는 Google Drive를 씁니다. 무료입니다.</p>
+<ol class="steps">
+<li>{{> tabMenu > setAppSettings > cloudSyncTitle}}을 엽니다.</li>
+<li>동기화를 켭니다. 바로 맞추려면 {{> cloudSyncNow}}를 누릅니다.</li>
+<li>다른 기기에서도 같은 계정으로 똑같이 켭니다.</li>
+</ol>
+<p>기록은 저희 서버를 거치지 않고 여러분의 iCloud나 Google Drive에만 저장됩니다.</p>
+</section>
+
+<section id="not-synced" data-ask="동기화로 옮겨지지 않는 것|사진이 동기화가 안 돼요|구독도 동기화되나요" data-keys="동기화 안되는것 제외 사진 동영상 구독 진행중 시계 연결 장비">
+<h2>동기화되지 않는 것</h2>
+<p class="lead">사진·동영상 파일과 구독, 진행 중인 운동은 기기마다 따로입니다.</p>
+<ul>
+<li>사진·동영상 파일은 옮기지 않습니다. 메모 글은 맞춰집니다.</li>
+<li>구독, 진행 중인 운동, 건강 앱·시계 연결, 지금 고른 장비는 기기마다 따로 둡니다.</li>
+<li>iPhone과 Android처럼 운영체제가 다른 기기끼리는 자동으로 맞추지 않습니다. <a href="#new-phone">백업 파일로 옮기세요</a>.</li>
+</ul>
+</section>
+
+<section id="new-phone" data-ask="폰을 바꿨는데 기록을 옮기고 싶어요|아이폰에서 갤럭시로 옮기기|안드로이드에서 아이폰으로|기기 변경|새 휴대폰으로 데이터 이동" data-keys="기기변경 폰교체 새폰 이동 옮기기 이전 마이그레이션 아이폰 갤럭시 안드로이드 기종변경">
+<h2>새 휴대폰으로 옮기기</h2>
+<p class="lead">같은 운영체제끼리는 기기 간 동기화나 기기 백업으로, iPhone과 Android 사이는 백업 파일로 옮깁니다.</p>
+<ol class="steps">
+<li>예전 휴대폰에서 {{> tabMenu > backupTitle > backupExportTitle}}를 누릅니다.</li>
+<li>만든 파일을 메신저·메일·클라우드 같은 방법으로 새 휴대폰에 보냅니다.</li>
+<li>새 휴대폰에서 {{> tabMenu > backupTitle > backupImportTitle}}로 그 파일을 엽니다.</li>
+<li>{{> backupModeReplace}}를 고릅니다.</li>
+</ol>
+<p>같은 운영체제라면 <a href="#sync">기기 간 동기화</a>를 켜 두는 것만으로도 됩니다. 기기 백업(iCloud 백업·Google 자동 백업)이 켜져 있다면 새 기기에서 앱을 복원할 때도 함께 넘어갑니다. 구독은 파일로 옮겨지지 않으니 <a href="subscription.html#restore">구매 복원</a>을 보세요.</p>
+</section>
+
+<section id="backup" data-ask="백업 파일 만드는 법|기록을 파일로 저장하고 싶어요|백업에 암호 걸기" data-keys="백업 파일 저장 내보내기 암호 비밀번호 보관 fitboost">
+<h2>백업 파일 만들기</h2>
+<p class="lead">{{> tabMenu > backupTitle > backupExportTitle}}로 기록 전체를 파일 하나로 만듭니다. 무료입니다.</p>
+<p>운동 기록, 루틴, 일정, 신체 기록, 사진, 설정이 들어갑니다. 암호를 걸 수 있는데, 암호를 잊으면 파일을 열 수 없으니 따로 적어 두세요.</p>
+</section>
+
+<section id="restore" data-ask="백업 파일 불러오기|바꾸기와 합치기 차이|두 기기 기록을 합치고 싶어요|백업 복원" data-keys="불러오기 복원 가져오기 바꾸기 합치기 병합 덮어쓰기 되돌리기">
+<h2>백업 파일 불러오기</h2>
+<p class="lead">{{> tabMenu > backupTitle > backupImportTitle}}에서 .fitboost 파일을 고르고, 바꾸기와 합치기 중 하나를 고릅니다.</p>
+<ul>
+<li>{{> backupModeReplace}}(무료): 이 기기의 기록을 지우고 파일 내용으로 바꿉니다. 바꾸기 전 기록은 자동으로 백업해 두어 되돌릴 수 있습니다.</li>
+<li>{{> backupModeMerge}}(PRO): 지금 기록에 파일 내용을 더합니다. 같은 기록은 나중에 고친 쪽이 남고, 한쪽에서 지운 기록은 다시 나타납니다.</li>
+</ul>
+</section>
+
+<section id="keep-safe" data-ask="기록을 잃어버리지 않으려면|앱을 지우면 기록도 지워지나요|기록이 다 날아갔어요" data-keys="잃어버림 삭제 앱삭제 재설치 날아감 사라짐 보관 안전">
+<h2>기록을 잃지 않으려면</h2>
+<p class="lead">기록은 이 기기에 저장되므로, 앱을 지우면 기기에 있던 기록도 함께 지워집니다.</p>
+<ul>
+<li><a href="#sync">기기 간 동기화</a>나 기기 백업을 켜 두세요.</li>
+<li>가끔 <a href="#backup">백업 파일</a>을 만들어 따로 보관하세요.</li>
+</ul>
+</section>
