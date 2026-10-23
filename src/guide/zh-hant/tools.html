@@ -1,0 +1,40 @@
+<section id="plates" data-ask="槓鈴上該掛哪些片|槓片計算機怎麼用|每邊掛多少公斤" data-keys="槓片 槓鈴 桿 每邊 計算 掛片 重量">
+<h2>槓片計算機</h2>
+<p class="lead">輸入目標重量，就會告訴你每邊要掛哪些槓片。免費。</p>
+<p>在 {{> tabMenu}} 的 {{> calculators}} 區域點選 {{> plateChip}}。槓鈴桿重量和手上的槓片請在<a href="#equipment">{{> gymTitle}}</a>中設定，並用計算機裡的 {{> plateCalcChange}} 切換器材。</p>
+</section>
+
+<section id="one-rm" data-ask="怎麼計算 1RM|估算最大重量|計算 5x5 或 531 的重量" data-keys="1rm 最大重量 估算 計算機 強度 計畫 5x5 531 gvt 百分比">
+<h2>1RM 與強度計畫計算機</h2>
+<p class="lead">輸入重量和次數（不超過 15 次），即可估算 1RM。</p>
+<p>在 {{> l1rmCalculator}} 中點選 {{> oneRmToProgram}}，會進入 {{> programCalculator}}，用這個 1RM 計算 5×5、5/3/1、8/6/3 和 GVT 每組的重量。</p>
+</section>
+
+<section id="calculators" data-ask="有氧熱量計算|計算每日熱量|三大營養素計算機|跑步機消耗熱量" data-keys="熱量 卡路里 有氧 跑步機 划船 測功儀 巨量營養素 三大營養素 蛋白質 計算機">
+<h2>有氧、熱量與巨量營養素計算機</h2>
+<p class="lead">在 {{> tabMenu}} 的 {{> calculators}} 區域開啟有氧、熱量和巨量營養素計算機。</p>
+<ul>
+<li>{{> cardioCalculatorTitle}}：根據跑步機速度、坡度或測功儀配速計算消耗熱量。</li>
+<li>{{> calorieCalculator}}：根據運動強度（MET）、時長和體重估算消耗熱量。</li>
+<li>{{> macroCalculator}}：計算目標熱量以及碳水、蛋白質和脂肪。</li>
+</ul>
+<p>所有工具都集中在 {{> tabMenu > menuAllTools}}。</p>
+</section>
+
+<section id="equipment" data-ask="按我健身房的槓片推薦重量|修改槓鈴桿重量|設定啞鈴重量間隔|登記器材" data-keys="器材 健身房 槓鈴桿 槓鈴 槓片 啞鈴 壺鈴 器材配重 間隔 登記">
+<h2>我的器材</h2>
+<p class="lead">填好槓鈴桿和槓片、啞鈴和壺鈴的間隔、器材每格配重後，槓片計算會按這套器材進行。</p>
+<p>從 {{> tabMenu > setAppSettings > settingsWorkout > gymTitle}} 開啟。免費只能儲存一個地點，儲存多個地點或把推薦重量調整為這套器材能湊出的重量屬於 PRO 功能。</p>
+</section>
+
+<section id="glossary" data-ask="什麼是遞減組|想知道訓練術語的意思|什麼是 RPE|術語詞典" data-keys="術語 詞典 意思 含義 定義 遞減組 rpe rir 減量 頂組 超級組 amrap">
+<h2>訓練術語詞典</h2>
+<p class="lead">在 {{> tabMenu > glTitle}} 中查詢遞減組、RPE 等不熟悉的詞。</p>
+<p>術語分為組、強度、計畫三類，每條都寫了是什麼、怎麼做、什麼時候用和注意事項。</p>
+</section>
+
+<section id="inbody" data-ask="想錄入 InBody 結果|匯入體組成資料" data-keys="inbody 體組成 體脂 骨骼肌 csv json 匯入">
+<h2>匯入體組成資料</h2>
+<p class="lead">從 CSV 或 JSON 檔案匯入體組成測量結果，存入身體記錄。</p>
+<p>在 {{> tabMenu > menuAllTools > importBodyComposition}} 中選擇檔案。</p>
+</section>

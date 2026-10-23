@@ -1,0 +1,56 @@
+<section id="sync" data-ask="想讓 iPhone 和 iPad 的記錄一致|開啟裝置間同步|iCloud 同步|Google 雲端硬碟同步" data-keys="同步 icloud google drive 雲端硬碟 ipad 平板 多裝置 自動">
+<h2>裝置間同步</h2>
+<p class="lead">在同一帳戶的裝置之間自動同步記錄。iPhone 和 iPad 用 iCloud，Android 用 Google 雲端硬碟。免費。</p>
+<ol class="steps">
+<li>開啟 {{> tabMenu > setAppSettings > cloudSyncTitle}}。</li>
+<li>開啟同步。想立即同步就點 {{> cloudSyncNow}}。</li>
+<li>在另一台裝置上用同一帳戶同樣開啟。</li>
+</ol>
+<p>記錄不經過我們的伺服器，只儲存在你自己的 iCloud 或 Google 雲端硬碟中。</p>
+</section>
+
+<section id="not-synced" data-ask="哪些內容不同步|照片不同步|訂閱也會同步嗎" data-keys="不同步 排除 照片 影片 訂閱 進行中 手錶 連線 器材">
+<h2>不會同步的內容</h2>
+<p class="lead">照片和影片檔案、訂閱、進行中的訓練在每台裝置上各自獨立。</p>
+<ul>
+<li>照片和影片檔案不會複製，備註文字會同步。</li>
+<li>訂閱、進行中的訓練、健康 App 和手錶的連線，以及當前選擇的器材，每台裝置各自儲存。</li>
+<li>iPhone 和 Android 這樣系統不同的裝置之間不會自動同步，請<a href="#new-phone">用備份檔案轉移</a>。</li>
+</ul>
+</section>
+
+<section id="new-phone" data-ask="換了新手機怎麼轉移記錄|從 iPhone 轉到 Android|從 Android 轉到 iPhone|換手機|把資料轉到新手機" data-keys="換手機 新手機 轉移 遷移 搬家 iphone android 安卓 蘋果">
+<h2>轉移到新手機</h2>
+<p class="lead">同一系統之間用裝置間同步或裝置備份，iPhone 與 Android 之間用備份檔案轉移。</p>
+<ol class="steps">
+<li>在舊手機上點選 {{> tabMenu > backupTitle > backupExportTitle}}。</li>
+<li>透過聊天軟體、郵件或雲端硬碟等把檔案發到新手機。</li>
+<li>在新手機上用 {{> tabMenu > backupTitle > backupImportTitle}} 開啟這個檔案。</li>
+<li>選擇 {{> backupModeReplace}}。</li>
+</ol>
+<p>同一系統的話，只要開啟<a href="#sync">裝置間同步</a>即可。如果開啟了裝置備份（iCloud 備份或 Google 自動備份），在新裝置上恢復 App 時記錄也會一起帶過去。訂閱不會隨檔案轉移，請看<a href="subscription.html#restore">還原購買</a>。</p>
+</section>
+
+<section id="backup" data-ask="怎麼建立備份檔案|想把記錄存成檔案|給備份加密碼" data-keys="備份 檔案 儲存 匯出 密碼 保管 fitboost">
+<h2>建立備份檔案</h2>
+<p class="lead">用 {{> tabMenu > backupTitle > backupExportTitle}} 把全部記錄存成一個檔案。免費。</p>
+<p>包含訓練記錄、例行訓練、日程、身體記錄、照片和設定。可以設定密碼，但忘記密碼就無法開啟檔案，請另外記好。</p>
+</section>
+
+<section id="restore" data-ask="匯入備份檔案|替換和合併的區別|想合併兩台裝置的記錄|恢復備份" data-keys="匯入 恢復 讀取 替換 合併 覆蓋 撤銷">
+<h2>匯入備份檔案</h2>
+<p class="lead">在 {{> tabMenu > backupTitle > backupImportTitle}} 中選擇 .fitboost 檔案，再選擇替換或合併。</p>
+<ul>
+<li>{{> backupModeReplace}}（免費）：清除這台裝置上的記錄，換成檔案裡的內容。替換前的記錄會自動備份，可以撤銷。</li>
+<li>{{> backupModeMerge}}（PRO）：把檔案內容加到當前記錄中。同一條記錄保留最後編輯的那份，一方已刪除的記錄會重新出現。</li>
+</ul>
+</section>
+
+<section id="keep-safe" data-ask="怎樣才不會丟失記錄|刪除 App 記錄也會刪除嗎|記錄全沒了" data-keys="丟失 刪除 刪除 App 重新安裝 沒了 保管 安全 資料">
+<h2>避免丟失記錄</h2>
+<p class="lead">記錄儲存在這台裝置上，所以刪除 App 時裝置上的記錄也會一起刪除。</p>
+<ul>
+<li>請開啟<a href="#sync">裝置間同步</a>或裝置備份。</li>
+<li>不時建立<a href="#backup">備份檔案</a>並另外儲存。</li>
+</ul>
+</section>

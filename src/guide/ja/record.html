@@ -1,0 +1,84 @@
+<section id="start-workout" data-ask="ワークアウトを始めるには|記録はどうやって始めますか|ルーティンで始める|自由にトレーニングしたい" data-keys="開始 始める ワークアウト 今日 自由 ルーティン 記録">
+<h2>ワークアウトを始める</h2>
+<p class="lead">{{> tabHome}}の今日のカードで{{> actionStart}}をタップします。ルーティンがなければ空のワークアウトで始まり、自由に記録できます。</p>
+<ol class="steps">
+<li>{{> tabHome}}の今日のカードで{{> actionStart}}をタップします。</li>
+<li>別のルーティンにするには、カードの⋯から{{> chooseRoutine}}を選びます。</li>
+<li>種目を追加してセットを記録します。</li>
+</ol>
+<p>{{> tabHome > homeMyRoutines}}からルーティンをすぐ始めたり、{{> tabRecord > histAddWorkout > workoutStart}}から始めたりもできます。</p>
+</section>
+
+<section id="sets" data-ask="セットはどうやって記録しますか|セット完了のチェック|ウォームアップやドロップセットにしたい|セットごとに休憩時間を変えたい" data-keys="セット チェック 完了 重量 回数 レップ ウォームアップ ドロップ 限界 グリップ セットタイプ">
+<h2>セットを記録する</h2>
+<p class="lead">重量と回数を入力し、セットの行のチェックをタップするとそのセットが完了します。</p>
+<ul>
+<li>まとめて完了するには{{> completeAllSets}}をタップします。</li>
+<li>セット番号をタップすると、そのセットの詳細を編集する画面が開きます。セットタイプ（ウォームアップ・ドロップ・限界など）、グリップ、強度、そのセットだけの休憩時間を決めます。</li>
+</ul>
+</section>
+
+<section id="effort" data-ask="セットの強度はどう記録しますか|RPEやRIRを入力したい|このセットはどうでしたかと表示される|あと何回できたかを記録" data-keys="強度 rpe rir 余裕 きつい 限界 ちょうど 主観的運動強度 残り回数">
+<h2>セットの強度を記録する</h2>
+<p class="lead">セットを終えると{{" effortQuickTitle}}が表示されます。4段階から選ぶと次の重量の計算に反映されます。</p>
+<p>数値で記録するには、同じ画面の{{> effortQuickDetail}}をタップしてRIR（残り回数）かRPE（6–10）を入力します。どちらで記録するかは{{> tabMenu > setAppSettings > settingsWorkout}}のRPE/RIRで変更します。</p>
+</section>
+
+<section id="rest-timer" data-ask="休憩タイマーの使い方|休憩を長くしたい|休憩タイマーをスキップ|タイマーが出ない" data-keys="休憩 タイマー インターバル カウントダウン 10秒">
+<h2>休憩タイマー</h2>
+<p class="lead">セットを終えると{{> workoutRestTimer}}が動きます。10秒ずつ増減したり、一時停止やスキップができます。</p>
+<p>デフォルトの休憩時間、通知音、画面を消しても動くタイマーなどは、タイマー内の{{> restTimerOpenSettings}}か<a href="settings.html#rest-timer">設定</a>で決めます。</p>
+</section>
+
+<section id="exercise-menu" data-ask="種目を別の種目に替えたい|スーパーセットを組みたい|トレーニング中に痛いところがある|この種目だけポンドで" data-keys="差し替え 交換 変更 スーパーセット 痛み 痛い けが 削除 ポンド lb">
+<h2>種目ごとのメニュー</h2>
+<p class="lead">種目名の横の⋯をタップすると、その種目だけを変えるメニューが開きます。</p>
+<ul>
+<li>{{> swapExercise}}：同じ部位の別の種目に替えます。</li>
+<li>{{> setUpSuperset}}：別の種目と組んで交互に行います。</li>
+<li>{{> painHereAction}}：痛む部位を記録すると、その部位を使う種目で重量を下げるか別の種目に替えるよう案内します。どのプランでも使えます。</li>
+<li>{{> exerciseUnitToLb}}：その種目だけポンドで記録します。</li>
+<li>{{> notes}}、{{> removeExercise}}もここにあります。</li>
+</ul>
+</section>
+
+<section id="finish" data-ask="ワークアウトを終えるには|完了と保存せずに終了の違い|ワークアウトを保存する方法|終えたのに記録がない" data-keys="終える 終わり 終わり方 終了 完了 保存 まとめ 星 評価 メモ">
+<h2>ワークアウトを終える</h2>
+<p class="lead">下の{{> finishWorkout}}をタップしたときに記録が保存されます。</p>
+<ol class="steps">
+<li>{{> finishWorkout}}をタップします。</li>
+<li>チェックしていないセットがあれば、{{> finishUncheckedComplete}}か{{> finishUncheckedSkip}}を選びます。</li>
+<li>ルーティンから始めた場合は、変えた構成をルーティンにも反映するか選びます。</li>
+<li>まとめ画面でボリューム・時間・使った筋肉を確認し、評価と{{> workoutNotes}}を残します。</li>
+</ol>
+<p class="tip">上のメニューの{{> workoutFinish}}は保存せずに破棄するボタンです。{{" endThisWorkout}}{{" currentRecordWonTBeSaved}}と表示されたらキャンセルして{{> finishWorkout}}をタップしてください。</p>
+</section>
+
+<section id="past" data-ask="済んだワークアウトをあとから記録したい|昨日の記録を忘れた|クイック記録とは|過去の日付で記録を追加" data-keys="クイック記録 過去 昨日 忘れた あとで 日付 追加 予定">
+<h2>済んだワークアウトを記録する</h2>
+<p class="lead">{{> tabHome}}の{{> homeQuickRecord}}か、{{> tabRecord > histAddWorkout > recordPastWorkout}}で、過去のワークアウトを日付と一緒に入力します。</p>
+<p>同じメニューの{{> homeAddScheduled}}で、これからのワークアウトを予定に入れることもできます。進行中のワークアウトがあると{{> homeQuickRecord}}は開かないので、先にそちらを終えてください。</p>
+</section>
+
+<section id="edit" data-ask="過去の記録を直したい|ワークアウトの記録を削除|記録を削除|日付を間違えた|重量を間違えて入力した" data-keys="修正 編集 直す 削除 消す 日付 時間 間違い 復元">
+<h2>過去の記録を編集・削除する</h2>
+<p class="lead">{{> tabRecord}}で記録の⋯をタップすると、編集や削除ができます。</p>
+<ul>
+<li>{{> historyEditWorkout}}：種目とセットを直します。直した内容は統計と次の重量の計算にすぐ反映されます。</li>
+<li>{{> historyEditDateNote}}：日付を移したりメモを変えたりします。</li>
+<li>{{> startFromThisRecord}}：同じ構成で今日もう一度行います。</li>
+<li>{{> actionDelete}}：削除した記録は元に戻せません。</li>
+</ul>
+</section>
+
+<section id="body" data-ask="体重を記録する方法|体重の変化を記録|体型の写真を残したい|体脂肪率を記録" data-keys="体重 体脂肪 骨格筋 身体 体組成 写真 フォト ボディ">
+<h2>体重と写真の記録</h2>
+<p class="lead">{{> tabRecord}}の{{> body}}タブで、{{> histAddBody}}から体重・体脂肪率・骨格筋量を記録します。</p>
+<p>体の写真は{{> photos}}タブの{{> histAddPhoto}}で残します。記録した体重は、筋力バランスの体重比レベル、有酸素カロリー計算、栄養目標に使われます。体組成の測定結果は<a href="tools.html#inbody">ファイルから読み込むこともできます</a>。</p>
+</section>
+
+<section id="notes" data-ask="メモはどこに残しますか|フォームのメモ|メモをまとめて見たい|写真や動画を添付" data-keys="メモ ノート 写真 動画 フォーム 固定 メモ一覧">
+<h2>メモ</h2>
+<p class="lead">ワークアウト中は種目の⋯ → {{> notes}}、終わったあとはまとめ画面の{{> workoutNotes}}に残します。</p>
+<p>フォームのように何度も見るメモは、{{> homeExerciseList}}で種目を開いて{{> addExerciseNote}}で残してください。写真や動画を添付し、上に固定できます。すべてのメモは{{> tabMenu > menuAllMemos}}でまとめて見られます。</p>
+</section>

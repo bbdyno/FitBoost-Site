@@ -15,6 +15,8 @@ import re
 import sys
 from pathlib import Path
 
+import guide
+
 ROOT = Path(__file__).resolve().parent.parent
 SRC = ROOT / "src"
 OUT = ROOT / "docs"
@@ -74,22 +76,31 @@ def render(template, ctx, where):
     return TOKEN.sub(sub, TOKEN.sub(sub, template))
 
 
+def tail(page):
+    """페이지 이름을 주소 꼬리로. index는 폴더 주소(guide/index → guide/)로 쓴다."""
+    if page == "index":
+        return ""
+    if page.endswith("/index"):
+        return page[: -len("index")]
+    return f"{page}.html"
+
+
 def page_href(root, prefix, page):
-    return f"{root}{prefix}{'' if page == 'index' else page + '.html'}" or "./"
+    return f"{root}{prefix}{tail(page)}" or "./"
 
 
 def alternates(page):
-    tail = "" if page == "index" else f"{page}.html"
     lines = [
-        f'<link rel="alternate" hreflang="{hl}" href="{SITE_URL}{prefix}{tail}">'
+        f'<link rel="alternate" hreflang="{hl}" href="{SITE_URL}{prefix}{tail(page)}">'
         for _, hl, prefix, *_ in LANGS
     ]
-    lines.append(f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{tail}">')
+    lines.append(f'<link rel="alternate" hreflang="x-default" href="{SITE_URL}{tail(page)}">')
     return "\n".join(lines)
 
 
-def nav(t, code, root, page):
-    here = "./" if page != "index" else ""
+def nav(t, code, root, page, up=""):
+    """up은 그 언어 첫 화면까지의 상대 경로다. 가이드처럼 한 단계 아래 폴더면 "../"."""
+    here = up or ("./" if page != "index" else "")
     langs = "".join(
         f'<li><a href="{page_href(root, prefix, page)}" data-lang="{c}" lang="{hl}"'
         f'{" aria-current=\"true\"" if c == code else ""}>{LANG_NAMES[c]}</a></li>'
@@ -97,14 +108,15 @@ def nav(t, code, root, page):
     )
     return f"""<header class="nav">
   <div class="wrap nav__in">
-    <a class="brand" href="./" aria-label="FitBoost">
+    <a class="brand" href="{up or './'}" aria-label="FitBoost">
       <img src="{root}assets/icon.webp" alt="" width="30" height="30">
       <span>FitBoost</span>
     </a>
     <nav class="nav__links" aria-label="{t['nav']['label']}">
       <a href="{here}#features">{t['nav']['features']}</a>
       <a href="{here}#pricing">{t['nav']['pricing']}</a>
-      <a href="support.html">{t['nav']['support']}</a>
+      <a href="{up}guide/"{' aria-current="page"' if page.startswith('guide/') else ''}>{t['nav']['guide']}</a>
+      <a href="{up}support.html">{t['nav']['support']}</a>
     </nav>
     <details class="langs">
       <summary aria-label="{t['nav']['language']}"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></svg><span>{LANG_NAMES[code]}</span></summary>
@@ -115,7 +127,7 @@ def nav(t, code, root, page):
 </header>"""
 
 
-def footer(t, root):
+def footer(t, root, up=""):
     return f"""<footer class="foot">
   <div class="wrap foot__in">
     <div class="foot__brand">
@@ -123,9 +135,10 @@ def footer(t, root):
       <p>{t['footer']['tagline']}</p>
     </div>
     <nav class="foot__links" aria-label="{t['footer']['label']}">
-      <a href="support.html">{t['nav']['support']}</a>
-      <a href="privacy.html">{t['footer']['privacy']}</a>
-      <a href="terms.html">{t['footer']['terms']}</a>
+      <a href="{up}guide/">{t['nav']['guide']}</a>
+      <a href="{up}support.html">{t['nav']['support']}</a>
+      <a href="{up}privacy.html">{t['footer']['privacy']}</a>
+      <a href="{up}terms.html">{t['footer']['terms']}</a>
       <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>
     </nav>
     <p class="foot__copy">© 2026 FitBoost</p>
@@ -171,8 +184,10 @@ REDIRECT = """<script>
 def main():
     index_tpl = (SRC / "templates/index.html").read_text()
     doc_tpl = (SRC / "templates/doc.html").read_text()
+    guide_tpl = (SRC / "templates/guide.html").read_text()
 
     only = set(sys.argv[1:])
+    guide_langs = []
     for code, hl, prefix, og, apple, google, ct in LANGS:
         if only and code not in only:
             continue
@@ -218,10 +233,29 @@ def main():
                 "docTitle": meta[page]["title"],
                 "docDescription": meta[page]["description"],
                 "content": content,
+                "guideFind": guide.find_box(t["guide"], "guide/", " g-find--wide"),
             }
             (out_dir / f"{page}.html").write_text(render(doc_tpl, ctx, f"{code}/{page}"))
 
+        def guide_ctx(page, base=base, t=t, code=code, prefix=prefix):
+            root = "../../" if prefix else "../"
+            return {
+                **base,
+                "root": root,
+                "path": f"{prefix}{tail(page)}",
+                "alternates": alternates(page),
+                "nav": nav(t, code, root, page, "../"),
+                "footer": footer(t, root, "../"),
+            }
+
+        guide_langs.append((code, prefix, guide_ctx))
         print(f"{code}: {out_dir.relative_to(ROOT)}")
+
+    # 가이드는 언어끼리 주제·섹션 구성을 맞대 보므로 모든 언어를 한꺼번에 만든다.
+    if not only:
+        guide.build(guide_langs, render, guide_tpl, lambda path, text: path.write_text(text))
+    else:
+        print("가이드: 언어를 골라 빌드하면 건너뛴다(구성 대조에 모든 언어가 필요하다)")
 
 
 if __name__ == "__main__":

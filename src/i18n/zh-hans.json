@@ -7,6 +7,7 @@
     "label": "主菜单",
     "features": "功能",
     "pricing": "价格",
+    "guide": "指南",
     "support": "支持",
     "language": "选择语言",
     "download": "下载"
@@ -274,5 +275,31 @@
   "end": {
     "title": "从今天这一组<br>开始记录。",
     "body": "无需注册即可开始。支持韩语、英语、日语、简体中文与繁体中文。"
+  },
+  "guide": {
+    "title": "使用指南",
+    "description": "从第一次记录到手表连接、同步和订阅，查找 FitBoost 的使用方法。",
+    "intro": "直接提问想做的事，或按主题浏览。",
+    "askLabel": "向指南提问",
+    "hello": "想做什么？用一句话或几个词写下来，比如“换了新手机，想把记录转过去”。",
+    "popular": "常见问题",
+    "placeholder": "例：想连接 Garmin 手表",
+    "send": "发送",
+    "you": "你的问题",
+    "more": "查看详情",
+    "also": "你是不是在找这些？",
+    "which": "是其中哪一个？",
+    "none": "没有找到合适的答案。换个说法试试，或发邮件问我们。",
+    "mail": "发邮件咨询",
+    "failed": "指南加载失败，请稍后再试。",
+    "topicsTitle": "按主题浏览",
+    "findLabel": "搜索指南",
+    "findPlaceholder": "搜索指南",
+    "crumbLabel": "当前位置",
+    "onThisPage": "本页内容",
+    "pagerLabel": "其他主题",
+    "prev": "上一篇",
+    "next": "下一篇",
+    "stillStuck": "仍未解决？请发送邮件至 <a href=\"mailto:della.kimko@gmail.com\">della.kimko@gmail.com</a>，并附上设备型号和应用版本。"
   }
 }

@@ -1,0 +1,40 @@
+<section id="overview" data-ask="統計頁能看什麼|看本週訓練量|和上週比較|訓練量圖表" data-keys="統計 圖表 訓練量 趨勢 本週 上週 比較 目標 使用的肌肉 期間">
+<h2>統計頁能看到什麼</h2>
+<p class="lead">{{> tabStats}} 從上到下依次是本週目標、肌肉恢復、力量平衡和訓練量趨勢。</p>
+<ul>
+<li>{{> statsWeekVsLastWeek}}：把本週訓練和上週比較。</li>
+<li>{{> volumeProgressTrend}}、{{> statsPeriodVolume}}：檢視訓練量的增長。</li>
+<li>{{> musclesUsed}}：檢視 7 天、30 天、90 天或全部時間練到的肌肉。</li>
+<li>{{> deeperAnalysis}}：進入 {{> smartWeightGuide}} 和 {{> weeklyCoachingReport}}。</li>
+</ul>
+</section>
+
+<section id="recovery" data-ask="肌肉恢復是怎麼計算的|哪些部位還沒恢復|今天該練哪裡|恢復圖" data-keys="恢復 肌肉 疲勞 圖 部位 休息 睡眠 疼痛 恢復度 百分比">
+<h2>肌肉恢復圖</h2>
+<p class="lead">用人體圖顯示各部位的恢復程度。免費。</p>
+<p>統計餘力不超過 4 次的高強度組，主要肌肉算一組，協同肌算半組。如果從<a href="health.html#what">健康 App</a>讀取的睡眠少於 6 小時，會把恢復估算得慢一些。疼痛的地方可以用 {{> painRecordAction}} 記錄。</p>
+</section>
+
+<section id="balance" data-ask="什麼是力量平衡|深蹲臥推硬拉的比例|補強弱項|我的力量水平" data-keys="力量 平衡 比例 三大項 深蹲 臥推 硬拉 弱項 補強 處方 水平 體重倍數">
+<h2>力量平衡</h2>
+<p class="lead">根據最近 8 週的記錄，顯示深蹲、臥推、硬拉等動作之間的比例。</p>
+<p>各動作的預估 1RM、相對體重的水平，以及把補強弱項的處方加入例行訓練，屬於 PRO 功能。顯示水平需要個人資料中填寫了性別。</p>
+</section>
+
+<section id="weight-guide" data-ask="做幾次該用多重|不同次數的重量|智慧重量指南|用 1RM 計算訓練重量" data-keys="重量 指南 次數 3次 5次 8次 10次 1rm 預估 曲線">
+<h2>智慧重量指南</h2>
+<p class="lead">選擇動作後，顯示每個次數能舉起的重量和建議的訓練重量。</p>
+<p>從 {{> tabStats > deeperAnalysis > smartWeightGuide}} 開啟。免費提供 3、5、8、10 次的基本估算，PRO 會用根據自己記錄畫出的 1–15 次的次數與重量曲線來確定下一組重量。</p>
+</section>
+
+<section id="weekly-report" data-ask="每週報告在哪裡看|本週訓練總結|想知道是否進入平台期" data-keys="每週 報告 總結 教練 平台期 停滯 下週 建議 分析">
+<h2>每週教練報告 <span class="pro">PRO</span></h2>
+<p class="lead">總結一週訓練，顯示平台期訊號和下次訓練的建議。</p>
+<p>從 {{> tabStats > deeperAnalysis > weeklyCoachingReport}} 開啟。把報告中的組數建議直接套用到例行訓練屬於 PRO+ 功能。</p>
+</section>
+
+<section id="share" data-ask="想把記錄分享成圖片|發到社交平台的記錄卡片|分享訓練" data-keys="分享 卡片 圖片 照片 朋友圈 社交 複製">
+<h2>分享記錄卡片</h2>
+<p class="lead">用 {{> tabStats}} 中的 {{> shareCardsTooltip}} 按鈕，把記錄做成圖片卡片發到其他 App。</p>
+<p>想用文字分享一次訓練，可在 {{> tabRecord}} 中點該記錄的 ⋯ → {{> copySharing}}。</p>
+</section>

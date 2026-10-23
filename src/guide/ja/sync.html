@@ -1,0 +1,56 @@
+<section id="sync" data-ask="iPhoneとiPadの記録をそろえたい|デバイス間の同期をオンにする|iCloud同期|Googleドライブ同期" data-keys="同期 シンク icloud googleドライブ google drive ipad タブレット 複数端末 自動">
+<h2>デバイス間の同期</h2>
+<p class="lead">同じアカウントの端末どうしで記録を自動でそろえます。iPhone・iPadはiCloud、AndroidはGoogleドライブを使います。無料です。</p>
+<ol class="steps">
+<li>{{> tabMenu > setAppSettings > cloudSyncTitle}}を開きます。</li>
+<li>同期をオンにします。すぐにそろえるには{{> cloudSyncNow}}をタップします。</li>
+<li>ほかの端末でも同じアカウントで同じようにオンにします。</li>
+</ol>
+<p>記録は当社のサーバーを通らず、あなたのiCloudやGoogleドライブにだけ保存されます。</p>
+</section>
+
+<section id="not-synced" data-ask="同期の対象外になるもの|写真が同期されない|サブスクリプションも同期されますか" data-keys="同期されない 対象外 写真 動画 サブスクリプション 進行中 ウォッチ 連携 器具">
+<h2>同期されないもの</h2>
+<p class="lead">写真・動画ファイル、サブスクリプション、進行中のワークアウトは端末ごとです。</p>
+<ul>
+<li>写真・動画ファイルは移しません。メモの文章はそろいます。</li>
+<li>サブスクリプション、進行中のワークアウト、ヘルスケアとウォッチの連携、選んでいる器具は端末ごとに持ちます。</li>
+<li>iPhoneとAndroidのようにOSが違う端末どうしは自動でそろえません。<a href="#new-phone">バックアップファイルで移してください</a>。</li>
+</ul>
+</section>
+
+<section id="new-phone" data-ask="機種変更したので記録を移したい|iPhoneからAndroidへ移行|AndroidからiPhoneへ移行|機種変更|新しいスマホにデータを移す" data-keys="機種変更 買い替え 新しいスマホ 移行 移す 引き継ぎ iphone android galaxy">
+<h2>新しいスマホに移す</h2>
+<p class="lead">同じOSどうしならデバイス間の同期か端末のバックアップで、iPhoneとAndroidのあいだはバックアップファイルで移します。</p>
+<ol class="steps">
+<li>以前のスマホで{{> tabMenu > backupTitle > backupExportTitle}}をタップします。</li>
+<li>作ったファイルをメッセンジャー・メール・クラウドなどで新しいスマホに送ります。</li>
+<li>新しいスマホで{{> tabMenu > backupTitle > backupImportTitle}}からそのファイルを開きます。</li>
+<li>{{> backupModeReplace}}を選びます。</li>
+</ol>
+<p>同じOSなら<a href="#sync">デバイス間の同期</a>をオンにしておくだけでも移せます。端末のバックアップ（iCloudバックアップ・Googleの自動バックアップ）がオンなら、新しい端末でアプリを復元するときにも一緒に引き継がれます。サブスクリプションはファイルでは移らないので、<a href="subscription.html#restore">購入の復元</a>を見てください。</p>
+</section>
+
+<section id="backup" data-ask="バックアップファイルの作り方|記録をファイルに保存したい|バックアップにパスワードをかける" data-keys="バックアップ ファイル 保存 書き出し パスワード 暗証 保管 fitboost">
+<h2>バックアップファイルを作る</h2>
+<p class="lead">{{> tabMenu > backupTitle > backupExportTitle}}で記録全体を1つのファイルにします。無料です。</p>
+<p>ワークアウトの記録、ルーティン、予定、身体記録、写真、設定が入ります。パスワードをかけられますが、忘れるとファイルを開けなくなるので、別にメモしておいてください。</p>
+</section>
+
+<section id="restore" data-ask="バックアップファイルを読み込む|置き換えと統合の違い|2台の記録をまとめたい|バックアップの復元" data-keys="読み込み 復元 取り込み 置き換え 統合 マージ 上書き 元に戻す">
+<h2>バックアップファイルを読み込む</h2>
+<p class="lead">{{> tabMenu > backupTitle > backupImportTitle}}で.fitboostファイルを選び、置き換えか統合かを選びます。</p>
+<ul>
+<li>{{> backupModeReplace}}（無料）：この端末の記録を消してファイルの内容に置き換えます。置き換える前の記録は自動でバックアップされ、元に戻せます。</li>
+<li>{{> backupModeMerge}}（PRO）：今の記録にファイルの内容を加えます。同じ記録はあとから編集したほうが残り、片方で削除した記録は再び現れます。</li>
+</ul>
+</section>
+
+<section id="keep-safe" data-ask="記録をなくさないためには|アプリを削除すると記録も消えますか|記録が全部消えた" data-keys="なくす 削除 アプリ削除 再インストール 消えた 保管 安全 データ">
+<h2>記録をなくさないために</h2>
+<p class="lead">記録はこの端末に保存されるので、アプリを削除すると端末にあった記録も一緒に消えます。</p>
+<ul>
+<li><a href="#sync">デバイス間の同期</a>か端末のバックアップをオンにしてください。</li>
+<li>ときどき<a href="#backup">バックアップファイル</a>を作って別に保管してください。</li>
+</ul>
+</section>

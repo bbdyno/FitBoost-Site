@@ -1,0 +1,61 @@
+<section id="units" data-ask="想改成磅|磅|設定為公斤|更改單位|改成英里" data-keys="單位 磅 lb lbs 公斤 千克 kg 英里 公里 km 重量單位 距離">
+<h2>重量和距離單位</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsGeneral}} 的 {{> setWeightUnit}} 中選擇公斤或磅。</p>
+<p>槓片計算也會使用所選單位。同一頁面還能更改 {{> setLengthUnit}} 和 {{> setWeekStart}}。只想讓某個動作用磅記錄，可在訓練中點 ⋯ → {{> exerciseUnitToLb}}。</p>
+</section>
+
+<section id="language" data-ask="想更改語言|改成英文|支援日語和中文嗎" data-keys="語言 英文 英語 日語 中文 韓語 翻譯 language">
+<h2>語言</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsLanguage}} 中可選擇韓語、英語、日語、簡體中文和繁體中文。</p>
+<p>選擇 {{> langSystem}} 會跟隨裝置語言。</p>
+</section>
+
+<section id="theme" data-ask="深色模式|更改主題顏色|讓螢幕暗一點" data-keys="深色模式 暗黑模式 淺色 主題 顏色 外觀">
+<h2>外觀與主題</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsAppearance}} 中選擇淺色、深色或 {{> appearanceSystem}}，並在 {{> settingsTheme}} 中選擇強調色。</p>
+</section>
+
+<section id="rest-timer" data-ask="更改預設休息時長|關閉休息提示音|關閉螢幕後計時器也要響|自動調整休息時長" data-keys="休息 計時 預設 時長 提示音 聲音 音量 背景 倒數計時 自動調整 步長">
+<h2>休息計時設定</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsRestTimer}} 中設定預設休息時長、提示音和計時器的行為。</p>
+<ul>
+<li>{{> setDefaultRest}}、{{> setRestStep}}、{{> setRestSound}}</li>
+<li>{{> setBackgroundTimer}}：離開 App 後計時器繼續執行，結束時提醒你。</li>
+<li>{{> setAdaptiveRest}}：根據剛完成那組的強度和動作類型決定下一次休息。你自己設定的休息，以及例行訓練和計畫中的休息保持不變。</li>
+</ul>
+</section>
+
+<section id="workout-settings" data-ask="關閉訓練中教練建議|用 RIR 代替 RPE|同一個動作加兩次|訓練時螢幕不熄滅" data-keys="訓練 例行 設定 教練 建議 rpe rir 重複 滑動 刪除 下一動作 螢幕 常亮">
+<h2>訓練與例行設定</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsWorkout}} 中調整訓練頁面的行為。</p>
+<ul>
+<li>{{> gymTitle}}：填寫你的槓鈴桿、槓片和啞鈴。</li>
+<li>RPE/RIR：選擇用哪種方式記錄每組強度。</li>
+<li>{{> setSessionCoach}}：開關訓練中的下一組重量建議。</li>
+<li>{{> setAllowDuplicate}}、{{> setSwipeDeleteSet}}、{{> setAutoAdvance}}</li>
+</ul>
+<p>想在訓練中保持螢幕常亮，請開啟 {{> settingsGeneral}} 的 {{> setKeepAwake}}。重量每次增加多少，在 {{> settingsKeyboard}} 的 {{> setWeightStep}} 中設定。</p>
+</section>
+
+<section id="notifications" data-ask="接收訓練提醒|訓練計畫提醒|關閉通知" data-keys="通知 推送 日程 提醒 計時 權限">
+<h2>通知</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > settingsNotification}} 中開關 {{> setNotifyBackgroundTimer}} 和 {{> setNotifySchedule}}。</p>
+<p>收不到通知時，請在裝置設定中確認已允許 FitBoost 的通知。</p>
+</section>
+
+<section id="widgets" data-ask="新增主畫面小工具|在鎖定畫面顯示訓練|即時動態|動態島" data-keys="小工具 鎖定畫面 即時動態 動態島 即時通知 主畫面 自訂">
+<h2>小工具與鎖定畫面</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings > surfaceSettingsTitle}} 中選擇 {{> surfaceTabLive}} 或 {{> surfaceTabWidgets}}。</p>
+<ul>
+<li>免費可使用今日訓練小工具。其他小工具、自訂和鎖定畫面即時動態（Android 為即時通知）屬於 PRO。狀態、恢復和教練計畫小工具屬於 PRO+。</li>
+<li>即時動態需要 iOS 16.1 或更高版本。</li>
+<li>iPhone：長按主畫面，點左上角的編輯 → 加入小工具，找到 FitBoost。</li>
+<li>Android：長按主畫面，開啟小工具，找到 FitBoost。</li>
+</ul>
+</section>
+
+<section id="delete-all" data-ask="刪除所有記錄重新開始|重置資料|想刪除帳號" data-keys="重置 全部刪除 清空 重新開始 刪除帳號">
+<h2>刪除所有記錄</h2>
+<p class="lead">在 {{> tabMenu > setAppSettings}} 最下方的 {{> settingsDeleteLocalData}} 中刪除這台裝置上的全部記錄。</p>
+<p class="tip">無法撤銷。刪除前請先建立<a href="sync.html#backup">備份檔案</a>。</p>
+</section>

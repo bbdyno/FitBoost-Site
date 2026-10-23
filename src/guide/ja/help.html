@@ -1,0 +1,77 @@
+<section id="watch" data-ask="ウォッチがつながらない|ウォッチの接続ができない|Apple WatchにFitBoostが表示されない|Galaxy Watchがつながらない|ウォッチに送れなかった" data-keys="ウォッチ 接続 つながらない 失敗 エラー 待機 インストール ペアリング">
+<h2>ウォッチがつながらないとき</h2>
+<p class="lead">{{> tabMenu > setAppSettings > setWatch}}の{{> setWatchStatus}}に表示される文言で原因を探します。</p>
+<ul>
+<li>{{" watchNotPaired}}：スマホとウォッチがペアリングされているか、ウォッチのアプリ（WatchアプリやGalaxy Wearable）で確認してください。</li>
+<li>{{" watchAppMissing}}：<a href="watch.html#apple-watch">Apple Watch</a>か<a href="watch.html#galaxy-watch">Galaxy Watch</a>にFitBoostをインストールしてください。</li>
+<li>{{" watchWaiting}}：ウォッチでFitBoostを一度開いてください。</li>
+<li>{{" watchUnsupported}}：このスマホではウォッチを使えません。</li>
+</ul>
+<p>{{> setWatchLink}}がオンになっているかも確認してください。ワークアウトをウォッチに送るには、スマホで先にワークアウトを始める必要があります。</p>
+</section>
+
+<section id="garmin" data-ask="Garminがつながらない|Garmin Connectアプリをインストールするよう表示される" data-keys="garmin ガーミン 失敗 connect iq エラー つながらない">
+<h2>Garminがつながらないとき</h2>
+<p class="lead">{{> setGarminConnect}}をタップしたときに表示される文言に従います。</p>
+<ul>
+<li>{{" setGarminNeedsApp}}：スマホにGarmin Connectアプリをインストールしてウォッチをつなぎます。</li>
+<li>{{" setGarminChoose}}：Garmin Connectアプリが開いたら、FitBoostで使うウォッチを選びます。</li>
+<li>{{" setGarminInstallWatchApp}}</li>
+</ul>
+<p>ウォッチでFitBoostを開いてもワークアウトが来ないときは、スマホで先にワークアウトを始めたか確認してください。詳しい手順は<a href="watch.html#garmin">Garminウォッチをつなぐ</a>にあります。</p>
+</section>
+
+<section id="sync" data-ask="同期できない|同期されない|iCloud同期に失敗|Googleドライブの権限|ほかの端末に記録が表示されない" data-keys="同期 失敗 できない エラー icloud googleドライブ 権限 容量 アップデート インターネット">
+<h2>同期できないとき</h2>
+<p class="lead">{{> tabMenu > setAppSettings > cloudSyncTitle}}に表示される文言を確認します。</p>
+<ul>
+<li>{{" cloudSyncFailICloudSignedOut}}</li>
+<li>{{" cloudSyncFailDrivePermission}}</li>
+<li>{{" cloudSyncFailQuotaICloud}} / {{" cloudSyncFailQuotaDrive}}：空き容量を増やしてください。</li>
+<li>{{" cloudSyncFailUpdateRequired}}</li>
+<li>{{" cloudSyncFailNetwork}}</li>
+</ul>
+<p>2台が同じiCloudまたはGoogleアカウントか、両方で同期をオンにしているか確認してください。iPhoneとAndroidのあいだは同期されません。<a href="sync.html#new-phone">バックアップファイルで移してください</a>。</p>
+</section>
+
+<section id="backup" data-ask="バックアップファイルが開けない|バックアップのパスワードを忘れた|バックアップファイルのエラー|パスワードが正しくありません|会員ファイルではないと表示される" data-keys="バックアップ 読み込み 失敗 エラー 破損 パスワード 忘れた 会員ファイル アップデート">
+<h2>バックアップファイルが開けないとき</h2>
+<p class="lead">読み込みに失敗しても、この端末の記録はそのままです。表示された文言を確認してください。</p>
+<ul>
+<li>{{" backupErrorNotBackup}}：.fitboostファイルか確認してください。</li>
+<li>{{" backupErrorNewer}}</li>
+<li>{{" backupErrorCorrupt}}：ファイルをもう一度受け取ってみてください。</li>
+<li>{{" backupWrongPassword}}：作成時にかけたパスワードを入れる必要があります。忘れたパスワードは調べられません。</li>
+<li>{{" memberImportNotMember}}</li>
+</ul>
+</section>
+
+<section id="pro-missing" data-ask="PROを買ったのに反映されない|支払ったのにPROにならない|契約したのに無料のまま|iPhoneで買ったPROをAndroidで使いたい" data-keys="サブスクリプション 決済 支払い 反映されない 無料 復元 pro プロ 消えた 別の端末">
+<h2>契約したのにPROにならないとき</h2>
+<p class="lead">FitBoost PRO画面で{{> restorePurchases}}をタップしてください。</p>
+<p>決済したAppleまたはGoogleのアカウントでログインしている必要があります。iPhoneで買ったサブスクリプションはAndroidで、Androidで買ったものはiPhoneで復元できません。詳しくは<a href="subscription.html#restore">購入の復元</a>を見てください。</p>
+</section>
+
+<section id="workout-lost" data-ask="終えたのにワークアウトが記録にない|保存せずに終了を押して記録が消えた|ワークアウトが保存されなかった|さっきのワークアウトが消えた" data-keys="記録 ない 消えた 保存されない 保存せずに終了 完了 なくなった">
+<h2>さっきのワークアウトが記録にないとき</h2>
+<p class="lead">{{> workoutFinish}}で終えたワークアウトは保存されません。記録は{{> finishWorkout}}をタップしたときに残ります。</p>
+<p>消えたワークアウトは{{> tabRecord > histAddWorkout > recordPastWorkout}}で入れ直せます。Garminウォッチで行ったワークアウトなら、スマホを近くに置いてウォッチのアプリから送り直してください。</p>
+</section>
+
+<section id="cant-start" data-ask="クイック記録が開かない|進行中のワークアウトを先に完了してくださいと表示される|新しいワークアウトを始められない" data-keys="進行中 ワークアウト 先に 完了 クイック記録 開かない 始められない">
+<h2>進行中のワークアウトがあると言われたとき</h2>
+<p class="lead">{{" finishWorkoutProgressFirst}}と表示されたら、開いたままのワークアウトがあります。</p>
+<p>{{> tabHome}}の今日のカードの{{> homeContinueWorkout}}で戻って{{> finishWorkout}}をタップするか、不要なら{{> workoutFinish}}で破棄してから始め直してください。</p>
+</section>
+
+<section id="health" data-ask="ヘルスケアとつながらない|Apple Healthにワークアウトが入らない|新しく取り込む記録はないと表示される" data-keys="ヘルスケア 接続 失敗 権限 ヘルス healthkit health connect 取り込み ない">
+<h2>ヘルスケアとつながらないとき</h2>
+<p class="lead">{{" setHealthLinkFailed}}と表示されたら、端末のヘルスケアの権限を確認します。</p>
+<p>iPhoneは設定 → プライバシーとセキュリティ → ヘルスケア → FitBoostで、AndroidはHealth Connectのアプリの権限でFitBoostが許可されているか確認してください。{{" setWatchImportEmpty}}は、直近30日に新しく取り込むワークアウトがないという意味です。</p>
+</section>
+
+<section id="notifications" data-ask="休憩タイマーの通知が来ない|ロック画面にワークアウトが表示されない|ライブアクティビティが出ない" data-keys="通知 来ない 権限 タイマー ロック画面 ライブアクティビティ">
+<h2>通知やロック画面が表示されないとき</h2>
+<p class="lead">{{" setNotificationPermissionDenied}}と表示されたら、端末の設定でFitBoostの通知を許可してください。</p>
+<p>ライブアクティビティがオフのときは、アプリが{{" surfaceTurnOnInSettings}}と案内します。通知も許可されている必要があります。<a href="settings.html#widgets">ウィジェットとロック画面</a>も見てください。</p>
+</section>

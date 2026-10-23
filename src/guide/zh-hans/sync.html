@@ -1,0 +1,56 @@
+<section id="sync" data-ask="想让 iPhone 和 iPad 的记录一致|打开设备间同步|iCloud 同步|Google 云端硬盘同步" data-keys="同步 icloud google drive 云端硬盘 ipad 平板 多设备 自动">
+<h2>设备间同步</h2>
+<p class="lead">在同一账户的设备之间自动同步记录。iPhone 和 iPad 用 iCloud，Android 用 Google 云端硬盘。免费。</p>
+<ol class="steps">
+<li>打开 {{> tabMenu > setAppSettings > cloudSyncTitle}}。</li>
+<li>打开同步。想立即同步就点 {{> cloudSyncNow}}。</li>
+<li>在另一台设备上用同一账户同样打开。</li>
+</ol>
+<p>记录不经过我们的服务器，只保存在你自己的 iCloud 或 Google 云端硬盘中。</p>
+</section>
+
+<section id="not-synced" data-ask="哪些内容不同步|照片不同步|订阅也会同步吗" data-keys="不同步 排除 照片 视频 订阅 进行中 手表 连接 器械">
+<h2>不会同步的内容</h2>
+<p class="lead">照片和视频文件、订阅、进行中的训练在每台设备上各自独立。</p>
+<ul>
+<li>照片和视频文件不会复制，备注文字会同步。</li>
+<li>订阅、进行中的训练、健康应用和手表的连接，以及当前选择的器械，每台设备各自保存。</li>
+<li>iPhone 和 Android 这样系统不同的设备之间不会自动同步，请<a href="#new-phone">用备份文件转移</a>。</li>
+</ul>
+</section>
+
+<section id="new-phone" data-ask="换了新手机怎么转移记录|从 iPhone 转到 Android|从 Android 转到 iPhone|换手机|把数据转到新手机" data-keys="换手机 新手机 转移 迁移 搬家 iphone android 安卓 苹果">
+<h2>转移到新手机</h2>
+<p class="lead">同一系统之间用设备间同步或设备备份，iPhone 与 Android 之间用备份文件转移。</p>
+<ol class="steps">
+<li>在旧手机上点击 {{> tabMenu > backupTitle > backupExportTitle}}。</li>
+<li>通过聊天软件、邮件或云盘等把文件发到新手机。</li>
+<li>在新手机上用 {{> tabMenu > backupTitle > backupImportTitle}} 打开这个文件。</li>
+<li>选择 {{> backupModeReplace}}。</li>
+</ol>
+<p>同一系统的话，只要打开<a href="#sync">设备间同步</a>即可。如果开启了设备备份（iCloud 备份或 Google 自动备份），在新设备上恢复应用时记录也会一起带过去。订阅不会随文件转移，请看<a href="subscription.html#restore">恢复购买</a>。</p>
+</section>
+
+<section id="backup" data-ask="怎么创建备份文件|想把记录存成文件|给备份加密码" data-keys="备份 文件 保存 导出 密码 保管 fitboost">
+<h2>创建备份文件</h2>
+<p class="lead">用 {{> tabMenu > backupTitle > backupExportTitle}} 把全部记录存成一个文件。免费。</p>
+<p>包含训练记录、例行训练、日程、身体记录、照片和设置。可以设置密码，但忘记密码就无法打开文件，请另外记好。</p>
+</section>
+
+<section id="restore" data-ask="导入备份文件|替换和合并的区别|想合并两台设备的记录|恢复备份" data-keys="导入 恢复 读取 替换 合并 覆盖 撤销">
+<h2>导入备份文件</h2>
+<p class="lead">在 {{> tabMenu > backupTitle > backupImportTitle}} 中选择 .fitboost 文件，再选择替换或合并。</p>
+<ul>
+<li>{{> backupModeReplace}}（免费）：清除这台设备上的记录，换成文件里的内容。替换前的记录会自动备份，可以撤销。</li>
+<li>{{> backupModeMerge}}（PRO）：把文件内容加到当前记录中。同一条记录保留最后编辑的那份，一方已删除的记录会重新出现。</li>
+</ul>
+</section>
+
+<section id="keep-safe" data-ask="怎样才不会丢失记录|删除应用记录也会删除吗|记录全没了" data-keys="丢失 删除 删除应用 重新安装 没了 保管 安全 数据">
+<h2>避免丢失记录</h2>
+<p class="lead">记录保存在这台设备上，所以删除应用时设备上的记录也会一起删除。</p>
+<ul>
+<li>请打开<a href="#sync">设备间同步</a>或设备备份。</li>
+<li>不时创建<a href="#backup">备份文件</a>并另外保存。</li>
+</ul>
+</section>

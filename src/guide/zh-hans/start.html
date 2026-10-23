@@ -1,0 +1,28 @@
+<section id="first-run" data-ask="安装后要做什么|第一次打开应用|怎么开始使用|一开始要填什么" data-keys="第一次 安装 开始 引导 个人资料 昵称 性别 出生年份 身高 体重 深蹲">
+<h2>第一次打开时</h2>
+<p class="lead">翻过三页介绍，填写五项个人资料，就可以开始记录了。</p>
+<ol class="steps">
+<li>翻过介绍页，在最后一页点击开始。</li>
+<li>填写昵称、性别、出生年份、身高和体重。</li>
+<li>填写预估的深蹲 1RM。不知道的话，可以选择不确定。</li>
+</ol>
+<p>这些信息用于推荐重量和估算消耗的热量。重量单位（kg 或 lb）跟随设备的地区设置，之后可以<a href="settings.html#units">在设置中更改</a>。</p>
+</section>
+
+<section id="account" data-ask="需要注册吗|需要创建账户吗|在哪里登录|我的记录保存在哪里" data-keys="注册 账户 账号 登录 密码 保存 服务器">
+<h2>不需要账户</h2>
+<p class="lead">无需注册或登录。记录保存在这台设备上。</p>
+<p>昵称可在 {{> tabMenu > menuAccountPill > editProfile}} 中修改。记录不会发送到我们的服务器，为了在设备丢失时也能保住记录，请使用<a href="sync.html#sync">设备间同步</a>或<a href="sync.html#backup">备份文件</a>。</p>
+</section>
+
+<section id="tabs" data-ask="应用的界面是怎样的|底部有哪些标签|东西都在哪里" data-keys="标签 界面 结构 首页 记录 统计 教练 菜单">
+<h2>界面结构</h2>
+<p class="lead">底部的标签有 {{> tabHome}}、{{> tabRecord}}、{{> tabStats}}、{{> tabCoach}}、{{> tabMenu}} 五个。</p>
+<ul>
+<li>{{> tabHome}}：今天的训练、{{> homeQuickRecord}}、{{> homePrograms}} 和 {{> homeMyRoutines}}。</li>
+<li>{{> tabRecord}}：按日期查看过去的训练，并进行编辑或删除。</li>
+<li>{{> tabStats}}：本周目标、肌肉恢复、力量平衡和训练量趋势。</li>
+<li>{{> tabCoach}}：PRO+ 的周期计划和按状态调整的指导。没有 PRO+ 时只显示介绍。</li>
+<li>{{> tabMenu}}：{{> setAppSettings}}、{{> backupTitle}}、{{> trainerShareTitle}}、计算器和健康应用连接。</li>
+</ul>
+</section>

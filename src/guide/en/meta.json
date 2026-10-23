@@ -1,0 +1,25 @@
+{
+  "topics": [
+    {"slug": "start", "title": "Getting started", "description": "What to do after installing, and how the app is laid out."},
+    {"slug": "record", "title": "Logging workouts", "description": "Start a workout, log sets, finish, and fix past records."},
+    {"slug": "routines", "title": "Routines and programs", "description": "Build routines, get a program made for you, and use the exercise list."},
+    {"slug": "coach", "title": "Coaching and circuits", "description": "Next-weight suggestions, coach circuits, weekly hybrid plans, and block programs in the Coach tab."},
+    {"slug": "stats", "title": "Stats and reports", "description": "Recovery, strength balance, volume, and the weekly coaching report."},
+    {"slug": "tools", "title": "Calculators and tools", "description": "Plate, 1RM, and program calculators, your equipment, and the training glossary."},
+    {"slug": "watch", "title": "Smartwatches", "description": "Connect Apple Watch, Galaxy Watch, or a Garmin watch and log from your wrist."},
+    {"slug": "health", "title": "Health apps", "description": "Send workouts to Apple Health and Health Connect, and bring in sleep and heart rate."},
+    {"slug": "sync", "title": "Sync and backup", "description": "Keep devices in step, move to a new phone, and make backup files."},
+    {"slug": "trainer", "title": "Sharing with a trainer", "description": "Send your records to a trainer, and view client records as a trainer."},
+    {"slug": "subscription", "title": "Free and subscriptions", "description": "What's free, how PRO and PRO+ differ, restoring, and canceling."},
+    {"slug": "settings", "title": "Settings", "description": "Units, language, theme, rest timer, widgets, and the Lock Screen."},
+    {"slug": "help", "title": "Troubleshooting", "description": "What to check when watches, sync, backups, or subscriptions get stuck."}
+  ],
+  "popular": [
+    "sync#new-phone",
+    "watch#garmin",
+    "record#finish",
+    "subscription#restore",
+    "routines#builder",
+    "settings#units"
+  ]
+}

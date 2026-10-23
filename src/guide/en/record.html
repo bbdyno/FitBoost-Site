@@ -1,0 +1,84 @@
+<section id="start-workout" data-ask="How do I start a workout|How do I start logging|Start a workout from a routine|I want to train without a plan" data-keys="start begin workout today free routine log logging">
+<h2>Starting a workout</h2>
+<p class="lead">Tap {{> actionStart}} on today's card in {{> tabHome}}. If you have no routine, you start an empty workout and log freely.</p>
+<ol class="steps">
+<li>Tap {{> actionStart}} on today's card in {{> tabHome}}.</li>
+<li>To use a different routine, tap ⋯ on the card and pick {{> chooseRoutine}}.</li>
+<li>Add exercises and log your sets.</li>
+</ol>
+<p>You can also start a routine straight from {{> tabHome > homeMyRoutines}}, or go to {{> tabRecord > histAddWorkout > workoutStart}}.</p>
+</section>
+
+<section id="sets" data-ask="How do I log a set|Check off a set|Mark warm-up or drop sets|Set a different rest for one set" data-keys="set sets check complete weight reps warm-up warmup drop failure grip set type">
+<h2>Logging sets</h2>
+<p class="lead">Enter the weight and reps, then tap the check on the set row to finish that set.</p>
+<ul>
+<li>To finish them all at once, tap {{> completeAllSets}}.</li>
+<li>Tap the set number to open the set details. Choose the set type (warm-up, drop, failure, and more), grip, effort, and a rest time for that set only.</li>
+</ul>
+</section>
+
+<section id="effort" data-ask="How do I log how hard a set was|Enter RPE or RIR|What is the how did that set feel popup|Log reps in reserve" data-keys="effort rpe rir reps in reserve easy hard limit exertion intensity">
+<h2>Logging effort</h2>
+<p class="lead">When you finish a set, {{" effortQuickTitle}} pops up. Pick one of four levels and it feeds into the next-weight calculation.</p>
+<p>To enter a number, tap {{> effortQuickDetail}} in the same sheet and enter RIR (reps left) or RPE (6–10). Choose which one you use under RPE/RIR in {{> tabMenu > setAppSettings > settingsWorkout}}.</p>
+</section>
+
+<section id="rest-timer" data-ask="How do I use the rest timer|Make my rest longer|Skip the rest timer|The timer doesn't show up" data-keys="rest timer break interval countdown 10 seconds">
+<h2>Rest timer</h2>
+<p class="lead">The {{> workoutRestTimer}} starts when you finish a set. Add or remove 10 seconds, pause, or skip it.</p>
+<p>Set the default rest, alert sound, and whether it keeps running in the background from {{> restTimerOpenSettings}} inside the timer, or in <a href="settings.html#rest-timer">settings</a>.</p>
+</section>
+
+<section id="exercise-menu" data-ask="Swap an exercise for another|Make a superset|Something hurts during my workout|Log just this exercise in pounds" data-keys="swap replace change superset pain hurts injury remove delete pounds lb">
+<h2>Exercise menu</h2>
+<p class="lead">Tap ⋯ next to an exercise name to open options for that exercise only.</p>
+<ul>
+<li>{{> swapExercise}}: replace it with another exercise for the same muscles.</li>
+<li>{{> setUpSuperset}}: pair it with another exercise and alternate.</li>
+<li>{{> painHereAction}}: log where it hurts, and exercises that use that area will suggest a lighter weight or a swap. Available on every plan.</li>
+<li>{{> exerciseUnitToLb}}: log just this exercise in pounds.</li>
+<li>{{> notes}} and {{> removeExercise}} are here too.</li>
+</ul>
+</section>
+
+<section id="finish" data-ask="How do I finish a workout|Difference between finish and end|How do I save my workout|I finished but my workout is missing" data-keys="finish end done save complete summary rating notes missing lost">
+<h2>Finishing a workout</h2>
+<p class="lead">Your workout is saved only when you tap {{> finishWorkout}} at the bottom.</p>
+<ol class="steps">
+<li>Tap {{> finishWorkout}}.</li>
+<li>If some sets aren't checked, choose {{> finishUncheckedComplete}} or {{> finishUncheckedSkip}}.</li>
+<li>If you started from a routine, choose whether to save your changes to the routine.</li>
+<li>On the summary, review volume, time, and muscles used, and add a rating and {{> workoutNotes}}.</li>
+</ol>
+<p class="tip">{{> workoutFinish}} in the top menu discards the workout. If you see {{" endThisWorkout}} {{" currentRecordWonTBeSaved}}, cancel and tap {{> finishWorkout}} instead.</p>
+</section>
+
+<section id="past" data-ask="Log a workout I already did|I forgot to log yesterday|What is quick record|Add a workout for a past date" data-keys="quick record past yesterday forgot later earlier date add schedule">
+<h2>Logging a past workout</h2>
+<p class="lead">Use {{> homeQuickRecord}} in {{> tabHome}} or {{> tabRecord > histAddWorkout > recordPastWorkout}} to enter a workout with its date.</p>
+<p>{{> homeAddScheduled}} in the same menu puts a future workout on your schedule. {{> homeQuickRecord}} won't open while a workout is in progress, so finish that one first.</p>
+</section>
+
+<section id="edit" data-ask="Edit a past workout|Delete a workout|Delete a record|I entered the wrong date|I logged the wrong weight" data-keys="edit change fix delete remove date time wrong mistake undo">
+<h2>Editing or deleting past workouts</h2>
+<p class="lead">In {{> tabRecord}}, tap ⋯ on a workout to edit or delete it.</p>
+<ul>
+<li>{{> historyEditWorkout}}: change exercises and sets. Stats and next-weight calculations update right away.</li>
+<li>{{> historyEditDateNote}}: move the date or change the note.</li>
+<li>{{> startFromThisRecord}}: do the same workout again today.</li>
+<li>{{> actionDelete}}: deleted workouts can't be recovered.</li>
+</ul>
+</section>
+
+<section id="body" data-ask="How do I log my body weight|Track weight changes|Take progress photos|Log body fat" data-keys="body weight bodyweight body fat muscle mass progress photo photos inbody">
+<h2>Body weight and photos</h2>
+<p class="lead">In the {{> body}} tab of {{> tabRecord}}, use {{> histAddBody}} to log weight, body fat, and skeletal muscle mass.</p>
+<p>Progress photos go in the {{> photos}} tab with {{> histAddPhoto}}. Your logged weight is used for strength-to-bodyweight levels, cardio calorie estimates, and nutrition targets. You can also <a href="tools.html#inbody">import body composition from a file</a>.</p>
+</section>
+
+<section id="notes" data-ask="Where do I add notes|Notes about my form|See all my notes in one place|Attach a photo or video" data-keys="notes note memo photo video form pin all memos">
+<h2>Notes</h2>
+<p class="lead">During a workout, use ⋯ → {{> notes}} on an exercise. Afterwards, use {{> workoutNotes}} on the summary.</p>
+<p>For notes you'll keep coming back to, like form cues, open the exercise in {{> homeExerciseList}} and use {{> addExerciseNote}}. You can attach photos or videos and pin notes to the top. See every note in {{> tabMenu > menuAllMemos}}.</p>
+</section>

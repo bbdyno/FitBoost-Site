@@ -1,0 +1,84 @@
+<section id="start-workout" data-ask="怎么开始训练|怎么开始记录|用例行训练开始|想自由训练" data-keys="开始 训练 今天 自由 例行 记录">
+<h2>开始训练</h2>
+<p class="lead">在 {{> tabHome}} 的今日卡片上点击 {{> actionStart}}。没有例行训练时会以空白训练开始，可以自由记录。</p>
+<ol class="steps">
+<li>在 {{> tabHome}} 的今日卡片上点击 {{> actionStart}}。</li>
+<li>想换一个例行训练，点卡片上的 ⋯ 选择 {{> chooseRoutine}}。</li>
+<li>添加动作并记录每组。</li>
+</ol>
+<p>也可以从 {{> tabHome > homeMyRoutines}} 直接开始例行训练，或通过 {{> tabRecord > histAddWorkout > workoutStart}} 开始。</p>
+</section>
+
+<section id="sets" data-ask="怎么记录一组|勾选完成一组|标记热身组或递减组|单独设置某一组的休息时间" data-keys="组 勾选 完成 重量 次数 热身 递减 力竭 握法 组类型">
+<h2>记录每组</h2>
+<p class="lead">填写重量和次数，点该组那一行的勾，这一组就完成了。</p>
+<ul>
+<li>想一次全部完成，点 {{> completeAllSets}}。</li>
+<li>点组号会打开该组的详细编辑。可以设置组类型（热身、递减、力竭等）、握法、强度和这一组单独的休息时间。</li>
+</ul>
+</section>
+
+<section id="effort" data-ask="怎么记录每组的强度|输入 RPE 或 RIR|弹出这一组感觉如何|记录还剩几次" data-keys="强度 rpe rir 余力 轻松 吃力 极限 适中 自觉用力 剩余次数">
+<h2>记录每组强度</h2>
+<p class="lead">完成一组后会弹出 {{" effortQuickTitle}}。从四个等级中选一个，就会用于计算下一组重量。</p>
+<p>想填数字，在同一窗口点 {{> effortQuickDetail}}，输入 RIR（剩余次数）或 RPE（6–10）。用哪一种，可以在 {{> tabMenu > setAppSettings > settingsWorkout}} 的 RPE/RIR 中更改。</p>
+</section>
+
+<section id="rest-timer" data-ask="休息计时怎么用|想延长休息时间|跳过休息计时|计时器不出现" data-keys="休息 计时 计时器 间歇 倒计时 10秒">
+<h2>休息计时</h2>
+<p class="lead">完成一组后 {{> workoutRestTimer}} 开始计时。可以每次加减 10 秒，也可以暂停或跳过。</p>
+<p>默认休息时长、提示音、熄屏后继续计时等，可在计时器里的 {{> restTimerOpenSettings}} 或<a href="settings.html#rest-timer">设置</a>中调整。</p>
+</section>
+
+<section id="exercise-menu" data-ask="想把动作换成别的动作|设置超级组|训练中某处疼痛|只让这个动作用磅" data-keys="替换 更换 超级组 疼痛 疼 受伤 移除 删除 磅 lb">
+<h2>动作菜单</h2>
+<p class="lead">点动作名称旁的 ⋯，可以打开只针对该动作的菜单。</p>
+<ul>
+<li>{{> swapExercise}}：换成同一部位的其他动作。</li>
+<li>{{> setUpSuperset}}：与另一个动作组合，交替进行。</li>
+<li>{{> painHereAction}}：记录疼痛部位后，用到该部位的动作会提示减重或换动作。所有方案都能用。</li>
+<li>{{> exerciseUnitToLb}}：只让这个动作用磅记录。</li>
+<li>{{> notes}} 和 {{> removeExercise}} 也在这里。</li>
+</ul>
+</section>
+
+<section id="finish" data-ask="怎么结束训练|完成训练和不保存并结束的区别|怎么保存训练|结束了但没有记录" data-keys="结束 完成 保存 总结 评分 备注 消失">
+<h2>结束训练</h2>
+<p class="lead">只有点击底部的 {{> finishWorkout}}，记录才会保存。</p>
+<ol class="steps">
+<li>点击 {{> finishWorkout}}。</li>
+<li>如果有未勾选的组，选择 {{> finishUncheckedComplete}} 或 {{> finishUncheckedSkip}}。</li>
+<li>如果是从例行训练开始的，选择是否把改动同步到例行训练。</li>
+<li>在总结页查看训练量、时长和用到的肌肉，并留下评分和 {{> workoutNotes}}。</li>
+</ol>
+<p class="tip">顶部菜单的 {{> workoutFinish}} 会直接丢弃训练。看到 {{" endThisWorkout}}{{" currentRecordWonTBeSaved}} 时请取消，改点 {{> finishWorkout}}。</p>
+</section>
+
+<section id="past" data-ask="想补记已经做过的训练|忘了记录昨天的训练|快速记录是什么|按过去的日期添加记录" data-keys="快速记录 过去 昨天 忘了 补记 日期 添加 计划">
+<h2>记录已完成的训练</h2>
+<p class="lead">用 {{> tabHome}} 的 {{> homeQuickRecord}} 或 {{> tabRecord > histAddWorkout > recordPastWorkout}}，连同日期补录过去的训练。</p>
+<p>同一菜单的 {{> homeAddScheduled}} 可以把之后的训练加入日程。有进行中的训练时 {{> homeQuickRecord}} 打不开，请先结束那次训练。</p>
+</section>
+
+<section id="edit" data-ask="想修改过去的记录|删除训练记录|删除记录|日期填错了|重量填错了" data-keys="修改 编辑 删除 日期 时间 填错 恢复">
+<h2>编辑或删除过去的记录</h2>
+<p class="lead">在 {{> tabRecord}} 中点记录的 ⋯，即可编辑或删除。</p>
+<ul>
+<li>{{> historyEditWorkout}}：修改动作和组。修改会立即反映到统计和下一组重量的计算中。</li>
+<li>{{> historyEditDateNote}}：调整日期或修改备注。</li>
+<li>{{> startFromThisRecord}}：今天按同样的内容再练一次。</li>
+<li>{{> actionDelete}}：删除的记录无法恢复。</li>
+</ul>
+</section>
+
+<section id="body" data-ask="怎么记录体重|记录体重变化|拍体型照片|记录体脂率" data-keys="体重 体脂 骨骼肌 身体 体成分 照片 体型">
+<h2>记录体重和照片</h2>
+<p class="lead">在 {{> tabRecord}} 的 {{> body}} 标签中，用 {{> histAddBody}} 记录体重、体脂率和骨骼肌量。</p>
+<p>体型照片在 {{> photos}} 标签用 {{> histAddPhoto}} 记录。记录的体重会用于力量平衡的体重倍数、有氧热量计算和营养目标。体成分测量结果也可以<a href="tools.html#inbody">从文件导入</a>。</p>
+</section>
+
+<section id="notes" data-ask="备注写在哪里|动作要领备注|想集中查看备注|附加照片或视频" data-keys="备注 笔记 照片 视频 动作要领 置顶 全部备注">
+<h2>备注</h2>
+<p class="lead">训练中用动作的 ⋯ → {{> notes}}，结束后在总结页的 {{> workoutNotes}} 中记录。</p>
+<p>像动作要领这类要反复查看的备注，请在 {{> homeExerciseList}} 中打开动作，用 {{> addExerciseNote}} 记录。可以附加照片或视频并置顶。所有备注都能在 {{> tabMenu > menuAllMemos}} 中集中查看。</p>
+</section>

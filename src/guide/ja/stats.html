@@ -1,0 +1,40 @@
+<section id="overview" data-ask="統計タブで何が見られますか|今週のトレーニング量を見たい|先週と比べたい|ボリュームのグラフ" data-keys="統計 グラフ ボリューム 推移 今週 先週 比較 目標 使用した筋肉 期間">
+<h2>統計タブで見られること</h2>
+<p class="lead">{{> tabStats}}には、今週の目標、筋肉の回復、筋力バランス、ボリュームの推移が上から順に並んでいます。</p>
+<ul>
+<li>{{> statsWeekVsLastWeek}}：今週のトレーニングを先週と比べます。</li>
+<li>{{> volumeProgressTrend}}、{{> statsPeriodVolume}}：ボリュームがどう伸びたかを見ます。</li>
+<li>{{> musclesUsed}}：7日・30日・90日・全期間で使った筋肉を見ます。</li>
+<li>{{> deeperAnalysis}}：{{> smartWeightGuide}}と{{> weeklyCoachingReport}}に進みます。</li>
+</ul>
+</section>
+
+<section id="recovery" data-ask="筋肉の回復はどう計算しますか|どの部位がまだ回復していませんか|今日はどこを鍛えればいいですか|回復マップ" data-keys="回復 筋肉 疲労 マップ 部位 休む 睡眠 痛み 回復度 パーセント">
+<h2>筋肉の回復マップ</h2>
+<p class="lead">部位ごとの回復具合を体の図で表示します。無料です。</p>
+<p>余裕を4回以下しか残さなかったきついセットを数え、主働筋は1セット、一緒に使った筋肉は0.5セットとして入れます。<a href="health.html#what">ヘルスケア</a>から取り込んだ睡眠が6時間より短いと回復を遅めに見積もります。痛むところは{{> painRecordAction}}で記録できます。</p>
+</section>
+
+<section id="balance" data-ask="筋力バランスとは|スクワット・ベンチ・デッドの比率|弱い部位を補いたい|自分の筋力レベル" data-keys="筋力 バランス 比率 ビッグ3 スクワット ベンチ デッドリフト 弱点 補強 処方 レベル 体重比">
+<h2>筋力バランス</h2>
+<p class="lead">直近8週の記録から、スクワット・ベンチプレス・デッドリフトなどのリフト同士の比率を表示します。</p>
+<p>リフトごとの推定1RMと体重比のレベル、足りない側を補う処方をルーティンに入れる機能はPROです。レベルの表示にはプロフィールの性別が必要です。</p>
+</section>
+
+<section id="weight-guide" data-ask="何回なら何キロ持てばいいですか|回数ごとの重量|スマート重量ガイド|1RMからトレーニング重量を計算" data-keys="重量 ガイド 回数 レップ 3回 5回 8回 10回 1rm 推定 カーブ">
+<h2>スマート重量ガイド</h2>
+<p class="lead">種目を選ぶと、回数ごとに持てる重量とトレーニングにすすめる重量を表示します。</p>
+<p>{{> tabStats > deeperAnalysis > smartWeightGuide}}で開きます。無料は3・5・8・10回の基本推定値で、PROは自分の記録から描いた1–15回の回数・重量カーブで次の重量を合わせます。</p>
+</section>
+
+<section id="weekly-report" data-ask="週間レポートはどこで見られますか|今週のまとめ|停滞しているか知りたい" data-keys="週間 レポート まとめ コーチング 停滞 来週 提案 分析">
+<h2>週間コーチングレポート <span class="pro">PRO</span></h2>
+<p class="lead">1週間をまとめ、停滞のサインと次のワークアウトの提案を表示します。</p>
+<p>{{> tabStats > deeperAnalysis > weeklyCoachingReport}}で開きます。レポートのセット数の提案をルーティンにそのまま反映する機能はPRO+です。</p>
+</section>
+
+<section id="share" data-ask="記録を画像で共有したい|インスタに載せる記録カード|ワークアウトを共有" data-keys="共有 カード 画像 写真 インスタ sns コピー">
+<h2>記録カードの共有</h2>
+<p class="lead">{{> tabStats}}の{{> shareCardsTooltip}}ボタンで、記録を画像カードにしてほかのアプリに送ります。</p>
+<p>1回のワークアウトをテキストで送るには、{{> tabRecord}}で記録の⋯ → {{> copySharing}}を使います。</p>
+</section>

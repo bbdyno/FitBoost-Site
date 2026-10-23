@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>使用指南 — FitBoost</title>
+<meta name="description" content="從第一次記錄到手錶連接、同步和訂閱，查找 FitBoost 的使用方法。">
+<meta name="theme-color" content="#EDEDE8">
+<link rel="icon" href="../../assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="../../assets/icon-180.png">
+<link rel="canonical" href="https://bbdyno.github.io/FitBoost-Site/zh-hant/guide/">
+<link rel="alternate" hreflang="ko" href="https://bbdyno.github.io/FitBoost-Site/guide/">
+<link rel="alternate" hreflang="en" href="https://bbdyno.github.io/FitBoost-Site/en/guide/">
+<link rel="alternate" hreflang="ja" href="https://bbdyno.github.io/FitBoost-Site/ja/guide/">
+<link rel="alternate" hreflang="zh-Hans" href="https://bbdyno.github.io/FitBoost-Site/zh-hans/guide/">
+<link rel="alternate" hreflang="zh-Hant" href="https://bbdyno.github.io/FitBoost-Site/zh-hant/guide/">
+<link rel="alternate" hreflang="x-default" href="https://bbdyno.github.io/FitBoost-Site/guide/">
+<script>document.documentElement.classList.add('js');</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="../../assets/site.css">
+</head>
+<body class="lang-zh-hant page-doc page-guide">
+
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="../" aria-label="FitBoost">
+      <img src="../../assets/icon.webp" alt="" width="30" height="30">
+      <span>FitBoost</span>
+    </a>
+    <nav class="nav__links" aria-label="主選單">
+      <a href="../#features">功能</a>
+      <a href="../#pricing">價格</a>
+      <a href="../guide/" aria-current="page">指南</a>
+      <a href="../support.html">支援</a>
+    </nav>
+    <details class="langs">
+      <summary aria-label="選擇語言"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.6 2.6 3.8 5.6 3.8 9s-1.2 6.4-3.8 9c-2.6-2.6-3.8-5.6-3.8-9S9.4 5.6 12 3Z"/></svg><span>繁體中文</span></summary>
+      <ul><li><a href="../../guide/" data-lang="ko" lang="ko">한국어</a></li><li><a href="../../en/guide/" data-lang="en" lang="en">English</a></li><li><a href="../../ja/guide/" data-lang="ja" lang="ja">日本語</a></li><li><a href="../../zh-hans/guide/" data-lang="zh-hans" lang="zh-Hans">简体中文</a></li><li><a href="../../zh-hant/guide/" data-lang="zh-hant" lang="zh-Hant" aria-current="true">繁體中文</a></li></ul>
+    </details>
+    <a class="nav__cta" href="../#download">下載</a>
+  </div>
+</header>
+
+<main class="doc guide wrap">
+<h1>使用指南</h1>
+<p class="g-lede">直接提問想做的事，或依主題瀏覽。</p>
+<section class="ask" aria-label="向指南提問" data-index="search.json">
+  <div class="ask__log" aria-live="polite">
+    <div class="msg msg--bot"><p>想做什麼？用一句話或幾個詞寫下來，例如「換了新手機，想把記錄轉過去」。</p></div>
+    <div class="msg msg--bot msg--chips"><p>常見問題</p><div class="chips"><a class="chip" href="sync.html#new-phone" data-go="sync.html#new-phone">轉移到新手機</a><a class="chip" href="watch.html#garmin" data-go="watch.html#garmin">連線 Garmin 手錶</a><a class="chip" href="record.html#finish" data-go="record.html#finish">結束訓練</a><a class="chip" href="subscription.html#restore" data-go="subscription.html#restore">還原購買</a><a class="chip" href="routines.html#builder" data-go="routines.html#builder">生成適合我的計畫</a><a class="chip" href="settings.html#units" data-go="settings.html#units">重量和距離單位</a></div></div>
+  </div>
+  <form class="ask__form" role="search">
+    <label class="sr" for="ask-q">向指南提問</label>
+    <input id="ask-q" name="q" type="search" autocomplete="off" enterkeyhint="send" placeholder="例：想連接 Garmin 手錶"
+      role="combobox" aria-expanded="false" aria-controls="ask-list" aria-autocomplete="list">
+    <button type="submit" aria-label="傳送"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h13M13 6l6 6-6 6"/></svg></button>
+    <ul class="g-suggest" id="ask-list" role="listbox" hidden></ul>
+  </form>
+  <script type="application/json" class="ask__words">{"you": "你的問題", "more": "查看詳情", "also": "你是不是在找這些？", "which": "是其中哪一個？", "none": "沒有找到合適的答案。換個說法試試，或寄信問我們。", "mail": "寄信詢問", "failed": "指南載入失敗，請稍後再試。", "send": "傳送"}</script>
+</section>
+<h2 class="g-h2">依主題瀏覽</h2>
+<ul class="g-topics"><li><a href="start.html"><b>入門</b><span>安裝後要做的事和 App 的介面結構。</span><small>第一次開啟時 · 不需要帳戶 · 介面結構</small></a></li><li><a href="record.html"><b>記錄訓練</b><span>開始訓練、記錄每組、結束訓練，以及修改過去的記錄。</span><small>開始訓練 · 記錄每組 · 記錄每組強度</small></a></li><li><a href="routines.html"><b>例行訓練與計畫</b><span>建立例行訓練、生成適合自己的計畫、使用動作列表。</span><small>建立例行訓練 · 編輯、複製、刪除例行訓練 · 自動加重 PRO</small></a></li><li><a href="coach.html"><b>教練與循環訓練</b><span>下一組重量建議、教練循環訓練、每週混合訓練計畫和教練頁的週期計畫。</span><small>訓練中的下一組重量建議 PRO · 教練循環訓練 · 每週混合訓練計畫 PRO+</small></a></li><li><a href="stats.html"><b>統計與報告</b><span>統計頁中的恢復、力量平衡、訓練量，以及每週教練報告。</span><small>統計頁能看到什麼 · 肌肉恢復圖 · 力量平衡</small></a></li><li><a href="tools.html"><b>計算機與工具</b><span>槓片、1RM、強度計畫計算機，我的器材和訓練術語詞典。</span><small>槓片計算機 · 1RM 與強度計畫計算機 · 有氧、熱量與巨量營養素計算機</small></a></li><li><a href="watch.html"><b>智慧手錶</b><span>連線 Apple Watch、Galaxy Watch 或 Garmin 手錶並在手腕上記錄。</span><small>連線 Apple Watch · 連線 Galaxy Watch · 連線 Garmin 手錶</small></a></li><li><a href="health.html"><b>健康 App</b><span>把訓練寫入 Apple 健康和 Health Connect，並讀取睡眠和心率。</span><small>連線健康 App · 交換的資料 · 匯入手錶訓練</small></a></li><li><a href="sync.html"><b>同步與備份</b><span>在裝置間同步記錄、換新手機、建立備份檔案。</span><small>裝置間同步 · 不會同步的內容 · 轉移到新手機</small></a></li><li><a href="trainer.html"><b>與教練分享</b><span>把記錄發給教練，以及教練檢視學員紀錄的方法。</span><small>傳送給教練 · 檢視學員紀錄（教練用）</small></a></li><li><a href="subscription.html"><b>免費與訂閱</b><span>免費能用什麼、PRO 與 PRO+ 的區別、還原與取消。</span><small>免費能用的 · PRO · PRO+</small></a></li><li><a href="settings.html"><b>設定</b><span>單位、語言、主題、休息計時、小工具和鎖定畫面等設定。</span><small>重量和距離單位 · 語言 · 外觀與主題</small></a></li><li><a href="help.html"><b>常見問題排查</b><span>手錶、同步、備份或訂閱出問題時要檢查的地方。</span><small>手錶連不上時 · Garmin 連不上時 · 同步不了時</small></a></li></ul>
+<p class="g-contact">仍未解決？請寄信至 <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>，並附上裝置型號和 App 版本。</p>
+</main>
+
+<footer class="foot">
+  <div class="wrap foot__in">
+    <div class="foot__brand">
+      <img src="../../assets/icon.webp" alt="" width="28" height="28">
+      <p>算出下次該舉多重的力量訓練記錄</p>
+    </div>
+    <nav class="foot__links" aria-label="網站資訊">
+      <a href="../guide/">指南</a>
+      <a href="../support.html">支援</a>
+      <a href="../privacy.html">隱私權政策</a>
+      <a href="../terms.html">使用條款</a>
+      <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>
+    </nav>
+    <p class="foot__copy">© 2026 FitBoost</p>
+  </div>
+</footer>
+
+<script src="../../assets/site.js" defer></script>
+<script src="../../assets/guide.js" defer></script>
+</body>
+</html>
