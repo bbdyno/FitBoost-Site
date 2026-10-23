@@ -1,0 +1,31 @@
+<section id="connect" data-ask="想把訓練記到健康 App|連線 Apple 健康|連線 Health Connect|允許健康權限" data-keys="健康 蘋果健康 apple health healthkit health connect 連線 權限">
+<h2>連線健康 App</h2>
+<p class="lead">iPhone 連線 Apple 健康，Android 連線 Health Connect。免費。</p>
+<ol class="steps">
+<li>在 {{> tabMenu}} 中開啟 {{> healthKitTitle}} 或 {{> healthConnectTitle}}。</li>
+<li>開啟 {{> setHealthLink}}，在彈出的權限頁面中允許要共享的項目。</li>
+</ol>
+<p>同一頁面還有 {{> setWatchImport}} 和 {{> setHealthMergeDuplicates}}。</p>
+</section>
+
+<section id="what" data-ask="和健康 App 交換哪些資料|會用睡眠資料嗎|會讀取心率嗎|為什麼要步數權限" data-keys="交換 睡眠 心率 hrv 靜息心率 體重 步數 權限 熱量 距離">
+<h2>交換的資料</h2>
+<p class="lead">把完成的訓練寫入健康 App，並讀取手錶訓練以及心率、睡眠和體重。</p>
+<ul>
+<li>寫入：完成的力量和有氧訓練。只有力量訓練時記為力量訓練，混有有氧時記為交叉訓練。</li>
+<li>讀取：手錶和健康 App 中的訓練與心率，以及用於狀態和恢復計算的睡眠、HRV、靜息心率和體重。</li>
+</ul>
+<p>Android 會請求步數權限，是因為讀取訓練時會一併讀取步數。</p>
+</section>
+
+<section id="import" data-ask="想匯入手錶上做的訓練|匯入其他 App 的訓練|匯入手錶訓練" data-keys="匯入 讀取 手錶 訓練 其他 App 30天">
+<h2>匯入手錶訓練</h2>
+<p class="lead">把健康 App 中最近 30 天的訓練匯入 FitBoost 記錄。</p>
+<p>在<a href="#connect">健康 App 連線頁面</a>點選 {{> setWatchImport}}。FitBoost 自己寫入的訓練不會再次匯入。</p>
+</section>
+
+<section id="merge" data-ask="同一次訓練被記錄了兩次|記錄重複了|合併重複的訓練" data-keys="重複 兩次 重疊 合併 同一時間 整理">
+<h2>合併重複的訓練</h2>
+<p class="lead">同一時間有多條重疊的記錄時，用 {{> setHealthMergeDuplicates}} 只保留一條。</p>
+<p>會保留在 FitBoost 中記錄的那條或資訊最多的那條，刪除其餘的。刪除的記錄不會再匯入。</p>
+</section>

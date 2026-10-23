@@ -1,0 +1,77 @@
+<section id="watch" data-ask="My watch won't connect|Watch not connected|FitBoost doesn't show on my Apple Watch|Galaxy Watch won't connect|Couldn't send to my watch" data-keys="watch connect not working failed error waiting install pair pairing">
+<h2>When your watch won't connect</h2>
+<p class="lead">Use the message under {{> setWatchStatus}} in {{> tabMenu > setAppSettings > setWatch}} to find the cause.</p>
+<ul>
+<li>{{" watchNotPaired}} Check that the phone and watch are paired in the watch's companion app (Watch app or Galaxy Wearable).</li>
+<li>{{" watchAppMissing}} Install FitBoost on your <a href="watch.html#apple-watch">Apple Watch</a> or <a href="watch.html#galaxy-watch">Galaxy Watch</a>.</li>
+<li>{{" watchWaiting}} Open FitBoost on the watch once.</li>
+<li>{{" watchUnsupported}} This phone can't use a watch.</li>
+</ul>
+<p>Also check that {{> setWatchLink}} is on. To send a workout to the watch, start it on your phone first.</p>
+</section>
+
+<section id="garmin" data-ask="My Garmin won't connect|It says to install Garmin Connect first" data-keys="garmin failed connect iq error not working">
+<h2>When your Garmin won't connect</h2>
+<p class="lead">Follow the message that appears when you tap {{> setGarminConnect}}.</p>
+<ul>
+<li>{{" setGarminNeedsApp}} Install Garmin Connect on your phone and pair your watch.</li>
+<li>{{" setGarminChoose}} When Garmin Connect opens, choose the watch you'll use with FitBoost.</li>
+<li>{{" setGarminInstallWatchApp}}</li>
+</ul>
+<p>If you open FitBoost on the watch and no workout arrives, check that you started the workout on your phone first. The full steps are in <a href="watch.html#garmin">connecting a Garmin watch</a>.</p>
+</section>
+
+<section id="sync" data-ask="Sync isn't working|iCloud sync failed|Google Drive permission|My records don't show on my other device" data-keys="sync failed not working error icloud google drive permission storage full update internet">
+<h2>When sync isn't working</h2>
+<p class="lead">Check the message in {{> tabMenu > setAppSettings > cloudSyncTitle}}.</p>
+<ul>
+<li>{{" cloudSyncFailICloudSignedOut}}</li>
+<li>{{" cloudSyncFailDrivePermission}}</li>
+<li>{{" cloudSyncFailQuotaICloud}} / {{" cloudSyncFailQuotaDrive}} Free up or add storage.</li>
+<li>{{" cloudSyncFailUpdateRequired}}</li>
+<li>{{" cloudSyncFailNetwork}}</li>
+</ul>
+<p>Check that both devices use the same iCloud or Google account and both have sync on. iPhone and Android don't sync with each other; <a href="sync.html#new-phone">move with a backup file</a>.</p>
+</section>
+
+<section id="backup" data-ask="My backup file won't open|I forgot my backup password|Backup file error|Incorrect password|It says this isn't a client file" data-keys="backup import failed error damaged corrupt password forgot client file update">
+<h2>When a backup file won't open</h2>
+<p class="lead">A failed import leaves the records on this device unchanged. Check the message you see.</p>
+<ul>
+<li>{{" backupErrorNotBackup}} Make sure it's a .fitboost file.</li>
+<li>{{" backupErrorNewer}}</li>
+<li>{{" backupErrorCorrupt}} Try getting the file again.</li>
+<li>{{" backupWrongPassword}} Enter the password set when the file was made. A forgotten password can't be recovered.</li>
+<li>{{" memberImportNotMember}}</li>
+</ul>
+</section>
+
+<section id="pro-missing" data-ask="I bought PRO but it isn't working|I paid but PRO isn't on|I subscribed but it still says free|Use my iPhone PRO on Android" data-keys="subscription paid purchase not working free restore pro missing other device">
+<h2>When PRO doesn't show after subscribing</h2>
+<p class="lead">Tap {{> restorePurchases}} on the FitBoost PRO screen.</p>
+<p>You need to be signed in to the Apple or Google account you paid with. Subscriptions bought on iPhone don't restore on Android, and the other way around. See <a href="subscription.html#restore">restoring purchases</a> for more.</p>
+</section>
+
+<section id="workout-lost" data-ask="I finished but the workout isn't in my records|My workout wasn't saved|The workout I just did disappeared" data-keys="missing gone not saved lost end without saving finish workout disappeared">
+<h2>When a workout you just did is missing</h2>
+<p class="lead">Workouts ended with {{> workoutFinish}} aren't saved. Records are kept only when you tap {{> finishWorkout}}.</p>
+<p>You can re-enter a lost workout with {{> tabRecord > histAddWorkout > recordPastWorkout}}. If you did it on a Garmin watch, keep your phone close and send it again from the watch app.</p>
+</section>
+
+<section id="cant-start" data-ask="Quick record won't open|It says finish the workout in progress first|I can't start a new workout" data-keys="in progress workout finish first quick record won't open can't start">
+<h2>When it says a workout is in progress</h2>
+<p class="lead">If you see {{" finishWorkoutProgressFirst}}, a workout is still open.</p>
+<p>Go back with {{> homeContinueWorkout}} on today's card in {{> tabHome}} and tap {{> finishWorkout}}, or discard it with {{> workoutFinish}} if you don't need it, then start again.</p>
+</section>
+
+<section id="health" data-ask="The health app won't connect|Workouts don't appear in Apple Health|It says nothing new to import" data-keys="health connect failed permission healthkit health connect import nothing">
+<h2>When the health app won't connect</h2>
+<p class="lead">If you see {{" setHealthLinkFailed}}, check your device's health permissions.</p>
+<p>On iPhone, check Settings → Privacy &amp; Security → Health → FitBoost. On Android, check FitBoost under app permissions in Health Connect. {{" setWatchImportEmpty}} means there are no new workouts from the last 30 days.</p>
+</section>
+
+<section id="notifications" data-ask="Rest timer alerts don't arrive|My workout doesn't show on the Lock Screen|Live Activity doesn't appear" data-keys="notifications not arriving permission timer lock screen live activity">
+<h2>When notifications or the Lock Screen don't show</h2>
+<p class="lead">If you see {{" setNotificationPermissionDenied}}, allow notifications for FitBoost in your device settings.</p>
+<p>If Live Activities are off, the app says {{" surfaceTurnOnInSettings}}. Notifications must be allowed too. See also <a href="settings.html#widgets">widgets and the Lock Screen</a>.</p>
+</section>

@@ -1,0 +1,40 @@
+<section id="overview" data-ask="What can I see in the Stats tab|How much did I train this week|Compare with last week|Volume chart" data-keys="stats statistics chart graph volume trend this week last week compare goal muscles used period">
+<h2>What's in the Stats tab</h2>
+<p class="lead">{{> tabStats}} shows, from the top, your weekly goal, muscle recovery, strength balance, and volume trends.</p>
+<ul>
+<li>{{> statsWeekVsLastWeek}}: compares this week's training with last week.</li>
+<li>{{> volumeProgressTrend}} and {{> statsPeriodVolume}}: how your volume has grown.</li>
+<li>{{> musclesUsed}}: muscles trained over 7, 30, or 90 days, or all time.</li>
+<li>{{> deeperAnalysis}}: opens {{> smartWeightGuide}} and {{> weeklyCoachingReport}}.</li>
+</ul>
+</section>
+
+<section id="recovery" data-ask="How is muscle recovery calculated|Which muscles are still recovering|What should I train today|Recovery map" data-keys="recovery muscle fatigue map body part rest sleep pain sore percent">
+<h2>Muscle recovery map</h2>
+<p class="lead">A body map shows how recovered each muscle group is. It's free.</p>
+<p>It counts hard sets (4 or fewer reps left), counting a full set for the main muscles and half a set for the muscles that helped. If sleep from your <a href="health.html#what">health app</a> is under 6 hours, recovery is slowed. Log sore spots with {{> painRecordAction}}.</p>
+</section>
+
+<section id="balance" data-ask="What is strength balance|Squat bench deadlift ratio|Fix a weak lift|What is my strength level" data-keys="strength balance ratio big three squat bench deadlift weak point fix prescription level bodyweight">
+<h2>Strength balance</h2>
+<p class="lead">Uses the last 8 weeks to show how lifts like the squat, bench press, and deadlift compare with each other.</p>
+<p>Estimated 1RMs per lift, levels relative to body weight, and adding fixes for the weaker side to your routine are PRO. Levels need your sex in your profile.</p>
+</section>
+
+<section id="weight-guide" data-ask="How much should I lift for 5 reps|Weight for each rep range|Smart weight guide|Training weights from my 1RM" data-keys="weight guide reps rep range 3 5 8 10 1rm estimate curve">
+<h2>Smart weight guide</h2>
+<p class="lead">Pick an exercise to see what you can lift at each rep count and the weight recommended for training.</p>
+<p>Open it from {{> tabStats > deeperAnalysis > smartWeightGuide}}. Free shows standard estimates for 3, 5, 8, and 10 reps; PRO uses a 1–15 rep curve built from your own records to set your next weight.</p>
+</section>
+
+<section id="weekly-report" data-ask="Where is the weekly report|Summary of my week|Am I plateauing" data-keys="weekly report summary coaching plateau stall next week suggestions analysis">
+<h2>Weekly coaching report <span class="pro">PRO</span></h2>
+<p class="lead">Sums up your week and shows plateau signals and suggestions for your next sessions.</p>
+<p>Open it from {{> tabStats > deeperAnalysis > weeklyCoachingReport}}. Applying its set-count suggestions straight to your routines is PRO+.</p>
+</section>
+
+<section id="share" data-ask="Share my stats as an image|Make a card for Instagram|Share a workout" data-keys="share card image picture instagram social copy">
+<h2>Sharing stat cards</h2>
+<p class="lead">Use the {{> shareCardsTooltip}} button in {{> tabStats}} to turn your stats into image cards and send them to other apps.</p>
+<p>To share one workout as text, use ⋯ → {{> copySharing}} on it in {{> tabRecord}}.</p>
+</section>

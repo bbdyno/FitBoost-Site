@@ -1,0 +1,53 @@
+<section id="create" data-ask="怎麼建立例行訓練|新增例行訓練|把過去的訓練存成例行訓練|最多能建幾個例行訓練" data-keys="例行 例行訓練 建立 新建 新增 範本 儲存 匯入 上限 3個">
+<h2>建立例行訓練</h2>
+<p class="lead">在 {{> tabHome}} 的 {{> homeMyRoutines}} 區域點選 {{> actionAdd}}。</p>
+<ol class="steps">
+<li>在 {{> tabHome}} 的 {{> homeMyRoutines}} 區域點選 {{> actionAdd}}。</li>
+<li>選擇 {{> createEmptyRoutine}} 或 {{> importFromPastRecord}}。</li>
+<li>新增動作和組，然後儲存。</li>
+</ol>
+<p>免費最多可建 3 個例行訓練，PRO 不限。結束訓練時也可以把改動同步到例行訓練。</p>
+</section>
+
+<section id="manage" data-ask="修改例行訓練|刪除例行訓練|複製例行訓練|例行訓練列表在哪裡" data-keys="例行訓練 編輯 修改 複製 刪除 列表 推薦 熱門 公開">
+<h2>編輯、複製、刪除例行訓練</h2>
+<p class="lead">在例行訓練頁面點例行訓練的 ⋯，會出現 {{> routineEdit}}、{{> duplicateRoutine}}、{{> deleteRoutine}}。</p>
+<p>例行訓練頁面可從 {{> tabHome}} 今日卡片的 ⋯ → {{> chooseRoutine}} 開啟。頁面有 {{> homeMyRoutines}}、{{> popularPublic}}、{{> scheduledWorkouts}} 三個標籤，可在 {{> popularPublic}} 中從 {{> fitboostPicks}} 選用。</p>
+<p class="tip">刪除例行訓練時，用它安排的日程和提醒也會一併刪除。</p>
+</section>
+
+<section id="auto-increase" data-ask="想讓例行訓練自動加重|自動漸進超負荷|下次該加多少重量" data-keys="自動 加重 重量 漸進超負荷 進階 例行訓練">
+<h2>自動加重 <span class="pro">PRO</span></h2>
+<p class="lead">在編輯例行訓練時開啟 {{> progToggleTitle}}，上次每組都達到目標次數的動作，下次會自動加重。</p>
+<p>訓練中逐組提示下一組重量的功能，請看<a href="coach.html#next-weight">訓練中教練建議</a>。</p>
+</section>
+
+<section id="builder" data-ask="能幫我制定訓練計畫嗎|生成適合我的計畫|新手不知道該練什麼|每週 3 天的計畫|推薦分化訓練" data-keys="計畫 訓練計畫 制定 推薦 例行 新手 分化 每週3天 每週4天 目標 器材 在家 健身房 徒手">
+<h2>生成適合我的計畫</h2>
+<p class="lead">選擇目標、時間和器材，就會生成一週的計畫並存為例行訓練。</p>
+<ol class="steps">
+<li>點選 {{> tabHome > homePrograms > builderEntryTitle}}。</li>
+<li>選擇目標、訓練經驗、每週天數、每次時長和器材（健身房、在家啞鈴、徒手）。</li>
+<li>設定有氧、想重點練的部位和想休息的部位，點選 {{> builderGenerate}}。</li>
+<li>檢視預覽並存為例行訓練。</li>
+</ol>
+<p>重量不會預先填入，而是在訓練當天根據記錄決定。免費可在 3 個例行訓練的上限內儲存，{{> builderShuffle}} 和 {{> builderRegenTitle}} 為 PRO 功能。</p>
+</section>
+
+<section id="programs" data-ask="想照著現成的計畫練|有名的訓練計畫|怎麼開始一個計畫" data-keys="計畫 現成 有名 跟練 開始 日程 健美 健力">
+<h2>跟練現成計畫</h2>
+<p class="lead">在 {{> tabHome > homePrograms}} 下方選擇現成的計畫並點選 {{> startProgram}}，日程就會加入首頁。</p>
+<p>同一頁面上方有 {{> builderEntryTitle}}、<a href="coach.html#circuit">{{> circuitTitle}}</a> 和 <a href="coach.html#hybrid">{{> hybridTitle}}</a> 的入口。</p>
+</section>
+
+<section id="custom-exercise" data-ask="想新增列表裡沒有的動作|建立自訂動作|自訂動作最多幾個" data-keys="自訂 動作 新增 沒有的動作 建立 上限 5個">
+<h2>自訂動作</h2>
+<p class="lead">列表裡沒有的動作，用 {{> homeExerciseList > addCustomExercise}} 建立。</p>
+<p>可設定記錄方式（重量與次數、時間等）、主要肌肉，以及是否為單側動作。免費最多 5 個，PRO 不限。</p>
+</section>
+
+<section id="exercise-list" data-ask="想看動作怎麼做|動作要領說明|可以替代這個動作的動作|搜尋動作" data-keys="動作列表 動作要領 做法 說明 指南 注意事項 技巧 替代 搜尋 收藏 1690">
+<h2>動作列表與動作指南</h2>
+<p class="lead">在 {{> tabMenu > homeExerciseList}} 中搜尋 1,690 個動作，開啟後可檢視做法和注意事項。</p>
+<p>每個動作都有 {{> instructions}}、注意事項、技巧、我的記錄與統計，以及 {{> alternatives}}，點 {{> logThisExercise}} 可直接開始記錄。可按名稱搜尋或按部位、器材篩選，常練的動作可以收藏。</p>
+</section>

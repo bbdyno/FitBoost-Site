@@ -7,6 +7,7 @@
     "label": "Main menu",
     "features": "Features",
     "pricing": "Pricing",
+    "guide": "Guide",
     "support": "Support",
     "language": "Choose language",
     "download": "Download"
@@ -274,5 +275,31 @@
   "end": {
     "title": "Start with<br>today's set.",
     "body": "No sign-up. Use it in Korean, English, Japanese, Simplified Chinese or Traditional Chinese."
+  },
+  "guide": {
+    "title": "User Guide",
+    "description": "Find how to use FitBoost, from your first workout to watches, sync, and subscriptions.",
+    "intro": "Ask what you want to do, or browse by topic.",
+    "askLabel": "Ask the guide",
+    "hello": "What would you like to do? Type a question or a few words, like “I got a new phone and want to move my records.”",
+    "popular": "Popular",
+    "placeholder": "e.g. Connect my Garmin watch",
+    "send": "Send",
+    "you": "You asked",
+    "more": "Read more",
+    "also": "Were you looking for one of these?",
+    "which": "Is it one of these?",
+    "none": "I couldn’t find a good match. Try different words, or email us.",
+    "mail": "Email us",
+    "failed": "The guide couldn’t load. Please try again in a moment.",
+    "topicsTitle": "Browse by topic",
+    "findLabel": "Search the guide",
+    "findPlaceholder": "Search the guide",
+    "crumbLabel": "You are here",
+    "onThisPage": "On this page",
+    "pagerLabel": "More topics",
+    "prev": "Previous",
+    "next": "Next",
+    "stillStuck": "Still stuck? Email <a href=\"mailto:della.kimko@gmail.com\">della.kimko@gmail.com</a> with your device and app version."
   }
 }

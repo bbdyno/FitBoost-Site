@@ -1,0 +1,58 @@
+<section id="next-weight" data-ask="次のセットの重量を教えてくれますか|次は何キロ持てばいいですか|ワークアウト中のコーチの提案|いつやめればいいですか" data-keys="次 重量 提案 おすすめ コーチ セット やめどき 疲労 トップセット バックオフ ウォームアップ 計算">
+<h2>ワークアウト中の次の重量の提案 <span class="pro">PRO</span></h2>
+<p class="lead">セットを終えて強度を記録すると、その結果から次のセットの重量と、今日やめるタイミングを案内します。</p>
+<p>提案は{{> tabMenu > setAppSettings > settingsWorkout > setSessionCoach}}でオン・オフします。無料ではワークアウト1回につき1度だけお試しの案内が出ます。PRO+ではトップセットの強度からバックオフセットの重量をその場で調整し、ウォームアップセットもあらかじめ入れます。</p>
+<p>提案はトレーニングの参考値で、医療上の助言ではありません。痛みがあれば重量を下げ、<a href="record.html#exercise-menu">{{> painHereAction}}</a>で記録してください。</p>
+</section>
+
+<section id="circuit" data-ask="コーチサーキットとは|時間がないときに短くトレーニングしたい|サーキットを組んでくれますか|サーキットは無料ですか" data-keys="サーキット コーチサーキット 短時間 インターバル 自宅 時間 器具 強度 音声 案内 無料 3回">
+<h2>コーチサーキット</h2>
+<p class="lead">時間・器具・強度を選ぶと、その日のサーキットを組みます。無料は週3回、PROは無制限です。</p>
+<ol class="steps">
+<li>{{> tabHome > homePrograms > circuitTitle}}をタップします。今日のカードの⋯ → {{> circuitEntry}}からも開けます。</li>
+<li>初回は時間・器具・強度を選んで{{> circuitMake}}をタップします。次からは前回の条件ですぐプレビューが出ます。</li>
+<li>プレビューで{{> circuitRegenerate}}、{{> circuitSaveRoutine}}、{{> circuitSettings}}（音声案内・効果音）を選び、{{> circuitStart}}をタップします。</li>
+</ol>
+<p>終わるとどうだったかを聞き、答えに合わせて次のサーキットを調整します。<a href="watch.html#on-watch">ウォッチ</a>からすぐ始めることもできます。</p>
+</section>
+
+<section id="hybrid" data-ask="筋トレと有酸素を一緒に計画したい|1週間のトレーニング計画を組んでくれますか|ハイブリッドプラン|できなかった日を移したい" data-keys="ハイブリッド 週間 プラン 有酸素 ランニング 筋トレ 曜日 予定 移す できなかった">
+<h2>週間ハイブリッドプラン <span class="pro">PRO+</span></h2>
+<p class="lead">筋トレ・サーキット・有酸素を組み合わせて1週間の予定を組みます。トレーニングする曜日と時間に余裕のある曜日に合わせます。</p>
+<ol class="steps">
+<li>{{> tabHome > homePrograms > hybridTitle}}をタップします。</li>
+<li>曜日、目標、重点、有酸素、器具、年齢を選んで{{> hybridMake}}をタップします。</li>
+<li>今日のワークアウトが{{> tabHome}}に表示されます。</li>
+</ol>
+<p>できなかった日は{{> hybridMove}}で別の日に移せ、元に戻すこともできます。</p>
+</section>
+
+<section id="plan" data-ask="コーチタブでは何をしますか|コーチタブが開かない|ブロックピリオダイゼーションの計画を作る|大会に向けた計画|コーチタブに紹介しか出ない" data-keys="コーチタブ ブロック ピリオダイゼーション 計画 パワーリフティング 筋力 筋肥大 大会 1rm ディロード pro+">
+<h2>コーチタブのブロックプログラム <span class="pro">PRO+</span></h2>
+<p class="lead">目標と大会日、今の1RMから数週間のプログラムを組み、毎回のワークアウトの重量を決めます。</p>
+<ol class="steps">
+<li>{{> tabCoach > coachCreatePlan}}をタップします。</li>
+<li>目標（パワーリフティング・筋力・パワービルディング・筋肥大）、週の日数、経験、進め方、体重、大会日（任意）を選びます。</li>
+<li>今の1RMを入力します。わからなければ重量と回数から計算できます。</li>
+<li>{{> coachSetupCreate}}をタップすると、今日のワークアウトがコーチタブとホームに表示されます。</li>
+</ol>
+<p>コーチタブはPRO+専用のため、PRO+でない場合は紹介と{{> coachSeePlans}}だけが表示されます。</p>
+</section>
+
+<section id="readiness" data-ask="体調に合わせて重量を変えてくれますか|今日のコンディションチェック|寝不足でもトレーニングしていいですか|HRVを反映" data-keys="コンディション チェック 睡眠 筋肉痛 ストレス エネルギー hrv 心拍 レディネス 強度 調整">
+<h2>コンディションチェック <span class="pro">PRO+</span></h2>
+<p class="lead">トレーニング前に睡眠・筋肉の状態・ストレス・エネルギーを記録すると、その日の重量とセットを調整します。</p>
+<p>コーチタブの{{> homeConditionTitle}}カードで{{> coachReadinessCheck}}をタップし、すべて選んだら{{> coachSaveReadiness}}をタップします。プログラムがある場合はホームの{{> homeConditionTitle}}欄からも開けます。<a href="health.html#what">ヘルスケア</a>と連携すると、睡眠時間・HRV・安静時心拍も使います。</p>
+</section>
+
+<section id="deload" data-ask="ディロードはいつしますか|ブロックを1週延ばす・早める|大会の試技重量を決めたい" data-keys="ディロード 休養週 ブロック 延長 前倒し 大会 試技 重量 第1 第2 第3 疲労">
+<h2>ディロードと大会の試技重量 <span class="pro">PRO+</span></h2>
+<p class="lead">記録と疲労の推移を見て、コーチタブでディロードやブロックの延長を提案します。</p>
+<p>最近の記録が落ちている、処方よりきつくこなしている、コンディションが低い状態が続いている、前回のディロードから6週が過ぎた、といった場合にディロードを勧めます。プログラムが大会直前の週（ピーキング・テーパー）に入ると、第1・第2・第3試技の重量も表示します。</p>
+</section>
+
+<section id="nutrition" data-ask="食事のカロリー目標を決めてくれますか|PFCの目標|栄養目標の設定" data-keys="栄養 食事 カロリー たんぱく質 炭水化物 脂質 pfc 体重 減量 増量">
+<h2>栄養目標 <span class="pro">PRO+</span></h2>
+<p class="lead">体重の推移を見て、毎週カロリーと炭水化物・たんぱく質・脂質の目標を合わせ直します。</p>
+<p>コーチタブの{{> coachNutrition}}カードで体重・身長・年齢・活動量・目標を入力し、{{> nutritionStart}}をタップします。体重の推移は2週間以上で4回以上記録すると表示されます。1回だけ計算するなら<a href="tools.html#calculators">マクロ計算機</a>を使ってください。</p>
+</section>

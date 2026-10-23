@@ -1,0 +1,31 @@
+<section id="connect" data-ask="건강 앱에 운동을 기록하고 싶어요|애플 건강 연동|헬스 커넥트 연결|건강 앱 권한 허용" data-keys="건강 헬스 애플건강 apple health healthkit 헬스킷 health connect 헬스커넥트 삼성헬스 연동 권한">
+<h2>건강 앱 연결하기</h2>
+<p class="lead">iPhone은 Apple Health, Android는 Health Connect와 연결합니다. 무료입니다.</p>
+<ol class="steps">
+<li>{{> tabMenu}}에서 {{> healthKitTitle}} 또는 {{> healthConnectTitle}}를 엽니다.</li>
+<li>{{> setHealthLink}}를 켜고, 뜨는 권한 화면에서 주고받을 항목을 허용합니다.</li>
+</ol>
+<p>같은 화면에 {{> setWatchImport}}와 {{> setHealthMergeDuplicates}}도 있습니다.</p>
+</section>
+
+<section id="what" data-ask="건강 앱과 무엇을 주고받나요|수면 데이터를 쓰나요|심박수를 가져오나요|걸음 수 권한은 왜 묻나요" data-keys="주고받기 수면 심박 hrv 안정심박 체중 걸음 권한 칼로리 거리">
+<h2>주고받는 것</h2>
+<p class="lead">끝낸 운동을 건강 앱에 보내고, 시계 운동과 심박·수면·체중을 가져옵니다.</p>
+<ul>
+<li>보내는 것: 끝낸 근력·유산소 운동. 근력만 했으면 근력 운동, 유산소가 섞이면 크로스 트레이닝으로 남깁니다.</li>
+<li>가져오는 것: 시계와 건강 앱의 운동·심박수, 컨디션과 회복 계산에 쓰는 수면·HRV·안정 심박·체중.</li>
+</ul>
+<p>Android에서 걸음 권한을 묻는 것은 운동을 읽을 때 걸음도 함께 읽기 때문입니다.</p>
+</section>
+
+<section id="import" data-ask="시계로 한 운동을 가져오고 싶어요|다른 앱 운동을 불러오기|스마트워치 운동 가져오기" data-keys="가져오기 불러오기 시계 운동 다른앱 30일 동기화">
+<h2>스마트워치 운동 가져오기</h2>
+<p class="lead">건강 앱에 쌓인 최근 30일의 운동을 FitBoost 기록으로 가져옵니다.</p>
+<p><a href="#connect">건강 앱 연결 화면</a>에서 {{> setWatchImport}}를 누릅니다. FitBoost가 보낸 운동은 다시 가져오지 않습니다.</p>
+</section>
+
+<section id="merge" data-ask="같은 운동이 두 번 기록됐어요|기록이 중복돼요|겹친 운동 합치기" data-keys="중복 두번 겹침 합치기 같은 시간 정리">
+<h2>겹친 운동 합치기</h2>
+<p class="lead">같은 시간에 겹친 기록이 여러 개면 {{> setHealthMergeDuplicates}}로 하나만 남깁니다.</p>
+<p>FitBoost에서 한 기록이나 정보가 가장 많은 기록을 남기고 나머지는 지웁니다. 지운 기록은 다시 가져오지 않습니다.</p>
+</section>

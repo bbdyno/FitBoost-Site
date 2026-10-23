@@ -1,0 +1,31 @@
+<section id="connect" data-ask="Log my workouts in a health app|Connect Apple Health|Connect Health Connect|Allow health permissions" data-keys="health apple health healthkit health connect connect permissions sync">
+<h2>Connecting a health app</h2>
+<p class="lead">iPhone connects to Apple Health, and Android to Health Connect. It's free.</p>
+<ol class="steps">
+<li>In {{> tabMenu}}, open {{> healthKitTitle}} or {{> healthConnectTitle}}.</li>
+<li>Turn on {{> setHealthLink}} and allow what to share in the permission screen that appears.</li>
+</ol>
+<p>The same screen also has {{> setWatchImport}} and {{> setHealthMergeDuplicates}}.</p>
+</section>
+
+<section id="what" data-ask="What does it share with the health app|Does it use my sleep data|Does it read heart rate|Why does it ask for steps" data-keys="share read write sleep heart rate hrv resting heart rate body weight steps permission calories distance">
+<h2>What's shared</h2>
+<p class="lead">Finished workouts go to the health app, and watch workouts, heart rate, sleep, and body weight come back in.</p>
+<ul>
+<li>Sent: finished strength and cardio workouts. Strength only is saved as strength training; mixed with cardio, as cross training.</li>
+<li>Read: workouts and heart rate from your watch and health app, plus sleep, HRV, resting heart rate, and body weight for readiness and recovery.</li>
+</ul>
+<p>On Android, step permission is requested because steps are read along with workouts.</p>
+</section>
+
+<section id="import" data-ask="Import workouts from my watch|Bring in workouts from other apps|Import watch workouts" data-keys="import bring in watch workouts other apps 30 days">
+<h2>Importing watch workouts</h2>
+<p class="lead">Brings workouts from the last 30 days in your health app into your FitBoost records.</p>
+<p>Tap {{> setWatchImport}} on the <a href="#connect">health app screen</a>. Workouts FitBoost wrote are not imported again.</p>
+</section>
+
+<section id="merge" data-ask="The same workout shows up twice|My workouts are duplicated|Merge duplicate workouts" data-keys="duplicate twice double overlap merge same time clean up">
+<h2>Merging duplicate workouts</h2>
+<p class="lead">When several records overlap at the same time, {{> setHealthMergeDuplicates}} keeps just one.</p>
+<p>It keeps the one logged in FitBoost, or the one with the most detail, and deletes the rest. Deleted records aren't imported again.</p>
+</section>

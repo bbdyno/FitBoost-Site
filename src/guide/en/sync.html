@@ -1,0 +1,56 @@
+<section id="sync" data-ask="Keep my iPhone and iPad in sync|Turn on sync across devices|iCloud sync|Google Drive sync" data-keys="sync icloud google drive ipad tablet multiple devices automatic">
+<h2>Sync across devices</h2>
+<p class="lead">Keeps records in step automatically between devices on the same account: iCloud on iPhone and iPad, Google Drive on Android. It's free.</p>
+<ol class="steps">
+<li>Open {{> tabMenu > setAppSettings > cloudSyncTitle}}.</li>
+<li>Turn sync on. Tap {{> cloudSyncNow}} to sync right away.</li>
+<li>Turn it on the same way on your other device with the same account.</li>
+</ol>
+<p>Your records never pass through our servers; they're stored only in your own iCloud or Google Drive.</p>
+</section>
+
+<section id="not-synced" data-ask="What doesn't sync|My photos don't sync|Does my subscription sync" data-keys="not synced excluded photos videos subscription in progress watch connection equipment">
+<h2>What doesn't sync</h2>
+<p class="lead">Photo and video files, subscriptions, and workouts in progress stay on each device.</p>
+<ul>
+<li>Photo and video files aren't copied. Note text is.</li>
+<li>Subscriptions, workouts in progress, health app and watch connections, and your selected equipment stay per device.</li>
+<li>Devices on different systems, like iPhone and Android, don't sync automatically. <a href="#new-phone">Move with a backup file</a>.</li>
+</ul>
+</section>
+
+<section id="new-phone" data-ask="I got a new phone, how do I move my records|Move from iPhone to Android|Move from Android to iPhone|Switch phones|Transfer data to a new phone" data-keys="new phone switch transfer move migrate upgrade iphone android galaxy">
+<h2>Moving to a new phone</h2>
+<p class="lead">Between phones on the same system, use sync or a device backup. Between iPhone and Android, use a backup file.</p>
+<ol class="steps">
+<li>On your old phone, tap {{> tabMenu > backupTitle > backupExportTitle}}.</li>
+<li>Send the file to your new phone by messenger, email, or cloud storage.</li>
+<li>On the new phone, open it with {{> tabMenu > backupTitle > backupImportTitle}}.</li>
+<li>Choose {{> backupModeReplace}}.</li>
+</ol>
+<p>On the same system, just turning on <a href="#sync">sync across devices</a> is enough. If device backup (iCloud Backup or Google's automatic backup) is on, your records also come along when you restore the app on a new device. Subscriptions don't move with the file; see <a href="subscription.html#restore">restoring purchases</a>.</p>
+</section>
+
+<section id="backup" data-ask="How do I make a backup file|Save my records to a file|Put a password on my backup" data-keys="backup file save export password protect keep fitboost">
+<h2>Creating a backup file</h2>
+<p class="lead">{{> tabMenu > backupTitle > backupExportTitle}} puts all your records into one file. It's free.</p>
+<p>It includes workouts, routines, schedules, body records, photos, and settings. You can add a password, but a forgotten password means the file can't be opened, so write it down.</p>
+</section>
+
+<section id="restore" data-ask="Import a backup file|Difference between replace and merge|Combine records from two devices|Restore a backup" data-keys="import restore load replace merge combine overwrite undo">
+<h2>Importing a backup file</h2>
+<p class="lead">Pick a .fitboost file in {{> tabMenu > backupTitle > backupImportTitle}}, then choose replace or merge.</p>
+<ul>
+<li>{{> backupModeReplace}} (free): clears this device's records and replaces them with the file. Your previous records are backed up automatically so you can undo.</li>
+<li>{{> backupModeMerge}} (PRO): adds the file to your current records. When both have the same record, the one edited last wins, and records deleted on one side come back.</li>
+</ul>
+</section>
+
+<section id="keep-safe" data-ask="How do I avoid losing my records|Does deleting the app delete my data|All my records are gone" data-keys="lose lost delete deleting app uninstall reinstall gone missing keep safe data">
+<h2>Keeping your records safe</h2>
+<p class="lead">Records live on this device, so deleting the app deletes them too.</p>
+<ul>
+<li>Turn on <a href="#sync">sync across devices</a> or device backup.</li>
+<li>Make a <a href="#backup">backup file</a> now and then and keep it somewhere else.</li>
+</ul>
+</section>

@@ -7,6 +7,7 @@
     "label": "주요 메뉴",
     "features": "기능",
     "pricing": "요금",
+    "guide": "가이드",
     "support": "지원",
     "language": "언어 선택",
     "download": "다운로드"
@@ -274,5 +275,31 @@
   "end": {
     "title": "오늘 세트부터<br>기록하세요.",
     "body": "가입하지 않아도 바로 시작합니다. 한국어, 영어, 일본어, 중국어 간체와 번체로 씁니다."
+  },
+  "guide": {
+    "title": "사용 가이드",
+    "description": "FitBoost를 처음 쓰는 법부터 시계 연결, 동기화, 구독까지 찾아보는 사용 가이드입니다.",
+    "intro": "하고 싶은 일을 물어보거나 주제별로 찾아보세요.",
+    "askLabel": "가이드에 물어보기",
+    "hello": "무엇이 궁금하세요? 하고 싶은 일을 문장이나 낱말로 적어 보세요. 예를 들어 “폰을 바꿨는데 기록을 옮기고 싶어요”처럼요.",
+    "popular": "자주 찾는 것",
+    "placeholder": "예: 가민 시계를 연결하고 싶어요",
+    "send": "보내기",
+    "you": "내 질문",
+    "more": "자세히 보기",
+    "also": "이것도 찾으셨나요?",
+    "which": "이 중에 찾는 것이 있나요?",
+    "none": "딱 맞는 답을 찾지 못했어요. 다른 말로 적어 보거나 메일로 물어봐 주세요.",
+    "mail": "메일로 물어보기",
+    "failed": "가이드를 불러오지 못했어요. 잠시 뒤 다시 해 보세요.",
+    "topicsTitle": "주제별로 보기",
+    "findLabel": "가이드에서 찾기",
+    "findPlaceholder": "가이드에서 찾기",
+    "crumbLabel": "현재 위치",
+    "onThisPage": "이 페이지에서",
+    "pagerLabel": "다른 주제",
+    "prev": "이전",
+    "next": "다음",
+    "stillStuck": "그래도 해결되지 않으면 <a href=\"mailto:della.kimko@gmail.com\">della.kimko@gmail.com</a>으로 보내 주세요. 기기 종류와 앱 버전을 함께 적어 주시면 빨리 찾을 수 있습니다."
   }
 }
