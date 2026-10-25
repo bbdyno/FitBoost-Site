@@ -20,8 +20,8 @@
 
 <section id="effort" data-ask="세트 강도는 어떻게 남기나요|RPE RIR 입력|이번 세트 어땠나요가 떠요|여유 몇 개 남았는지 적기" data-keys="강도 rpe rir 여유 힘듦 한계 적당 운동자각도 남은횟수">
 <h2>세트 강도 남기기</h2>
-<p class="lead">세트를 끝내면 {{" effortQuickTitle}} 창이 뜹니다. 네 단계 중 하나를 고르면 다음 무게 계산에 반영됩니다.</p>
-<p>숫자로 남기려면 같은 창의 {{> effortQuickDetail}}를 눌러 RIR(남은 반복 수)이나 RPE(6–10)를 적습니다. 어느 쪽으로 받을지는 {{> tabMenu > setAppSettings > settingsWorkout}}의 RPE/RIR에서 바꿉니다.</p>
+<p class="lead">세트를 끝내면 완료 버튼 위에 {{" effortQuickTitle}}와 네 단계 칩이 한 줄로 뜹니다. 고르면 다음 무게 계산에 반영되고, 안 누르면 강도 없이 넘어갑니다.</p>
+<p>묻는 방식은 {{> tabMenu > setAppSettings > settingsWorkout > effortPromptSetting}}에서 {{> effortPromptInline}}·{{> effortPromptSheet}}·{{> effortPromptOff}} 중에 고릅니다. 묻지 않기로 하면 시계도 묻지 않습니다. 숫자로 남기려면 세트를 눌러 RIR이나 RPE를 적습니다.</p>
 </section>
 
 <section id="rest-timer" data-ask="휴식 타이머 쓰는 법|쉬는 시간을 늘리고 싶어요|휴식 타이머 건너뛰기|타이머가 안 떠요" data-keys="휴식 타이머 쉬는시간 인터벌 카운트다운 10초">
@@ -81,4 +81,10 @@
 <h2>메모</h2>
 <p class="lead">운동 중에는 운동별 ⋯ → {{> notes}}, 끝난 뒤에는 요약 화면의 {{> workoutNotes}}에 남깁니다.</p>
 <p>자세처럼 계속 볼 메모는 {{> homeExerciseList}}에서 운동을 열고 {{> addExerciseNote}}로 남기세요. 사진·동영상을 붙이고 위에 고정할 수 있습니다. 모든 메모는 {{> tabMenu > menuAllMemos}}에서 모아 봅니다.</p>
+</section>
+
+<section id="voice" data-ask="휴식이 끝나면 음성으로 알려 주나요|다음 세트 무게를 읽어 주나요|음성 안내 켜기|10초 남았다고 말해 줘요" data-keys="음성 안내 목소리 읽어주기 휴식 10초 신기록 이어폰">
+<h2>근력 운동 음성 안내</h2>
+<p class="lead">켜 두면 휴식이 10초 남았을 때와 끝날 때 다음 세트 무게·횟수를 읽어 주고, 신기록이면 알려 줍니다.</p>
+<p>{{> tabMenu > setAppSettings > setVoiceCoach}}에서 켭니다. 처음 쉴 때 완료 버튼 위에 켜기를 권하는 한 줄도 뜹니다. 앱을 보고 있을 때만 말하고, 앱이 뒤에 있으면 알림으로 알립니다. 시계는 10초 전에 짧게 진동합니다.</p>
 </section>

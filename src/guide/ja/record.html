@@ -20,8 +20,8 @@
 
 <section id="effort" data-ask="セットの強度はどう記録しますか|RPEやRIRを入力したい|このセットはどうでしたかと表示される|あと何回できたかを記録" data-keys="強度 rpe rir 余裕 きつい 限界 ちょうど 主観的運動強度 残り回数">
 <h2>セットの強度を記録する</h2>
-<p class="lead">セットを終えると{{" effortQuickTitle}}が表示されます。4段階から選ぶと次の重量の計算に反映されます。</p>
-<p>数値で記録するには、同じ画面の{{> effortQuickDetail}}をタップしてRIR（残り回数）かRPE（6–10）を入力します。どちらで記録するかは{{> tabMenu > setAppSettings > settingsWorkout}}のRPE/RIRで変更します。</p>
+<p class="lead">セットを終えると、完了ボタンの上に{{" effortQuickTitle}}と4つのチップが1行で出ます。選ぶと次の重量計算に反映され、押さなければ強度なしで進みます。</p>
+<p>聞き方は{{> tabMenu > setAppSettings > settingsWorkout > effortPromptSetting}}で{{> effortPromptInline}}・{{> effortPromptSheet}}・{{> effortPromptOff}}から選びます。聞かない設定にするとウォッチも聞きません。数値で残すにはセットをタップしてRIRかRPEを入れます。</p>
 </section>
 
 <section id="rest-timer" data-ask="休憩タイマーの使い方|休憩を長くしたい|休憩タイマーをスキップ|タイマーが出ない" data-keys="休憩 タイマー インターバル カウントダウン 10秒">
@@ -81,4 +81,10 @@
 <h2>メモ</h2>
 <p class="lead">ワークアウト中は種目の⋯ → {{> notes}}、終わったあとはまとめ画面の{{> workoutNotes}}に残します。</p>
 <p>フォームのように何度も見るメモは、{{> homeExerciseList}}で種目を開いて{{> addExerciseNote}}で残してください。写真や動画を添付し、上に固定できます。すべてのメモは{{> tabMenu > menuAllMemos}}でまとめて見られます。</p>
+</section>
+
+<section id="voice" data-ask="次のセットを読み上げてくれますか|休憩終了を音声で知らせて|音声ガイドをオンにしたい|残り10秒を教えて" data-keys="音声 読み上げ ガイド 休憩 10秒 自己ベスト イヤホン">
+<h2>筋トレの音声ガイド</h2>
+<p class="lead">オンにすると、休憩の残り10秒と終了時に次のセットの重量・回数を読み上げ、自己ベストも知らせます。</p>
+<p>{{> tabMenu > setAppSettings > setVoiceCoach}}でオンにします。初めて休憩するとき完了ボタンの上にオンにする1行も出ます。アプリを開いているときだけ話し、裏にあるときは通知で知らせます。ウォッチは10秒前に短く振動します。</p>
 </section>

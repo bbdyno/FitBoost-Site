@@ -51,7 +51,7 @@
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#start-workout">开始训练</a></li><li><a href="#sets">记录每组</a></li><li><a href="#effort">记录每组强度</a></li><li><a href="#rest-timer">休息计时</a></li><li><a href="#exercise-menu">动作菜单</a></li><li><a href="#finish">结束训练</a></li><li><a href="#past">记录已完成的训练</a></li><li><a href="#edit">编辑或删除过去的记录</a></li><li><a href="#body">记录体重和照片</a></li><li><a href="#notes">备注</a></li></ol></nav>
+<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#start-workout">开始训练</a></li><li><a href="#sets">记录每组</a></li><li><a href="#effort">记录每组强度</a></li><li><a href="#rest-timer">休息计时</a></li><li><a href="#exercise-menu">动作菜单</a></li><li><a href="#finish">结束训练</a></li><li><a href="#past">记录已完成的训练</a></li><li><a href="#edit">编辑或删除过去的记录</a></li><li><a href="#body">记录体重和照片</a></li><li><a href="#notes">备注</a></li><li><a href="#voice">力量训练语音提示</a></li></ol></nav>
 <section class="g-sec" id="start-workout">
 <h2>开始训练</h2>
 <p class="lead">在 <span class="ui"><b>首页</b></span> 的今日卡片上点击 <span class="ui"><b>开始</b></span>。没有例行训练时会以空白训练开始，可以自由记录。</p>
@@ -74,8 +74,8 @@
 
 <section class="g-sec" id="effort">
 <h2>记录每组强度</h2>
-<p class="lead">完成一组后会弹出 <q class="say">这一组感觉如何？</q>。从四个等级中选一个，就会用于计算下一组重量。</p>
-<p>想填数字，在同一窗口点 <span class="ui"><b>精确数值</b></span>，输入 RIR（剩余次数）或 RPE（6–10）。用哪一种，可以在 <span class="ui"><b>菜单</b> → <b>应用设置</b> → <b>训练与例行</b></span> 的 RPE/RIR 中更改。</p>
+<p class="lead">完成一组后，完成按钮上方会出现一行<q class="say">这一组感觉如何？</q>和四个选项。选择后会用于计算下一组重量，不选则直接继续。</p>
+<p>可在<span class="ui"><b>菜单</b> → <b>应用设置</b> → <b>训练与例行</b> → <b>询问每组强度</b></span>中选择<span class="ui"><b>完成按钮上方一行</b></span>、<span class="ui"><b>弹出窗口</b></span>或<span class="ui"><b>不询问</b></span>。关闭后手表也不再询问。要记录数值，请点按该组填写 RIR 或 RPE。</p>
 </section>
 
 <section class="g-sec" id="rest-timer">
@@ -135,6 +135,12 @@
 <h2>备注</h2>
 <p class="lead">训练中用动作的 ⋯ → <span class="ui"><b>备注</b></span>，结束后在总结页的 <span class="ui"><b>训练备注</b></span> 中记录。</p>
 <p>像动作要领这类要反复查看的备注，请在 <span class="ui"><b>动作列表</b></span> 中打开动作，用 <span class="ui"><b>添加动作备注</b></span> 记录。可以附加照片或视频并置顶。所有备注都能在 <span class="ui"><b>菜单</b> → <b>全部备注</b></span> 中集中查看。</p>
+</section>
+
+<section class="g-sec" id="voice">
+<h2>力量训练语音提示</h2>
+<p class="lead">开启后，会在休息剩 10 秒和结束时读出下一组的重量和次数，创新纪录时也会提醒。</p>
+<p>在<span class="ui"><b>菜单</b> → <b>应用设置</b> → <b>力量训练语音提示</b></span>中开启。第一次休息时，完成按钮上方也会出现一行开启提示。只在打开应用时播报，应用在后台时用通知提醒。手表会在剩 10 秒时短振一次。</p>
 </section>
 <nav class="g-pager" aria-label="其他主题"><a class="g-pager__prev" href="start.html"><small>上一篇</small>入门</a><a class="g-pager__next" href="routines.html"><small>下一篇</small>例行训练与计划</a></nav>
 <p class="g-contact">仍未解决？请发送邮件至 <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>，并附上设备型号和应用版本。</p>

@@ -20,8 +20,8 @@
 
 <section id="effort" data-ask="How do I log how hard a set was|Enter RPE or RIR|What is the how did that set feel popup|Log reps in reserve" data-keys="effort rpe rir reps in reserve easy hard limit exertion intensity">
 <h2>Logging effort</h2>
-<p class="lead">When you finish a set, {{" effortQuickTitle}} pops up. Pick one of four levels and it feeds into the next-weight calculation.</p>
-<p>To enter a number, tap {{> effortQuickDetail}} in the same sheet and enter RIR (reps left) or RPE (6–10). Choose which one you use under RPE/RIR in {{> tabMenu > setAppSettings > settingsWorkout}}.</p>
+<p class="lead">When you finish a set, {{" effortQuickTitle}} and four chips appear in one row above Done. Pick one to feed your next-weight math, or ignore it to move on without effort.</p>
+<p>Choose how you're asked in {{> tabMenu > setAppSettings > settingsWorkout > effortPromptSetting}}: {{> effortPromptInline}}, {{> effortPromptSheet}} or {{> effortPromptOff}}. If you turn it off, your watch stops asking too. To log numbers, tap the set and enter RIR or RPE.</p>
 </section>
 
 <section id="rest-timer" data-ask="How do I use the rest timer|Make my rest longer|Skip the rest timer|The timer doesn't show up" data-keys="rest timer break interval countdown 10 seconds">
@@ -81,4 +81,10 @@
 <h2>Notes</h2>
 <p class="lead">During a workout, use ⋯ → {{> notes}} on an exercise. Afterwards, use {{> workoutNotes}} on the summary.</p>
 <p>For notes you'll keep coming back to, like form cues, open the exercise in {{> homeExerciseList}} and use {{> addExerciseNote}}. You can attach photos or videos and pin notes to the top. See every note in {{> tabMenu > menuAllMemos}}.</p>
+</section>
+
+<section id="voice" data-ask="Can it read my next set out loud|voice cue when rest ends|turn on voice coach|ten seconds left announcement" data-keys="voice audio spoken coach rest next set record earphones">
+<h2>Voice coach for lifts</h2>
+<p class="lead">With it on, your next set's weight and reps are read out at 10 seconds left and when rest ends, and new records are called out.</p>
+<p>Turn it on in {{> tabMenu > setAppSettings > setVoiceCoach}}. The first time you rest, a one-row offer also appears above Done. It speaks only while the app is open; otherwise you get a notification. Watches buzz once at 10 seconds.</p>
 </section>
