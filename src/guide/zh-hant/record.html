@@ -20,8 +20,8 @@
 
 <section id="effort" data-ask="怎麼記錄每組的強度|輸入 RPE 或 RIR|彈出這一組感覺如何|記錄還剩幾次" data-keys="強度 rpe rir 餘力 輕鬆 吃力 極限 適中 自覺用力 剩餘次數">
 <h2>記錄每組強度</h2>
-<p class="lead">完成一組後會彈出 {{" effortQuickTitle}}。從四個等級中選一個，就會用於計算下一組重量。</p>
-<p>想填數字，在同一視窗點 {{> effortQuickDetail}}，輸入 RIR（剩餘次數）或 RPE（6–10）。用哪一種，可以在 {{> tabMenu > setAppSettings > settingsWorkout}} 的 RPE/RIR 中更改。</p>
+<p class="lead">完成一組後，完成按鈕上方會出現一行{{" effortQuickTitle}}和四個選項。選擇後會用於計算下一組重量，不選則直接繼續。</p>
+<p>可在{{> tabMenu > setAppSettings > settingsWorkout > effortPromptSetting}}中選擇{{> effortPromptInline}}、{{> effortPromptSheet}}或{{> effortPromptOff}}。關閉後手錶也不再詢問。要記錄數值，請點按該組填寫 RIR 或 RPE。</p>
 </section>
 
 <section id="rest-timer" data-ask="休息計時怎麼用|想延長休息時間|跳過休息計時|計時器不出現" data-keys="休息 計時 計時器 間歇 倒數計時 10秒">
@@ -81,4 +81,10 @@
 <h2>備註</h2>
 <p class="lead">訓練中用動作的 ⋯ → {{> notes}}，結束後在總結頁的 {{> workoutNotes}} 中記錄。</p>
 <p>像動作要領這類要反覆檢視的備註，請在 {{> homeExerciseList}} 中開啟動作，用 {{> addExerciseNote}} 記錄。可以附加照片或影片並置頂。所有備註都能在 {{> tabMenu > menuAllMemos}} 中集中檢視。</p>
+</section>
+
+<section id="voice" data-ask="能朗讀下一組吗|休息結束語音提醒|開啟語音提示|剩10秒提醒" data-keys="語音 朗讀 提示 休息 10秒 新紀錄 耳機">
+<h2>力量训練語音提示</h2>
+<p class="lead">開啟後，會在休息剩 10 秒和結束時讀出下一組的重量和次數，创新紀錄時也會提醒。</p>
+<p>在{{> tabMenu > setAppSettings > setVoiceCoach}}中開啟。第一次休息時，完成按鈕上方也會出現一行開啟提示。只在打開應用時播报，應用在後台時用通知提醒。手錶會在剩 10 秒時短震一次。</p>
 </section>
