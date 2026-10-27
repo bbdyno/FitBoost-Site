@@ -57,5 +57,12 @@
  "朗读下一组": "record#voice",
  "混合赛练习": "coach#race",
  "健身房没有绳索器械": "tools#missing-equipment",
- "把训练计划发给别人": "routines#share"
+ "把训练计划发给别人": "routines#share",
+ "更改训练目标": "start#goal",
+ "想把目标改成减脂": "start#goal",
+ "设置增肌目标": "start#goal",
+ "递减组怎么做": "record#drop-backoff",
+ "添加回退组": "record#drop-backoff",
+ "组安排推荐": "record#drop-backoff",
+ "补记有氧会自动填卡路里吗": "record#past"
 }

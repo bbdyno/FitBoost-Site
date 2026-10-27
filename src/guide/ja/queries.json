@@ -57,5 +57,12 @@
  "次のセットを読み上げて": "record#voice",
  "ハイブリッドレースの練習": "coach#race",
  "ケーブルマシンがないジム": "tools#missing-equipment",
- "ルーティンを他の人に送る": "routines#share"
+ "ルーティンを他の人に送る": "routines#share",
+ "トレーニング目標を変える": "start#goal",
+ "減量の目標にしたい": "start#goal",
+ "筋肥大の目標を設定": "start#goal",
+ "ドロップセットのやり方": "record#drop-backoff",
+ "バックオフセットを入れる": "record#drop-backoff",
+ "セット構成のおすすめ": "record#drop-backoff",
+ "過去の有酸素のカロリーは自動で入りますか": "record#past"
 }

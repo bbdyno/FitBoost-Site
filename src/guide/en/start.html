@@ -1,12 +1,23 @@
-<section id="first-run" data-ask="What do I do after installing|I just opened the app|How do I get started|What does onboarding ask for" data-keys="first install start onboarding setup profile nickname sex birth year height weight squat">
+<section id="first-run" data-ask="What do I do after installing|I just opened the app|How do I get started|What does onboarding ask for" data-keys="first install start onboarding setup profile nickname sex birth year height weight experience goal squat">
 <h2>When you first open the app</h2>
-<p class="lead">Swipe through three intro screens, fill in five profile details, and you're ready to log.</p>
+<p class="lead">Swipe through three intro screens, fill in your profile, experience, and training goal, and you're ready to log.</p>
 <ol class="steps">
 <li>Swipe through the intro and tap start on the last screen.</li>
 <li>Enter a nickname, your sex, birth year, height, and weight.</li>
-<li>Enter your estimated squat 1RM. If you don't know it, choose that you're not sure.</li>
+<li>Choose how long you've lifted weights, then pick your <a href="#goal">training goal</a>.</li>
+<li>If you have lifted before, enter your estimated squat 1RM. If you don't know it, choose that you're not sure. If you choose {{> obExpFirst}}, the app asks how often and where you train and builds a first routine that fits your goal.</li>
 </ol>
 <p>Your details are used to suggest weights and estimate calories burned. The weight unit (kg or lb) follows your device's region, and you can <a href="settings.html#units">change it in settings</a>.</p>
+</section>
+
+<section id="goal" data-ask="Where do I change my training goal|I want a fat loss goal|Choose between strength and hypertrophy|What changes when I set a goal" data-keys="goal training goal strength hypertrophy fat loss diet recomposition recomp endurance hybrid fitness health change">
+<h2>Training goal</h2>
+<p class="lead">Your training goal sets the starting choices in the program builder, coach, and nutrition, and the set plan suggestion.</p>
+<ol class="steps">
+<li>Tap the goal chip next to the date in {{> tabHome}}, or go to {{> tabMenu > setAppSettings > trainingGoalTitle}}.</li>
+<li>Pick {{> trainingGoalStrength}}, {{> trainingGoalHypertrophy}}, {{> trainingGoalFatLoss}}, {{> trainingGoalRecomp}}, {{> trainingGoalEndurance}}, {{> trainingGoalHybrid}}, or {{> trainingGoalHealth}}.</li>
+</ol>
+<p>A new goal applies from your next workout. The workout in progress and routines you made stay as they are. If you haven't picked a goal, the one guessed from your records is marked {{" trainingGoalInferred}}.</p>
 </section>
 
 <section id="account" data-ask="Do I need to sign up|Do I need an account|Where do I log in|Where are my records stored" data-keys="sign up signup register account login log in password stored server">

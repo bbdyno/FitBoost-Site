@@ -1,6 +1,6 @@
 {
   "topics": [
-    {"slug": "start", "title": "入門", "description": "安裝後要做的事和 App 的介面結構。"},
+    {"slug": "start", "title": "入門", "description": "安裝後要做的事、訓練目標和畫面結構。"},
     {"slug": "record", "title": "記錄訓練", "description": "開始訓練、記錄每組、結束訓練，以及修改過去的記錄。"},
     {"slug": "routines", "title": "例行訓練與計畫", "description": "建立例行訓練、生成適合自己的計畫、使用動作列表。"},
     {"slug": "coach", "title": "教練與循環訓練", "description": "下一組重量建議、教練循環訓練、每週混合訓練計畫和教練頁的週期計畫。"},

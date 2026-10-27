@@ -1,6 +1,6 @@
 {
   "topics": [
-    {"slug": "start", "title": "시작하기", "description": "설치하고 처음 하는 일과 화면 구성을 알아봅니다."},
+    {"slug": "start", "title": "시작하기", "description": "설치하고 처음 하는 일, 운동 목표, 화면 구성을 알아봅니다."},
     {"slug": "record", "title": "운동 기록하기", "description": "운동을 시작하고 세트를 남기고 끝내는 방법, 지난 기록을 고치는 방법입니다."},
     {"slug": "routines", "title": "루틴과 프로그램", "description": "루틴을 만들고, 나에게 맞는 프로그램을 짜고, 운동 목록을 쓰는 방법입니다."},
     {"slug": "coach", "title": "코치와 서킷", "description": "다음 무게 추천, 코치 서킷, 주간 하이브리드 계획, 코치 탭의 블록 계획입니다."},

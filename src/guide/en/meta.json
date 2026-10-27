@@ -1,6 +1,6 @@
 {
   "topics": [
-    {"slug": "start", "title": "Getting started", "description": "What to do after installing, and how the app is laid out."},
+    {"slug": "start", "title": "Getting started", "description": "What to do after installing, your training goal, and how the screens are laid out."},
     {"slug": "record", "title": "Logging workouts", "description": "Start a workout, log sets, finish, and fix past records."},
     {"slug": "routines", "title": "Routines and programs", "description": "Build routines, get a program made for you, and use the exercise list."},
     {"slug": "coach", "title": "Coaching and circuits", "description": "Next-weight suggestions, coach circuits, weekly hybrid plans, and block programs in the Coach tab."},

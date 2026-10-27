@@ -15,6 +15,23 @@
 <ul>
 <li>想一次全部完成，点 {{> completeAllSets}}。</li>
 <li>点组号会打开该组的详细编辑。可以设置组类型（热身、递减、力竭等）、握法、强度和这一组单独的休息时间。</li>
+<li>想添加递减组、回退组，或一次安排剩下的组，请看<a href="#drop-backoff">递减组、回退组与组安排</a>。</li>
+</ul>
+</section>
+
+<section id="drop-backoff" data-ask="怎么加递减组|回退组怎么做|组安排推荐|顶组和回退组的重量|递减组要减多少重量" data-keys="递减 递减组 回退 回退组 顶组 组安排 推荐 减重 依据">
+<h2>递减组、回退组与组安排</h2>
+<p class="lead">点击动作卡片上的 {{> composeChip}}，可以把剩下的组安排成 {{> composeSchemeStraight}}、{{> composeSchemeTopBackoff}} 或 {{> composeSchemeDropFinish}}，并先推荐每组的重量和次数。</p>
+<ol class="steps">
+<li>点击动作卡片上的 {{> composeChip}}。</li>
+<li>选择安排方式和组数、次数、保留次数，每组的推荐重量会随之更新。</li>
+<li>点击 {{> composeApplyRecommended}}，或点某一行修改重量和次数后再添加。</li>
+</ol>
+<ul>
+<li>只想加递减组或回退组时，使用动作卡片 ⋯ 中的 {{> sessionAddDropSet}}、{{> sessionAddBackoffSet}}，或组编辑窗口里的 {{> sessionAddDropAfterSet}}。</li>
+<li>完成递减组前的那一组后，不休息直接进入递减组，最后一个递减组之后再休息，手表的做法相同。</li>
+<li>最先选好的安排会按<a href="start.html#goal">训练目标</a>决定。例如力量目标在大动作上用顶组加回退组，增肌目标在适合递减的器械、绳索和孤立动作上最后递减。</li>
+<li>点击 {{> composeSourcesTitle}} 可查看计算重量所依据的研究和教练方法。</li>
 </ul>
 </section>
 
@@ -54,10 +71,11 @@
 <p class="tip">顶部菜单的 {{> workoutFinish}} 会直接丢弃训练。看到 {{" endThisWorkout}}{{" currentRecordWonTBeSaved}} 时请取消，改点 {{> finishWorkout}}。</p>
 </section>
 
-<section id="past" data-ask="想补记已经做过的训练|忘了记录昨天的训练|快速记录是什么|按过去的日期添加记录" data-keys="快速记录 过去 昨天 忘了 补记 日期 添加 计划">
+<section id="past" data-ask="想补记已经做过的训练|忘了记录昨天的训练|快速记录是什么|按过去的日期添加记录|补记有氧会自动填卡路里吗" data-keys="快速记录 过去 昨天 忘了 补记 日期 添加 计划 有氧 卡路里 自动 估算">
 <h2>记录已完成的训练</h2>
 <p class="lead">用 {{> tabHome}} 的 {{> homeQuickRecord}} 或 {{> tabRecord > histAddWorkout > recordPastWorkout}}，连同日期补录过去的训练。</p>
 <p>同一菜单的 {{> homeAddScheduled}} 可以把之后的训练加入日程。有进行中的训练时 {{> homeQuickRecord}} 打不开，请先结束那次训练。</p>
+<p>有氧训练修改时间或距离后，不用点计算器也会立即估算并填入卡路里。手动填写的卡路里和从健康 App 导入的值保持不变；没有体重记录时不会估算，而是提示你。</p>
 </section>
 
 <section id="edit" data-ask="想修改过去的记录|删除训练记录|删除记录|日期填错了|重量填错了" data-keys="修改 编辑 删除 日期 时间 填错 恢复">

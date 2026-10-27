@@ -51,7 +51,7 @@
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#start-workout">开始训练</a></li><li><a href="#sets">记录每组</a></li><li><a href="#effort">记录每组强度</a></li><li><a href="#rest-timer">休息计时</a></li><li><a href="#exercise-menu">动作菜单</a></li><li><a href="#finish">结束训练</a></li><li><a href="#past">记录已完成的训练</a></li><li><a href="#edit">编辑或删除过去的记录</a></li><li><a href="#body">记录体重和照片</a></li><li><a href="#notes">备注</a></li><li><a href="#voice">力量训练语音提示</a></li></ol></nav>
+<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#start-workout">开始训练</a></li><li><a href="#sets">记录每组</a></li><li><a href="#drop-backoff">递减组、回退组与组安排</a></li><li><a href="#effort">记录每组强度</a></li><li><a href="#rest-timer">休息计时</a></li><li><a href="#exercise-menu">动作菜单</a></li><li><a href="#finish">结束训练</a></li><li><a href="#past">记录已完成的训练</a></li><li><a href="#edit">编辑或删除过去的记录</a></li><li><a href="#body">记录体重和照片</a></li><li><a href="#notes">备注</a></li><li><a href="#voice">力量训练语音提示</a></li></ol></nav>
 <section class="g-sec" id="start-workout">
 <h2>开始训练</h2>
 <p class="lead">在 <span class="ui"><b>首页</b></span> 的今日卡片上点击 <span class="ui"><b>开始</b></span>。没有例行训练时会以空白训练开始，可以自由记录。</p>
@@ -69,6 +69,23 @@
 <ul>
 <li>想一次全部完成，点 <span class="ui"><b>完成所有组</b></span>。</li>
 <li>点组号会打开该组的详细编辑。可以设置组类型（热身、递减、力竭等）、握法、强度和这一组单独的休息时间。</li>
+<li>想添加递减组、回退组，或一次安排剩下的组，请看<a href="#drop-backoff">递减组、回退组与组安排</a>。</li>
+</ul>
+</section>
+
+<section class="g-sec" id="drop-backoff">
+<h2>递减组、回退组与组安排</h2>
+<p class="lead">点击动作卡片上的 <span class="ui"><b>组安排</b></span>，可以把剩下的组安排成 <span class="ui"><b>相同重量</b></span>、<span class="ui"><b>顶组＋回退组</b></span> 或 <span class="ui"><b>最后递减</b></span>，并先推荐每组的重量和次数。</p>
+<ol class="steps">
+<li>点击动作卡片上的 <span class="ui"><b>组安排</b></span>。</li>
+<li>选择安排方式和组数、次数、保留次数，每组的推荐重量会随之更新。</li>
+<li>点击 <span class="ui"><b>按推荐添加</b></span>，或点某一行修改重量和次数后再添加。</li>
+</ol>
+<ul>
+<li>只想加递减组或回退组时，使用动作卡片 ⋯ 中的 <span class="ui"><b>添加递减组</b></span>、<span class="ui"><b>添加回退组</b></span>，或组编辑窗口里的 <span class="ui"><b>在此组后加递减组</b></span>。</li>
+<li>完成递减组前的那一组后，不休息直接进入递减组，最后一个递减组之后再休息，手表的做法相同。</li>
+<li>最先选好的安排会按<a href="start.html#goal">训练目标</a>决定。例如力量目标在大动作上用顶组加回退组，增肌目标在适合递减的器械、绳索和孤立动作上最后递减。</li>
+<li>点击 <span class="ui"><b>依据</b></span> 可查看计算重量所依据的研究和教练方法。</li>
 </ul>
 </section>
 
@@ -112,6 +129,7 @@
 <h2>记录已完成的训练</h2>
 <p class="lead">用 <span class="ui"><b>首页</b></span> 的 <span class="ui"><b>快速记录</b></span> 或 <span class="ui"><b>记录</b> → <b>添加训练记录</b> → <b>记录已完成的训练</b></span>，连同日期补录过去的训练。</p>
 <p>同一菜单的 <span class="ui"><b>添加计划训练</b></span> 可以把之后的训练加入日程。有进行中的训练时 <span class="ui"><b>快速记录</b></span> 打不开，请先结束那次训练。</p>
+<p>有氧训练修改时间或距离后，不用点计算器也会立即估算并填入卡路里。手动填写的卡路里和从健康 App 导入的值保持不变；没有体重记录时不会估算，而是提示你。</p>
 </section>
 
 <section class="g-sec" id="edit">
