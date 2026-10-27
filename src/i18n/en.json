@@ -155,7 +155,7 @@
     "title": "And there's more.",
     "program": {
       "title": "Build a program",
-      "body": "Pick your goal, experience, days per week, session length and equipment, and get a weekly plan saved as routines. Muscles you want to rest are left out; the ones you want to grow get more work.",
+      "body": "Pick your goal, experience, days per week, session length and equipment, and get a weekly plan saved as routines. Muscles you want to rest are left out; the ones you want to grow get more work. Set a training goal such as strength, hypertrophy, or fat loss, and the starting choices follow it.",
       "c1": "Muscle",
       "c2": "Strength",
       "c3": "4 days",
@@ -182,12 +182,12 @@
     },
     "cardio": {
       "title": "Cardio calories",
-      "body": "Fill in calories and distance from treadmill speed and incline, or erg pace and watts.",
+      "body": "Fill in calories and distance from treadmill speed and incline, or erg pace and watts. In a past workout, just change the time or distance and calories fill in.",
       "note": "Treadmill · 6.5 km/h · 8% incline · 30 min"
     },
     "sets": {
-      "title": "Warm-ups · supersets · timed sets",
-      "body": "Plan warm-up sets apart from working sets, pair two exercises as a superset, and log planks in seconds.",
+      "title": "Warm-ups · drops · back-offs · supersets",
+      "body": "Plan warm-up sets apart from working sets, and get suggested weights and reps for every drop and back-off set. Pair two exercises as a superset, and log planks in seconds.",
       "pair": "Pull-up + Dip",
       "plank": "Plank"
     },
@@ -238,6 +238,7 @@
         "1,690 exercises with guides",
         "Recovery map and pain notes",
         "Program builder",
+        "Drop and back-off sets with a set plan",
         "Plate calculator",
         "Device sync and backup files",
         "3 routines, 5 custom exercises"

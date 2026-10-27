@@ -1,12 +1,23 @@
-<section id="first-run" data-ask="安裝後要做什麼|第一次開啟 App|怎麼開始使用|一開始要填什麼" data-keys="第一次 安裝 開始 引導 個人資料 暱稱 性別 出生年份 身高 體重 深蹲">
+<section id="first-run" data-ask="安裝後要做什麼|第一次開啟 App|怎麼開始使用|一開始要填什麼" data-keys="第一次 安裝 開始 引導 個人資料 暱稱 性別 出生年份 身高 體重 經驗 目標 深蹲">
 <h2>第一次開啟時</h2>
-<p class="lead">翻過三頁介紹，填寫五項個人資料，就可以開始記錄了。</p>
+<p class="lead">翻過三頁介紹，填寫個人資料和訓練經驗、目標，就可以開始記錄了。</p>
 <ol class="steps">
 <li>翻過介紹頁，在最後一頁點選開始。</li>
 <li>填寫暱稱、性別、出生年份、身高和體重。</li>
-<li>填寫預估的深蹲 1RM。不知道的話，可以選擇不確定。</li>
+<li>選擇做重量訓練的時間，接著選擇<a href="#goal">訓練目標</a>。</li>
+<li>練過的話，填寫預估的深蹲 1RM。不知道的話，可以選擇不確定。選擇 {{> obExpFirst}} 時，會詢問每週幾次、在哪裡訓練，並依所選目標產生第一個例行。</li>
 </ol>
 <p>這些資訊用於推薦重量和估算消耗的熱量。重量單位（kg 或 lb）跟隨裝置的地區設定，之後可以<a href="settings.html#units">在設定中更改</a>。</p>
+</section>
+
+<section id="goal" data-ask="在哪裡更改訓練目標|想把目標改成減脂|力量和增肌怎麼選|設定目標後有什麼變化" data-keys="目標 訓練目標 力量 增肌 減脂 減肥 增肌減脂 肌肉耐力 混合訓練 體能 健康 更改">
+<h2>訓練目標</h2>
+<p class="lead">選擇訓練目標後，計畫產生、教練、飲食的初始值和組安排推薦都會依目標調整。</p>
+<ol class="steps">
+<li>點選 {{> tabHome}} 日期旁的目標標籤，或進入 {{> tabMenu > setAppSettings > trainingGoalTitle}}。</li>
+<li>從 {{> trainingGoalStrength}}、{{> trainingGoalHypertrophy}}、{{> trainingGoalFatLoss}}、{{> trainingGoalRecomp}}、{{> trainingGoalEndurance}}、{{> trainingGoalHybrid}}、{{> trainingGoalHealth}} 中選擇一個。</li>
+</ol>
+<p>更改後的目標從下次訓練開始生效。進行中的訓練和你自己建立的例行保持不變。沒選過目標時，根據紀錄推測的目標會標示 {{" trainingGoalInferred}}。</p>
 </section>
 
 <section id="account" data-ask="需要註冊嗎|需要建立帳戶嗎|在哪裡登入|我的記錄儲存在哪裡" data-keys="註冊 帳戶 帳號 登入 密碼 儲存 伺服器">

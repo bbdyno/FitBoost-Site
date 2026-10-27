@@ -57,5 +57,12 @@
  "朗讀下一組": "record#voice",
  "混合賽練習": "coach#race",
  "把训練計劃發給朋友": "routines#share",
- "健身房沒有繩索器械": "tools#missing-equipment"
+ "健身房沒有繩索器械": "tools#missing-equipment",
+ "更改訓練目標": "start#goal",
+ "想把目標改成減脂": "start#goal",
+ "設定增肌目標": "start#goal",
+ "遞減組怎麼做": "record#drop-backoff",
+ "新增回退組": "record#drop-backoff",
+ "組安排推薦": "record#drop-backoff",
+ "補記有氧會自動填卡路里嗎": "record#past"
 }

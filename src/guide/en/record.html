@@ -15,6 +15,23 @@
 <ul>
 <li>To finish them all at once, tap {{> completeAllSets}}.</li>
 <li>Tap the set number to open the set details. Choose the set type (warm-up, drop, failure, and more), grip, effort, and a rest time for that set only.</li>
+<li>To add drop or back-off sets, or plan the remaining sets at once, see <a href="#drop-backoff">Drop sets, back-off sets, and set plans</a>.</li>
+</ul>
+</section>
+
+<section id="drop-backoff" data-ask="How do I add a drop set|How do back-off sets work|Set plan suggestion|Back-off weight after a top set|How much do I drop the weight" data-keys="drop drop set back-off backoff top set plan set plan suggest reduce descending strip sources">
+<h2>Drop sets, back-off sets, and set plans</h2>
+<p class="lead">Tap {{> composeChip}} on an exercise to plan the remaining sets as {{> composeSchemeStraight}}, {{> composeSchemeTopBackoff}}, or {{> composeSchemeDropFinish}}, with a suggested weight and reps for every set.</p>
+<ol class="steps">
+<li>Tap {{> composeChip}} on the exercise.</li>
+<li>Choose the setup, sets, reps, and reps in reserve. The suggested weight for each set updates.</li>
+<li>Tap {{> composeApplyRecommended}}, or tap a row to change its weight and reps first.</li>
+</ol>
+<ul>
+<li>To add just a drop or back-off set, use {{> sessionAddDropSet}} or {{> sessionAddBackoffSet}} in the exercise's ⋯ menu, or {{> sessionAddDropAfterSet}} in the set editor.</li>
+<li>When you finish the set before a drop, you go straight into the drop without rest, and rest after the last drop. Watches do the same.</li>
+<li>The setup that opens first follows your <a href="start.html#goal">training goal</a>. For example, strength opens big lifts with a top set and back-offs, and hypertrophy opens machine, cable, and isolation moves with a drop at the end.</li>
+<li>Tap {{> composeSourcesTitle}} to see the studies and coaching methods behind the weights.</li>
 </ul>
 </section>
 
@@ -54,10 +71,11 @@
 <p class="tip">{{> workoutFinish}} in the top menu discards the workout. If you see {{" endThisWorkout}} {{" currentRecordWonTBeSaved}}, cancel and tap {{> finishWorkout}} instead.</p>
 </section>
 
-<section id="past" data-ask="Log a workout I already did|I forgot to log yesterday|What is quick record|Add a workout for a past date" data-keys="quick record past yesterday forgot later earlier date add schedule">
+<section id="past" data-ask="Log a workout I already did|I forgot to log yesterday|What is quick record|Add a workout for a past date|Does past cardio fill in calories automatically" data-keys="quick record past yesterday forgot later earlier date add schedule cardio calories automatic estimate">
 <h2>Logging a past workout</h2>
 <p class="lead">Use {{> homeQuickRecord}} in {{> tabHome}} or {{> tabRecord > histAddWorkout > recordPastWorkout}} to enter a workout with its date.</p>
 <p>{{> homeAddScheduled}} in the same menu puts a future workout on your schedule. {{> homeQuickRecord}} won't open while a workout is in progress, so finish that one first.</p>
+<p>For cardio, changing the time or distance fills in estimated calories right away, no calculator needed. Calories you typed or imported from a health app stay as they are, and without a body weight on record the app tells you instead of guessing.</p>
 </section>
 
 <section id="edit" data-ask="Edit a past workout|Delete a workout|Delete a record|I entered the wrong date|I logged the wrong weight" data-keys="edit change fix delete remove date time wrong mistake undo">

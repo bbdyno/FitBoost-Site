@@ -57,5 +57,12 @@
  "read my next set out loud": "record#voice",
  "hybrid race practice": "coach#race",
  "my gym has no cable machine": "tools#missing-equipment",
- "send a routine to someone": "routines#share"
+ "send a routine to someone": "routines#share",
+ "change my training goal": "start#goal",
+ "I want a fat loss goal": "start#goal",
+ "set a hypertrophy goal": "start#goal",
+ "how to do a drop set": "record#drop-backoff",
+ "add back-off sets": "record#drop-backoff",
+ "set plan suggestion": "record#drop-backoff",
+ "does past cardio fill in calories automatically": "record#past"
 }

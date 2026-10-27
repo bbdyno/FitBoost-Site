@@ -51,7 +51,7 @@
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="このページの内容"><p>このページの内容</p><ol><li><a href="#start-workout">ワークアウトを始める</a></li><li><a href="#sets">セットを記録する</a></li><li><a href="#effort">セットの強度を記録する</a></li><li><a href="#rest-timer">休憩タイマー</a></li><li><a href="#exercise-menu">種目ごとのメニュー</a></li><li><a href="#finish">ワークアウトを終える</a></li><li><a href="#past">済んだワークアウトを記録する</a></li><li><a href="#edit">過去の記録を編集・削除する</a></li><li><a href="#body">体重と写真の記録</a></li><li><a href="#notes">メモ</a></li><li><a href="#voice">筋トレの音声ガイド</a></li></ol></nav>
+<nav class="g-toc" aria-label="このページの内容"><p>このページの内容</p><ol><li><a href="#start-workout">ワークアウトを始める</a></li><li><a href="#sets">セットを記録する</a></li><li><a href="#drop-backoff">ドロップ・バックオフとセット構成</a></li><li><a href="#effort">セットの強度を記録する</a></li><li><a href="#rest-timer">休憩タイマー</a></li><li><a href="#exercise-menu">種目ごとのメニュー</a></li><li><a href="#finish">ワークアウトを終える</a></li><li><a href="#past">済んだワークアウトを記録する</a></li><li><a href="#edit">過去の記録を編集・削除する</a></li><li><a href="#body">体重と写真の記録</a></li><li><a href="#notes">メモ</a></li><li><a href="#voice">筋トレの音声ガイド</a></li></ol></nav>
 <section class="g-sec" id="start-workout">
 <h2>ワークアウトを始める</h2>
 <p class="lead"><span class="ui"><b>ホーム</b></span>の今日のカードで<span class="ui"><b>開始</b></span>をタップします。ルーティンがなければ空のワークアウトで始まり、自由に記録できます。</p>
@@ -69,6 +69,23 @@
 <ul>
 <li>まとめて完了するには<span class="ui"><b>全セット完了</b></span>をタップします。</li>
 <li>セット番号をタップすると、そのセットの詳細を編集する画面が開きます。セットタイプ（ウォームアップ・ドロップ・限界など）、グリップ、強度、そのセットだけの休憩時間を決めます。</li>
+<li>ドロップ・バックオフセットを入れたり、残りのセットをまとめて組んだりするには<a href="#drop-backoff">ドロップ・バックオフとセット構成</a>をご覧ください。</li>
+</ul>
+</section>
+
+<section class="g-sec" id="drop-backoff">
+<h2>ドロップ・バックオフとセット構成</h2>
+<p class="lead">種目カードの<span class="ui"><b>構成</b></span>をタップすると、残りのセットを<span class="ui"><b>同じ重量</b></span>・<span class="ui"><b>トップセット＋バックオフ</b></span>・<span class="ui"><b>最後にドロップ</b></span>のいずれかで組み、セットごとの重量と回数を先におすすめします。</p>
+<ol class="steps">
+<li>種目カードの<span class="ui"><b>構成</b></span>をタップします。</li>
+<li>構成とセット数・回数・余力を選ぶと、セットごとのおすすめ重量が変わります。</li>
+<li><span class="ui"><b>おすすめ通りに入れる</b></span>をタップするか、行をタップして重量・回数を直してから入れます。</li>
+</ol>
+<ul>
+<li>ドロップやバックオフだけを付けるには、種目カード⋯の<span class="ui"><b>ドロップセットを追加</b></span>・<span class="ui"><b>バックオフセットを追加</b></span>、セット編集画面の<span class="ui"><b>このセットの後にドロップ</b></span>を使います。</li>
+<li>ドロップの前のセットを終えると休まずにすぐドロップへ進み、最後のドロップの後に休みます。ウォッチでも同じです。</li>
+<li>最初に選ばれる構成は<a href="start.html#goal">トレーニング目標</a>に従います。たとえば筋力は大きな種目でトップセット＋バックオフ、筋肥大はドロップに向くマシン・ケーブル・単関節種目で最後にドロップを選びます。</li>
+<li><span class="ui"><b>根拠</b></span>をタップすると、重量の計算に使った研究とコーチングの方法を見られます。</li>
 </ul>
 </section>
 
@@ -112,6 +129,7 @@
 <h2>済んだワークアウトを記録する</h2>
 <p class="lead"><span class="ui"><b>ホーム</b></span>の<span class="ui"><b>クイック記録</b></span>か、<span class="ui"><b>記録</b> → <b>記録を追加</b> → <b>済んだワークアウトを記録</b></span>で、過去のワークアウトを日付と一緒に入力します。</p>
 <p>同じメニューの<span class="ui"><b>予定を追加</b></span>で、これからのワークアウトを予定に入れることもできます。進行中のワークアウトがあると<span class="ui"><b>クイック記録</b></span>は開かないので、先にそちらを終えてください。</p>
+<p>有酸素は時間や距離を直すと、計算機を押さなくても消費カロリーを推定してすぐ入れます。自分で入れたカロリーとヘルスケアから取り込んだ値はそのままで、体重の記録がなければ推定せずにお知らせします。</p>
 </section>
 
 <section class="g-sec" id="edit">

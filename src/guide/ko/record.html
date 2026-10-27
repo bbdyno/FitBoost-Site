@@ -15,6 +15,23 @@
 <ul>
 <li>한꺼번에 끝내려면 {{> completeAllSets}}를 누릅니다.</li>
 <li>세트 번호를 누르면 그 세트를 자세히 고치는 창이 열립니다. 세트 타입(웜업·드롭·실패 등), 그립, 강도, 그 세트만의 휴식 시간을 정합니다.</li>
+<li>드롭·백오프 세트를 넣거나 남은 세트를 한 번에 짜려면 <a href="#drop-backoff">드롭·백오프와 세트 구성</a>을 보세요.</li>
+</ul>
+</section>
+
+<section id="drop-backoff" data-ask="드롭 세트 넣는 법|백오프 세트는 어떻게 하나요|세트 구성 추천|탑셋 백오프 무게 계산|드롭 세트 무게를 얼마나 내려요" data-keys="드롭 드롭세트 백오프 탑셋 탑세트 구성 세트구성 추천 감량 디센딩 스트립 근거">
+<h2>드롭·백오프와 세트 구성</h2>
+<p class="lead">운동 카드의 {{> composeChip}}을 누르면 남은 세트를 {{> composeSchemeStraight}}·{{> composeSchemeTopBackoff}}·{{> composeSchemeDropFinish}} 가운데 하나로 짜고, 세트마다 무게와 횟수를 먼저 권합니다.</p>
+<ol class="steps">
+<li>운동 카드의 {{> composeChip}}을 누릅니다.</li>
+<li>구성과 세트 수·횟수·남길 여유를 고르면 세트마다 추천 무게가 바뀝니다.</li>
+<li>{{> composeApplyRecommended}}를 누르거나, 줄을 눌러 무게·횟수를 고친 뒤 넣습니다.</li>
+</ol>
+<ul>
+<li>드롭이나 백오프만 붙이려면 운동 카드 ⋯의 {{> sessionAddDropSet}}·{{> sessionAddBackoffSet}}, 세트 편집 창의 {{> sessionAddDropAfterSet}}를 씁니다.</li>
+<li>드롭 앞 세트를 끝내면 쉬지 않고 바로 드롭으로 넘어가고, 마지막 드롭 뒤에 쉽니다. 시계에서도 같습니다.</li>
+<li>처음 골라진 구성은 <a href="start.html#goal">운동 목표</a>를 따릅니다. 예를 들어 근력은 큰 운동에 탑셋 + 백오프, 근비대는 드롭이 맞는 머신·케이블·고립 운동에 마지막 드롭으로 엽니다.</li>
+<li>{{> composeSourcesTitle}}를 누르면 무게 계산에 쓴 연구와 코칭 방법을 볼 수 있습니다.</li>
 </ul>
 </section>
 
@@ -54,10 +71,11 @@
 <p class="tip">위쪽 메뉴의 {{> workoutFinish}}는 저장하지 않고 버리는 버튼입니다. {{" endThisWorkout}} {{" currentRecordWonTBeSaved}} 창이 뜨면 취소하고 {{> finishWorkout}}을 누르세요.</p>
 </section>
 
-<section id="past" data-ask="이미 한 운동을 나중에 기록하고 싶어요|어제 운동을 깜빡했어요|빠른기록은 뭔가요|지난 날짜로 기록 추가" data-keys="빠른기록 지난 어제 깜빡 나중에 과거 날짜 추가 예정">
+<section id="past" data-ask="이미 한 운동을 나중에 기록하고 싶어요|어제 운동을 깜빡했어요|빠른기록은 뭔가요|지난 날짜로 기록 추가|지난 유산소 칼로리가 자동으로 채워지나요" data-keys="빠른기록 지난 어제 깜빡 나중에 과거 날짜 추가 예정 유산소 칼로리 자동 추정">
 <h2>이미 한 운동 기록하기</h2>
 <p class="lead">{{> tabHome}}의 {{> homeQuickRecord}}이나 {{> tabRecord > histAddWorkout > recordPastWorkout}}로 지난 운동을 날짜와 함께 적어 넣습니다.</p>
 <p>같은 메뉴의 {{> homeAddScheduled}}로 앞으로 할 운동을 일정에 넣을 수도 있습니다. 진행 중인 운동이 있으면 {{> homeQuickRecord}}이 열리지 않으니 먼저 그 운동을 끝내 주세요.</p>
+<p>유산소는 시간이나 거리를 고치면 계산기를 누르지 않아도 칼로리를 추정해 바로 채웁니다. 직접 적은 칼로리와 건강 앱에서 가져온 값은 그대로 두고, 몸무게 기록이 없으면 추정하지 않고 알려 드립니다.</p>
 </section>
 
 <section id="edit" data-ask="지난 기록을 고치고 싶어요|운동 기록 삭제|기록 삭제|날짜를 잘못 넣었어요|무게를 잘못 적었어요" data-keys="수정 편집 고치기 삭제 지우기 날짜 시간 잘못 복구">

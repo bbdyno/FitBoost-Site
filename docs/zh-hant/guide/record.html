@@ -51,7 +51,7 @@
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="本頁內容"><p>本頁內容</p><ol><li><a href="#start-workout">開始訓練</a></li><li><a href="#sets">記錄每組</a></li><li><a href="#effort">記錄每組強度</a></li><li><a href="#rest-timer">休息計時</a></li><li><a href="#exercise-menu">動作選單</a></li><li><a href="#finish">結束訓練</a></li><li><a href="#past">記錄已完成的訓練</a></li><li><a href="#edit">編輯或刪除過去的記錄</a></li><li><a href="#body">記錄體重和照片</a></li><li><a href="#notes">備註</a></li><li><a href="#voice">力量训練語音提示</a></li></ol></nav>
+<nav class="g-toc" aria-label="本頁內容"><p>本頁內容</p><ol><li><a href="#start-workout">開始訓練</a></li><li><a href="#sets">記錄每組</a></li><li><a href="#drop-backoff">遞減組、回退組與組安排</a></li><li><a href="#effort">記錄每組強度</a></li><li><a href="#rest-timer">休息計時</a></li><li><a href="#exercise-menu">動作選單</a></li><li><a href="#finish">結束訓練</a></li><li><a href="#past">記錄已完成的訓練</a></li><li><a href="#edit">編輯或刪除過去的記錄</a></li><li><a href="#body">記錄體重和照片</a></li><li><a href="#notes">備註</a></li><li><a href="#voice">力量训練語音提示</a></li></ol></nav>
 <section class="g-sec" id="start-workout">
 <h2>開始訓練</h2>
 <p class="lead">在 <span class="ui"><b>首頁</b></span> 的今日卡片上點選 <span class="ui"><b>開始</b></span>。沒有例行訓練時會以空白訓練開始，可以自由記錄。</p>
@@ -69,6 +69,23 @@
 <ul>
 <li>想一次全部完成，點 <span class="ui"><b>完成所有組</b></span>。</li>
 <li>點組號會開啟該組的詳細編輯。可以設定組類型（熱身、遞減、力竭等）、握法、強度和這一組單獨的休息時間。</li>
+<li>想新增遞減組、回退組，或一次安排剩下的組，請看<a href="#drop-backoff">遞減組、回退組與組安排</a>。</li>
+</ul>
+</section>
+
+<section class="g-sec" id="drop-backoff">
+<h2>遞減組、回退組與組安排</h2>
+<p class="lead">點選動作卡片上的 <span class="ui"><b>組安排</b></span>，可以把剩下的組安排成 <span class="ui"><b>相同重量</b></span>、<span class="ui"><b>頂組＋回退組</b></span> 或 <span class="ui"><b>最後遞減</b></span>，並先推薦每組的重量和次數。</p>
+<ol class="steps">
+<li>點選動作卡片上的 <span class="ui"><b>組安排</b></span>。</li>
+<li>選擇安排方式和組數、次數、保留次數，每組的推薦重量會隨之更新。</li>
+<li>點選 <span class="ui"><b>依推薦新增</b></span>，或點某一列修改重量和次數後再新增。</li>
+</ol>
+<ul>
+<li>只想加遞減組或回退組時，使用動作卡片 ⋯ 中的 <span class="ui"><b>新增遞減組</b></span>、<span class="ui"><b>新增回退組</b></span>，或組編輯視窗裡的 <span class="ui"><b>在此組後加遞減組</b></span>。</li>
+<li>完成遞減組前的那一組後，不休息直接進入遞減組，最後一個遞減組之後再休息，手錶的做法相同。</li>
+<li>最先選好的安排會依<a href="start.html#goal">訓練目標</a>決定。例如力量目標在大動作上用頂組加回退組，增肌目標在適合遞減的器械、纜繩和單關節動作上最後遞減。</li>
+<li>點選 <span class="ui"><b>依據</b></span> 可查看計算重量所依據的研究和教練方法。</li>
 </ul>
 </section>
 
@@ -112,6 +129,7 @@
 <h2>記錄已完成的訓練</h2>
 <p class="lead">用 <span class="ui"><b>首頁</b></span> 的 <span class="ui"><b>快速記錄</b></span> 或 <span class="ui"><b>記錄</b> → <b>新增訓練記錄</b> → <b>記錄已完成的訓練</b></span>，連同日期補錄過去的訓練。</p>
 <p>同一選單的 <span class="ui"><b>新增計畫訓練</b></span> 可以把之後的訓練加入日程。有進行中的訓練時 <span class="ui"><b>快速記錄</b></span> 打不開，請先結束那次訓練。</p>
+<p>有氧訓練修改時間或距離後，不用點計算機也會立即估算並填入卡路里。手動填寫的卡路里和從健康 App 匯入的值保持不變；沒有體重紀錄時不會估算，而是提示你。</p>
 </section>
 
 <section class="g-sec" id="edit">

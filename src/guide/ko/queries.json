@@ -63,5 +63,12 @@
  "휴식 끝나면 다음 세트 읽어 줘": "record#voice",
  "하이브리드 대회 연습하고 싶어요": "coach#race",
  "케이블이 없는 헬스장": "tools#missing-equipment",
- "루틴을 다른 사람에게 보내기": "routines#share"
+ "루틴을 다른 사람에게 보내기": "routines#share",
+ "운동 목표 바꾸기": "start#goal",
+ "다이어트 목표로 바꾸고 싶어요": "start#goal",
+ "근비대 목표 설정": "start#goal",
+ "드롭세트 하는 법": "record#drop-backoff",
+ "백오프 세트 넣기": "record#drop-backoff",
+ "세트 구성 추천": "record#drop-backoff",
+ "지난 유산소 칼로리가 자동으로 채워지나요": "record#past"
 }
