@@ -115,5 +115,10 @@
  "今天的跑步處方": "running#coach",
  "腿部恢復": "running#coach",
  "跑步模式的力量教練": "running#coach",
- "為什麼推薦這次跑步": "running#coach"
+ "為什麼推薦這次跑步": "running#coach",
+ "Garmin Connect 跑步看不到": "health#runs",
+ "匯入三星健康跑步": "health#runs",
+ "Strava 跑步": "health#runs",
+ "健康 App 跑步變成有氧": "health#runs",
+ "連線 Garmin Connect 帳號": "health#runs"
 }

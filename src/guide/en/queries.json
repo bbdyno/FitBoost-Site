@@ -115,5 +115,10 @@
  "today's run prescription": "running#coach",
  "leg recovery": "running#coach",
  "strength coaching in running mode": "running#coach",
- "why is this run suggested": "running#coach"
+ "why is this run suggested": "running#coach",
+ "garmin connect runs not showing": "health#runs",
+ "samsung health runs": "health#runs",
+ "import strava runs": "health#runs",
+ "health app runs show as cardio": "health#runs",
+ "connect garmin connect account": "health#runs"
 }

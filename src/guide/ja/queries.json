@@ -115,5 +115,10 @@
  "今日のラン処方": "running#coach",
  "脚の回復": "running#coach",
  "ランニングモードの筋トレコーチ": "running#coach",
- "なぜこのランをすすめる": "running#coach"
+ "なぜこのランをすすめる": "running#coach",
+ "Garmin Connectのランが表示されない": "health#runs",
+ "Samsung Healthのランを取り込む": "health#runs",
+ "Stravaのラン": "health#runs",
+ "ヘルスケアのランが有酸素になる": "health#runs",
+ "Garmin Connectのアカウント連携": "health#runs"
 }

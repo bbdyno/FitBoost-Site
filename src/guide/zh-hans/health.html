@@ -22,7 +22,18 @@
 <section id="import" data-ask="想导入手表上做的训练|导入其他应用的训练|导入手表训练" data-keys="导入 读取 手表 训练 其他应用 30天">
 <h2>导入手表训练</h2>
 <p class="lead">把健康应用中最近 30 天的训练导入 FitBoost 记录。</p>
-<p>在<a href="#connect">健康应用连接页面</a>点击 {{> setWatchImport}}。FitBoost 自己写入的训练不会再次导入。</p>
+<p>在<a href="#connect">健康应用连接页面</a>点击 {{> setWatchImport}}。FitBoost 自己写入的训练不会再次导入。跑步会作为跑步记录导入，见<a href="#runs">从健康应用导入的跑步</a>。</p>
+</section>
+
+<section id="runs" data-ask="Garmin Connect 的跑步看不到|想在跑步模式看三星健康的跑步|导入 Strava 跑步|健康应用的跑步变成了有氧|能连接 Garmin Connect 账户吗" data-keys="garmin connect 佳明 samsung health 三星健康 三星 strava 健康应用 apple健康 health connect 跑步 跑步机 室内 有氧 路线 心率 账户 直接连接 看不到">
+<h2>从健康应用导入的跑步</h2>
+<p class="lead">其他应用写入健康应用的跑步（室外、跑步机），用 {{> setWatchImport}} 导入后会成为跑步记录，显示在跑步模式中。</p>
+<ol class="steps">
+<li>在你使用的应用中打开把训练写入健康应用的设置。iPhone 上由 Garmin Connect、Strava 等应用写入 Apple 健康。Android 上由 Samsung Health、Garmin Connect、Strava 等应用写入 Health Connect。</li>
+<li>在 FitBoost 中<a href="#connect">连接健康应用</a>，点 {{> setWatchImport}}。</li>
+<li>在跑步模式的 {{> tabRecord}} 中打开导入的跑步查看结果，再分享和装饰。</li>
+</ol>
+<p>导入的跑步会用于跑步模式的记录、统计、教练、每周跑量和装饰，跑步机跑步会作为室内跑步导入。距离和时间使用健康应用的数值，路线和心率在打开结果页面时从健康应用重新读取。健康应用中没有路线时不显示路线。每次导入都会重新读取至少最近 7 天，所以较晚写入健康应用的跑步也会在下次导入时进来。1.8.0 之前作为一行有氧导入的跑步，在这个范围内也会变成跑步记录，改过的名称和备注保持不变。骑行等其他有氧仍是有氧。没有直接连接 Garmin Connect 账户的功能，请通过健康应用，或<a href="running.html#import">用 GPX、TCX 文件导入</a>。</p>
 </section>
 
 <section id="merge" data-ask="同一次训练被记录了两次|记录重复了|合并重复的训练" data-keys="重复 两次 重叠 合并 同一时间 整理">
