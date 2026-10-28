@@ -1,0 +1,129 @@
+<section id="mode" data-ask="怎么打开跑步模式|想把应用切换成跑步界面|想回到力量模式|切换到跑步模式后有什么变化" data-keys="跑步模式 跑步 模式 切换 力量模式 哑铃 跑者 双格按钮 顶部 训练模式">
+<h2>切换到跑步模式</h2>
+<p class="lead">点 {{> tabHome}} 顶部右侧双格按钮中的跑者一侧，整个应用就会切换到跑步模式。也可以在 {{> tabMenu}} 的 {{> menuModeTitle}} 一行切换。</p>
+<ol class="steps">
+<li>在 {{> tabHome}} 顶部右侧的哑铃和跑者按钮中点 {{> modeRunning}}。</li>
+<li>要回到力量训练，点同一按钮的 {{> modeStrength}}。</li>
+</ol>
+<ul>
+<li>{{> tabHome}}：今天的跑步卡片、本周跑量和过去 8 周的柱状图、{{> courseTitle}}·{{> runZonesTitle}}·{{> runHomePlan}} 快捷入口，以及最近的跑步。</li>
+<li>{{> tabRecord}}：以 {{> historyRunsOnly}} 打开，也可以切换到 {{> historyAllWorkouts}}。</li>
+<li>{{> tabStats}}：最上方多出跑步栏，下面的力量栏保持不变。</li>
+<li>{{> tabCoach}}：最上方是以跑步为主的每周计划（PRO+）。</li>
+<li>{{> tabMenu}}：多出 {{> courseTitle}}、{{> runZonesTitle}}、{{> runSettingsTitle}} 几行。</li>
+</ul>
+<p>模式只改变界面。记录、处方和健康应用数据与力量训练合为一体。有力量训练安排的日子，首页会显示 {{" modeCrossStrength}}。有正在进行的训练时会显示 {{" modeLockedActive}}，不会切换。选好的模式在重新打开应用后仍会保留。</p>
+</section>
+
+<section id="start-run" data-ask="怎么开始跑步|怎么记录跑步|想用手机测量跑步|跑步机上跑步也能测吗|在跑道上计圈" data-keys="开始 开始跑步 跑步 记录 测量 手机 设备 室内 跑步机 跑道 自由跑 计时测试 比赛 结构化训练 间歇 阈值 坡道 gps 卫星">
+<h2>开始跑步</h2>
+<p class="lead">在跑步模式的 {{> tabHome}}，点今天跑步卡片上的 {{> runStart}}，再选择跑步类型和测量设备。</p>
+<ol class="steps">
+<li>在 {{> tabHome}} 点今天跑步卡片上的 {{> runStart}}。</li>
+<li>最上方的卡片是今天的处方（没有时是推荐）。可直接点 {{> runStart}}，或在下方选择 {{> runTitleFree}}、{{> runKindTest}}、{{> runTitleCourse}}、{{> runTitleTrack}}、{{> runKindTreadmill}} 等类型。</li>
+<li>在 {{> runDeviceTitle}} 中选择 {{> runDevicePhone}} 或 {{> runDeviceWatch}}。</li>
+<li>第一次用手机在户外测量时会请求位置权限。请允许使用应用期间的位置。</li>
+</ol>
+<p>{{> runDevicePhone}} 用手机的卫星定位测量，关掉屏幕也会一直测到这次跑步结束。{{> runKindTreadmill}} 不用位置，按步数估算距离。{{> runKindTest}} 是全力跑一次来确定配速区间的日子。{{> runKindStructured}}（阈值、间歇、坡道逐步指导）和 {{> runTitleRace}}（目标成绩配速和完赛预测）属于 PRO。用手表测量的方法见<a href="#watch">用手表跑步</a>。</p>
+</section>
+
+<section id="during" data-ask="跑步时屏幕上显示什么|开关跑步语音提示|等红绿灯时会计时吗|分段按钮是做什么的" data-keys="跑步中 屏幕 配速 当前配速 距离 时间 心率 步频 分段 爬升 平均 暂停 结束 语音提示 耳机 自动暂停 自动分段 目标 区间 太快 太慢 红绿灯">
+<h2>跑步中的屏幕与语音提示</h2>
+<p class="lead">跑步时距离和当前配速会大字显示，下方是坡度修正配速、心率、步频、分段、爬升和平均配速等栏。</p>
+<ul>
+<li>顶部显示正在测量的设备（如 {{> runSourcePhone}}）和定位状态（如 {{> runGpsSearching}}）。</li>
+<li>有目标的步骤中，{{> runTarget}} 条会提示 {{> runInRange}}、{{> runTooFast}} 或 {{> runTooSlow}}。</li>
+<li>用 {{> runLap}} 手动分段，用 {{> runPause}}、{{> runResume}}、{{> runFinish}} 控制。结构化训练用 {{> runNextStepButton}} 进入下一步。</li>
+<li>跑路线时会显示剩余距离以及领先还是落后于过去的自己，偏离时提示 {{" runOffCourse}}。</li>
+</ul>
+<p>语音提示通过耳机播报分段、步骤、超出区间和偏离路线。用手机测量时由手机播放，用手表测量时由手表震动提醒。在 {{> tabMenu > runSettingsTitle}} 中可以修改 {{> runSettingsVoice}}、{{> runSettingsAutoPause}}、{{> runSettingsLap}}、{{> runSettingsPaceWindow}}。打开 {{> runSettingsAutoPause}} 后，像等红绿灯这样停下来的时间不计入。</p>
+</section>
+
+<section id="result" data-ask="在哪里看跑步结果|坡度修正配速是什么|心率漂移是什么|这个数字是怎么算出来的|把跑步记录导出为 GPX" data-keys="结果 地图 分段 分析 指标 依据 公式 局限 坡度修正 gap 心率漂移 脱钩 心率负荷 trimp 训练负荷 强度 rpe 导出 gpx 文件">
+<h2>结果与指标依据</h2>
+<p class="lead">结束后会显示跑过的路线地图，距离、时间、平均配速、爬升，以及 {{> runSplits}} 和 {{> runAnalysis}}。点指标可以查看公式、依据和局限。</p>
+<ul>
+<li>{{> runSplits}}：每段的配速、心率和坡度。每段的坡度修正值属于 PRO。</li>
+<li>{{> runAnalysis}} <span class="pro">PRO</span>：{{> runGap}}、{{> runDecoupling}}、{{> runTrimp}}、{{> runSessionLoad}}、步频和地形。</li>
+<li>{{> runRpeTitle}}：在 1~10 中选择后，会计入训练负荷和体能·疲劳的计算。</li>
+<li>用 {{> runSaveCourse}} 把这条路保存为路线，用 {{> runExport}} 把 GPX 文件发送到其他应用。</li>
+</ul>
+<p>坡度修正配速是估算在平地上会是多少的值，存在高估下坡收益的局限。心率漂移比较前半程和后半程的效率，只在强度稳定、超过 20 分钟的跑步中计算。这次成绩适合作为基准成绩时，会出现 {{> runUseBaseline}} 按钮。过去的跑步可在 {{> tabRecord}} 中点开再看。</p>
+</section>
+
+<section id="zones" data-ask="配速区间是怎么定的|怎么填写基准成绩|轻松跑配速是多少|想看预计马拉松成绩|想改心率区间依据" data-keys="基准成绩 基准 成绩 配速区间 配速 区间 轻松 马拉松 阈值 间歇 预计成绩 vdot 丹尼尔斯 3km 5km 10km 半程 全程 心率区间 最大心率 阈值心率">
+<h2>基准成绩与配速区间</h2>
+<p class="lead">填写一次最近的成绩作为基准成绩，就会定出 {{> runZoneEasy}}、{{> runZoneMarathon}}、{{> runZoneThreshold}}、{{> runZoneInterval}} 配速和预计成绩。</p>
+<ol class="steps">
+<li>打开 {{> tabMenu > runZonesTitle}}。也可以从跑步模式首页的 {{> runZonesTitle}} 快捷入口进入。</li>
+<li>点 {{> runBaselineSet}}，在 3km、5km、10km、{{> runHalf}}、{{> runFull}} 中选择距离，再填写 {{> runBaselineTime}}。</li>
+<li>确认 {{> runPredictions}} 和 {{> runHrBasis}}（{{> runHrBasisMax}} 或 {{> runHrBasisThreshold}}）。</li>
+</ol>
+<p>配速按丹尼尔斯与吉尔伯特的氧耗公式（VDOT）计算，在 {{> runZonesHow}} 中可以看到公式和出处。没有成绩时，可以跑一次 {{> runKindTest}}，或在跑步结果中点 {{> runUseBaseline}}。填写满 8 周后，会提醒你再测一次。</p>
+</section>
+
+<section id="strength" data-ask="练腿后第二天怎么跑|今天的跑步变成了轻松跑|一次能跑多长|为什么跑步有距离上限" data-keys="力量 下肢 腿 第二天 轻松跑 质量课 改变 处方 110% 30天 最长 距离上限 上限 受伤 每周计划 联动">
+<h2>与力量训练联动的处方</h2>
+<p class="lead">单次跑量建议控制在过去 30 天最长一次的 110% 以内。使用每周跑步计划时，练下肢后第二天的质量课会改为轻松跑。</p>
+<ul>
+<li>{{" runReasonCapped}}：一项追踪 5,200 人 18 个月的观察研究中，超过这条线的跑步受伤风险更高。自己加长时不会阻止，只会提醒。当前上限在 {{> tabStats}} 的 {{> runCapTitle}} 中。</li>
+<li>{{" runReasonLegs}} <span class="pro">PRO+</span>：依据一项随机试验，肌肉损伤两天后 30 分钟跑步成绩慢了约 4%。只有在改变的日子，今天的卡片上才会附一行原因。</li>
+<li>{{" runReasonBaselineTest}}：没有基准成绩或成绩过旧时，计划中第一次质量课会改为计时测试。</li>
+</ul>
+<p>每周跑步计划在跑步模式 {{> tabCoach}} 最上方的 {{> runCoachMakeTitle}} 中制定（PRO+）。它会把轻松跑和质量课错开力量训练日，力量处方保持不变，只调整跑步的安排。</p>
+</section>
+
+<section id="courses" data-ask="怎么创建路线|从 GPX 文件导入路线|在地图上画路线|把常跑的路做成路线|比较同一条路的成绩" data-keys="路线 我的路线 创建 地图 画 gpx tcx 文件 导入 同一条路 自动 过去的自己 比拼 最佳 我的分段 分段记录 环线">
+<h2>创建与导入我的路线</h2>
+<p class="lead">同一条路跑两次就会自动成为路线。也可以在 {{> tabMenu > courseTitle}} 中用过去的跑步、在地图上画或用文件来创建。</p>
+<ol class="steps">
+<li>打开 {{> tabMenu > courseTitle}}，点 {{> courseMake}}。</li>
+<li>在 {{> courseFromRun}}、{{> courseDraw}}、{{> courseFromFile}} 中选一种。</li>
+<li>起名保存后，在路线页面用 {{> courseRunThis}} 开跑。</li>
+</ol>
+<p>{{> courseDraw}} 会用直线连接你在地图上点下的点。在无法使用地图的版本中，这一项会被隐藏。文件可以打开 GPX 和 TCX。跑路线时会和过去的自己比拼，路线页面会累积 {{> courseBestLabel}} 和跑步记录。把路线的一部分设为 {{> courseSegments}}、单独查看那一段的记录属于 PRO。</p>
+</section>
+
+<section id="share-course" data-ask="想把路线发给别人|怎么打开收到的路线链接|用二维码发送路线|分享路线会把我的记录也发过去吗" data-keys="发送 分享 链接 二维码 qr 文件 接收 收到的路线 聊天 服务器 我的记录 一起 粘贴 复制的链接">
+<h2>发送与接收路线</h2>
+<p class="lead">在路线页面的 {{> courseSendTitle}} 中，用 {{> courseShareLink}}、{{> courseShareQr}} 或 {{> courseShareFile}} 发送。不经过服务器。</p>
+<ol class="steps">
+<li>在 {{> tabMenu > courseTitle}} 中打开要发送的路线。</li>
+<li>在 {{> courseSendTitle}} 中选择发送方式，需要时打开 {{> courseIncludeRecord}}。</li>
+<li>对方点链接或扫描二维码，在弹出的 {{> courseReceivedTitle}} 窗口中保存。</li>
+</ol>
+<p>在手机浏览器中打开链接，会显示路线图和距离，并有在应用中打开的按钮。复制的链接也可以通过 {{> courseTitle}} 右上角 ⋯ 中的 {{> coursePasteLink}} 打开。发送时起点和终点附近会被随机隐藏，不包含时间和心率。附带的记录只有每段用时，不含日期和时刻。路线较长时会显示 {{" courseTooLongForLink}}，请用文件发送。</p>
+</section>
+
+<section id="privacy-zones" data-ask="不想暴露住址|想隐藏起点|怎么设置隐私区域|分享时隐藏位置" data-keys="隐藏 隐私区域 位置 住家 公司 起点 终点 隐私 随机 半径 分享 暴露">
+<h2>隐藏位置</h2>
+<p class="lead">发送路线或导出文件时，会在起点和终点附近随机截掉一段。住家、公司附近可以设为 {{> runPrivacyZones}}。</p>
+<ol class="steps">
+<li>打开 {{> tabMenu > runSettingsTitle}}。</li>
+<li>在 {{> runSettingsTrim}} 中选择要隐藏的距离。会在选定距离上随机加上 0~200m 再截掉。</li>
+<li>在 {{> runPrivacyZones}} 中点 {{> runPrivacyZoneAdd}}，就会隐藏最近一次跑步起点的周围。</li>
+</ol>
+<p>隐藏圆的中心会从实际位置稍作偏移并只定一次，所以即使多次发送，也很难靠取平均找出位置。你设备里的结果地图和记录不会被隐藏，保持原样。</p>
+</section>
+
+<section id="watch" data-ask="用 Apple Watch 记录跑步|用 Garmin 手表测量跑步|用 Galaxy Watch 跑步|提示请在手表上开始" data-keys="手表 apple watch galaxy watch garmin 跑步 震动 路线 配速 区间 卫星 电量">
+<h2>用手表跑步</h2>
+<p class="lead">可以用 Apple Watch、Galaxy Watch 或 Garmin 手表测量。在开始页面选择 {{> runDeviceWatch}}，再在手表上开始。</p>
+<ol class="steps">
+<li>先<a href="watch.html">连接</a>好手表。</li>
+<li>在开始页面的 {{> runDeviceTitle}} 中选择 {{> runDeviceWatch}}，点 {{> runStart}}。</li>
+<li>手机上显示 {{" runSourceWatchWaiting}} 时，在手表的 FitBoost 中开始。</li>
+</ol>
+<p>手表会显示配速区间、步骤和路线线，超出区间时震动提醒。Apple Watch 在下一步前 5 秒也会震动。结束后记录会传到手机。Garmin 手表的卫星设置在 {{> tabMenu > runSettingsTitle > runSettingsSatellite}} 中选择，{{> runSettingsSatelliteMax}} 更耗电。手表上没有单独的模式，会显示在手机上选好的跑步。</p>
+</section>
+
+<section id="plans" data-ask="跑步功能免费吗|跑步中哪些要付费|跑步分析是 PRO 吗|每周跑步计划属于哪个订阅" data-keys="免费 付费 pro pro+ 订阅 跑步 分析 结构化训练 比赛日 计划 锁定 锁">
+<h2>跑步的免费与付费</h2>
+<p class="lead">测量全部免费。PRO 增加解读记录的分析和结构化训练，PRO+ 增加配合力量恢复的每周跑步计划。</p>
+<ul>
+<li>免费：用手机和三种手表测量，实时配速和心率，自动分段与分段记录，基准成绩、配速区间和预计成绩，我的路线（识别同一条路、绘制、文件、接收），通过链接、二维码、文件发送，GPX 导出，隐私区域，写入健康应用，单次距离上限，指标依据。</li>
+<li>PRO：坡度修正配速、心率漂移、心率负荷、训练负荷、临界速度，与力量合并的体能·疲劳，结构化训练（阈值、间歇、坡道逐步指导），比赛日模式（目标配速员和完赛预测），路线内的我的分段记录。</li>
+<li>PRO+：配合力量恢复、以跑步为主的每周计划（包括练下肢后第二天改为轻松）。</li>
+</ul>
+<p>锁定的栏会带锁形图标，点按会打开 FitBoost PRO 页面。订阅结束后，已测记录的分析值不会删除，只是隐藏。跑步中的屏幕不放广告。</p>
+</section>

@@ -62,6 +62,8 @@
 <h2>進行中のワークアウトがあると言われたとき</h2>
 <p class="lead">{{" finishWorkoutProgressFirst}}と表示されたら、開いたままのワークアウトがあります。</p>
 <p>{{> tabHome}}の今日のカードの{{> homeContinueWorkout}}で戻って{{> finishWorkout}}をタップするか、不要なら{{> workoutFinish}}で破棄してから始め直してください。</p>
+
+<p>ランニングモードに切り替えるときに{{" modeLockedActive}}と表示されるのも同じ理由です。</p>
 </section>
 
 <section id="health" data-ask="ヘルスケアとつながらない|Apple Healthにワークアウトが入らない|新しく取り込む記録はないと表示される" data-keys="ヘルスケア 接続 失敗 権限 ヘルス healthkit health connect 取り込み ない">
@@ -74,4 +76,26 @@
 <h2>通知やロック画面が表示されないとき</h2>
 <p class="lead">{{" setNotificationPermissionDenied}}と表示されたら、端末の設定でFitBoostの通知を許可してください。</p>
 <p>ライブアクティビティがオフのときは、アプリが{{" surfaceTurnOnInSettings}}と案内します。通知も許可されている必要があります。<a href="settings.html#widgets">ウィジェットとロック画面</a>も見てください。</p>
+</section>
+
+<section id="run-location" data-ask="ランの位置情報を許可したい|屋外で計測するには位置情報の許可が必要ですと表示されます|ランの距離が計測されません|GPS検索中から進みません" data-keys="位置情報 権限 許可 gps 衛星 距離 計測されない 0km 時間だけ 位置情報サービス 使用中 常に 室内 身体活動">
+<h2>ランの位置情報がつかめないとき</h2>
+<p class="lead">{{" runLocationNeeded}}または{{" runGpsDenied}}と表示されたら、端末の設定でFitBoostの位置情報をオンにします。</p>
+<ol class="steps">
+<li>iPhoneは設定 → プライバシーとセキュリティ → 位置情報サービス → FitBoostで「このAppの使用中のみ許可」を選びます。</li>
+<li>Androidは設定 → アプリ → FitBoost → 権限 → 位置情報で「アプリの使用中のみ許可」を選びます。</li>
+</ol>
+<p>「常に許可」は必要ありません。ランを始めたあとは、画面を消してもそのランが終わるまで計測します。{{" runGpsSearching}}が長く続くときは、空の開けた場所で少し待ってください。トレッドミルのような室内では位置情報の代わりに歩数で距離を見積もるので、Androidでは身体活動の権限も許可してください。</p>
+</section>
+
+<section id="run-map" data-ask="走った道の地図が表示されません|地図に描くの項目がありません|コースを描くボタンが見当たりません|地図がなく線だけが表示されます" data-keys="地図 表示されない 描く ない 隠れている 線 ルート 背景地図 位置の記録">
+<h2>地図が表示されないとき</h2>
+<p class="lead">地図を使えない版では、背景の地図なしで走った道を線だけで描き、{{> courseDraw}}を隠します。</p>
+<p>コースを作る画面に{{" courseDrawUnavailable}}と表示されたらこの場合です。{{> courseFromRun}}や{{> courseFromFile}}でコースを作れ、距離・スプリット・コースの比較はそのまま使えます。{{" runNoTrack}}と表示されたら、そのランには位置情報が残っていません。室内のランだったか、位置情報がオフだった場合です。</p>
+</section>
+
+<section id="course-link" data-ask="受け取ったコースのリンクが開きません|コースのリンクではありませんと表示されます|コースのリンクをタップしたらサイトが開きました" data-keys="コース リンク 開かない エラー サイト ブラウザ アプリで開く 貼り付け コピー 壊れた 切れた">
+<h2>コースのリンクが開かないとき</h2>
+<p class="lead">コースのリンクをタップすると、ブラウザでコースのページが開きます。そこでアプリで開くボタンをタップするとFitBoostに移ります。</p>
+<p>アプリがない場合は同じページから入手できます。{{" courseLinkInvalid}}と表示されたら、メッセンジャーでリンクの末尾が切れたのかもしれません。もう一度受け取るか、ファイルで受け取ってください。コピーしたリンクは{{> tabMenu > courseTitle}}の右上の⋯にある{{> coursePasteLink}}で開けます。コースのページはリンクの中のコースをブラウザの中だけで読み解いて表示し、どこにも送りません。</p>
 </section>

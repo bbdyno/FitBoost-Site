@@ -62,6 +62,8 @@
 <h2>When it says a workout is in progress</h2>
 <p class="lead">If you see {{" finishWorkoutProgressFirst}}, a workout is still open.</p>
 <p>Go back with {{> homeContinueWorkout}} on today's card in {{> tabHome}} and tap {{> finishWorkout}}, or discard it with {{> workoutFinish}} if you don't need it, then start again.</p>
+
+<p>The same reason is behind {{" modeLockedActive}} when you switch to running mode.</p>
 </section>
 
 <section id="health" data-ask="The health app won't connect|Workouts don't appear in Apple Health|It says nothing new to import" data-keys="health connect failed permission healthkit health connect import nothing">
@@ -74,4 +76,26 @@
 <h2>When notifications or the Lock Screen don't show</h2>
 <p class="lead">If you see {{" setNotificationPermissionDenied}}, allow notifications for FitBoost in your device settings.</p>
 <p>If Live Activities are off, the app says {{" surfaceTurnOnInSettings}}. Notifications must be allowed too. See also <a href="settings.html#widgets">widgets and the Lock Screen</a>.</p>
+</section>
+
+<section id="run-location" data-ask="Allow location for runs|It says location access is needed for outdoor runs|My run distance isn't recorded|It's stuck finding GPS" data-keys="location permission gps satellite distance not recorded 0 km time only location services while using always allow indoor physical activity">
+<h2>When your run location isn't picked up</h2>
+<p class="lead">If you see {{" runLocationNeeded}} or {{" runGpsDenied}}, turn on location for FitBoost in your device settings.</p>
+<ol class="steps">
+<li>On iPhone, go to Settings → Privacy &amp; Security → Location Services → FitBoost and choose While Using the App.</li>
+<li>On Android, go to Settings → Apps → FitBoost → Permissions → Location and choose Allow only while using the app.</li>
+</ol>
+<p>You don't need Always. Once a run starts, it keeps measuring with the screen off until that run ends. If {{" runGpsSearching}} lasts a while, wait a moment somewhere with open sky. Indoors, such as on a treadmill, distance is estimated from steps instead of location, so on Android allow physical activity too.</p>
+</section>
+
+<section id="run-map" data-ask="I can't see the map of my run|There's no Draw on map option|The draw course button is missing|Only a line shows with no map" data-keys="map missing draw hidden line route base map no map route record">
+<h2>When the map doesn't show</h2>
+<p class="lead">In builds where maps aren't available, your route is drawn as a line with no base map, and {{> courseDraw}} is hidden.</p>
+<p>If the course screen says {{" courseDrawUnavailable}}, this is why. You can still make courses with {{> courseFromRun}} or {{> courseFromFile}}, and distance, splits, and course comparisons work as usual. If you see {{" runNoTrack}}, no location was saved for that run, either because it was indoors or because location was off.</p>
+</section>
+
+<section id="course-link" data-ask="A course link I received won't open|It says that isn't a course link|Tapping a course link opened a website" data-keys="course link won't open error website browser open in app paste copy broken cut off">
+<h2>When a course link won't open</h2>
+<p class="lead">Tapping a course link opens a course page in your browser. Tap the button there to open it in FitBoost.</p>
+<p>Without the app, you can get it from the same page. If you see {{" courseLinkInvalid}}, the end of the link may have been cut off by the messenger, so ask for it again or get a file instead. Open a copied link with {{> coursePasteLink}} under ⋯ at the top right of {{> tabMenu > courseTitle}}. The course page decodes the course in the link only inside your browser and sends it nowhere.</p>
 </section>

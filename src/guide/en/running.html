@@ -1,0 +1,129 @@
+<section id="mode" data-ask="How do I turn on running mode|Switch the app to running|Go back to strength mode|What changes in running mode" data-keys="running mode run switch toggle strength mode dumbbell runner two-way button header training mode">
+<h2>Switching to running mode</h2>
+<p class="lead">Tap the runner side of the two-way button at the right of the {{> tabHome}} header, and the whole app switches to running mode. You can also switch from the {{> menuModeTitle}} row in {{> tabMenu}}.</p>
+<ol class="steps">
+<li>In the dumbbell and runner button at the right of the {{> tabHome}} header, tap {{> modeRunning}}.</li>
+<li>To go back, tap {{> modeStrength}} on the same button.</li>
+</ol>
+<ul>
+<li>{{> tabHome}}: today's run card, this week's distance with bars for the last 8 weeks, shortcuts to {{> courseTitle}}, {{> runZonesTitle}}, and {{> runHomePlan}}, and recent runs.</li>
+<li>{{> tabRecord}}: opens on {{> historyRunsOnly}}, and you can switch to {{> historyAllWorkouts}}.</li>
+<li>{{> tabStats}}: a running section appears at the top, with the strength sections unchanged below it.</li>
+<li>{{> tabCoach}}: the running-focused weekly plan sits at the top (PRO+).</li>
+<li>{{> tabMenu}}: rows for {{> courseTitle}}, {{> runZonesTitle}}, and {{> runSettingsTitle}} appear.</li>
+</ul>
+<p>The mode only changes the screens. Your log, prescriptions, and health app data stay in one place with your strength training. On days with strength scheduled, Home shows {{" modeCrossStrength}}. If a workout is in progress, you'll see {{" modeLockedActive}} and the mode won't change. The mode you pick stays after you reopen the app.</p>
+</section>
+
+<section id="start-run" data-ask="How do I start a run|How to record a run|Track a run with my phone|Can it track treadmill runs|Count laps on a track" data-keys="start run record track measure phone device indoor treadmill track free run time trial race structured interval threshold hill gps satellite">
+<h2>Starting a run</h2>
+<p class="lead">In running mode, tap {{> runStart}} on today's run card on {{> tabHome}}, then pick the kind of run and the device that measures it.</p>
+<ol class="steps">
+<li>On {{> tabHome}}, tap {{> runStart}} on today's run card.</li>
+<li>The card at the top is today's prescription (or a suggestion if there isn't one). Tap {{> runStart}} on it, or pick a kind below such as {{> runTitleFree}}, {{> runKindTest}}, {{> runTitleCourse}}, {{> runTitleTrack}}, or {{> runKindTreadmill}}.</li>
+<li>Under {{> runDeviceTitle}}, pick {{> runDevicePhone}} or {{> runDeviceWatch}}.</li>
+<li>The first time you measure outdoors with your phone, it asks for location. Allow location while using the app.</li>
+</ol>
+<p>{{> runDevicePhone}} measures with your phone's satellite location and keeps going with the screen off until that run ends. {{> runKindTreadmill}} estimates distance from your steps without location. {{> runKindTest}} is a hard effort that sets your pace zones. {{> runKindStructured}} (step-by-step threshold, interval, and hill sessions) and {{> runTitleRace}} (goal pace and finish prediction) are PRO. To measure with a watch, see <a href="#watch">Running with a watch</a>.</p>
+</section>
+
+<section id="during" data-ask="What's on the screen while I run|Turn running voice guidance on or off|Does the clock run when I stop at a light|What does the lap button do" data-keys="during run screen pace current pace distance time heart rate cadence lap ascent average pause finish voice guidance earphones auto pause auto lap target range too fast too slow traffic light">
+<h2>The running screen and voice guidance</h2>
+<p class="lead">While you run, distance and current pace are shown large, with tiles below for grade-adjusted pace, heart rate, cadence, lap, ascent, and average pace.</p>
+<ul>
+<li>The top shows what's measuring (such as {{> runSourcePhone}}) and location status (such as {{> runGpsSearching}}).</li>
+<li>In steps with a target, the {{> runTarget}} bar shows {{> runInRange}}, {{> runTooFast}}, or {{> runTooSlow}}.</li>
+<li>Tap {{> runLap}} to split a lap yourself, and use {{> runPause}}, {{> runResume}}, and {{> runFinish}}. In structured workouts, {{> runNextStepButton}} moves to the next step.</li>
+<li>On a course, you see the distance left and whether you're ahead of or behind your past self, and {{" runOffCourse}} if you leave it.</li>
+</ul>
+<p>Voice guidance announces laps, steps, leaving your range, and going off course through your earphones. It plays from your phone when the phone measures; when a watch measures, the watch vibrates instead. Change {{> runSettingsVoice}}, {{> runSettingsAutoPause}}, {{> runSettingsLap}}, and {{> runSettingsPaceWindow}} in {{> tabMenu > runSettingsTitle}}. With {{> runSettingsAutoPause}} on, time spent standing still, like at a traffic light, isn't counted.</p>
+</section>
+
+<section id="result" data-ask="Where do I see my run results|What is grade-adjusted pace|What is heart-rate drift|How was this number calculated|Export a run as GPX" data-keys="result map splits analysis metrics evidence formula limits grade adjusted pace gap heart rate drift decoupling heart rate load trimp session load effort rpe export gpx file">
+<h2>Results and the evidence behind each metric</h2>
+<p class="lead">When you finish, you see a map of your route, distance, time, average pace, ascent, {{> runSplits}}, and {{> runAnalysis}}. Tap a metric to see its formula, evidence, and limits.</p>
+<ul>
+<li>{{> runSplits}}: pace, heart rate, and grade for each split. Grade-adjusted values per split are PRO.</li>
+<li>{{> runAnalysis}} <span class="pro">PRO</span>: {{> runGap}}, {{> runDecoupling}}, {{> runTrimp}}, {{> runSessionLoad}}, cadence, and terrain.</li>
+<li>{{> runRpeTitle}}: pick 1 to 10, and it goes into session load and fitness and fatigue.</li>
+<li>{{> runSaveCourse}} saves this route as a course, and {{> runExport}} sends a GPX file to another app.</li>
+</ul>
+<p>Grade-adjusted pace estimates what your pace would have been on flat ground, and it tends to overstate the benefit of downhills. Heart-rate drift compares efficiency between the first and second halves, and is only calculated for steady runs longer than 20 minutes. If this run makes a good reference result, a {{> runUseBaseline}} button appears. Open past runs again from {{> tabRecord}}.</p>
+</section>
+
+<section id="zones" data-ask="How are pace zones set|How do I add a reference result|What pace is my easy run|See my predicted marathon time|Change the heart-rate zone basis" data-keys="reference result baseline pace zones zone easy marathon threshold interval predicted time prediction vdot daniels 3k 5k 10k half marathon heart rate zones max heart rate threshold heart rate">
+<h2>Reference result and pace zones</h2>
+<p class="lead">Enter one recent result as your reference, and your {{> runZoneEasy}}, {{> runZoneMarathon}}, {{> runZoneThreshold}}, and {{> runZoneInterval}} paces and predicted times are set.</p>
+<ol class="steps">
+<li>Open {{> tabMenu > runZonesTitle}}. You can also use the {{> runZonesTitle}} shortcut on the running-mode Home.</li>
+<li>Tap {{> runBaselineSet}}, pick 3 km, 5 km, 10 km, {{> runHalf}}, or {{> runFull}}, and enter {{> runBaselineTime}}.</li>
+<li>Check {{> runPredictions}} and {{> runHrBasis}} ({{> runHrBasisMax}} or {{> runHrBasisThreshold}}).</li>
+</ol>
+<p>Paces come from the Daniels and Gilbert oxygen cost formula (VDOT), and {{> runZonesHow}} shows the formula and sources. Without a result, run a {{> runKindTest}} or tap {{> runUseBaseline}} on a run result. After 8 weeks, the app suggests measuring again.</p>
+</section>
+
+<section id="strength" data-ask="How should I run the day after a leg workout|Today's run changed to an easy run|How long can a single run be|Why is there a distance limit on runs" data-keys="strength legs leg day next day easy run quality changed prescription 110% 30 days longest distance limit cap injury weekly plan">
+<h2>Prescriptions that know your strength training</h2>
+<p class="lead">A single run is kept within 110% of your longest run in the last 30 days. With the weekly running plan, a quality run the day after a leg workout becomes an easy run.</p>
+<ul>
+<li>{{" runReasonCapped}}: in an observational study of 5,200 runners over 18 months, runs that went past this line had a higher injury risk. If you lengthen a run yourself, the app only tells you and doesn't stop you. Your current limit is under {{> runCapTitle}} in {{> tabStats}}.</li>
+<li>{{" runReasonLegs}} <span class="pro">PRO+</span>: this follows a randomized trial in which 30-minute run times were about 4% slower two days after muscle damage. A one-line reason appears on today's card only on days it changes.</li>
+<li>{{" runReasonBaselineTest}}: without a reference result, or with an old one, the plan's first quality day becomes a time trial.</li>
+</ul>
+<p>Make the weekly running plan from {{> runCoachMakeTitle}} at the top of {{> tabCoach}} in running mode (PRO+). It spreads easy and quality runs so they don't clash with strength days, and moves only the runs, leaving your strength prescriptions as they are.</p>
+</section>
+
+<section id="courses" data-ask="How do I make a course|Import a course from a GPX file|Draw a course on the map|Turn a route I run often into a course|Compare runs on the same route" data-keys="course my courses create make map draw gpx tcx file import same route automatic past self race best my segments segment loop">
+<h2>Making and importing courses</h2>
+<p class="lead">Run the same route twice and it becomes a course on its own. You can also make one in {{> tabMenu > courseTitle}} from a past run, by drawing on the map, or from a file.</p>
+<ol class="steps">
+<li>Open {{> tabMenu > courseTitle}} and tap {{> courseMake}}.</li>
+<li>Pick {{> courseFromRun}}, {{> courseDraw}}, or {{> courseFromFile}}.</li>
+<li>Name it and save, then run it with {{> courseRunThis}} on the course screen.</li>
+</ol>
+<p>{{> courseDraw}} joins the points you tap on the map with straight lines. In builds where maps aren't available, this option is hidden. Files can be GPX or TCX. When you run a course, you race your past self, and {{> courseBestLabel}} and your runs build up on the course screen. Marking part of a course as {{> courseSegments}} to see records for just that stretch is PRO.</p>
+</section>
+
+<section id="share-course" data-ask="I want to send a course to someone|How do I open a course link I received|Send a course as a QR code|Does sharing a course send my record too" data-keys="send share link qr code file receive received course messenger server my record include paste copied link">
+<h2>Sending and receiving courses</h2>
+<p class="lead">From {{> courseSendTitle}} on the course screen, send it as a {{> courseShareLink}}, {{> courseShareQr}}, or {{> courseShareFile}}. Nothing goes through a server.</p>
+<ol class="steps">
+<li>In {{> tabMenu > courseTitle}}, open the course to send.</li>
+<li>In {{> courseSendTitle}}, pick how to send it, and turn on {{> courseIncludeRecord}} if you want.</li>
+<li>The other person taps the link or scans the QR code, then saves it in the {{> courseReceivedTitle}} window.</li>
+</ol>
+<p>Opened in a phone browser, the link shows the course drawing and distance with a button to open it in the app. You can also open a copied link with {{> coursePasteLink}} under ⋯ at the top right of {{> courseTitle}}. When you send, the start and finish areas are hidden at random, and times and heart rate aren't included. An included record carries only the time for each stretch, with no date or clock time. For long courses you'll see {{" courseTooLongForLink}}, so send a file.</p>
+</section>
+
+<section id="privacy-zones" data-ask="I don't want to reveal where I live|Hide my starting point|How do I set privacy zones|Hide my location when sharing" data-keys="hide privacy zone zones location home work start finish privacy random radius share reveal">
+<h2>Hiding your location</h2>
+<p class="lead">When you send a course or export a file, a random length is cut from around the start and finish. Set areas around home or work as {{> runPrivacyZones}}.</p>
+<ol class="steps">
+<li>Open {{> tabMenu > runSettingsTitle}}.</li>
+<li>Under {{> runSettingsTrim}}, pick a distance to hide. A random 0–200 m is added to it before cutting.</li>
+<li>Under {{> runPrivacyZones}}, tap {{> runPrivacyZoneAdd}} to hide the area around where your most recent run started.</li>
+</ol>
+<p>The center of each hidden circle is moved a little from the real spot and fixed once, so averaging many shared runs doesn't reveal the place. Result maps and records on your own device aren't hidden and stay as they are.</p>
+</section>
+
+<section id="watch" data-ask="Record a run with Apple Watch|Track runs with a Garmin watch|Run with Galaxy Watch|It says start on your watch" data-keys="watch apple watch galaxy watch garmin run running vibration course pace range satellite band battery wrist">
+<h2>Running with a watch</h2>
+<p class="lead">You can measure with Apple Watch, Galaxy Watch, or a Garmin watch. Pick {{> runDeviceWatch}} on the start screen, then start on the watch.</p>
+<ol class="steps">
+<li><a href="watch.html">Connect</a> your watch first.</li>
+<li>On the start screen, under {{> runDeviceTitle}}, pick {{> runDeviceWatch}} and tap {{> runStart}}.</li>
+<li>When your phone shows {{" runSourceWatchWaiting}}, start in FitBoost on the watch.</li>
+</ol>
+<p>The watch shows pace ranges, steps, and the course line, and vibrates when you leave the range. Apple Watch also vibrates 5 seconds before the next step. When you finish, the run comes to your phone. Choose satellite settings for Garmin watches in {{> tabMenu > runSettingsTitle > runSettingsSatellite}}; {{> runSettingsSatelliteMax}} uses more battery. Watches have no separate mode and show the run you picked on your phone.</p>
+</section>
+
+<section id="plans" data-ask="Are running features free|What's paid in running|Is run analysis PRO|Which subscription has the weekly running plan" data-keys="free paid pro pro+ subscription running run analysis structured race day plan locked lock">
+<h2>Free and paid in running</h2>
+<p class="lead">Measuring is all free. PRO adds analysis that interprets your runs and structured workouts, and PRO+ adds a weekly running plan that works around strength recovery.</p>
+<ul>
+<li>Free: measuring with your phone or three kinds of watch, live pace and heart rate, auto laps and splits, reference result, pace zones, and predicted times, my courses (same-route detection, drawing, files, receiving), sending by link, QR code, or file, GPX export, privacy zones, writing to health apps, the single-run limit, and metric evidence.</li>
+<li>PRO: grade-adjusted pace, heart-rate drift, heart-rate load, session load, critical speed, fitness and fatigue combined with strength, structured workouts (step-by-step threshold, interval, and hill sessions), race-day mode (goal pacer and finish prediction), and my segment records on courses.</li>
+<li>PRO+: a running-focused weekly plan that works around strength recovery (including easing off the day after a leg workout).</li>
+</ul>
+<p>Locked tiles show a lock, and tapping one opens the FitBoost PRO screen. If your subscription ends, analysis values for runs you've already recorded aren't deleted, only hidden. There are no ads on the running screen.</p>
+</section>

@@ -1,5 +1,5 @@
 <h1>Privacy Policy</h1>
-<p class="doc__meta">Last updated: October 25, 2026</p>
+<p class="doc__meta">Last updated: October 28, 2026</p>
 
 <p>FitBoost is a workout log app. This policy explains what information the app handles and where that information is kept.</p>
 
@@ -12,6 +12,7 @@
   <li>We collect <strong>usage statistics</strong> to see how the app is used. The contents of your workout records and advertising identifiers are not sent.</li>
   <li>While you use the app for free, <strong>Google AdMob ads</strong> appear, and the advertising identifier and device information may be sent to Google for them. Subscribing to PRO removes ads.</li>
   <li><strong>Peer comparison</strong> sends anonymous summary values (age range, sex, bodyweight range, best estimated one-rep max per exercise) only if you turn it on.</li>
+  <li><strong>Run location</strong> is used only while a run is being measured, stays on your device and in your health app, and is never sent to our servers. Sending and receiving courses doesn't go through a server either.</li>
 </ul>
 
 <h2>Information the app handles</h2>
@@ -26,16 +27,27 @@
   <li>iPhone and iPad: your iCloud private database (CloudKit)</li>
   <li>Android: a hidden, app-only folder in your Google Drive. When you turn it on, we ask only for access to that folder in your Google account.</li>
 </ul>
-<p>Apple and Google keep this copy under their own policies. It does not pass through our servers, and we have no access to it. Photo and video files and your subscription status are not transferred. Sync is off by default.</p>
+<p>Apple and Google keep this copy under their own policies. It does not pass through our servers, and we have no access to it. Photo and video files and your subscription status are not transferred. Sync is off by default. The on-device backup copy of your runs (time series such as route and heart rate) is not synced.</p>
 
 <h3>Send to trainer (optional)</h3>
 <p>The app creates a report (PDF) and a client file from the records in a period you choose, and sends them through an app you pick (a messenger, email and so on). The files go only to the person you send them to and do not pass through our servers. The receiving app stores those records only on the recipient's device.</p>
 
 <h3>Backup file (optional)</h3>
-<p>When you create a backup file in Transfer &amp; backup in the menu, the app puts your workouts, routines, schedules, body records, photos and settings into a single file (.fitboost) and hands it to the place you pick (the Files app, a messenger, email and so on). The file also records when it was made, the app version and the device type (iOS or Android). It does not pass through our servers, and if you set a password it cannot be opened without that password. Your subscription status, health app connections and notification permission are not included.</p>
+<p>When you create a backup file in Transfer &amp; backup in the menu, the app puts your workouts, routines, schedules, body records, photos and settings into a single file (.fitboost) and hands it to the place you pick (the Files app, a messenger, email and so on). The file also records when it was made, the app version and the device type (iOS or Android). It does not pass through our servers, and if you set a password it cannot be opened without that password. Your subscription status, health app connections and notification permission are not included. The on-device backup copy of your runs is included too. Copies for deleted records are left out.</p>
 
 <h3>Health data (optional)</h3>
-<p>Only if you allow it, the app exchanges workout records with Apple Health or Health Connect. If you decline, or turn it off later, the rest of the app keeps working as before. Health data never leaves your device.</p>
+<p>Only if you allow it, the app exchanges workout records with Apple Health or Health Connect. If you decline, or turn it off later, the rest of the app keeps working as before. Health data never leaves your device. When you measure a run, time series such as the route (location, elevation and accuracy), distance and heart rate are written to the health app with that workout.</p>
+
+<h3>Run location and motion sensors (optional)</h3>
+<p>The app asks for location only when you measure an outdoor run with your phone. Location is used to record your route, distance and pace and to guide you along a course, and is received only from the start of a run until you finish it. So that measuring continues until that run ends even with the screen off or another app open, iPhone uses the background location mode and Android uses a location foreground service with an ongoing notification. The app does not ask for Always (background location) permission. Without location, you can still record time only or run indoors.</p>
+<p>The motion sensors and barometer are used to measure steps, cadence and elevation. On Android, the physical activity permission is requested to read the step sensor.</p>
+<p>If you allow it, measured time series such as your route and heart rate are written to the health app (Apple Health or Health Connect), and a backup copy is kept on the device for values the health app has no place for and to keep precision. This copy goes only into backup files and is not uploaded to iCloud or Google Drive by sync across devices. If you don't allow the health app, the same data is kept only in this copy. Your workout records keep a summary such as distance, time and average pace. Location and routes are never sent to our servers or to third parties.</p>
+<p>If you choose to export a file from a run result, the route, times and elevation are put into a single GPX file and handed to the app you pick. The areas around the start and finish and your privacy zones are cut from it. Records and result maps on your own device are not cut.</p>
+<p>In builds that use maps, the map images for the area shown on screen are fetched from Google Maps to draw the base map, and that request reaches Google. Builds without maps draw only the route line, with no base map.</p>
+
+<h3>Sending and receiving courses (optional)</h3>
+<p>When you send a course by link, QR code or file, the course name and route line, plus the time at every 100 m if you choose, go to the app you pick. Nothing passes through our servers. Courses made from a run you ran are sent with a random length cut from around the start and finish and with your privacy zones removed; courses you drew are sent as drawn. Dates, clock times, heart rate and device information are not included.</p>
+<p>A course link (bbdyno.github.io/FitBoost-Site/course.html) carries the course after the # in the address. Browsers don't send the part after # to the server, so even though opening the page sends a request to GitHub Pages like any web page, the course itself is not in it. The course page decodes it only inside your browser and uses no usage statistics or ad scripts. A received course is saved only on the receiver's device, when they save it.</p>
 
 <h3>Photos and camera (optional)</h3>
 <p>The app accesses your photo library or camera only when you add a progress photo. The photos you choose are stored on your device, and we do not view them.</p>
@@ -50,8 +62,8 @@
 <h3>Usage statistics</h3>
 <p>To understand which features are used and to improve the app, we collect usage statistics with Google's <strong>Firebase Analytics</strong>. We collect the following.</p>
 <ul>
-  <li>App usage events: app launches, screen views, workout start and completion, exercise selection, use of weight recommendations, opening the purchase screen and subscription purchases</li>
-  <li>Values and categories attached to events: the number of exercises in a workout, workout duration (minutes), total number of workouts, the catalog number of the selected exercise, and the subscription product and plan type</li>
+  <li>App usage events: app launches, screen views, workout start and completion, exercise selection, use of weight recommendations, opening the purchase screen and subscription purchases, switching training mode, starting and finishing a run, setting a reference result, and saving a course</li>
+  <li>Values and categories attached to events: the number of exercises in a workout, workout duration (minutes), total number of workouts, the catalog number of the selected exercise, and the subscription product and plan type, the chosen training mode, the kind of run, the measuring device (phone or watch), whether the run followed a course, whether location was recorded, how the reference result was set, and how the course was made</li>
   <li>Device and app information: country, device type, operating system and app version</li>
   <li>App instance ID: a random identifier created anew each time the app is installed</li>
 </ul>
@@ -60,6 +72,7 @@
   <li>The contents of your records, such as weights, reps, notes, body weight and body composition, and photos</li>
   <li>Your profile, such as nickname, height and body weight</li>
   <li>Advertising identifiers (IDFA, AAID) and the iOS identifier for vendors (IDFV)</li>
+  <li>Run distance, time, pace and heart rate, location and routes, and course lines and names</li>
 </ul>
 <p>Usage statistics are not linked to your name or contact details, and are not used to track you across other apps or websites. The statistics are processed on Google's servers.</p>
 
@@ -121,6 +134,7 @@
 
 <h2>Retention and deletion</h2>
 <p>Your records are kept for as long as they remain on your device. When you delete the app, the data it created is deleted with it. You can delete individual records in the app at any time.</p>
+<p>When you delete a run, its on-device backup copy is deleted too. You can view and delete routes and heart rate written to the health app in the health app.</p>
 <p>Copies included in device backups must be managed in Apple's or Google's backup settings.</p>
 <p>Turning off sync across devices does not delete the copies left in iCloud and Google Drive. You can delete FitBoost's hidden data on iPhone in Settings → [your name] → iCloud → Manage Storage, and on Android under Manage apps in Google Drive settings.</p>
 <p>Usage statistics are deleted after a set period according to Google Analytics retention settings. When you delete the app, its app instance ID is no longer used, and a new ID is created if you reinstall.</p>

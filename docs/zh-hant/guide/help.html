@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>常見問題排查 — FitBoost</title>
-<meta name="description" content="手錶、同步、備份或訂閱出問題時要檢查的地方。">
+<meta name="description" content="手錶連線、同步、備份、訂閱和跑步定位遇到問題時要檢查的事項。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,14 +44,14 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="目前位置"><a href="./">使用指南</a></nav>
 <h1>常見問題排查</h1>
-<p class="g-lede">手錶、同步、備份或訂閱出問題時要檢查的地方。</p>
+<p class="g-lede">手錶連線、同步、備份、訂閱和跑步定位遇到問題時要檢查的事項。</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">搜尋指南</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="搜尋指南"
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="本頁內容"><p>本頁內容</p><ol><li><a href="#watch">手錶連不上時</a></li><li><a href="#garmin">Garmin 連不上時</a></li><li><a href="#sync">同步不了時</a></li><li><a href="#backup">備份檔案打不開時</a></li><li><a href="#pro-missing">訂閱後 PRO 沒顯示時</a></li><li><a href="#workout-lost">剛才的訓練不在記錄裡時</a></li><li><a href="#cant-start">提示有進行中的訓練時</a></li><li><a href="#health">健康 App 連不上時</a></li><li><a href="#notifications">通知或鎖定畫面不顯示時</a></li></ol></nav>
+<nav class="g-toc" aria-label="本頁內容"><p>本頁內容</p><ol><li><a href="#watch">手錶連不上時</a></li><li><a href="#garmin">Garmin 連不上時</a></li><li><a href="#sync">同步不了時</a></li><li><a href="#backup">備份檔案打不開時</a></li><li><a href="#pro-missing">訂閱後 PRO 沒顯示時</a></li><li><a href="#workout-lost">剛才的訓練不在記錄裡時</a></li><li><a href="#cant-start">提示有進行中的訓練時</a></li><li><a href="#health">健康 App 連不上時</a></li><li><a href="#notifications">通知或鎖定畫面不顯示時</a></li><li><a href="#run-location">跑步定位不到時</a></li><li><a href="#run-map">地圖不顯示時</a></li><li><a href="#course-link">路線連結打不開時</a></li></ol></nav>
 <section class="g-sec" id="watch">
 <h2>手錶連不上時</h2>
 <p class="lead">根據 <span class="ui"><b>選單</b> → <b>應用程式設定</b> → <b>智慧手錶設定</b></span> 中 <span class="ui"><b>手錶連線狀態</b></span> 顯示的文字找出原因。</p>
@@ -116,6 +116,8 @@
 <h2>提示有進行中的訓練時</h2>
 <p class="lead">看到 <q class="say">請先完成進行中的訓練。</q> 時，說明還有未結束的訓練。</p>
 <p>用 <span class="ui"><b>首頁</b></span> 今日卡片上的 <span class="ui"><b>繼續訓練</b></span> 回去並點選 <span class="ui"><b>完成訓練</b></span>；如果不需要，就用 <span class="ui"><b>不儲存並結束</b></span> 丟棄後重新開始。</p>
+
+<p>切換到跑步模式時顯示 <q class="say">有正在進行的訓練。結束後才能切換。</q> 也是同樣的原因。</p>
 </section>
 
 <section class="g-sec" id="health">
@@ -128,6 +130,28 @@
 <h2>通知或鎖定畫面不顯示時</h2>
 <p class="lead">看到 <q class="say">通知權限已關閉，請在系統設定中開啟。</q>時，請在裝置設定中允許 FitBoost 的通知。</p>
 <p>即時動態關閉時，App 會提示 <q class="say">請在「設定」›FitBoost 中開啟即時動態</q>。還需要允許通知。也請看<a href="settings.html#widgets">小工具與鎖定畫面</a>。</p>
+</section>
+
+<section class="g-sec" id="run-location">
+<h2>跑步定位不到時</h2>
+<p class="lead">顯示 <q class="say">戶外跑需要位置權限</q> 或 <q class="say">位置權限已關閉，只記錄時間。</q> 時，請在裝置設定中開啟 FitBoost 的位置權限。</p>
+<ol class="steps">
+<li>iPhone 在設定 → 隱私權與安全性 → 定位服務 → FitBoost 中選擇「使用 App 期間」。</li>
+<li>Android 在設定 → 應用程式 → FitBoost → 權限 → 位置資訊中選擇「僅在使用該應用程式時允許」。</li>
+</ol>
+<p>不需要「永遠」。開始跑步後，即使關掉螢幕也會一直測到這次跑步結束。<q class="say">正在搜尋 GPS</q> 持續很久時，請在開闊的地方稍等片刻。在跑步機這樣的室內，會用步數代替位置估算距離，所以 Android 還需要允許體能活動權限。</p>
+</section>
+
+<section class="g-sec" id="run-map">
+<h2>地圖不顯示時</h2>
+<p class="lead">在無法使用地圖的版本中，會不帶底圖、只用線畫出跑過的路線，並隱藏 <span class="ui"><b>在地圖上畫</b></span>。</p>
+<p>建立路線頁面顯示 <q class="say">此版本無法使用地圖，已隱藏繪製。仍可從過去的跑步或檔案建立。</q> 就是這種情況。仍可用 <span class="ui"><b>過去的跑步</b></span> 或 <span class="ui"><b>檔案</b></span> 建立路線，距離、分段和路線比較照常可用。顯示 <q class="say">沒有路線紀錄</q> 時，表示那次跑步沒有留下位置，可能是室內跑步，或當時位置權限已關閉。</p>
+</section>
+
+<section class="g-sec" id="course-link">
+<h2>路線連結打不開時</h2>
+<p class="lead">點路線連結會在瀏覽器中開啟路線頁面。在那裡點在 App 中開啟的按鈕，就會轉到 FitBoost。</p>
+<p>沒有安裝 App 時，可以在同一頁面下載。顯示 <q class="say">這不是路線連結</q> 時，連結結尾可能被通訊軟體截斷了，請重新取得或改用檔案。複製的連結可以透過 <span class="ui"><b>選單</b> → <b>我的路線</b></span> 右上角 ⋯ 中的 <span class="ui"><b>開啟複製的連結</b></span> 開啟。路線頁面只在瀏覽器內解開連結中的路線並顯示，不會傳送到任何地方。</p>
 </section>
 <nav class="g-pager" aria-label="其他主題"><a class="g-pager__prev" href="settings.html"><small>上一篇</small>設定</a></nav>
 <p class="g-contact">仍未解決？請寄信至 <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>，並附上裝置型號和 App 版本。</p>

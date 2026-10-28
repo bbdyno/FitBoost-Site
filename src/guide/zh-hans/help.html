@@ -62,6 +62,8 @@
 <h2>提示有进行中的训练时</h2>
 <p class="lead">看到 {{" finishWorkoutProgressFirst}} 时，说明还有未结束的训练。</p>
 <p>用 {{> tabHome}} 今日卡片上的 {{> homeContinueWorkout}} 回去并点击 {{> finishWorkout}}；如果不需要，就用 {{> workoutFinish}} 丢弃后重新开始。</p>
+
+<p>切换到跑步模式时显示 {{" modeLockedActive}} 也是同样的原因。</p>
 </section>
 
 <section id="health" data-ask="健康应用连不上|训练没进 Apple 健康|提示没有可导入的新记录" data-keys="健康 连接 失败 权限 healthkit health connect 导入 没有">
@@ -74,4 +76,26 @@
 <h2>通知或锁屏不显示时</h2>
 <p class="lead">看到 {{" setNotificationPermissionDenied}}时，请在设备设置中允许 FitBoost 的通知。</p>
 <p>实时活动关闭时，应用会提示 {{" surfaceTurnOnInSettings}}。还需要允许通知。也请看<a href="settings.html#widgets">小组件与锁屏</a>。</p>
+</section>
+
+<section id="run-location" data-ask="想允许跑步的位置权限|提示户外跑需要位置权限|跑步距离测不出来|一直停在正在搜索 GPS" data-keys="位置 权限 gps 卫星 距离 测不出 0km 只记录时间 定位服务 使用期间 始终 允许 室内 身体活动">
+<h2>跑步定位不到时</h2>
+<p class="lead">显示 {{" runLocationNeeded}} 或 {{" runGpsDenied}} 时，请在设备设置中打开 FitBoost 的位置权限。</p>
+<ol class="steps">
+<li>iPhone 在设置 → 隐私与安全性 → 定位服务 → FitBoost 中选择“使用 App 期间”。</li>
+<li>Android 在设置 → 应用 → FitBoost → 权限 → 位置信息中选择“仅在使用该应用时允许”。</li>
+</ol>
+<p>不需要“始终”。开始跑步后，即使关掉屏幕也会一直测到这次跑步结束。{{" runGpsSearching}} 持续很久时，请在开阔的地方稍等片刻。在跑步机这样的室内，会用步数代替位置估算距离，所以 Android 还需要允许身体活动权限。</p>
+</section>
+
+<section id="run-map" data-ask="看不到跑步路线地图|没有在地图上画这一项|找不到画路线的按钮|没有地图只显示一条线" data-keys="地图 不显示 画 没有 隐藏 线 路线 底图 位置记录">
+<h2>地图不显示时</h2>
+<p class="lead">在无法使用地图的版本中，会不带底图、只用线画出跑过的路线，并隐藏 {{> courseDraw}}。</p>
+<p>创建路线页面显示 {{" courseDrawUnavailable}} 就是这种情况。仍可用 {{> courseFromRun}} 或 {{> courseFromFile}} 创建路线，距离、分段和路线比较照常可用。显示 {{" runNoTrack}} 时，表示那次跑步没有留下位置，可能是室内跑步，或当时位置权限已关闭。</p>
+</section>
+
+<section id="course-link" data-ask="收到的路线链接打不开|提示这不是路线链接|点路线链接打开的是网站" data-keys="路线 链接 打不开 错误 网站 浏览器 在应用中打开 粘贴 复制 损坏 截断">
+<h2>路线链接打不开时</h2>
+<p class="lead">点路线链接会在浏览器中打开路线页面。在那里点在应用中打开的按钮，就会转到 FitBoost。</p>
+<p>没有安装应用时，可以在同一页面下载。显示 {{" courseLinkInvalid}} 时，链接末尾可能被聊天软件截断了，请重新获取或改用文件。复制的链接可以通过 {{> tabMenu > courseTitle}} 右上角 ⋯ 中的 {{> coursePasteLink}} 打开。路线页面只在浏览器内解开链接中的路线并显示，不会发送到任何地方。</p>
 </section>
