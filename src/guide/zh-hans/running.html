@@ -92,18 +92,18 @@
 <li>在 {{> courseSendTitle}} 中选择发送方式，需要时打开 {{> courseIncludeRecord}}。</li>
 <li>对方点链接或扫描二维码，在弹出的 {{> courseReceivedTitle}} 窗口中保存。</li>
 </ol>
-<p>在手机浏览器中打开链接，会显示路线图和距离，并有在应用中打开的按钮。复制的链接也可以通过 {{> courseTitle}} 右上角 ⋯ 中的 {{> coursePasteLink}} 打开。发送时起点和终点附近会被随机隐藏，不包含时间和心率。附带的记录只有每段用时，不含日期和时刻。路线较长时会显示 {{" courseTooLongForLink}}，请用文件发送。</p>
+<p>在手机浏览器中打开链接，会显示路线图和距离，并有在应用中打开的按钮。复制的链接也可以通过 {{> courseTitle}} 右上角 ⋯ 中的 {{> coursePasteLink}} 打开。由跑过的路线生成的路线，无论用链接、二维码还是文件发送，都会随机隐藏起点和终点附近并去掉隐私区域后再发送。自己画的路线按所画原样发送。不包含时间和心率。附带的记录只有每段用时，不含日期和时刻，并从隐藏后剩下线路的起点重新计算。路线较长时会显示 {{" courseTooLongForLink}}，请用文件发送。</p>
 </section>
 
 <section id="privacy-zones" data-ask="不想暴露住址|想隐藏起点|怎么设置隐私区域|分享时隐藏位置" data-keys="隐藏 隐私区域 位置 住家 公司 起点 终点 隐私 随机 半径 分享 暴露">
 <h2>隐藏位置</h2>
-<p class="lead">发送路线或导出文件时，会在起点和终点附近随机截掉一段。住家、公司附近可以设为 {{> runPrivacyZones}}。</p>
+<p class="lead">发送由跑过的路线生成的路线，或把跑步导出为文件时，会在起点和终点附近随机截掉一段。住家、公司附近可以设为 {{> runPrivacyZones}}。</p>
 <ol class="steps">
 <li>打开 {{> tabMenu > runSettingsTitle}}。</li>
-<li>在 {{> runSettingsTrim}} 中选择要隐藏的距离。会在选定距离上随机加上 0~200m 再截掉。</li>
+<li>在 {{> runSettingsTrim}} 中选择要隐藏的距离（默认 200m）。会在选定距离上随机加上 0~200m 再截掉。</li>
 <li>在 {{> runPrivacyZones}} 中点 {{> runPrivacyZoneAdd}}，就会隐藏最近一次跑步起点的周围。</li>
 </ol>
-<p>隐藏圆的中心会从实际位置稍作偏移并只定一次，所以即使多次发送，也很难靠取平均找出位置。你设备里的结果地图和记录不会被隐藏，保持原样。</p>
+<p>隐藏圆的中心会从实际位置稍作偏移并只定一次，所以即使多次发送，也很难靠取平均找出位置。自己画的路线不是实际跑过的位置，所以按所画原样发送。你设备里的结果地图和记录不会被隐藏，保持原样。</p>
 </section>
 
 <section id="watch" data-ask="用 Apple Watch 记录跑步|用 Garmin 手表测量跑步|用 Galaxy Watch 跑步|提示请在手表上开始" data-keys="手表 apple watch galaxy watch garmin 跑步 震动 路线 配速 区间 卫星 电量">

@@ -92,18 +92,18 @@
 <li>In {{> courseSendTitle}}, pick how to send it, and turn on {{> courseIncludeRecord}} if you want.</li>
 <li>The other person taps the link or scans the QR code, then saves it in the {{> courseReceivedTitle}} window.</li>
 </ol>
-<p>Opened in a phone browser, the link shows the course drawing and distance with a button to open it in the app. You can also open a copied link with {{> coursePasteLink}} under ⋯ at the top right of {{> courseTitle}}. When you send, the start and finish areas are hidden at random, and times and heart rate aren't included. An included record carries only the time for each stretch, with no date or clock time. For long courses you'll see {{" courseTooLongForLink}}, so send a file.</p>
+<p>Opened in a phone browser, the link shows the course drawing and distance with a button to open it in the app. You can also open a copied link with {{> coursePasteLink}} under ⋯ at the top right of {{> courseTitle}}. Courses made from a route you ran have the start and finish areas hidden at random and your privacy zones removed, whether you send a link, QR code, or file. Courses you drew go as drawn. Times and heart rate aren't included. An included record carries only the time for each stretch, with no date or clock time, counted again from the start of the trimmed line. For long courses you'll see {{" courseTooLongForLink}}, so send a file.</p>
 </section>
 
 <section id="privacy-zones" data-ask="I don't want to reveal where I live|Hide my starting point|How do I set privacy zones|Hide my location when sharing" data-keys="hide privacy zone zones location home work start finish privacy random radius share reveal">
 <h2>Hiding your location</h2>
-<p class="lead">When you send a course or export a file, a random length is cut from around the start and finish. Set areas around home or work as {{> runPrivacyZones}}.</p>
+<p class="lead">When you send a course made from a route you ran, or export a run as a file, a random length is cut from around the start and finish. Set areas around home or work as {{> runPrivacyZones}}.</p>
 <ol class="steps">
 <li>Open {{> tabMenu > runSettingsTitle}}.</li>
-<li>Under {{> runSettingsTrim}}, pick a distance to hide. A random 0–200 m is added to it before cutting.</li>
+<li>Under {{> runSettingsTrim}}, pick a distance to hide (200 m by default). A random 0–200 m is added to it before cutting.</li>
 <li>Under {{> runPrivacyZones}}, tap {{> runPrivacyZoneAdd}} to hide the area around where your most recent run started.</li>
 </ol>
-<p>The center of each hidden circle is moved a little from the real spot and fixed once, so averaging many shared runs doesn't reveal the place. Result maps and records on your own device aren't hidden and stay as they are.</p>
+<p>The center of each hidden circle is moved a little from the real spot and fixed once, so averaging many shared runs doesn't reveal the place. Courses you drew aren't where you actually ran, so they're sent as drawn. Result maps and records on your own device aren't hidden and stay as they are.</p>
 </section>
 
 <section id="watch" data-ask="Record a run with Apple Watch|Track runs with a Garmin watch|Run with Galaxy Watch|It says start on your watch" data-keys="watch apple watch galaxy watch garmin run running vibration course pace range satellite band battery wrist">
