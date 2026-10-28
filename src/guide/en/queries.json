@@ -110,5 +110,10 @@
  "are layouts and stickers free": "sharing#plans",
  "import run from another app": "running#import",
  "import tcx run": "running#import",
- "import activity file from watch": "running#import"
+ "import activity file from watch": "running#import",
+ "running coach": "running#coach",
+ "today's run prescription": "running#coach",
+ "leg recovery": "running#coach",
+ "strength coaching in running mode": "running#coach",
+ "why is this run suggested": "running#coach"
 }

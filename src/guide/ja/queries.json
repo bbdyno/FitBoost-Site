@@ -110,5 +110,10 @@
  "テンプレートとステッカーは無料": "sharing#plans",
  "他のアプリのランを取り込む": "running#import",
  "tcxのランを取り込む": "running#import",
- "ウォッチから書き出した記録を取り込む": "running#import"
+ "ウォッチから書き出した記録を取り込む": "running#import",
+ "ランニングコーチ": "running#coach",
+ "今日のラン処方": "running#coach",
+ "脚の回復": "running#coach",
+ "ランニングモードの筋トレコーチ": "running#coach",
+ "なぜこのランをすすめる": "running#coach"
 }

@@ -8,8 +8,8 @@
 <ul>
 <li>{{> tabHome}}: today's run card, this week's distance with bars for the last 8 weeks, shortcuts to {{> courseTitle}}, {{> runZonesTitle}}, and {{> runHomePlan}}, and recent runs.</li>
 <li>{{> tabRecord}}: opens on {{> historyRunsOnly}}, and you can switch to {{> historyAllWorkouts}}.</li>
-<li>{{> tabStats}}: a running section appears at the top, with the strength sections unchanged below it.</li>
-<li>{{> tabCoach}}: the running-focused weekly plan sits at the top (PRO+).</li>
+<li>{{> tabStats}}: only the running sections are shown. Strength stats are in strength mode, through the {{> modeCrossStrengthStats}} row at the bottom.</li>
+<li>{{> tabCoach}}: the whole tab becomes the <a href="#coach">running coach</a>.</li>
 <li>{{> tabMenu}}: rows for {{> courseTitle}}, {{> runZonesTitle}}, and {{> runSettingsTitle}} appear.</li>
 </ul>
 <p>The mode only changes the screens. Your log, prescriptions, and health app data stay in one place with your strength training. On days with strength scheduled, Home shows {{" modeCrossStrength}}. If a workout is in progress, you'll see {{" modeLockedActive}} and the mode won't change. The mode you pick stays after you reopen the app.</p>
@@ -75,6 +75,23 @@
 <p>Paces come from the Daniels and Gilbert oxygen cost formula (VDOT), and {{> runZonesHow}} shows the formula and sources. Without a result, run a {{> runKindTest}} or tap {{> runUseBaseline}} on a run result. After 8 weeks, the app suggests measuring again.</p>
 </section>
 
+<section id="coach" data-ask="What's on the Coach tab in running mode|Where do I see today's run prescription|Today's run prescription|Why is this run suggested|What is leg recovery|Where is strength coaching in running mode" data-keys="running coach coach tab today prescription suggested suggestion reason why leg recovery legs 70% quality this week weekly plan readiness nutrition strength coaching block volume strength mode switch">
+<h2>Running coach</h2>
+<p class="lead">In running mode, the whole {{> tabCoach}} tab becomes a running coach. The top card shows what to run today and why, and you can tap {{> runStart}} right there.</p>
+<ol class="steps">
+<li>Open {{> tabCoach}} in running mode. Below the header you'll see {{" runCoachSubtitle}}.</li>
+<li>In the top card, check {{> runTodayPlan}} (that day's prescription from your hybrid plan) or {{> runSuggested}} (the run we suggest when there's no plan).</li>
+<li>Read the reasons on the card and tap {{> runStart}}.</li>
+</ol>
+<ul>
+<li>Reasons: a line is added when the run was eased for leg recovery, kept within 110% of your longest run in the last 30 days, turned into a time trial because there's no reference result, or trimmed to match your recent runs.</li>
+<li>{{> runCoachLegsTitle}}: without lower-body strength records, recovery isn't taken into account. If lower-body recovery is below 70% or you trained legs hard yesterday, it tells you to swap a quality run for an easy run.</li>
+<li>{{> runZonesTitle}} and {{> runCapTitle}}: your pace zones, plus this week's distance and the single-run limit.</li>
+<li>{{> runCoachWeekTitle}} <span class="pro">PRO+</span>: on the free plan it shows as a locked row. With PRO+ you also see the readiness check and nutrition cards.</li>
+</ul>
+<p>Strength coaching such as block plans and volume isn't on the {{> tabCoach}} tab in running mode. Tap the {{> modeCrossStrengthCoach}} row at the bottom to switch to strength mode. The first time you open the running coach, an intro tip shows once, even if you've turned tips off. On an iPad held sideways, the recovery item in the left menu becomes leg recovery and the coach item becomes {{> largeRunCoach}}.</p>
+</section>
+
 <section id="strength" data-ask="How should I run the day after a leg workout|Today's run changed to an easy run|How long can a single run be|Why is there a distance limit on runs" data-keys="strength legs leg day next day easy run quality changed prescription 110% 30 days longest distance limit cap injury weekly plan">
 <h2>Prescriptions that know your strength training</h2>
 <p class="lead">A single run is kept within 110% of your longest run in the last 30 days. With the weekly running plan, a quality run the day after a leg workout becomes an easy run.</p>
@@ -83,7 +100,7 @@
 <li>{{" runReasonLegs}} <span class="pro">PRO+</span>: this follows a randomized trial in which 30-minute run times were about 4% slower two days after muscle damage. A one-line reason appears on today's card only on days it changes.</li>
 <li>{{" runReasonBaselineTest}}: without a reference result, or with an old one, the plan's first quality day becomes a time trial.</li>
 </ul>
-<p>Make the weekly running plan from {{> runCoachMakeTitle}} at the top of {{> tabCoach}} in running mode (PRO+). It spreads easy and quality runs so they don't clash with strength days, and moves only the runs, leaving your strength prescriptions as they are.</p>
+<p>Make the weekly running plan from {{> runCoachMakeTitle}} under {{> runCoachWeekTitle}} in the running coach (PRO+). It spreads easy and quality runs so they don't clash with strength days, and moves only the runs, leaving your strength prescriptions as they are.</p>
 </section>
 
 <section id="courses" data-ask="How do I make a course|Import a course from a GPX file|Draw a course on the map|Turn a route I run often into a course|Compare runs on the same route" data-keys="course my courses create make map draw gpx tcx file import same route automatic past self race best my segments segment loop">
@@ -134,9 +151,9 @@
 <h2>Free and paid in running</h2>
 <p class="lead">Measuring is all free. PRO adds analysis that interprets your runs and structured workouts, and PRO+ adds a weekly running plan that works around strength recovery.</p>
 <ul>
-<li>Free: measuring with your phone or three kinds of watch, live pace and heart rate, auto laps and splits, reference result, pace zones, and predicted times, my courses (same-route detection, drawing, files, receiving), sending by link, QR code, or file, GPX export, importing GPX or TCX runs from other apps, privacy zones, writing to health apps, the single-run limit, and metric evidence.</li>
+<li>Free: measuring with your phone or three kinds of watch, live pace and heart rate, auto laps and splits, reference result, pace zones, and predicted times, my courses (same-route detection, drawing, files, receiving), sending by link, QR code, or file, GPX export, importing GPX or TCX runs from other apps, privacy zones, writing to health apps, the single-run limit, metric evidence, and the running coach (today's prescription and reasons, leg recovery, pace zones, this week's distance).</li>
 <li>PRO: grade-adjusted pace, heart-rate drift, heart-rate load, session load, critical speed, fitness and fatigue combined with strength, structured workouts (step-by-step threshold, interval, and hill sessions), race-day mode (goal pacer and finish prediction), and my segment records on courses.</li>
-<li>PRO+: a running-focused weekly plan that works around strength recovery (including easing off the day after a leg workout).</li>
+<li>PRO+: a running-focused weekly plan that works around strength recovery (including easing off the day after a leg workout), and the readiness check and nutrition cards in the running coach.</li>
 </ul>
 <p>Locked tiles show a lock, and tapping one opens the FitBoost PRO screen. If your subscription ends, analysis values for runs you've already recorded aren't deleted, only hidden. There are no ads on the running screen.</p>
 </section>

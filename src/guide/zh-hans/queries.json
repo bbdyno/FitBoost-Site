@@ -110,5 +110,10 @@
  "模板和贴纸免费吗": "sharing#plans",
  "导入其他应用的跑步": "running#import",
  "导入 tcx 跑步": "running#import",
- "导入手表导出的记录": "running#import"
+ "导入手表导出的记录": "running#import",
+ "跑步教练": "running#coach",
+ "今天的跑步处方": "running#coach",
+ "腿部恢复": "running#coach",
+ "跑步模式的力量教练": "running#coach",
+ "为什么推荐这次跑步": "running#coach"
 }
