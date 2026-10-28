@@ -87,5 +87,14 @@
  "ランの位置情報の許可": "help#run-location",
  "地図が表示されない": "help#run-map",
  "コースのリンクが開かない": "help#course-link",
- "コースの共有": "running#share-course"
+ "コースの共有": "running#share-course",
+ "ランを共有": "sharing#cards",
+ "インスタのストーリーズに共有": "sharing#cards",
+ "共有カードのカスタマイズ": "sharing#studio",
+ "ステッカーの大きさを変える": "sharing#studio",
+ "共有カードのフォント": "sharing#fonts-colors",
+ "スポイト": "sharing#fonts-colors",
+ "人物の後ろに回す": "sharing#subject",
+ "テンプレートを保存": "sharing#templates",
+ "共有カードのアプリ名を消す": "sharing#plans"
 }

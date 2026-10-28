@@ -93,5 +93,14 @@
  "달리기 위치 권한": "help#run-location",
  "지도가 안 보여요": "help#run-map",
  "코스 링크가 안 열려요": "help#course-link",
- "코스 보내는 법": "running#share-course"
+ "코스 보내는 법": "running#share-course",
+ "달리기 공유": "sharing#cards",
+ "인스타 스토리 공유": "sharing#cards",
+ "공유 카드 꾸미기": "sharing#studio",
+ "스티커 크기 바꾸기": "sharing#studio",
+ "공유 카드 글꼴": "sharing#fonts-colors",
+ "스포이드": "sharing#fonts-colors",
+ "사람 뒤로 보내기": "sharing#subject",
+ "내 틀 저장": "sharing#templates",
+ "공유 카드 앱 이름 지우기": "sharing#plans"
 }

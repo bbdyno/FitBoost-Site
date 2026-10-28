@@ -1,0 +1,68 @@
+<section id="cards" data-ask="ランの記録を共有したい|ランをInstagramのストーリーズに投稿したい|共有カードにはどんな種類がありますか|筋トレの記録カードを作りたい" data-keys="共有 記録共有 カード 共有カード インスタ instagram ストーリーズ フィード ルート スプリット 写真 ステッカー 透明 ラン 筋トレ 投稿">
+<h2>共有カードを選ぶ</h2>
+<p class="lead">ランの結果の{{> runShareOpen}}をタップし、{{> runShareKindRoute}}・{{> runShareKindSplits}}・{{> runShareKindPhoto}}・{{> runShareKindSticker}}のカードから選んで、ストーリーズかフィードの大きさで作ります。</p>
+<ol class="steps">
+<li>ランの結果画面で{{> runShareOpen}}をタップします。過去のランは{{> tabRecord}}から開きます。</li>
+<li>上のチップの列でカードを選び、{{> shareFormatStory}}・{{> shareFormatFeed}}の大きさと背景色を選びます。</li>
+<li>{{> runShareShowRoute}}、{{> runShareShowHeartRate}}、{{> runShareShowAscent}}などの項目をオン・オフします。</li>
+<li>{{> shareToInstagramStory}}をタップするとInstagramのストーリーズがすぐ開きます。ほかに送ったり写真に保存したりするには{{> shareOtherApps}}を使います。</li>
+</ol>
+<p>{{> runShareKindSticker}}のカードは背景が透明なので、ストーリーズで動かせるステッカーとして入ります。ルートはスタート・ゴール付近と非公開エリアを切り取った線だけで描き、カードには背景の地図・座標・時刻は入りません（日付は入ります）。筋トレは、{{> tabRecord}}で開いた記録の{{> shareWorkoutSummary}}や{{> tabStats}}の{{> shareCardsTooltip}}から同じようにカードを作ります。</p>
+</section>
+
+<section id="studio" data-ask="共有カードを飾りたい|共有カードをカスタマイズする方法|共有カードのカスタマイズのやり方|編集画面はどこから開きますか|ステッカーを動かして大きさを変えたい|正方形のカードにしたい" data-keys="カスタマイズ 飾る 編集 エディター 魔法の杖 ステッカー ドラッグ 移動 大きさ 回転 テキスト キャンバス 正方形 ストーリーズ フィード 透明 書き出し">
+<h2>カスタマイズを開く</h2>
+<p class="lead">ラン・筋トレの共有画面の上にある魔法の杖のボタン（{{> studioOpen}}）をタップすると、編集画面が開きます。</p>
+<ol class="steps">
+<li>共有画面の右上にある魔法の杖のボタンをタップします。</li>
+<li>下の欄から{{> studioPanelStickers}}、{{> studioPanelFonts}}、{{> studioPanelColors}}、{{> studioPanelPhoto}}、{{> studioPanelLayers}}、{{> studioPanelTemplates}}を開きます。</li>
+<li>ステッカーを入れ、指でドラッグして動かしたり、大きさ・回転を変えたりします。{{> studioAddText}}で文字も入れられます。</li>
+<li>{{> studioCanvasSize}}で{{> shareFormatStory}}・{{> shareFormatFeed}}・{{> studioSquare}}を選び、できたら書き出すかストーリーズに投稿します。</li>
+</ol>
+<p>ランのステッカーには距離・時間・ペース、高度の断面、走ったルートがあり、筋トレのステッカーには{{> studioMetricLiftSummary}}、{{> studioMetricLiftRecord}}、{{> studioMetricBigThree}}、{{> studioMetricVolumeVsLast}}、{{> studioMetricSetChips}}、{{> studioMetricMuscles}}などがあります。勾配補正ペースや推定1RMの推移のような分析値のステッカーは、その値がもともと属するプランに従います。カードのアプリ名の表示は、プランに関係なく必ず入ります。</p>
+</section>
+
+<section id="fonts-colors" data-ask="共有カードのフォントを変えたい|数字だけ別のフォントにしたい|写真から色を取りたい|スポイトで色を選びたい|写真をモノクロにしたい|ルートをペースで色分けしたい" data-keys="フォント 書体 数字 単位 名前 大きさ 字間 等幅 色 カラー スポイト カラーコード hex コントラスト 影 モノクロ 白黒 ぼかし 明るさ 暖かさ 下を暗く 補正 ルートの色 ペース 勾配 レイヤー 元に戻す 隠れる範囲">
+<h2>フォント・色・写真</h2>
+<p class="lead">ひとつのステッカーの中でも、{{> studioPartValue}}・{{> studioPartUnit}}・{{> studioPartLabel}}の欄ごとにフォントと色を別々に選べます。写真はモノクロ・ぼかしから明るさ・コントラストまで調整できます。</p>
+<ul>
+<li>{{> studioPanelFonts}}：欄ごとのフォント、{{> studioFontSize}}、{{> studioLetterSpacing}}、{{> studioTabular}}。フォントにない文字は{{" studioFontFallback}}と知らせます。</li>
+<li>{{> studioPanelColors}}：基本の3色、写真から取った色、{{> studioEyedropper}}、{{> studioHex}}。文字が読みやすいかコントラストを示し、{{> studioAddShadow}}をおすすめします。</li>
+<li>{{> studioPanelPhoto}}：{{> studioGrayscale}}、{{> studioBlur}}、{{> studioBrightness}}、{{> studioContrast}}、{{> studioWarmth}}、{{> studioBottomShade}}。</li>
+<li>{{> studioRoute}}：{{> studioRouteSolid}}、または{{> studioRoutePace}}・{{> studioRouteGrade}}で線に色を付けます。</li>
+<li>{{> studioPanelLayers}}：{{> actionUndo}}・{{> studioRedo}}、{{> studioLayerUp}}・{{> studioLayerDown}}、{{> studioLayerHide}}、{{> studioLayerLock}}、位置・回転の数値、{{> studioSafeArea}}。</li>
+</ul>
+<p>フォントは22種類で、すべてSILオープンフォントライセンス（OFL）のフォントとしてアプリに入っています。無料では基本フォント3つをステッカー全体に使い、基本の3色、モノクロ・ぼかし、単色のルートを使えます。欄ごとのフォントと残りのフォント、写真の色・スポイト・カラーコード、元に戻す・レイヤー・数値・隠れる範囲、ルートの色付け、明るさ・コントラスト・暖かさ・下を暗くはPROです。</p>
+</section>
+
+<section id="subject" data-ask="ステッカーを人物の後ろに回したい|写真の人に文字がかぶってしまう|人物の後ろに回すと写真がサーバーに送られますか|写真から人物が見つかりませんと表示されます" data-keys="人物 後ろ 切り抜き 被写体 分離 写真 端末内 サーバー プライバシー ビジョン 重ね">
+<h2>人物の後ろに回す <span class="pro">PRO</span></h2>
+<p class="lead">{{> studioPanelPhoto}}の{{> studioSubjectFront}}をオンにすると、写真の人物を切り抜いてステッカーが人物の後ろに回ります。写真は端末の中だけで処理します。</p>
+<ol class="steps">
+<li>{{> runShareKindPhoto}}のカードか編集画面で、写真を背景に選びます。</li>
+<li>{{> studioPanelPhoto}}で{{> studioSubjectFront}}をオンにします。</li>
+</ol>
+<p>{{" studioSubjectFrontHint}}。iPhoneは端末に入っているビジョンの機能を、Androidはアプリに入っている人物分離モデルを使うので、写真はどこにも送られません。人物が小さかったりぼやけていたりすると{{" studioNoPerson}}と表示されます。</p>
+</section>
+
+<section id="templates" data-ask="飾った配置を保存したい|マイテンプレートの作り方|次の記録にも同じデザインを使いたい|終わったらすぐ共有カードができるようにしたい" data-keys="テンプレート 型 保存 配置 使い回し 自動 すぐ 共有 終了 結果画面 バックアップ">
+<h2>マイテンプレートと自動作成</h2>
+<p class="lead">飾った配置・フォント・色を{{> studioTemplateSave}}で保存しておくと、次の記録の値ですぐに埋まります（PRO）。</p>
+<ol class="steps">
+<li>編集画面で配置を終えたら、{{> studioPanelTemplates}}の{{> studioTemplateSave}}をタップします。</li>
+<li>次に共有するとき、{{> studioPanelTemplates}}でそのテンプレートを選ぶと新しい記録の値が入ります。</li>
+<li>テンプレートの{{> studioTemplateAutoOn}}スイッチをオンにすると、ワークアウトやランが終わったあと、結果画面の{{> studioOpenAuto}}からすぐ開きます（PRO+）。</li>
+</ol>
+<p>マイテンプレートはこの端末とバックアップファイルにだけ保存し、デバイス間の同期では上げません。サブスクリプションが終わっても保存したテンプレートは消えず、PROの機能だけが再びロックされます。</p>
+</section>
+
+<section id="plans" data-ask="共有のカスタマイズは無料ですか|編集で有料なのは何ですか|共有カードのアプリ名を消せますか" data-keys="共有 カスタマイズ 無料 有料 pro pro+ サブスクリプション ロック アプリ名 ウォーターマーク ロゴ">
+<h2>共有とカスタマイズの無料と有料</h2>
+<p class="lead">共有カードと基本のカスタマイズは無料です。プロ向けの編集ツールはPRO、終わったらマイテンプレートですぐ作るのはPRO+です。</p>
+<ul>
+<li>無料：ラン・筋トレの共有カード、ステッカーの追加・ドラッグ・大きさ・回転、基本フォント3つ、基本の3色、モノクロ・ぼかし、単色のルート、ストーリーズ・フィード・正方形、書き出しとInstagramのストーリーズへの直接投稿。</li>
+<li>PRO：欄ごとのフォント・大きさ・字間・数字の幅、残りのフォント、写真から取った色・スポイト・カラーコード、元に戻す・レイヤー・数値・ストーリーズの隠れる範囲、ルートの色付け、明るさ・コントラスト・暖かさ・下を暗く、人物の後ろに回す、マイテンプレート。</li>
+<li>PRO+：ワークアウトやランが終わったら、マイテンプレートで共有カードをすぐ作る。</li>
+</ul>
+<p>カードのアプリ名の表示はどのプランでも入り、消す機能はありません。</p>
+</section>

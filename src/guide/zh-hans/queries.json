@@ -87,5 +87,14 @@
  "跑步免费吗": "running#plans",
  "跑步位置权限": "help#run-location",
  "地图不显示": "help#run-map",
- "路线链接打不开": "help#course-link"
+ "路线链接打不开": "help#course-link",
+ "分享跑步": "sharing#cards",
+ "分享到 instagram 快拍": "sharing#cards",
+ "贴纸调整大小": "sharing#studio",
+ "分享卡片字体": "sharing#fonts-colors",
+ "吸管取色": "sharing#fonts-colors",
+ "贴纸放到人物后面": "sharing#subject",
+ "保存模板": "sharing#templates",
+ "去掉分享卡片的应用名称": "sharing#plans",
+ "怎么装饰分享卡片": "sharing#studio"
 }

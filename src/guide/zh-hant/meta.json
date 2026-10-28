@@ -6,6 +6,7 @@
     {"slug": "routines", "title": "例行訓練與計畫", "description": "建立例行訓練、生成適合自己的計畫、使用動作列表。"},
     {"slug": "coach", "title": "教練與循環訓練", "description": "下一組重量建議、教練循環訓練、每週混合訓練計畫和教練頁的週期計畫。"},
     {"slug": "stats", "title": "統計與報告", "description": "統計頁中的恢復、力量平衡、訓練量，以及每週教練報告。"},
+    {"slug": "sharing", "title": "紀錄分享與裝飾", "description": "把跑步和力量訓練紀錄做成分享卡片，用編輯器調整字體、顏色和照片，並儲存為我的範本。"},
     {"slug": "tools", "title": "計算機與工具", "description": "槓片、1RM、強度計畫計算機，我的器材和訓練術語詞典。"},
     {"slug": "watch", "title": "智慧手錶", "description": "連接 Apple Watch、Galaxy Watch 或 Garmin 手錶，在手腕上記錄訓練和跑步。"},
     {"slug": "health", "title": "健康 App", "description": "把訓練寫入 Apple 健康和 Health Connect，並讀取睡眠和心率。"},

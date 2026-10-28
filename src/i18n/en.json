@@ -226,6 +226,22 @@
     "units": {
       "title": "kg and lb",
       "body": "Set one unit for the whole app, or a different one per exercise."
+    },
+    "share": {
+      "title": "Sharing and customizing",
+      "body": "Turn runs and strength workouts into cards sized for Instagram stories and post them straight away. In the editor, drag in stickers, pick a font and color for each number, unit and label, pull colors from your photo, and tuck stickers behind the person in it. Photos are processed only on your device, and routes are drawn with the start and finish hidden.",
+      "k1": "Route",
+      "k2": "Splits",
+      "k3": "On a photo",
+      "k4": "Sticker",
+      "f1": "Story",
+      "f2": "Feed",
+      "f3": "Square"
+    },
+    "fonts": {
+      "title": "22 fonts",
+      "unit": "fonts",
+      "note": "Per number, unit and label · Open Font License"
     }
   },
   "watch": {
@@ -259,6 +275,7 @@
         "Plate calculator",
         "Device sync and backup files",
         "Run tracking · pace zones · my courses",
+        "Share cards and basic customizing",
         "3 routines, 5 custom exercises"
       ]
     },
@@ -274,7 +291,8 @@
         "Personal 1–15 rep load curve",
         "Weekly coaching report",
         "Unlimited routines and exercises",
-        "Run analysis · structured runs · race-day mode"
+        "Run analysis · structured runs · race-day mode",
+        "Pro editing · 22 fonts · my templates"
       ]
     },
     "plus": {
@@ -288,7 +306,8 @@
         "Weekly sets per muscle",
         "Plan and auto-fill warm-up sets",
         "Nutrition targets",
-        "Weekly running plan around strength recovery"
+        "Weekly running plan around strength recovery",
+        "Share cards ready from your template when you finish"
       ]
     },
     "note": "Subscriptions are billed through your Apple or Google account and can be canceled in the store at any time. Prices shown are in US dollars; the price in your store's purchase sheet applies."
