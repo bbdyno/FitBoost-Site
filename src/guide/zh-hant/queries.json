@@ -110,5 +110,10 @@
  "範本和貼紙免費嗎": "sharing#plans",
  "匯入其他 App 的跑步": "running#import",
  "匯入 tcx 跑步": "running#import",
- "匯入手錶匯出的紀錄": "running#import"
+ "匯入手錶匯出的紀錄": "running#import",
+ "跑步教練": "running#coach",
+ "今天的跑步處方": "running#coach",
+ "腿部恢復": "running#coach",
+ "跑步模式的力量教練": "running#coach",
+ "為什麼推薦這次跑步": "running#coach"
 }

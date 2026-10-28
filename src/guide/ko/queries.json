@@ -116,5 +116,10 @@
  "틀 스티커 무료": "sharing#plans",
  "다른 앱 달리기 가져오기": "running#import",
  "tcx 달리기 기록 가져오기": "running#import",
- "시계에서 내보낸 기록 가져오기": "running#import"
+ "시계에서 내보낸 기록 가져오기": "running#import",
+ "러닝 코치": "running#coach",
+ "오늘 달리기 처방": "running#coach",
+ "다리 회복": "running#coach",
+ "러닝 모드 근력 코치": "running#coach",
+ "왜 이 달리기를 권하나요": "running#coach"
 }
