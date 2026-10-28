@@ -87,5 +87,14 @@
  "跑步免費嗎": "running#plans",
  "跑步位置權限": "help#run-location",
  "地圖不顯示": "help#run-map",
- "路線連結打不開": "help#course-link"
+ "路線連結打不開": "help#course-link",
+ "分享跑步": "sharing#cards",
+ "分享到 instagram 限時動態": "sharing#cards",
+ "怎麼裝飾分享卡片": "sharing#studio",
+ "貼圖調整大小": "sharing#studio",
+ "分享卡片字體": "sharing#fonts-colors",
+ "滴管取色": "sharing#fonts-colors",
+ "貼圖放到人物後面": "sharing#subject",
+ "儲存範本": "sharing#templates",
+ "去掉分享卡片的 app 名稱": "sharing#plans"
 }

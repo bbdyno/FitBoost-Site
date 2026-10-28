@@ -1,0 +1,68 @@
+<section id="cards" data-ask="想分享跑步记录|把跑步发到 Instagram 快拍|有哪些分享卡片|制作力量训练记录卡片" data-keys="分享 记录分享 卡片 分享卡片 instagram 快拍 帖子 路线 分段 照片 贴纸 透明 跑步 力量 发布">
+<h2>选择分享卡片</h2>
+<p class="lead">在跑步结果中点 {{> runShareOpen}}，从 {{> runShareKindRoute}}、{{> runShareKindSplits}}、{{> runShareKindPhoto}}、{{> runShareKindSticker}} 卡片中选一种，做成快拍或帖子尺寸。</p>
+<ol class="steps">
+<li>在跑步结果页面点 {{> runShareOpen}}。过去的跑步可在 {{> tabRecord}} 中打开。</li>
+<li>在上方的标签行选择卡片，再选择 {{> shareFormatStory}} 或 {{> shareFormatFeed}} 尺寸和背景色。</li>
+<li>打开或关闭 {{> runShareShowRoute}}、{{> runShareShowHeartRate}}、{{> runShareShowAscent}} 等项目。</li>
+<li>点 {{> shareToInstagramStory}} 会直接打开 Instagram 快拍。要发到别处或保存到相册，请用 {{> shareOtherApps}}。</li>
+</ol>
+<p>{{> runShareKindSticker}} 卡片背景透明，会作为可移动的贴纸放进快拍。路线只按截掉起点和终点附近及隐私区域后的线绘制，卡片中不含底图、坐标和时刻（含日期）。力量训练可在 {{> tabRecord}} 中打开记录后用 {{> shareWorkoutSummary}}，或在 {{> tabStats}} 中用 {{> shareCardsTooltip}}，以同样方式制作卡片。</p>
+</section>
+
+<section id="studio" data-ask="想装饰分享卡片|分享卡片怎么装饰|怎么自定义分享卡片|在哪里打开编辑器|移动贴纸并调整大小|做成正方形卡片" data-keys="装饰 自定义 编辑器 魔杖 贴纸 拖动 移动 大小 旋转 文字 画布 正方形 快拍 帖子 透明 导出">
+<h2>打开装饰编辑器</h2>
+<p class="lead">点跑步或力量训练分享页面上方的魔杖按钮（{{> studioOpen}}），即可打开装饰编辑器。</p>
+<ol class="steps">
+<li>点分享页面右上角的魔杖按钮。</li>
+<li>从下方栏打开 {{> studioPanelStickers}}、{{> studioPanelFonts}}、{{> studioPanelColors}}、{{> studioPanelPhoto}}、{{> studioPanelLayers}}、{{> studioPanelTemplates}}。</li>
+<li>加入贴纸后用手指拖动，或调整大小和旋转。用 {{> studioAddText}} 也可以加文字。</li>
+<li>在 {{> studioCanvasSize}} 中选择 {{> shareFormatStory}}、{{> shareFormatFeed}} 或 {{> studioSquare}}，完成后导出或发到快拍。</li>
+</ol>
+<p>跑步贴纸有距离、时间、配速、海拔剖面和跑过的路线，力量贴纸有 {{> studioMetricLiftSummary}}、{{> studioMetricLiftRecord}}、{{> studioMetricBigThree}}、{{> studioMetricVolumeVsLast}}、{{> studioMetricSetChips}}、{{> studioMetricMuscles}} 等。坡度修正配速或估算 1RM 走势这类分析值贴纸，按该值原本所属的等级开放。卡片上的应用名称标识与等级无关，始终会显示。</p>
+</section>
+
+<section id="fonts-colors" data-ask="更换分享卡片字体|只想把数字换成另一种字体|从照片中取色|用吸管选颜色|把照片变成黑白|按配速给路线上色" data-keys="字体 数字 单位 名称 大小 字距 等宽 颜色 吸管 色码 hex 对比度 阴影 黑白 模糊 亮度 暖色 底部变暗 调整 路线颜色 配速 坡度 图层 撤销 遮挡区域">
+<h2>字体、颜色与照片</h2>
+<p class="lead">即使在同一个贴纸里，也能为 {{> studioPartValue}}、{{> studioPartUnit}}、{{> studioPartLabel}} 分别选择字体和颜色。照片可以从黑白、模糊调整到亮度、对比度。</p>
+<ul>
+<li>{{> studioPanelFonts}}：每个部分的字体、{{> studioFontSize}}、{{> studioLetterSpacing}}、{{> studioTabular}}。字体中没有的字会提示 {{" studioFontFallback}}。</li>
+<li>{{> studioPanelColors}}：基本 3 色、从照片中取的颜色、{{> studioEyedropper}}、{{> studioHex}}。会显示对比度以判断文字是否清晰，并建议 {{> studioAddShadow}}。</li>
+<li>{{> studioPanelPhoto}}：{{> studioGrayscale}}、{{> studioBlur}}、{{> studioBrightness}}、{{> studioContrast}}、{{> studioWarmth}}、{{> studioBottomShade}}。</li>
+<li>{{> studioRoute}}：{{> studioRouteSolid}}，或按 {{> studioRoutePace}}、{{> studioRouteGrade}} 给线上色。</li>
+<li>{{> studioPanelLayers}}：{{> actionUndo}}、{{> studioRedo}}、{{> studioLayerUp}}、{{> studioLayerDown}}、{{> studioLayerHide}}、{{> studioLayerLock}}、位置与旋转数值、{{> studioSafeArea}}。</li>
+</ul>
+<p>共有 22 种字体，全部以 SIL 开源字体许可（OFL）收录在应用中。免费可在整个贴纸上使用 3 种基本字体，以及基本 3 色、黑白、模糊和单色路线。每个部分单独选字体和其余字体、照片取色、吸管、色码、撤销、图层、数值、遮挡区域、路线上色，以及亮度、对比度、暖色、底部变暗属于 PRO。</p>
+</section>
+
+<section id="subject" data-ask="想把贴纸放到人物后面|照片里的人被文字挡住了|放到人物后面会把照片发到服务器吗|提示在照片中找不到人物" data-keys="人物 后面 抠图 主体 分割 照片 设备内 服务器 隐私 视觉 叠放">
+<h2>放到人物后面 <span class="pro">PRO</span></h2>
+<p class="lead">在 {{> studioPanelPhoto}} 中打开 {{> studioSubjectFront}}，会抠出照片中的人物，让贴纸位于人物后面。照片只在设备内处理。</p>
+<ol class="steps">
+<li>在 {{> runShareKindPhoto}} 卡片或编辑器中选择照片作为背景。</li>
+<li>在 {{> studioPanelPhoto}} 中打开 {{> studioSubjectFront}}。</li>
+</ol>
+<p>{{" studioSubjectFrontHint}}。iPhone 使用设备自带的视觉功能，Android 使用应用内置的人物分割模型，因此照片不会发送到任何地方。人物太小或模糊时会显示 {{" studioNoPerson}}。</p>
+</section>
+
+<section id="templates" data-ask="想保存装饰好的布局|怎么制作我的模板|下次记录沿用同样的设计|训练结束后自动生成分享卡片" data-keys="模板 我的模板 保存 布局 重复使用 自动 直接 分享 结束 结果页面 备份">
+<h2>我的模板与自动生成</h2>
+<p class="lead">用 {{> studioTemplateSave}} 保存装饰好的布局、字体和颜色，下次记录的数值会直接填进去（PRO）。</p>
+<ol class="steps">
+<li>在编辑器中排好布局后，点 {{> studioPanelTemplates}} 中的 {{> studioTemplateSave}}。</li>
+<li>下次分享时在 {{> studioPanelTemplates}} 中选择该模板，就会填入新记录的数值。</li>
+<li>打开模板的 {{> studioTemplateAutoOn}} 开关后，训练或跑步结束时可从结果页面的 {{> studioOpenAuto}} 直接打开（PRO+）。</li>
+</ol>
+<p>我的模板只保存在本设备和备份文件中，不会通过设备间同步上传。订阅结束后，已保存的模板不会删除，只是 PRO 功能重新锁定。</p>
+</section>
+
+<section id="plans" data-ask="分享装饰免费吗|编辑器中哪些要付费|能去掉分享卡片上的应用名称吗" data-keys="分享 装饰 免费 付费 pro pro+ 订阅 锁定 应用名称 水印 标志">
+<h2>分享与装饰的免费与付费</h2>
+<p class="lead">分享卡片和基本装饰免费。专业编辑工具属于 PRO，结束后用我的模板直接生成属于 PRO+。</p>
+<ul>
+<li>免费：跑步与力量分享卡片，贴纸的添加、拖动、大小与旋转，3 种基本字体，基本 3 色，黑白与模糊，单色路线，快拍、帖子与正方形尺寸，导出和直接发到 Instagram 快拍。</li>
+<li>PRO：每个部分的字体、大小、字距与数字宽度，其余字体，照片取色、吸管与色码，撤销、图层、数值与快拍遮挡区域，路线上色，亮度、对比度、暖色与底部变暗，放到人物后面，我的模板。</li>
+<li>PRO+：训练或跑步结束时用我的模板直接生成分享卡片。</li>
+</ul>
+<p>卡片上的应用名称标识在所有等级中都会显示，没有去除功能。</p>
+</section>

@@ -1,0 +1,68 @@
+<section id="cards" data-ask="I want to share my run|Post a run to my Instagram story|What share cards are there|Make a card for a strength workout" data-keys="share sharing card share card instagram story feed route splits photo sticker transparent run strength post">
+<h2>Choosing a share card</h2>
+<p class="lead">Tap {{> runShareOpen}} on a run result, pick a {{> runShareKindRoute}}, {{> runShareKindSplits}}, {{> runShareKindPhoto}}, or {{> runShareKindSticker}} card, and make it in story or feed size.</p>
+<ol class="steps">
+<li>On the run result screen, tap {{> runShareOpen}}. For past runs, open them from {{> tabRecord}}.</li>
+<li>Pick a card from the chips at the top, then choose {{> shareFormatStory}} or {{> shareFormatFeed}} and a background color.</li>
+<li>Turn items such as {{> runShareShowRoute}}, {{> runShareShowHeartRate}}, and {{> runShareShowAscent}} on or off.</li>
+<li>Tap {{> shareToInstagramStory}} to open your Instagram story right away. To send it elsewhere or save it to Photos, use {{> shareOtherApps}}.</li>
+</ol>
+<p>The {{> runShareKindSticker}} card has a transparent background, so it goes into your story as a sticker you can move. The route is drawn only from the line with the start and finish areas and your privacy zones cut out, and cards carry no base map, coordinates, or clock time (the date is included). For strength workouts, make cards the same way from {{> shareWorkoutSummary}} on a record opened in {{> tabRecord}}, or from {{> shareCardsTooltip}} in {{> tabStats}}.</p>
+</section>
+
+<section id="studio" data-ask="I want to decorate my share card|How to customize a share card|Where do I open the editor|Move and resize stickers|Make a square card" data-keys="customize decorate editor studio magic wand sticker drag move resize rotate add text canvas square story feed transparent export">
+<h2>Opening the editor</h2>
+<p class="lead">Tap the magic wand button ({{> studioOpen}}) at the top of the run or strength share screen to open the editor.</p>
+<ol class="steps">
+<li>Tap the magic wand button at the top right of the share screen.</li>
+<li>Open {{> studioPanelStickers}}, {{> studioPanelFonts}}, {{> studioPanelColors}}, {{> studioPanelPhoto}}, {{> studioPanelLayers}}, or {{> studioPanelTemplates}} from the bar at the bottom.</li>
+<li>Add stickers and drag them with your finger, or change their size and rotation. Use {{> studioAddText}} to add text.</li>
+<li>Under {{> studioCanvasSize}}, choose {{> shareFormatStory}}, {{> shareFormatFeed}}, or {{> studioSquare}}, then export or post to your story.</li>
+</ol>
+<p>Run stickers include distance, time and pace, the elevation profile, and your route. Strength stickers include {{> studioMetricLiftSummary}}, {{> studioMetricLiftRecord}}, {{> studioMetricBigThree}}, {{> studioMetricVolumeVsLast}}, {{> studioMetricSetChips}}, {{> studioMetricMuscles}}, and more. Stickers with analysis values, such as grade-adjusted pace or the estimated 1RM trend, follow the plan that value belongs to. The app name on cards is always included, whatever your plan.</p>
+</section>
+
+<section id="fonts-colors" data-ask="Change the font on a share card|Use a different font just for the numbers|Pick colors from my photo|Pick a color with the eyedropper|Make the photo black and white|Color the route by pace" data-keys="font fonts number unit label size letter spacing tabular color colour eyedropper hex code contrast shadow grayscale black white blur brightness warmth bottom shade adjust route color pace grade layers undo safe area">
+<h2>Fonts, colors, and photos</h2>
+<p class="lead">Even within one sticker, pick a font and color separately for {{> studioPartValue}}, {{> studioPartUnit}}, and {{> studioPartLabel}}. Photos can be adjusted from grayscale and blur to brightness and contrast.</p>
+<ul>
+<li>{{> studioPanelFonts}}: a font per part, {{> studioFontSize}}, {{> studioLetterSpacing}}, and {{> studioTabular}}. If a font lacks some characters, the app tells you {{" studioFontFallback}}.</li>
+<li>{{> studioPanelColors}}: three basic colors, colors picked from your photo, {{> studioEyedropper}}, and {{> studioHex}}. It shows the contrast so you know the text is readable, and suggests {{> studioAddShadow}}.</li>
+<li>{{> studioPanelPhoto}}: {{> studioGrayscale}}, {{> studioBlur}}, {{> studioBrightness}}, {{> studioContrast}}, {{> studioWarmth}}, and {{> studioBottomShade}}.</li>
+<li>{{> studioRoute}}: {{> studioRouteSolid}}, or color the line by {{> studioRoutePace}} or {{> studioRouteGrade}}.</li>
+<li>{{> studioPanelLayers}}: {{> actionUndo}} and {{> studioRedo}}, {{> studioLayerUp}} and {{> studioLayerDown}}, {{> studioLayerHide}}, {{> studioLayerLock}}, position and rotation values, and {{> studioSafeArea}}.</li>
+</ul>
+<p>There are 22 fonts, all included in the app under the SIL Open Font License (OFL). Free use gets the three basic fonts for the whole sticker, the three basic colors, grayscale and blur, and a single-color route. A font per part and the other fonts, photo colors, the eyedropper and color codes, undo, layers, values and the safe area, route coloring, and brightness, contrast, warmth, and bottom shade are PRO.</p>
+</section>
+
+<section id="subject" data-ask="I want stickers to go behind the person|Text covers the person in my photo|Does putting stickers behind people upload my photo|It says no person was found in the photo" data-keys="behind person subject cutout cut out segmentation photo on device server privacy vision overlap">
+<h2>Putting stickers behind people <span class="pro">PRO</span></h2>
+<p class="lead">Turn on {{> studioSubjectFront}} in {{> studioPanelPhoto}}, and the person in your photo is cut out so stickers go behind them. Photos are processed only on your device.</p>
+<ol class="steps">
+<li>Pick a photo as the background in the {{> runShareKindPhoto}} card or in the editor.</li>
+<li>In {{> studioPanelPhoto}}, turn on {{> studioSubjectFront}}.</li>
+</ol>
+<p>{{" studioSubjectFrontHint}}. iPhone uses the Vision feature built into the device, and Android uses a person segmentation model included in the app, so your photo isn't sent anywhere. If the person is small or blurry, you'll see {{" studioNoPerson}}.</p>
+</section>
+
+<section id="templates" data-ask="I want to save my layout|How do I make a template|Use the same design for my next run|Have a share card ready when I finish" data-keys="template templates my templates save layout reuse automatic auto ready share finish result screen backup">
+<h2>My templates and auto-create</h2>
+<p class="lead">Save your layout, fonts, and colors with {{> studioTemplateSave}}, and they fill in with your next workout's values (PRO).</p>
+<ol class="steps">
+<li>When your layout is done in the editor, tap {{> studioTemplateSave}} in {{> studioPanelTemplates}}.</li>
+<li>Next time you share, pick that template in {{> studioPanelTemplates}} and the new values go in.</li>
+<li>Turn on the {{> studioTemplateAutoOn}} switch on a template, and after a workout or run it opens straight from {{> studioOpenAuto}} on the result screen (PRO+).</li>
+</ol>
+<p>Templates are stored only on this device and in backup files, and aren't uploaded by sync across devices. If your subscription ends, saved templates aren't deleted; only the PRO features lock again.</p>
+</section>
+
+<section id="plans" data-ask="Is share customization free|What's paid in the editor|Can I remove the app name from share cards" data-keys="share customize free paid pro pro+ subscription locked app name watermark logo">
+<h2>Free and paid in sharing</h2>
+<p class="lead">Share cards and basic customization are free. The pro editing tools are PRO, and auto-creating cards from your template when you finish is PRO+.</p>
+<ul>
+<li>Free: run and strength share cards, adding, dragging, resizing, and rotating stickers, three basic fonts, three basic colors, grayscale and blur, a single-color route, story, feed, and square sizes, and exporting and posting straight to Instagram stories.</li>
+<li>PRO: font, size, letter spacing, and number width per part, the other fonts, colors from your photo, the eyedropper and color codes, undo, layers, values, and the story safe area, route coloring, brightness, contrast, warmth, and bottom shade, putting stickers behind people, and my templates.</li>
+<li>PRO+: share cards made from your template right when a workout or run ends.</li>
+</ul>
+<p>The app name on cards is included on every plan, and there's no option to remove it.</p>
+</section>

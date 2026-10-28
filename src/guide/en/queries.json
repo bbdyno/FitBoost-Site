@@ -87,5 +87,14 @@
  "is running free": "running#plans",
  "run location permission": "help#run-location",
  "map not showing": "help#run-map",
- "course link won't open": "help#course-link"
+ "course link won't open": "help#course-link",
+ "share my run": "sharing#cards",
+ "instagram story share": "sharing#cards",
+ "customize share card": "sharing#studio",
+ "resize stickers": "sharing#studio",
+ "share card font": "sharing#fonts-colors",
+ "eyedropper": "sharing#fonts-colors",
+ "stickers behind person": "sharing#subject",
+ "save a template": "sharing#templates",
+ "remove app name from share card": "sharing#plans"
 }

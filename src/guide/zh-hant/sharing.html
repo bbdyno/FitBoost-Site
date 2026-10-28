@@ -1,0 +1,68 @@
+<section id="cards" data-ask="想分享跑步紀錄|把跑步發到 Instagram 限時動態|有哪些分享卡片|製作力量訓練紀錄卡片" data-keys="分享 紀錄分享 卡片 分享卡片 instagram 限時動態 貼文 路線 分段 照片 貼圖 透明 跑步 力量 發布">
+<h2>選擇分享卡片</h2>
+<p class="lead">在跑步結果中點 {{> runShareOpen}}，從 {{> runShareKindRoute}}、{{> runShareKindSplits}}、{{> runShareKindPhoto}}、{{> runShareKindSticker}} 卡片中選一種，做成限時動態或貼文尺寸。</p>
+<ol class="steps">
+<li>在跑步結果頁面點 {{> runShareOpen}}。過去的跑步可在 {{> tabRecord}} 中開啟。</li>
+<li>在上方的標籤列選擇卡片，再選擇 {{> shareFormatStory}} 或 {{> shareFormatFeed}} 尺寸和背景色。</li>
+<li>開啟或關閉 {{> runShareShowRoute}}、{{> runShareShowHeartRate}}、{{> runShareShowAscent}} 等項目。</li>
+<li>點 {{> shareToInstagramStory}} 會直接開啟 Instagram 限時動態。要傳到別處或儲存到相簿，請用 {{> shareOtherApps}}。</li>
+</ol>
+<p>{{> runShareKindSticker}} 卡片背景透明，會作為可移動的貼圖放進限時動態。路線只依截掉起點和終點附近及隱私區域後的線繪製，卡片中不含底圖、座標和時刻（含日期）。力量訓練可在 {{> tabRecord}} 中開啟紀錄後用 {{> shareWorkoutSummary}}，或在 {{> tabStats}} 中用 {{> shareCardsTooltip}}，以同樣方式製作卡片。</p>
+</section>
+
+<section id="studio" data-ask="想裝飾分享卡片|分享卡片怎麼裝飾|怎麼自訂分享卡片|在哪裡開啟編輯器|移動貼圖並調整大小|做成正方形卡片" data-keys="裝飾 自訂 編輯器 魔杖 貼圖 拖曳 移動 大小 旋轉 文字 畫布 正方形 限時動態 貼文 透明 匯出">
+<h2>開啟裝飾編輯器</h2>
+<p class="lead">點跑步或力量訓練分享頁面上方的魔杖按鈕（{{> studioOpen}}），即可開啟裝飾編輯器。</p>
+<ol class="steps">
+<li>點分享頁面右上角的魔杖按鈕。</li>
+<li>從下方列開啟 {{> studioPanelStickers}}、{{> studioPanelFonts}}、{{> studioPanelColors}}、{{> studioPanelPhoto}}、{{> studioPanelLayers}}、{{> studioPanelTemplates}}。</li>
+<li>加入貼圖後用手指拖曳，或調整大小和旋轉。用 {{> studioAddText}} 也可以加文字。</li>
+<li>在 {{> studioCanvasSize}} 中選擇 {{> shareFormatStory}}、{{> shareFormatFeed}} 或 {{> studioSquare}}，完成後匯出或發到限時動態。</li>
+</ol>
+<p>跑步貼圖有距離、時間、配速、海拔剖面和跑過的路線，力量貼圖有 {{> studioMetricLiftSummary}}、{{> studioMetricLiftRecord}}、{{> studioMetricBigThree}}、{{> studioMetricVolumeVsLast}}、{{> studioMetricSetChips}}、{{> studioMetricMuscles}} 等。坡度修正配速或估算 1RM 走勢這類分析值貼圖，依該值原本所屬的等級開放。卡片上的 App 名稱標示與等級無關，一律會顯示。</p>
+</section>
+
+<section id="fonts-colors" data-ask="更換分享卡片字體|只想把數字換成另一種字體|從照片中取色|用滴管選顏色|把照片變成黑白|依配速為路線上色" data-keys="字體 數字 單位 名稱 大小 字距 等寬 顏色 滴管 色碼 hex 對比 陰影 黑白 模糊 亮度 暖色 底部變暗 調整 路線顏色 配速 坡度 圖層 復原 遮擋區域">
+<h2>字體、顏色與照片</h2>
+<p class="lead">即使在同一個貼圖裡，也能為 {{> studioPartValue}}、{{> studioPartUnit}}、{{> studioPartLabel}} 分別選擇字體和顏色。照片可以從黑白、模糊調整到亮度、對比。</p>
+<ul>
+<li>{{> studioPanelFonts}}：每個部分的字體、{{> studioFontSize}}、{{> studioLetterSpacing}}、{{> studioTabular}}。字體中沒有的字會提示 {{" studioFontFallback}}。</li>
+<li>{{> studioPanelColors}}：基本 3 色、從照片中取的顏色、{{> studioEyedropper}}、{{> studioHex}}。會顯示對比以判斷文字是否清楚，並建議 {{> studioAddShadow}}。</li>
+<li>{{> studioPanelPhoto}}：{{> studioGrayscale}}、{{> studioBlur}}、{{> studioBrightness}}、{{> studioContrast}}、{{> studioWarmth}}、{{> studioBottomShade}}。</li>
+<li>{{> studioRoute}}：{{> studioRouteSolid}}，或依 {{> studioRoutePace}}、{{> studioRouteGrade}} 為線上色。</li>
+<li>{{> studioPanelLayers}}：{{> actionUndo}}、{{> studioRedo}}、{{> studioLayerUp}}、{{> studioLayerDown}}、{{> studioLayerHide}}、{{> studioLayerLock}}、位置與旋轉數值、{{> studioSafeArea}}。</li>
+</ul>
+<p>共有 22 種字體，全部以 SIL 開源字型授權（OFL）收錄在 App 中。免費可在整個貼圖上使用 3 種基本字體，以及基本 3 色、黑白、模糊和單色路線。每個部分單獨選字體和其餘字體、照片取色、滴管、色碼、復原、圖層、數值、遮擋區域、路線上色，以及亮度、對比、暖色、底部變暗屬於 PRO。</p>
+</section>
+
+<section id="subject" data-ask="想把貼圖放到人物後面|照片裡的人被文字擋住了|放到人物後面會把照片傳到伺服器嗎|提示在照片中找不到人物" data-keys="人物 後面 去背 主體 分割 照片 裝置內 伺服器 隱私 視覺 疊放">
+<h2>放到人物後面 <span class="pro">PRO</span></h2>
+<p class="lead">在 {{> studioPanelPhoto}} 中開啟 {{> studioSubjectFront}}，會去背照片中的人物，讓貼圖位於人物後面。照片只在裝置內處理。</p>
+<ol class="steps">
+<li>在 {{> runShareKindPhoto}} 卡片或編輯器中選擇照片作為背景。</li>
+<li>在 {{> studioPanelPhoto}} 中開啟 {{> studioSubjectFront}}。</li>
+</ol>
+<p>{{" studioSubjectFrontHint}}。iPhone 使用裝置內建的視覺功能，Android 使用 App 內建的人物分割模型，因此照片不會傳送到任何地方。人物太小或模糊時會顯示 {{" studioNoPerson}}。</p>
+</section>
+
+<section id="templates" data-ask="想儲存裝飾好的版面|怎麼製作我的範本|下次紀錄沿用同樣的設計|訓練結束後自動產生分享卡片" data-keys="範本 我的範本 儲存 版面 重複使用 自動 直接 分享 結束 結果頁面 備份">
+<h2>我的範本與自動產生</h2>
+<p class="lead">用 {{> studioTemplateSave}} 儲存裝飾好的版面、字體和顏色，下次紀錄的數值會直接填進去（PRO）。</p>
+<ol class="steps">
+<li>在編輯器中排好版面後，點 {{> studioPanelTemplates}} 中的 {{> studioTemplateSave}}。</li>
+<li>下次分享時在 {{> studioPanelTemplates}} 中選擇該範本，就會填入新紀錄的數值。</li>
+<li>開啟範本的 {{> studioTemplateAutoOn}} 開關後，訓練或跑步結束時可從結果頁面的 {{> studioOpenAuto}} 直接開啟（PRO+）。</li>
+</ol>
+<p>我的範本只儲存在本裝置和備份檔案中，不會透過裝置間同步上傳。訂閱結束後，已儲存的範本不會刪除，只是 PRO 功能重新鎖定。</p>
+</section>
+
+<section id="plans" data-ask="分享裝飾免費嗎|編輯器中哪些要付費|能去掉分享卡片上的 App 名稱嗎" data-keys="分享 裝飾 免費 付費 pro pro+ 訂閱 鎖定 App名稱 浮水印 標誌">
+<h2>分享與裝飾的免費與付費</h2>
+<p class="lead">分享卡片和基本裝飾免費。專業編輯工具屬於 PRO，結束後用我的範本直接產生屬於 PRO+。</p>
+<ul>
+<li>免費：跑步與力量分享卡片，貼圖的加入、拖曳、大小與旋轉，3 種基本字體，基本 3 色，黑白與模糊，單色路線，限時動態、貼文與正方形尺寸，匯出和直接發到 Instagram 限時動態。</li>
+<li>PRO：每個部分的字體、大小、字距與數字寬度，其餘字體，照片取色、滴管與色碼，復原、圖層、數值與限時動態遮擋區域，路線上色，亮度、對比、暖色與底部變暗，放到人物後面，我的範本。</li>
+<li>PRO+：訓練或跑步結束時用我的範本直接產生分享卡片。</li>
+</ul>
+<p>卡片上的 App 名稱標示在所有等級中都會顯示，沒有去除功能。</p>
+</section>

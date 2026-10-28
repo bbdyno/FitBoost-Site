@@ -1,0 +1,68 @@
+<section id="cards" data-ask="달리기 기록을 공유하고 싶어요|인스타 스토리에 달리기 올리기|공유 카드는 어떤 게 있나요|근력 운동 기록 카드 만들기" data-keys="공유 기록공유 카드 공유카드 인스타 인스타그램 스토리 피드 경로 구간 사진 스티커 투명 달리기 근력 올리기">
+<h2>공유 카드 고르기</h2>
+<p class="lead">달리기 결과의 {{> runShareOpen}}을 누르면 {{> runShareKindRoute}}·{{> runShareKindSplits}}·{{> runShareKindPhoto}}·{{> runShareKindSticker}} 카드 가운데 하나를 골라 스토리나 피드 크기로 만듭니다.</p>
+<ol class="steps">
+<li>달리기 결과 화면에서 {{> runShareOpen}}을 누릅니다. 지난 달리기는 {{> tabRecord}}에서 열면 됩니다.</li>
+<li>위 칩 줄에서 카드를 고르고, {{> shareFormatStory}}·{{> shareFormatFeed}} 크기와 바탕색을 고릅니다.</li>
+<li>{{> runShareShowRoute}}, {{> runShareShowHeartRate}}, {{> runShareShowAscent}} 같은 넣을 칸을 켜고 끕니다.</li>
+<li>{{> shareToInstagramStory}}를 누르면 인스타그램 스토리가 바로 열립니다. 다른 곳에 보내거나 사진에 저장하려면 {{> shareOtherApps}}를 씁니다.</li>
+</ol>
+<p>{{> runShareKindSticker}} 카드는 바탕이 투명해 스토리에서 움직일 수 있는 스티커로 들어갑니다. 경로는 출발·도착 근처와 가리는 곳을 잘라 낸 길로만 그리고, 카드에는 지도 바탕·좌표·시각이 들어가지 않습니다(날짜는 들어갑니다). 근력 운동은 {{> tabRecord}}에서 연 기록의 {{> shareWorkoutSummary}}나 {{> tabStats}}의 {{> shareCardsTooltip}}로 같은 방식의 카드를 만듭니다.</p>
+</section>
+
+<section id="studio" data-ask="공유 카드를 꾸미고 싶어요|공유 카드 꾸미는 법|꾸미기 편집기는 어디서 여나요|스티커를 옮기고 크기 바꾸기|정사각 카드로 만들기" data-keys="꾸미기 편집기 요술봉 스티커 끌기 옮기기 크기 회전 글넣기 캔버스 정사각 스토리 피드 투명 내보내기">
+<h2>꾸미기 열기</h2>
+<p class="lead">달리기·근력 공유 화면 위의 요술봉 버튼({{> studioOpen}})을 누르면 꾸미기 편집기가 열립니다.</p>
+<ol class="steps">
+<li>공유 화면 오른쪽 위의 요술봉 버튼을 누릅니다.</li>
+<li>아래 칸에서 {{> studioPanelStickers}}, {{> studioPanelFonts}}, {{> studioPanelColors}}, {{> studioPanelPhoto}}, {{> studioPanelLayers}}, {{> studioPanelTemplates}}를 엽니다.</li>
+<li>스티커를 넣고 손가락으로 끌어 옮기거나 크기·회전을 바꿉니다. {{> studioAddText}}로 글도 넣습니다.</li>
+<li>{{> studioCanvasSize}}에서 {{> shareFormatStory}}·{{> shareFormatFeed}}·{{> studioSquare}}를 고르고, 다 되면 내보내거나 스토리에 올립니다.</li>
+</ol>
+<p>달리기 스티커에는 거리·시간·페이스, 고도 단면, 달린 길이 있고, 근력 스티커에는 {{> studioMetricLiftSummary}}, {{> studioMetricLiftRecord}}, {{> studioMetricBigThree}}, {{> studioMetricVolumeVsLast}}, {{> studioMetricSetChips}}, {{> studioMetricMuscles}} 등이 있습니다. 경사 보정 페이스나 추정 1RM 흐름처럼 분석 값 스티커는 그 값이 원래 속한 등급을 따릅니다. 카드에 들어가는 앱 이름 표시는 등급과 상관없이 늘 들어갑니다.</p>
+</section>
+
+<section id="fonts-colors" data-ask="공유 카드 글꼴 바꾸기|숫자만 다른 글꼴로 바꾸고 싶어요|사진에서 색 뽑기|스포이드로 색 고르기|사진을 흑백으로|경로 색을 페이스로 칠하기" data-keys="글꼴 폰트 숫자 단위 이름 크기 자간 숫자폭 색 색상 스포이드 색코드 hex 대비 그림자 흑백 흐림 밝기 따뜻함 아래어둡게 보정 경로색 페이스 경사 레이어 되돌리기 가림영역">
+<h2>글꼴·색·사진</h2>
+<p class="lead">한 스티커 안에서도 {{> studioPartValue}}·{{> studioPartUnit}}·{{> studioPartLabel}} 칸마다 글꼴과 색을 따로 고릅니다. 사진은 흑백·흐림부터 밝기·대비까지 고칩니다.</p>
+<ul>
+<li>{{> studioPanelFonts}}: 칸마다 글꼴, {{> studioFontSize}}, {{> studioLetterSpacing}}, {{> studioTabular}}. 글꼴에 없는 글자는 {{" studioFontFallback}}라고 알립니다.</li>
+<li>{{> studioPanelColors}}: 기본 3색, 사진에서 뽑은 색, {{> studioEyedropper}}, {{> studioHex}}. 글이 잘 읽히는지 대비를 보여 주고 {{> studioAddShadow}}를 권합니다.</li>
+<li>{{> studioPanelPhoto}}: {{> studioGrayscale}}, {{> studioBlur}}, {{> studioBrightness}}, {{> studioContrast}}, {{> studioWarmth}}, {{> studioBottomShade}}.</li>
+<li>{{> studioRoute}}: {{> studioRouteSolid}}, 또는 {{> studioRoutePace}}·{{> studioRouteGrade}}로 선에 색을 입힙니다.</li>
+<li>{{> studioPanelLayers}}: {{> actionUndo}}·{{> studioRedo}}, {{> studioLayerUp}}·{{> studioLayerDown}}, {{> studioLayerHide}}, {{> studioLayerLock}}, 위치·회전 수치, {{> studioSafeArea}}.</li>
+</ul>
+<p>글꼴은 22종이며 모두 오픈 폰트 라이선스(SIL OFL) 글꼴로 앱에 들어 있습니다. 무료는 기본 글꼴 3개를 스티커 전체에 쓰고 기본 3색, 흑백·흐림, 한 색 경로를 씁니다. 칸마다 글꼴과 나머지 글꼴, 사진 색·스포이드·색 코드, 되돌리기·레이어·수치·가림 영역, 경로 색 입히기, 밝기·대비·따뜻함·아래 어둡게는 PRO입니다.</p>
+</section>
+
+<section id="subject" data-ask="스티커를 사람 뒤로 보내고 싶어요|사진 속 사람 앞에 글씨가 가려져요|사람 뒤로 보내기는 사진을 서버로 보내나요|사진에서 사람을 찾지 못했어요라고 떠요" data-keys="사람 뒤로 보내기 오려내기 누끼 인물 분리 사진 기기안 서버 개인정보 비전 겹치기">
+<h2>사람 뒤로 보내기 <span class="pro">PRO</span></h2>
+<p class="lead">{{> studioPanelPhoto}}의 {{> studioSubjectFront}}를 켜면 사진 속 사람을 오려 스티커가 사람 뒤로 갑니다. 사진은 기기 안에서만 처리합니다.</p>
+<ol class="steps">
+<li>{{> runShareKindPhoto}} 카드나 꾸미기에서 사진을 바탕으로 고릅니다.</li>
+<li>{{> studioPanelPhoto}}에서 {{> studioSubjectFront}}를 켭니다.</li>
+</ol>
+<p>{{" studioSubjectFrontHint}}. iPhone은 기기에 들어 있는 비전 기능을, Android는 앱에 들어 있는 사람 분리 모델을 써서 사진을 어디로도 보내지 않습니다. 사람이 작거나 흐리게 찍혔으면 {{" studioNoPerson}}라고 뜹니다.</p>
+</section>
+
+<section id="templates" data-ask="꾸민 배치를 저장하고 싶어요|내 틀은 어떻게 만드나요|다음 기록에도 같은 디자인으로|운동 끝나면 공유 카드가 바로 만들어지게" data-keys="내틀 틀 템플릿 저장 배치 다시쓰기 자동 바로 공유 끝나면 결과화면 백업">
+<h2>내 틀과 자동 만들기</h2>
+<p class="lead">꾸민 배치·글꼴·색을 {{> studioTemplateSave}}로 저장해 두면 다음 기록 값으로 바로 채워집니다(PRO).</p>
+<ol class="steps">
+<li>꾸미기에서 배치를 마치고 {{> studioPanelTemplates}}의 {{> studioTemplateSave}}를 누릅니다.</li>
+<li>다음에 공유할 때 {{> studioPanelTemplates}}에서 그 틀을 고르면 새 기록 값이 들어갑니다.</li>
+<li>틀의 {{> studioTemplateAutoOn}} 스위치를 켜면 운동·달리기가 끝난 뒤 결과 화면의 {{> studioOpenAuto}}로 바로 열립니다(PRO+).</li>
+</ol>
+<p>내 틀은 이 기기와 백업 파일에만 저장하고 기기 간 동기화로 올리지 않습니다. 구독이 끝나도 저장한 틀은 지우지 않고 PRO 기능만 다시 잠깁니다.</p>
+</section>
+
+<section id="plans" data-ask="공유 꾸미기는 무료인가요|꾸미기에서 유료인 건 뭐예요|공유 카드 앱 이름을 지울 수 있나요" data-keys="공유 꾸미기 무료 유료 pro pro+ 구독 잠김 앱이름 워터마크 로고">
+<h2>공유와 꾸미기의 무료와 유료</h2>
+<p class="lead">공유 카드와 기본 꾸미기는 무료입니다. 전문 꾸미기 도구는 PRO, 끝나면 내 틀로 바로 만들기는 PRO+입니다.</p>
+<ul>
+<li>무료: 달리기·근력 공유 카드, 스티커 넣기·끌기·크기·회전, 기본 글꼴 3개, 기본 3색, 흑백·흐림, 한 색 경로, 스토리·피드·정사각, 내보내기와 인스타 스토리 바로 올리기.</li>
+<li>PRO: 칸마다 글꼴·크기·자간·숫자 폭, 나머지 글꼴, 사진에서 뽑은 색·스포이드·색 코드, 되돌리기·레이어·수치·스토리 가림 영역, 경로 색 입히기, 밝기·대비·따뜻함·아래 어둡게, 사람 뒤로 보내기, 내 틀.</li>
+<li>PRO+: 운동·달리기가 끝나면 내 틀로 공유 카드 바로 만들기.</li>
+</ul>
+<p>카드의 앱 이름 표시는 어느 등급에서나 들어가며 지우는 기능은 없습니다.</p>
+</section>
