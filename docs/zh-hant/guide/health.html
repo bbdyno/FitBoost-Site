@@ -51,7 +51,7 @@
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="本頁內容"><p>本頁內容</p><ol><li><a href="#connect">連線健康 App</a></li><li><a href="#what">交換的資料</a></li><li><a href="#import">匯入手錶訓練</a></li><li><a href="#merge">合併重複的訓練</a></li></ol></nav>
+<nav class="g-toc" aria-label="本頁內容"><p>本頁內容</p><ol><li><a href="#connect">連線健康 App</a></li><li><a href="#what">交換的資料</a></li><li><a href="#import">匯入手錶訓練</a></li><li><a href="#runs">從健康 App 匯入的跑步</a></li><li><a href="#merge">合併重複的訓練</a></li></ol></nav>
 <section class="g-sec" id="connect">
 <h2>連線健康 App</h2>
 <p class="lead">iPhone 連線 Apple 健康，Android 連線 Health Connect。免費。</p>
@@ -76,7 +76,18 @@
 <section class="g-sec" id="import">
 <h2>匯入手錶訓練</h2>
 <p class="lead">把健康 App 中最近 30 天的訓練匯入 FitBoost 記錄。</p>
-<p>在<a href="#connect">健康 App 連線頁面</a>點選 <span class="ui"><b>匯入手錶訓練</b></span>。FitBoost 自己寫入的訓練不會再次匯入。</p>
+<p>在<a href="#connect">健康 App 連線頁面</a>點選 <span class="ui"><b>匯入手錶訓練</b></span>。FitBoost 自己寫入的訓練不會再次匯入。跑步會作為跑步紀錄匯入，見<a href="#runs">從健康 App 匯入的跑步</a>。</p>
+</section>
+
+<section class="g-sec" id="runs">
+<h2>從健康 App 匯入的跑步</h2>
+<p class="lead">其他 App 寫入健康 App 的跑步（戶外、跑步機），用 <span class="ui"><b>匯入手錶訓練</b></span> 匯入後會成為跑步紀錄，顯示在跑步模式中。</p>
+<ol class="steps">
+<li>在你使用的 App 中開啟把訓練寫入健康 App 的設定。iPhone 上由 Garmin Connect、Strava 等 App 寫入 Apple 健康。Android 上由 Samsung Health、Garmin Connect、Strava 等 App 寫入 Health Connect。</li>
+<li>在 FitBoost 中<a href="#connect">連線健康 App</a>，點 <span class="ui"><b>匯入手錶訓練</b></span>。</li>
+<li>在跑步模式的 <span class="ui"><b>記錄</b></span> 中開啟匯入的跑步查看結果，再分享和裝飾。</li>
+</ol>
+<p>匯入的跑步會用於跑步模式的紀錄、統計、教練、每週跑量和裝飾，跑步機跑步會作為室內跑步匯入。距離和時間使用健康 App 的數值，路線和心率在開啟結果頁面時從健康 App 重新讀取。健康 App 中沒有路線時不顯示路線。每次匯入都會重新讀取至少最近 7 天，所以較晚寫入健康 App 的跑步也會在下次匯入時進來。1.8.0 之前作為一列有氧匯入的跑步，在這個範圍內也會變成跑步紀錄，改過的名稱和備註保持不變。騎車等其他有氧仍是有氧。沒有直接連線 Garmin Connect 帳號的功能，請透過健康 App，或<a href="running.html#import">用 GPX、TCX 檔案匯入</a>。</p>
 </section>
 
 <section class="g-sec" id="merge">

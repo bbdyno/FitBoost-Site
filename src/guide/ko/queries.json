@@ -121,5 +121,10 @@
  "오늘 달리기 처방": "running#coach",
  "다리 회복": "running#coach",
  "러닝 모드 근력 코치": "running#coach",
- "왜 이 달리기를 권하나요": "running#coach"
+ "왜 이 달리기를 권하나요": "running#coach",
+ "가민 커넥트 달리기가 안 보여요": "health#runs",
+ "삼성 헬스 달리기 가져오기": "health#runs",
+ "스트라바 달리기": "health#runs",
+ "건강 앱 달리기가 유산소로 나와요": "health#runs",
+ "가민 커넥트 계정 연결": "health#runs"
 }

@@ -51,7 +51,7 @@
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="このページの内容"><p>このページの内容</p><ol><li><a href="#connect">ヘルスケアとつなぐ</a></li><li><a href="#what">やり取りするもの</a></li><li><a href="#import">スマートウォッチの記録を取り込む</a></li><li><a href="#merge">重複したワークアウトをまとめる</a></li></ol></nav>
+<nav class="g-toc" aria-label="このページの内容"><p>このページの内容</p><ol><li><a href="#connect">ヘルスケアとつなぐ</a></li><li><a href="#what">やり取りするもの</a></li><li><a href="#import">スマートウォッチの記録を取り込む</a></li><li><a href="#runs">ヘルスケアから入るラン</a></li><li><a href="#merge">重複したワークアウトをまとめる</a></li></ol></nav>
 <section class="g-sec" id="connect">
 <h2>ヘルスケアとつなぐ</h2>
 <p class="lead">iPhoneはApple Health、AndroidはHealth Connectとつなぎます。無料です。</p>
@@ -76,7 +76,18 @@
 <section class="g-sec" id="import">
 <h2>スマートウォッチの記録を取り込む</h2>
 <p class="lead">ヘルスケアにたまった直近30日のワークアウトをFitBoostの記録に取り込みます。</p>
-<p><a href="#connect">ヘルスケア連携の画面</a>で<span class="ui"><b>スマートウォッチの記録を取り込む</b></span>をタップします。FitBoostが送ったワークアウトは取り込み直しません。</p>
+<p><a href="#connect">ヘルスケア連携の画面</a>で<span class="ui"><b>スマートウォッチの記録を取り込む</b></span>をタップします。FitBoostが送ったワークアウトは取り込み直しません。ランはランの記録として入ります。<a href="#runs">ヘルスケアから入るラン</a>をご覧ください。</p>
+</section>
+
+<section class="g-sec" id="runs">
+<h2>ヘルスケアから入るラン</h2>
+<p class="lead">ほかのアプリがヘルスケアに書き込んだラン（屋外・トレッドミル）は、<span class="ui"><b>スマートウォッチの記録を取り込む</b></span>で取り込むとランの記録になり、ランニングモードに表示されます。</p>
+<ol class="steps">
+<li>使っているアプリで、ヘルスケアへのワークアウトの書き込みをオンにします。iPhoneではGarmin ConnectやStravaなどのアプリがApple Healthに書き込みます。AndroidではSamsung Health・Garmin Connect・StravaなどのアプリがHealth Connectに書き込みます。</li>
+<li>FitBoostで<a href="#connect">ヘルスケアとつなぎ</a>、<span class="ui"><b>スマートウォッチの記録を取り込む</b></span>をタップします。</li>
+<li>ランニングモードの<span class="ui"><b>記録</b></span>で取り込んだランを開いて結果を見て、共有・カスタマイズします。</li>
+</ol>
+<p>取り込んだランは、ランニングモードの記録・統計・コーチ・週間距離とカスタマイズに使われ、トレッドミルのランは屋内ランとして入ります。距離・時間はヘルスケアの値を使い、ルート・心拍は結果画面を開いたときにヘルスケアから読み直します。ヘルスケアにルートがなければルートは表示されません。取り込みは少なくとも直近7日を毎回読み直すので、ヘルスケアに遅れて入ったランも次の取り込みで入ります。1.8.0より前に有酸素1行として入ったランも、この期間内ならランの記録に変わり、直した名前・メモはそのまま残ります。自転車などほかの有酸素は有酸素のままです。Garmin Connectのアカウントに直接つなぐ機能はないので、ヘルスケアを経由するか<a href="running.html#import">GPX・TCXファイルで取り込みます</a>。</p>
 </section>
 
 <section class="g-sec" id="merge">
