@@ -53,6 +53,17 @@
 <p>Tap {{> runShareOpen}} to make a route, splits, photo, or sticker card and post it straight to your Instagram story. See <a href="sharing.html#cards">Choosing a share card</a>.</p>
 </section>
 
+<section id="import" data-ask="I want to import runs from another app|Import an activity file exported from my watch|Add a run from a TCX file|Can I customize runs from other apps|It says to import course files from Courses" data-keys="import another app other apps watch exported activity activity file gpx tcx file record bring in move load run result share customize same time duplicate">
+<h2>Importing runs from other apps</h2>
+<p class="lead">Pick a GPX or TCX activity file exported from another app or watch under {{> runImportFile}} at the bottom of {{> tabHome}} in running mode, and it becomes a run in your log.</p>
+<ol class="steps">
+<li>Export the run as a GPX or TCX file from the other app or your watch app, and keep it on your phone.</li>
+<li>Tap {{> runImportFile}} at the bottom of {{> tabHome}} in running mode and pick the file.</li>
+<li>When the result screen opens, share and customize it with {{> runShareOpen}} just like a run you tracked in the app.</li>
+</ol>
+<p>Only activity files with timestamps come in as runs, and heart rate and cadence are read too when the file has them. If you pick a course file without timestamps, you'll see {{" runImportFailed}} Open course files in <a href="#courses">Making and importing courses</a>. If you import a run that started at the same time again, no new one is made and the existing run opens.</p>
+</section>
+
 <section id="zones" data-ask="How are pace zones set|How do I add a reference result|What pace is my easy run|See my predicted marathon time|Change the heart-rate zone basis" data-keys="reference result baseline pace zones zone easy marathon threshold interval predicted time prediction vdot daniels 3k 5k 10k half marathon heart rate zones max heart rate threshold heart rate">
 <h2>Reference result and pace zones</h2>
 <p class="lead">Enter one recent result as your reference, and your {{> runZoneEasy}}, {{> runZoneMarathon}}, {{> runZoneThreshold}}, and {{> runZoneInterval}} paces and predicted times are set.</p>
@@ -83,7 +94,7 @@
 <li>Pick {{> courseFromRun}}, {{> courseDraw}}, or {{> courseFromFile}}.</li>
 <li>Name it and save, then run it with {{> courseRunThis}} on the course screen.</li>
 </ol>
-<p>{{> courseDraw}} joins the points you tap on the map with straight lines. In builds where maps aren't available, this option is hidden. Files can be GPX or TCX. When you run a course, you race your past self, and {{> courseBestLabel}} and your runs build up on the course screen. Marking part of a course as {{> courseSegments}} to see records for just that stretch is PRO.</p>
+<p>{{> courseDraw}} joins the points you tap on the map with straight lines. In builds where maps aren't available, this option is hidden. Files can be GPX or TCX. To bring in a whole run you recorded in another app, use <a href="#import">Importing runs from other apps</a>. When you run a course, you race your past self, and {{> courseBestLabel}} and your runs build up on the course screen. Marking part of a course as {{> courseSegments}} to see records for just that stretch is PRO.</p>
 </section>
 
 <section id="share-course" data-ask="I want to send a course to someone|How do I open a course link I received|Send a course as a QR code|Does sharing a course send my record too" data-keys="send share link qr code file receive received course messenger server my record include paste copied link">
@@ -123,7 +134,7 @@
 <h2>Free and paid in running</h2>
 <p class="lead">Measuring is all free. PRO adds analysis that interprets your runs and structured workouts, and PRO+ adds a weekly running plan that works around strength recovery.</p>
 <ul>
-<li>Free: measuring with your phone or three kinds of watch, live pace and heart rate, auto laps and splits, reference result, pace zones, and predicted times, my courses (same-route detection, drawing, files, receiving), sending by link, QR code, or file, GPX export, privacy zones, writing to health apps, the single-run limit, and metric evidence.</li>
+<li>Free: measuring with your phone or three kinds of watch, live pace and heart rate, auto laps and splits, reference result, pace zones, and predicted times, my courses (same-route detection, drawing, files, receiving), sending by link, QR code, or file, GPX export, importing GPX or TCX runs from other apps, privacy zones, writing to health apps, the single-run limit, and metric evidence.</li>
 <li>PRO: grade-adjusted pace, heart-rate drift, heart-rate load, session load, critical speed, fitness and fatigue combined with strength, structured workouts (step-by-step threshold, interval, and hill sessions), race-day mode (goal pacer and finish prediction), and my segment records on courses.</li>
 <li>PRO+: a running-focused weekly plan that works around strength recovery (including easing off the day after a leg workout).</li>
 </ul>

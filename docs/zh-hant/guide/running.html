@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>跑步 — FitBoost</title>
-<meta name="description" content="切換到跑步模式，用手機和手錶測量跑步，使用配速區間和我的路線。">
+<meta name="description" content="切換到跑步模式，用手機和手錶測量跑步或匯入其他 App 的紀錄，使用配速區間和我的路線。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,14 +44,14 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="目前位置"><a href="./">使用指南</a></nav>
 <h1>跑步</h1>
-<p class="g-lede">切換到跑步模式，用手機和手錶測量跑步，使用配速區間和我的路線。</p>
+<p class="g-lede">切換到跑步模式，用手機和手錶測量跑步或匯入其他 App 的紀錄，使用配速區間和我的路線。</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">搜尋指南</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="搜尋指南"
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="本頁內容"><p>本頁內容</p><ol><li><a href="#mode">切換到跑步模式</a></li><li><a href="#start-run">開始跑步</a></li><li><a href="#during">跑步中的畫面與語音提示</a></li><li><a href="#result">結果與指標依據</a></li><li><a href="#zones">基準成績與配速區間</a></li><li><a href="#strength">與力量訓練連動的處方</a></li><li><a href="#courses">建立與匯入我的路線</a></li><li><a href="#share-course">傳送與接收路線</a></li><li><a href="#privacy-zones">隱藏位置</a></li><li><a href="#watch">用手錶跑步</a></li><li><a href="#plans">跑步的免費與付費</a></li></ol></nav>
+<nav class="g-toc" aria-label="本頁內容"><p>本頁內容</p><ol><li><a href="#mode">切換到跑步模式</a></li><li><a href="#start-run">開始跑步</a></li><li><a href="#during">跑步中的畫面與語音提示</a></li><li><a href="#result">結果與指標依據</a></li><li><a href="#import">匯入其他 App 的跑步</a></li><li><a href="#zones">基準成績與配速區間</a></li><li><a href="#strength">與力量訓練連動的處方</a></li><li><a href="#courses">建立與匯入我的路線</a></li><li><a href="#share-course">傳送與接收路線</a></li><li><a href="#privacy-zones">隱藏位置</a></li><li><a href="#watch">用手錶跑步</a></li><li><a href="#plans">跑步的免費與付費</a></li></ol></nav>
 <section class="g-sec" id="mode">
 <h2>切換到跑步模式</h2>
 <p class="lead">點 <span class="ui"><b>首頁</b></span> 頂部右側雙格按鈕中的跑者一側，整個 App 就會切換到跑步模式。也可以在 <span class="ui"><b>選單</b></span> 的 <span class="ui"><b>訓練模式</b></span> 一列切換。</p>
@@ -104,7 +104,18 @@
 </ul>
 <p>坡度修正配速是估算在平地上會是多少的值，有高估下坡效益的限制。心率漂移比較前半程和後半程的效率，只在強度穩定、超過 20 分鐘的跑步中計算。這次成績適合作為基準成績時，會出現 <span class="ui"><b>設為基準</b></span> 按鈕。過去的跑步可在 <span class="ui"><b>記錄</b></span> 中點開再看。</p>
 
-<p>點 <span class="ui"><b>分享紀錄</b></span> 可製作路線、分段、照片或貼圖卡片，並直接發到 Instagram 限時動態。見<a href="sharing.html#cards">選擇分享卡片</a>。</p>
+<p>點 <span class="ui"><b>分享紀錄</b></span> 可製作路線、分段、照片或貼紙卡片，並直接發到 Instagram 限時動態。見<a href="sharing.html#cards">選擇分享卡片</a>。</p>
+</section>
+
+<section class="g-sec" id="import">
+<h2>匯入其他 App 的跑步</h2>
+<p class="lead">在跑步模式 <span class="ui"><b>首頁</b></span> 最下方的 <span class="ui"><b>匯入其他 App 的跑步</b></span> 中，選擇其他 App 或手錶的 GPX、TCX 活動檔案，就會產生一筆跑步紀錄。</p>
+<ol class="steps">
+<li>在其他 App 或手錶 App 中把跑步匯出為 GPX 或 TCX 檔案，放到手機上。</li>
+<li>在跑步模式 <span class="ui"><b>首頁</b></span> 最下方點 <span class="ui"><b>匯入其他 App 的跑步</b></span>，選擇檔案。</li>
+<li>結果頁面開啟後，像在 App 中測量的跑步一樣，用 <span class="ui"><b>分享紀錄</b></span> 分享和裝飾。</li>
+</ol>
+<p>只有含時間的活動檔案才能作為跑步匯入，檔案中有心率和步頻時也會一併讀取。選擇不含時間的路線檔案時，會顯示 <q class="say">只能匯入含時間的跑步檔案。路線檔案請在路線中匯入。</q> 路線檔案請在<a href="#courses">建立與匯入我的路線</a>中開啟。再次匯入同一時間開始的紀錄時，不會新增，而是開啟已有的紀錄。</p>
 </section>
 
 <section class="g-sec" id="zones">
@@ -137,7 +148,7 @@
 <li>在 <span class="ui"><b>過去的跑步</b></span>、<span class="ui"><b>在地圖上畫</b></span>、<span class="ui"><b>檔案</b></span> 中選一種。</li>
 <li>取名儲存後，在路線頁面用 <span class="ui"><b>跑這條路線</b></span> 開跑。</li>
 </ol>
-<p><span class="ui"><b>在地圖上畫</b></span> 會用直線連接你在地圖上點下的點。在無法使用地圖的版本中，這一項會被隱藏。檔案可以開啟 GPX 和 TCX。跑路線時會和過去的自己比拼，路線頁面會累積 <span class="ui"><b>我的最佳</b></span> 和跑步紀錄。把路線的一部分設為 <span class="ui"><b>我的分段</b></span>、單獨查看那一段的紀錄屬於 PRO。</p>
+<p><span class="ui"><b>在地圖上畫</b></span> 會用直線連接你在地圖上點下的點。在無法使用地圖的版本中，這一項會被隱藏。檔案可以開啟 GPX 和 TCX。要把在其他 App 中跑的整筆紀錄匯入，請用<a href="#import">匯入其他 App 的跑步</a>。跑路線時會和過去的自己比拼，路線頁面會累積 <span class="ui"><b>我的最佳</b></span> 和跑步紀錄。把路線的一部分設為 <span class="ui"><b>我的分段</b></span>、單獨查看那一段的紀錄屬於 PRO。</p>
 </section>
 
 <section class="g-sec" id="share-course">
@@ -177,7 +188,7 @@
 <h2>跑步的免費與付費</h2>
 <p class="lead">測量全部免費。PRO 增加解讀紀錄的分析和結構化訓練，PRO+ 增加配合力量恢復的每週跑步計畫。</p>
 <ul>
-<li>免費：用手機和三種手錶測量，即時配速和心率，自動分段與分段紀錄，基準成績、配速區間和預計成績，我的路線（辨識同一條路、繪製、檔案、接收），透過連結、QR 碼、檔案傳送，GPX 匯出，隱私區域，寫入健康 App，單次距離上限，指標依據。</li>
+<li>免費：用手機和三種手錶測量，即時配速和心率，自動分段與分段紀錄，基準成績、配速區間和預計成績，我的路線（辨識同一條路、繪製、檔案、接收），透過連結、QR 碼、檔案傳送，GPX 匯出，匯入其他 App 的 GPX、TCX 跑步，隱私區域，寫入健康 App，單次距離上限，指標依據。</li>
 <li>PRO：坡度修正配速、心率漂移、心率負荷、訓練負荷、臨界速度，與力量合併的體能·疲勞，結構化訓練（閾值、間歇、坡道逐步指導），比賽日模式（目標配速員和完賽預測），路線內的我的分段紀錄。</li>
 <li>PRO+：配合力量恢復、以跑步為主的每週計畫（包括練下肢後隔天改為輕鬆）。</li>
 </ul>

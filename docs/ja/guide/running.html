@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ランニング — FitBoost</title>
-<meta name="description" content="ランニングモードに切り替え、スマホやウォッチでランを計測し、ペースゾーンとマイコースを使う方法です。">
+<meta name="description" content="ランニングモードに切り替え、スマホやウォッチでランを計測したり他のアプリの記録を取り込んだりし、ペースゾーンとマイコースを使う方法です。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,14 +44,14 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="現在の位置"><a href="./">使い方ガイド</a></nav>
 <h1>ランニング</h1>
-<p class="g-lede">ランニングモードに切り替え、スマホやウォッチでランを計測し、ペースゾーンとマイコースを使う方法です。</p>
+<p class="g-lede">ランニングモードに切り替え、スマホやウォッチでランを計測したり他のアプリの記録を取り込んだりし、ペースゾーンとマイコースを使う方法です。</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">ガイドを検索</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="ガイドを検索"
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="このページの内容"><p>このページの内容</p><ol><li><a href="#mode">ランニングモードに切り替える</a></li><li><a href="#start-run">ランを始める</a></li><li><a href="#during">ラン中の画面と音声ガイド</a></li><li><a href="#result">結果と指標の根拠</a></li><li><a href="#zones">基準記録とペースゾーン</a></li><li><a href="#strength">筋トレと連動した処方</a></li><li><a href="#courses">マイコースを作る・取り込む</a></li><li><a href="#share-course">コースを送る・受け取る</a></li><li><a href="#privacy-zones">位置を隠す</a></li><li><a href="#watch">ウォッチで走る</a></li><li><a href="#plans">ランニングの無料と有料</a></li></ol></nav>
+<nav class="g-toc" aria-label="このページの内容"><p>このページの内容</p><ol><li><a href="#mode">ランニングモードに切り替える</a></li><li><a href="#start-run">ランを始める</a></li><li><a href="#during">ラン中の画面と音声ガイド</a></li><li><a href="#result">結果と指標の根拠</a></li><li><a href="#import">他のアプリのランを取り込む</a></li><li><a href="#zones">基準記録とペースゾーン</a></li><li><a href="#strength">筋トレと連動した処方</a></li><li><a href="#courses">マイコースを作る・取り込む</a></li><li><a href="#share-course">コースを送る・受け取る</a></li><li><a href="#privacy-zones">位置を隠す</a></li><li><a href="#watch">ウォッチで走る</a></li><li><a href="#plans">ランニングの無料と有料</a></li></ol></nav>
 <section class="g-sec" id="mode">
 <h2>ランニングモードに切り替える</h2>
 <p class="lead"><span class="ui"><b>ホーム</b></span>のヘッダー右にある2つのボタンでランナーの側をタップすると、アプリ全体がランニングモードになります。<span class="ui"><b>メニュー</b></span>の<span class="ui"><b>トレーニングモード</b></span>の行からも切り替えられます。</p>
@@ -107,6 +107,17 @@
 <p><span class="ui"><b>記録をシェア</b></span>をタップすると、ルート・スプリット・写真の上・ステッカーのカードを作ってInstagramのストーリーズにすぐ投稿できます。<a href="sharing.html#cards">共有カードを選ぶ</a>をご覧ください。</p>
 </section>
 
+<section class="g-sec" id="import">
+<h2>他のアプリのランを取り込む</h2>
+<p class="lead">ランニングモードの<span class="ui"><b>ホーム</b></span>のいちばん下にある<span class="ui"><b>他のアプリのランを取り込む</b></span>で、他のアプリやウォッチが書き出したGPX・TCXの記録ファイルを選ぶと、ランの記録ができます。</p>
+<ol class="steps">
+<li>他のアプリやウォッチのアプリで、ランをGPXかTCXのファイルに書き出してスマホに置きます。</li>
+<li>ランニングモードの<span class="ui"><b>ホーム</b></span>のいちばん下にある<span class="ui"><b>他のアプリのランを取り込む</b></span>をタップし、ファイルを選びます。</li>
+<li>結果画面が開いたら、アプリで計測したランと同じように<span class="ui"><b>記録をシェア</b></span>で共有・カスタマイズします。</li>
+</ol>
+<p>ランとして取り込めるのは時刻の入った記録ファイルだけで、ファイルに心拍・ケイデンスがあれば一緒に読み込みます。時刻のないコースファイルを選ぶと<q class="say">時刻入りのランファイルだけ取り込めます。コースファイルはコースから取り込んでください。</q>と表示されます。コースファイルは<a href="#courses">マイコースを作る・取り込む</a>から開きます。同じ時刻に始まった記録をもう一度取り込んでも新しくは作らず、すでにある記録を開きます。</p>
+</section>
+
 <section class="g-sec" id="zones">
 <h2>基準記録とペースゾーン</h2>
 <p class="lead">最近の記録をひとつ基準記録として入れると、<span class="ui"><b>イージー</b></span>・<span class="ui"><b>マラソン</b></span>・<span class="ui"><b>閾値</b></span>・<span class="ui"><b>インターバル</b></span>のペースと予想タイムが決まります。</p>
@@ -137,7 +148,7 @@
 <li><span class="ui"><b>過去のラン</b></span>、<span class="ui"><b>地図に描く</b></span>、<span class="ui"><b>ファイル</b></span>から選びます。</li>
 <li>名前をつけて保存し、コース画面の<span class="ui"><b>このコースを走る</b></span>で走ります。</li>
 </ol>
-<p><span class="ui"><b>地図に描く</b></span>は地図をタップして打った点を直線でつなぎます。地図を使えない版ではこの項目は表示されません。ファイルはGPXとTCXを開けます。コースを走ると過去の自分と競い、コース画面に<span class="ui"><b>自己ベスト</b></span>と走った記録がたまります。コースの一部を<span class="ui"><b>マイ区間</b></span>にして、その区間の記録だけを見るのはPROです。</p>
+<p><span class="ui"><b>地図に描く</b></span>は地図をタップして打った点を直線でつなぎます。地図を使えない版ではこの項目は表示されません。ファイルはGPXとTCXを開けます。他のアプリで走った記録そのものを取り込むには<a href="#import">他のアプリのランを取り込む</a>を使います。コースを走ると過去の自分と競い、コース画面に<span class="ui"><b>自己ベスト</b></span>と走った記録がたまります。コースの一部を<span class="ui"><b>マイ区間</b></span>にして、その区間の記録だけを見るのはPROです。</p>
 </section>
 
 <section class="g-sec" id="share-course">
@@ -177,7 +188,7 @@
 <h2>ランニングの無料と有料</h2>
 <p class="lead">計測はすべて無料です。PROは記録を読み解く分析と構成トレーニングを、PRO+は筋トレの回復に合わせた週間ランプランを加えます。</p>
 <ul>
-<li>無料：スマホと3種類のウォッチでの計測、リアルタイムのペース・心拍、オートラップとスプリット、基準記録・ペースゾーン・予想タイム、マイコース（同じ道の検出・描画・ファイル・受け取り）、リンク・QRコード・ファイルでの送信、GPXの書き出し、非公開エリア、ヘルスケアへの書き込み、1回の距離上限、指標の根拠。</li>
+<li>無料：スマホと3種類のウォッチでの計測、リアルタイムのペース・心拍、オートラップとスプリット、基準記録・ペースゾーン・予想タイム、マイコース（同じ道の検出・描画・ファイル・受け取り）、リンク・QRコード・ファイルでの送信、GPXの書き出し、他のアプリのGPX・TCXのラン取り込み、非公開エリア、ヘルスケアへの書き込み、1回の距離上限、指標の根拠。</li>
 <li>PRO：勾配補正ペース・心拍ドリフト・心拍負荷・セッション負荷・臨界速度、筋トレと合わせたフィットネス・疲労、構成トレーニング（閾値・インターバル・坂のステップ案内）、レース当日モード（目標ペーサー・ゴール予想）、コース内のマイ区間の記録。</li>
 <li>PRO+：筋トレの回復に合わせたラン中心の週間プラン（下半身トレーニングの翌日を軽めにする調整を含む）。</li>
 </ul>

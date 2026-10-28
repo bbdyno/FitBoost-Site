@@ -10,16 +10,65 @@
 <p>The {{> runShareKindSticker}} card has a transparent background, so it goes into your story as a sticker you can move. The route is drawn only from the line with the start and finish areas and your privacy zones cut out, and cards carry no base map, coordinates, or clock time (the date is included). For strength workouts, make cards the same way from {{> shareWorkoutSummary}} on a record opened in {{> tabRecord}}, or from {{> shareCardsTooltip}} in {{> tabStats}}.</p>
 </section>
 
-<section id="studio" data-ask="I want to decorate my share card|How to customize a share card|Where do I open the editor|Move and resize stickers|Make a square card" data-keys="customize decorate editor studio magic wand sticker drag move resize rotate add text canvas square story feed transparent export">
+<section id="studio" data-ask="I want to decorate my share card|How to customize a share card|Where do I open the editor|Move and resize stickers|Make a square card|Edit on a wide screen in landscape" data-keys="customize decorate editor studio magic wand sticker drag move resize rotate two fingers canvas square story feed transparent export panel last opened wide screen landscape foldable side by side">
 <h2>Opening the editor</h2>
-<p class="lead">Tap the magic wand button ({{> studioOpen}}) at the top of the run or strength share screen to open the editor.</p>
+<p class="lead">Tap the magic wand button ({{> studioOpen}}) at the top of the run or strength share screen to open the editor. The bar at the bottom starts with {{> studioPanelTemplates}}.</p>
 <ol class="steps">
 <li>Tap the magic wand button at the top right of the share screen.</li>
-<li>Open {{> studioPanelStickers}}, {{> studioPanelFonts}}, {{> studioPanelColors}}, {{> studioPanelPhoto}}, {{> studioPanelLayers}}, or {{> studioPanelTemplates}} from the bar at the bottom.</li>
-<li>Add stickers and drag them with your finger, or change their size and rotation. Use {{> studioAddText}} to add text.</li>
-<li>Under {{> studioCanvasSize}}, choose {{> shareFormatStory}}, {{> shareFormatFeed}}, or {{> studioSquare}}, then export or post to your story.</li>
+<li>Open {{> studioPanelTemplates}}, {{> studioPanelStickers}}, {{> studioPanelFonts}}, {{> studioPanelColors}}, {{> studioPanelPhoto}}, or {{> studioPanelLayers}} from the bar at the bottom.</li>
+<li>Drag stickers with your finger to move them, and use two fingers to resize or rotate them.</li>
+<li>Under {{> studioCanvasSize}}, choose {{> shareFormatStory}}, {{> shareFormatFeed}}, or {{> studioSquare}}, then save to Photos or post to your story.</li>
 </ol>
-<p>Run stickers include distance, time and pace, the elevation profile, and your route. Strength stickers include {{> studioMetricLiftSummary}}, {{> studioMetricLiftRecord}}, {{> studioMetricBigThree}}, {{> studioMetricVolumeVsLast}}, {{> studioMetricSetChips}}, {{> studioMetricMuscles}}, and more. Stickers with analysis values, such as grade-adjusted pace or the estimated 1RM trend, follow the plan that value belongs to. The app name on cards is always included, whatever your plan.</p>
+<p>The first time you open it, a tip shows once explaining how to pick a layout, drag, and press and hold. The panel you opened last opens again next time. On the inner screen of a foldable iPhone or an iPad held sideways, the canvas sits on the left and the tools on the right.</p>
+</section>
+
+<section id="presets" data-ask="I want to use a ready-made layout|Finish a share card in one tap|Does changing the layout change my photo|What layouts are there|Why do I see a different number of layouts" data-keys="layout layouts ready-made preset presets design arrangement one tap finish preview pick run strength 17 9">
+<h2>Ready-made layouts</h2>
+<p class="lead">Tap a ready-made layout in {{> studioPanelTemplates}}, the first panel of the editor, and an arrangement filled with this record's values goes in right away. It's free.</p>
+<ol class="steps">
+<li>Open the editor and open the {{> studioPanelTemplates}} panel.</li>
+<li>In the {{" studioPresets}} row, look over the previews filled with this record's values and tap one.</li>
+<li>Drag stickers to fine-tune it or add more. You can tap another layout to change just the arrangement.</li>
+</ol>
+<p>There are 17 ready-made layouts for runs and 9 for strength. Tapping one changes only the arrangement, and the canvas size, background, and photo stay as they are. Layouts built around a value the record doesn't have are hidden, such as {{> studioPresetBody}} for a run without heart rate. Below them, {{> studioMyTemplates}} holds the templates you saved. See <a href="#templates">My templates and auto-create</a>.</p>
+</section>
+
+<section id="stickers" data-ask="What stickers are there|Add a speech bubble|Add a location pin|Put several photos in|A sticker for this month's distance|Add word stickers" data-keys="sticker stickers kinds types record metric cadence start time week month distance calendar streak text add text speech bubble tail location pin place word words chip chips decoration decorations shape outline photo sticker circle photo grid collage several photos">
+<h2>Kinds of stickers</h2>
+<p class="lead">The {{> studioPanelStickers}} panel is split into {{> studioSectionRecord}}, {{> studioSectionText}}, {{> studioSectionWords}}, {{> studioDecoration}}, and {{> studioSectionPhoto}} groups.</p>
+<ul>
+<li>{{> studioSectionRecord}}: for runs, {{> studioMetricRunSummary}}, {{> studioMetricElevation}}, and {{> studioRoute}}, plus cadence, {{> studioMetricStartTime}}, {{> studioMetricWeekDistance}}, {{> studioMetricMonthDistance}}, {{> studioMetricMonth}}, and {{> studioMetricRunStreak}}. For strength, {{> studioMetricLiftSummary}}, {{> studioMetricLiftRecord}}, {{> studioMetricBigThree}}, {{> studioMetricVolumeVsLast}}, {{> studioMetricSetChips}}, {{> studioMetricMuscles}}, {{> studioMetricDate}}, {{> studioMetricStartTime}}, and more.</li>
+<li>{{> studioSectionText}}: {{> studioAddText}}, {{> studioBubble}}, and {{> studioPin}}. After selecting a bubble, use the {{> studioBubbleTail}} button to turn its tail to one of four directions.</li>
+<li>{{> studioSectionWords}}: word chips such as {{> studioWordLongRun}}, {{> studioWordNegativeSplit}}, and {{> studioWordLegDay}}. There are 18 for runs and 10 for strength.</li>
+<li>{{> studioDecoration}}: 28 shapes. After adding one, pick its color or switch it to {{> studioOutline}}.</li>
+<li>{{> studioSectionPhoto}}: {{> studioPhotoSticker}} (square, or round with the {{> studioCircle}} button) and {{> studioPhotoGrid}}.</li>
+</ul>
+<p>Stickers with analysis values, such as grade-adjusted pace or {{> studioMetricOneRepMaxTrend}}, follow the plan that value belongs to, and the other stickers are free. The app name on cards is always included, whatever your plan.</p>
+</section>
+
+<section id="menu" data-ask="I want to duplicate a sticker|Bring a sticker to the front|Move several stickers at once|Delete several stickers at once|What happens when I press and hold a sticker" data-keys="press and hold long press menu more three dots edit duplicate copy front back order overlap shadow lock select multiple multi-select select all center align together at once delete remove">
+<h2>Press-and-hold menu and selecting several</h2>
+<p class="lead">Press and hold a sticker, or select it and tap ⋯ ({{> studioMore}}) in the bar below, to open its menu.</p>
+<ul>
+<li>Menu: {{> actionEdit}} (stickers with text), {{> studioDuplicate}}, {{> studioBringFront}}, {{> studioSendBack}}, {{> studioShadow}}, {{> studioLayerLock}} <span class="pro">PRO</span>, {{> studioMultiSelect}}, and {{> actionDelete}}.</li>
+</ul>
+<ol class="steps">
+<li>Press and hold a sticker and choose {{> studioMultiSelect}}.</li>
+<li>Each tap on another sticker adds or removes it. Drag any selected sticker and they all move together.</li>
+<li>Use {{> studioSelectAll}}, {{> studioCenterAlign}}, and {{> actionDelete}} in the tool bar to handle them at once, then tap {{> actionDone}}.</li>
+</ol>
+<p>The menu except locking, and selecting several, are free. The app name can't be duplicated or deleted.</p>
+</section>
+
+<section id="save" data-ask="I want to save my card to Photos|Save to the gallery|It says it couldn't save|Why does it ask for photo access when saving" data-keys="save photos photo library album gallery camera roll permission access download high quality fitboost album">
+<h2>Saving to Photos</h2>
+<p class="lead">Tap the bottom-left button ({{> studioSaveToPhotos}}) in the editor to save your card to Photos at its current size. It's free.</p>
+<ol class="steps">
+<li>When you're done, tap the bottom-left button in the editor.</li>
+<li>The first time you save, the app asks for photo access. On iPhone it asks only for permission to add photos.</li>
+<li>When you see {{" studioSaved}}, you're done.</li>
+</ol>
+<p>On Android, cards are saved to the FitBoost album. If you didn't allow access, you'll see {{" studioSaveFailed}} Turn on photo access in your device settings. To send the card to another app, use {{> shareOtherApps}} in the same row.</p>
 </section>
 
 <section id="fonts-colors" data-ask="Change the font on a share card|Use a different font just for the numbers|Pick colors from my photo|Pick a color with the eyedropper|Make the photo black and white|Color the route by pace" data-keys="font fonts number unit label size letter spacing tabular color colour eyedropper hex code contrast shadow grayscale black white blur brightness warmth bottom shade adjust route color pace grade layers undo safe area">
@@ -30,9 +79,9 @@
 <li>{{> studioPanelColors}}: three basic colors, colors picked from your photo, {{> studioEyedropper}}, and {{> studioHex}}. It shows the contrast so you know the text is readable, and suggests {{> studioAddShadow}}.</li>
 <li>{{> studioPanelPhoto}}: {{> studioGrayscale}}, {{> studioBlur}}, {{> studioBrightness}}, {{> studioContrast}}, {{> studioWarmth}}, and {{> studioBottomShade}}.</li>
 <li>{{> studioRoute}}: {{> studioRouteSolid}}, or color the line by {{> studioRoutePace}} or {{> studioRouteGrade}}.</li>
-<li>{{> studioPanelLayers}}: {{> actionUndo}} and {{> studioRedo}}, {{> studioLayerUp}} and {{> studioLayerDown}}, {{> studioLayerHide}}, {{> studioLayerLock}}, position and rotation values, and {{> studioSafeArea}}.</li>
+<li>{{> studioPanelLayers}}: {{> actionUndo}} and {{> studioRedo}}, {{> studioLayerUp}} and {{> studioLayerDown}} (free), {{> studioLayerHide}}, {{> studioLayerLock}}, position and rotation values, and {{> studioSafeArea}}.</li>
 </ul>
-<p>There are 22 fonts, all included in the app under the SIL Open Font License (OFL). Free use gets the three basic fonts for the whole sticker, the three basic colors, grayscale and blur, and a single-color route. A font per part and the other fonts, photo colors, the eyedropper and color codes, undo, layers, values and the safe area, route coloring, and brightness, contrast, warmth, and bottom shade are PRO.</p>
+<p>There are 22 fonts, all included in the app under the SIL Open Font License (OFL). Free use gets the three basic fonts for the whole sticker, the three basic colors, grayscale and blur, and a single-color route. A font per part and the other 19 fonts, photo colors, the eyedropper and color codes, undo, hiding and locking layers, values and the safe area, route coloring, and brightness, contrast, warmth, and bottom shade are PRO.</p>
 </section>
 
 <section id="subject" data-ask="I want stickers to go behind the person|Text covers the person in my photo|Does putting stickers behind people upload my photo|It says no person was found in the photo" data-keys="behind person subject cutout cut out segmentation photo on device server privacy vision overlap">
@@ -49,20 +98,20 @@
 <h2>My templates and auto-create</h2>
 <p class="lead">Save your layout, fonts, and colors with {{> studioTemplateSave}}, and they fill in with your next workout's values (PRO).</p>
 <ol class="steps">
-<li>When your layout is done in the editor, tap {{> studioTemplateSave}} in {{> studioPanelTemplates}}.</li>
-<li>Next time you share, pick that template in {{> studioPanelTemplates}} and the new values go in.</li>
+<li>When your layout is done in the editor, tap {{> studioTemplateSave}} under {{> studioMyTemplates}} at the bottom of the {{> studioPanelTemplates}} panel.</li>
+<li>Next time you share, pick that template in {{> studioMyTemplates}} and the new values go in.</li>
 <li>Turn on the {{> studioTemplateAutoOn}} switch on a template, and after a workout or run it opens straight from {{> studioOpenAuto}} on the result screen (PRO+).</li>
 </ol>
 <p>Templates are stored only on this device and in backup files, and aren't uploaded by sync across devices. If your subscription ends, saved templates aren't deleted; only the PRO features lock again.</p>
 </section>
 
-<section id="plans" data-ask="Is share customization free|What's paid in the editor|Can I remove the app name from share cards" data-keys="share customize free paid pro pro+ subscription locked app name watermark logo">
+<section id="plans" data-ask="Is share customization free|What's paid in the editor|Are layouts and stickers free|Can I remove the app name from share cards" data-keys="share customize free paid pro pro+ subscription locked app name watermark logo layouts stickers save photos">
 <h2>Free and paid in sharing</h2>
-<p class="lead">Share cards and basic customization are free. The pro editing tools are PRO, and auto-creating cards from your template when you finish is PRO+.</p>
+<p class="lead">Share cards and the editor's layouts, stickers, selecting several, and saving to Photos are free. The pro editing tools are PRO, and auto-creating cards from your template when you finish is PRO+.</p>
 <ul>
-<li>Free: run and strength share cards, adding, dragging, resizing, and rotating stickers, three basic fonts, three basic colors, grayscale and blur, a single-color route, story, feed, and square sizes, and exporting and posting straight to Instagram stories.</li>
-<li>PRO: font, size, letter spacing, and number width per part, the other fonts, colors from your photo, the eyedropper and color codes, undo, layers, values, and the story safe area, route coloring, brightness, contrast, warmth, and bottom shade, putting stickers behind people, and my templates.</li>
+<li>Free: run and strength share cards, ready-made layouts (17 for runs, 9 for strength), record stickers (including cadence, start time, week and month distance, the month calendar, and run streak), text, speech bubbles, location pins, word chips, decorations, photo stickers, and photo grids, dragging, resizing, and rotating, the press-and-hold menu (except locking), selecting several, layer order, three basic fonts (for the whole sticker), three basic colors, grayscale and blur, a single-color route, story, feed, and square sizes, and saving to Photos, exporting, and posting straight to Instagram stories.</li>
+<li>PRO: font, size, letter spacing, and number width per number, unit, and label, the other 19 fonts, colors from your photo, the eyedropper and color codes, undo, hiding and locking layers, values, the story safe area, route coloring (by pace or grade), brightness, contrast, warmth, and bottom shade, putting stickers behind people, and my templates.</li>
 <li>PRO+: share cards made from your template right when a workout or run ends.</li>
 </ul>
-<p>The app name on cards is included on every plan, and there's no option to remove it.</p>
+<p>Stickers with analysis values follow the plan that value belongs to. The app name on cards is included on every plan, and there's no option to remove it.</p>
 </section>

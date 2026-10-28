@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>跑步 — FitBoost</title>
-<meta name="description" content="切换到跑步模式，用手机和手表测量跑步，使用配速区间和我的路线。">
+<meta name="description" content="切换到跑步模式，用手机和手表测量跑步或导入其他应用的记录，使用配速区间和我的路线。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,14 +44,14 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="当前位置"><a href="./">使用指南</a></nav>
 <h1>跑步</h1>
-<p class="g-lede">切换到跑步模式，用手机和手表测量跑步，使用配速区间和我的路线。</p>
+<p class="g-lede">切换到跑步模式，用手机和手表测量跑步或导入其他应用的记录，使用配速区间和我的路线。</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">搜索指南</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="搜索指南"
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#mode">切换到跑步模式</a></li><li><a href="#start-run">开始跑步</a></li><li><a href="#during">跑步中的屏幕与语音提示</a></li><li><a href="#result">结果与指标依据</a></li><li><a href="#zones">基准成绩与配速区间</a></li><li><a href="#strength">与力量训练联动的处方</a></li><li><a href="#courses">创建与导入我的路线</a></li><li><a href="#share-course">发送与接收路线</a></li><li><a href="#privacy-zones">隐藏位置</a></li><li><a href="#watch">用手表跑步</a></li><li><a href="#plans">跑步的免费与付费</a></li></ol></nav>
+<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#mode">切换到跑步模式</a></li><li><a href="#start-run">开始跑步</a></li><li><a href="#during">跑步中的屏幕与语音提示</a></li><li><a href="#result">结果与指标依据</a></li><li><a href="#import">导入其他应用的跑步</a></li><li><a href="#zones">基准成绩与配速区间</a></li><li><a href="#strength">与力量训练联动的处方</a></li><li><a href="#courses">创建与导入我的路线</a></li><li><a href="#share-course">发送与接收路线</a></li><li><a href="#privacy-zones">隐藏位置</a></li><li><a href="#watch">用手表跑步</a></li><li><a href="#plans">跑步的免费与付费</a></li></ol></nav>
 <section class="g-sec" id="mode">
 <h2>切换到跑步模式</h2>
 <p class="lead">点 <span class="ui"><b>首页</b></span> 顶部右侧双格按钮中的跑者一侧，整个应用就会切换到跑步模式。也可以在 <span class="ui"><b>菜单</b></span> 的 <span class="ui"><b>训练模式</b></span> 一行切换。</p>
@@ -107,6 +107,17 @@
 <p>点 <span class="ui"><b>分享记录</b></span> 可制作路线、分段、照片或贴纸卡片，并直接发到 Instagram 快拍。见<a href="sharing.html#cards">选择分享卡片</a>。</p>
 </section>
 
+<section class="g-sec" id="import">
+<h2>导入其他应用的跑步</h2>
+<p class="lead">在跑步模式 <span class="ui"><b>首页</b></span> 最下方的 <span class="ui"><b>导入其他应用的跑步</b></span> 中，选择其他应用或手表的 GPX、TCX 活动文件，就会生成一条跑步记录。</p>
+<ol class="steps">
+<li>在其他应用或手表应用中把跑步导出为 GPX 或 TCX 文件，放到手机上。</li>
+<li>在跑步模式 <span class="ui"><b>首页</b></span> 最下方点 <span class="ui"><b>导入其他应用的跑步</b></span>，选择文件。</li>
+<li>结果页面打开后，像在应用中测量的跑步一样，用 <span class="ui"><b>分享记录</b></span> 分享和装饰。</li>
+</ol>
+<p>只有带时间的活动文件才能作为跑步导入，文件中有心率和步频时也会一并读取。选择不带时间的路线文件时，会显示 <q class="say">只能导入带时间的跑步文件。路线文件请在路线中导入。</q> 路线文件请在<a href="#courses">创建与导入我的路线</a>中打开。再次导入同一时间开始的记录时，不会新建，而是打开已有的记录。</p>
+</section>
+
 <section class="g-sec" id="zones">
 <h2>基准成绩与配速区间</h2>
 <p class="lead">填写一次最近的成绩作为基准成绩，就会定出 <span class="ui"><b>轻松</b></span>、<span class="ui"><b>马拉松</b></span>、<span class="ui"><b>阈值</b></span>、<span class="ui"><b>间歇</b></span> 配速和预计成绩。</p>
@@ -137,7 +148,7 @@
 <li>在 <span class="ui"><b>过去的跑步</b></span>、<span class="ui"><b>在地图上画</b></span>、<span class="ui"><b>文件</b></span> 中选一种。</li>
 <li>起名保存后，在路线页面用 <span class="ui"><b>跑这条路线</b></span> 开跑。</li>
 </ol>
-<p><span class="ui"><b>在地图上画</b></span> 会用直线连接你在地图上点下的点。在无法使用地图的版本中，这一项会被隐藏。文件可以打开 GPX 和 TCX。跑路线时会和过去的自己比拼，路线页面会累积 <span class="ui"><b>我的最佳</b></span> 和跑步记录。把路线的一部分设为 <span class="ui"><b>我的分段</b></span>、单独查看那一段的记录属于 PRO。</p>
+<p><span class="ui"><b>在地图上画</b></span> 会用直线连接你在地图上点下的点。在无法使用地图的版本中，这一项会被隐藏。文件可以打开 GPX 和 TCX。要把在其他应用中跑的整条记录导入，请用<a href="#import">导入其他应用的跑步</a>。跑路线时会和过去的自己比拼，路线页面会累积 <span class="ui"><b>我的最佳</b></span> 和跑步记录。把路线的一部分设为 <span class="ui"><b>我的分段</b></span>、单独查看那一段的记录属于 PRO。</p>
 </section>
 
 <section class="g-sec" id="share-course">
@@ -177,7 +188,7 @@
 <h2>跑步的免费与付费</h2>
 <p class="lead">测量全部免费。PRO 增加解读记录的分析和结构化训练，PRO+ 增加配合力量恢复的每周跑步计划。</p>
 <ul>
-<li>免费：用手机和三种手表测量，实时配速和心率，自动分段与分段记录，基准成绩、配速区间和预计成绩，我的路线（识别同一条路、绘制、文件、接收），通过链接、二维码、文件发送，GPX 导出，隐私区域，写入健康应用，单次距离上限，指标依据。</li>
+<li>免费：用手机和三种手表测量，实时配速和心率，自动分段与分段记录，基准成绩、配速区间和预计成绩，我的路线（识别同一条路、绘制、文件、接收），通过链接、二维码、文件发送，GPX 导出，导入其他应用的 GPX、TCX 跑步，隐私区域，写入健康应用，单次距离上限，指标依据。</li>
 <li>PRO：坡度修正配速、心率漂移、心率负荷、训练负荷、临界速度，与力量合并的体能·疲劳，结构化训练（阈值、间歇、坡道逐步指导），比赛日模式（目标配速员和完赛预测），路线内的我的分段记录。</li>
 <li>PRO+：配合力量恢复、以跑步为主的每周计划（包括练下肢后第二天改为轻松）。</li>
 </ul>

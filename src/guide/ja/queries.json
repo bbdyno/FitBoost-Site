@@ -96,5 +96,19 @@
  "スポイト": "sharing#fonts-colors",
  "人物の後ろに回す": "sharing#subject",
  "テンプレートを保存": "sharing#templates",
- "共有カードのアプリ名を消す": "sharing#plans"
+ "共有カードのアプリ名を消す": "sharing#plans",
+ "用意されたテンプレート": "sharing#presets",
+ "ワンタップで仕上げる": "sharing#presets",
+ "吹き出しステッカー": "sharing#stickers",
+ "写真グリッド": "sharing#stickers",
+ "今月の距離ステッカー": "sharing#stickers",
+ "ステッカーを複製": "sharing#menu",
+ "ステッカー複数選択": "sharing#menu",
+ "ステッカーを最前面": "sharing#menu",
+ "写真に保存": "sharing#save",
+ "ギャラリーに保存": "sharing#save",
+ "テンプレートとステッカーは無料": "sharing#plans",
+ "他のアプリのランを取り込む": "running#import",
+ "tcxのランを取り込む": "running#import",
+ "ウォッチから書き出した記録を取り込む": "running#import"
 }

@@ -96,5 +96,19 @@
  "eyedropper": "sharing#fonts-colors",
  "stickers behind person": "sharing#subject",
  "save a template": "sharing#templates",
- "remove app name from share card": "sharing#plans"
+ "remove app name from share card": "sharing#plans",
+ "ready-made layouts": "sharing#presets",
+ "finish card in one tap": "sharing#presets",
+ "speech bubble sticker": "sharing#stickers",
+ "photo grid": "sharing#stickers",
+ "month distance sticker": "sharing#stickers",
+ "duplicate sticker": "sharing#menu",
+ "select multiple stickers": "sharing#menu",
+ "bring sticker to front": "sharing#menu",
+ "save to photos": "sharing#save",
+ "save to gallery": "sharing#save",
+ "are layouts and stickers free": "sharing#plans",
+ "import run from another app": "running#import",
+ "import tcx run": "running#import",
+ "import activity file from watch": "running#import"
 }

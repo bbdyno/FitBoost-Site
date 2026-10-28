@@ -229,7 +229,7 @@
     },
     "share": {
       "title": "Sharing and customizing",
-      "body": "Turn runs and strength workouts into cards sized for Instagram stories and post them straight away. In the editor, drag in stickers, pick a font and color for each number, unit and label, pull colors from your photo, and tuck stickers behind the person in it. Photos are processed only on your device, and routes are drawn with the start and finish hidden.",
+      "body": "Turn runs and strength workouts into cards sized for Instagram stories and post them straight away. In the editor, 26 ready-made layouts fill in with this record, and you can add word chips, speech bubbles, location pins and photo stickers, pick a font and color for each number, unit and label, and tuck stickers behind the person in your photo. Runs exported as GPX or TCX from other apps come in too, and cards save straight to Photos. Photos are processed only on your device, and routes are drawn with the start and finish hidden.",
       "k1": "Route",
       "k2": "Splits",
       "k3": "On a photo",
@@ -275,7 +275,7 @@
         "Plate calculator",
         "Device sync and backup files",
         "Run tracking · pace zones · my courses",
-        "Share cards and basic customizing",
+        "Share cards · editor layouts, stickers and saving to Photos",
         "3 routines, 5 custom exercises"
       ]
     },

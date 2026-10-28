@@ -10,16 +10,65 @@
 <p>{{> runShareKindSticker}}のカードは背景が透明なので、ストーリーズで動かせるステッカーとして入ります。ルートはスタート・ゴール付近と非公開エリアを切り取った線だけで描き、カードには背景の地図・座標・時刻は入りません（日付は入ります）。筋トレは、{{> tabRecord}}で開いた記録の{{> shareWorkoutSummary}}や{{> tabStats}}の{{> shareCardsTooltip}}から同じようにカードを作ります。</p>
 </section>
 
-<section id="studio" data-ask="共有カードを飾りたい|共有カードをカスタマイズする方法|共有カードのカスタマイズのやり方|編集画面はどこから開きますか|ステッカーを動かして大きさを変えたい|正方形のカードにしたい" data-keys="カスタマイズ 飾る 編集 エディター 魔法の杖 ステッカー ドラッグ 移動 大きさ 回転 テキスト キャンバス 正方形 ストーリーズ フィード 透明 書き出し">
+<section id="studio" data-ask="共有カードを飾りたい|共有カードをカスタマイズする方法|共有カードのカスタマイズのやり方|編集画面はどこから開きますか|ステッカーを動かして大きさを変えたい|正方形のカードにしたい|iPadの横向きでカスタマイズしたい" data-keys="カスタマイズ 飾る 編集 エディター 魔法の杖 ステッカー ドラッグ 移動 大きさ 回転 2本指 キャンバス 正方形 ストーリーズ フィード 透明 書き出し 欄 最後 広い画面 横向き ipad 折りたたみ">
 <h2>カスタマイズを開く</h2>
-<p class="lead">ラン・筋トレの共有画面の上にある魔法の杖のボタン（{{> studioOpen}}）をタップすると、編集画面が開きます。</p>
+<p class="lead">ラン・筋トレの共有画面の上にある魔法の杖のボタン（{{> studioOpen}}）をタップすると、編集画面が開きます。下の欄は{{> studioPanelTemplates}}から並びます。</p>
 <ol class="steps">
 <li>共有画面の右上にある魔法の杖のボタンをタップします。</li>
-<li>下の欄から{{> studioPanelStickers}}、{{> studioPanelFonts}}、{{> studioPanelColors}}、{{> studioPanelPhoto}}、{{> studioPanelLayers}}、{{> studioPanelTemplates}}を開きます。</li>
-<li>ステッカーを入れ、指でドラッグして動かしたり、大きさ・回転を変えたりします。{{> studioAddText}}で文字も入れられます。</li>
-<li>{{> studioCanvasSize}}で{{> shareFormatStory}}・{{> shareFormatFeed}}・{{> studioSquare}}を選び、できたら書き出すかストーリーズに投稿します。</li>
+<li>下の欄から{{> studioPanelTemplates}}、{{> studioPanelStickers}}、{{> studioPanelFonts}}、{{> studioPanelColors}}、{{> studioPanelPhoto}}、{{> studioPanelLayers}}を開きます。</li>
+<li>ステッカーは指でドラッグして動かし、2本指で大きさ・回転を変えます。</li>
+<li>{{> studioCanvasSize}}で{{> shareFormatStory}}・{{> shareFormatFeed}}・{{> studioSquare}}を選び、できたら写真に保存するかストーリーズに投稿します。</li>
 </ol>
-<p>ランのステッカーには距離・時間・ペース、高度の断面、走ったルートがあり、筋トレのステッカーには{{> studioMetricLiftSummary}}、{{> studioMetricLiftRecord}}、{{> studioMetricBigThree}}、{{> studioMetricVolumeVsLast}}、{{> studioMetricSetChips}}、{{> studioMetricMuscles}}などがあります。勾配補正ペースや推定1RMの推移のような分析値のステッカーは、その値がもともと属するプランに従います。カードのアプリ名の表示は、プランに関係なく必ず入ります。</p>
+<p>初めて開くと、テンプレートの選び方・ドラッグ・長押しを知らせる吹き出しが一度だけ出ます。最後に開いた欄は、次にカスタマイズを開いたときにまた開きます。折りたたみのiPhoneの内側の画面やiPadを横向きにすると、キャンバスが左、ツールが右に並びます。</p>
+</section>
+
+<section id="presets" data-ask="用意されたテンプレートを使いたい|共有カードをワンタップで仕上げたい|テンプレートを変えると写真も変わりますか|どんなテンプレートがありますか|記録によってテンプレートの数が違います" data-keys="テンプレート プリセット 用意された デザイン 配置 レイアウト ワンタップ 仕上げ プレビュー すぐ 選ぶ ラン 筋トレ 17 9">
+<h2>テンプレートですぐ作る</h2>
+<p class="lead">編集画面の最初の欄{{> studioPanelTemplates}}で用意されたテンプレートをタップすると、今の記録の値で埋まった配置がすぐに入ります。無料です。</p>
+<ol class="steps">
+<li>編集画面を開き、{{> studioPanelTemplates}}の欄を開きます。</li>
+<li>{{" studioPresets}}の列で、今の記録の値で埋まったプレビューを見てひとつタップします。</li>
+<li>ステッカーをドラッグして整えたり、さらに重ねたりします。別のテンプレートをタップして配置だけ変えることもできます。</li>
+</ol>
+<p>用意されたテンプレートはラン用が17種類、筋トレ用が9種類です。タップすると配置だけが変わり、キャンバスの大きさ・背景・写真はそのまま残ります。心拍のないランの{{> studioPresetBody}}のように、その記録にない値が主役のテンプレートは表示されません。その下の{{> studioMyTemplates}}には、自分で保存したテンプレートが並びます。<a href="#templates">マイテンプレートと自動作成</a>をご覧ください。</p>
+</section>
+
+<section id="stickers" data-ask="どんなステッカーがありますか|吹き出しを入れたい|位置ピンを入れたい|写真を何枚も入れたい|今月の距離のステッカー|ワードのステッカーを入れたい" data-keys="ステッカー 種類 記録 指標 ケイデンス スタート時刻 今週 今月 距離 カレンダー 連続 テキスト 吹き出し しっぽ 位置ピン ピン 場所 ワード チップ デコ 図形 線 写真ステッカー 丸 写真グリッド コラージュ 複数枚">
+<h2>ステッカーの種類</h2>
+<p class="lead">{{> studioPanelStickers}}の欄は{{> studioSectionRecord}}・{{> studioSectionText}}・{{> studioSectionWords}}・{{> studioDecoration}}・{{> studioSectionPhoto}}のまとまりに分かれています。</p>
+<ul>
+<li>{{> studioSectionRecord}}：ランは{{> studioMetricRunSummary}}、{{> studioMetricElevation}}、{{> studioRoute}}に加えて、ケイデンス、{{> studioMetricStartTime}}、{{> studioMetricWeekDistance}}、{{> studioMetricMonthDistance}}、{{> studioMetricMonth}}、{{> studioMetricRunStreak}}。筋トレは{{> studioMetricLiftSummary}}、{{> studioMetricLiftRecord}}、{{> studioMetricBigThree}}、{{> studioMetricVolumeVsLast}}、{{> studioMetricSetChips}}、{{> studioMetricMuscles}}、{{> studioMetricDate}}、{{> studioMetricStartTime}}など。</li>
+<li>{{> studioSectionText}}：{{> studioAddText}}、{{> studioBubble}}、{{> studioPin}}。吹き出しは選んでから{{> studioBubbleTail}}のボタンでしっぽを4方向に回します。</li>
+<li>{{> studioSectionWords}}：{{> studioWordLongRun}}、{{> studioWordNegativeSplit}}、{{> studioWordLegDay}}のようなワードチップ。ラン用18個、筋トレ用10個です。</li>
+<li>{{> studioDecoration}}：28種類の図形。入れたあとで色を選んだり、{{> studioOutline}}に変えたりします。</li>
+<li>{{> studioSectionPhoto}}：{{> studioPhotoSticker}}（四角、{{> studioCircle}}のボタンで丸）と{{> studioPhotoGrid}}。</li>
+</ul>
+<p>勾配補正ペースや{{> studioMetricOneRepMaxTrend}}のような分析値のステッカーは、その値がもともと属するプランに従い、ほかのステッカーは無料です。カードのアプリ名の表示は、プランに関係なく必ず入ります。</p>
+</section>
+
+<section id="menu" data-ask="ステッカーを複製したい|ステッカーを最前面に出したい|ステッカーをまとめて動かしたい|ステッカーをまとめて消したい|ステッカーを長押しすると何が出ますか" data-keys="長押し メニュー その他 三点 編集 複製 コピー 最前面 最背面 重ね順 影 ロック 複数選択 すべて選択 全選択 中央揃え 整列 まとめて 一括 削除 消す">
+<h2>長押しメニューと複数選択</h2>
+<p class="lead">ステッカーを長押しするか、選んでから下の列の⋯（{{> studioMore}}）をタップするとメニューが開きます。</p>
+<ul>
+<li>メニュー：{{> actionEdit}}（文字のあるステッカー）、{{> studioDuplicate}}、{{> studioBringFront}}、{{> studioSendBack}}、{{> studioShadow}}、{{> studioLayerLock}} <span class="pro">PRO</span>、{{> studioMultiSelect}}、{{> actionDelete}}。</li>
+</ul>
+<ol class="steps">
+<li>ステッカーを長押しして{{> studioMultiSelect}}を選びます。</li>
+<li>ほかのステッカーをタップするたびに選択に入れたり外したりします。選んだステッカーをドラッグすると一緒に動きます。</li>
+<li>ツールの列の{{> studioSelectAll}}、{{> studioCenterAlign}}、{{> actionDelete}}でまとめて扱い、{{> actionDone}}をタップします。</li>
+</ol>
+<p>ロックを除くメニューと複数選択は無料です。アプリ名の表示は複製も削除もできません。</p>
+</section>
+
+<section id="save" data-ask="カードを写真に保存したい|ギャラリーに保存したい|保存できませんでしたと表示されます|写真に保存するときなぜ許可を求められますか" data-keys="写真に保存 保存 写真 アルバム ギャラリー カメラロール 許可 アクセス ダウンロード 高画質 fitboostアルバム">
+<h2>写真に保存</h2>
+<p class="lead">編集画面のいちばん下の左のボタン（{{> studioSaveToPhotos}}）をタップすると、仕上げたカードを今の大きさのまま写真に保存します。無料です。</p>
+<ol class="steps">
+<li>仕上がったら、編集画面のいちばん下の左のボタンをタップします。</li>
+<li>初めて保存するときに写真へのアクセスを求められます。iPhoneでは写真を追加する許可だけを求めます。</li>
+<li>{{" studioSaved}}と表示されたら完了です。</li>
+</ol>
+<p>AndroidではFitBoostのアルバムに保存します。アクセスを許可していないと{{" studioSaveFailed}}と表示されるので、端末の設定で写真へのアクセスをオンにします。ほかのアプリに送るには、同じ列の{{> shareOtherApps}}を使います。</p>
 </section>
 
 <section id="fonts-colors" data-ask="共有カードのフォントを変えたい|数字だけ別のフォントにしたい|写真から色を取りたい|スポイトで色を選びたい|写真をモノクロにしたい|ルートをペースで色分けしたい" data-keys="フォント 書体 数字 単位 名前 大きさ 字間 等幅 色 カラー スポイト カラーコード hex コントラスト 影 モノクロ 白黒 ぼかし 明るさ 暖かさ 下を暗く 補正 ルートの色 ペース 勾配 レイヤー 元に戻す 隠れる範囲">
@@ -30,9 +79,9 @@
 <li>{{> studioPanelColors}}：基本の3色、写真から取った色、{{> studioEyedropper}}、{{> studioHex}}。文字が読みやすいかコントラストを示し、{{> studioAddShadow}}をおすすめします。</li>
 <li>{{> studioPanelPhoto}}：{{> studioGrayscale}}、{{> studioBlur}}、{{> studioBrightness}}、{{> studioContrast}}、{{> studioWarmth}}、{{> studioBottomShade}}。</li>
 <li>{{> studioRoute}}：{{> studioRouteSolid}}、または{{> studioRoutePace}}・{{> studioRouteGrade}}で線に色を付けます。</li>
-<li>{{> studioPanelLayers}}：{{> actionUndo}}・{{> studioRedo}}、{{> studioLayerUp}}・{{> studioLayerDown}}、{{> studioLayerHide}}、{{> studioLayerLock}}、位置・回転の数値、{{> studioSafeArea}}。</li>
+<li>{{> studioPanelLayers}}：{{> actionUndo}}・{{> studioRedo}}、{{> studioLayerUp}}・{{> studioLayerDown}}（無料）、{{> studioLayerHide}}、{{> studioLayerLock}}、位置・回転の数値、{{> studioSafeArea}}。</li>
 </ul>
-<p>フォントは22種類で、すべてSILオープンフォントライセンス（OFL）のフォントとしてアプリに入っています。無料では基本フォント3つをステッカー全体に使い、基本の3色、モノクロ・ぼかし、単色のルートを使えます。欄ごとのフォントと残りのフォント、写真の色・スポイト・カラーコード、元に戻す・レイヤー・数値・隠れる範囲、ルートの色付け、明るさ・コントラスト・暖かさ・下を暗くはPROです。</p>
+<p>フォントは22種類で、すべてSILオープンフォントライセンス（OFL）のフォントとしてアプリに入っています。無料では基本フォント3つをステッカー全体に使い、基本の3色、モノクロ・ぼかし、単色のルートを使えます。欄ごとのフォントと残りのフォント19種類、写真の色・スポイト・カラーコード、元に戻す、レイヤーの非表示・ロック、数値、隠れる範囲、ルートの色付け、明るさ・コントラスト・暖かさ・下を暗くはPROです。</p>
 </section>
 
 <section id="subject" data-ask="ステッカーを人物の後ろに回したい|写真の人に文字がかぶってしまう|人物の後ろに回すと写真がサーバーに送られますか|写真から人物が見つかりませんと表示されます" data-keys="人物 後ろ 切り抜き 被写体 分離 写真 端末内 サーバー プライバシー ビジョン 重ね">
@@ -49,20 +98,20 @@
 <h2>マイテンプレートと自動作成</h2>
 <p class="lead">飾った配置・フォント・色を{{> studioTemplateSave}}で保存しておくと、次の記録の値ですぐに埋まります（PRO）。</p>
 <ol class="steps">
-<li>編集画面で配置を終えたら、{{> studioPanelTemplates}}の{{> studioTemplateSave}}をタップします。</li>
-<li>次に共有するとき、{{> studioPanelTemplates}}でそのテンプレートを選ぶと新しい記録の値が入ります。</li>
+<li>編集画面で配置を終えたら、{{> studioPanelTemplates}}の欄の下にある{{> studioMyTemplates}}の{{> studioTemplateSave}}をタップします。</li>
+<li>次に共有するとき、{{> studioMyTemplates}}でそのテンプレートを選ぶと新しい記録の値が入ります。</li>
 <li>テンプレートの{{> studioTemplateAutoOn}}スイッチをオンにすると、ワークアウトやランが終わったあと、結果画面の{{> studioOpenAuto}}からすぐ開きます（PRO+）。</li>
 </ol>
 <p>マイテンプレートはこの端末とバックアップファイルにだけ保存し、デバイス間の同期では上げません。サブスクリプションが終わっても保存したテンプレートは消えず、PROの機能だけが再びロックされます。</p>
 </section>
 
-<section id="plans" data-ask="共有のカスタマイズは無料ですか|編集で有料なのは何ですか|共有カードのアプリ名を消せますか" data-keys="共有 カスタマイズ 無料 有料 pro pro+ サブスクリプション ロック アプリ名 ウォーターマーク ロゴ">
+<section id="plans" data-ask="共有のカスタマイズは無料ですか|編集で有料なのは何ですか|テンプレートとステッカーは無料ですか|共有カードのアプリ名を消せますか" data-keys="共有 カスタマイズ 無料 有料 pro pro+ サブスクリプション ロック アプリ名 ウォーターマーク ロゴ テンプレート ステッカー 写真に保存">
 <h2>共有とカスタマイズの無料と有料</h2>
-<p class="lead">共有カードと基本のカスタマイズは無料です。プロ向けの編集ツールはPRO、終わったらマイテンプレートですぐ作るのはPRO+です。</p>
+<p class="lead">共有カードと、カスタマイズのテンプレート・ステッカー・複数選択・写真に保存は無料です。プロ向けの編集ツールはPRO、終わったらマイテンプレートですぐ作るのはPRO+です。</p>
 <ul>
-<li>無料：ラン・筋トレの共有カード、ステッカーの追加・ドラッグ・大きさ・回転、基本フォント3つ、基本の3色、モノクロ・ぼかし、単色のルート、ストーリーズ・フィード・正方形、書き出しとInstagramのストーリーズへの直接投稿。</li>
-<li>PRO：欄ごとのフォント・大きさ・字間・数字の幅、残りのフォント、写真から取った色・スポイト・カラーコード、元に戻す・レイヤー・数値・ストーリーズの隠れる範囲、ルートの色付け、明るさ・コントラスト・暖かさ・下を暗く、人物の後ろに回す、マイテンプレート。</li>
+<li>無料：ラン・筋トレの共有カード、用意されたテンプレート（ラン17・筋トレ9）、記録のステッカー（ケイデンス・スタート時刻・今週の距離・今月の距離・今月のカレンダー・連続ラン日数を含む）、テキスト・吹き出し・位置ピン・ワードチップ・デコ・写真ステッカー・写真グリッド、ドラッグ・大きさ・回転、長押しメニュー（ロックを除く）、複数選択、レイヤーの順序、基本フォント3つ（ステッカー全体）、基本の3色、モノクロ・ぼかし、単色のルート、ストーリーズ・フィード・正方形、写真に保存・書き出し・Instagramのストーリーズへの直接投稿。</li>
+<li>PRO：数字・単位・ラベルの欄ごとのフォント・大きさ・字間・数字の幅、残りのフォント19種類、写真から取った色・スポイト・カラーコード、元に戻す、レイヤーの非表示・ロック、数値、ストーリーズの隠れる範囲、ルートの色付け（ペース・勾配）、明るさ・コントラスト・暖かさ・下を暗く、人物の後ろに回す、マイテンプレート。</li>
 <li>PRO+：ワークアウトやランが終わったら、マイテンプレートで共有カードをすぐ作る。</li>
 </ul>
-<p>カードのアプリ名の表示はどのプランでも入り、消す機能はありません。</p>
+<p>分析値のステッカーは、その値がもともと属するプランに従います。カードのアプリ名の表示はどのプランでも入り、消す機能はありません。</p>
 </section>

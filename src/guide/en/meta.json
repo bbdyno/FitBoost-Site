@@ -1,12 +1,12 @@
 {
   "topics": [
     {"slug": "start", "title": "Getting started", "description": "What to do after installing, your training goal, and how the screens are laid out."},
-    {"slug": "running", "title": "Running", "description": "Switch to running mode, measure runs with your phone or watch, and use pace zones and your courses."},
+    {"slug": "running", "title": "Running", "description": "Switch to running mode, measure runs with your phone or watch or import them from other apps, and use pace zones and your courses."},
     {"slug": "record", "title": "Logging workouts", "description": "Start a workout, log sets, finish, and fix past records."},
     {"slug": "routines", "title": "Routines and programs", "description": "Build routines, get a program made for you, and use the exercise list."},
     {"slug": "coach", "title": "Coaching and circuits", "description": "Next-weight suggestions, coach circuits, weekly hybrid plans, and block programs in the Coach tab."},
     {"slug": "stats", "title": "Stats and reports", "description": "Recovery, strength balance, volume, and the weekly coaching report."},
-    {"slug": "sharing", "title": "Sharing and customizing", "description": "Turn runs and strength workouts into share cards, polish fonts, colors, and photos in the editor, and save your own templates."},
+    {"slug": "sharing", "title": "Sharing and customizing", "description": "Turn runs and strength workouts into share cards, decorate them with layouts and stickers, polish fonts, colors, and photos, and save to Photos or as your own templates."},
     {"slug": "tools", "title": "Calculators and tools", "description": "Plate, 1RM, and program calculators, your equipment, and the training glossary."},
     {"slug": "watch", "title": "Smartwatches", "description": "Connect Apple Watch, Galaxy Watch, or a Garmin watch, and log and run from your wrist."},
     {"slug": "health", "title": "Health apps", "description": "Send workouts to Apple Health and Health Connect, and bring in sleep and heart rate."},

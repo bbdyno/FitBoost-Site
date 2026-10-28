@@ -96,5 +96,19 @@
  "贴纸放到人物后面": "sharing#subject",
  "保存模板": "sharing#templates",
  "去掉分享卡片的应用名称": "sharing#plans",
- "怎么装饰分享卡片": "sharing#studio"
+ "怎么装饰分享卡片": "sharing#studio",
+ "现成模板": "sharing#presets",
+ "一键完成卡片": "sharing#presets",
+ "对话气泡贴纸": "sharing#stickers",
+ "照片拼图": "sharing#stickers",
+ "本月跑量贴纸": "sharing#stickers",
+ "复制贴纸": "sharing#menu",
+ "多选贴纸": "sharing#menu",
+ "贴纸置于顶层": "sharing#menu",
+ "保存到相册": "sharing#save",
+ "保存到图库": "sharing#save",
+ "模板和贴纸免费吗": "sharing#plans",
+ "导入其他应用的跑步": "running#import",
+ "导入 tcx 跑步": "running#import",
+ "导入手表导出的记录": "running#import"
 }
