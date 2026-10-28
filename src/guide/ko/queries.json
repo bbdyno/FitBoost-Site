@@ -102,5 +102,19 @@
  "스포이드": "sharing#fonts-colors",
  "사람 뒤로 보내기": "sharing#subject",
  "내 틀 저장": "sharing#templates",
- "공유 카드 앱 이름 지우기": "sharing#plans"
+ "공유 카드 앱 이름 지우기": "sharing#plans",
+ "미리 만든 틀": "sharing#presets",
+ "틀로 한 번에 완성": "sharing#presets",
+ "말풍선 스티커": "sharing#stickers",
+ "사진 격자": "sharing#stickers",
+ "이번 달 거리 스티커": "sharing#stickers",
+ "스티커 복제": "sharing#menu",
+ "스티커 여러 개 고르기": "sharing#menu",
+ "스티커 맨 앞으로": "sharing#menu",
+ "사진첩에 저장": "sharing#save",
+ "갤러리에 저장": "sharing#save",
+ "틀 스티커 무료": "sharing#plans",
+ "다른 앱 달리기 가져오기": "running#import",
+ "tcx 달리기 기록 가져오기": "running#import",
+ "시계에서 내보낸 기록 가져오기": "running#import"
 }

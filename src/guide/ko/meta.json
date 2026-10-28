@@ -1,12 +1,12 @@
 {
   "topics": [
     {"slug": "start", "title": "시작하기", "description": "설치하고 처음 하는 일, 운동 목표, 화면 구성을 알아봅니다."},
-    {"slug": "running", "title": "러닝", "description": "러닝 모드로 바꾸고, 휴대폰과 시계로 달리기를 재고, 페이스 구간과 내 코스를 쓰는 방법입니다."},
+    {"slug": "running", "title": "러닝", "description": "러닝 모드로 바꾸고, 휴대폰과 시계로 달리기를 재거나 다른 앱 기록을 가져오고, 페이스 구간과 내 코스를 쓰는 방법입니다."},
     {"slug": "record", "title": "운동 기록하기", "description": "운동을 시작하고 세트를 남기고 끝내는 방법, 지난 기록을 고치는 방법입니다."},
     {"slug": "routines", "title": "루틴과 프로그램", "description": "루틴을 만들고, 나에게 맞는 프로그램을 짜고, 운동 목록을 쓰는 방법입니다."},
     {"slug": "coach", "title": "코치와 서킷", "description": "다음 무게 추천, 코치 서킷, 주간 하이브리드 계획, 코치 탭의 블록 계획입니다."},
     {"slug": "stats", "title": "통계와 리포트", "description": "통계 탭에서 보는 회복·근력 균형·볼륨과 주간 코칭 리포트입니다."},
-    {"slug": "sharing", "title": "기록 공유와 꾸미기", "description": "달리기·근력 기록을 공유 카드로 만들고, 꾸미기 편집기로 글꼴·색·사진을 다듬고, 내 틀로 저장하는 방법입니다."},
+    {"slug": "sharing", "title": "기록 공유와 꾸미기", "description": "달리기·근력 기록을 공유 카드로 만들고, 꾸미기에서 틀·스티커로 꾸며 글꼴·색·사진을 다듬고, 사진첩이나 내 틀로 저장하는 방법입니다."},
     {"slug": "tools", "title": "계산기와 도구", "description": "원판·1RM·강도 프로그램 계산기, 내 장비, 운동 용어 사전입니다."},
     {"slug": "watch", "title": "스마트워치", "description": "Apple Watch, 갤럭시 워치, 가민 시계를 연결하고 시계로 기록하고 달리는 방법입니다."},
     {"slug": "health", "title": "건강 앱 연동", "description": "Apple Health와 Health Connect에 운동을 보내고 수면·심박을 가져옵니다."},

@@ -1,4 +1,4 @@
-<section id="cards" data-ask="想分享跑步紀錄|把跑步發到 Instagram 限時動態|有哪些分享卡片|製作力量訓練紀錄卡片" data-keys="分享 紀錄分享 卡片 分享卡片 instagram 限時動態 貼文 路線 分段 照片 貼圖 透明 跑步 力量 發布">
+<section id="cards" data-ask="想分享跑步紀錄|把跑步發到 Instagram 限時動態|有哪些分享卡片|製作力量訓練紀錄卡片" data-keys="分享 紀錄分享 卡片 分享卡片 instagram 限時動態 貼文 路線 分段 照片 貼紙 貼圖 透明 跑步 力量 發布">
 <h2>選擇分享卡片</h2>
 <p class="lead">在跑步結果中點 {{> runShareOpen}}，從 {{> runShareKindRoute}}、{{> runShareKindSplits}}、{{> runShareKindPhoto}}、{{> runShareKindSticker}} 卡片中選一種，做成限時動態或貼文尺寸。</p>
 <ol class="steps">
@@ -7,37 +7,86 @@
 <li>開啟或關閉 {{> runShareShowRoute}}、{{> runShareShowHeartRate}}、{{> runShareShowAscent}} 等項目。</li>
 <li>點 {{> shareToInstagramStory}} 會直接開啟 Instagram 限時動態。要傳到別處或儲存到相簿，請用 {{> shareOtherApps}}。</li>
 </ol>
-<p>{{> runShareKindSticker}} 卡片背景透明，會作為可移動的貼圖放進限時動態。路線只依截掉起點和終點附近及隱私區域後的線繪製，卡片中不含底圖、座標和時刻（含日期）。力量訓練可在 {{> tabRecord}} 中開啟紀錄後用 {{> shareWorkoutSummary}}，或在 {{> tabStats}} 中用 {{> shareCardsTooltip}}，以同樣方式製作卡片。</p>
+<p>{{> runShareKindSticker}} 卡片背景透明，會作為可移動的貼紙放進限時動態。路線只依截掉起點和終點附近及隱私區域後的線繪製，卡片中不含底圖、座標和時刻（含日期）。力量訓練可在 {{> tabRecord}} 中開啟紀錄後用 {{> shareWorkoutSummary}}，或在 {{> tabStats}} 中用 {{> shareCardsTooltip}}，以同樣方式製作卡片。</p>
 </section>
 
-<section id="studio" data-ask="想裝飾分享卡片|分享卡片怎麼裝飾|怎麼自訂分享卡片|在哪裡開啟編輯器|移動貼圖並調整大小|做成正方形卡片" data-keys="裝飾 自訂 編輯器 魔杖 貼圖 拖曳 移動 大小 旋轉 文字 畫布 正方形 限時動態 貼文 透明 匯出">
+<section id="studio" data-ask="想裝飾分享卡片|分享卡片怎麼裝飾|怎麼自訂分享卡片|在哪裡開啟編輯器|移動貼紙並調整大小|做成正方形卡片|在寬螢幕橫向畫面上裝飾" data-keys="裝飾 自訂 編輯器 魔杖 貼紙 貼圖 拖曳 移動 大小 旋轉 雙指 畫布 正方形 限時動態 貼文 透明 匯出 欄 上次 寬螢幕 橫向 摺疊 並排">
 <h2>開啟裝飾編輯器</h2>
-<p class="lead">點跑步或力量訓練分享頁面上方的魔杖按鈕（{{> studioOpen}}），即可開啟裝飾編輯器。</p>
+<p class="lead">點跑步或力量訓練分享頁面上方的魔杖按鈕（{{> studioOpen}}），即可開啟裝飾編輯器。下方列從 {{> studioPanelTemplates}} 開始排列。</p>
 <ol class="steps">
 <li>點分享頁面右上角的魔杖按鈕。</li>
-<li>從下方列開啟 {{> studioPanelStickers}}、{{> studioPanelFonts}}、{{> studioPanelColors}}、{{> studioPanelPhoto}}、{{> studioPanelLayers}}、{{> studioPanelTemplates}}。</li>
-<li>加入貼圖後用手指拖曳，或調整大小和旋轉。用 {{> studioAddText}} 也可以加文字。</li>
-<li>在 {{> studioCanvasSize}} 中選擇 {{> shareFormatStory}}、{{> shareFormatFeed}} 或 {{> studioSquare}}，完成後匯出或發到限時動態。</li>
+<li>從下方列開啟 {{> studioPanelTemplates}}、{{> studioPanelStickers}}、{{> studioPanelFonts}}、{{> studioPanelColors}}、{{> studioPanelPhoto}}、{{> studioPanelLayers}}。</li>
+<li>用手指拖曳貼紙來移動，用雙指調整大小和旋轉。</li>
+<li>在 {{> studioCanvasSize}} 中選擇 {{> shareFormatStory}}、{{> shareFormatFeed}} 或 {{> studioSquare}}，完成後儲存到相簿或發到限時動態。</li>
 </ol>
-<p>跑步貼圖有距離、時間、配速、海拔剖面和跑過的路線，力量貼圖有 {{> studioMetricLiftSummary}}、{{> studioMetricLiftRecord}}、{{> studioMetricBigThree}}、{{> studioMetricVolumeVsLast}}、{{> studioMetricSetChips}}、{{> studioMetricMuscles}} 等。坡度修正配速或估算 1RM 走勢這類分析值貼圖，依該值原本所屬的等級開放。卡片上的 App 名稱標示與等級無關，一律會顯示。</p>
+<p>第一次開啟時，會出現一次提示框，說明如何選範本、拖曳和長按。上次開啟的欄，下次開啟編輯器時會再次開啟。在摺疊 iPhone 的內螢幕或橫放的 iPad 上，畫布在左邊，工具在右邊。</p>
+</section>
+
+<section id="presets" data-ask="想用現成範本|一鍵完成分享卡片|換範本會換掉照片嗎|有哪些範本|每次紀錄看到的範本數量不同" data-keys="範本 現成範本 預設 設計 版面 排版 一鍵 完成 預覽 直接 選擇 跑步 力量 17 9">
+<h2>用現成範本直接製作</h2>
+<p class="lead">在編輯器第一欄 {{> studioPanelTemplates}} 中點一個現成範本，就會直接放入用這次紀錄數值填好的版面。免費。</p>
+<ol class="steps">
+<li>開啟編輯器，開啟 {{> studioPanelTemplates}} 欄。</li>
+<li>在 {{" studioPresets}} 一列中查看用這次紀錄數值填好的預覽，點其中一個。</li>
+<li>拖曳貼紙微調，或再加貼紙。也可以點別的範本，只換版面。</li>
+</ol>
+<p>現成範本有跑步 17 款、力量 9 款。點範本只會改變版面，畫布尺寸、背景和照片保持不變。以這次紀錄中沒有的數值為主角的範本不會顯示，例如沒有心率的跑步不會顯示 {{> studioPresetBody}} 範本。下方的 {{> studioMyTemplates}} 中是你儲存的範本。見<a href="#templates">我的範本與自動產生</a>。</p>
+</section>
+
+<section id="stickers" data-ask="有哪些貼紙|加對話框|加位置圖釘|放多張照片|本月跑量貼紙|加詞語貼紙" data-keys="貼紙 貼圖 種類 紀錄 指標 步頻 出發時間 本週 本月 距離 跑量 日曆 連續 文字 對話框 尾巴 位置圖釘 圖釘 地點 詞語 標籤 裝飾圖 圖形 描邊 照片貼紙 圓形 照片拼圖 拼圖 多張">
+<h2>貼紙種類</h2>
+<p class="lead">{{> studioPanelStickers}} 欄分為 {{> studioSectionRecord}}、{{> studioSectionText}}、{{> studioSectionWords}}、{{> studioDecoration}}、{{> studioSectionPhoto}} 幾組。</p>
+<ul>
+<li>{{> studioSectionRecord}}：跑步有 {{> studioMetricRunSummary}}、{{> studioMetricElevation}}、{{> studioRoute}}，以及步頻、{{> studioMetricStartTime}}、{{> studioMetricWeekDistance}}、{{> studioMetricMonthDistance}}、{{> studioMetricMonth}}、{{> studioMetricRunStreak}}。力量有 {{> studioMetricLiftSummary}}、{{> studioMetricLiftRecord}}、{{> studioMetricBigThree}}、{{> studioMetricVolumeVsLast}}、{{> studioMetricSetChips}}、{{> studioMetricMuscles}}、{{> studioMetricDate}}、{{> studioMetricStartTime}} 等。</li>
+<li>{{> studioSectionText}}：{{> studioAddText}}、{{> studioBubble}}、{{> studioPin}}。選取對話框後，用 {{> studioBubbleTail}} 按鈕把尾巴轉到四個方向之一。</li>
+<li>{{> studioSectionWords}}：{{> studioWordLongRun}}、{{> studioWordNegativeSplit}}、{{> studioWordLegDay}} 這樣的詞語標籤。跑步 18 個，力量 10 個。</li>
+<li>{{> studioDecoration}}：28 種圖形。放入後可選顏色，或改為 {{> studioOutline}}。</li>
+<li>{{> studioSectionPhoto}}：{{> studioPhotoSticker}}（方形，用 {{> studioCircle}} 按鈕變圓）和 {{> studioPhotoGrid}}。</li>
+</ul>
+<p>坡度修正配速或 {{> studioMetricOneRepMaxTrend}} 這類分析值貼紙，依該值原本所屬的等級開放，其餘貼紙免費。卡片上的 App 名稱標示與等級無關，一律會顯示。</p>
+</section>
+
+<section id="menu" data-ask="想複製貼紙|把貼紙移到最上層|一次移動多個貼紙|一次刪除多個貼紙|長按貼紙會出現什麼" data-keys="長按 選單 更多 三個點 編輯 複製 最上層 最下層 層級 順序 陰影 鎖定 多選 全選 置中 對齊 一起 一次 批次 刪除 貼圖">
+<h2>長按選單與多選</h2>
+<p class="lead">長按貼紙，或選取後點下方列的 ⋯（{{> studioMore}}），即可開啟選單。</p>
+<ul>
+<li>選單：{{> actionEdit}}（含文字的貼紙）、{{> studioDuplicate}}、{{> studioBringFront}}、{{> studioSendBack}}、{{> studioShadow}}、{{> studioLayerLock}} <span class="pro">PRO</span>、{{> studioMultiSelect}}、{{> actionDelete}}。</li>
+</ul>
+<ol class="steps">
+<li>長按貼紙，選擇 {{> studioMultiSelect}}。</li>
+<li>每點一個貼紙就加入或移出選取。拖曳任一選取的貼紙，它們會一起移動。</li>
+<li>用工具列的 {{> studioSelectAll}}、{{> studioCenterAlign}}、{{> actionDelete}} 一次處理，最後點 {{> actionDone}}。</li>
+</ol>
+<p>鎖定以外的選單和多選都免費。App 名稱標示不能複製或刪除。</p>
+</section>
+
+<section id="save" data-ask="想把卡片儲存到相簿|儲存到圖庫|提示無法儲存|儲存到相簿時為什麼要權限" data-keys="儲存到相簿 儲存 相簿 照片 圖庫 相冊 權限 存取 下載 高畫質 fitboost相簿">
+<h2>儲存到相簿</h2>
+<p class="lead">點編輯器最下方左邊的按鈕（{{> studioSaveToPhotos}}），會把做好的卡片依目前尺寸儲存到相簿。免費。</p>
+<ol class="steps">
+<li>完成後，點編輯器最下方左邊的按鈕。</li>
+<li>第一次儲存時會要求照片權限。iPhone 只要求加入照片的權限。</li>
+<li>顯示 {{" studioSaved}} 就完成了。</li>
+</ol>
+<p>Android 會儲存到相簿中的 FitBoost 相簿。如果沒有允許權限，會顯示 {{" studioSaveFailed}} 到裝置設定中開啟照片權限即可。要傳到其他 App，請用同一列的 {{> shareOtherApps}}。</p>
 </section>
 
 <section id="fonts-colors" data-ask="更換分享卡片字體|只想把數字換成另一種字體|從照片中取色|用滴管選顏色|把照片變成黑白|依配速為路線上色" data-keys="字體 數字 單位 名稱 大小 字距 等寬 顏色 滴管 色碼 hex 對比 陰影 黑白 模糊 亮度 暖色 底部變暗 調整 路線顏色 配速 坡度 圖層 復原 遮擋區域">
 <h2>字體、顏色與照片</h2>
-<p class="lead">即使在同一個貼圖裡，也能為 {{> studioPartValue}}、{{> studioPartUnit}}、{{> studioPartLabel}} 分別選擇字體和顏色。照片可以從黑白、模糊調整到亮度、對比。</p>
+<p class="lead">即使在同一個貼紙裡，也能為 {{> studioPartValue}}、{{> studioPartUnit}}、{{> studioPartLabel}} 分別選擇字體和顏色。照片可以從黑白、模糊調整到亮度、對比。</p>
 <ul>
 <li>{{> studioPanelFonts}}：每個部分的字體、{{> studioFontSize}}、{{> studioLetterSpacing}}、{{> studioTabular}}。字體中沒有的字會提示 {{" studioFontFallback}}。</li>
 <li>{{> studioPanelColors}}：基本 3 色、從照片中取的顏色、{{> studioEyedropper}}、{{> studioHex}}。會顯示對比以判斷文字是否清楚，並建議 {{> studioAddShadow}}。</li>
 <li>{{> studioPanelPhoto}}：{{> studioGrayscale}}、{{> studioBlur}}、{{> studioBrightness}}、{{> studioContrast}}、{{> studioWarmth}}、{{> studioBottomShade}}。</li>
 <li>{{> studioRoute}}：{{> studioRouteSolid}}，或依 {{> studioRoutePace}}、{{> studioRouteGrade}} 為線上色。</li>
-<li>{{> studioPanelLayers}}：{{> actionUndo}}、{{> studioRedo}}、{{> studioLayerUp}}、{{> studioLayerDown}}、{{> studioLayerHide}}、{{> studioLayerLock}}、位置與旋轉數值、{{> studioSafeArea}}。</li>
+<li>{{> studioPanelLayers}}：{{> actionUndo}}、{{> studioRedo}}、{{> studioLayerUp}}、{{> studioLayerDown}}（免費）、{{> studioLayerHide}}、{{> studioLayerLock}}、位置與旋轉數值、{{> studioSafeArea}}。</li>
 </ul>
-<p>共有 22 種字體，全部以 SIL 開源字型授權（OFL）收錄在 App 中。免費可在整個貼圖上使用 3 種基本字體，以及基本 3 色、黑白、模糊和單色路線。每個部分單獨選字體和其餘字體、照片取色、滴管、色碼、復原、圖層、數值、遮擋區域、路線上色，以及亮度、對比、暖色、底部變暗屬於 PRO。</p>
+<p>共有 22 種字體，全部以 SIL 開源字型授權（OFL）收錄在 App 中。免費可在整個貼紙上使用 3 種基本字體，以及基本 3 色、黑白、模糊和單色路線。每個部分單獨選字體和其餘 19 種字體、照片取色、滴管、色碼、復原、圖層隱藏與鎖定、數值、遮擋區域、路線上色，以及亮度、對比、暖色、底部變暗屬於 PRO。</p>
 </section>
 
-<section id="subject" data-ask="想把貼圖放到人物後面|照片裡的人被文字擋住了|放到人物後面會把照片傳到伺服器嗎|提示在照片中找不到人物" data-keys="人物 後面 去背 主體 分割 照片 裝置內 伺服器 隱私 視覺 疊放">
+<section id="subject" data-ask="想把貼紙放到人物後面|照片裡的人被文字擋住了|放到人物後面會把照片傳到伺服器嗎|提示在照片中找不到人物" data-keys="人物 後面 去背 主體 分割 照片 裝置內 伺服器 隱私 視覺 疊放">
 <h2>放到人物後面 <span class="pro">PRO</span></h2>
-<p class="lead">在 {{> studioPanelPhoto}} 中開啟 {{> studioSubjectFront}}，會去背照片中的人物，讓貼圖位於人物後面。照片只在裝置內處理。</p>
+<p class="lead">在 {{> studioPanelPhoto}} 中開啟 {{> studioSubjectFront}}，會去背照片中的人物，讓貼紙位於人物後面。照片只在裝置內處理。</p>
 <ol class="steps">
 <li>在 {{> runShareKindPhoto}} 卡片或編輯器中選擇照片作為背景。</li>
 <li>在 {{> studioPanelPhoto}} 中開啟 {{> studioSubjectFront}}。</li>
@@ -49,20 +98,20 @@
 <h2>我的範本與自動產生</h2>
 <p class="lead">用 {{> studioTemplateSave}} 儲存裝飾好的版面、字體和顏色，下次紀錄的數值會直接填進去（PRO）。</p>
 <ol class="steps">
-<li>在編輯器中排好版面後，點 {{> studioPanelTemplates}} 中的 {{> studioTemplateSave}}。</li>
-<li>下次分享時在 {{> studioPanelTemplates}} 中選擇該範本，就會填入新紀錄的數值。</li>
+<li>在編輯器中排好版面後，點 {{> studioPanelTemplates}} 欄下方 {{> studioMyTemplates}} 中的 {{> studioTemplateSave}}。</li>
+<li>下次分享時在 {{> studioMyTemplates}} 中選擇該範本，就會填入新紀錄的數值。</li>
 <li>開啟範本的 {{> studioTemplateAutoOn}} 開關後，訓練或跑步結束時可從結果頁面的 {{> studioOpenAuto}} 直接開啟（PRO+）。</li>
 </ol>
 <p>我的範本只儲存在本裝置和備份檔案中，不會透過裝置間同步上傳。訂閱結束後，已儲存的範本不會刪除，只是 PRO 功能重新鎖定。</p>
 </section>
 
-<section id="plans" data-ask="分享裝飾免費嗎|編輯器中哪些要付費|能去掉分享卡片上的 App 名稱嗎" data-keys="分享 裝飾 免費 付費 pro pro+ 訂閱 鎖定 App名稱 浮水印 標誌">
+<section id="plans" data-ask="分享裝飾免費嗎|編輯器中哪些要付費|範本和貼紙免費嗎|能去掉分享卡片上的 App 名稱嗎" data-keys="分享 裝飾 免費 付費 pro pro+ 訂閱 鎖定 App名稱 浮水印 標誌 範本 貼紙 貼圖 儲存到相簿">
 <h2>分享與裝飾的免費與付費</h2>
-<p class="lead">分享卡片和基本裝飾免費。專業編輯工具屬於 PRO，結束後用我的範本直接產生屬於 PRO+。</p>
+<p class="lead">分享卡片以及裝飾中的範本、貼紙、多選和儲存到相簿都免費。專業編輯工具屬於 PRO，結束後用我的範本直接產生屬於 PRO+。</p>
 <ul>
-<li>免費：跑步與力量分享卡片，貼圖的加入、拖曳、大小與旋轉，3 種基本字體，基本 3 色，黑白與模糊，單色路線，限時動態、貼文與正方形尺寸，匯出和直接發到 Instagram 限時動態。</li>
-<li>PRO：每個部分的字體、大小、字距與數字寬度，其餘字體，照片取色、滴管與色碼，復原、圖層、數值與限時動態遮擋區域，路線上色，亮度、對比、暖色與底部變暗，放到人物後面，我的範本。</li>
+<li>免費：跑步與力量分享卡片，現成範本（跑步 17 款、力量 9 款），紀錄貼紙（含步頻、出發時間、本週距離、本月距離、本月日曆、連續跑步天數），文字、對話框、位置圖釘、詞語標籤、裝飾圖、照片貼紙與照片拼圖，拖曳、大小與旋轉，長按選單（鎖定除外），多選，圖層順序，3 種基本字體（整個貼紙），基本 3 色，黑白與模糊，單色路線，限時動態、貼文與正方形尺寸，儲存到相簿、匯出和直接發到 Instagram 限時動態。</li>
+<li>PRO：數字、單位、標籤各自的字體、大小、字距與數字寬度，其餘 19 種字體，照片取色、滴管與色碼，復原，圖層隱藏與鎖定，數值，限時動態遮擋區域，路線上色（依配速或坡度），亮度、對比、暖色與底部變暗，放到人物後面，我的範本。</li>
 <li>PRO+：訓練或跑步結束時用我的範本直接產生分享卡片。</li>
 </ul>
-<p>卡片上的 App 名稱標示在所有等級中都會顯示，沒有去除功能。</p>
+<p>分析值貼紙依該值原本所屬的等級開放。卡片上的 App 名稱標示在所有等級中都會顯示，沒有去除功能。</p>
 </section>

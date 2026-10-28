@@ -96,5 +96,19 @@
  "滴管取色": "sharing#fonts-colors",
  "貼圖放到人物後面": "sharing#subject",
  "儲存範本": "sharing#templates",
- "去掉分享卡片的 app 名稱": "sharing#plans"
+ "去掉分享卡片的 app 名稱": "sharing#plans",
+ "現成範本": "sharing#presets",
+ "一鍵完成卡片": "sharing#presets",
+ "對話框貼紙": "sharing#stickers",
+ "照片拼圖": "sharing#stickers",
+ "本月跑量貼紙": "sharing#stickers",
+ "複製貼紙": "sharing#menu",
+ "多選貼紙": "sharing#menu",
+ "貼紙移到最上層": "sharing#menu",
+ "儲存到相簿": "sharing#save",
+ "儲存到圖庫": "sharing#save",
+ "範本和貼紙免費嗎": "sharing#plans",
+ "匯入其他 App 的跑步": "running#import",
+ "匯入 tcx 跑步": "running#import",
+ "匯入手錶匯出的紀錄": "running#import"
 }
