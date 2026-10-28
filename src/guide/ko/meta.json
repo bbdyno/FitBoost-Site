@@ -1,21 +1,23 @@
 {
   "topics": [
     {"slug": "start", "title": "시작하기", "description": "설치하고 처음 하는 일, 운동 목표, 화면 구성을 알아봅니다."},
+    {"slug": "running", "title": "러닝", "description": "러닝 모드로 바꾸고, 휴대폰과 시계로 달리기를 재고, 페이스 구간과 내 코스를 쓰는 방법입니다."},
     {"slug": "record", "title": "운동 기록하기", "description": "운동을 시작하고 세트를 남기고 끝내는 방법, 지난 기록을 고치는 방법입니다."},
     {"slug": "routines", "title": "루틴과 프로그램", "description": "루틴을 만들고, 나에게 맞는 프로그램을 짜고, 운동 목록을 쓰는 방법입니다."},
     {"slug": "coach", "title": "코치와 서킷", "description": "다음 무게 추천, 코치 서킷, 주간 하이브리드 계획, 코치 탭의 블록 계획입니다."},
     {"slug": "stats", "title": "통계와 리포트", "description": "통계 탭에서 보는 회복·근력 균형·볼륨과 주간 코칭 리포트입니다."},
     {"slug": "tools", "title": "계산기와 도구", "description": "원판·1RM·강도 프로그램 계산기, 내 장비, 운동 용어 사전입니다."},
-    {"slug": "watch", "title": "스마트워치", "description": "Apple Watch, 갤럭시 워치, 가민 시계를 연결하고 시계로 기록하는 방법입니다."},
+    {"slug": "watch", "title": "스마트워치", "description": "Apple Watch, 갤럭시 워치, 가민 시계를 연결하고 시계로 기록하고 달리는 방법입니다."},
     {"slug": "health", "title": "건강 앱 연동", "description": "Apple Health와 Health Connect에 운동을 보내고 수면·심박을 가져옵니다."},
     {"slug": "sync", "title": "동기화와 백업", "description": "기기끼리 기록을 맞추고, 새 휴대폰으로 옮기고, 백업 파일을 만드는 방법입니다."},
     {"slug": "trainer", "title": "트레이너와 나누기", "description": "트레이너에게 기록을 보내고, 트레이너는 회원 기록을 받아 보는 방법입니다."},
     {"slug": "subscription", "title": "무료와 구독", "description": "무료로 쓸 수 있는 것, PRO와 PRO+의 차이, 복원과 해지입니다."},
     {"slug": "settings", "title": "설정", "description": "단위·언어·테마, 휴식 타이머, 위젯과 잠금화면 같은 설정입니다."},
-    {"slug": "help", "title": "문제 해결", "description": "시계 연결, 동기화, 백업, 구독에서 막힐 때 확인할 것입니다."}
+    {"slug": "help", "title": "문제 해결", "description": "시계 연결, 동기화, 백업, 구독, 달리기 위치에서 막힐 때 확인할 것입니다."}
   ],
   "popular": [
     "sync#new-phone",
+    "running#mode",
     "watch#garmin",
     "record#finish",
     "subscription#restore",

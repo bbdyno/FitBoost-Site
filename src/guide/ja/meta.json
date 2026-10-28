@@ -1,21 +1,23 @@
 {
   "topics": [
     {"slug": "start", "title": "はじめに", "description": "インストール後にすること、トレーニング目標、画面の構成を説明します。"},
+    {"slug": "running", "title": "ランニング", "description": "ランニングモードに切り替え、スマホやウォッチでランを計測し、ペースゾーンとマイコースを使う方法です。"},
     {"slug": "record", "title": "ワークアウトの記録", "description": "ワークアウトを始めてセットを記録し、終える方法と、過去の記録の直し方です。"},
     {"slug": "routines", "title": "ルーティンとプログラム", "description": "ルーティンを作り、自分に合うプログラムを組み、種目一覧を使う方法です。"},
     {"slug": "coach", "title": "コーチとサーキット", "description": "次の重量の提案、コーチサーキット、週間ハイブリッドプラン、コーチタブのブロックプログラムです。"},
     {"slug": "stats", "title": "統計とレポート", "description": "統計タブで見る回復・筋力バランス・ボリュームと、週間コーチングレポートです。"},
     {"slug": "tools", "title": "計算機とツール", "description": "プレート・1RM・強度プログラム計算機、マイ器具、トレーニング用語集です。"},
-    {"slug": "watch", "title": "スマートウォッチ", "description": "Apple Watch、Galaxy Watch、Garminウォッチをつないで手元で記録する方法です。"},
+    {"slug": "watch", "title": "スマートウォッチ", "description": "Apple Watch、Galaxy Watch、Garminウォッチをつないで手元で記録し、走る方法です。"},
     {"slug": "health", "title": "ヘルスケア連携", "description": "Apple HealthとHealth Connectにワークアウトを送り、睡眠や心拍を取り込みます。"},
     {"slug": "sync", "title": "同期とバックアップ", "description": "端末間で記録をそろえ、新しいスマホへ移し、バックアップファイルを作る方法です。"},
     {"slug": "trainer", "title": "トレーナーと共有", "description": "トレーナーに記録を送る方法と、トレーナーが会員の記録を見る方法です。"},
     {"slug": "subscription", "title": "無料とサブスクリプション", "description": "無料でできること、PROとPRO+の違い、復元と解約です。"},
     {"slug": "settings", "title": "設定", "description": "単位・言語・テーマ、休憩タイマー、ウィジェットとロック画面などの設定です。"},
-    {"slug": "help", "title": "困ったとき", "description": "ウォッチ連携、同期、バックアップ、サブスクリプションで困ったときの確認事項です。"}
+    {"slug": "help", "title": "困ったとき", "description": "ウォッチ連携、同期、バックアップ、サブスクリプション、ランの位置情報で困ったときの確認事項です。"}
   ],
   "popular": [
     "sync#new-phone",
+    "running#mode",
     "watch#garmin",
     "record#finish",
     "subscription#restore",

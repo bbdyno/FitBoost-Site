@@ -1,21 +1,23 @@
 {
   "topics": [
     {"slug": "start", "title": "入門", "description": "安裝後要做的事、訓練目標和畫面結構。"},
+    {"slug": "running", "title": "跑步", "description": "切換到跑步模式，用手機和手錶測量跑步，使用配速區間和我的路線。"},
     {"slug": "record", "title": "記錄訓練", "description": "開始訓練、記錄每組、結束訓練，以及修改過去的記錄。"},
     {"slug": "routines", "title": "例行訓練與計畫", "description": "建立例行訓練、生成適合自己的計畫、使用動作列表。"},
     {"slug": "coach", "title": "教練與循環訓練", "description": "下一組重量建議、教練循環訓練、每週混合訓練計畫和教練頁的週期計畫。"},
     {"slug": "stats", "title": "統計與報告", "description": "統計頁中的恢復、力量平衡、訓練量，以及每週教練報告。"},
     {"slug": "tools", "title": "計算機與工具", "description": "槓片、1RM、強度計畫計算機，我的器材和訓練術語詞典。"},
-    {"slug": "watch", "title": "智慧手錶", "description": "連線 Apple Watch、Galaxy Watch 或 Garmin 手錶並在手腕上記錄。"},
+    {"slug": "watch", "title": "智慧手錶", "description": "連接 Apple Watch、Galaxy Watch 或 Garmin 手錶，在手腕上記錄訓練和跑步。"},
     {"slug": "health", "title": "健康 App", "description": "把訓練寫入 Apple 健康和 Health Connect，並讀取睡眠和心率。"},
     {"slug": "sync", "title": "同步與備份", "description": "在裝置間同步記錄、換新手機、建立備份檔案。"},
     {"slug": "trainer", "title": "與教練分享", "description": "把記錄發給教練，以及教練檢視學員紀錄的方法。"},
     {"slug": "subscription", "title": "免費與訂閱", "description": "免費能用什麼、PRO 與 PRO+ 的區別、還原與取消。"},
     {"slug": "settings", "title": "設定", "description": "單位、語言、主題、休息計時、小工具和鎖定畫面等設定。"},
-    {"slug": "help", "title": "常見問題排查", "description": "手錶、同步、備份或訂閱出問題時要檢查的地方。"}
+    {"slug": "help", "title": "常見問題排查", "description": "手錶連線、同步、備份、訂閱和跑步定位遇到問題時要檢查的事項。"}
   ],
   "popular": [
     "sync#new-phone",
+    "running#mode",
     "watch#garmin",
     "record#finish",
     "subscription#restore",

@@ -1,0 +1,129 @@
+<section id="mode" data-ask="러닝 모드는 어떻게 켜나요|달리기 화면으로 바꾸고 싶어요|근력 모드로 돌아가고 싶어요|러닝 모드로 바꾸면 뭐가 달라지나요" data-keys="러닝모드 러닝 모드 달리기 근력모드 전환 바꾸기 아령 달리는사람 두칸 버튼 머리말 운동모드">
+<h2>러닝 모드로 바꾸기</h2>
+<p class="lead">{{> tabHome}} 머리말 오른쪽의 두 칸 버튼에서 달리는 사람 칸을 누르면 앱 전체가 러닝 모드가 됩니다. {{> tabMenu}}의 {{> menuModeTitle}} 줄에서도 바꿉니다.</p>
+<ol class="steps">
+<li>{{> tabHome}} 머리말 오른쪽 아령·달리는 사람 버튼에서 {{> modeRunning}} 칸을 누릅니다.</li>
+<li>근력으로 돌아가려면 같은 버튼의 {{> modeStrength}} 칸을 누릅니다.</li>
+</ol>
+<ul>
+<li>{{> tabHome}}: 오늘 달리기 카드, 이번 주 달린 거리와 지난 8주 막대, {{> courseTitle}}·{{> runZonesTitle}}·{{> runHomePlan}} 바로 가기, 최근 달리기.</li>
+<li>{{> tabRecord}}: {{> historyRunsOnly}} 보기로 열리고, {{> historyAllWorkouts}}으로 바꿀 수 있습니다.</li>
+<li>{{> tabStats}}: 맨 위에 달리기 칸이 생기고, 그 아래 근력 칸은 그대로입니다.</li>
+<li>{{> tabCoach}}: 맨 위에 달리기 중심 주간 계획이 놓입니다(PRO+).</li>
+<li>{{> tabMenu}}: {{> courseTitle}}, {{> runZonesTitle}}, {{> runSettingsTitle}} 줄이 생깁니다.</li>
+</ul>
+<p>모드는 화면만 바꿉니다. 기록·처방·건강 앱 자료는 근력과 하나로 이어집니다. 근력 일정이 있는 날에는 홈에 {{" modeCrossStrength}} 줄이 뜹니다. 진행 중인 운동이 있으면 {{" modeLockedActive}}라고 뜨고 바뀌지 않습니다. 고른 모드는 앱을 다시 열어도 남습니다.</p>
+</section>
+
+<section id="start-run" data-ask="달리기는 어떻게 시작하나요|러닝 기록하는 법|휴대폰으로 달리기 재기|러닝머신에서 달린 것도 재나요|트랙에서 바퀴 세기" data-keys="시작 달리기시작 러닝 기록 재기 측정 휴대폰 기기 실내 러닝머신 트랙 자유달리기 기록재기 대회 구성훈련 인터벌 역치 언덕 gps 위성">
+<h2>달리기 시작</h2>
+<p class="lead">러닝 모드 {{> tabHome}}의 오늘 달리기 카드에서 {{> runStart}}를 누르고, 달리기 종류와 재는 기기를 고릅니다.</p>
+<ol class="steps">
+<li>{{> tabHome}}의 오늘 달리기 카드에서 {{> runStart}}를 누릅니다.</li>
+<li>맨 위 카드는 오늘 처방(없으면 추천)입니다. 그대로 {{> runStart}}를 누르거나, 아래에서 {{> runTitleFree}}·{{> runKindTest}}·{{> runTitleCourse}}·{{> runTitleTrack}}·{{> runKindTreadmill}} 같은 종류를 고릅니다.</li>
+<li>{{> runDeviceTitle}}에서 {{> runDevicePhone}} 또는 {{> runDeviceWatch}}를 고릅니다.</li>
+<li>휴대폰으로 밖에서 처음 잴 때 위치 권한을 묻습니다. 앱을 사용하는 동안의 위치를 허용합니다.</li>
+</ol>
+<p>{{> runDevicePhone}}은 휴대폰 위성 위치로 재고, 화면을 꺼도 그 달리기가 끝날 때까지 잽니다. {{> runKindTreadmill}}는 위치 없이 걸음으로 거리를 어림합니다. {{> runKindTest}}는 힘껏 달려 페이스 구간을 정하는 날입니다. {{> runKindStructured}}(역치·인터벌·언덕 단계 안내)과 {{> runTitleRace}}(목표 기록 페이스와 결승 예상)는 PRO입니다. 시계로 재는 법은 <a href="#watch">시계로 달리기</a>에 있습니다.</p>
+</section>
+
+<section id="during" data-ask="달리는 중 화면에 뭐가 보이나요|달리기 음성 안내 켜고 끄기|신호등에서 멈추면 시간이 가나요|구간 버튼은 뭔가요" data-keys="달리는중 화면 페이스 지금페이스 거리 시간 심박 케이던스 구간 랩 오르막 평균 멈춤 끝내기 음성안내 이어폰 자동멈춤 자동구간 목표 범위 빨라요 느려요 신호등">
+<h2>달리는 중 화면과 음성 안내</h2>
+<p class="lead">달리는 중에는 거리와 지금 페이스가 크게 보이고, 그 아래에 경사 보정 페이스·심박·케이던스·구간·오르막·평균 페이스 칸이 놓입니다.</p>
+<ul>
+<li>위쪽에 재는 기기({{> runSourcePhone}} 같은 문구)와 위치 상태({{> runGpsSearching}} 같은 문구)가 보입니다.</li>
+<li>목표가 있는 단계에서는 {{> runTarget}} 막대가 {{> runInRange}}·{{> runTooFast}}·{{> runTooSlow}}을 알립니다.</li>
+<li>{{> runLap}}으로 구간을 직접 끊고, {{> runPause}}·{{> runResume}}, {{> runFinish}}를 씁니다. 구성 훈련은 {{> runNextStepButton}}으로 단계를 넘깁니다.</li>
+<li>코스로 달리면 남은 거리와 지난 나보다 앞섰는지 뒤졌는지가 보이고, 벗어나면 {{" runOffCourse}}라고 알립니다.</li>
+</ul>
+<p>음성 안내는 구간·단계·범위 이탈·코스 이탈을 이어폰으로 말해 줍니다. 휴대폰으로 잴 때 휴대폰에서 나오고, 시계로 잴 때는 시계가 진동으로 알립니다. {{> tabMenu > runSettingsTitle}}에서 {{> runSettingsVoice}}, {{> runSettingsAutoPause}}, {{> runSettingsLap}}, {{> runSettingsPaceWindow}}를 바꿉니다. {{> runSettingsAutoPause}}을 켜면 신호등 앞처럼 멈춰 선 시간은 세지 않습니다.</p>
+</section>
+
+<section id="result" data-ask="달리기 결과는 어디서 보나요|경사 보정 페이스가 뭔가요|심박 흐름이 뭔가요|이 숫자는 어떻게 나왔나요|달리기 기록을 GPX로 내보내기" data-keys="결과 지도 구간기록 스플릿 분석 지표 근거 식 한계 경사보정 gap 심박흐름 디커플링 심박부하 trimp 운동부하 강도 rpe 내보내기 gpx 파일">
+<h2>결과와 지표 근거</h2>
+<p class="lead">끝내면 달린 길 지도, 거리·시간·평균 페이스·오르막, {{> runSplits}}, {{> runAnalysis}}이 나옵니다. 지표를 누르면 식과 근거, 한계를 볼 수 있습니다.</p>
+<ul>
+<li>{{> runSplits}}: 구간마다 페이스·심박·경사. 구간의 경사 보정 값은 PRO입니다.</li>
+<li>{{> runAnalysis}} <span class="pro">PRO</span>: {{> runGap}}, {{> runDecoupling}}, {{> runTrimp}}, {{> runSessionLoad}}, 케이던스, 지형.</li>
+<li>{{> runRpeTitle}}: 1~10으로 고르면 운동 부하와 체력·피로 계산에 들어갑니다.</li>
+<li>{{> runSaveCourse}}로 이 길을 코스로 저장하고, {{> runExport}}로 위치 교환 파일(GPX)을 다른 앱에 보냅니다.</li>
+</ul>
+<p>경사 보정 페이스는 평지였다면 얼마였을지 어림한 값이고, 내리막 이득을 크게 잡는 한계가 있습니다. 심박 흐름은 앞 절반과 뒤 절반의 효율을 비교하며, 강도가 일정한 20분 넘는 달리기에서만 계산합니다. 이번 기록이 기준 기록으로 쓸 만하면 {{> runUseBaseline}} 버튼이 뜹니다. 지난 달리기는 {{> tabRecord}}에서 눌러 다시 엽니다.</p>
+</section>
+
+<section id="zones" data-ask="페이스 구간은 어떻게 정하나요|기준 기록 넣는 법|쉬운 달리기 페이스가 얼마예요|예상 마라톤 기록 보기|심박 구간 기준 바꾸기" data-keys="기준기록 기준 기록 페이스구간 페이스 구간 존 쉬움 마라톤 역치 인터벌 예상기록 vdot 다니엘스 3km 5km 10km 하프 풀 심박구간 최대심박 역치심박">
+<h2>기준 기록과 페이스 구간</h2>
+<p class="lead">최근 기록 하나를 기준 기록으로 넣으면 {{> runZoneEasy}}·{{> runZoneMarathon}}·{{> runZoneThreshold}}·{{> runZoneInterval}} 페이스와 예상 기록이 정해집니다.</p>
+<ol class="steps">
+<li>{{> tabMenu > runZonesTitle}}을 엽니다. 러닝 모드 홈의 {{> runZonesTitle}} 바로 가기로도 갑니다.</li>
+<li>{{> runBaselineSet}}를 누르고 3km·5km·10km·{{> runHalf}}·{{> runFull}} 가운데 거리를 고른 뒤 {{> runBaselineTime}}을 적습니다.</li>
+<li>{{> runPredictions}}과 {{> runHrBasis}}({{> runHrBasisMax}} 또는 {{> runHrBasisThreshold}})을 확인합니다.</li>
+</ol>
+<p>페이스는 다니엘스·길버트의 산소 비용 식(VDOT)으로 계산하고, {{> runZonesHow}}에서 식과 출처를 봅니다. 기록이 없으면 {{> runKindTest}}로 재거나, 달리기 결과의 {{> runUseBaseline}}을 누릅니다. 넣은 지 8주가 지나면 다시 재 보라고 알려 줍니다.</p>
+</section>
+
+<section id="strength" data-ask="하체 운동 다음 날 달리기는 어떻게 하나요|오늘 달리기가 쉬운 달리기로 바뀌었어요|한 번에 얼마나 길게 달려도 되나요|달리기 거리 상한은 왜 있나요" data-keys="근력 하체 다리 다음날 쉬운달리기 품질 바꿈 처방 110% 30일 가장긴 거리상한 상한 부상 주간계획 맞물림">
+<h2>근력과 맞물린 처방</h2>
+<p class="lead">한 번에 달리는 거리는 지난 30일 가장 긴 달리기의 110% 안으로 권합니다. 주간 달리기 계획을 쓰면 하체 운동 다음 날 품질 달리기를 쉬운 달리기로 바꿉니다.</p>
+<ul>
+<li>{{" runReasonCapped}}: 5,200명을 18개월 지켜본 관찰 연구에서 이 선을 넘은 달리기의 부상 위험이 높았습니다. 직접 늘리면 막지 않고 알리기만 합니다. 지금 상한은 {{> tabStats}}의 {{> runCapTitle}}에 있습니다.</li>
+<li>{{" runReasonLegs}} <span class="pro">PRO+</span>: 근손상 이틀 뒤 30분 달리기 기록이 4%쯤 느려졌다는 무작위 시험을 따릅니다. 바뀐 날에만 오늘 카드에 까닭이 한 줄 붙습니다.</li>
+<li>{{" runReasonBaselineTest}}: 기준 기록이 없거나 오래됐으면 계획의 첫 품질 날을 기록 재기로 바꿉니다.</li>
+</ul>
+<p>주간 달리기 계획은 러닝 모드 {{> tabCoach}} 맨 위의 {{> runCoachMakeTitle}}에서 짭니다(PRO+). 근력 날과 겹치지 않게 쉬운·품질 달리기를 나누고, 근력 처방은 그대로 둔 채 달리기 배치만 움직입니다.</p>
+</section>
+
+<section id="courses" data-ask="코스는 어떻게 만드나요|GPX 파일로 코스 가져오기|지도에 코스 그리기|자주 달리는 길을 코스로 만들기|같은 길 기록 비교하기" data-keys="코스 내코스 만들기 지도 그리기 gpx tcx 파일 가져오기 같은길 자동 지난나 겨루기 최고기록 내구간 구간기록 순환">
+<h2>내 코스 만들기와 가져오기</h2>
+<p class="lead">같은 길을 두 번 달리면 저절로 코스가 됩니다. {{> tabMenu > courseTitle}}에서 지난 달리기, 지도 그리기, 파일로도 만듭니다.</p>
+<ol class="steps">
+<li>{{> tabMenu > courseTitle}}을 열고 {{> courseMake}}를 누릅니다.</li>
+<li>{{> courseFromRun}}, {{> courseDraw}}, {{> courseFromFile}} 가운데 하나를 고릅니다.</li>
+<li>이름을 붙여 저장한 뒤 코스 화면의 {{> courseRunThis}}로 달립니다.</li>
+</ol>
+<p>{{> courseDraw}}는 지도를 눌러 찍은 점을 직선으로 잇습니다. 지도를 쓸 수 없는 판에서는 이 칸이 숨겨집니다. 파일은 위치 교환 파일(GPX)과 TCX를 엽니다. 코스로 달리면 지난 나와 겨루고, 코스 화면에 {{> courseBestLabel}}와 달린 기록이 쌓입니다. 코스 일부를 {{> courseSegments}}으로 정해 그 구간 기록만 따로 보는 것은 PRO입니다.</p>
+</section>
+
+<section id="share-course" data-ask="코스를 다른 사람에게 보내고 싶어요|받은 코스 링크 여는 법|정보무늬로 코스 보내기|코스 공유하면 내 기록도 가나요" data-keys="보내기 공유 링크 정보무늬 qr 큐알 파일 받기 받은코스 메신저 서버 내기록 함께 붙여넣기 복사한링크">
+<h2>코스 보내고 받기</h2>
+<p class="lead">코스 화면의 {{> courseSendTitle}}에서 {{> courseShareLink}}, {{> courseShareQr}}, {{> courseShareFile}} 가운데 하나로 보냅니다. 서버를 거치지 않습니다.</p>
+<ol class="steps">
+<li>{{> tabMenu > courseTitle}}에서 보낼 코스를 엽니다.</li>
+<li>{{> courseSendTitle}}에서 보낼 방법을 고르고, 원하면 {{> courseIncludeRecord}}를 켭니다.</li>
+<li>받은 사람은 링크를 누르거나 정보무늬를 읽고, 뜨는 {{> courseReceivedTitle}} 창에서 저장합니다.</li>
+</ol>
+<p>링크를 휴대폰 브라우저에서 열면 코스 그림과 거리가 보이고 앱으로 여는 버튼이 있습니다. 복사한 링크는 {{> courseTitle}} 오른쪽 위 ⋯의 {{> coursePasteLink}}로도 엽니다. 보낼 때 출발·도착 근처는 무작위로 가리고, 시각·심박은 넣지 않습니다. 함께 보내는 기록은 구간별 걸린 시간만 날짜·시각 없이 담깁니다. 긴 코스는 {{" courseTooLongForLink}}라고 뜨니 파일로 보냅니다.</p>
+</section>
+
+<section id="privacy-zones" data-ask="집 위치가 드러나지 않게 하고 싶어요|출발점을 가리고 싶어요|가리는 곳은 어떻게 정하나요|공유할 때 위치 숨기기" data-keys="가리기 가리는곳 위치 숨기기 집 직장 출발 도착 개인정보 프라이버시 무작위 반지름 공유 노출">
+<h2>위치 가리기</h2>
+<p class="lead">코스를 보내거나 파일로 내보낼 때 출발·도착 근처를 무작위 길이로 잘라 냅니다. 집·직장 둘레는 {{> runPrivacyZones}}으로 정해 둡니다.</p>
+<ol class="steps">
+<li>{{> tabMenu > runSettingsTitle}}을 엽니다.</li>
+<li>{{> runSettingsTrim}}에서 가릴 거리를 고릅니다. 고른 거리에 0~200m를 무작위로 더해 자릅니다.</li>
+<li>{{> runPrivacyZones}}의 {{> runPrivacyZoneAdd}}를 누르면 가장 최근 달리기를 시작한 곳 둘레를 가립니다.</li>
+</ol>
+<p>가리는 원의 중심은 실제 위치에서 조금 옮겨 한 번만 정해 두므로, 여러 번 보내도 평균을 내 위치를 찾기 어렵습니다. 내 기기 안의 결과 지도와 기록은 가리지 않고 그대로 남습니다.</p>
+</section>
+
+<section id="watch" data-ask="애플워치로 달리기 기록하기|가민 시계로 러닝 재기|갤럭시워치로 달리기|시계에서 시작해 주세요라고 떠요" data-keys="시계 워치 애플워치 갤럭시워치 가민 garmin 달리기 러닝 진동 코스 페이스 범위 위성 대역 배터리">
+<h2>시계로 달리기</h2>
+<p class="lead">Apple Watch, 갤럭시 워치, 가민 시계로 잽니다. 달리기 시작 화면에서 {{> runDeviceWatch}}를 고른 뒤 시계에서 시작합니다.</p>
+<ol class="steps">
+<li>시계를 먼저 <a href="watch.html">연결</a>해 둡니다.</li>
+<li>달리기 시작 화면의 {{> runDeviceTitle}}에서 {{> runDeviceWatch}}를 고르고 {{> runStart}}를 누릅니다.</li>
+<li>휴대폰에 {{" runSourceWatchWaiting}}가 뜨면 시계의 FitBoost에서 시작합니다.</li>
+</ol>
+<p>시계는 페이스 범위·단계·코스 선을 보여 주고, 범위를 벗어나면 진동으로 알립니다. Apple Watch는 다음 단계 5초 전에도 진동합니다. 끝나면 기록이 휴대폰으로 옵니다. 가민 시계의 위성 설정은 {{> tabMenu > runSettingsTitle > runSettingsSatellite}}에서 고르고, {{> runSettingsSatelliteMax}}는 배터리를 더 씁니다. 시계에는 모드가 따로 없고 휴대폰에서 고른 달리기를 띄웁니다.</p>
+</section>
+
+<section id="plans" data-ask="러닝 기능은 무료인가요|달리기에서 유료인 것은 뭐예요|달리기 분석은 PRO인가요|주간 달리기 계획은 어떤 구독인가요" data-keys="무료 유료 pro pro+ 프로 구독 러닝 달리기 분석 구성훈련 대회날 계획 잠김 자물쇠">
+<h2>러닝의 무료와 유료</h2>
+<p class="lead">재기는 모두 무료입니다. PRO는 기록을 해석하는 분석과 구성 훈련을, PRO+는 근력 회복과 맞물린 주간 달리기 계획을 더합니다.</p>
+<ul>
+<li>무료: 휴대폰·시계 세 종류로 재기, 실시간 페이스·심박, 자동 구간과 구간 기록, 기준 기록·페이스 구간·예상 기록, 내 코스(같은 길 알아보기·그리기·파일·받기), 링크·정보무늬·파일로 보내기, GPX 내보내기, 가리는 곳, 건강 앱 쓰기, 한 번 거리 상한, 지표 근거.</li>
+<li>PRO: 경사 보정 페이스·심박 흐름·심박 부하·운동 부하·임계 속도, 근력과 합친 체력·피로, 구성 훈련(역치·인터벌·언덕 단계 안내), 대회 날 모드(목표 페이서·결승 예상), 코스 안 내 구간 기록.</li>
+<li>PRO+: 근력 회복과 맞물린 달리기 중심 주간 계획(하체 운동 다음 날 쉽게 바꾸기 포함).</li>
+</ul>
+<p>잠긴 칸에는 자물쇠가 붙고, 누르면 FitBoost PRO 화면이 열립니다. 구독이 끝나도 이미 잰 기록의 분석 값은 지워지지 않고 가려질 뿐입니다. 달리는 중 화면에는 광고를 넣지 않습니다.</p>
+</section>

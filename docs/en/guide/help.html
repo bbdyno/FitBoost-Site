@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Troubleshooting — FitBoost</title>
-<meta name="description" content="What to check when watches, sync, backups, or subscriptions get stuck.">
+<meta name="description" content="What to check when watches, sync, backups, subscriptions, or run location get stuck.">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,14 +44,14 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="You are here"><a href="./">User Guide</a></nav>
 <h1>Troubleshooting</h1>
-<p class="g-lede">What to check when watches, sync, backups, or subscriptions get stuck.</p>
+<p class="g-lede">What to check when watches, sync, backups, subscriptions, or run location get stuck.</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">Search the guide</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="Search the guide"
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#watch">When your watch won&#x27;t connect</a></li><li><a href="#garmin">When your Garmin won&#x27;t connect</a></li><li><a href="#sync">When sync isn&#x27;t working</a></li><li><a href="#backup">When a backup file won&#x27;t open</a></li><li><a href="#pro-missing">When PRO doesn&#x27;t show after subscribing</a></li><li><a href="#workout-lost">When a workout you just did is missing</a></li><li><a href="#cant-start">When it says a workout is in progress</a></li><li><a href="#health">When the health app won&#x27;t connect</a></li><li><a href="#notifications">When notifications or the Lock Screen don&#x27;t show</a></li></ol></nav>
+<nav class="g-toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#watch">When your watch won&#x27;t connect</a></li><li><a href="#garmin">When your Garmin won&#x27;t connect</a></li><li><a href="#sync">When sync isn&#x27;t working</a></li><li><a href="#backup">When a backup file won&#x27;t open</a></li><li><a href="#pro-missing">When PRO doesn&#x27;t show after subscribing</a></li><li><a href="#workout-lost">When a workout you just did is missing</a></li><li><a href="#cant-start">When it says a workout is in progress</a></li><li><a href="#health">When the health app won&#x27;t connect</a></li><li><a href="#notifications">When notifications or the Lock Screen don&#x27;t show</a></li><li><a href="#run-location">When your run location isn&#x27;t picked up</a></li><li><a href="#run-map">When the map doesn&#x27;t show</a></li><li><a href="#course-link">When a course link won&#x27;t open</a></li></ol></nav>
 <section class="g-sec" id="watch">
 <h2>When your watch won't connect</h2>
 <p class="lead">Use the message under <span class="ui"><b>Watch status</b></span> in <span class="ui"><b>Menu</b> → <b>App settings</b> → <b>Smartwatch</b></span> to find the cause.</p>
@@ -116,6 +116,8 @@
 <h2>When it says a workout is in progress</h2>
 <p class="lead">If you see <q class="say">Finish the workout in progress first.</q>, a workout is still open.</p>
 <p>Go back with <span class="ui"><b>Resume workout</b></span> on today's card in <span class="ui"><b>Home</b></span> and tap <span class="ui"><b>Finish workout</b></span>, or discard it with <span class="ui"><b>End without saving</b></span> if you don't need it, then start again.</p>
+
+<p>The same reason is behind <q class="say">You have a workout in progress. Switch after you finish.</q> when you switch to running mode.</p>
 </section>
 
 <section class="g-sec" id="health">
@@ -128,6 +130,28 @@
 <h2>When notifications or the Lock Screen don't show</h2>
 <p class="lead">If you see <q class="say">Notifications are turned off. Turn them on in Settings.</q>, allow notifications for FitBoost in your device settings.</p>
 <p>If Live Activities are off, the app says <q class="say">Turn on Live Activities in Settings › FitBoost</q>. Notifications must be allowed too. See also <a href="settings.html#widgets">widgets and the Lock Screen</a>.</p>
+</section>
+
+<section class="g-sec" id="run-location">
+<h2>When your run location isn't picked up</h2>
+<p class="lead">If you see <q class="say">Location access is needed for outdoor runs</q> or <q class="say">Location is off, so only time is recorded.</q>, turn on location for FitBoost in your device settings.</p>
+<ol class="steps">
+<li>On iPhone, go to Settings → Privacy &amp; Security → Location Services → FitBoost and choose While Using the App.</li>
+<li>On Android, go to Settings → Apps → FitBoost → Permissions → Location and choose Allow only while using the app.</li>
+</ol>
+<p>You don't need Always. Once a run starts, it keeps measuring with the screen off until that run ends. If <q class="say">Finding GPS</q> lasts a while, wait a moment somewhere with open sky. Indoors, such as on a treadmill, distance is estimated from steps instead of location, so on Android allow physical activity too.</p>
+</section>
+
+<section class="g-sec" id="run-map">
+<h2>When the map doesn't show</h2>
+<p class="lead">In builds where maps aren't available, your route is drawn as a line with no base map, and <span class="ui"><b>Draw on map</b></span> is hidden.</p>
+<p>If the course screen says <q class="say">Maps aren&#x27;t available in this build, so drawing is hidden. You can still create from a past run or a file.</q>, this is why. You can still make courses with <span class="ui"><b>Past run</b></span> or <span class="ui"><b>File</b></span>, and distance, splits, and course comparisons work as usual. If you see <q class="say">No route recorded</q>, no location was saved for that run, either because it was indoors or because location was off.</p>
+</section>
+
+<section class="g-sec" id="course-link">
+<h2>When a course link won't open</h2>
+<p class="lead">Tapping a course link opens a course page in your browser. Tap the button there to open it in FitBoost.</p>
+<p>Without the app, you can get it from the same page. If you see <q class="say">That isn&#x27;t a course link</q>, the end of the link may have been cut off by the messenger, so ask for it again or get a file instead. Open a copied link with <span class="ui"><b>Open copied link</b></span> under ⋯ at the top right of <span class="ui"><b>Menu</b> → <b>My courses</b></span>. The course page decodes the course in the link only inside your browser and sends it nowhere.</p>
 </section>
 <nav class="g-pager" aria-label="More topics"><a class="g-pager__prev" href="settings.html"><small>Previous</small>Settings</a></nav>
 <p class="g-contact">Still stuck? Email <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a> with your device and app version.</p>

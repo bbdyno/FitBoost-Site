@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>困ったとき — FitBoost</title>
-<meta name="description" content="ウォッチ連携、同期、バックアップ、サブスクリプションで困ったときの確認事項です。">
+<meta name="description" content="ウォッチ連携、同期、バックアップ、サブスクリプション、ランの位置情報で困ったときの確認事項です。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,14 +44,14 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="現在の位置"><a href="./">使い方ガイド</a></nav>
 <h1>困ったとき</h1>
-<p class="g-lede">ウォッチ連携、同期、バックアップ、サブスクリプションで困ったときの確認事項です。</p>
+<p class="g-lede">ウォッチ連携、同期、バックアップ、サブスクリプション、ランの位置情報で困ったときの確認事項です。</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">ガイドを検索</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="ガイドを検索"
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="このページの内容"><p>このページの内容</p><ol><li><a href="#watch">ウォッチがつながらないとき</a></li><li><a href="#garmin">Garminがつながらないとき</a></li><li><a href="#sync">同期できないとき</a></li><li><a href="#backup">バックアップファイルが開けないとき</a></li><li><a href="#pro-missing">契約したのにPROにならないとき</a></li><li><a href="#workout-lost">さっきのワークアウトが記録にないとき</a></li><li><a href="#cant-start">進行中のワークアウトがあると言われたとき</a></li><li><a href="#health">ヘルスケアとつながらないとき</a></li><li><a href="#notifications">通知やロック画面が表示されないとき</a></li></ol></nav>
+<nav class="g-toc" aria-label="このページの内容"><p>このページの内容</p><ol><li><a href="#watch">ウォッチがつながらないとき</a></li><li><a href="#garmin">Garminがつながらないとき</a></li><li><a href="#sync">同期できないとき</a></li><li><a href="#backup">バックアップファイルが開けないとき</a></li><li><a href="#pro-missing">契約したのにPROにならないとき</a></li><li><a href="#workout-lost">さっきのワークアウトが記録にないとき</a></li><li><a href="#cant-start">進行中のワークアウトがあると言われたとき</a></li><li><a href="#health">ヘルスケアとつながらないとき</a></li><li><a href="#notifications">通知やロック画面が表示されないとき</a></li><li><a href="#run-location">ランの位置情報がつかめないとき</a></li><li><a href="#run-map">地図が表示されないとき</a></li><li><a href="#course-link">コースのリンクが開かないとき</a></li></ol></nav>
 <section class="g-sec" id="watch">
 <h2>ウォッチがつながらないとき</h2>
 <p class="lead"><span class="ui"><b>メニュー</b> → <b>アプリ設定</b> → <b>スマートウォッチ設定</b></span>の<span class="ui"><b>ウォッチの接続状態</b></span>に表示される文言で原因を探します。</p>
@@ -116,6 +116,8 @@
 <h2>進行中のワークアウトがあると言われたとき</h2>
 <p class="lead"><q class="say">進行中のワークアウトを先に完了してください。</q>と表示されたら、開いたままのワークアウトがあります。</p>
 <p><span class="ui"><b>ホーム</b></span>の今日のカードの<span class="ui"><b>ワークアウト再開</b></span>で戻って<span class="ui"><b>ワークアウト完了</b></span>をタップするか、不要なら<span class="ui"><b>保存せずに終了</b></span>で破棄してから始め直してください。</p>
+
+<p>ランニングモードに切り替えるときに<q class="say">進行中のトレーニングがあります。終わってから切り替えられます。</q>と表示されるのも同じ理由です。</p>
 </section>
 
 <section class="g-sec" id="health">
@@ -128,6 +130,28 @@
 <h2>通知やロック画面が表示されないとき</h2>
 <p class="lead"><q class="say">通知がオフになっています。設定でオンにしてください。</q>と表示されたら、端末の設定でFitBoostの通知を許可してください。</p>
 <p>ライブアクティビティがオフのときは、アプリが<q class="say">設定 › FitBoost でライブアクティビティをオンにしてください</q>と案内します。通知も許可されている必要があります。<a href="settings.html#widgets">ウィジェットとロック画面</a>も見てください。</p>
+</section>
+
+<section class="g-sec" id="run-location">
+<h2>ランの位置情報がつかめないとき</h2>
+<p class="lead"><q class="say">屋外で計測するには位置情報の許可が必要です</q>または<q class="say">位置情報がオフのため時間だけを記録します。</q>と表示されたら、端末の設定でFitBoostの位置情報をオンにします。</p>
+<ol class="steps">
+<li>iPhoneは設定 → プライバシーとセキュリティ → 位置情報サービス → FitBoostで「このAppの使用中のみ許可」を選びます。</li>
+<li>Androidは設定 → アプリ → FitBoost → 権限 → 位置情報で「アプリの使用中のみ許可」を選びます。</li>
+</ol>
+<p>「常に許可」は必要ありません。ランを始めたあとは、画面を消してもそのランが終わるまで計測します。<q class="say">GPS検索中</q>が長く続くときは、空の開けた場所で少し待ってください。トレッドミルのような室内では位置情報の代わりに歩数で距離を見積もるので、Androidでは身体活動の権限も許可してください。</p>
+</section>
+
+<section class="g-sec" id="run-map">
+<h2>地図が表示されないとき</h2>
+<p class="lead">地図を使えない版では、背景の地図なしで走った道を線だけで描き、<span class="ui"><b>地図に描く</b></span>を隠します。</p>
+<p>コースを作る画面に<q class="say">このビルドでは地図が使えないため描画を隠しました。過去のランやファイルから作れます。</q>と表示されたらこの場合です。<span class="ui"><b>過去のラン</b></span>や<span class="ui"><b>ファイル</b></span>でコースを作れ、距離・スプリット・コースの比較はそのまま使えます。<q class="say">ルートの記録がありません</q>と表示されたら、そのランには位置情報が残っていません。室内のランだったか、位置情報がオフだった場合です。</p>
+</section>
+
+<section class="g-sec" id="course-link">
+<h2>コースのリンクが開かないとき</h2>
+<p class="lead">コースのリンクをタップすると、ブラウザでコースのページが開きます。そこでアプリで開くボタンをタップするとFitBoostに移ります。</p>
+<p>アプリがない場合は同じページから入手できます。<q class="say">コースのリンクではありません</q>と表示されたら、メッセンジャーでリンクの末尾が切れたのかもしれません。もう一度受け取るか、ファイルで受け取ってください。コピーしたリンクは<span class="ui"><b>メニュー</b> → <b>マイコース</b></span>の右上の⋯にある<span class="ui"><b>コピーしたリンクを開く</b></span>で開けます。コースのページはリンクの中のコースをブラウザの中だけで読み解いて表示し、どこにも送りません。</p>
 </section>
 <nav class="g-pager" aria-label="ほかのトピック"><a class="g-pager__prev" href="settings.html"><small>前へ</small>設定</a></nav>
 <p class="g-contact">解決しない場合は <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a> までご連絡ください。機種とアプリのバージョンを添えていただくと早く確認できます。</p>

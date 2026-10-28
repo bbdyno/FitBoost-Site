@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>常见问题排查 — FitBoost</title>
-<meta name="description" content="手表、同步、备份或订阅出问题时要检查的地方。">
+<meta name="description" content="手表连接、同步、备份、订阅和跑步定位遇到问题时要检查的事项。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,14 +44,14 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="当前位置"><a href="./">使用指南</a></nav>
 <h1>常见问题排查</h1>
-<p class="g-lede">手表、同步、备份或订阅出问题时要检查的地方。</p>
+<p class="g-lede">手表连接、同步、备份、订阅和跑步定位遇到问题时要检查的事项。</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">搜索指南</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="搜索指南"
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#watch">手表连不上时</a></li><li><a href="#garmin">Garmin 连不上时</a></li><li><a href="#sync">同步不了时</a></li><li><a href="#backup">备份文件打不开时</a></li><li><a href="#pro-missing">订阅后 PRO 没显示时</a></li><li><a href="#workout-lost">刚才的训练不在记录里时</a></li><li><a href="#cant-start">提示有进行中的训练时</a></li><li><a href="#health">健康应用连不上时</a></li><li><a href="#notifications">通知或锁屏不显示时</a></li></ol></nav>
+<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#watch">手表连不上时</a></li><li><a href="#garmin">Garmin 连不上时</a></li><li><a href="#sync">同步不了时</a></li><li><a href="#backup">备份文件打不开时</a></li><li><a href="#pro-missing">订阅后 PRO 没显示时</a></li><li><a href="#workout-lost">刚才的训练不在记录里时</a></li><li><a href="#cant-start">提示有进行中的训练时</a></li><li><a href="#health">健康应用连不上时</a></li><li><a href="#notifications">通知或锁屏不显示时</a></li><li><a href="#run-location">跑步定位不到时</a></li><li><a href="#run-map">地图不显示时</a></li><li><a href="#course-link">路线链接打不开时</a></li></ol></nav>
 <section class="g-sec" id="watch">
 <h2>手表连不上时</h2>
 <p class="lead">根据 <span class="ui"><b>菜单</b> → <b>应用设置</b> → <b>智能手表设置</b></span> 中 <span class="ui"><b>手表连接状态</b></span> 显示的文字查找原因。</p>
@@ -116,6 +116,8 @@
 <h2>提示有进行中的训练时</h2>
 <p class="lead">看到 <q class="say">请先完成进行中的训练。</q> 时，说明还有未结束的训练。</p>
 <p>用 <span class="ui"><b>首页</b></span> 今日卡片上的 <span class="ui"><b>继续训练</b></span> 回去并点击 <span class="ui"><b>完成训练</b></span>；如果不需要，就用 <span class="ui"><b>不保存并结束</b></span> 丢弃后重新开始。</p>
+
+<p>切换到跑步模式时显示 <q class="say">有正在进行的训练。结束后才能切换。</q> 也是同样的原因。</p>
 </section>
 
 <section class="g-sec" id="health">
@@ -128,6 +130,28 @@
 <h2>通知或锁屏不显示时</h2>
 <p class="lead">看到 <q class="say">通知权限已关闭，请在系统设置中开启。</q>时，请在设备设置中允许 FitBoost 的通知。</p>
 <p>实时活动关闭时，应用会提示 <q class="say">请在“设置”›FitBoost 中打开实时活动</q>。还需要允许通知。也请看<a href="settings.html#widgets">小组件与锁屏</a>。</p>
+</section>
+
+<section class="g-sec" id="run-location">
+<h2>跑步定位不到时</h2>
+<p class="lead">显示 <q class="say">户外跑需要位置权限</q> 或 <q class="say">位置权限已关闭，只记录时间。</q> 时，请在设备设置中打开 FitBoost 的位置权限。</p>
+<ol class="steps">
+<li>iPhone 在设置 → 隐私与安全性 → 定位服务 → FitBoost 中选择“使用 App 期间”。</li>
+<li>Android 在设置 → 应用 → FitBoost → 权限 → 位置信息中选择“仅在使用该应用时允许”。</li>
+</ol>
+<p>不需要“始终”。开始跑步后，即使关掉屏幕也会一直测到这次跑步结束。<q class="say">正在搜索 GPS</q> 持续很久时，请在开阔的地方稍等片刻。在跑步机这样的室内，会用步数代替位置估算距离，所以 Android 还需要允许身体活动权限。</p>
+</section>
+
+<section class="g-sec" id="run-map">
+<h2>地图不显示时</h2>
+<p class="lead">在无法使用地图的版本中，会不带底图、只用线画出跑过的路线，并隐藏 <span class="ui"><b>在地图上画</b></span>。</p>
+<p>创建路线页面显示 <q class="say">此版本无法使用地图，已隐藏绘制。仍可从过去的跑步或文件创建。</q> 就是这种情况。仍可用 <span class="ui"><b>过去的跑步</b></span> 或 <span class="ui"><b>文件</b></span> 创建路线，距离、分段和路线比较照常可用。显示 <q class="say">没有路线记录</q> 时，表示那次跑步没有留下位置，可能是室内跑步，或当时位置权限已关闭。</p>
+</section>
+
+<section class="g-sec" id="course-link">
+<h2>路线链接打不开时</h2>
+<p class="lead">点路线链接会在浏览器中打开路线页面。在那里点在应用中打开的按钮，就会转到 FitBoost。</p>
+<p>没有安装应用时，可以在同一页面下载。显示 <q class="say">这不是路线链接</q> 时，链接末尾可能被聊天软件截断了，请重新获取或改用文件。复制的链接可以通过 <span class="ui"><b>菜单</b> → <b>我的路线</b></span> 右上角 ⋯ 中的 <span class="ui"><b>打开复制的链接</b></span> 打开。路线页面只在浏览器内解开链接中的路线并显示，不会发送到任何地方。</p>
 </section>
 <nav class="g-pager" aria-label="其他主题"><a class="g-pager__prev" href="settings.html"><small>上一篇</small>设置</a></nav>
 <p class="g-contact">仍未解决？请发送邮件至 <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>，并附上设备型号和应用版本。</p>

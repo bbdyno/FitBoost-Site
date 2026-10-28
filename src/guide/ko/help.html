@@ -62,6 +62,8 @@
 <h2>진행 중인 운동이 있다고 할 때</h2>
 <p class="lead">{{" finishWorkoutProgressFirst}} 문구가 뜨면 열려 있는 운동이 있는 것입니다.</p>
 <p>{{> tabHome}} 오늘 카드의 {{> homeContinueWorkout}} 버튼으로 돌아가 {{> finishWorkout}}을 누르거나, 필요 없으면 {{> workoutFinish}}로 버린 뒤 다시 시작하세요.</p>
+
+<p>러닝 모드로 바꿀 때 {{" modeLockedActive}}가 뜨는 것도 같은 까닭입니다.</p>
 </section>
 
 <section id="health" data-ask="건강 앱 연결이 안 돼요|애플 건강에 운동이 안 들어가요|새로 가져올 운동이 없다고 떠요" data-keys="건강 연결 실패 권한 헬스 healthkit health connect 가져오기 없음">
@@ -74,4 +76,26 @@
 <h2>알림·잠금화면이 안 보일 때</h2>
 <p class="lead">{{" setNotificationPermissionDenied}}</p>
 <p>잠금화면 라이브 액티비티가 꺼져 있으면 앱이 {{" surfaceTurnOnInSettings}}라고 안내합니다. 알림도 허용해야 보입니다. <a href="settings.html#widgets">위젯과 잠금화면</a>도 보세요.</p>
+</section>
+
+<section id="run-location" data-ask="달리기 위치 권한을 허용하고 싶어요|밖에서 재려면 위치 권한이 필요해요라고 떠요|달리기 거리가 안 재져요|위성 찾는 중에서 안 넘어가요" data-keys="위치 권한 gps 위성 거리 안재짐 0km 시간만 위치서비스 사용중 항상 허용 실내 신체활동">
+<h2>달리기 위치가 잡히지 않을 때</h2>
+<p class="lead">{{" runLocationNeeded}} 또는 {{" runGpsDenied}}가 뜨면 기기 설정에서 FitBoost의 위치 권한을 켭니다.</p>
+<ol class="steps">
+<li>iPhone은 설정 → 개인정보 보호 및 보안 → 위치 서비스 → FitBoost에서 앱을 사용하는 동안을 고릅니다.</li>
+<li>Android는 설정 → 애플리케이션 → FitBoost → 권한 → 위치에서 앱 사용 중에만 허용을 고릅니다.</li>
+</ol>
+<p>항상 허용은 필요 없습니다. 달리기를 시작한 뒤에는 화면을 꺼도 그 달리기가 끝날 때까지 잽니다. {{" runGpsSearching}}이 오래 가면 하늘이 트인 곳에서 잠시 기다려 주세요. 러닝머신처럼 실내에서는 위치 대신 걸음으로 거리를 어림하므로, Android에서는 신체 활동 권한도 허용해 주세요.</p>
+</section>
+
+<section id="run-map" data-ask="달린 길 지도가 안 보여요|지도에 그리기가 없어요|코스 그리기 버튼이 안 보여요|지도 없이 선만 나와요" data-keys="지도 안보임 그리기 없음 숨김 선 경로 바탕지도 위치기록">
+<h2>지도가 보이지 않을 때</h2>
+<p class="lead">지도를 쓸 수 없는 판에서는 바탕 지도 없이 달린 길을 선으로만 그리고, {{> courseDraw}}를 숨깁니다.</p>
+<p>코스 만들기 화면에 {{" courseDrawUnavailable}}라고 뜨면 이 경우입니다. {{> courseFromRun}}이나 {{> courseFromFile}}로 코스를 만들 수 있고, 거리·구간·코스 비교는 그대로 됩니다. {{" runNoTrack}}이 뜨면 그 달리기에는 위치가 남지 않은 것입니다. 실내 달리기였거나 위치 권한이 꺼져 있던 경우입니다.</p>
+</section>
+
+<section id="course-link" data-ask="받은 코스 링크가 안 열려요|코스 링크가 아니에요라고 떠요|코스 링크를 눌렀더니 사이트가 열려요" data-keys="코스 링크 안열림 오류 사이트 브라우저 앱에서열기 붙여넣기 복사 깨짐 잘림">
+<h2>코스 링크가 열리지 않을 때</h2>
+<p class="lead">코스 링크를 누르면 브라우저에 코스 페이지가 열립니다. 거기서 앱으로 여는 버튼을 누르면 FitBoost로 넘어갑니다.</p>
+<p>앱이 없으면 같은 페이지에서 받을 수 있습니다. {{" courseLinkInvalid}}가 뜨면 메신저에서 링크 끝이 잘렸을 수 있으니 다시 받거나 파일로 받아 주세요. 복사한 링크는 {{> tabMenu > courseTitle}} 오른쪽 위 ⋯의 {{> coursePasteLink}}로 엽니다. 코스 페이지는 링크 안의 코스를 브라우저 안에서만 풀어 보여 주고 어디에도 보내지 않습니다.</p>
 </section>

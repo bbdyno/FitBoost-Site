@@ -62,6 +62,8 @@
 <h2>提示有進行中的訓練時</h2>
 <p class="lead">看到 {{" finishWorkoutProgressFirst}} 時，說明還有未結束的訓練。</p>
 <p>用 {{> tabHome}} 今日卡片上的 {{> homeContinueWorkout}} 回去並點選 {{> finishWorkout}}；如果不需要，就用 {{> workoutFinish}} 丟棄後重新開始。</p>
+
+<p>切換到跑步模式時顯示 {{" modeLockedActive}} 也是同樣的原因。</p>
 </section>
 
 <section id="health" data-ask="健康 App 連不上|訓練沒進 Apple 健康|提示沒有可匯入的新記錄" data-keys="健康 連線 失敗 權限 healthkit health connect 匯入 沒有">
@@ -74,4 +76,26 @@
 <h2>通知或鎖定畫面不顯示時</h2>
 <p class="lead">看到 {{" setNotificationPermissionDenied}}時，請在裝置設定中允許 FitBoost 的通知。</p>
 <p>即時動態關閉時，App 會提示 {{" surfaceTurnOnInSettings}}。還需要允許通知。也請看<a href="settings.html#widgets">小工具與鎖定畫面</a>。</p>
+</section>
+
+<section id="run-location" data-ask="想允許跑步的位置權限|提示戶外跑需要位置權限|跑步距離測不出來|一直停在正在搜尋 GPS" data-keys="位置 權限 gps 衛星 距離 測不出 0km 只記錄時間 定位服務 使用期間 永遠 允許 室內 體能活動">
+<h2>跑步定位不到時</h2>
+<p class="lead">顯示 {{" runLocationNeeded}} 或 {{" runGpsDenied}} 時，請在裝置設定中開啟 FitBoost 的位置權限。</p>
+<ol class="steps">
+<li>iPhone 在設定 → 隱私權與安全性 → 定位服務 → FitBoost 中選擇「使用 App 期間」。</li>
+<li>Android 在設定 → 應用程式 → FitBoost → 權限 → 位置資訊中選擇「僅在使用該應用程式時允許」。</li>
+</ol>
+<p>不需要「永遠」。開始跑步後，即使關掉螢幕也會一直測到這次跑步結束。{{" runGpsSearching}} 持續很久時，請在開闊的地方稍等片刻。在跑步機這樣的室內，會用步數代替位置估算距離，所以 Android 還需要允許體能活動權限。</p>
+</section>
+
+<section id="run-map" data-ask="看不到跑步路線地圖|沒有在地圖上畫這一項|找不到畫路線的按鈕|沒有地圖只顯示一條線" data-keys="地圖 不顯示 畫 沒有 隱藏 線 路線 底圖 位置紀錄">
+<h2>地圖不顯示時</h2>
+<p class="lead">在無法使用地圖的版本中，會不帶底圖、只用線畫出跑過的路線，並隱藏 {{> courseDraw}}。</p>
+<p>建立路線頁面顯示 {{" courseDrawUnavailable}} 就是這種情況。仍可用 {{> courseFromRun}} 或 {{> courseFromFile}} 建立路線，距離、分段和路線比較照常可用。顯示 {{" runNoTrack}} 時，表示那次跑步沒有留下位置，可能是室內跑步，或當時位置權限已關閉。</p>
+</section>
+
+<section id="course-link" data-ask="收到的路線連結打不開|提示這不是路線連結|點路線連結開啟的是網站" data-keys="路線 連結 打不開 錯誤 網站 瀏覽器 在App中開啟 貼上 複製 損壞 截斷">
+<h2>路線連結打不開時</h2>
+<p class="lead">點路線連結會在瀏覽器中開啟路線頁面。在那裡點在 App 中開啟的按鈕，就會轉到 FitBoost。</p>
+<p>沒有安裝 App 時，可以在同一頁面下載。顯示 {{" courseLinkInvalid}} 時，連結結尾可能被通訊軟體截斷了，請重新取得或改用檔案。複製的連結可以透過 {{> tabMenu > courseTitle}} 右上角 ⋯ 中的 {{> coursePasteLink}} 開啟。路線頁面只在瀏覽器內解開連結中的路線並顯示，不會傳送到任何地方。</p>
 </section>

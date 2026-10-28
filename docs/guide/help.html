@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>문제 해결 — FitBoost</title>
-<meta name="description" content="시계 연결, 동기화, 백업, 구독에서 막힐 때 확인할 것입니다.">
+<meta name="description" content="시계 연결, 동기화, 백업, 구독, 달리기 위치에서 막힐 때 확인할 것입니다.">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../assets/icon-180.png">
@@ -44,14 +44,14 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="현재 위치"><a href="./">사용 가이드</a></nav>
 <h1>문제 해결</h1>
-<p class="g-lede">시계 연결, 동기화, 백업, 구독에서 막힐 때 확인할 것입니다.</p>
+<p class="g-lede">시계 연결, 동기화, 백업, 구독, 달리기 위치에서 막힐 때 확인할 것입니다.</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">가이드에서 찾기</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="가이드에서 찾기"
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="이 페이지에서"><p>이 페이지에서</p><ol><li><a href="#watch">시계가 연결되지 않을 때</a></li><li><a href="#garmin">가민이 연결되지 않을 때</a></li><li><a href="#sync">동기화가 안 될 때</a></li><li><a href="#backup">백업 파일이 열리지 않을 때</a></li><li><a href="#pro-missing">구독했는데 PRO가 안 보일 때</a></li><li><a href="#workout-lost">방금 한 운동이 기록에 없을 때</a></li><li><a href="#cant-start">진행 중인 운동이 있다고 할 때</a></li><li><a href="#health">건강 앱 연결이 안 될 때</a></li><li><a href="#notifications">알림·잠금화면이 안 보일 때</a></li></ol></nav>
+<nav class="g-toc" aria-label="이 페이지에서"><p>이 페이지에서</p><ol><li><a href="#watch">시계가 연결되지 않을 때</a></li><li><a href="#garmin">가민이 연결되지 않을 때</a></li><li><a href="#sync">동기화가 안 될 때</a></li><li><a href="#backup">백업 파일이 열리지 않을 때</a></li><li><a href="#pro-missing">구독했는데 PRO가 안 보일 때</a></li><li><a href="#workout-lost">방금 한 운동이 기록에 없을 때</a></li><li><a href="#cant-start">진행 중인 운동이 있다고 할 때</a></li><li><a href="#health">건강 앱 연결이 안 될 때</a></li><li><a href="#notifications">알림·잠금화면이 안 보일 때</a></li><li><a href="#run-location">달리기 위치가 잡히지 않을 때</a></li><li><a href="#run-map">지도가 보이지 않을 때</a></li><li><a href="#course-link">코스 링크가 열리지 않을 때</a></li></ol></nav>
 <section class="g-sec" id="watch">
 <h2>시계가 연결되지 않을 때</h2>
 <p class="lead"><span class="ui"><b>메뉴</b> → <b>앱 설정</b> → <b>스마트워치 설정</b></span>의 <span class="ui"><b>시계 연결 상태</b></span>에 뜨는 문구로 원인을 찾습니다.</p>
@@ -116,6 +116,8 @@
 <h2>진행 중인 운동이 있다고 할 때</h2>
 <p class="lead"><q class="say">진행 중인 운동을 먼저 완료해 주세요.</q> 문구가 뜨면 열려 있는 운동이 있는 것입니다.</p>
 <p><span class="ui"><b>홈</b></span> 오늘 카드의 <span class="ui"><b>운동 계속</b></span> 버튼으로 돌아가 <span class="ui"><b>운동 완료</b></span>을 누르거나, 필요 없으면 <span class="ui"><b>운동 종료</b></span>로 버린 뒤 다시 시작하세요.</p>
+
+<p>러닝 모드로 바꿀 때 <q class="say">진행 중인 운동이 있어요. 끝낸 뒤에 바꿀 수 있어요.</q>가 뜨는 것도 같은 까닭입니다.</p>
 </section>
 
 <section class="g-sec" id="health">
@@ -128,6 +130,28 @@
 <h2>알림·잠금화면이 안 보일 때</h2>
 <p class="lead"><q class="say">알림 권한이 꺼져 있습니다. 기기 설정에서 켜 주세요.</q></p>
 <p>잠금화면 라이브 액티비티가 꺼져 있으면 앱이 <q class="say">설정 앱 › FitBoost에서 실시간 현황을 켜 주세요</q>라고 안내합니다. 알림도 허용해야 보입니다. <a href="settings.html#widgets">위젯과 잠금화면</a>도 보세요.</p>
+</section>
+
+<section class="g-sec" id="run-location">
+<h2>달리기 위치가 잡히지 않을 때</h2>
+<p class="lead"><q class="say">밖에서 재려면 위치 권한이 필요해요</q> 또는 <q class="say">위치 권한이 꺼져 있어요. 시간만 재요.</q>가 뜨면 기기 설정에서 FitBoost의 위치 권한을 켭니다.</p>
+<ol class="steps">
+<li>iPhone은 설정 → 개인정보 보호 및 보안 → 위치 서비스 → FitBoost에서 앱을 사용하는 동안을 고릅니다.</li>
+<li>Android는 설정 → 애플리케이션 → FitBoost → 권한 → 위치에서 앱 사용 중에만 허용을 고릅니다.</li>
+</ol>
+<p>항상 허용은 필요 없습니다. 달리기를 시작한 뒤에는 화면을 꺼도 그 달리기가 끝날 때까지 잽니다. <q class="say">위성 찾는 중</q>이 오래 가면 하늘이 트인 곳에서 잠시 기다려 주세요. 러닝머신처럼 실내에서는 위치 대신 걸음으로 거리를 어림하므로, Android에서는 신체 활동 권한도 허용해 주세요.</p>
+</section>
+
+<section class="g-sec" id="run-map">
+<h2>지도가 보이지 않을 때</h2>
+<p class="lead">지도를 쓸 수 없는 판에서는 바탕 지도 없이 달린 길을 선으로만 그리고, <span class="ui"><b>지도에 그리기</b></span>를 숨깁니다.</p>
+<p>코스 만들기 화면에 <q class="say">이 빌드에서는 지도를 쓸 수 없어 그리기를 숨겼어요. 지난 달리기나 파일로 만들 수 있어요.</q>라고 뜨면 이 경우입니다. <span class="ui"><b>지난 달리기</b></span>이나 <span class="ui"><b>파일</b></span>로 코스를 만들 수 있고, 거리·구간·코스 비교는 그대로 됩니다. <q class="say">위치 기록이 없어요</q>이 뜨면 그 달리기에는 위치가 남지 않은 것입니다. 실내 달리기였거나 위치 권한이 꺼져 있던 경우입니다.</p>
+</section>
+
+<section class="g-sec" id="course-link">
+<h2>코스 링크가 열리지 않을 때</h2>
+<p class="lead">코스 링크를 누르면 브라우저에 코스 페이지가 열립니다. 거기서 앱으로 여는 버튼을 누르면 FitBoost로 넘어갑니다.</p>
+<p>앱이 없으면 같은 페이지에서 받을 수 있습니다. <q class="say">코스 링크가 아니에요</q>가 뜨면 메신저에서 링크 끝이 잘렸을 수 있으니 다시 받거나 파일로 받아 주세요. 복사한 링크는 <span class="ui"><b>메뉴</b> → <b>내 코스</b></span> 오른쪽 위 ⋯의 <span class="ui"><b>복사한 링크 열기</b></span>로 엽니다. 코스 페이지는 링크 안의 코스를 브라우저 안에서만 풀어 보여 주고 어디에도 보내지 않습니다.</p>
 </section>
 <nav class="g-pager" aria-label="다른 주제"><a class="g-pager__prev" href="settings.html"><small>이전</small>설정</a></nav>
 <p class="g-contact">그래도 해결되지 않으면 <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>으로 보내 주세요. 기기 종류와 앱 버전을 함께 적어 주시면 빨리 찾을 수 있습니다.</p>
