@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FitBoost</title>
+<meta name="description" content="FitBoost course">
+<meta name="robots" content="noindex">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#EDEDE8">
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/icon-180.png">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+<link rel="stylesheet" href="assets/site.css">
+<style>
+/* 코스 링크 페이지에만 쓰는 몇 줄. 나머지는 site.css의 .doc·.stores를 그대로 쓴다. */
+.course__map { margin: 8px 0 0; background: var(--white); border-radius: var(--r); box-shadow: 0 0 0 1px var(--line); line-height: 0; }
+.course__map svg { width: 100%; height: auto; display: block; }
+.course__line { fill: none; stroke: var(--ink); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; }
+.course__start { fill: var(--lime); stroke: var(--ink); stroke-width: 3; }
+.course__end { fill: var(--ink); }
+.course__key { display: flex; gap: 16px; margin: 10px 0 0; font-size: 14px; color: var(--mute); }
+.course__key i { display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; vertical-align: -1px; }
+.course__key .s { background: var(--lime); box-shadow: 0 0 0 2px var(--ink) inset; }
+.course__key .e { background: var(--ink); }
+.course__open { display: inline-block; margin-top: 28px; text-decoration: none; font-size: 17px; font-weight: 800; background: var(--ink); color: var(--lime); padding: 14px 24px; border-radius: 99px; }
+.doc a.course__open { color: var(--lime); text-decoration: none; }
+.doc .course__rec { list-style: none; padding: 0; margin: 12px 0 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 8px; }
+.course__rec li { margin: 0; background: var(--white); border-radius: 14px; padding: 10px 12px; box-shadow: 0 0 0 1px var(--line); font-variant-numeric: tabular-nums; }
+.course__rec b { display: block; font-size: 13px; color: var(--mute); font-weight: 600; }
+.doc .course__langs { display: flex; flex-wrap: wrap; gap: 6px 14px; margin-top: 40px; padding: 0; list-style: none; font-size: 14px; }
+.course__langs button { font: inherit; background: none; border: 0; padding: 0; color: var(--mute); cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+.course__langs button[aria-current="true"] { color: var(--ink); font-weight: 700; text-decoration: none; }
+</style>
+</head>
+<body class="page-doc">
+<header class="nav">
+  <div class="wrap nav__in">
+    <a class="brand" href="./" aria-label="FitBoost">
+      <img src="assets/icon.webp" alt="" width="30" height="30">
+      <span>FitBoost</span>
+    </a>
+  </div>
+</header>
+
+<!-- 앱이 만드는 코스 링크(course.html#<조각>)를 여는 페이지. 빌드와 상관없는 손으로 쓴 파일이다.
+     조각은 base64url(utf8(JSON {"n": 이름, "l": 압축 폴리라인(정밀도 5), "r": 100m마다 누적 초(선택)}))에서
+     '='를 뺀 것이다(앱의 lib/state/workout_store_running.dart _encodePayload, lib/core/run/geo.dart).
+     # 뒤는 브라우저가 서버로 보내지 않는다. 이 페이지도 조각을 어디에도 보내지 않고 브라우저 안에서만 푼다.
+     사용 통계·광고 스크립트를 넣지 않는다. 언어는 사이트 첫 화면과 같은 규칙(저장한 fb-lang, 그다음 브라우저 언어)으로 고른다. -->
+<main class="doc wrap" id="course">
+  <p class="doc__meta" id="c-kicker"></p>
+  <h1 id="c-title">FitBoost</h1>
+  <p class="lead" id="c-lead"></p>
+  <div id="c-body"></div>
+  <noscript><p>FitBoost</p></noscript>
+  <ul class="course__langs" id="c-langs"></ul>
+</main>
+
+<script id="course-core">
+/* 순수 함수만 둔다. node로도 불러 시험한다. */
+var FBCourse = (function () {
+  'use strict';
+
+  function b64urlToBytes(s) {
+    if (!/^[A-Za-z0-9_-]+$/.test(s) || s.length % 4 === 1) return null;
+    var b64 = s.replace(/-/g, '+').replace(/_/g, '/');
+    while (b64.length % 4) b64 += '=';
+    var bin;
+    try { bin = atob(b64); } catch (e) { return null; }
+    var out = new Uint8Array(bin.length);
+    for (var i = 0; i < bin.length; i++) out[i] = bin.charCodeAt(i);
+    return out;
+  }
+
+  /* 앱의 decodePolyline과 같다. 형식이 깨졌으면 null. */
+  function decodePolyline(str) {
+    var out = [], index = 0, lat = 0, lon = 0;
+    function next() {
+      var result = 0, shift = 0, b;
+      for (;;) {
+        if (index >= str.length) return null;
+        b = str.charCodeAt(index++) - 63;
+        if (b < 0 || b > 63) return null;
+        result |= (b & 0x1f) << shift;
+        shift += 5;
+        if (b < 0x20) break;
+        if (shift > 30) return null;
+      }
+      return (result & 1) ? ~(result >> 1) : (result >> 1);
+    }
+    while (index < str.length) {
+      var dLat = next(), dLon = next();
+      if (dLat === null || dLon === null) return null;
+      lat += dLat; lon += dLon;
+      var p = [lat / 1e5, lon / 1e5];
+      if (Math.abs(p[0]) > 90 || Math.abs(p[1]) > 180) return null;
+      out.push(p);
+    }
+    return out;
+  }
+
+  function haversine(a, b) {
+    var R = 6371008.8, rad = Math.PI / 180;
+    var dLat = (b[0] - a[0]) * rad, dLon = (b[1] - a[1]) * rad;
+    var h = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+      Math.cos(a[0] * rad) * Math.cos(b[0] * rad) * Math.sin(dLon / 2) * Math.sin(dLon / 2);
+    return 2 * R * Math.asin(Math.min(1, Math.sqrt(h)));
+  }
+
+  function lengthOf(points) {
+    var m = 0;
+    for (var i = 1; i < points.length; i++) m += haversine(points[i - 1], points[i]);
+    return m;
+  }
+
+  /* 조각을 코스로 푼다. {status: 'empty'|'broken'|'ok', course}. */
+  function decode(fragment) {
+    var raw = String(fragment || '').replace(/^#/, '').trim();
+    if (!raw) return { status: 'empty' };
+    if (raw.indexOf('%') >= 0) { try { raw = decodeURIComponent(raw); } catch (e) { return { status: 'broken' }; } }
+    var bytes = b64urlToBytes(raw);
+    if (!bytes) return { status: 'broken' };
+    var json;
+    try { json = JSON.parse(new TextDecoder('utf-8', { fatal: true }).decode(bytes)); } catch (e) { return { status: 'broken' }; }
+    if (!json || typeof json !== 'object' || Array.isArray(json) || typeof json.l !== 'string') return { status: 'broken' };
+    var points = decodePolyline(json.l);
+    if (!points || points.length < 2) return { status: 'broken' };
+    var name = typeof json.n === 'string' ? json.n.trim().slice(0, 120) : '';
+    var record = null;
+    if (Array.isArray(json.r) && json.r.length) {
+      var ok = json.r.every(function (v, i, a) {
+        return typeof v === 'number' && isFinite(v) && v >= 0 && (i === 0 || v >= a[i - 1]);
+      });
+      if (ok) record = json.r.map(function (v) { return Math.round(v); });
+    }
+    return { status: 'ok', course: { name: name, points: points, meters: lengthOf(points), record: record } };
+  }
+
+  /* 100m마다 누적 초에서 1km 구간 시간들. 끝의 모자란 구간은 뺀다. */
+  function kmSplits(record) {
+    var out = [];
+    for (var k = 1; k * 10 <= record.length; k++) {
+      var end = record[k * 10 - 1], start = k === 1 ? 0 : record[(k - 1) * 10 - 1];
+      out.push(end - start);
+    }
+    return out;
+  }
+
+  /* 화면 좌표(가로 w, 세로 h, 여백 pad)로 옮긴다. 경도는 위도에 맞춰 줄인다. */
+  function project(points, w, h, pad) {
+    var mid = 0;
+    points.forEach(function (p) { mid += p[0]; });
+    mid = mid / points.length * Math.PI / 180;
+    var k = Math.cos(mid);
+    var xs = points.map(function (p) { return p[1] * k; }), ys = points.map(function (p) { return -p[0]; });
+    var minX = Math.min.apply(null, xs), maxX = Math.max.apply(null, xs);
+    var minY = Math.min.apply(null, ys), maxY = Math.max.apply(null, ys);
+    var spanX = maxX - minX || 1e-9, spanY = maxY - minY || 1e-9;
+    var s = Math.min((w - 2 * pad) / spanX, (h - 2 * pad) / spanY);
+    var ox = (w - spanX * s) / 2, oy = (h - spanY * s) / 2;
+    return points.map(function (p, i) {
+      return [+(ox + (xs[i] - minX) * s).toFixed(1), +(oy + (ys[i] - minY) * s).toFixed(1)];
+    });
+  }
+
+  function clock(sec) {
+    sec = Math.max(0, Math.round(sec));
+    var h = Math.floor(sec / 3600), m = Math.floor(sec % 3600 / 60), s = sec % 60;
+    var ss = (s < 10 ? '0' : '') + s;
+    return h ? h + ':' + (m < 10 ? '0' : '') + m + ':' + ss : m + ':' + ss;
+  }
+
+  var api = { decode: decode, decodePolyline: decodePolyline, lengthOf: lengthOf, kmSplits: kmSplits, project: project, clock: clock };
+  if (typeof module === 'object' && module.exports) module.exports = api;
+  return api;
+})();
+</script>
+
+<script>
+(function () {
+  'use strict';
+  var STORE = {
+    apple: 'https://apps.apple.com/app/apple-store/id6805938033?pt=118731534&ct=site&mt=8',
+    google: 'https://play.google.com/store/apps/details?id=com.bbdyno.app.fitboost&referrer=utm_source%3Dsite%26utm_medium%3Dreferral%26utm_campaign%3Dsite'
+  };
+  var NAMES = { ko: '한국어', en: 'English', ja: '日本語', 'zh-hans': '简体中文', 'zh-hant': '繁體中文' };
+  var HTML_LANG = { ko: 'ko', en: 'en', ja: 'ja', 'zh-hans': 'zh-Hans', 'zh-hant': 'zh-Hant' };
+  var BADGE = { ko: ['ko-kr', 'ko'], en: ['en-us', 'en'], ja: ['ja-jp', 'ja'], 'zh-hans': ['zh-cn', 'zh-cn'], 'zh-hant': ['zh-tw', 'zh-tw'] };
+  var GUIDE = { ko: 'guide/', en: 'en/guide/', ja: 'ja/guide/', 'zh-hans': 'zh-hans/guide/', 'zh-hant': 'zh-hant/guide/' };
+  var T = {
+    ko: {
+      kicker: '받은 코스', untitled: '이름 없는 코스', distance: '거리',
+      lead: 'FitBoost 앱으로 열면 이 코스를 저장하고, 코스를 따라 달리며 기록을 비교할 수 있습니다.',
+      open: 'FitBoost에서 열기', get: 'FitBoost가 아직 없다면 먼저 받아 주세요.',
+      start: '출발', end: '도착', map: '코스 모양',
+      record: '함께 온 기록', total: '걸린 시간', pace: '평균 페이스', perKm: '/km', split: '{n}km',
+      privacy: '이 페이지는 주소의 # 뒤에 담긴 코스를 이 브라우저 안에서만 풀어 보여 주며, 어디에도 보내지 않습니다. 보낸 사람 쪽에서 출발·도착 근처를 가렸을 수 있습니다.',
+      emptyTitle: '코스가 담기지 않은 링크입니다',
+      emptyBody: 'FitBoost에서 보낸 코스 링크는 주소 끝의 # 뒤에 코스가 담겨 있습니다. 받은 링크를 끝까지 그대로 열었는지 확인해 주세요.',
+      brokenTitle: '코스를 읽지 못했습니다',
+      brokenBody: '링크 끝이 잘렸거나 바뀌었을 수 있습니다. 보낸 사람에게 다시 받거나 파일로 받아 주세요.',
+      help: '코스 보내고 받기 안내', apple: 'App Store에서 다운로드', google: 'Google Play에서 다운로드'
+    },
+    en: {
+      kicker: 'Shared course', untitled: 'Untitled course', distance: 'Distance',
+      lead: 'Open it in the FitBoost app to save this course, run along it and compare times.',
+      open: 'Open in FitBoost', get: "Don't have FitBoost yet? Get it first.",
+      start: 'Start', end: 'Finish', map: 'Course shape',
+      record: 'Record sent with it', total: 'Time', pace: 'Average pace', perKm: '/km', split: 'km {n}',
+      privacy: 'This page decodes the course stored after the # in the address only inside this browser and sends it nowhere. The sender may have hidden the areas around the start and finish.',
+      emptyTitle: 'This link has no course in it',
+      emptyBody: 'A course link from FitBoost carries the course after the # at the end of the address. Check that you opened the whole link you received.',
+      brokenTitle: "The course couldn't be read",
+      brokenBody: 'The end of the link may have been cut off or changed. Ask the sender for it again, or get it as a file.',
+      help: 'How sending and receiving courses works', apple: 'Download on the App Store', google: 'Get it on Google Play'
+    },
+    ja: {
+      kicker: '受け取ったコース', untitled: '名前のないコース', distance: '距離',
+      lead: 'FitBoostアプリで開くと、このコースを保存し、コースに沿って走って記録を比べられます。',
+      open: 'FitBoostで開く', get: 'FitBoostをお持ちでない場合は、先に入手してください。',
+      start: 'スタート', end: 'ゴール', map: 'コースの形',
+      record: '一緒に届いた記録', total: 'タイム', pace: '平均ペース', perKm: '/km', split: '{n}km',
+      privacy: 'このページは、アドレスの#の後ろに入ったコースをこのブラウザの中だけで読み解いて表示し、どこにも送りません。送った人がスタート・ゴール付近を隠している場合があります。',
+      emptyTitle: 'コースが入っていないリンクです',
+      emptyBody: 'FitBoostから送られたコースのリンクは、アドレスの末尾の#の後ろにコースが入っています。受け取ったリンクを最後までそのまま開いたか確認してください。',
+      brokenTitle: 'コースを読み取れませんでした',
+      brokenBody: 'リンクの末尾が切れたか、変わった可能性があります。送った人にもう一度送ってもらうか、ファイルで受け取ってください。',
+      help: 'コースを送る・受け取るの案内', apple: 'App Storeからダウンロード', google: 'Google Playで手に入れよう'
+    },
+    'zh-hans': {
+      kicker: '收到的路线', untitled: '未命名路线', distance: '距离',
+      lead: '用 FitBoost 应用打开，即可保存这条路线、沿路线跑步并比较成绩。',
+      open: '在 FitBoost 中打开', get: '还没有 FitBoost？请先下载。',
+      start: '起点', end: '终点', map: '路线形状',
+      record: '附带的记录', total: '用时', pace: '平均配速', perKm: '/km', split: '第 {n} km',
+      privacy: '此页面只在本浏览器内解开地址 # 之后的路线并显示，不会发送到任何地方。发送者可能已隐藏起点和终点附近。',
+      emptyTitle: '此链接中没有路线',
+      emptyBody: 'FitBoost 发送的路线链接会把路线放在地址末尾的 # 之后。请确认打开的是完整的链接。',
+      brokenTitle: '无法读取路线',
+      brokenBody: '链接末尾可能被截断或更改。请让发送者重新发送，或改用文件。',
+      help: '发送与接收路线说明', apple: '在 App Store 下载', google: '在 Google Play 下载'
+    },
+    'zh-hant': {
+      kicker: '收到的路線', untitled: '未命名路線', distance: '距離',
+      lead: '用 FitBoost App 開啟，即可儲存這條路線、沿路線跑步並比較成績。',
+      open: '在 FitBoost 中開啟', get: '還沒有 FitBoost？請先下載。',
+      start: '起點', end: '終點', map: '路線形狀',
+      record: '附上的紀錄', total: '用時', pace: '平均配速', perKm: '/km', split: '第 {n} km',
+      privacy: '此頁面只在本瀏覽器內解開網址 # 之後的路線並顯示，不會傳送到任何地方。傳送者可能已隱藏起點和終點附近。',
+      emptyTitle: '此連結中沒有路線',
+      emptyBody: 'FitBoost 傳送的路線連結會把路線放在網址結尾的 # 之後。請確認開啟的是完整的連結。',
+      brokenTitle: '無法讀取路線',
+      brokenBody: '連結結尾可能被截斷或更改。請傳送者重新傳送，或改用檔案。',
+      help: '傳送與接收路線說明', apple: '在 App Store 下載', google: '在 Google Play 下載'
+    }
+  };
+
+  function pickLang() {
+    var saved = null;
+    try { saved = localStorage.getItem('fb-lang'); } catch (e) {}
+    if (saved && T[saved]) return saved;
+    var l = ((navigator.languages && navigator.languages[0]) || navigator.language || '').toLowerCase();
+    if (!l || l.indexOf('ko') === 0) return 'ko';
+    if (l.indexOf('ja') === 0) return 'ja';
+    if (l.indexOf('zh') === 0) return /hant|tw|hk|mo/.test(l) ? 'zh-hant' : 'zh-hans';
+    return 'en';
+  }
+
+  function el(tag, attrs, text) {
+    var e = document.createElement(tag);
+    for (var k in attrs || {}) e.setAttribute(k, attrs[k]);
+    if (text != null) e.textContent = text;
+    return e;
+  }
+  var SVG = 'http://www.w3.org/2000/svg';
+  function svg(tag, attrs) {
+    var e = document.createElementNS(SVG, tag);
+    for (var k in attrs) e.setAttribute(k, attrs[k]);
+    return e;
+  }
+
+  function distanceText(lang, m) {
+    var km = m / 1000;
+    var txt = (km < 10 ? km.toFixed(2) : km.toFixed(1)) + ' km';
+    if (lang === 'en') txt += ' (' + (m / 1609.344).toFixed(2) + ' mi)';
+    return txt;
+  }
+
+  var fragment = location.hash.slice(1);
+  var result = FBCourse.decode(fragment);
+
+  function render(lang) {
+    var t = T[lang];
+    document.documentElement.lang = HTML_LANG[lang];
+    var body = document.getElementById('c-body');
+    body.textContent = '';
+    var kicker = document.getElementById('c-kicker'), title = document.getElementById('c-title'), lead = document.getElementById('c-lead');
+
+    if (result.status !== 'ok') {
+      var bad = result.status === 'empty';
+      kicker.textContent = 'FitBoost';
+      title.textContent = bad ? t.emptyTitle : t.brokenTitle;
+      lead.textContent = bad ? t.emptyBody : t.brokenBody;
+      document.title = title.textContent + ' — FitBoost';
+    } else {
+      var c = result.course;
+      kicker.textContent = t.kicker + ' · ' + t.distance + ' ' + distanceText(lang, c.meters);
+      title.textContent = c.name || t.untitled;
+      lead.textContent = t.lead;
+      document.title = title.textContent + ' — FitBoost';
+
+      var W = 320, H = 220, pts = FBCourse.project(c.points, W, H, 18);
+      var fig = el('figure', { 'class': 'course__map' });
+      var s = svg('svg', { viewBox: '0 0 ' + W + ' ' + H, role: 'img', 'aria-label': t.map });
+      s.appendChild(svg('polyline', { 'class': 'course__line', points: pts.map(function (p) { return p.join(','); }).join(' ') }));
+      var a = pts[0], z = pts[pts.length - 1];
+      s.appendChild(svg('circle', { 'class': 'course__end', cx: z[0], cy: z[1], r: 6 }));
+      s.appendChild(svg('circle', { 'class': 'course__start', cx: a[0], cy: a[1], r: 7 }));
+      fig.appendChild(s);
+      body.appendChild(fig);
+      var key = el('p', { 'class': 'course__key', 'aria-hidden': 'true' });
+      var ks = el('span'); ks.appendChild(el('i', { 'class': 's' })); ks.appendChild(document.createTextNode(t.start));
+      var ke = el('span'); ke.appendChild(el('i', { 'class': 'e' })); ke.appendChild(document.createTextNode(t.end));
+      key.appendChild(ks); key.appendChild(ke);
+      body.appendChild(key);
+
+      if (c.record) {
+        var last = c.record[c.record.length - 1];
+        var km = c.record.length / 10;
+        body.appendChild(el('h2', null, t.record));
+        var list = el('ul', { 'class': 'course__rec' });
+        var cell = function (label, value) {
+          var li = el('li'); li.appendChild(el('b', null, label)); li.appendChild(document.createTextNode(value)); list.appendChild(li);
+        };
+        cell(t.total, FBCourse.clock(last));
+        if (km > 0) cell(t.pace, FBCourse.clock(last / km) + ' ' + t.perKm);
+        FBCourse.kmSplits(c.record).forEach(function (sec, i) { cell(t.split.replace('{n}', i + 1), FBCourse.clock(sec)); });
+        body.appendChild(list);
+      }
+
+      var open = el('a', { 'class': 'course__open', href: 'fitboost://course#' + fragment.replace(/^#/, '') }, t.open);
+      body.appendChild(open);
+    }
+
+    body.appendChild(el('p', { style: 'margin-top:28px' }, t.get));
+    var stores = el('div', { 'class': 'stores' });
+    var b = BADGE[lang];
+    var ap = el('a', { 'class': 'store store--apple', href: STORE.apple, rel: 'noopener noreferrer' });
+    ap.appendChild(el('img', { src: 'https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/' + b[0], alt: t.apple, height: '48', referrerpolicy: 'no-referrer' }));
+    var gp = el('a', { 'class': 'store store--google', href: STORE.google, rel: 'noopener noreferrer' });
+    gp.appendChild(el('img', { src: 'https://play.google.com/intl/en_us/badges/static/images/badges/' + b[1] + '_badge_web_generic.png', alt: t.google, height: '70', referrerpolicy: 'no-referrer' }));
+    stores.appendChild(ap); stores.appendChild(gp);
+    body.appendChild(stores);
+
+    body.appendChild(el('p', { 'class': 'doc__meta', style: 'margin-top:32px' }, t.privacy));
+    var help = el('p');
+    help.appendChild(el('a', { href: GUIDE[lang] + 'running.html#share-course' }, t.help));
+    body.appendChild(help);
+
+    var langs = document.getElementById('c-langs');
+    langs.textContent = '';
+    Object.keys(T).forEach(function (code) {
+      var li = el('li');
+      var btn = el('button', { type: 'button', lang: HTML_LANG[code] }, NAMES[code]);
+      if (code === lang) btn.setAttribute('aria-current', 'true');
+      btn.addEventListener('click', function () {
+        try { localStorage.setItem('fb-lang', code); } catch (e) {}
+        render(code);
+      });
+      li.appendChild(btn);
+      langs.appendChild(li);
+    });
+  }
+
+  render(pickLang());
+})();
+</script>
+</body>
+</html>
