@@ -5,6 +5,7 @@
     {"slug": "record", "title": "记录训练", "description": "开始训练、记录每组、结束训练，以及修改过去的记录。"},
     {"slug": "routines", "title": "例行训练与计划", "description": "创建例行训练、生成适合自己的计划、使用动作列表。"},
     {"slug": "coach", "title": "教练与循环训练", "description": "下一组重量建议、教练循环训练、每周混合训练计划和教练页的周期计划。"},
+    {"slug": "assessment", "title": "动作评估", "description": "用手机相机测量灵活性、体能、跳跃、杠铃速度和跑姿，查看结果、应用到训练计划并重测的方法。"},
     {"slug": "stats", "title": "统计与报告", "description": "统计页中的恢复、力量平衡、训练量，以及每周教练报告。"},
     {"slug": "sharing", "title": "记录分享与装饰", "description": "把跑步和力量训练记录做成分享卡片，用模板和贴纸装饰，调整字体、颜色和照片，并保存到相册或我的模板。"},
     {"slug": "tools", "title": "计算器与工具", "description": "杠铃片、1RM、强度计划计算器，我的器械和训练术语词典。"},

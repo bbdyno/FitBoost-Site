@@ -1,0 +1,98 @@
+<section id="open" data-ask="動作評価はどこでできますか|フォーム分析はどこですか|柔軟性を測りたい|体力テストのやり方|どんなテストがありますか" data-keys="動作評価 フォーム分析 テスト 検査 体力 可動性 柔軟性 カメラ コーチ">
+<h2>動作評価を開く</h2>
+<p class="lead">筋トレモードの{{> tabCoach}}の{{> assessEntryTitle}}、ランニングモードの{{> tabCoach}}の{{> assessEntryRunTitle}}からテスト一覧を開きます。</p>
+<ol class="steps">
+<li>{{> tabCoach}}で{{> assessEntryTitle}}（ランニングモードでは{{> assessEntryRunTitle}}）をタップします。</li>
+<li>{{> assessGroupMobility}}・{{> assessGroupFitness}}・{{> assessGroupPower}}・{{> assessGroupBarbell}}・{{> assessGroupRunning}}のまとまりからテストを選びます。</li>
+<li>準備画面でスマホの置き方、やり方、中止するときを読んでから始めます。</li>
+</ol>
+<p>筋トレモードには肩・スクワット・長座体前屈・膝伸展・下肢伸展挙上・ニー・トゥ・ウォール・腕立て伏せ・片脚立ち・{{> assessTestChairStand}}・{{> jumpTestCmj}}・{{> jumpTestDrop}}・{{> barSpeedTestName}}が、ランニングモードには{{> runFormTestSide}}・{{> runFormTestBack}}と脚の可動性・体力・ジャンプのテストが表示されます。測定と結果の確認は無料です。</p>
+</section>
+
+<section id="measure" data-ask="カメラでどう測りますか|スマホはどこに置きますか|撮影チェックが通りません|カメラなしで測れますか|測定動画を残したい" data-keys="測定 測る カメラ スマホ 立てる 三脚 撮影 チェック 角度 横 正面 手入力 タイマー 定規 動画 音声">
+<h2>測り方</h2>
+<p class="lead">スマホを立てて準備画面のとおりに立つと、撮影チェックを通過したあと3・2・1と数え、音声で案内します。</p>
+<ol class="steps">
+<li>準備画面の置き方のとおりにスマホを立てます（テストごとに横・正面・斜めが決まっています）。</li>
+<li>{{> assessStartCamera}}をタップし、全身が映るように立ちます。チェックを通過すると自動で始まります。</li>
+<li>終わったら測定値を確認し、{{> assessSeeResult}}をタップします。</li>
+</ol>
+<p>長座体前屈・立位体前屈のようにカメラで測らないテストは、定規で測った値を入力します。カメラの値が実際と違うときは結果の{{> assessEdit}}で直し、直した記録には{{" assessEditedBadge}}が付きます。{{> assessVideoKeep}}をオンにすると、測定の様子をこの端末だけに動画で残します。</p>
+</section>
+
+<section id="result" data-ask="評価結果の見方|測定誤差とは|最小可検変化とは|左右差はどう見ますか|基準範囲はどこから来ていますか" data-keys="結果 解釈 測定誤差 最小可検変化 変化 左右差 基準 範囲 パーセンタイル 年齢 出典 根拠 危険信号">
+<h2>結果の見方</h2>
+<p class="lead">結果には値と測定誤差、前回からの変化、左右差、研究の基準範囲が一緒に表示されます。</p>
+<ul>
+<li>変化は、最小可検変化（測定誤差を超えた実際の変化とみなす最小の差）を超えたときだけ変化と呼びます。</li>
+<li>基準範囲は同じ年齢・性別の研究サンプルと比べた位置です。根拠が足りないテストは位置を言わず、自分の変化だけを見ます。</li>
+<li>測定中に痛みなどの症状を記録すると、危険信号が数字より先に表示され、プランへの反映を止めます。</li>
+<li>{{> assessWhyTitle}}をタップすると、測り方・限界・出典と根拠の等級が見られます。</li>
+</ul>
+<p>{{> assessCardMake}}で結果を共有カードに仕上げられます。アプリは診断をしません。痛みがあるときは運動をやめて専門家に相談してください。</p>
+</section>
+
+<section id="plan" data-ask="評価結果をトレーニングに反映したい|プランに反映とは|反映を元に戻したい|ウォームアップにストレッチが増えた" data-keys="反映 プランに反映 ウォームアップ ストレッチ プログラム 元に戻す プレビュー pro">
+<h2>プランに反映 <span class="pro">PRO</span></h2>
+<p class="lead">結果画面の{{> assessPlanButton}}をタップすると変わる内容を先に見せ、{{> assessPlanApply}}でウォームアップとプログラムに入ります。</p>
+<ol class="steps">
+<li>結果画面の{{> assessPlanSection}}で{{> assessPlanButton}}をタップします。</li>
+<li>{{> assessPlanPreviewTitle}}を確認して{{> assessPlanApply}}をタップします。</li>
+<li>運動を始めたら、一覧のいちばん上の行の{{> assessPlanAdd}}でウォームアップを加えます。</li>
+</ol>
+<p>反映したあとも{{> assessPlanRevert}}で元に戻せます。筋トレの処方は筋トレモードでだけ反映し、ランニングは<a href="#run-form">ピッチの目標</a>が担います。提案の文章は無料で誰でも読めます。</p>
+</section>
+
+<section id="jump" data-ask="ジャンプの高さを測りたい|ドロップジャンプのやり方|スローモーションで撮る必要がありますか|脚の準備度とは" data-keys="ジャンプ カウンタームーブメントジャンプ ドロップジャンプ 高さ 滞空 スローモーション 240 反応筋力指数 rsi 脚 準備度 場面 離地 着地">
+<h2>ジャンプと脚の準備度</h2>
+<p class="lead">{{> jumpTestCmj}}と{{> jumpTestDrop}}は毎秒240コマのスローモーション動画で測り、アプリが見つけた離地・着地の場面を確認してから結果を出します。</p>
+<ol class="steps">
+<li>準備画面でアプリで撮るか、写真アプリのスローモーション動画を選びます。</li>
+<li>アプリが見つけた場面が合っているか見て、違えば{{> jumpFramePrev}}・{{> jumpFrameNext}}で1コマずつ動かします。</li>
+</ol>
+<p>カウンタームーブメントジャンプを何回か測ると、自分の記録のばらつきで{{> jumpReadinessTitle}}を見ます。PRO+では準備度が低い日に、その日の下半身の処方とポイント練習を一段軽くする提案をします。毎秒240コマでない動画は受け付けません。</p>
+</section>
+
+<section id="bar-speed" data-ask="バー速度を測りたい|バーベルの速度の測り方|速度低下率とは|速度から1RMを推定できますか" data-keys="バー速度 バーベル vbt 速度 軌跡 プレート 低下率 1rm セット スクワット ベンチ デッドリフト">
+<h2>バー速度と軌跡</h2>
+<p class="lead">バーベル種目の運動中に種目の⋯メニューで{{> barSpeedMeasureSet}}をタップするか、テスト一覧の{{> barSpeedTestName}}から開きます。</p>
+<ol class="steps">
+<li>プレートの直径を選び（競技用・バンパープレートは450mm）、スマホをプレートの横に立てます。</li>
+<li>{{> barSpeedStart}}をタップしてセットを行います。</li>
+<li>{{" barSpeedPlateFound}}で合っていれば{{> barSpeedPlateConfirm}}、違えばプレートのいちばん上と下の端をタップして決めます。</li>
+</ol>
+<p>レップごとの平均推進速度と{{> barSpeedLossTitle}}が出ます。まだ実際の機器と比べていない推定値であることも表示します。速度からの1RM比の推定はPRO、セット中に低下率を超えたら終えどきを知らせる機能はPRO+です。筋トレモードでだけ表示されます。</p>
+</section>
+
+<section id="run-form" data-ask="ランニングフォームの分析のやり方|ピッチの目標を決めたい|オーバーストライドか知りたい|走る姿の撮り方" data-keys="ランニングフォーム フォーム ピッチ ケイデンス 歩幅 オーバーストライド 着地 すね 骨盤 股関節内転 トレッドミル トラック 目標">
+<h2>ランニングフォームとピッチの目標</h2>
+<p class="lead">ランニングモードの{{> tabCoach}}の{{> assessEntryRunTitle}}で{{> runFormTestSide}}か{{> runFormTestBack}}を選び、トレッドミルやトラックで走る姿を撮ります。</p>
+<ol class="steps">
+<li>スマホを高さ約1.5mに立て、横（または後ろ）から撮ります。</li>
+<li>結果でピッチ、着地位置、すねの角度、着地の足の形などを見ます。</li>
+<li>{{> runFormTargetTitle}}の{{> runFormTargetOn}}をタップすると、イージーランで範囲を外れたときにスマホとウォッチが知らせます。</li>
+</ol>
+<p>ピッチの目標は、同じ速度で今より5〜10%上げた範囲です。ラン中の案内に入れるのはPRO、PRO+では週間ランプランにフォームのドリルを入れます。Apple Watch・Galaxy Watch・Garminでも目標の範囲が見られます。</p>
+</section>
+
+<section id="retest" data-ask="いつ測り直せばいいですか|再測定の通知が来た|測定動画を見直したい|初回と比べたい|動画が容量を使っています" data-keys="再測定 測り直し 通知 間隔 週 動画 見直し 並べて 初回 比較 保存容量 削除 0.25倍">
+<h2>再測定と動画</h2>
+<p class="lead">テストごとに根拠資料の間隔（なければ4週間）で次の測定日を決め、その日の朝に通知します。</p>
+<ul>
+<li>テスト一覧と結果に次の測定日が出ます。PRO+のコーチプランがあればディロード週に合わせます（ランニングフォームは合わせません）。</li>
+<li><span class="pro">PRO</span> {{> assessVideoReplay}}：関節を重ねて0.25倍までゆっくり見られます。{{> assessVideoCompare}}：初回の測定と同じ瞬間に合わせて一緒に見ます。</li>
+<li>動画は結果画面の{{> assessVideoDelete}}や{{> assessStorageTitle}}で削除します。数字の記録は残ります。</li>
+</ul>
+</section>
+
+<section id="member" data-ask="トレーナーは会員を評価できますか|会員レポートを作りたい|会員の写真の同意" data-keys="トレーナー 会員 評価 レポート 文書 同意 写真 動画 年齢 性別">
+<h2>トレーナーによる会員の評価</h2>
+<p class="lead">トレーナーは会員の記録画面の{{> assessMemberMeasure}}で会員を測り、{{> assessMemberReport}}で記録と評価をまとめた文書を送ります。</p>
+<p>会員の年齢・性別は基準値を選ぶときだけ使い、この端末にだけ残します。写真・動画は{{> assessMemberConsent}}をオンにしたときだけ残し、レポートには顔をぼかした写真だけが入ります。会員の評価にはランニングフォームとバー速度はありません。<a href="trainer.html">トレーナーと共有</a>も見てください。</p>
+</section>
+
+<section id="privacy" data-ask="評価の動画はどこに行きますか|カメラの映像はサーバーに送られますか|評価の記録もバックアップされますか" data-keys="動画 映像 カメラ サーバー プライバシー 端末内 バックアップ 同期 写真 顔">
+<h2>動画と記録の行き先</h2>
+<p class="lead">映像と関節の位置は端末の中だけで分析し、サーバーには送りません。</p>
+<p>測った数字はほかの運動記録と同じくバックアップファイルと端末間の同期に入ります。測定動画と顔をぼかした場面の写真はこの端末だけに置き、バックアップと同期には入れません。詳しくは<a href="../privacy.html">プライバシーポリシー</a>にあります。</p>
+</section>

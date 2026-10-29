@@ -134,5 +134,16 @@
  "페이스 4% 늦춰": "running#strength",
  "지난 1년 기록 가져오기": "health#runs",
  "예전 가민 달리기 가져오기": "health#runs",
- "가민 커넥트 애플 건강 공유": "health#runs"
+ "가민 커넥트 애플 건강 공유": "health#runs",
+ "유연성 검사 하는 법": "assessment#open",
+ "폰 카메라로 체력 측정": "assessment#measure",
+ "촬영 점검이 통과가 안 돼요": "assessment#measure",
+ "최소 탐지 변화가 뭐예요": "assessment#result",
+ "평가 결과를 웜업에 넣고 싶어요": "assessment#plan",
+ "점프 높이 재기": "assessment#jump",
+ "바벨 속도 재는 법": "assessment#bar-speed",
+ "케이던스 목표 정하기": "assessment#run-form",
+ "측정 영상 다시 보기": "assessment#retest",
+ "평가 영상이 서버로 가나요": "assessment#privacy",
+ "하프 마라톤 기록 예측": "tools#run-calc"
 }

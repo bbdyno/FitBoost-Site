@@ -1,0 +1,98 @@
+<section id="open" data-ask="动作评估在哪里|姿势分析在哪里|我想测柔韧性|怎么做体能测试|有哪些测试" data-keys="动作评估 姿势分析 测试 检测 体能 灵活性 柔韧性 相机 教练">
+<h2>打开动作评估</h2>
+<p class="lead">在力量模式{{> tabCoach}}的{{> assessEntryTitle}}，或跑步模式{{> tabCoach}}的{{> assessEntryRunTitle}}中打开测试列表。</p>
+<ol class="steps">
+<li>在{{> tabCoach}}中点按{{> assessEntryTitle}}（跑步模式为{{> assessEntryRunTitle}}）。</li>
+<li>从{{> assessGroupMobility}}、{{> assessGroupFitness}}、{{> assessGroupPower}}、{{> assessGroupBarbell}}、{{> assessGroupRunning}}分组中选择测试。</li>
+<li>在准备画面阅读手机放法、做法和何时停止，然后开始。</li>
+</ol>
+<p>力量模式会显示肩部、深蹲、坐位体前屈、伸膝、直腿抬高、膝触墙、俯卧撑、单脚站立、{{> assessTestChairStand}}、{{> jumpTestCmj}}、{{> jumpTestDrop}}和{{> barSpeedTestName}}；跑步模式会显示{{> runFormTestSide}}、{{> runFormTestBack}}以及腿部灵活性、体能和跳跃测试。测量和查看结果免费。</p>
+</section>
+
+<section id="measure" data-ask="怎么用相机测量|手机放在哪里|拍摄检查一直不通过|没有相机能测吗|我想保留测量视频" data-keys="测量 相机 手机 竖放 三脚架 拍摄 检查 角度 侧面 正面 手动输入 计时 尺子 视频 语音">
+<h2>测量方法</h2>
+<p class="lead">把手机竖放好，按准备画面站好位置，通过拍摄检查后会倒数 3、2、1 并用语音引导。</p>
+<ol class="steps">
+<li>按准备画面的放法竖放手机（每项测试都规定了侧面、正面或斜向）。</li>
+<li>点按{{> assessStartCamera}}，站到全身都在画面中。检查通过后会自动开始。</li>
+<li>结束后确认测得的数值，点按{{> assessSeeResult}}。</li>
+</ol>
+<p>坐位体前屈、站立体前屈等不用相机测量的测试，填写用尺子量得的数值。相机计得的数值与实际不同时，在结果中用{{> assessEdit}}修改，修改过的记录会标注{{" assessEditedBadge}}。打开{{> assessVideoKeep}}后，测量过程会以视频形式只保存在本设备。</p>
+</section>
+
+<section id="result" data-ask="怎么看评估结果|测量误差是什么|最小可检测变化是什么|左右差异怎么看|参考范围从哪里来" data-keys="结果 解读 测量误差 最小可检测变化 变化 左右 差异 参考 范围 百分位 年龄 出处 依据 危险信号">
+<h2>看懂结果</h2>
+<p class="lead">结果会同时显示数值和测量误差、与上次相比的变化、左右差异和研究参考范围。</p>
+<ul>
+<li>只有超过最小可检测变化（视为超出测量误差的真实变化的最小差值）时才称为变化。</li>
+<li>参考范围是与同年龄、同性别研究样本相比的位置。依据不足的测试不给出位置，只看自己的变化。</li>
+<li>测量中记录疼痛等症状时，危险信号会显示在数字之前，并阻止应用到计划。</li>
+<li>点按{{> assessWhyTitle}}可查看测量方法、局限、出处和依据等级。</li>
+</ul>
+<p>可用{{> assessCardMake}}把结果做成分享卡片。应用不做诊断，如有疼痛请停止运动并咨询专业人士。</p>
+</section>
+
+<section id="plan" data-ask="我想把评估结果用到训练中|应用到训练计划是什么|怎么撤销|热身里多了拉伸" data-keys="应用 训练计划 热身 拉伸 计划 撤销 预览 pro">
+<h2>应用到训练计划 <span class="pro">PRO</span></h2>
+<p class="lead">在结果画面点按{{> assessPlanButton}}，会先显示要改变的内容，点按{{> assessPlanApply}}后加入热身和训练计划。</p>
+<ol class="steps">
+<li>在结果画面的{{> assessPlanSection}}中点按{{> assessPlanButton}}。</li>
+<li>查看{{> assessPlanPreviewTitle}}后点按{{> assessPlanApply}}。</li>
+<li>开始训练后，在列表最上方一行用{{> assessPlanAdd}}加入热身。</li>
+</ol>
+<p>应用后也可以随时用{{> assessPlanRevert}}撤销。只有在力量模式中才会改变力量处方，跑步则由<a href="#run-form">步频目标</a>负责。建议文字所有人都能免费查看。</p>
+</section>
+
+<section id="jump" data-ask="我想测跳跃高度|跳深怎么做|需要用慢动作拍吗|腿部准备度是什么" data-keys="跳跃 反向纵跳 跳深 高度 滞空 慢动作 240 反应力量指数 rsi 腿部 准备度 画面 起跳 落地">
+<h2>跳跃与腿部准备度</h2>
+<p class="lead">{{> jumpTestCmj}}和{{> jumpTestDrop}}用每秒 240 帧的慢动作视频测量，确认应用找到的起跳和落地画面后给出结果。</p>
+<ol class="steps">
+<li>在准备画面用应用拍摄，或从照片中选择慢动作视频。</li>
+<li>查看应用找到的画面是否正确，不对时用{{> jumpFramePrev}}、{{> jumpFrameNext}}逐帧移动。</li>
+</ol>
+<p>反向纵跳测量几次后，会用你自己记录的波动来看{{> jumpReadinessTitle}}。PRO+ 会在准备度低的日子建议把当天的下肢处方和质量跑减轻一级。不是每秒 240 帧的视频不会被接受。</p>
+</section>
+
+<section id="bar-speed" data-ask="我想测杠铃速度|怎么测杠铃速度|速度下降率是什么|能用速度估算 1RM 吗" data-keys="杠铃速度 杠铃 vbt 速度 轨迹 杠铃片 下降率 1rm 组 深蹲 卧推 硬拉">
+<h2>杠铃速度与轨迹</h2>
+<p class="lead">在杠铃动作训练中，点按该动作 ⋯ 菜单里的{{> barSpeedMeasureSet}}，或从测试列表打开{{> barSpeedTestName}}。</p>
+<ol class="steps">
+<li>选择杠铃片直径（比赛片和缓冲片为 450mm），把手机竖放在杠铃片旁边。</li>
+<li>点按{{> barSpeedStart}}后进行这一组。</li>
+<li>在{{" barSpeedPlateFound}}处，正确就点按{{> barSpeedPlateConfirm}}，不对就点按杠铃片的最上端和最下端来确定。</li>
+</ol>
+<p>会显示每次的平均推进速度和{{> barSpeedLossTitle}}，并注明这是尚未与实际设备对比的估计值。用速度估算 1RM 百分比为 PRO，组中下降率超过设定时提示结束为 PRO+。只在力量模式中显示。</p>
+</section>
+
+<section id="run-form" data-ask="怎么做跑姿分析|我想设定步频目标|想知道是否步幅过大|怎么拍跑步姿势" data-keys="跑姿 跑步 姿势 步频 步幅 步幅过大 落地 小腿 骨盆 髋内收 跑步机 跑道 目标">
+<h2>跑姿与步频目标</h2>
+<p class="lead">在跑步模式{{> tabCoach}}的{{> assessEntryRunTitle}}中选择{{> runFormTestSide}}或{{> runFormTestBack}}，拍摄自己在跑步机或跑道上跑步。</p>
+<ol class="steps">
+<li>把手机竖放在约 1.5 米高处，从侧面（或背后）拍摄。</li>
+<li>在结果中查看步频、落地位置、小腿角度、落地脚型等。</li>
+<li>点按{{> runFormTargetTitle}}中的{{> runFormTargetOn}}后，轻松跑时超出范围，手机和手表会提醒。</li>
+</ol>
+<p>步频目标是在相同速度下比现在提高 5–10% 的范围。加入跑步中提醒为 PRO，PRO+ 会在每周跑步计划中加入姿势练习。Apple Watch、Galaxy Watch 和 Garmin 也能看到目标范围。</p>
+</section>
+
+<section id="retest" data-ask="什么时候该重测|收到了重测提醒|想重看测量视频|和第一次比较|视频占用存储空间" data-keys="重测 再测 提醒 间隔 周 视频 回放 并排 首次 比较 存储空间 删除 0.25倍">
+<h2>重测与视频</h2>
+<p class="lead">每项测试会按依据资料的间隔（没有时为 4 周）定下下次测量日，并在当天早上提醒。</p>
+<ul>
+<li>测试列表和结果中会显示下次测量日期。有 PRO+ 教练计划时会对齐到减量周（跑姿不对齐）。</li>
+<li><span class="pro">PRO</span> {{> assessVideoReplay}}：叠加关节，最慢可 0.25 倍查看。{{> assessVideoCompare}}：与首次测量对齐到同一时刻一起看。</li>
+<li>在结果画面的{{> assessVideoDelete}}或{{> assessStorageTitle}}中删除视频，数字记录会保留。</li>
+</ul>
+</section>
+
+<section id="member" data-ask="教练可以评估会员吗|我想生成会员报告|会员照片同意" data-keys="教练 会员 评估 报告 文件 同意 照片 视频 年龄 性别">
+<h2>教练评估会员</h2>
+<p class="lead">教练在会员记录画面用{{> assessMemberMeasure}}为会员测量，用{{> assessMemberReport}}发送包含记录和评估的文件。</p>
+<p>会员的年龄和性别只用于选择参考值，只保存在本设备。只有打开{{> assessMemberConsent}}时才保留照片和视频，报告中只放已模糊面部的照片。会员评估中没有跑姿和杠铃速度。也请参阅<a href="trainer.html">与教练分享</a>。</p>
+</section>
+
+<section id="privacy" data-ask="评估视频会去哪里|相机画面会发送到服务器吗|评估记录也会备份吗" data-keys="视频 相机 服务器 隐私 设备内 备份 同步 照片 面部">
+<h2>视频和记录在哪里</h2>
+<p class="lead">视频和关节位置只在设备上分析，不会发送到服务器。</p>
+<p>测得的数字与其他训练记录一样会进入备份文件和设备间同步。测量视频和已模糊面部的场景照片只保存在本设备，不进入备份和同步。详情请见<a href="../privacy.html">隐私政策</a>。</p>
+</section>

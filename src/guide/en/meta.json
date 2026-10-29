@@ -5,6 +5,7 @@
     {"slug": "record", "title": "Logging workouts", "description": "Start a workout, log sets, finish, and fix past records."},
     {"slug": "routines", "title": "Routines and programs", "description": "Build routines, get a program made for you, and use the exercise list."},
     {"slug": "coach", "title": "Coaching and circuits", "description": "Next-weight suggestions, coach circuits, weekly hybrid plans, and block programs in the Coach tab."},
+    {"slug": "assessment", "title": "Movement assessment", "description": "Measure mobility, fitness, jumps, bar speed and running form with your phone camera, read the results, apply them to your plan and retest."},
     {"slug": "stats", "title": "Stats and reports", "description": "Recovery, strength balance, volume, and the weekly coaching report."},
     {"slug": "sharing", "title": "Sharing and customizing", "description": "Turn runs and strength workouts into share cards, decorate them with layouts and stickers, polish fonts, colors, and photos, and save to Photos or as your own templates."},
     {"slug": "tools", "title": "Calculators and tools", "description": "Plate, 1RM, and program calculators, your equipment, and the training glossary."},

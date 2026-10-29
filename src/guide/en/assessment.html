@@ -1,0 +1,98 @@
+<section id="open" data-ask="Where is movement assessment|Where is form analysis|I want to test my flexibility|How do I do a fitness test|Which tests can I do" data-keys="movement assessment form analysis test fitness mobility flexibility camera hub coach screening">
+<h2>Opening movement assessment</h2>
+<p class="lead">Open the test list from {{> assessEntryTitle}} in {{> tabCoach}} in strength mode, or {{> assessEntryRunTitle}} in {{> tabCoach}} in running mode.</p>
+<ol class="steps">
+<li>In {{> tabCoach}}, tap {{> assessEntryTitle}} ({{> assessEntryRunTitle}} in running mode).</li>
+<li>Pick a test from the {{> assessGroupMobility}}, {{> assessGroupFitness}}, {{> assessGroupPower}}, {{> assessGroupBarbell}} or {{> assessGroupRunning}} groups.</li>
+<li>Read how to place the phone, how to do it and when to stop on the setup screen, then start.</li>
+</ol>
+<p>Strength mode shows the shoulder, squat, sit-and-reach, knee extension, straight leg raise, knee-to-wall, push-up, single-leg stance, {{> assessTestChairStand}}, {{> jumpTestCmj}}, {{> jumpTestDrop}} and {{> barSpeedTestName}} tests. Running mode shows {{> runFormTestSide}}, {{> runFormTestBack}} and the leg mobility, fitness and jump tests. Measuring and viewing results are free.</p>
+</section>
+
+<section id="measure" data-ask="How do I measure with the camera|Where do I put my phone|The camera check won't pass|Can I measure without the camera|I want to keep the video" data-keys="measure camera phone stand tripod check angle side front enter manually timer ruler video keep voice">
+<h2>How to measure</h2>
+<p class="lead">Stand the phone up and get into position as the setup screen shows. Once the camera check passes, it counts 3, 2, 1 and guides you by voice.</p>
+<ol class="steps">
+<li>Place the phone as the setup screen says (each test has its own side, front or angled view).</li>
+<li>Tap {{> assessStartCamera}} and stand so your whole body is in view. It starts on its own when the check passes.</li>
+<li>When you finish, check the measured value and tap {{> assessSeeResult}}.</li>
+</ol>
+<p>Tests the camera doesn't measure, such as sit-and-reach and standing toe touch, take a value you measure with a ruler. If the camera's value is off, tap {{> assessEdit}} on the result; edited records are marked {{" assessEditedBadge}}. Turn on {{> assessVideoKeep}} to save the measurement as a video on this device only.</p>
+</section>
+
+<section id="result" data-ask="How do I read the result|What is measurement error|What is minimal detectable change|How do I see left-right difference|Where do the reference ranges come from" data-keys="result interpretation measurement error minimal detectable change mdc change left right difference reference range percentile age source evidence red flag why">
+<h2>Reading the result</h2>
+<p class="lead">The result shows the value with its measurement error, change since last time, left–right difference and research reference ranges.</p>
+<ul>
+<li>A change is called a change only when it's beyond the minimal detectable change (the smallest difference that is more than measurement error).</li>
+<li>Reference ranges compare you with study samples of the same age and sex. Where evidence is thin, the result tracks only your own change.</li>
+<li>If you note symptoms such as pain while measuring, a red flag appears above the numbers and plan updates are blocked.</li>
+<li>Tap {{> assessWhyTitle}} for the method, limits, sources and evidence grade.</li>
+</ul>
+<p>Use {{> assessCardMake}} to turn a result into a share card. The app doesn't diagnose anything. If you have pain, stop exercising and talk to a professional.</p>
+</section>
+
+<section id="plan" data-ask="I want results to change my training|What does apply to my plan do|How do I undo it|Stretches appeared in my warm-up" data-keys="plan apply warm-up stretch program undo preview pro">
+<h2>Applying to your plan <span class="pro">PRO</span></h2>
+<p class="lead">Tap {{> assessPlanButton}} on the result to see what will change first, then tap {{> assessPlanApply}} to add it to your warm-ups and programs.</p>
+<ol class="steps">
+<li>In {{> assessPlanSection}} on the result, tap {{> assessPlanButton}}.</li>
+<li>Review {{> assessPlanPreviewTitle}} and tap {{> assessPlanApply}}.</li>
+<li>When you start a workout, add the warm-up with {{> assessPlanAdd}} in the line at the top of the list.</li>
+</ol>
+<p>You can undo it any time with {{> assessPlanRevert}}. Strength plans change only in strength mode; for running, the <a href="#run-form">cadence target</a> does the job. Anyone can read the suggestions for free.</p>
+</section>
+
+<section id="jump" data-ask="I want to measure my jump height|How do I do a drop jump|Do I need slow motion|What is leg readiness" data-keys="jump countermovement drop height flight slow motion 240 reactive strength index rsi leg readiness frame takeoff landing">
+<h2>Jumps and leg readiness</h2>
+<p class="lead">{{> jumpTestCmj}} and {{> jumpTestDrop}} are measured from 240 fps slow-motion video. You check the takeoff and landing frames the app found, then see the result.</p>
+<ol class="steps">
+<li>On the setup screen, film in the app or pick a slow-motion video from Photos.</li>
+<li>Check the frames the app found. If they're off, move one frame at a time with {{> jumpFramePrev}} and {{> jumpFrameNext}}.</li>
+</ol>
+<p>Measure countermovement jumps a few times and {{> jumpReadinessTitle}} compares today with your usual spread. PRO+ suggests one step lighter lower-body work and quality runs on low-readiness days. Videos that aren't 240 fps aren't accepted.</p>
+</section>
+
+<section id="bar-speed" data-ask="I want to measure bar speed|How do I measure barbell velocity|What is velocity loss|Can I estimate 1RM from speed" data-keys="bar speed barbell velocity vbt path plate velocity loss 1rm set squat bench deadlift">
+<h2>Bar speed and path</h2>
+<p class="lead">During a barbell exercise, tap {{> barSpeedMeasureSet}} in the exercise's ⋯ menu, or open {{> barSpeedTestName}} from the test list.</p>
+<ol class="steps">
+<li>Choose the plate diameter (450 mm for competition and bumper plates) and stand the phone beside the plate.</li>
+<li>Tap {{> barSpeedStart}} and do your set.</li>
+<li>At {{" barSpeedPlateFound}}, tap {{> barSpeedPlateConfirm}} if it's right, or tap the plate's top and bottom edges.</li>
+</ol>
+<p>You get mean propulsive velocity per rep and {{> barSpeedLossTitle}}, shown as an estimate not yet compared with lab equipment. Estimating %1RM from speed is PRO, and a cue to end the set when loss passes your threshold is PRO+. It appears in strength mode only.</p>
+</section>
+
+<section id="run-form" data-ask="How do I analyze my running form|I want a cadence target|Am I overstriding|How do I film my running" data-keys="running form cadence stride overstride landing shin pelvis hip adduction treadmill track target steps">
+<h2>Running form and cadence target</h2>
+<p class="lead">In running mode, open {{> assessEntryRunTitle}} in {{> tabCoach}}, pick {{> runFormTestSide}} or {{> runFormTestBack}}, and film yourself running on a treadmill or track.</p>
+<ol class="steps">
+<li>Stand the phone about 1.5 m high and film from the side (or behind).</li>
+<li>See cadence, landing position, shin angle, foot strike and more in the result.</li>
+<li>Tap {{> runFormTargetOn}} in {{> runFormTargetTitle}} and your phone and watch cue you on easy runs when you leave the range.</li>
+</ol>
+<p>The cadence target is 5–10% above your current cadence at the same speed. Adding it to run guidance is PRO, and PRO+ adds form drills to your weekly running plan. Apple Watch, Galaxy Watch and Garmin show the target range too.</p>
+</section>
+
+<section id="retest" data-ask="When should I measure again|I got a retest reminder|I want to replay the measurement video|Compare with my first test|Videos take up storage" data-keys="retest remeasure reminder interval weeks video replay side by side first compare storage delete 0.25x">
+<h2>Retesting and videos</h2>
+<p class="lead">Each test gets a next date from the evidence interval (4 weeks when there isn't one), with a reminder that morning.</p>
+<ul>
+<li>The test list and result show the next measurement date. With a PRO+ coach plan, the date lines up with a deload week (running form doesn't).</li>
+<li><span class="pro">PRO</span> {{> assessVideoReplay}}: overlay the joints and slow down to 0.25×. {{> assessVideoCompare}}: watch alongside your first test, synced to the same moment.</li>
+<li>Delete videos with {{> assessVideoDelete}} on the result or in {{> assessStorageTitle}}. The numbers stay.</li>
+</ul>
+</section>
+
+<section id="member" data-ask="Can trainers assess members|I want to make a member report|Member photo consent" data-keys="trainer member assessment report document consent photo video age sex">
+<h2>Trainer assessments of members</h2>
+<p class="lead">Trainers measure members with {{> assessMemberMeasure}} on the member's records screen and send a document with records and assessments using {{> assessMemberReport}}.</p>
+<p>A member's age and sex are used only to choose reference values and stay on this device. Photos and videos are kept only when {{> assessMemberConsent}} is on, and reports include only face-blurred photos. Running form and bar speed aren't available for members. See also <a href="trainer.html">Sharing with a trainer</a>.</p>
+</section>
+
+<section id="privacy" data-ask="Where do assessment videos go|Is the camera video sent to a server|Are assessments backed up" data-keys="video camera server privacy on device backup sync photo face">
+<h2>Where videos and records go</h2>
+<p class="lead">Video and joint positions are analyzed on your device and never sent to a server.</p>
+<p>Measured numbers go into backup files and device sync like your other workout records. Measurement videos and face-blurred scene photos stay on this device only and are left out of backups and sync. See the <a href="../privacy.html">privacy policy</a> for details.</p>
+</section>
