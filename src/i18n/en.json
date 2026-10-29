@@ -242,6 +242,14 @@
       "title": "22 fonts",
       "unit": "fonts",
       "note": "Per number, unit and label · Open Font License"
+    },
+    "assess": {
+      "title": "Movement assessment",
+      "body": "Stand your phone up and use the camera to measure mobility, fitness, jumps, bar speed and running form. Each result shows measurement error, change since last time, left–right difference and research ranges with sources, and video is processed only on your device.",
+      "a": "Mobility",
+      "b": "Jumps",
+      "c": "Bar speed",
+      "d": "Running form"
     }
   },
   "watch": {
@@ -276,6 +284,7 @@
         "Device sync and backup files",
         "Run tracking · pace zones · my courses",
         "Share cards · editor layouts, stickers and saving to Photos",
+        "Movement assessment tests, results and result cards",
         "3 routines, 5 custom exercises"
       ]
     },
@@ -292,6 +301,7 @@
         "Weekly coaching report",
         "Unlimited routines and exercises",
         "Run analysis · structured runs · race-day mode",
+        "Assessment results applied to your plan · video replay",
         "Pro editing · 22 fonts · my templates"
       ]
     },
@@ -307,6 +317,7 @@
         "Plan and auto-fill warm-up sets",
         "Nutrition targets",
         "Weekly running plan around strength recovery",
+        "Day-of adjustments from jump readiness · in-set bar speed cues",
         "Share cards ready from your template when you finish"
       ]
     },

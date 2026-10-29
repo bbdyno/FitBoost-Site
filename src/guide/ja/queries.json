@@ -128,5 +128,14 @@
  "ペースを4%落とす": "running#strength",
  "過去1年の記録を取り込む": "health#runs",
  "以前のGarminのランを取り込む": "health#runs",
- "Garmin ConnectとApple Healthの共有": "health#runs"
+ "Garmin ConnectとApple Healthの共有": "health#runs",
+ "柔軟性を測る方法": "assessment#open",
+ "最小可検変化とは": "assessment#result",
+ "評価結果をウォームアップに入れたい": "assessment#plan",
+ "ジャンプの高さを測る": "assessment#jump",
+ "バーベルの速度の測り方": "assessment#bar-speed",
+ "ピッチの目標を決める": "assessment#run-form",
+ "測定動画を見直す": "assessment#retest",
+ "評価の動画はサーバーに送られますか": "assessment#privacy",
+ "ハーフマラソンのタイム予測": "tools#run-calc"
 }

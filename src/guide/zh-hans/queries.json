@@ -128,5 +128,14 @@
  "配速放慢 4%": "running#strength",
  "导入过去一年的记录": "health#runs",
  "导入以前的 Garmin 跑步": "health#runs",
- "Garmin Connect 共享到 Apple 健康": "health#runs"
+ "Garmin Connect 共享到 Apple 健康": "health#runs",
+ "怎么测柔韧性": "assessment#open",
+ "最小可检测变化是什么": "assessment#result",
+ "把评估结果加入热身": "assessment#plan",
+ "测跳跃高度": "assessment#jump",
+ "怎么测杠铃速度": "assessment#bar-speed",
+ "设定步频目标": "assessment#run-form",
+ "重看测量视频": "assessment#retest",
+ "评估视频会发送到服务器吗": "assessment#privacy",
+ "预测半马成绩": "tools#run-calc"
 }

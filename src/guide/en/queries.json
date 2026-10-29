@@ -128,5 +128,15 @@
  "4% slower pace": "running#strength",
  "import the past year": "health#runs",
  "import older garmin runs": "health#runs",
- "garmin connect apple health sharing": "health#runs"
+ "garmin connect apple health sharing": "health#runs",
+ "how to test my flexibility": "assessment#open",
+ "fitness test with phone camera": "assessment#open",
+ "what is minimal detectable change": "assessment#result",
+ "add assessment results to my warm-up": "assessment#plan",
+ "measure jump height": "assessment#jump",
+ "how to measure barbell velocity": "assessment#bar-speed",
+ "set a cadence target": "assessment#run-form",
+ "replay measurement video": "assessment#retest",
+ "is assessment video sent to a server": "assessment#privacy",
+ "predict my half marathon time": "tools#run-calc"
 }

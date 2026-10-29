@@ -5,6 +5,7 @@
     {"slug": "record", "title": "記錄訓練", "description": "開始訓練、記錄每組、結束訓練，以及修改過去的記錄。"},
     {"slug": "routines", "title": "例行訓練與計畫", "description": "建立例行訓練、生成適合自己的計畫、使用動作列表。"},
     {"slug": "coach", "title": "教練與循環訓練", "description": "下一組重量建議、教練循環訓練、每週混合訓練計畫和教練頁的週期計畫。"},
+    {"slug": "assessment", "title": "動作評估", "description": "用手機相機測量靈活性、體能、跳躍、槓鈴速度和跑姿，查看結果、套用到訓練計畫並重測的方法。"},
     {"slug": "stats", "title": "統計與報告", "description": "統計頁中的恢復、力量平衡、訓練量，以及每週教練報告。"},
     {"slug": "sharing", "title": "紀錄分享與裝飾", "description": "把跑步和力量訓練紀錄做成分享卡片，用範本和貼紙裝飾，調整字體、顏色和照片，並儲存到相簿或我的範本。"},
     {"slug": "tools", "title": "計算機與工具", "description": "槓片、1RM、強度計畫計算機，我的器材和訓練術語詞典。"},
