@@ -5,7 +5,7 @@
 <li>{{> tabMenu}}で{{> healthKitTitle}}か{{> healthConnectTitle}}を開きます。</li>
 <li>{{> setHealthLink}}をオンにし、表示される権限画面でやり取りする項目を許可します。</li>
 </ol>
-<p>同じ画面に{{> setWatchImport}}と{{> setHealthMergeDuplicates}}もあります。</p>
+<p>同じ画面に{{> setWatchImport}}、{{> setHealthBackfill}}、{{> setHealthMergeDuplicates}}もあります。</p>
 </section>
 
 <section id="what" data-ask="ヘルスケアと何をやり取りしますか|睡眠データを使いますか|心拍数を取り込みますか|歩数の権限はなぜ必要ですか" data-keys="やり取り 睡眠 心拍 hrv 安静時心拍 体重 歩数 権限 カロリー 距離">
@@ -22,18 +22,18 @@
 <section id="import" data-ask="ウォッチで行ったワークアウトを取り込みたい|ほかのアプリのワークアウトを読み込む|スマートウォッチの記録を取り込む" data-keys="取り込み 読み込み ウォッチ ワークアウト ほかのアプリ 30日">
 <h2>スマートウォッチの記録を取り込む</h2>
 <p class="lead">ヘルスケアにたまった直近30日のワークアウトをFitBoostの記録に取り込みます。</p>
-<p><a href="#connect">ヘルスケア連携の画面</a>で{{> setWatchImport}}をタップします。FitBoostが送ったワークアウトは取り込み直しません。ランはランの記録として入ります。<a href="#runs">ヘルスケアから入るラン</a>をご覧ください。</p>
+<p><a href="#connect">ヘルスケア連携の画面</a>で{{> setWatchImport}}をタップします。FitBoostが送ったワークアウトは取り込み直しません。それより前のワークアウトは{{> setHealthBackfill}}で1年分を読み直します。ランはランの記録として入ります。<a href="#runs">ヘルスケアから入るラン</a>をご覧ください。</p>
 </section>
 
-<section id="runs" data-ask="Garmin Connectのランが表示されません|Samsung Healthのランをランニングモードで見たい|Stravaのランを取り込みたい|ヘルスケアのランが有酸素として入りました|Garmin Connectのアカウントをつなげますか" data-keys="garmin connect ガーミンコネクト ガーミン samsung health サムスンヘルス strava ストラバ ヘルスケア health connect ラン ランニング トレッドミル 屋内 有酸素 ルート 心拍 アカウント 直接 表示されない">
+<section id="runs" data-ask="Garmin Connectのランが表示されません|過去1年の記録を取り込みたい|Samsung Healthのランをランニングモードで見たい|Stravaのランを取り込みたい|ヘルスケアのランが有酸素として入りました|Garmin Connectのアカウントをつなげますか" data-keys="garmin connect ガーミンコネクト ガーミン samsung health サムスンヘルス strava ストラバ ヘルスケア health connect ラン ランニング トレッドミル 屋内 有酸素 ルート 心拍 アカウント 直接 表示されない 1年 過去 以前 共有 連携アプリ">
 <h2>ヘルスケアから入るラン</h2>
 <p class="lead">ほかのアプリがヘルスケアに書き込んだラン（屋外・トレッドミル）は、{{> setWatchImport}}で取り込むとランの記録になり、ランニングモードに表示されます。</p>
 <ol class="steps">
-<li>使っているアプリで、ヘルスケアへのワークアウトの書き込みをオンにします。iPhoneではGarmin ConnectやStravaなどのアプリがApple Healthに書き込みます。AndroidではSamsung Health・Garmin Connect・StravaなどのアプリがHealth Connectに書き込みます。</li>
-<li>FitBoostで<a href="#connect">ヘルスケアとつなぎ</a>、{{> setWatchImport}}をタップします。</li>
+<li>使っているアプリで、ヘルスケアへのワークアウトの共有をオンにします。iPhoneではGarmin Connectアプリの設定 → 連携アプリ → Apple Healthで共有をオンにします（StravaなどのアプリもApple Healthに書き込みます）。AndroidではGarmin Connect・Samsung Health・StravaなどのアプリでHealth Connectへの共有をオンにします。</li>
+<li>FitBoostで<a href="#connect">ヘルスケアとつなぎ</a>、{{> setWatchImport}}をタップします。以前のランも入れるには{{> setHealthBackfill}}をタップします。</li>
 <li>ランニングモードの{{> tabRecord}}で取り込んだランを開いて結果を見て、共有・カスタマイズします。</li>
 </ol>
-<p>取り込んだランは、ランニングモードの記録・統計・コーチ・週間距離とカスタマイズに使われ、トレッドミルのランは屋内ランとして入ります。距離・時間はヘルスケアの値を使い、ルート・心拍は結果画面を開いたときにヘルスケアから読み直します。ヘルスケアにルートがなければルートは表示されません。取り込みは少なくとも直近7日を毎回読み直すので、ヘルスケアに遅れて入ったランも次の取り込みで入ります。1.8.0より前に有酸素1行として入ったランも、この期間内ならランの記録に変わり、直した名前・メモはそのまま残ります。自転車などほかの有酸素は有酸素のままです。Garmin Connectのアカウントに直接つなぐ機能はないので、ヘルスケアを経由するか<a href="running.html#import">GPX・TCXファイルで取り込みます</a>。</p>
+<p>取り込んだランは、ランニングモードの記録・統計・コーチ・週間距離とカスタマイズに使われ、トレッドミルのランは屋内ランとして入ります。距離・時間はヘルスケアの値を使い、ルート・心拍は結果画面を開いたときにヘルスケアから読み直します。ヘルスケアにルートがなければルートは表示されません。初めてつないだときは直近30日だけを読み、{{> setHealthBackfill}}をタップすると1年分を読み直しますが、取り込み済みのものは重複しません。同じ画面の{{> setHealthGarminTitle}}の行にも、上の共有のオンにし方があります。取り込みは少なくとも直近7日を毎回読み直すので、ヘルスケアに遅れて入ったランも次の取り込みで入ります。1.8.0より前に有酸素1行として入ったランも、この期間内ならランの記録に変わり、直した名前・メモはそのまま残ります。自転車などほかの有酸素は有酸素のままです。Garmin Connectのアカウントに直接つなぐ機能はないので、ヘルスケアを経由するか<a href="running.html#import">GPX・TCXファイルで取り込みます</a>。</p>
 </section>
 
 <section id="merge" data-ask="同じワークアウトが2回記録された|記録が重複している|重複したワークアウトをまとめる" data-keys="重複 2回 二重 重なり まとめる 同じ時間 整理">

@@ -120,5 +120,13 @@
  "导入三星健康跑步": "health#runs",
  "Strava 跑步": "health#runs",
  "健康应用跑步变成有氧": "health#runs",
- "连接 Garmin Connect 账户": "health#runs"
+ "连接 Garmin Connect 账户": "health#runs",
+ "腿部还没恢复": "running#strength",
+ "练完力量马上跑步": "running#strength",
+ "跑完步练下肢": "running#strength",
+ "力量训练与跑步并行": "running#strength",
+ "配速放慢 4%": "running#strength",
+ "导入过去一年的记录": "health#runs",
+ "导入以前的 Garmin 跑步": "health#runs",
+ "Garmin Connect 共享到 Apple 健康": "health#runs"
 }

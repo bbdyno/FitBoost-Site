@@ -5,7 +5,7 @@
 <li>在 {{> tabMenu}} 中開啟 {{> healthKitTitle}} 或 {{> healthConnectTitle}}。</li>
 <li>開啟 {{> setHealthLink}}，在彈出的權限頁面中允許要共享的項目。</li>
 </ol>
-<p>同一頁面還有 {{> setWatchImport}} 和 {{> setHealthMergeDuplicates}}。</p>
+<p>同一頁面還有 {{> setWatchImport}}、{{> setHealthBackfill}} 和 {{> setHealthMergeDuplicates}}。</p>
 </section>
 
 <section id="what" data-ask="和健康 App 交換哪些資料|會用睡眠資料嗎|會讀取心率嗎|為什麼要步數權限" data-keys="交換 睡眠 心率 hrv 靜息心率 體重 步數 權限 熱量 距離">
@@ -22,18 +22,18 @@
 <section id="import" data-ask="想匯入手錶上做的訓練|匯入其他 App 的訓練|匯入手錶訓練" data-keys="匯入 讀取 手錶 訓練 其他 App 30天">
 <h2>匯入手錶訓練</h2>
 <p class="lead">把健康 App 中最近 30 天的訓練匯入 FitBoost 記錄。</p>
-<p>在<a href="#connect">健康 App 連線頁面</a>點選 {{> setWatchImport}}。FitBoost 自己寫入的訓練不會再次匯入。跑步會作為跑步紀錄匯入，見<a href="#runs">從健康 App 匯入的跑步</a>。</p>
+<p>在<a href="#connect">健康 App 連線頁面</a>點選 {{> setWatchImport}}。FitBoost 自己寫入的訓練不會再次匯入。更早的訓練可用 {{> setHealthBackfill}} 重新讀取一年。跑步會作為跑步紀錄匯入，見<a href="#runs">從健康 App 匯入的跑步</a>。</p>
 </section>
 
-<section id="runs" data-ask="Garmin Connect 的跑步看不到|想在跑步模式看三星健康的跑步|匯入 Strava 跑步|健康 App 的跑步變成了有氧|能連線 Garmin Connect 帳號嗎" data-keys="garmin connect 佳明 samsung health 三星健康 三星 strava 健康app apple健康 health connect 跑步 跑步機 室內 有氧 路線 心率 帳號 直接連線 看不到">
+<section id="runs" data-ask="Garmin Connect 的跑步看不到|想在跑步模式看三星健康的跑步|匯入 Strava 跑步|健康 App 的跑步變成了有氧|能連線 Garmin Connect 帳號嗎" data-keys="garmin connect 佳明 samsung health 三星健康 三星 strava 健康app apple健康 health connect 跑步 跑步機 室內 有氧 路線 心率 帳號 直接連線 看不到 一年 過去 以前 分享 已連結的app">
 <h2>從健康 App 匯入的跑步</h2>
 <p class="lead">其他 App 寫入健康 App 的跑步（戶外、跑步機），用 {{> setWatchImport}} 匯入後會成為跑步紀錄，顯示在跑步模式中。</p>
 <ol class="steps">
-<li>在你使用的 App 中開啟把訓練寫入健康 App 的設定。iPhone 上由 Garmin Connect、Strava 等 App 寫入 Apple 健康。Android 上由 Samsung Health、Garmin Connect、Strava 等 App 寫入 Health Connect。</li>
-<li>在 FitBoost 中<a href="#connect">連線健康 App</a>，點 {{> setWatchImport}}。</li>
+<li>在你使用的 App 中開啟向健康 App 分享訓練。iPhone 上在 Garmin Connect App 的設定 → 已連結的 App → Apple 健康中開啟分享（Strava 等 App 也會寫入 Apple 健康）。Android 上在 Garmin Connect、Samsung Health、Strava 等 App 中開啟向 Health Connect 分享。</li>
+<li>在 FitBoost 中<a href="#connect">連線健康 App</a>，點 {{> setWatchImport}}。要連以前的跑步一起匯入，請點 {{> setHealthBackfill}}。</li>
 <li>在跑步模式的 {{> tabRecord}} 中開啟匯入的跑步查看結果，再分享和裝飾。</li>
 </ol>
-<p>匯入的跑步會用於跑步模式的紀錄、統計、教練、每週跑量和裝飾，跑步機跑步會作為室內跑步匯入。距離和時間使用健康 App 的數值，路線和心率在開啟結果頁面時從健康 App 重新讀取。健康 App 中沒有路線時不顯示路線。每次匯入都會重新讀取至少最近 7 天，所以較晚寫入健康 App 的跑步也會在下次匯入時進來。1.8.0 之前作為一列有氧匯入的跑步，在這個範圍內也會變成跑步紀錄，改過的名稱和備註保持不變。騎車等其他有氧仍是有氧。沒有直接連線 Garmin Connect 帳號的功能，請透過健康 App，或<a href="running.html#import">用 GPX、TCX 檔案匯入</a>。</p>
+<p>匯入的跑步會用於跑步模式的紀錄、統計、教練、每週跑量和裝飾，跑步機跑步會作為室內跑步匯入。距離和時間使用健康 App 的數值，路線和心率在開啟結果頁面時從健康 App 重新讀取。健康 App 中沒有路線時不顯示路線。第一次連線時只讀取最近 30 天，點 {{> setHealthBackfill}} 會重新讀取一年，已匯入的不會重複。同一頁面的 {{> setHealthGarminTitle}} 一列中也有上面的分享開啟方法。每次匯入都會重新讀取至少最近 7 天，所以較晚寫入健康 App 的跑步也會在下次匯入時進來。1.8.0 之前作為一列有氧匯入的跑步，在這個範圍內也會變成跑步紀錄，改過的名稱和備註保持不變。騎車等其他有氧仍是有氧。沒有直接連線 Garmin Connect 帳號的功能，請透過健康 App，或<a href="running.html#import">用 GPX、TCX 檔案匯入</a>。</p>
 </section>
 
 <section id="merge" data-ask="同一次訓練被記錄了兩次|記錄重複了|合併重複的訓練" data-keys="重複 兩次 重疊 合併 同一時間 整理">
