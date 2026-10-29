@@ -126,5 +126,13 @@
  "삼성 헬스 달리기 가져오기": "health#runs",
  "스트라바 달리기": "health#runs",
  "건강 앱 달리기가 유산소로 나와요": "health#runs",
- "가민 커넥트 계정 연결": "health#runs"
+ "가민 커넥트 계정 연결": "health#runs",
+ "다리가 덜 풀렸어요": "running#strength",
+ "근력 하고 바로 달리기": "running#strength",
+ "달리고 하체 운동": "running#strength",
+ "근력과 함께 달릴 때": "running#strength",
+ "페이스 4% 늦춰": "running#strength",
+ "지난 1년 기록 가져오기": "health#runs",
+ "예전 가민 달리기 가져오기": "health#runs",
+ "가민 커넥트 애플 건강 공유": "health#runs"
 }

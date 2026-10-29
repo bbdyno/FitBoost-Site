@@ -120,5 +120,13 @@
  "samsung health runs": "health#runs",
  "import strava runs": "health#runs",
  "health app runs show as cardio": "health#runs",
- "connect garmin connect account": "health#runs"
+ "connect garmin connect account": "health#runs",
+ "legs haven't recovered window": "running#strength",
+ "run right after lifting": "running#strength",
+ "legs after a run": "running#strength",
+ "running alongside lifting": "running#strength",
+ "4% slower pace": "running#strength",
+ "import the past year": "health#runs",
+ "import older garmin runs": "health#runs",
+ "garmin connect apple health sharing": "health#runs"
 }

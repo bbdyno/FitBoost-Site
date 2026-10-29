@@ -120,5 +120,13 @@
  "Samsung Healthのランを取り込む": "health#runs",
  "Stravaのラン": "health#runs",
  "ヘルスケアのランが有酸素になる": "health#runs",
- "Garmin Connectのアカウント連携": "health#runs"
+ "Garmin Connectのアカウント連携": "health#runs",
+ "脚がまだ回復していません": "running#strength",
+ "筋トレのすぐ後に走る": "running#strength",
+ "走った後に下半身": "running#strength",
+ "筋トレと並行して走る": "running#strength",
+ "ペースを4%落とす": "running#strength",
+ "過去1年の記録を取り込む": "health#runs",
+ "以前のGarminのランを取り込む": "health#runs",
+ "Garmin ConnectとApple Healthの共有": "health#runs"
 }
