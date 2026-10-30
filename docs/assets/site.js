@@ -1,7 +1,6 @@
 /* FitBoost 사이트의 움직임.
    [data-scene] 섹션마다 스크롤 진행도(0~1)를 구해 장면별 함수에 넘긴다.
-   나머지는 화면에 들어올 때 한 번 일어나는 것들(나타나기, 막대, 숫자 세기)과
-   직접 눌러 보는 원판 계산이다. */
+   나머지는 직접 눌러 보는 원판 계산이다. */
 (function () {
   'use strict';
 
@@ -48,37 +47,6 @@
     hero.classList.toggle('is-up', v >= 102.5);
     hero.classList.toggle('t2', p > .3 || reduce);
     hero.classList.toggle('t3', p > .5 || reduce);
-  }
-
-  /* ── 2. 한 문장: 단어(일본어·중국어는 글자) 단위로 쪼갠다 ── */
-  var say = $('[data-scene="say"]');
-  var words = [];
-  if (say) {
-    var box = $('[data-words]', say);
-    var spaced = /\s/.test(box.textContent.trim());
-    var frag = document.createDocumentFragment();
-    var split = function (text, hl) {
-      var parts = spaced ? text.split(/(\s+)/) : Array.from(text);
-      parts.forEach(function (t) {
-        if (!t) return;
-        if (/^\s+$/.test(t)) { frag.appendChild(document.createTextNode(t)); return; }
-        var s = document.createElement('span');
-        s.className = 'w' + (hl ? ' hl' : '');
-        s.textContent = t;
-        frag.appendChild(s);
-        words.push(s);
-      });
-    };
-    Array.prototype.slice.call(box.childNodes).forEach(function (n) {
-      if (n.nodeType === 3) split(n.textContent, false);
-      else split(n.textContent, n.nodeName === 'EM');
-    });
-    box.textContent = '';
-    box.appendChild(frag);
-  }
-  function sceneSay(p) {
-    var on = Math.round(range(p, .05, .75) * words.length);
-    for (var i = 0; i < words.length; i++) words[i].classList.toggle('on', i < on);
   }
 
   /* ── 3. 운동 중 코치 ──────────────────────────────── */
@@ -160,7 +128,7 @@
 
   /* ── 장면 돌리기 ──────────────────────────────────── */
   var scenes = [
-    [hero, sceneHero], [say, sceneSay], [coach, sceneCoach], [recov, sceneRecov], [plus, scenePlus]
+    [hero, sceneHero], [coach, sceneCoach], [recov, sceneRecov], [plus, scenePlus]
   ].filter(function (s) { return s[0]; });
 
   function progress(el) {
@@ -181,58 +149,15 @@
   window.addEventListener('resize', request);
   frame();
 
-  /* ── 화면에 들어올 때 한 번 ───────────────────────── */
-  var countFmt = new Intl.NumberFormat(lang);
-  function countUp(el) {
-    var to = parseFloat(el.getAttribute('data-count'));
-    if (reduce) { el.textContent = countFmt.format(to); return; }
-    var t0 = performance.now(), dur = 1500;
-    (function step(now) {
-      var k = Math.min(1, (now - t0) / dur);
-      k = 1 - Math.pow(1 - k, 3);
-      el.textContent = countFmt.format(Math.round(to * k));
-      if (k < 1) requestAnimationFrame(step);
-    })(t0);
-  }
-
-  var io = 'IntersectionObserver' in window ? new IntersectionObserver(function (entries) {
-    entries.forEach(function (e) {
-      if (!e.isIntersecting) return;
-      var el = e.target;
-      el.classList.add('in');
-      if (el.hasAttribute('data-count')) countUp(el);
-      if (el.hasAttribute('data-plates')) plates.intro();
-      io.unobserve(el);
-    });
-  }, { rootMargin: '0px 0px -12% 0px', threshold: .05 }) : null;
-
-  $$('.reveal, [data-chart], [data-count], [data-plates]').forEach(function (el) {
-    if (io) io.observe(el); else el.classList.add('in');
-  });
-
-  /* ── 운동 사전 띠: 계속 흐르고, 스크롤하면 빨라진다 ── */
-  var rows = $$('.marquee__row').map(function (el) {
-    return { el: el, dir: parseFloat(el.getAttribute('data-dir')), x: 0 };
-  });
-  if (rows.length && !reduce) {
-    var lastY = window.scrollY, boost = 0, visible = false;
-    var mio = new IntersectionObserver(function (e) { visible = e[0].isIntersecting; });
-    mio.observe($('.marquee'));
-    (function loop() {
-      var dy = window.scrollY - lastY;
-      lastY = window.scrollY;
-      boost = boost * .92 + Math.abs(dy) * .08;
-      if (visible) {
-        rows.forEach(function (r) {
-          var half = r.el.scrollWidth / 2;
-          r.x -= r.dir * (.45 + boost * .5);
-          if (r.x <= -half) r.x += half;
-          if (r.x > 0) r.x -= half;
-          r.el.style.transform = 'translate3d(' + r.x.toFixed(1) + 'px,0,0)';
-        });
-      }
-      requestAnimationFrame(loop);
-    })();
+  /* ── 원판 계산은 화면에 들어올 때 한 번 원판을 끼운다 ── */
+  var plateBox = $('[data-plates]');
+  if (plateBox && 'IntersectionObserver' in window) {
+    var pio = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+      plates.intro();
+      pio.disconnect();
+    }, { rootMargin: '0px 0px -12% 0px', threshold: .05 });
+    pio.observe(plateBox);
   }
 
   /* ── 시계: 휴식 시간이 줄어든다 ───────────────────── */

@@ -45,10 +45,9 @@ PLAY = (
     "&referrer=utm_source%3D{ct}%26utm_medium%3Dreferral%26utm_campaign%3Dsite"
 )
 
-ROW_A = ["004312", "fn-burpee-box-jump", "002512", "054912", "065212", "fn-db-hang-clean-press",
-         "106012", "353312", "fn-bear-crawl", "015012", "221312", "fn-hollow-rock", "025112", "239512"]
-ROW_B = ["003212", "fn-kb-american-swing", "066212", "073912", "004212", "fn-db-farmers-carry",
-         "003112", "160512", "fn-jumping-lunge", "046312", "023312", "028912", "fn-box-depth-jump", "011712"]
+# 운동 사전 섹션에 보여 줄 그림. 6칸 두 줄이다.
+LIB_CELLS = ["004312", "fn-burpee-box-jump", "002512", "054912", "fn-kb-american-swing", "106012",
+             "003212", "fn-db-farmers-carry", "353312", "fn-bear-crawl", "160512", "fn-hollow-rock"]
 
 TOKEN = re.compile(r"\{\{\s*([\w.]+)\s*\}\}")
 
@@ -157,12 +156,11 @@ def stores(t, apple, google, ct):
     )
 
 
-def row(root, keys):
-    cells = "".join(
+def cells(root, keys):
+    return "".join(
         f'<span class="cell"><img src="{root}assets/ex/{k}.webp" alt="" width="640" height="360" loading="lazy"></span>'
         for k in keys
     )
-    return cells + cells  # 두 번 이어 붙여야 끝없이 도는 것처럼 보인다
 
 
 REDIRECT = """<script>
@@ -212,8 +210,7 @@ def main():
             "redirect": REDIRECT if code == "ko" else "",
             "nav": nav(t, code, root, "index"),
             "footer": footer(t, root),
-            "rowA": row(root, ROW_A),
-            "rowB": row(root, ROW_B),
+            "cells": cells(root, LIB_CELLS),
         }
         (out_dir / "index.html").write_text(render(index_tpl, ctx, f"{code}/index"))
 

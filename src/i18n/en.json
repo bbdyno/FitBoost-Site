@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "FitBoost — The workout log that picks your next weight",
+    "title": "FitBoost | The workout log that picks your next weight",
     "description": "Log a set, say how hard it was, and FitBoost sizes your next set and tells you when to stop. Recovery map, camera movement assessment, routine auto progression, plate math and 1,690 exercises. Workout records stay free and unlimited."
   },
   "nav": {
@@ -23,15 +23,11 @@
     "terms": "Terms of Use"
   },
   "hero": {
-    "chip": "iPhone · Android · three watches",
     "title": "Next set.<br>How much?",
     "lede": "Finish a set, log how hard it was, and FitBoost works out your next weight. Your workout records are free, with no cap.",
     "tagRir": "2 reps left in the tank",
     "tagNext": "Next set",
     "tagRest": "Rest"
-  },
-  "say": {
-    "text": "A training log shouldn't just sit there. FitBoost uses your history to set <em>today's weight</em>, <em>your rest</em> and <em>when to stop</em>."
   },
   "coach": {
     "label": "In-workout coach",
@@ -49,12 +45,12 @@
       "body": "When fatigue starts costing you reps, it tells you to call it a day. The more you train, the better it learns your own stopping point."
     },
     "exercise": "Barbell Squat",
-    "target": "3 sets · 8 reps",
+    "target": "3 sets of 8",
     "b1": {
       "head": "Next set 102.5 kg",
       "body": "That looked easy. Adding 2.5 kg."
     },
-    "rest": "Rest · longer after a hard set",
+    "rest": "Longer rest after a hard set",
     "b2": {
       "head": "That's it for today",
       "body": "Your reps dropped 25%. Pick it up next session."
@@ -83,16 +79,12 @@
   "assess": {
     "label": "Movement assessment",
     "free": "Free",
-    "title": "The movement screen you’d book at a clinic, on your phone.",
+    "title": "Your phone’s camera measures how you move.",
     "body": "Stand your phone up and move in front of the camera to measure mobility, fitness, jumps, bar speed and running form. Video is processed only on your device.",
-    "a": "Mobility",
-    "b": "Jumps",
-    "c": "Bar speed",
-    "d": "Running form",
     "alt": "Result figure for raising your arm forward. Joint points and angles are drawn over a faceless grey mannequin: left 172°, right 139°.",
     "left": "Left",
     "right": "Right",
-    "what": "Raising your arm forward · Shoulder flexion. The angle between the trunk line (dotted) and the arm line.",
+    "what": "Raising your arm forward (shoulder flexion). The angle between the trunk line (dotted) and the arm line.",
     "better": "Stronger side",
     "watchSide": "Side to watch",
     "s1": {
@@ -120,7 +112,7 @@
   },
   "plus": {
     "label": "PRO+ coaching",
-    "title": "Coaching that plans the block and sets the day.",
+    "title": "It plans your training block and sets each day’s weights.",
     "body": "Everything in PRO, plus a program built around your goal and meet date, with weight and sets adjusted day by day.",
     "plan": {
       "t": "Block periodization",
@@ -146,7 +138,7 @@
       "t": "In-session autoregulation",
       "b": "Back-off loads adjusted on the spot from your top-set RPE",
       "top": "Top set",
-      "back": "Back-off · eased from plan"
+      "back": "Back-off, eased from plan"
     },
     "deload": {
       "t": "Deload suggestions",
@@ -181,7 +173,7 @@
     }
   },
   "more": {
-    "title": "And there's more.",
+    "title": "Other features",
     "program": {
       "title": "Build a program",
       "body": "Pick your goal, experience, days per week, session length and equipment, and get a weekly plan saved as routines. Muscles you want to rest are left out; the ones you want to grow get more work. Set a training goal such as strength, hypertrophy, or fat loss, and the starting choices follow it.",
@@ -215,7 +207,7 @@
       "note": "Treadmill · 6.5 km/h · 8% incline · 30 min"
     },
     "sets": {
-      "title": "Warm-ups · drops · back-offs · supersets",
+      "title": "Warm-ups, drops, back-offs and supersets",
       "body": "Plan warm-up sets apart from working sets, and get suggested weights and reps for every drop and back-off set. Pair two exercises as a superset, and log planks in seconds.",
       "pair": "Pull-up + Dip",
       "plank": "Plank"
@@ -270,7 +262,7 @@
     "fonts": {
       "title": "22 fonts",
       "unit": "fonts",
-      "note": "Per number, unit and label · Open Font License"
+      "note": "Set per number, unit and label. All under the Open Font License."
     }
   },
   "watch": {
@@ -285,12 +277,12 @@
   },
   "lib": {
     "label": "Exercise library",
-    "title": "1,690 exercises, each with a picture and a guide.",
-    "body": "Setup, steps, breathing and precautions. Filter by muscle and equipment, with functional moves like burpees and man makers included."
+    "title": "All 1,690 exercises come with a picture and a guide.",
+    "body": "Each one covers setup, steps, breathing and precautions. Filter by muscle and equipment, with functional moves like burpees and man makers included."
   },
   "price": {
     "label": "Pricing",
-    "title": "Your records are free. No cap.",
+    "title": "Logging is free, with no limit.",
     "body": "Your history is what the math runs on, so logging is never locked. PRO takes that history further.",
     "free": {
       "name": "Free",
@@ -303,14 +295,14 @@
         "Drop and back-off sets with a set plan",
         "Plate calculator",
         "Device sync and backup files",
-        "Run tracking · pace zones · my courses",
-        "Share cards · editor layouts, stickers and saving to Photos",
+        "Run tracking, pace zones, my courses",
+        "Share cards, editor layouts, stickers and saving to Photos",
         "Movement assessment tests, results and result cards",
         "3 routines, 5 custom exercises"
       ]
     },
     "pro": {
-      "price": "$2.99/mo · $22.99/yr",
+      "price": "$2.99/mo or $22.99/yr",
       "inc": "Everything in Free, plus",
       "items": [
         "In-workout coach",
@@ -321,13 +313,13 @@
         "Personal 1–15 rep load curve",
         "Weekly coaching report",
         "Unlimited routines and exercises",
-        "Run analysis · structured runs · race-day mode",
-        "Assessment results applied to your plan · video replay",
-        "Pro editing · 22 fonts · my templates"
+        "Run analysis, structured runs, race-day mode",
+        "Assessment results applied to your plan, video replay",
+        "Pro editing, 22 fonts, my templates"
       ]
     },
     "plus": {
-      "price": "$5.99/mo · $44.99/yr",
+      "price": "$5.99/mo or $44.99/yr",
       "inc": "Everything in PRO, plus",
       "items": [
         "Block-periodized program",
@@ -338,7 +330,7 @@
         "Plan and auto-fill warm-up sets",
         "Nutrition targets",
         "Weekly running plan around strength recovery",
-        "Day-of adjustments from jump readiness · in-set bar speed cues",
+        "Day-of adjustments from jump readiness, in-set bar speed cues",
         "Share cards ready from your template when you finish"
       ]
     },

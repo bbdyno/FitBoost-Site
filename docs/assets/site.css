@@ -66,21 +66,12 @@ h3 { font-size: 21px; letter-spacing: -.02em; line-height: 1.3; font-weight: 700
 section { position: relative; }
 .dark { background: var(--ink); color: #F4F4F2; }
 
-/* 섹션 머리표: 번호 + 이름. 영어 대문자 라벨은 쓰지 않는다. */
-.label {
-  display: flex; align-items: center; gap: 10px;
-  margin: 0 0 22px; font-size: 15px; font-weight: 700; letter-spacing: -.01em;
-}
-.label__n {
-  font-family: var(--display); font-weight: 400; font-size: 15px; letter-spacing: .02em;
-  background: var(--ink); color: var(--lime); border-radius: 6px; padding: 3px 7px 2px; line-height: 1.2;
-}
-.dark .label__n { background: var(--lime); color: var(--ink); }
-.pro, .free {
-  font-size: 11px; font-weight: 800; letter-spacing: .04em;
-  border: 1.5px solid currentColor; border-radius: 99px; padding: 1px 7px; opacity: .55;
-}
-h3 .pro { margin-left: 8px; vertical-align: 3px; }
+/* 섹션 머리표: 기능 이름만. 번호 배지나 영어 대문자 라벨은 붙이지 않는다. */
+.label { margin: 0 0 18px; font-size: 16px; font-weight: 700; color: var(--mute); }
+.dark .label { color: var(--mute-d); }
+.pro, .free { margin-left: 8px; font-size: .8em; font-weight: 800; color: var(--ink); }
+.dark .pro, .dark .free, .plus .pro { color: var(--lime); }
+h3 .pro { font-size: 13px; }
 
 /* ── 상단 바 ───────────────────────────────────────── */
 
@@ -144,12 +135,6 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 .hero { height: 175vh; }
 .hero__stick { position: sticky; top: 60px; height: calc(100vh - 60px); min-height: 640px; overflow: hidden; display: flex; flex-direction: column; }
 .hero__top { position: relative; z-index: 3; padding-top: clamp(24px, 5vh, 56px); }
-.hero__chip {
-  display: inline-flex; align-items: center; gap: 8px; margin: 0 0 18px;
-  font-size: 14px; font-weight: 700; padding: 6px 12px 6px 10px; border-radius: 99px;
-  background: var(--white); box-shadow: 0 0 0 1px var(--line);
-}
-.dot { width: 8px; height: 8px; border-radius: 50%; background: var(--lime-2); box-shadow: 0 0 0 3px rgba(197, 240, 74, .35); }
 .hero__title { font-size: clamp(44px, 8.4vw, 116px); line-height: .98; letter-spacing: -.05em; }
 .lang-en .hero__title { letter-spacing: -.04em; }
 .hero__lede { margin: 20px 0 0; max-width: 23em; font-size: clamp(17px, 1.5vw, 20px); color: var(--mute); }
@@ -207,14 +192,6 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 
 /* ── 2. 한 문장 ────────────────────────────────────── */
 
-.say { height: 190vh; }
-.say__stick { position: sticky; top: 0; height: 100vh; display: flex; align-items: center; }
-.say__text {
-  margin: 0; font-size: clamp(30px, 5vw, 66px); font-weight: 800; line-height: 1.22; letter-spacing: -.04em; max-width: 18em;
-}
-.say__text .w { color: rgba(13, 13, 14, .14); transition: color .25s; }
-.say__text .w.on { color: var(--ink); }
-.say__text .w.hl.on { background: linear-gradient(transparent 58%, var(--lime) 58%, var(--lime) 92%, transparent 92%); }
 
 /* ── 3. 운동 중 코치 ───────────────────────────────── */
 
@@ -301,10 +278,7 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 .bar {
   position: relative; height: calc((var(--h) - 50) / 22 * 100%);
   background: var(--paper-2); border-radius: 14px 14px 0 0;
-  transform-origin: bottom; transform: scaleY(0);
-  transition: transform .9s var(--ease) calc(var(--i) * 110ms);
 }
-.chart.in .bar { transform: none; }
 .bar b {
   position: absolute; left: 0; right: 0; top: -40px; text-align: center;
   font-family: var(--display); font-weight: 400; font-size: clamp(18px, 2.4vw, 30px); letter-spacing: .01em;
@@ -396,7 +370,6 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 .plus__stick { position: sticky; top: 0; height: 100vh; display: flex; flex-direction: column; justify-content: center; gap: clamp(22px, 4vh, 44px); overflow: hidden; }
 .plus h2 { font-size: clamp(32px, 4.4vw, 58px); }
 .plus .lede { margin-top: 14px; }
-.plus .pro { color: var(--lime); opacity: 1; }
 .plus__rail { overflow: visible; }
 .plus__track {
   display: flex; gap: 16px; width: max-content;
@@ -512,8 +485,6 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
   column-gap: clamp(28px, 6vw, 96px); align-items: start;
 }
 .assess__head { grid-area: head; }
-.assess .assess__tests { margin-top: 26px; }
-.assess .assess__tests span { background: var(--paper); }
 .assess__fig { grid-area: fig; margin: 0; align-self: center; }
 .assess__fig img { width: 100%; }
 .assess__sides { display: grid; grid-template-columns: 1fr 1fr; text-align: center; font-weight: 800; font-size: 15px; margin-top: 10px; }
@@ -588,7 +559,7 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 .mini .ss { background: var(--ink); color: var(--lime); }
 .mini .t { background: var(--lime); }
 
-.report { margin-top: auto; background: var(--white); border-radius: 16px; padding: 16px; box-shadow: 0 1px 0 var(--line); transform: rotate(-2deg); }
+.report { margin-top: auto; background: var(--white); border-radius: 16px; padding: 16px; box-shadow: 0 1px 0 var(--line); }
 .report b { display: block; font-size: 16px; }
 .report span { font-size: 13px; color: var(--mute); }
 .report__lines { display: grid; gap: 7px; margin-top: 12px; }
@@ -634,7 +605,6 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 .wt__rir { display: flex; gap: 6px; margin: 6px 0; }
 .wt__rir i { font-style: normal; font-family: var(--display); font-size: 20px; width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; background: #1E1E22; }
 .wt__rir .on { background: var(--lime); color: var(--ink); }
-.wt.reveal { transition-delay: calc(var(--i) * 120ms); }
 
 /* ── 9. 운동 사전 ──────────────────────────────────── */
 
@@ -642,12 +612,13 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 .lib__head { display: grid; grid-template-columns: auto 1fr; gap: clamp(20px, 4vw, 60px); align-items: end; }
 .lib__num { font-family: var(--display); font-size: clamp(110px, 19vw, 280px); line-height: .8; letter-spacing: -.005em; }
 .lib h2 { font-size: clamp(28px, 3.6vw, 46px); }
-.marquee { margin-top: 64px; display: grid; gap: 14px; overflow: hidden; }
-.marquee__row { display: flex; gap: 14px; width: max-content; will-change: transform; }
-.cell { flex: none; width: clamp(200px, 22vw, 300px); background: var(--white); border-radius: 22px; padding: 10px; }
+.lib__grid { margin-top: 56px; display: grid; grid-template-columns: repeat(6, 1fr); gap: 12px; }
+.cell { background: var(--white); border-radius: 18px; padding: 8px; }
 .cell img { width: 100%; aspect-ratio: 16 / 9; object-fit: contain; }
 @media (max-width: 760px) {
   .lib__head { grid-template-columns: 1fr; }
+  .lib__grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
+  .cell { border-radius: 12px; padding: 4px; }
 }
 
 /* ── 10. 요금 ──────────────────────────────────────── */
@@ -673,7 +644,6 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 /* ── 11. 마무리 ────────────────────────────────────── */
 
 .end { background: var(--lime); padding: clamp(110px, 16vw, 210px) 0; overflow: hidden; }
-.end__langs { margin: 0 0 22px; font-weight: 800; font-size: 15px; }
 .end__title { font-size: clamp(50px, 10vw, 150px); line-height: .95; letter-spacing: -.055em; max-width: none; }
 .end .lede { color: rgba(13, 13, 14, .7); }
 
@@ -689,11 +659,6 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 .foot__links a:hover { color: #F4F4F2; }
 .foot__copy { margin: 0; grid-column: 1 / -1; font-size: 13px; }
 @media (max-width: 760px) { .foot__in { grid-template-columns: 1fr; } }
-
-/* ── 나타나기 ──────────────────────────────────────── */
-
-.js .reveal { opacity: 0; transform: translateY(28px); transition: opacity .8s var(--ease), transform .9s var(--ease); }
-.js .reveal.in { opacity: 1; transform: none; }
 
 /* ── 문서 페이지 ───────────────────────────────────── */
 
@@ -848,14 +813,12 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
 /* ── 움직임 줄이기 ─────────────────────────────────── */
 
 @media (prefers-reduced-motion: reduce) {
-  .hero, .say, .coach, .recov, .plus { height: auto !important; }
-  .hero__stick, .say__stick, .coach__stick, .recov__stick, .plus__stick { position: relative; height: auto; min-height: 0; padding: 80px 0; }
+  .hero, .coach, .recov, .plus { height: auto !important; }
+  .hero__stick, .coach__stick, .recov__stick, .plus__stick { position: relative; height: auto; min-height: 0; padding: 80px 0; }
   .plus__rail { overflow-x: auto; }
   .plus__track { transform: none; }
   .hero__stick { min-height: 92vh; }
-  .js .reveal, .bar, .tag, .set, .bubble, .rest { opacity: 1 !important; transform: none !important; transition: none !important; }
-  .say__text .w { color: var(--ink); }
+  .tag, .set, .bubble, .rest { opacity: 1 !important; transform: none !important; transition: none !important; }
   .coach__steps li { opacity: 1; display: block; }
-  .marquee__row { transform: none !important; }
   .g-sec, .g-topics a, .chip { transition: none; }
 }
