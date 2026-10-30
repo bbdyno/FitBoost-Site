@@ -1,15 +1,15 @@
-<section id="open" data-ask="움직임 평가는 어디서 하나요|자세 분석은 어디 있나요|유연성 검사를 하고 싶어요|체력 테스트 하는 법|어떤 검사를 할 수 있나요" data-keys="움직임평가 움직임 평가 자세분석 자세 분석 검사 테스트 체력 가동성 유연성 카메라 허브 코치">
+<section id="open" data-ask="움직임 평가는 어디서 하나요|자세 분석은 어디 있나요|유연성 검사를 하고 싶어요|체력 테스트 하는 법|어떤 검사를 할 수 있나요" data-keys="움직임평가 움직임 평가 자세분석 자세 분석 검사 테스트 체력 가동성 유연성 카메라 허브 코치 홈 메뉴 쉬운이름 전문용어">
 <h2>움직임 평가 열기</h2>
-<p class="lead">근력 모드 {{> tabCoach}}의 {{> assessEntryTitle}}, 러닝 모드 {{> tabCoach}}의 {{> assessEntryRunTitle}} 줄에서 검사 목록을 엽니다.</p>
+<p class="lead">두 모드 모두 {{> tabHome}} 빠른 시작 줄 바로 아래 {{> assessEntryTitle}}(러닝 모드는 {{> assessEntryRunTitle}}) 줄, {{> tabMenu}}, {{> tabCoach}}에서 검사 목록을 엽니다.</p>
 <ol class="steps">
-<li>{{> tabCoach}}에서 {{> assessEntryTitle}}(러닝 모드는 {{> assessEntryRunTitle}})를 누릅니다.</li>
+<li>{{> tabHome}}에서 {{> assessEntryTitle}}(러닝 모드는 {{> assessEntryRunTitle}})를 누릅니다. {{> tabMenu}}나 {{> tabCoach}}에도 같은 줄이 있습니다.</li>
 <li>{{> assessGroupMobility}}·{{> assessGroupFitness}}·{{> assessGroupPower}}·{{> assessGroupBarbell}}·{{> assessGroupRunning}} 묶음에서 검사를 고릅니다.</li>
 <li>준비 화면에서 폰 놓는 법, 하는 법, 멈출 때를 읽고 시작합니다.</li>
 </ol>
-<p>근력 모드에는 어깨·스쿼트·좌전굴·무릎 펴기·다리 올림·무릎-벽 런지·푸시업·한발 서기·{{> assessTestChairStand}}·{{> jumpTestCmj}}·{{> jumpTestDrop}}·{{> barSpeedTestName}}이, 러닝 모드에는 {{> runFormTestSide}}·{{> runFormTestBack}}과 다리 가동성·체력·점프 검사가 보입니다. 재기와 결과 보기는 무료입니다.</p>
+<p>검사 이름은 쉬운 말로 쓰고 그 아래 작은 글씨로 전문 용어(어깨 굴곡 등)를 함께 적습니다. 근력 모드에는 {{> mobilityTestShoulderFlexion}}·{{> mobilityTestShoulderAbduction}}·{{> mobilityTestSquatSide}}·{{> mobilityTestSquatFront}}·{{> mobilityTestSitReach}}·{{> mobilityTestToeTouch}}·{{> mobilityTestKneeExtension}}·{{> mobilityTestLegRaise}}·{{> mobilityTestKneeToWall}}·{{> mobilityTestPushUp}}·{{> mobilityTestStance}}·{{> assessTestChairStand}}·{{> jumpTestCmj}}·{{> jumpTestDrop}}·{{> barSpeedTestName}}가, 러닝 모드에는 {{> runFormTestSide}}·{{> runFormTestBack}}와 다리 가동성·체력·점프 검사가 보입니다. 재기와 결과 보기는 무료입니다.</p>
 </section>
 
-<section id="measure" data-ask="카메라로 어떻게 재나요|폰을 어디에 두나요|촬영 점검이 통과가 안 돼요|카메라 없이 잴 수 있나요|측정 영상을 남기고 싶어요" data-keys="재기 측정 카메라 폰 세우기 거치대 촬영 점검 각도 옆 정면 직접 적기 타이머 자 영상 남기기 음성">
+<section id="measure" data-ask="카메라로 어떻게 재나요|폰을 어디에 두나요|촬영 점검이 통과가 안 돼요|카메라 없이 잴 수 있나요|측정 영상을 남기고 싶어요" data-keys="재기 측정 카메라 폰 세우기 거치대 촬영 점검 각도 옆 정면 직접 적기 타이머 자 영상 남기기 음성 앞카메라 앞 카메라 전면 셀카 화면보기 뒤카메라">
 <h2>재는 법</h2>
 <p class="lead">폰을 세워 두고 준비 화면대로 서면 촬영 점검을 통과한 뒤 3·2·1을 세고 음성으로 이끕니다.</p>
 <ol class="steps">
@@ -18,12 +18,14 @@
 <li>끝나면 잰 값을 확인하고 {{> assessSeeResult}}를 누릅니다.</li>
 </ol>
 <p>좌전굴·서서 체전굴처럼 카메라로 재지 않는 검사는 자로 잰 값을 적습니다. 카메라가 센 값이 실제와 다르면 결과에서 {{> assessEdit}}로 고치고, 고친 기록에는 {{" assessEditedBadge}} 표시가 붙습니다. {{> assessVideoKeep}}를 켜면 측정 장면을 이 기기에만 영상으로 남깁니다.</p>
+<p>혼자 재면서 화면을 보고 싶으면 미리보기 오른쪽 위 카메라 바꾸기 버튼({{> assessCameraFront}})을 누릅니다. 고른 카메라는 다음 측정에도 그대로입니다. 앞 카메라는 초당 장수가 낮은 기기가 많아 {{> jumpTestCmj}}·{{> jumpTestDrop}}는 뒤 카메라가 정확하고, 러닝 옆 촬영은 접지 시간이 빠질 수 있습니다.</p>
 </section>
 
-<section id="result" data-ask="평가 결과는 어떻게 읽나요|측정 오차가 뭔가요|최소 탐지 변화가 뭔가요|좌우 차이는 어떻게 보나요|기준 범위는 어디서 나왔나요" data-keys="결과 해석 측정오차 오차 최소탐지변화 변화 좌우 차이 기준 범위 백분위 나이 출처 근거 위험신호 왜이렇게">
+<section id="result" data-ask="평가 결과는 어떻게 읽나요|측정 오차가 뭔가요|최소 탐지 변화가 뭔가요|좌우 차이는 어떻게 보나요|기준 범위는 어디서 나왔나요" data-keys="결과 해석 측정오차 오차 최소탐지변화 변화 좌우 차이 기준 범위 백분위 나이 출처 근거 위험신호 왜이렇게 그림 점 각도 마네킹 약한쪽 주황 초록">
 <h2>결과 읽기</h2>
 <p class="lead">결과에는 값과 측정 오차, 지난번 대비 변화, 좌우 차이, 연구 기준 범위가 함께 나옵니다.</p>
 <ul>
+<li>값 아래 그림에 관절 점·잰 선·각을 겹쳐 무엇을 잰 값인지 보여 줍니다. 좌우 차이가 측정 오차보다 크면 약한 쪽을 주황, 나은 쪽을 초록으로 칠합니다.</li>
 <li>변화는 최소 탐지 변화(측정 오차를 넘는 실제 변화로 볼 최소 차이)를 넘을 때만 변화라고 말합니다.</li>
 <li>기준 범위는 같은 나이·성별 연구 표본과 견준 위치입니다. 근거가 모자란 검사는 위치를 말하지 않고 내 변화만 봅니다.</li>
 <li>재는 중 통증 같은 증상을 적으면 위험 신호가 숫자보다 먼저 보이고 처방 반영을 막습니다.</li>
@@ -55,10 +57,10 @@
 
 <section id="bar-speed" data-ask="바 속도를 재고 싶어요|바벨 속도 측정|속도 감소율이 뭔가요|1RM을 속도로 추정할 수 있나요" data-keys="바속도 바 속도 바벨 vbt 속도 궤적 원판 감소율 1rm 세트 스쿼트 벤치 데드">
 <h2>바 속도와 궤적</h2>
-<p class="lead">바벨 운동 중에 운동 줄의 ⋯ 메뉴에서 {{> barSpeedMeasureSet}}을 누르거나, 검사 목록 {{> barSpeedTestName}}에서 엽니다.</p>
+<p class="lead">바벨 운동 중에 운동 줄의 ⋯ 메뉴에서 {{> barSpeedMeasureSet}}를 누르거나, 검사 목록 {{> barSpeedTestName}}에서 엽니다.</p>
 <ol class="steps">
 <li>원판 지름을 고르고(경기·범퍼 원판 450mm) 폰을 원판 옆에 세웁니다.</li>
-<li>{{> barSpeedStart}}를 누르고 세트를 합니다.</li>
+<li>{{> barSpeedStart}}을 누르고 세트를 합니다.</li>
 <li>{{" barSpeedPlateFound}}에서 원판이 맞으면 {{> barSpeedPlateConfirm}}, 아니면 원판 맨 위·맨 아래 끝을 눌러 정합니다.</li>
 </ol>
 <p>반복별 평균 추진 속도와 {{> barSpeedLossTitle}}이 나옵니다. 아직 실제 장비와 견주지 못한 추정치라고 함께 보여 줍니다. 속도로 1RM 비율을 추정하는 것은 PRO, 세트 중 감소율을 넘으면 끝낼 때를 알리는 것은 PRO+입니다. 근력 모드에서만 보입니다.</p>
@@ -66,11 +68,11 @@
 
 <section id="run-form" data-ask="러닝 자세 분석은 어떻게 하나요|케이던스 목표를 정하고 싶어요|오버스트라이드인지 알고 싶어요|달리기 자세를 찍는 법" data-keys="러닝자세 달리기 자세 케이던스 보폭 오버스트라이드 착지 정강이 골반 고관절 내전 러닝머신 트랙 목표 걸음">
 <h2>러닝 자세와 케이던스 목표</h2>
-<p class="lead">러닝 모드 {{> tabCoach}}의 {{> assessEntryRunTitle}}에서 {{> runFormTestSide}}나 {{> runFormTestBack}}을 고르고, 러닝머신이나 트랙에서 달리는 모습을 찍습니다.</p>
+<p class="lead">러닝 모드 {{> tabHome}}·{{> tabCoach}}·{{> tabMenu}}의 {{> assessEntryRunTitle}}에서 {{> runFormTestSide}} 또는 {{> runFormTestBack}} 검사를 고르고, 러닝머신이나 트랙에서 달리는 모습을 찍습니다.</p>
 <ol class="steps">
 <li>폰을 1.5m쯤 높이에 세우고 옆(또는 뒤)에서 찍습니다.</li>
 <li>결과에서 케이던스, 착지 위치, 정강이 각, 착지 발 모양 등을 봅니다.</li>
-<li>{{> runFormTargetTitle}}의 {{> runFormTargetOn}}을 누르면 쉬운 달리기에서 휴대폰과 시계가 범위를 벗어날 때 알려 줍니다.</li>
+<li>{{> runFormTargetTitle}}의 {{> runFormTargetOn}}를 누르면 쉬운 달리기에서 휴대폰과 시계가 범위를 벗어날 때 알려 줍니다.</li>
 </ol>
 <p>케이던스 목표는 같은 속도에서 지금보다 5~10% 높인 범위입니다. 달리는 중 안내에 넣기는 PRO이고, PRO+는 주간 달리기 계획에 자세 드릴을 넣습니다. Apple Watch·갤럭시 워치·가민에서도 목표 범위를 봅니다.</p>
 </section>

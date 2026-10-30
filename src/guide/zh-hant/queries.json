@@ -137,5 +137,7 @@
  "設定步頻目標": "assessment#run-form",
  "重看測量影片": "assessment#retest",
  "評估影片會傳送到伺服器嗎": "assessment#privacy",
- "預測半馬成績": "tools#run-calc"
+ "預測半馬成績": "tools#run-calc",
+ "可以用前置鏡頭拍嗎": "assessment#measure",
+ "結果圖裡的橘色是什麼意思": "assessment#result"
 }
