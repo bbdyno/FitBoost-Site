@@ -34,7 +34,6 @@
 <section class="hero" data-scene="hero">
   <div class="hero__stick">
     <div class="wrap hero__top">
-      <p class="hero__chip"><span class="dot"></span>{{hero.chip}}</p>
       <h1 class="hero__title">{{hero.title}}</h1>
       <p class="hero__lede">{{hero.lede}}</p>
       <div class="stores">{{stores}}</div>
@@ -50,19 +49,12 @@
   </div>
 </section>
 
-<!-- 2. 한 문장. 스크롤에 맞춰 단어가 진해진다. -->
-<section class="say" data-scene="say">
-  <div class="say__stick wrap">
-    <p class="say__text" data-words>{{say.text}}</p>
-  </div>
-</section>
-
 <!-- 3. 운동 중 코치 -->
 <section class="coach dark" id="features" data-scene="coach">
   <div class="coach__stick">
     <div class="wrap coach__grid">
       <div class="coach__copy">
-        <p class="label"><span class="label__n">01</span>{{coach.label}}<span class="pro">PRO</span></p>
+        <p class="label">{{coach.label}}<span class="pro">PRO</span></p>
         <h2>{{coach.title}}</h2>
         <ol class="coach__steps">
           <li class="is-on"><h3>{{coach.s1.title}}</h3><p>{{coach.s1.body}}</p></li>
@@ -90,20 +82,20 @@
 <!-- 4. 루틴 자동 증량 -->
 <section class="prog">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">02</span>{{prog.label}}<span class="pro">PRO</span></p>
-    <h2 class="reveal">{{prog.title}}</h2>
-    <p class="lede reveal">{{prog.body}}</p>
+    <p class="label">{{prog.label}}<span class="pro">PRO</span></p>
+    <h2>{{prog.title}}</h2>
+    <p class="lede">{{prog.body}}</p>
 
-    <div class="chart reveal" data-chart>
+    <div class="chart" data-chart>
       <div class="chart__bars">
-        <div class="bar up" style="--h:60;--i:0"><b>60</b><span>8·8·8</span></div>
-        <div class="bar up" style="--h:62.5;--i:1"><b>62.5</b><span>8·8·8</span></div>
-        <div class="bar hold" style="--h:65;--i:2"><b>65</b><span>8·7·6</span></div>
-        <div class="bar hold" style="--h:65;--i:3"><b>65</b><span>8·7·6</span></div>
-        <div class="bar down" style="--h:62.5;--i:4"><b>62.5</b><span>8·8·8</span></div>
-        <div class="bar up" style="--h:65;--i:5"><b>65</b><span>8·8·8</span></div>
-        <div class="bar up" style="--h:67.5;--i:6"><b>67.5</b><span>8·8·8</span></div>
-        <div class="bar next" style="--h:70;--i:7"><b>70</b><span>{{prog.next}}</span></div>
+        <div class="bar up" style="--h:60"><b>60</b><span>8·8·8</span></div>
+        <div class="bar up" style="--h:62.5"><b>62.5</b><span>8·8·8</span></div>
+        <div class="bar hold" style="--h:65"><b>65</b><span>8·7·6</span></div>
+        <div class="bar hold" style="--h:65"><b>65</b><span>8·7·6</span></div>
+        <div class="bar down" style="--h:62.5"><b>62.5</b><span>8·8·8</span></div>
+        <div class="bar up" style="--h:65"><b>65</b><span>8·8·8</span></div>
+        <div class="bar up" style="--h:67.5"><b>67.5</b><span>8·8·8</span></div>
+        <div class="bar next" style="--h:70"><b>70</b><span>{{prog.next}}</span></div>
       </div>
       <ul class="chart__key">
         <li class="up">{{prog.keyUp}}</li>
@@ -119,7 +111,7 @@
   <div class="recov__stick">
     <div class="wrap recov__grid">
       <div class="recov__copy">
-        <p class="label"><span class="label__n">03</span>{{recov.label}}</p>
+        <p class="label">{{recov.label}}</p>
         <h2>{{recov.title}}</h2>
         <p class="lede">{{recov.body}}</p>
         <div class="recov__clock"><span class="recov__h">0</span><span class="recov__hu">H</span><em>{{recov.after}}</em></div>
@@ -150,13 +142,12 @@
 <section class="assess">
   <div class="wrap assess__grid">
     <div class="assess__head">
-      <p class="label reveal"><span class="label__n">04</span>{{assess.label}}<span class="free">{{assess.free}}</span></p>
-      <h2 class="reveal">{{assess.title}}</h2>
-      <p class="lede reveal">{{assess.body}}</p>
-      <div class="clouds assess__tests reveal"><span>{{assess.a}}</span><span>{{assess.b}}</span><span>{{assess.c}}</span><span>{{assess.d}}</span></div>
+      <p class="label">{{assess.label}}<span class="free">{{assess.free}}</span></p>
+      <h2>{{assess.title}}</h2>
+      <p class="lede">{{assess.body}}</p>
     </div>
 
-    <figure class="assess__fig reveal">
+    <figure class="assess__fig">
       <img src="{{root}}assets/assess/shoulder.webp" alt="{{assess.alt}}" width="1132" height="703" loading="lazy">
       <figcaption>
         <div class="assess__sides" aria-hidden="true"><span class="is-good">{{assess.left}}</span><span class="is-low">{{assess.right}}</span></div>
@@ -165,23 +156,23 @@
       </figcaption>
     </figure>
 
-    <ol class="assess__steps reveal">
+    <ol class="assess__steps">
       <li><h3>{{assess.s1.title}}</h3><p>{{assess.s1.body}}</p></li>
       <li><h3>{{assess.s2.title}}</h3><p>{{assess.s2.body}}</p></li>
       <li><h3>{{assess.s3.title}}</h3><p>{{assess.s3.body}}</p></li>
     </ol>
   </div>
-  <p class="wrap assess__note reveal">{{assess.note}}</p>
+  <p class="wrap assess__note">{{assess.note}}</p>
 </section>
 
 <!-- 6. 원판 계산: 직접 눌러 본다 -->
 <section class="plates">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">05</span>{{plates.label}}</p>
-    <h2 class="reveal">{{plates.title}}</h2>
-    <p class="lede reveal">{{plates.body}}</p>
+    <p class="label">{{plates.label}}</p>
+    <h2>{{plates.title}}</h2>
+    <p class="lede">{{plates.body}}</p>
 
-    <div class="rack reveal" data-plates data-kg-label="{{plates.perSide}}">
+    <div class="rack" data-plates data-kg-label="{{plates.perSide}}">
       <div class="rack__top">
         <div class="rack__num"><span data-total>142.5</span><small data-unit>KG</small></div>
         <div class="rack__ctl">
@@ -203,7 +194,7 @@
 <section class="plus dark" id="plus" data-scene="plus">
   <div class="plus__stick">
     <div class="wrap plus__head">
-      <p class="label"><span class="label__n">06</span>{{plus.label}}</p>
+      <p class="label">{{plus.label}}</p>
       <h2>{{plus.title}}</h2>
       <p class="lede">{{plus.body}}</p>
     </div>
@@ -295,10 +286,10 @@
 <!-- 7. 나머지 기능 타일 -->
 <section class="more">
   <div class="wrap">
-    <h2 class="reveal">{{more.title}}</h2>
+    <h2>{{more.title}}</h2>
 
     <div class="bento">
-      <article class="tile tile--wide reveal">
+      <article class="tile tile--wide">
         <div class="tile__copy">
           <h3>{{more.program.title}}</h3>
           <p>{{more.program.body}}</p>
@@ -315,7 +306,7 @@
         </div>
       </article>
 
-      <article class="tile reveal">
+      <article class="tile">
         <h3>{{more.balance.title}}<span class="pro">PRO</span></h3>
         <p>{{more.balance.body}}</p>
         <div class="ratio" aria-hidden="true">
@@ -327,14 +318,14 @@
         </div>
       </article>
 
-      <article class="tile tile--ink reveal">
+      <article class="tile tile--ink">
         <h3>{{more.cardio.title}}</h3>
         <p>{{more.cardio.body}}</p>
-        <div class="big" aria-hidden="true"><span data-count="312">312</span><small>kcal</small></div>
+        <div class="big" aria-hidden="true">312<small>kcal</small></div>
         <p class="tile__note">{{more.cardio.note}}</p>
       </article>
 
-      <article class="tile reveal">
+      <article class="tile">
         <h3>{{more.sets.title}}</h3>
         <p>{{more.sets.body}}</p>
         <ul class="mini" aria-hidden="true">
@@ -345,7 +336,7 @@
         </ul>
       </article>
 
-      <article class="tile reveal">
+      <article class="tile">
         <h3>{{more.trainer.title}}</h3>
         <p>{{more.trainer.body}}</p>
         <div class="report" aria-hidden="true">
@@ -355,7 +346,7 @@
         </div>
       </article>
 
-      <article class="tile tile--wide reveal">
+      <article class="tile tile--wide">
         <div class="tile__copy">
           <h3>{{more.run.title}}</h3>
           <p>{{more.run.body}}</p>
@@ -372,31 +363,31 @@
         </div>
       </article>
 
-      <article class="tile reveal">
+      <article class="tile">
         <h3>{{more.course.title}}</h3>
         <p>{{more.course.body}}</p>
         <div class="clouds" aria-hidden="true"><span>{{more.course.link}}</span><span>{{more.course.qr}}</span><span>{{more.course.file}}</span></div>
       </article>
 
-      <article class="tile tile--lime reveal">
+      <article class="tile tile--lime">
         <h3>{{more.rm.title}}</h3>
         <div class="big big--rm" aria-hidden="true">1RM</div>
         <p>{{more.rm.body}}</p>
       </article>
 
-      <article class="tile reveal">
+      <article class="tile">
         <h3>{{more.sync.title}}</h3>
         <p>{{more.sync.body}}</p>
         <div class="clouds" aria-hidden="true"><span>iCloud</span><span>Google Drive</span><span>{{more.sync.file}}</span></div>
       </article>
 
-      <article class="tile reveal">
+      <article class="tile">
         <h3>{{more.units.title}}</h3>
         <p>{{more.units.body}}</p>
         <div class="units" aria-hidden="true"><b>100 kg</b><span>=</span><b>220 lb</b></div>
       </article>
 
-      <article class="tile tile--wide reveal">
+      <article class="tile tile--wide">
         <div class="tile__copy">
           <h3>{{more.share.title}}</h3>
           <p>{{more.share.body}}</p>
@@ -407,9 +398,9 @@
         </div>
       </article>
 
-      <article class="tile tile--ink reveal">
+      <article class="tile tile--ink">
         <h3>{{more.fonts.title}}</h3>
-        <div class="big" aria-hidden="true"><span data-count="22">22</span><small>{{more.fonts.unit}}</small></div>
+        <div class="big" aria-hidden="true">22<small>{{more.fonts.unit}}</small></div>
         <p class="tile__note">{{more.fonts.note}}</p>
       </article>
     </div>
@@ -419,20 +410,20 @@
 <!-- 8. 시계 -->
 <section class="watch dark">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">07</span>{{watch.label}}</p>
-    <h2 class="reveal">{{watch.title}}</h2>
-    <p class="lede reveal">{{watch.body}}</p>
+    <p class="label">{{watch.label}}</p>
+    <h2>{{watch.title}}</h2>
+    <p class="lede">{{watch.body}}</p>
 
     <div class="watches" aria-hidden="true">
-      <figure class="wt wt--sq reveal" style="--i:0">
+      <figure class="wt wt--sq">
         <div class="wt__face"><span class="wt__lbl">{{watch.rest}}</span><b class="wt__t" data-tick="90">1:30</b><span class="wt__sub">{{watch.next}} 102.5 kg</span></div>
         <figcaption>Apple Watch</figcaption>
       </figure>
-      <figure class="wt wt--rd reveal" style="--i:1">
+      <figure class="wt wt--rd">
         <div class="wt__face"><span class="wt__lbl">{{watch.effort}}</span><div class="wt__rir"><i>0</i><i>1</i><i class="on">2</i><i>3+</i></div><span class="wt__sub">RIR</span></div>
         <figcaption>Galaxy Watch</figcaption>
       </figure>
-      <figure class="wt wt--rd wt--garmin reveal" style="--i:2">
+      <figure class="wt wt--rd wt--garmin">
         <div class="wt__face"><span class="wt__lbl">{{watch.plank}}</span><b class="wt__t" data-tick="45">0:45</b><span class="wt__sub">{{watch.set}} 2 / 3</span></div>
         <figcaption>Garmin</figcaption>
       </figure>
@@ -443,58 +434,54 @@
 <!-- 9. 운동 사전 -->
 <section class="lib">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">08</span>{{lib.label}}</p>
+    <p class="label">{{lib.label}}</p>
     <div class="lib__head">
-      <div class="lib__num reveal"><span data-count="1690">1,690</span></div>
+      <div class="lib__num">1,690</div>
       <div>
-        <h2 class="reveal">{{lib.title}}</h2>
-        <p class="lede reveal">{{lib.body}}</p>
+        <h2>{{lib.title}}</h2>
+        <p class="lede">{{lib.body}}</p>
       </div>
     </div>
   </div>
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee__row" data-dir="1">{{rowA}}</div>
-    <div class="marquee__row" data-dir="-1">{{rowB}}</div>
-  </div>
+  <div class="wrap"><div class="lib__grid" aria-hidden="true">{{cells}}</div></div>
 </section>
 
 <!-- 10. 요금 -->
 <section class="price" id="pricing">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">09</span>{{price.label}}</p>
-    <h2 class="reveal">{{price.title}}</h2>
-    <p class="lede reveal">{{price.body}}</p>
+    <p class="label">{{price.label}}</p>
+    <h2>{{price.title}}</h2>
+    <p class="lede">{{price.body}}</p>
 
     <div class="plans">
-      <article class="plan reveal" style="--i:0">
+      <article class="plan">
         <h3>{{price.free.name}}</h3>
         <p class="plan__price">{{price.free.price}}</p>
         <ul>{{price.free.items}}</ul>
       </article>
-      <article class="plan plan--pro reveal" style="--i:1">
+      <article class="plan plan--pro">
         <h3>PRO</h3>
         <p class="plan__price">{{price.pro.price}}</p>
         <p class="plan__inc">{{price.pro.inc}}</p>
         <ul>{{price.pro.items}}</ul>
       </article>
-      <article class="plan plan--plus reveal" style="--i:2">
+      <article class="plan plan--plus">
         <h3>PRO+</h3>
         <p class="plan__price">{{price.plus.price}}</p>
         <p class="plan__inc">{{price.plus.inc}}</p>
         <ul>{{price.plus.items}}</ul>
       </article>
     </div>
-    <p class="price__note reveal">{{price.note}}</p>
+    <p class="price__note">{{price.note}}</p>
   </div>
 </section>
 
 <!-- 11. 마무리 -->
 <section class="end" id="download">
   <div class="wrap">
-    <p class="end__langs reveal">한국어 · English · 日本語 · 简体中文 · 繁體中文</p>
-    <h2 class="end__title reveal">{{end.title}}</h2>
-    <p class="lede reveal">{{end.body}}</p>
-    <div class="stores reveal">{{stores}}</div>
+    <h2 class="end__title">{{end.title}}</h2>
+    <p class="lede">{{end.body}}</p>
+    <div class="stores">{{stores}}</div>
   </div>
 </section>
 
