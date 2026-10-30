@@ -76,7 +76,7 @@ section { position: relative; }
   background: var(--ink); color: var(--lime); border-radius: 6px; padding: 3px 7px 2px; line-height: 1.2;
 }
 .dark .label__n { background: var(--lime); color: var(--ink); }
-.pro {
+.pro, .free {
   font-size: 11px; font-weight: 800; letter-spacing: .04em;
   border: 1.5px solid currentColor; border-radius: 99px; padding: 1px 7px; opacity: .55;
 }
@@ -501,6 +501,46 @@ h3 .pro { margin-left: 8px; vertical-align: 3px; }
   .plus .lede { display: none; }
   .plus h2 { font-size: clamp(28px, 7vw, 40px); }
   .pc { width: 78vw; min-height: 0; height: min(54vh, 420px); }
+}
+
+/* ── 움직임 평가: 앱 결과 그림을 그대로 쓴다 ─────────── */
+
+.assess { padding: clamp(110px, 16vw, 200px) 0 clamp(90px, 12vw, 160px); background: var(--white); }
+.assess h2 { font-size: clamp(32px, 4.4vw, 58px); }
+.assess__grid {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr); grid-template-areas: "head fig" "steps fig";
+  column-gap: clamp(28px, 6vw, 96px); align-items: start;
+}
+.assess__head { grid-area: head; }
+.assess .assess__tests { margin-top: 26px; }
+.assess .assess__tests span { background: var(--paper); }
+.assess__fig { grid-area: fig; margin: 0; align-self: center; }
+.assess__fig img { width: 100%; }
+.assess__sides { display: grid; grid-template-columns: 1fr 1fr; text-align: center; font-weight: 800; font-size: 15px; margin-top: 10px; }
+.assess .is-good { color: #1E7B45; }
+.assess .is-low { color: #B5531A; }
+.assess__what { margin: 16px 0 0; color: var(--mute); font-size: 15px; }
+.assess__key { display: flex; flex-wrap: wrap; gap: 6px 18px; list-style: none; padding: 0; margin: 8px 0 0; font-size: 14px; font-weight: 600; color: var(--mute); }
+.assess__key li::before {
+  content: ""; display: inline-block; width: 7px; height: 7px; border-radius: 50%;
+  border: 2.5px solid currentColor; margin-right: 7px; vertical-align: 0;
+}
+.assess__key .is-good::before { color: #1E7B45; }
+.assess__key .is-low::before { color: #B5531A; }
+.assess__key li.is-good, .assess__key li.is-low { color: var(--mute); }
+.assess__steps { grid-area: steps; list-style: none; margin: 34px 0 0; padding: 0; display: grid; gap: 6px; counter-reset: s; }
+.assess__steps li { position: relative; padding: 14px 0 14px 46px; border-top: 1px solid var(--line); }
+.assess__steps li::before {
+  counter-increment: s; content: counter(s);
+  position: absolute; left: 0; top: 14px; width: 28px; height: 28px; border-radius: 50%;
+  display: grid; place-items: center; font-family: var(--display); font-size: 15px;
+  background: var(--lime);
+}
+.assess__steps p { margin: 6px 0 0; color: var(--mute); font-size: 16px; }
+.assess__note { margin-top: 36px; font-size: 13px; color: var(--mute); }
+@media (max-width: 900px) {
+  .assess__grid { grid-template-columns: minmax(0, 1fr); grid-template-areas: "head" "fig" "steps"; }
+  .assess__fig { margin-top: 44px; }
 }
 
 /* ── 7. 기능 타일 ──────────────────────────────────── */

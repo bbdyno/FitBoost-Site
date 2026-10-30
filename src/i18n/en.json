@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "FitBoost — The workout log that picks your next weight",
-    "description": "Log a set, say how hard it was, and FitBoost sizes your next set and tells you when to stop. Recovery map, routine auto progression, plate math and 1,690 exercises. Workout records stay free and unlimited."
+    "description": "Log a set, say how hard it was, and FitBoost sizes your next set and tells you when to stop. Recovery map, camera movement assessment, routine auto progression, plate math and 1,690 exercises. Workout records stay free and unlimited."
   },
   "nav": {
     "label": "Main menu",
@@ -79,6 +79,35 @@
     "ready": "Recovered",
     "painHead": "Pain notes",
     "painBody": "Log where it hurts and the lifts that use that muscle get lighter, with substitutes suggested."
+  },
+  "assess": {
+    "label": "Movement assessment",
+    "free": "Free",
+    "title": "The movement screen you’d book at a clinic, on your phone.",
+    "body": "Stand your phone up and move in front of the camera to measure mobility, fitness, jumps, bar speed and running form. Video is processed only on your device.",
+    "a": "Mobility",
+    "b": "Jumps",
+    "c": "Bar speed",
+    "d": "Running form",
+    "alt": "Result figure for raising your arm forward. Joint points and angles are drawn over a figure: left 172°, right 139°.",
+    "left": "Left",
+    "right": "Right",
+    "what": "Raising your arm forward · Shoulder flexion. The angle between the trunk line (dotted) and the arm line.",
+    "better": "Stronger side",
+    "watchSide": "Side to watch",
+    "s1": {
+      "title": "Measure",
+      "body": "Follow the on-screen and voice cues to measure joint angles, jump height, bar speed and running landing. The front camera works too."
+    },
+    "s2": {
+      "title": "See",
+      "body": "Joint points and angles are drawn on the figure to show which side is weaker, with measurement error, change since last time, left–right difference and research ranges with sources."
+    },
+    "s3": {
+      "title": "Adjust",
+      "body": "Warm-up drills for the weaker side are suggested for that day’s workout, and you’re reminded when it’s time to retest."
+    },
+    "note": "Each test shows a plain name with the technical term underneath. It doesn’t replace a medical diagnosis; if you have pain, see a professional."
   },
   "plates": {
     "label": "Plate math",
@@ -242,14 +271,6 @@
       "title": "22 fonts",
       "unit": "fonts",
       "note": "Per number, unit and label · Open Font License"
-    },
-    "assess": {
-      "title": "Movement assessment",
-      "body": "Stand your phone up and use the camera to measure mobility, fitness, jumps, bar speed and running form. The result figure overlays joint points and angles to show which side is weaker, each result shows measurement error, change since last time, left–right difference and research ranges with sources, and video is processed only on your device.",
-      "a": "Mobility",
-      "b": "Jumps",
-      "c": "Bar speed",
-      "d": "Running form"
     }
   },
   "watch": {

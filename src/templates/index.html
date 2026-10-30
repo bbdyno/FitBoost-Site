@@ -146,10 +146,38 @@
   </div>
 </section>
 
+<!-- 5½. 움직임 평가: 앱 결과 그림을 그대로 쓴다 -->
+<section class="assess">
+  <div class="wrap assess__grid">
+    <div class="assess__head">
+      <p class="label reveal"><span class="label__n">04</span>{{assess.label}}<span class="free">{{assess.free}}</span></p>
+      <h2 class="reveal">{{assess.title}}</h2>
+      <p class="lede reveal">{{assess.body}}</p>
+      <div class="clouds assess__tests reveal"><span>{{assess.a}}</span><span>{{assess.b}}</span><span>{{assess.c}}</span><span>{{assess.d}}</span></div>
+    </div>
+
+    <figure class="assess__fig reveal">
+      <img src="{{root}}assets/assess/shoulder.webp" alt="{{assess.alt}}" width="1132" height="714" loading="lazy">
+      <figcaption>
+        <div class="assess__sides" aria-hidden="true"><span class="is-good">{{assess.left}}</span><span class="is-low">{{assess.right}}</span></div>
+        <p class="assess__what">{{assess.what}}</p>
+        <ul class="assess__key"><li class="is-good">{{assess.better}}</li><li class="is-low">{{assess.watchSide}}</li></ul>
+      </figcaption>
+    </figure>
+
+    <ol class="assess__steps reveal">
+      <li><h3>{{assess.s1.title}}</h3><p>{{assess.s1.body}}</p></li>
+      <li><h3>{{assess.s2.title}}</h3><p>{{assess.s2.body}}</p></li>
+      <li><h3>{{assess.s3.title}}</h3><p>{{assess.s3.body}}</p></li>
+    </ol>
+  </div>
+  <p class="wrap assess__note reveal">{{assess.note}}</p>
+</section>
+
 <!-- 6. 원판 계산: 직접 눌러 본다 -->
 <section class="plates">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">04</span>{{plates.label}}</p>
+    <p class="label reveal"><span class="label__n">05</span>{{plates.label}}</p>
     <h2 class="reveal">{{plates.title}}</h2>
     <p class="lede reveal">{{plates.body}}</p>
 
@@ -175,7 +203,7 @@
 <section class="plus dark" id="plus" data-scene="plus">
   <div class="plus__stick">
     <div class="wrap plus__head">
-      <p class="label"><span class="label__n">05</span>{{plus.label}}</p>
+      <p class="label"><span class="label__n">06</span>{{plus.label}}</p>
       <h2>{{plus.title}}</h2>
       <p class="lede">{{plus.body}}</p>
     </div>
@@ -350,12 +378,6 @@
         <div class="clouds" aria-hidden="true"><span>{{more.course.link}}</span><span>{{more.course.qr}}</span><span>{{more.course.file}}</span></div>
       </article>
 
-      <article class="tile reveal">
-        <h3>{{more.assess.title}}</h3>
-        <p>{{more.assess.body}}</p>
-        <div class="clouds" aria-hidden="true"><span>{{more.assess.a}}</span><span>{{more.assess.b}}</span><span>{{more.assess.c}}</span><span>{{more.assess.d}}</span></div>
-      </article>
-
       <article class="tile tile--lime reveal">
         <h3>{{more.rm.title}}</h3>
         <div class="big big--rm" aria-hidden="true">1RM</div>
@@ -397,7 +419,7 @@
 <!-- 8. 시계 -->
 <section class="watch dark">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">06</span>{{watch.label}}</p>
+    <p class="label reveal"><span class="label__n">07</span>{{watch.label}}</p>
     <h2 class="reveal">{{watch.title}}</h2>
     <p class="lede reveal">{{watch.body}}</p>
 
@@ -421,7 +443,7 @@
 <!-- 9. 운동 사전 -->
 <section class="lib">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">07</span>{{lib.label}}</p>
+    <p class="label reveal"><span class="label__n">08</span>{{lib.label}}</p>
     <div class="lib__head">
       <div class="lib__num reveal"><span data-count="1690">1,690</span></div>
       <div>
@@ -439,7 +461,7 @@
 <!-- 10. 요금 -->
 <section class="price" id="pricing">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">08</span>{{price.label}}</p>
+    <p class="label reveal"><span class="label__n">09</span>{{price.label}}</p>
     <h2 class="reveal">{{price.title}}</h2>
     <p class="lede reveal">{{price.body}}</p>
 

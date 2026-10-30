@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>FitBoost — 算出下次該舉多重的力量訓練記錄</title>
-<meta name="description" content="完成一組並記錄強度，FitBoost 會告訴你下一組的重量與何時該停。肌肉恢復圖、例行訓練自動加重、槓片計算、1,690 個動作。訓練記錄永久免費、不限數量。">
+<meta name="description" content="完成一組並記錄強度，FitBoost 會告訴你下一組的重量與何時該停。肌肉恢復圖、相機動作評估、例行訓練自動加重、槓片計算、1,690 個動作。訓練記錄永久免費、不限數量。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../assets/icon-180.png">
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="x-default" href="https://bbdyno.github.io/FitBoost-Site/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="FitBoost — 算出下次該舉多重的力量訓練記錄">
-<meta property="og:description" content="完成一組並記錄強度，FitBoost 會告訴你下一組的重量與何時該停。肌肉恢復圖、例行訓練自動加重、槓片計算、1,690 個動作。訓練記錄永久免費、不限數量。">
+<meta property="og:description" content="完成一組並記錄強度，FitBoost 會告訴你下一組的重量與何時該停。肌肉恢復圖、相機動作評估、例行訓練自動加重、槓片計算、1,690 個動作。訓練記錄永久免費、不限數量。">
 <meta property="og:image" content="https://bbdyno.github.io/FitBoost-Site/assets/og.png">
 <meta property="og:locale" content="zh_TW">
 <meta name="twitter:card" content="summary_large_image">
@@ -169,10 +169,38 @@
   </div>
 </section>
 
+<!-- 5½. 움직임 평가: 앱 결과 그림을 그대로 쓴다 -->
+<section class="assess">
+  <div class="wrap assess__grid">
+    <div class="assess__head">
+      <p class="label reveal"><span class="label__n">04</span>動作評估<span class="free">免費</span></p>
+      <h2 class="reveal">原本要去機構做的動作評估，一支手機就夠了。</h2>
+      <p class="lede reveal">把手機直立擺好，在相機前活動，就能測量靈活性、體能、跳躍、槓鈴速度和跑姿。影片只在裝置上處理。</p>
+      <div class="clouds assess__tests reveal"><span>靈活性</span><span>跳躍</span><span>槓鈴速度</span><span>跑姿</span></div>
+    </div>
+
+    <figure class="assess__fig reveal">
+      <img src="../assets/assess/shoulder.webp" alt="手臂向前抬起的結果圖。在人形圖上疊加關節點和角度：左側 172°，右側 139°。" width="1132" height="714" loading="lazy">
+      <figcaption>
+        <div class="assess__sides" aria-hidden="true"><span class="is-good">左側</span><span class="is-low">右側</span></div>
+        <p class="assess__what">手臂向前抬起 · 肩關節前屈。軀幹線（虛線）與手臂線之間的角度。</p>
+        <ul class="assess__key"><li class="is-good">表現較好的一側</li><li class="is-low">需要留意的一側</li></ul>
+      </figcaption>
+    </figure>
+
+    <ol class="assess__steps reveal">
+      <li><h3>測量</h3><p>跟著畫面和語音提示活動，測量關節角度、跳躍高度、槓鈴速度和跑步落地。也可以用前置相機拍攝。</p></li>
+      <li><h3>查看</h3><p>在圖上疊加關節點和角度，顯示哪一側較弱；同時列出測量誤差、與上次相比的變化、左右差異、研究參考範圍和出處。</p></li>
+      <li><h3>調整</h3><p>建議在當天訓練中加入針對較弱一側的暖身動作，到了該重測的時候會提醒你。</p></li>
+    </ol>
+  </div>
+  <p class="wrap assess__note reveal">每項測試在易懂名稱下方同時標註專業術語。不能取代醫療診斷，如有疼痛請諮詢專業人士。</p>
+</section>
+
 <!-- 6. 원판 계산: 직접 눌러 본다 -->
 <section class="plates">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">04</span>槓片計算</p>
+    <p class="label reveal"><span class="label__n">05</span>槓片計算</p>
     <h2 class="reveal">每側要裝什麼，馬上就知道。</h2>
     <p class="lede reveal">登記槓鈴重量與現有槓片後，會顯示要裝的槓片與安裝順序，並把建議重量調整為實際能組合出的重量。動手試試看。</p>
 
@@ -198,7 +226,7 @@
 <section class="plus dark" id="plus" data-scene="plus">
   <div class="plus__stick">
     <div class="wrap plus__head">
-      <p class="label"><span class="label__n">05</span>PRO+ 教練</p>
+      <p class="label"><span class="label__n">06</span>PRO+ 教練</p>
       <h2>從計畫到當天重量，都替你安排好。</h2>
       <p class="lede">包含 PRO 的全部功能，並依目標與比賽日期制定計畫，再依當天狀態調整重量和組數。</p>
     </div>
@@ -373,12 +401,6 @@
         <div class="clouds" aria-hidden="true"><span>連結</span><span>QR 碼</span><span>檔案</span></div>
       </article>
 
-      <article class="tile reveal">
-        <h3>動作評估</h3>
-        <p>把手機直立擺好，用相機測量靈活性、體能、跳躍、槓鈴速度和跑姿。結果圖疊加關節點和角度，顯示哪一側較弱；每項結果都顯示測量誤差、與上次相比的變化、左右差異、研究參考範圍和出處，影片只在裝置上處理。</p>
-        <div class="clouds" aria-hidden="true"><span>靈活性</span><span>跳躍</span><span>槓鈴速度</span><span>跑姿</span></div>
-      </article>
-
       <article class="tile tile--lime reveal">
         <h3>估算 1RM</h3>
         <div class="big big--rm" aria-hidden="true">1RM</div>
@@ -420,7 +442,7 @@
 <!-- 8. 시계 -->
 <section class="watch dark">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">06</span>手錶</p>
+    <p class="label reveal"><span class="label__n">07</span>手錶</p>
     <h2 class="reveal">在手腕上完成每一組。</h2>
     <p class="lede reveal">完成一組並選擇強度後，休息計時會自動開始，結束時以震動提醒。棒式這類計時動作，也能在手錶上按秒查看和調整。</p>
 
@@ -444,7 +466,7 @@
 <!-- 9. 운동 사전 -->
 <section class="lib">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">07</span>動作庫</p>
+    <p class="label reveal"><span class="label__n">08</span>動作庫</p>
     <div class="lib__head">
       <div class="lib__num reveal"><span data-count="1690">1,690</span></div>
       <div>
@@ -462,7 +484,7 @@
 <!-- 10. 요금 -->
 <section class="price" id="pricing">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">08</span>價格</p>
+    <p class="label reveal"><span class="label__n">09</span>價格</p>
     <h2 class="reveal">訓練記錄免費，不限數量。</h2>
     <p class="lede reveal">累積的記錄是計算的基礎，所以記錄從不設限。PRO 會用這些記錄算得更深入。</p>
 
