@@ -137,5 +137,7 @@
  "ピッチの目標を決める": "assessment#run-form",
  "測定動画を見直す": "assessment#retest",
  "評価の動画はサーバーに送られますか": "assessment#privacy",
- "ハーフマラソンのタイム予測": "tools#run-calc"
+ "ハーフマラソンのタイム予測": "tools#run-calc",
+ "インカメラで撮れますか": "assessment#measure",
+ "結果の図のオレンジは何ですか": "assessment#result"
 }

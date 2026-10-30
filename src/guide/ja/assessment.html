@@ -1,15 +1,15 @@
-<section id="open" data-ask="動作評価はどこでできますか|フォーム分析はどこですか|柔軟性を測りたい|体力テストのやり方|どんなテストがありますか" data-keys="動作評価 フォーム分析 テスト 検査 体力 可動性 柔軟性 カメラ コーチ">
+<section id="open" data-ask="動作評価はどこでできますか|フォーム分析はどこですか|柔軟性を測りたい|体力テストのやり方|どんなテストがありますか" data-keys="動作評価 フォーム分析 テスト 検査 体力 可動性 柔軟性 カメラ コーチ ホーム メニュー 名前 専門用語">
 <h2>動作評価を開く</h2>
-<p class="lead">筋トレモードの{{> tabCoach}}の{{> assessEntryTitle}}、ランニングモードの{{> tabCoach}}の{{> assessEntryRunTitle}}からテスト一覧を開きます。</p>
+<p class="lead">どちらのモードでも、{{> tabHome}}のクイックスタートのすぐ下にある{{> assessEntryTitle}}（ランニングモードでは{{> assessEntryRunTitle}}）、{{> tabMenu}}、{{> tabCoach}}からテスト一覧を開きます。</p>
 <ol class="steps">
-<li>{{> tabCoach}}で{{> assessEntryTitle}}（ランニングモードでは{{> assessEntryRunTitle}}）をタップします。</li>
+<li>{{> tabHome}}で{{> assessEntryTitle}}（ランニングモードでは{{> assessEntryRunTitle}}）をタップします。{{> tabMenu}}と{{> tabCoach}}にも同じ行があります。</li>
 <li>{{> assessGroupMobility}}・{{> assessGroupFitness}}・{{> assessGroupPower}}・{{> assessGroupBarbell}}・{{> assessGroupRunning}}のまとまりからテストを選びます。</li>
 <li>準備画面でスマホの置き方、やり方、中止するときを読んでから始めます。</li>
 </ol>
-<p>筋トレモードには肩・スクワット・長座体前屈・膝伸展・下肢伸展挙上・ニー・トゥ・ウォール・腕立て伏せ・片脚立ち・{{> assessTestChairStand}}・{{> jumpTestCmj}}・{{> jumpTestDrop}}・{{> barSpeedTestName}}が、ランニングモードには{{> runFormTestSide}}・{{> runFormTestBack}}と脚の可動性・体力・ジャンプのテストが表示されます。測定と結果の確認は無料です。</p>
+<p>テスト名はわかりやすい言葉で書き、その下に小さく専門用語（肩の屈曲など）を添えます。筋トレモードには{{> mobilityTestShoulderFlexion}}・{{> mobilityTestShoulderAbduction}}・{{> mobilityTestSquatSide}}・{{> mobilityTestSquatFront}}・{{> mobilityTestSitReach}}・{{> mobilityTestToeTouch}}・{{> mobilityTestKneeExtension}}・{{> mobilityTestLegRaise}}・{{> mobilityTestKneeToWall}}・{{> mobilityTestPushUp}}・{{> mobilityTestStance}}・{{> assessTestChairStand}}・{{> jumpTestCmj}}・{{> jumpTestDrop}}・{{> barSpeedTestName}}が、ランニングモードには{{> runFormTestSide}}・{{> runFormTestBack}}と脚の可動性・体力・ジャンプのテストが表示されます。測定と結果の確認は無料です。</p>
 </section>
 
-<section id="measure" data-ask="カメラでどう測りますか|スマホはどこに置きますか|撮影チェックが通りません|カメラなしで測れますか|測定動画を残したい" data-keys="測定 測る カメラ スマホ 立てる 三脚 撮影 チェック 角度 横 正面 手入力 タイマー 定規 動画 音声">
+<section id="measure" data-ask="カメラでどう測りますか|スマホはどこに置きますか|撮影チェックが通りません|カメラなしで測れますか|測定動画を残したい" data-keys="測定 測る カメラ スマホ 立てる 三脚 撮影 チェック 角度 横 正面 手入力 タイマー 定規 動画 音声 インカメラ 前面 自撮り 切り替え 背面">
 <h2>測り方</h2>
 <p class="lead">スマホを立てて準備画面のとおりに立つと、撮影チェックを通過したあと3・2・1と数え、音声で案内します。</p>
 <ol class="steps">
@@ -18,12 +18,14 @@
 <li>終わったら測定値を確認し、{{> assessSeeResult}}をタップします。</li>
 </ol>
 <p>長座体前屈・立位体前屈のようにカメラで測らないテストは、定規で測った値を入力します。カメラの値が実際と違うときは結果の{{> assessEdit}}で直し、直した記録には{{" assessEditedBadge}}が付きます。{{> assessVideoKeep}}をオンにすると、測定の様子をこの端末だけに動画で残します。</p>
+<p>ひとりで測りながら画面を見たいときは、プレビュー右上の{{> assessCameraFront}}をタップします。選んだカメラは次の測定でもそのままです。インカメラは毎秒のコマ数が少ない機種が多いため、{{> jumpTestCmj}}・{{> jumpTestDrop}}は背面カメラの方が正確で、ランニングの横からの撮影では接地時間が出ないことがあります。</p>
 </section>
 
-<section id="result" data-ask="評価結果の見方|測定誤差とは|最小可検変化とは|左右差はどう見ますか|基準範囲はどこから来ていますか" data-keys="結果 解釈 測定誤差 最小可検変化 変化 左右差 基準 範囲 パーセンタイル 年齢 出典 根拠 危険信号">
+<section id="result" data-ask="評価結果の見方|測定誤差とは|最小可検変化とは|左右差はどう見ますか|基準範囲はどこから来ていますか" data-keys="結果 解釈 測定誤差 最小可検変化 変化 左右差 基準 範囲 パーセンタイル 年齢 出典 根拠 危険信号 図 点 角度 マネキン 弱い側 オレンジ 緑">
 <h2>結果の見方</h2>
 <p class="lead">結果には値と測定誤差、前回からの変化、左右差、研究の基準範囲が一緒に表示されます。</p>
 <ul>
+<li>値の下の図に関節の点・測った線・角度を重ねて、何を測った値かを示します。左右差が測定誤差より大きいと、弱い側をオレンジ、よい側を緑で示します。</li>
 <li>変化は、最小可検変化（測定誤差を超えた実際の変化とみなす最小の差）を超えたときだけ変化と呼びます。</li>
 <li>基準範囲は同じ年齢・性別の研究サンプルと比べた位置です。根拠が足りないテストは位置を言わず、自分の変化だけを見ます。</li>
 <li>測定中に痛みなどの症状を記録すると、危険信号が数字より先に表示され、プランへの反映を止めます。</li>
@@ -66,7 +68,7 @@
 
 <section id="run-form" data-ask="ランニングフォームの分析のやり方|ピッチの目標を決めたい|オーバーストライドか知りたい|走る姿の撮り方" data-keys="ランニングフォーム フォーム ピッチ ケイデンス 歩幅 オーバーストライド 着地 すね 骨盤 股関節内転 トレッドミル トラック 目標">
 <h2>ランニングフォームとピッチの目標</h2>
-<p class="lead">ランニングモードの{{> tabCoach}}の{{> assessEntryRunTitle}}で{{> runFormTestSide}}か{{> runFormTestBack}}を選び、トレッドミルやトラックで走る姿を撮ります。</p>
+<p class="lead">ランニングモードの{{> tabHome}}・{{> tabCoach}}・{{> tabMenu}}の{{> assessEntryRunTitle}}で{{> runFormTestSide}}か{{> runFormTestBack}}を選び、トレッドミルやトラックで走る姿を撮ります。</p>
 <ol class="steps">
 <li>スマホを高さ約1.5mに立て、横（または後ろ）から撮ります。</li>
 <li>結果でピッチ、着地位置、すねの角度、着地の足の形などを見ます。</li>

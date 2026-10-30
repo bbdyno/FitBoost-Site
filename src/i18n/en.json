@@ -245,7 +245,7 @@
     },
     "assess": {
       "title": "Movement assessment",
-      "body": "Stand your phone up and use the camera to measure mobility, fitness, jumps, bar speed and running form. Each result shows measurement error, change since last time, left–right difference and research ranges with sources, and video is processed only on your device.",
+      "body": "Stand your phone up and use the camera to measure mobility, fitness, jumps, bar speed and running form. The result figure overlays joint points and angles to show which side is weaker, each result shows measurement error, change since last time, left–right difference and research ranges with sources, and video is processed only on your device.",
       "a": "Mobility",
       "b": "Jumps",
       "c": "Bar speed",

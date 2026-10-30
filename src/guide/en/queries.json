@@ -138,5 +138,7 @@
  "set a cadence target": "assessment#run-form",
  "replay measurement video": "assessment#retest",
  "is assessment video sent to a server": "assessment#privacy",
- "predict my half marathon time": "tools#run-calc"
+ "predict my half marathon time": "tools#run-calc",
+ "Can I use the front camera": "assessment#measure",
+ "What does orange mean in the result figure": "assessment#result"
 }
