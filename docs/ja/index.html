@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>FitBoost — 次の重量まで計算する筋トレ記録</title>
-<meta name="description" content="セットを終えて強度を記録すると、次のセットの重量とやめどきを知らせる筋トレ記録アプリ。筋肉の回復マップ、ルーティンの自動増量、プレート計算、1,690種目。ワークアウト記録は無料で無制限です。">
+<meta name="description" content="セットを終えて強度を記録すると、次のセットの重量とやめどきを知らせる筋トレ記録アプリ。筋肉の回復マップ、カメラ動作評価、ルーティンの自動増量、プレート計算、1,690種目。ワークアウト記録は無料で無制限です。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../assets/icon-180.png">
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="x-default" href="https://bbdyno.github.io/FitBoost-Site/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="FitBoost — 次の重量まで計算する筋トレ記録">
-<meta property="og:description" content="セットを終えて強度を記録すると、次のセットの重量とやめどきを知らせる筋トレ記録アプリ。筋肉の回復マップ、ルーティンの自動増量、プレート計算、1,690種目。ワークアウト記録は無料で無制限です。">
+<meta property="og:description" content="セットを終えて強度を記録すると、次のセットの重量とやめどきを知らせる筋トレ記録アプリ。筋肉の回復マップ、カメラ動作評価、ルーティンの自動増量、プレート計算、1,690種目。ワークアウト記録は無料で無制限です。">
 <meta property="og:image" content="https://bbdyno.github.io/FitBoost-Site/assets/og.png">
 <meta property="og:locale" content="ja_JP">
 <meta name="twitter:card" content="summary_large_image">
@@ -169,10 +169,38 @@
   </div>
 </section>
 
+<!-- 5½. 움직임 평가: 앱 결과 그림을 그대로 쓴다 -->
+<section class="assess">
+  <div class="wrap assess__grid">
+    <div class="assess__head">
+      <p class="label reveal"><span class="label__n">04</span>動作評価<span class="free">無料</span></p>
+      <h2 class="reveal">施設で受ける動作チェックを、スマホひとつで。</h2>
+      <p class="lede reveal">スマホを立ててカメラの前で動くと、可動性・体力・ジャンプ・バー速度・ランニングフォームを測ります。映像は端末の中だけで処理します。</p>
+      <div class="clouds assess__tests reveal"><span>可動性</span><span>ジャンプ</span><span>バー速度</span><span>ランニングフォーム</span></div>
+    </div>
+
+    <figure class="assess__fig reveal">
+      <img src="../assets/assess/shoulder.webp" alt="腕を前に上げる検査の結果図。人の図に関節の点と角度を重ね、左172°、右139°と示します。" width="1132" height="714" loading="lazy">
+      <figcaption>
+        <div class="assess__sides" aria-hidden="true"><span class="is-good">左</span><span class="is-low">右</span></div>
+        <p class="assess__what">腕を前に上げる · 肩の屈曲。胴体の線(点線)と腕の線のあいだの角度です。</p>
+        <ul class="assess__key"><li class="is-good">よく出ている側</li><li class="is-low">気にかけたい側</li></ul>
+      </figcaption>
+    </figure>
+
+    <ol class="assess__steps reveal">
+      <li><h3>測る</h3><p>画面と音声の案内に沿って動くと、関節の角度、ジャンプの高さ、バー速度、ランニングの着地を測ります。前面カメラでも撮れます。</p></li>
+      <li><h3>見る</h3><p>関節の点と角度を図に重ね、どちら側が弱いかを示します。測定誤差、前回からの変化、左右差、研究の基準範囲と出典もあわせて表示します。</p></li>
+      <li><h3>合わせる</h3><p>弱い側をほぐすウォームアップをその日のトレーニングに加えるよう提案し、測り直す時期が来たらお知らせします。</p></li>
+    </ol>
+  </div>
+  <p class="wrap assess__note reveal">検査ごとにわかりやすい名前の下に専門用語も記します。医療の診断の代わりにはならず、痛みがあれば専門家に相談してください。</p>
+</section>
+
 <!-- 6. 원판 계산: 직접 눌러 본다 -->
 <section class="plates">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">04</span>プレート計算</p>
+    <p class="label reveal"><span class="label__n">05</span>プレート計算</p>
     <h2 class="reveal">片側に何を付けるか、すぐわかります。</h2>
     <p class="lede reveal">バーの重量と手持ちのプレートを登録すると、付けるプレートと順番を表示します。推奨重量も実際に作れる重量に合わせます。触って試してみてください。</p>
 
@@ -198,7 +226,7 @@
 <section class="plus dark" id="plus" data-scene="plus">
   <div class="plus__stick">
     <div class="wrap plus__head">
-      <p class="label"><span class="label__n">05</span>PRO+ コーチング</p>
+      <p class="label"><span class="label__n">06</span>PRO+ コーチング</p>
       <h2>計画からその日の重量まで組むコーチング。</h2>
       <p class="lede">PROのすべての機能に加えて、目標と大会日からプログラムを組み、その日のコンディションに合わせて重量とセット数を調整します。</p>
     </div>
@@ -373,12 +401,6 @@
         <div class="clouds" aria-hidden="true"><span>リンク</span><span>QRコード</span><span>ファイル</span></div>
       </article>
 
-      <article class="tile reveal">
-        <h3>動作評価</h3>
-        <p>スマホを立ててカメラで可動性・体力・ジャンプ・バー速度・ランニングフォームを測ります。結果の図には関節の点と角度を重ねてどちら側が弱いかを示し、結果ごとに測定誤差、前回からの変化、左右差、研究の基準範囲と出典を表示し、映像は端末の中だけで処理します。</p>
-        <div class="clouds" aria-hidden="true"><span>可動性</span><span>ジャンプ</span><span>バー速度</span><span>ランニングフォーム</span></div>
-      </article>
-
       <article class="tile tile--lime reveal">
         <h3>推定1RM</h3>
         <div class="big big--rm" aria-hidden="true">1RM</div>
@@ -420,7 +442,7 @@
 <!-- 8. 시계 -->
 <section class="watch dark">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">06</span>ウォッチ</p>
+    <p class="label reveal"><span class="label__n">07</span>ウォッチ</p>
     <h2 class="reveal">セットは手首で終わらせる。</h2>
     <p class="lede reveal">セットを終えて強度を選ぶと休憩タイマーが動き、終わると振動で知らせます。プランクのような時間種目も、ウォッチで秒表示のまま調整できます。</p>
 
@@ -444,7 +466,7 @@
 <!-- 9. 운동 사전 -->
 <section class="lib">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">07</span>種目辞典</p>
+    <p class="label reveal"><span class="label__n">08</span>種目辞典</p>
     <div class="lib__head">
       <div class="lib__num reveal"><span data-count="1690">1,690</span></div>
       <div>
@@ -462,7 +484,7 @@
 <!-- 10. 요금 -->
 <section class="price" id="pricing">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">08</span>料金</p>
+    <p class="label reveal"><span class="label__n">09</span>料金</p>
     <h2 class="reveal">記録は無料で、無制限。</h2>
     <p class="lede reveal">積み重ねた記録が計算の材料なので、記録は制限しません。PROはその記録で、計算をもっと深くします。</p>
 

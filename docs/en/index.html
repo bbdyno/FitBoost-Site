@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>FitBoost — The workout log that picks your next weight</title>
-<meta name="description" content="Log a set, say how hard it was, and FitBoost sizes your next set and tells you when to stop. Recovery map, routine auto progression, plate math and 1,690 exercises. Workout records stay free and unlimited.">
+<meta name="description" content="Log a set, say how hard it was, and FitBoost sizes your next set and tells you when to stop. Recovery map, camera movement assessment, routine auto progression, plate math and 1,690 exercises. Workout records stay free and unlimited.">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../assets/icon-180.png">
@@ -17,7 +17,7 @@
 <link rel="alternate" hreflang="x-default" href="https://bbdyno.github.io/FitBoost-Site/">
 <meta property="og:type" content="website">
 <meta property="og:title" content="FitBoost — The workout log that picks your next weight">
-<meta property="og:description" content="Log a set, say how hard it was, and FitBoost sizes your next set and tells you when to stop. Recovery map, routine auto progression, plate math and 1,690 exercises. Workout records stay free and unlimited.">
+<meta property="og:description" content="Log a set, say how hard it was, and FitBoost sizes your next set and tells you when to stop. Recovery map, camera movement assessment, routine auto progression, plate math and 1,690 exercises. Workout records stay free and unlimited.">
 <meta property="og:image" content="https://bbdyno.github.io/FitBoost-Site/assets/og.png">
 <meta property="og:locale" content="en_US">
 <meta name="twitter:card" content="summary_large_image">
@@ -169,10 +169,38 @@
   </div>
 </section>
 
+<!-- 5½. 움직임 평가: 앱 결과 그림을 그대로 쓴다 -->
+<section class="assess">
+  <div class="wrap assess__grid">
+    <div class="assess__head">
+      <p class="label reveal"><span class="label__n">04</span>Movement assessment<span class="free">Free</span></p>
+      <h2 class="reveal">The movement screen you’d book at a clinic, on your phone.</h2>
+      <p class="lede reveal">Stand your phone up and move in front of the camera to measure mobility, fitness, jumps, bar speed and running form. Video is processed only on your device.</p>
+      <div class="clouds assess__tests reveal"><span>Mobility</span><span>Jumps</span><span>Bar speed</span><span>Running form</span></div>
+    </div>
+
+    <figure class="assess__fig reveal">
+      <img src="../assets/assess/shoulder.webp" alt="Result figure for raising your arm forward. Joint points and angles are drawn over a figure: left 172°, right 139°." width="1132" height="714" loading="lazy">
+      <figcaption>
+        <div class="assess__sides" aria-hidden="true"><span class="is-good">Left</span><span class="is-low">Right</span></div>
+        <p class="assess__what">Raising your arm forward · Shoulder flexion. The angle between the trunk line (dotted) and the arm line.</p>
+        <ul class="assess__key"><li class="is-good">Stronger side</li><li class="is-low">Side to watch</li></ul>
+      </figcaption>
+    </figure>
+
+    <ol class="assess__steps reveal">
+      <li><h3>Measure</h3><p>Follow the on-screen and voice cues to measure joint angles, jump height, bar speed and running landing. The front camera works too.</p></li>
+      <li><h3>See</h3><p>Joint points and angles are drawn on the figure to show which side is weaker, with measurement error, change since last time, left–right difference and research ranges with sources.</p></li>
+      <li><h3>Adjust</h3><p>Warm-up drills for the weaker side are suggested for that day’s workout, and you’re reminded when it’s time to retest.</p></li>
+    </ol>
+  </div>
+  <p class="wrap assess__note reveal">Each test shows a plain name with the technical term underneath. It doesn’t replace a medical diagnosis; if you have pain, see a professional.</p>
+</section>
+
 <!-- 6. 원판 계산: 직접 눌러 본다 -->
 <section class="plates">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">04</span>Plate math</p>
+    <p class="label reveal"><span class="label__n">05</span>Plate math</p>
     <h2 class="reveal">See exactly what goes on each side.</h2>
     <p class="lede reveal">Add your bar and the plates you own to see what to load and in what order. Suggested weights snap to loads you can actually build. Try it.</p>
 
@@ -198,7 +226,7 @@
 <section class="plus dark" id="plus" data-scene="plus">
   <div class="plus__stick">
     <div class="wrap plus__head">
-      <p class="label"><span class="label__n">05</span>PRO+ coaching</p>
+      <p class="label"><span class="label__n">06</span>PRO+ coaching</p>
       <h2>Coaching that plans the block and sets the day.</h2>
       <p class="lede">Everything in PRO, plus a program built around your goal and meet date, with weight and sets adjusted day by day.</p>
     </div>
@@ -373,12 +401,6 @@
         <div class="clouds" aria-hidden="true"><span>Link</span><span>QR code</span><span>File</span></div>
       </article>
 
-      <article class="tile reveal">
-        <h3>Movement assessment</h3>
-        <p>Stand your phone up and use the camera to measure mobility, fitness, jumps, bar speed and running form. The result figure overlays joint points and angles to show which side is weaker, each result shows measurement error, change since last time, left–right difference and research ranges with sources, and video is processed only on your device.</p>
-        <div class="clouds" aria-hidden="true"><span>Mobility</span><span>Jumps</span><span>Bar speed</span><span>Running form</span></div>
-      </article>
-
       <article class="tile tile--lime reveal">
         <h3>Estimated 1RM</h3>
         <div class="big big--rm" aria-hidden="true">1RM</div>
@@ -420,7 +442,7 @@
 <!-- 8. 시계 -->
 <section class="watch dark">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">06</span>Watch</p>
+    <p class="label reveal"><span class="label__n">07</span>Watch</p>
     <h2 class="reveal">Finish the set on your wrist.</h2>
     <p class="lede reveal">Finish a set and pick the effort. The rest timer starts, and a tap on your wrist says when it's time to go. Timed moves like planks show in seconds, and you can adjust them right on the watch.</p>
 
@@ -444,7 +466,7 @@
 <!-- 9. 운동 사전 -->
 <section class="lib">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">07</span>Exercise library</p>
+    <p class="label reveal"><span class="label__n">08</span>Exercise library</p>
     <div class="lib__head">
       <div class="lib__num reveal"><span data-count="1690">1,690</span></div>
       <div>
@@ -462,7 +484,7 @@
 <!-- 10. 요금 -->
 <section class="price" id="pricing">
   <div class="wrap">
-    <p class="label reveal"><span class="label__n">08</span>Pricing</p>
+    <p class="label reveal"><span class="label__n">09</span>Pricing</p>
     <h2 class="reveal">Your records are free. No cap.</h2>
     <p class="lede reveal">Your history is what the math runs on, so logging is never locked. PRO takes that history further.</p>
 
