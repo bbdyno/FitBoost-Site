@@ -89,7 +89,7 @@
     "b": "Jumps",
     "c": "Bar speed",
     "d": "Running form",
-    "alt": "Result figure for raising your arm forward. Joint points and angles are drawn over a figure: left 172°, right 139°.",
+    "alt": "Result figure for raising your arm forward. Joint points and angles are drawn over a faceless grey mannequin: left 172°, right 139°.",
     "left": "Left",
     "right": "Right",
     "what": "Raising your arm forward · Shoulder flexion. The angle between the trunk line (dotted) and the arm line.",
@@ -238,7 +238,7 @@
     },
     "course": {
       "title": "My courses",
-      "body": "Run the same route twice and it becomes a course to race your past self on. Draw one on the map or import GPX or TCX, and share with no server. For courses made from a route you ran, the start and finish areas are hidden at random when you send.",
+      "body": "Courses gather on the running Home, nearest first. Save a run as a course in one tap and send it to a friend right away. Running the same route twice also makes a course to race your past self on, and you can draw one on the map or import GPX or TCX. Scan a friend's course QR code in the app, and share with no server. For courses made from a route you ran, the start and finish areas are hidden at random when you send.",
       "link": "Link",
       "qr": "QR code",
       "file": "File"
@@ -258,7 +258,7 @@
     },
     "share": {
       "title": "Sharing and customizing",
-      "body": "Turn runs and strength workouts into cards sized for Instagram stories and post them straight away. In the editor, 26 ready-made layouts fill in with this record, and you can add word chips, speech bubbles, location pins and photo stickers, pick a font and color for each number, unit and label, and tuck stickers behind the person in your photo. Runs exported as GPX or TCX from other apps come in too, and cards save straight to Photos. Photos are processed only on your device, and routes are drawn with the start and finish hidden.",
+      "body": "Turn runs and strength workouts into cards sized for Instagram stories and post them straight away. Like an Instagram story, drag and type right on a full-screen canvas, and drop stickers on the bin to delete them. 26 ready-made layouts fill in with this record, and you can add word chips, speech bubbles, location pins and photo stickers, pick a font and color for each number, unit and label, and tuck stickers behind the person in your photo. Runs exported as GPX or TCX from other apps come in too, and cards save straight to Photos. Photos are processed only on your device, and routes are drawn with the start and finish hidden.",
       "k1": "Route",
       "k2": "Splits",
       "k3": "On a photo",

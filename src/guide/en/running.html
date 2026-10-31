@@ -6,7 +6,7 @@
 <li>To go back, tap {{> modeStrength}} on the same button.</li>
 </ol>
 <ul>
-<li>{{> tabHome}}: today's run card, this week's distance with bars for the last 8 weeks, shortcuts to {{> courseTitle}}, {{> runZonesTitle}}, and {{> runHomePlan}}, and recent runs.</li>
+<li>{{> tabHome}}: today's run card, the <a href="#courses">{{> courseShelfTitle}}</a> row under it, this week's distance with bars for the last 8 weeks, shortcuts to {{> courseTitle}}, {{> runZonesTitle}}, and {{> runHomePlan}}, and recent runs.</li>
 <li>{{> tabRecord}}: opens on {{> historyRunsOnly}}, and you can switch to {{> historyAllWorkouts}}.</li>
 <li>{{> tabStats}}: only the running sections are shown. Strength stats are in strength mode, through the {{> modeCrossStrengthStats}} row at the bottom.</li>
 <li>{{> tabCoach}}: the whole tab becomes the <a href="#coach">running coach</a>.</li>
@@ -46,11 +46,11 @@
 <li>{{> runSplits}}: pace, heart rate, and grade for each split. Grade-adjusted values per split are PRO.</li>
 <li>{{> runAnalysis}} <span class="pro">PRO</span>: {{> runGap}}, {{> runDecoupling}}, {{> runTrimp}}, {{> runSessionLoad}}, cadence, and terrain.</li>
 <li>{{> runRpeTitle}}: pick 1 to 10, and it goes into session load and fitness and fatigue.</li>
-<li>{{> runSaveCourse}} saves this route as a course, and {{> runExport}} sends a GPX file to another app.</li>
+<li>{{> runSaveCourse}} in the card under the map saves this route as a course, and {{> courseSendToFriend}} in the same card sends it right away. On a course you know, you see how you did against your best. {{> runExport}} sends a GPX file to another app.</li>
 </ul>
 <p>Grade-adjusted pace estimates what your pace would have been on flat ground, and it tends to overstate the benefit of downhills. Heart-rate drift compares efficiency between the first and second halves, and is only calculated for steady runs longer than 20 minutes. If this run makes a good reference result, a {{> runUseBaseline}} button appears. Open past runs again from {{> tabRecord}}.</p>
 
-<p>Tap {{> runShareOpen}} to make a route, splits, photo, or sticker card and post it straight to your Instagram story. See <a href="sharing.html#cards">Choosing a share card</a>.</p>
+<p>Tap {{> shareDecorate}} right under the summary to make or decorate a route, splits, photo, or sticker card and post it straight to your Instagram story. See <a href="sharing.html#cards">Choosing a share card</a>.</p>
 </section>
 
 <section id="import" data-ask="I want to import runs from another app|Import an activity file exported from my watch|Add a run from a TCX file|Can I customize runs from other apps|It says to import course files from Courses" data-keys="import another app other apps watch exported activity activity file gpx tcx file record bring in move load run result share customize same time duplicate">
@@ -59,7 +59,7 @@
 <ol class="steps">
 <li>Export the run as a GPX or TCX file from the other app or your watch app, and keep it on your phone.</li>
 <li>Tap {{> runImportFile}} at the bottom of {{> tabHome}} in running mode and pick the file.</li>
-<li>When the result screen opens, share and customize it with {{> runShareOpen}} just like a run you tracked in the app.</li>
+<li>When the result screen opens, share and customize it with {{> shareDecorate}} just like a run you tracked in the app.</li>
 </ol>
 <p>Only activity files with timestamps come in as runs, and heart rate and cadence are read too when the file has them. If you pick a course file without timestamps, you'll see {{" runImportFailed}} Open course files in <a href="#courses">Making and importing courses</a>. If you import a run that started at the same time again, no new one is made and the existing run opens. Runs that other apps wrote to your health app come in without a file; see <a href="health.html#runs">Runs from your health app</a>.</p>
 </section>
@@ -108,26 +108,26 @@
 <p>Make the weekly running plan from {{> runCoachMakeTitle}} under {{> runCoachWeekTitle}} in the running coach (PRO+). It spreads easy and quality runs so they don't clash with strength days, and moves only the runs, leaving your strength prescriptions as they are.</p>
 </section>
 
-<section id="courses" data-ask="How do I make a course|Import a course from a GPX file|Draw a course on the map|Turn a route I run often into a course|Compare runs on the same route" data-keys="course my courses create make map draw gpx tcx file import same route automatic past self race best my segments segment loop">
+<section id="courses" data-ask="How do I make a course|Save a route I ran as a course|Import a course from a GPX file|Draw a course on the map|Turn a route I run often into a course|Compare runs on the same route|Use my watch on a course run" data-keys="course my courses courses row home create make save save as course result map draw gpx tcx file import same route automatic past self race best received times my segments segment loop filter nearest watch phone measure with">
 <h2>Making and importing courses</h2>
-<p class="lead">Run the same route twice and it becomes a course on its own. You can also make one in {{> tabMenu > courseTitle}} from a past run, by drawing on the map, or from a file.</p>
+<p class="lead">Your courses sit in the {{> courseShelfTitle}} row on the running {{> tabHome}}, nearest to where you last ran first. Save one in a tap from a run result, or make one from a past run, by drawing on the map, or from a file.</p>
 <ol class="steps">
-<li>Open {{> tabMenu > courseTitle}} and tap {{> courseMake}}.</li>
-<li>Pick {{> courseFromRun}}, {{> courseDraw}}, or {{> courseFromFile}}.</li>
-<li>Name it and save, then run it with {{> courseRunThis}} on the course screen.</li>
+<li>On the result screen after a run, tap {{> runSaveCourse}} under the map and it becomes a course right away. It takes the run's name, which you can change on the course screen.</li>
+<li>Otherwise, use the card at the end of the {{> courseShelfTitle}} row or {{> courseMake}} in {{> tabMenu > courseTitle}}, then pick {{> courseFromRun}}, {{> courseDraw}}, or {{> courseFromFile}}.</li>
+<li>Tap {{> courseRunThis}} at the top of the course screen to open {{> runTitleCourse}}. Choose {{> runDevicePhone}} or {{> runDeviceWatch}} under {{> runDeviceTitle}} and run.</li>
 </ol>
-<p>{{> courseDraw}} joins the points you tap on the map with straight lines. In builds where maps aren't available, this option is hidden. Files can be GPX or TCX. To bring in a whole run you recorded in another app, use <a href="#import">Importing runs from other apps</a>. When you run a course, you race your past self, and {{> courseBestLabel}} and your runs build up on the course screen. Marking part of a course as {{> courseSegments}} to see records for just that stretch is PRO.</p>
+<p>Running the same route twice also makes a course on its own. In {{> courseTitle}}, filter with {{> courseFilterAll}}, {{> courseOriginReceived}}, {{> courseLoop}}, and distance chips. Nearest-first uses where your latest run started, without asking for location permission. The {{> courseVersus}} card on the course screen lists {{> courseBestLabel}}, {{> courseVersusReceived}}, and {{> courseVersusLatest}} times fastest first, and running the course races you against them. With a watch, the course line shows on the watch and it vibrates when you go off course. {{> courseDraw}} joins the points you tap on the map with straight lines. In builds where maps aren't available, this option is hidden. Files can be GPX or TCX. To bring in a whole run you recorded in another app, use <a href="#import">Importing runs from other apps</a>. Marking part of a course as {{> courseSegments}} to see records for just that stretch is PRO.</p>
 </section>
 
-<section id="share-course" data-ask="I want to send a course to someone|How do I open a course link I received|Send a course as a QR code|Does sharing a course send my record too" data-keys="send share link qr code file receive received course messenger server my record include paste copied link">
+<section id="share-course" data-ask="I want to send a course to someone|Send a course to someone else|How do I open a course link I received|Scan a course QR code on another phone|Send a course as a QR code|Does sharing a course send my record too" data-keys="send share link qr code scan camera file receive receive a course received course messenger server my record include paste copied link preview hidden">
 <h2>Sending and receiving courses</h2>
-<p class="lead">From {{> courseSendTitle}} on the course screen, send it as a {{> courseShareLink}}, {{> courseShareQr}}, or {{> courseShareFile}}. Nothing goes through a server.</p>
+<p class="lead">Tap {{> courseSendToFriend}} at the top of the course screen to open {{> courseSendTitle}}. You see the shape that will be sent first, then send it with {{> courseShareLinkSend}}, {{> courseShareQr}}, or {{> courseShareGpx}}. Nothing goes through a server.</p>
 <ol class="steps">
-<li>In {{> tabMenu > courseTitle}}, open the course to send.</li>
-<li>In {{> courseSendTitle}}, pick how to send it, and turn on {{> courseIncludeRecord}} if you want.</li>
-<li>The other person taps the link or scans the QR code, then saves it in the {{> courseReceivedTitle}} window.</li>
+<li>Open the course and tap {{> courseSendToFriend}}. A course you just saved on a run result can be sent right there with {{> courseSendToFriend}}.</li>
+<li>Check the faded start and finish in the preview, turn on {{> courseIncludeRecord}} if you want, and pick how to send it.</li>
+<li>The other person taps the link, or scans the QR code with {{> courseScanQr}} in {{> courseReceive}} from the {{> courseShelfTitle}} row or {{> courseTitle}}, then saves it in the {{> courseReceivedTitle}} window.</li>
 </ol>
-<p>Opened in a phone browser, the link shows the course drawing and distance with a button to open it in the app. You can also open a copied link with {{> coursePasteLink}} under ⋯ at the top right of {{> courseTitle}}. Courses made from a route you ran have the start and finish areas hidden at random and your privacy zones removed, whether you send a link, QR code, or file. Courses you drew go as drawn. Times and heart rate aren't included. An included record carries only the time for each stretch, with no date or clock time, counted again from the start of the trimmed line. For long courses you'll see {{" courseTooLongForLink}}, so send a file.</p>
+<p>{{> courseReceive}} also has {{> coursePasteLink}} and {{> courseImportFile}}. The camera turns on only when you tap {{> courseScanQr}}. Opened in a phone browser, the link shows the course drawing and distance with a button to open it in the app. Courses made from a route you ran have the start and finish areas hidden at random and your privacy zones removed, whether you send a link, QR code, or file. To hide more places such as home, use {{> courseHideMore}} in the window. Courses you drew go as drawn. Times and heart rate aren't included. An included record carries only the time for each stretch, with no date or clock time, counted again from the start of the trimmed line. For long courses you'll see {{" courseTooLongForLink}}, so send a file.</p>
 </section>
 
 <section id="privacy-zones" data-ask="I don't want to reveal where I live|Hide my starting point|How do I set privacy zones|Hide my location when sharing" data-keys="hide privacy zone zones location home work start finish privacy random radius share reveal">

@@ -1,32 +1,33 @@
-<section id="cards" data-ask="I want to share my run|Post a run to my Instagram story|What share cards are there|Make a card for a strength workout" data-keys="share sharing card share card instagram story feed route splits photo sticker transparent run strength post">
+<section id="cards" data-ask="I want to share my run|Post a run to my Instagram story|What share cards are there|Make a card for a strength workout" data-keys="share sharing decorate card share card instagram story feed route splits photo sticker transparent run strength post">
 <h2>Choosing a share card</h2>
-<p class="lead">Tap {{> runShareOpen}} on a run result, pick a {{> runShareKindRoute}}, {{> runShareKindSplits}}, {{> runShareKindPhoto}}, or {{> runShareKindSticker}} card, and make it in story or feed size.</p>
+<p class="lead">Tap {{> shareDecorate}} right under a run result or workout summary to open the share screen. Pick a {{> runShareKindRoute}}, {{> runShareKindSplits}}, {{> runShareKindPhoto}}, or {{> runShareKindSticker}} card from the chips at the top and make it in story or feed size.</p>
 <ol class="steps">
-<li>On the run result screen, tap {{> runShareOpen}}. For past runs, open them from {{> tabRecord}}.</li>
-<li>Pick a card from the chips at the top, then choose {{> shareFormatStory}} or {{> shareFormatFeed}} and a background color.</li>
+<li>On the result screen after a run, or the summary screen after a strength workout, tap {{> shareDecorate}}. Past records opened from {{> tabRecord}} have the same button.</li>
+<li>Pick a card from the chips at the top, then choose {{> shareFormatStory}} or {{> shareFormatFeed}} and a background color. {{> shareCustom}}, at the front of the chips, opens the <a href="#studio">editor</a>.</li>
 <li>Turn items such as {{> runShareShowRoute}}, {{> runShareShowHeartRate}}, and {{> runShareShowAscent}} on or off.</li>
 <li>Tap {{> shareToInstagramStory}} to open your Instagram story right away. To send it elsewhere or save it to Photos, use {{> shareOtherApps}}.</li>
 </ol>
-<p>The {{> runShareKindSticker}} card has a transparent background, so it goes into your story as a sticker you can move. The route is drawn only from the line with the start and finish areas and your privacy zones cut out, and cards carry no base map, coordinates, or clock time (the date is included). For strength workouts, make cards the same way from {{> shareWorkoutSummary}} on a record opened in {{> tabRecord}}, or from {{> shareCardsTooltip}} in {{> tabStats}}.</p>
+<p>The {{> runShareKindSticker}} card has a transparent background, so it goes into your story as a sticker you can move. The route is drawn only from the line with the start and finish areas and your privacy zones cut out, and cards carry no base map, coordinates, or clock time (the date is included). For strength workouts, make cards the same way from {{> shareDecorate}} on the summary screen, {{> shareWorkoutSummary}} at the top, or {{> shareCardsTooltip}} in {{> tabStats}}.</p>
 </section>
 
-<section id="studio" data-ask="I want to decorate my share card|How to customize a share card|Where do I open the editor|Move and resize stickers|Make a square card|Edit on a wide screen in landscape" data-keys="customize decorate editor studio magic wand sticker drag move resize rotate two fingers canvas square story feed transparent export panel last opened wide screen landscape foldable side by side">
+<section id="studio" data-ask="I want to decorate my share card|How to customize a share card|Where do I open the editor|Move and resize stickers|Delete a sticker with the bin|Make a square card|Edit on a wide screen in landscape" data-keys="customize decorate editor studio custom full screen story sticker drag move resize rotate two fingers bin trash delete tap again color text type right tools canvas square story feed transparent export wide screen landscape foldable side by side">
 <h2>Opening the editor</h2>
-<p class="lead">Tap the magic wand button ({{> studioOpen}}) at the top of the run or strength share screen to open the editor. The bar at the bottom starts with {{> studioPanelTemplates}}.</p>
+<p class="lead">Tap {{> shareCustom}} at the front of the chips on the share screen to open the full-screen editor. Like an Instagram story, you drag, type, and delete right on the canvas.</p>
 <ol class="steps">
-<li>Tap the magic wand button at the top right of the share screen.</li>
-<li>Open {{> studioPanelTemplates}}, {{> studioPanelStickers}}, {{> studioPanelFonts}}, {{> studioPanelColors}}, {{> studioPanelPhoto}}, or {{> studioPanelLayers}} from the bar at the bottom.</li>
-<li>Drag stickers with your finger to move them, and use two fingers to resize or rotate them.</li>
-<li>Under {{> studioCanvasSize}}, choose {{> shareFormatStory}}, {{> shareFormatFeed}}, or {{> studioSquare}}, then save to Photos or post to your story.</li>
+<li>Open the share screen with {{> shareDecorate}} and tap {{> shareCustom}} at the front of the chips.</li>
+<li>Pick {{> studioText}}, {{> studioPanelStickers}}, {{> studioPanelTemplates}}, {{> studioPanelPhoto}}, or {{> studioPanelLayers}} from the tools on the right. {{> studioText}} lets you type straight on the canvas.</li>
+<li>Drag stickers with your finger to move them, and use two fingers to resize or rotate them. While you drag, drop a sticker on the bin that appears at the bottom to delete it.</li>
+<li>Tap a selected sticker again to change its color. Tapping a selected text sticker again edits the text.</li>
+<li>When you're done, save to Photos from the bottom row or send it with {{> shareToInstagramStory}} or {{> shareOtherApps}}.</li>
 </ol>
-<p>The first time you open it, a tip shows once explaining how to pick a layout, drag, and press and hold. The panel you opened last opens again next time. On the inner screen of a foldable iPhone or an iPad held sideways, the canvas sits on the left and the tools on the right.</p>
+<p>When a sticker is selected, a row of colors and the {{> studioPanelFonts}}, {{> studioShadow}}, {{> actionDelete}}, and ⋯ buttons appear at the bottom. A sticker dropped on the bin returns to where it was with undo at the top (PRO). With PRO, tapping a selected route again cycles solid, pace, and grade coloring. Choose the canvas {{> studioCanvasSize}} ({{> shareFormatStory}}, {{> shareFormatFeed}}, or {{> studioSquare}}) in {{> studioPanelLayers}}. The first time you open it, a tip shows once explaining dragging, the bin, and the tools on the right. On the inner screen of a foldable iPhone or an iPad held sideways, the canvas sits on the left and the tool panel on the right.</p>
 </section>
 
 <section id="presets" data-ask="I want to use a ready-made layout|Finish a share card in one tap|Does changing the layout change my photo|What layouts are there|Why do I see a different number of layouts" data-keys="layout layouts ready-made preset presets design arrangement one tap finish preview pick run strength 17 9">
 <h2>Ready-made layouts</h2>
-<p class="lead">Tap a ready-made layout in {{> studioPanelTemplates}}, the first panel of the editor, and an arrangement filled with this record's values goes in right away. It's free.</p>
+<p class="lead">Tap a ready-made layout in {{> studioPanelTemplates}}, in the tools on the right of the editor, and an arrangement filled with this record's values goes in right away. It's free.</p>
 <ol class="steps">
-<li>Open the editor and open the {{> studioPanelTemplates}} panel.</li>
+<li>Open the editor and tap {{> studioPanelTemplates}} in the tools on the right.</li>
 <li>In the {{" studioPresets}} row, look over the previews filled with this record's values and tap one.</li>
 <li>Drag stickers to fine-tune it or add more. You can tap another layout to change just the arrangement.</li>
 </ol>
@@ -35,7 +36,7 @@
 
 <section id="stickers" data-ask="What stickers are there|Add a speech bubble|Add a location pin|Put several photos in|A sticker for this month's distance|Add word stickers" data-keys="sticker stickers kinds types record metric cadence start time week month distance calendar streak text add text speech bubble tail location pin place word words chip chips decoration decorations shape outline photo sticker circle photo grid collage several photos">
 <h2>Kinds of stickers</h2>
-<p class="lead">The {{> studioPanelStickers}} panel is split into {{> studioSectionRecord}}, {{> studioSectionText}}, {{> studioSectionWords}}, {{> studioDecoration}}, and {{> studioSectionPhoto}} groups.</p>
+<p class="lead">The {{> studioPanelStickers}} panel is split into {{> studioSectionRecord}}, {{> studioSectionText}}, {{> studioSectionWords}}, {{> studioDecoration}}, and {{> studioSectionPhoto}} groups. Each item shows a preview drawn from this record, so you pick it as it will look.</p>
 <ul>
 <li>{{> studioSectionRecord}}: for runs, {{> studioMetricRunSummary}}, {{> studioMetricElevation}}, and {{> studioRoute}}, plus cadence, {{> studioMetricStartTime}}, {{> studioMetricWeekDistance}}, {{> studioMetricMonthDistance}}, {{> studioMetricMonth}}, and {{> studioMetricRunStreak}}. For strength, {{> studioMetricLiftSummary}}, {{> studioMetricLiftRecord}}, {{> studioMetricBigThree}}, {{> studioMetricVolumeVsLast}}, {{> studioMetricSetChips}}, {{> studioMetricMuscles}}, {{> studioMetricDate}}, {{> studioMetricStartTime}}, and more.</li>
 <li>{{> studioSectionText}}: {{> studioAddText}}, {{> studioBubble}}, and {{> studioPin}}. After selecting a bubble, use the {{> studioBubbleTail}} button to turn its tail to one of four directions.</li>
@@ -73,7 +74,7 @@
 
 <section id="fonts-colors" data-ask="Change the font on a share card|Use a different font just for the numbers|Pick colors from my photo|Pick a color with the eyedropper|Make the photo black and white|Color the route by pace" data-keys="font fonts number unit label size letter spacing tabular color colour eyedropper hex code contrast shadow grayscale black white blur brightness warmth bottom shade adjust route color pace grade layers undo safe area">
 <h2>Fonts, colors, and photos</h2>
-<p class="lead">Even within one sticker, pick a font and color separately for {{> studioPartValue}}, {{> studioPartUnit}}, and {{> studioPartLabel}}. Photos can be adjusted from grayscale and blur to brightness and contrast.</p>
+<p class="lead">Even within one sticker, pick a font and color separately for {{> studioPartValue}}, {{> studioPartUnit}}, and {{> studioPartLabel}}. Photos can be adjusted from grayscale and blur to brightness and contrast. With a sticker selected, change them right away from {{> studioPanelFonts}} and the color dots in the row at the bottom.</p>
 <ul>
 <li>{{> studioPanelFonts}}: a font per part, {{> studioFontSize}}, {{> studioLetterSpacing}}, and {{> studioTabular}}. If a font lacks some characters, the app tells you {{" studioFontFallback}}.</li>
 <li>{{> studioPanelColors}}: three basic colors, colors picked from your photo, {{> studioEyedropper}}, and {{> studioHex}}. It shows the contrast so you know the text is readable, and suggests {{> studioAddShadow}}.</li>

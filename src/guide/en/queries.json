@@ -140,5 +140,8 @@
  "is assessment video sent to a server": "assessment#privacy",
  "predict my half marathon time": "tools#run-calc",
  "Can I use the front camera": "assessment#measure",
- "What does orange mean in the result figure": "assessment#result"
+ "What does orange mean in the result figure": "assessment#result",
+ "delete sticker bin": "sharing#studio",
+ "scan course qr code": "running#share-course",
+ "save run as course": "running#courses"
 }

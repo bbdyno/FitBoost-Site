@@ -6,7 +6,7 @@
 <li>근력으로 돌아가려면 같은 버튼의 {{> modeStrength}} 칸을 누릅니다.</li>
 </ol>
 <ul>
-<li>{{> tabHome}}: 오늘 달리기 카드, 이번 주 달린 거리와 지난 8주 막대, {{> courseTitle}}·{{> runZonesTitle}}·{{> runHomePlan}} 바로 가기, 최근 달리기.</li>
+<li>{{> tabHome}}: 오늘 달리기 카드, 그 아래 <a href="#courses">{{> courseShelfTitle}}</a> 칸, 이번 주 달린 거리와 지난 8주 막대, {{> courseTitle}}·{{> runZonesTitle}}·{{> runHomePlan}} 바로 가기, 최근 달리기.</li>
 <li>{{> tabRecord}}: {{> historyRunsOnly}} 보기로 열리고, {{> historyAllWorkouts}}으로 바꿀 수 있습니다.</li>
 <li>{{> tabStats}}: 달리기 칸만 놓입니다. 근력 통계는 맨 아래 {{> modeCrossStrengthStats}} 줄로 근력 모드에서 봅니다.</li>
 <li>{{> tabCoach}}: 탭 전체가 <a href="#coach">러닝 코치</a>가 됩니다.</li>
@@ -46,11 +46,11 @@
 <li>{{> runSplits}}: 구간마다 페이스·심박·경사. 구간의 경사 보정 값은 PRO입니다.</li>
 <li>{{> runAnalysis}} <span class="pro">PRO</span>: {{> runGap}}, {{> runDecoupling}}, {{> runTrimp}}, {{> runSessionLoad}}, 케이던스, 지형.</li>
 <li>{{> runRpeTitle}}: 1~10으로 고르면 운동 부하와 체력·피로 계산에 들어갑니다.</li>
-<li>{{> runSaveCourse}}로 이 길을 코스로 저장하고, {{> runExport}}로 위치 교환 파일(GPX)을 다른 앱에 보냅니다.</li>
+<li>지도 아래 칸의 {{> runSaveCourse}}로 이 길을 코스로 저장하고 같은 칸의 {{> courseSendToFriend}}로 바로 보냅니다. 아는 코스를 달렸으면 내 최고와의 차이가 뜹니다. {{> runExport}}로 위치 교환 파일(GPX)을 다른 앱에 보냅니다.</li>
 </ul>
 <p>경사 보정 페이스는 평지였다면 얼마였을지 어림한 값이고, 내리막 이득을 크게 잡는 한계가 있습니다. 심박 흐름은 앞 절반과 뒤 절반의 효율을 비교하며, 강도가 일정한 20분 넘는 달리기에서만 계산합니다. 이번 기록이 기준 기록으로 쓸 만하면 {{> runUseBaseline}} 버튼이 뜹니다. 지난 달리기는 {{> tabRecord}}에서 눌러 다시 엽니다.</p>
 
-<p>{{> runShareOpen}}을 누르면 경로·구간·사진 위에·스티커 카드를 만들어 인스타 스토리에 바로 올립니다. <a href="sharing.html#cards">공유 카드 고르기</a>를 보세요.</p>
+<p>요약 바로 아래 {{> shareDecorate}}를 누르면 경로·구간·사진 위에·스티커 카드를 만들거나 꾸며 인스타 스토리에 바로 올립니다. <a href="sharing.html#cards">공유 카드 고르기</a>를 보세요.</p>
 </section>
 
 <section id="import" data-ask="다른 앱 달리기 기록을 가져오고 싶어요|시계에서 내보낸 활동 파일 가져오기|TCX 파일로 달리기 기록 넣기|다른 앱에서 달린 것도 꾸밀 수 있나요|코스 파일은 코스에서 가져오라고 떠요" data-keys="가져오기 다른앱 다른 앱 시계 내보낸 활동 활동파일 gpx tcx 파일 기록 옮기기 불러오기 달리기기록 결과 공유 꾸미기 같은시각 중복">
@@ -59,7 +59,7 @@
 <ol class="steps">
 <li>다른 앱이나 시계 앱에서 달리기를 GPX나 TCX 파일로 내보내 휴대폰에 둡니다.</li>
 <li>러닝 모드 {{> tabHome}} 맨 아래의 {{> runImportFile}}을 누르고 파일을 고릅니다.</li>
-<li>결과 화면이 열리면 앱에서 잰 달리기처럼 {{> runShareOpen}}으로 공유하고 꾸밉니다.</li>
+<li>결과 화면이 열리면 앱에서 잰 달리기처럼 {{> shareDecorate}}로 공유하고 꾸밉니다.</li>
 </ol>
 <p>시각이 든 활동 파일만 달리기로 가져오고, 파일에 심박·케이던스가 있으면 함께 읽습니다. 시각이 없는 코스 파일을 고르면 {{" runImportFailed}} 안내가 뜹니다. 코스 파일은 <a href="#courses">내 코스 만들기와 가져오기</a>에서 엽니다. 같은 시각에 시작한 기록을 다시 가져오면 새로 만들지 않고 이미 있는 기록을 엽니다. 다른 앱이 건강 앱에 쓴 달리기는 파일 없이 <a href="health.html#runs">건강 앱으로 들어온 달리기</a>로 가져옵니다.</p>
 </section>
@@ -108,26 +108,26 @@
 <p>주간 달리기 계획은 러닝 코치의 {{> runCoachWeekTitle}}에서 {{> runCoachMakeTitle}}로 짭니다(PRO+). 근력 날과 겹치지 않게 쉬운·품질 달리기를 나누고, 근력 처방은 그대로 둔 채 달리기 배치만 움직입니다.</p>
 </section>
 
-<section id="courses" data-ask="코스는 어떻게 만드나요|GPX 파일로 코스 가져오기|지도에 코스 그리기|자주 달리는 길을 코스로 만들기|같은 길 기록 비교하기" data-keys="코스 내코스 만들기 지도 그리기 gpx tcx 파일 가져오기 같은길 자동 지난나 겨루기 최고기록 내구간 구간기록 순환">
+<section id="courses" data-ask="코스는 어떻게 만드나요|달린 길을 코스로 저장하기|GPX 파일로 코스 가져오기|지도에 코스 그리기|자주 달리는 길을 코스로 만들기|같은 길 기록 비교하기|코스로 달릴 때 시계 쓰기" data-keys="코스 내코스 코스칸 홈 만들기 저장 코스로저장 결과 지도 그리기 gpx tcx 파일 가져오기 같은길 자동 지난나 겨루기 최고기록 받은기록 내구간 구간기록 순환 거르기 가까운순 시계 휴대폰 재는기기">
 <h2>내 코스 만들기와 가져오기</h2>
-<p class="lead">같은 길을 두 번 달리면 저절로 코스가 됩니다. {{> tabMenu > courseTitle}}에서 지난 달리기, 지도 그리기, 파일로도 만듭니다.</p>
+<p class="lead">러닝 {{> tabHome}}의 {{> courseShelfTitle}} 칸에 내 코스가 최근 달린 곳에서 가까운 순으로 놓입니다. 달리기 결과에서 한 번에 저장하고, 지난 달리기·지도 그리기·파일로도 만듭니다.</p>
 <ol class="steps">
-<li>{{> tabMenu > courseTitle}}을 열고 {{> courseMake}}를 누릅니다.</li>
-<li>{{> courseFromRun}}, {{> courseDraw}}, {{> courseFromFile}} 가운데 하나를 고릅니다.</li>
-<li>이름을 붙여 저장한 뒤 코스 화면의 {{> courseRunThis}}로 달립니다.</li>
+<li>달리기를 끝낸 결과 화면 지도 아래에서 {{> runSaveCourse}}을 누르면 바로 코스가 됩니다. 이름은 달리기 이름으로 붙고 코스 화면에서 바꿉니다.</li>
+<li>다른 방법은 {{> courseShelfTitle}} 칸 끝 카드나 {{> tabMenu > courseTitle}}의 {{> courseMake}}에서 {{> courseFromRun}}, {{> courseDraw}}, {{> courseFromFile}} 가운데 하나를 고릅니다.</li>
+<li>코스 화면 첫머리의 {{> courseRunThis}}를 누르면 {{> runTitleCourse}} 화면이 열립니다. {{> runDeviceTitle}}에서 {{> runDevicePhone}}·{{> runDeviceWatch}}를 고르고 달립니다.</li>
 </ol>
-<p>{{> courseDraw}}는 지도를 눌러 찍은 점을 직선으로 잇습니다. 지도를 쓸 수 없는 판에서는 이 칸이 숨겨집니다. 파일은 위치 교환 파일(GPX)과 TCX를 엽니다. 다른 앱에서 달린 기록을 통째로 가져오려면 <a href="#import">다른 앱 달리기 가져오기</a>를 씁니다. 코스로 달리면 지난 나와 겨루고, 코스 화면에 {{> courseBestLabel}}와 달린 기록이 쌓입니다. 코스 일부를 {{> courseSegments}}으로 정해 그 구간 기록만 따로 보는 것은 PRO입니다.</p>
+<p>같은 길을 두 번 달려도 저절로 코스가 됩니다. {{> courseTitle}}에서는 {{> courseFilterAll}}·{{> courseOriginReceived}}·{{> courseLoop}}·거리 칩으로 거릅니다. 가까운 순은 위치 권한을 따로 쓰지 않고 가장 최근 달리기를 시작한 곳을 기준으로 삼습니다. 코스 화면의 {{> courseVersus}} 칸은 {{> courseBestLabel}}·{{> courseVersusReceived}}·{{> courseVersusLatest}} 기록을 빠른 순으로 보여 주고, 코스로 달리면 그 기록과 겨룹니다. 시계를 고르면 시계에 코스 선이 뜨고 벗어나면 진동합니다. {{> courseDraw}}는 지도를 눌러 찍은 점을 직선으로 잇습니다. 지도를 쓸 수 없는 판에서는 이 칸이 숨겨집니다. 파일은 위치 교환 파일(GPX)과 TCX를 엽니다. 다른 앱에서 달린 기록을 통째로 가져오려면 <a href="#import">다른 앱 달리기 가져오기</a>를 씁니다. 코스 일부를 {{> courseSegments}}으로 정해 그 구간 기록만 따로 보는 것은 PRO입니다.</p>
 </section>
 
-<section id="share-course" data-ask="코스를 다른 사람에게 보내고 싶어요|받은 코스 링크 여는 법|정보무늬로 코스 보내기|코스 공유하면 내 기록도 가나요" data-keys="보내기 공유 링크 정보무늬 qr 큐알 파일 받기 받은코스 메신저 서버 내기록 함께 붙여넣기 복사한링크">
+<section id="share-course" data-ask="코스를 다른 사람에게 보내고 싶어요|친구에게 코스 보내기|받은 코스 링크 여는 법|친구 휴대폰 정보무늬 읽기|정보무늬로 코스 보내기|코스 공유하면 내 기록도 가나요" data-keys="보내기 친구에게보내기 공유 링크 정보무늬 qr 큐알 읽기 스캔 카메라 파일 받기 코스받기 받은코스 메신저 서버 내기록 함께 붙여넣기 복사한링크 미리보기 가린모양">
 <h2>코스 보내고 받기</h2>
-<p class="lead">코스 화면의 {{> courseSendTitle}}에서 {{> courseShareLink}}, {{> courseShareQr}}, {{> courseShareFile}} 가운데 하나로 보냅니다. 서버를 거치지 않습니다.</p>
+<p class="lead">코스 화면 첫머리의 {{> courseSendToFriend}}를 누르면 {{> courseSendTitle}} 창이 열립니다. 보낼 모양을 먼저 보고 {{> courseShareLinkSend}}, {{> courseShareQr}}, {{> courseShareGpx}} 가운데 하나로 보냅니다. 서버를 거치지 않습니다.</p>
 <ol class="steps">
-<li>{{> tabMenu > courseTitle}}에서 보낼 코스를 엽니다.</li>
-<li>{{> courseSendTitle}}에서 보낼 방법을 고르고, 원하면 {{> courseIncludeRecord}}를 켭니다.</li>
-<li>받은 사람은 링크를 누르거나 정보무늬를 읽고, 뜨는 {{> courseReceivedTitle}} 창에서 저장합니다.</li>
+<li>보낼 코스를 열고 {{> courseSendToFriend}}를 누릅니다. 달리기 결과 화면에서 막 저장한 코스는 그 자리의 {{> courseSendToFriend}}로 바로 보냅니다.</li>
+<li>미리 보기에서 옅게 빠진 출발·도착 부분을 확인하고, 원하면 {{> courseIncludeRecord}}를 켠 뒤 보낼 방법을 고릅니다.</li>
+<li>받는 사람은 링크를 누르거나, {{> courseShelfTitle}} 칸이나 {{> courseTitle}}의 {{> courseReceive}}에서 {{> courseScanQr}}로 정보무늬를 읽고, 뜨는 {{> courseReceivedTitle}} 창에서 저장합니다.</li>
 </ol>
-<p>링크를 휴대폰 브라우저에서 열면 코스 그림과 거리가 보이고 앱으로 여는 버튼이 있습니다. 복사한 링크는 {{> courseTitle}} 오른쪽 위 ⋯의 {{> coursePasteLink}}로도 엽니다. 달린 길에서 만든 코스는 링크·정보무늬·파일 어느 쪽이든 출발·도착 근처를 무작위로 가리고 가리는 곳을 뺀 뒤 보냅니다. 직접 그린 코스는 그린 그대로 갑니다. 시각·심박은 넣지 않습니다. 함께 보내는 기록은 구간별 걸린 시간만 날짜·시각 없이 담기며, 가린 뒤 남은 선의 출발부터 다시 셉니다. 긴 코스는 {{" courseTooLongForLink}}라고 뜨니 파일로 보냅니다.</p>
+<p>{{> courseReceive}}에서는 {{> coursePasteLink}}와 {{> courseImportFile}}로도 받습니다. 카메라는 {{> courseScanQr}}를 누를 때만 켭니다. 링크를 휴대폰 브라우저에서 열면 코스 그림과 거리가 보이고 앱으로 여는 버튼이 있습니다. 달린 길에서 만든 코스는 링크·정보무늬·파일 어느 쪽이든 출발·도착 근처를 무작위로 가리고 가리는 곳을 뺀 뒤 보냅니다. 집 같은 곳을 더 가리려면 창 안의 {{> courseHideMore}}로 정합니다. 직접 그린 코스는 그린 그대로 갑니다. 시각·심박은 넣지 않습니다. 함께 보내는 기록은 구간별 걸린 시간만 날짜·시각 없이 담기며, 가린 뒤 남은 선의 출발부터 다시 셉니다. 긴 코스는 {{" courseTooLongForLink}}라고 뜨니 파일로 보냅니다.</p>
 </section>
 
 <section id="privacy-zones" data-ask="집 위치가 드러나지 않게 하고 싶어요|출발점을 가리고 싶어요|가리는 곳은 어떻게 정하나요|공유할 때 위치 숨기기" data-keys="가리기 가리는곳 위치 숨기기 집 직장 출발 도착 개인정보 프라이버시 무작위 반지름 공유 노출">

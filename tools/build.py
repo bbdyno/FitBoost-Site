@@ -37,7 +37,7 @@ LANG_NAMES = {
     "zh-hans": "简体中文",
     "zh-hant": "繁體中文",
 }
-PAGES = ["privacy", "terms", "support"]
+PAGES = ["privacy", "terms", "support", "location-terms"]
 
 APP_STORE = "https://apps.apple.com/app/apple-store/id6805938033?pt=118731534&ct={ct}&mt=8"
 PLAY = (

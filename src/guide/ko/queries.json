@@ -147,5 +147,8 @@
  "평가 영상이 서버로 가나요": "assessment#privacy",
  "하프 마라톤 기록 예측": "tools#run-calc",
  "앞 카메라로 찍을 수 있나요": "assessment#measure",
- "평가 결과 그림의 주황색은 뭔가요": "assessment#result"
+ "평가 결과 그림의 주황색은 뭔가요": "assessment#result",
+ "스티커 휴지통": "sharing#studio",
+ "코스 정보무늬 읽기": "running#share-course",
+ "달린 길 코스로 저장": "running#courses"
 }
