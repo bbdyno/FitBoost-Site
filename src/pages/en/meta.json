@@ -10,5 +10,9 @@
   "support": {
     "title": "Support",
     "description": "Answers to common FitBoost questions and how to contact us."
+  },
+  "location-terms": {
+    "title": "Location-Based Service Terms",
+    "description": "Location-Based Service Terms"
   }
 }

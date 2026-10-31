@@ -139,5 +139,8 @@
  "評価の動画はサーバーに送られますか": "assessment#privacy",
  "ハーフマラソンのタイム予測": "tools#run-calc",
  "インカメラで撮れますか": "assessment#measure",
- "結果の図のオレンジは何ですか": "assessment#result"
+ "結果の図のオレンジは何ですか": "assessment#result",
+ "ステッカーをゴミ箱で消す": "sharing#studio",
+ "コースのQRコードを読み取る": "running#share-course",
+ "走った道をコースとして保存": "running#courses"
 }

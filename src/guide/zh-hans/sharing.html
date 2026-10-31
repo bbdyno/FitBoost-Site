@@ -1,32 +1,33 @@
-<section id="cards" data-ask="想分享跑步记录|把跑步发到 Instagram 快拍|有哪些分享卡片|制作力量训练记录卡片" data-keys="分享 记录分享 卡片 分享卡片 instagram 快拍 帖子 路线 分段 照片 贴纸 透明 跑步 力量 发布">
+<section id="cards" data-ask="想分享跑步记录|把跑步发到 Instagram 快拍|有哪些分享卡片|制作力量训练记录卡片" data-keys="分享 记录分享 装饰并分享记录 卡片 分享卡片 instagram 快拍 动态 路线 分段 照片 贴纸 透明 跑步 力量 发布">
 <h2>选择分享卡片</h2>
-<p class="lead">在跑步结果中点 {{> runShareOpen}}，从 {{> runShareKindRoute}}、{{> runShareKindSplits}}、{{> runShareKindPhoto}}、{{> runShareKindSticker}} 卡片中选一种，做成快拍或帖子尺寸。</p>
+<p class="lead">在跑步结果或训练总结正下方点 {{> shareDecorate}}，就会打开分享页面。在上方的标签栏中选择 {{> runShareKindRoute}}、{{> runShareKindSplits}}、{{> runShareKindPhoto}} 或 {{> runShareKindSticker}} 卡片，做成快拍或动态尺寸。</p>
 <ol class="steps">
-<li>在跑步结果页面点 {{> runShareOpen}}。过去的跑步可在 {{> tabRecord}} 中打开。</li>
-<li>在上方的标签行选择卡片，再选择 {{> shareFormatStory}} 或 {{> shareFormatFeed}} 尺寸和背景色。</li>
-<li>打开或关闭 {{> runShareShowRoute}}、{{> runShareShowHeartRate}}、{{> runShareShowAscent}} 等项目。</li>
+<li>在跑步结束后的结果页面或力量训练结束后的总结页面点 {{> shareDecorate}}。在 {{> tabRecord}} 中打开过去的记录也有同样的按钮。</li>
+<li>在上方的标签栏中选择卡片，再选择 {{> shareFormatStory}}、{{> shareFormatFeed}} 尺寸和背景色。标签栏最前面的 {{> shareCustom}} 会打开<a href="#studio">装饰</a>。</li>
+<li>打开或关闭 {{> runShareShowRoute}}、{{> runShareShowHeartRate}}、{{> runShareShowAscent}} 等要放入的项目。</li>
 <li>点 {{> shareToInstagramStory}} 会直接打开 Instagram 快拍。要发到别处或保存到相册，请用 {{> shareOtherApps}}。</li>
 </ol>
-<p>{{> runShareKindSticker}} 卡片背景透明，会作为可移动的贴纸放进快拍。路线只按截掉起点和终点附近及隐私区域后的线绘制，卡片中不含底图、坐标和时刻（含日期）。力量训练可在 {{> tabRecord}} 中打开记录后用 {{> shareWorkoutSummary}}，或在 {{> tabStats}} 中用 {{> shareCardsTooltip}}，以同样方式制作卡片。</p>
+<p>{{> runShareKindSticker}} 卡片背景透明，会作为可在快拍中移动的贴纸放入。路线只用裁掉起点、终点附近和隐私区域后的线来画，卡片上没有底图、坐标和时刻（有日期）。力量训练可在总结页面的 {{> shareDecorate}}、上方的 {{> shareWorkoutSummary}} 或 {{> tabStats}} 的 {{> shareCardsTooltip}} 中用同样的方式制作卡片。</p>
 </section>
 
-<section id="studio" data-ask="想装饰分享卡片|分享卡片怎么装饰|怎么自定义分享卡片|在哪里打开编辑器|移动贴纸并调整大小|做成正方形卡片|在宽屏横向画面上装饰" data-keys="装饰 自定义 编辑器 魔杖 贴纸 拖动 移动 大小 旋转 双指 画布 正方形 快拍 帖子 透明 导出 栏 上次 宽屏 横屏 折叠屏 并排">
-<h2>打开装饰编辑器</h2>
-<p class="lead">点跑步或力量训练分享页面上方的魔杖按钮（{{> studioOpen}}），即可打开装饰编辑器。下方栏从 {{> studioPanelTemplates}} 开始排列。</p>
+<section id="studio" data-ask="想装饰分享卡片|怎么装饰分享卡片|装饰编辑器在哪里打开|移动贴纸并调整大小|用垃圾桶删除贴纸|做成正方形卡片|在 iPad 横屏上装饰" data-keys="装饰 编辑器 自定义 全屏 快拍 贴纸 拖动 移动 大小 旋转 双指 垃圾桶 删除 再点一次 换颜色 文字 写字 右侧 工具 画布 正方形 快拍 动态 透明 导出 宽屏 横屏 ipad 折叠">
+<h2>打开装饰</h2>
+<p class="lead">点分享页面标签栏最前面的 {{> shareCustom}}，就会打开全屏装饰。像 Instagram 快拍一样，直接在画布上拖动、写字和删除。</p>
 <ol class="steps">
-<li>点分享页面右上角的魔杖按钮。</li>
-<li>从下方栏打开 {{> studioPanelTemplates}}、{{> studioPanelStickers}}、{{> studioPanelFonts}}、{{> studioPanelColors}}、{{> studioPanelPhoto}}、{{> studioPanelLayers}}。</li>
-<li>用手指拖动贴纸来移动，用双指调整大小和旋转。</li>
-<li>在 {{> studioCanvasSize}} 中选择 {{> shareFormatStory}}、{{> shareFormatFeed}} 或 {{> studioSquare}}，完成后保存到相册或发到快拍。</li>
+<li>用 {{> shareDecorate}} 打开分享页面，点标签栏最前面的 {{> shareCustom}}。</li>
+<li>在右侧的工具栏中选择 {{> studioText}}、{{> studioPanelStickers}}、{{> studioPanelTemplates}}、{{> studioPanelPhoto}} 或 {{> studioPanelLayers}}。点 {{> studioText}} 可直接在画布上写字。</li>
+<li>用手指拖动贴纸来移动，用双指改变大小和旋转。拖动时放到下方出现的垃圾桶上即可删除。</li>
+<li>再点一次已选中的贴纸会换颜色。含文字的贴纸再点一次可修改文字。</li>
+<li>完成后，在最下方一栏保存到相册，或用 {{> shareToInstagramStory}}、{{> shareOtherApps}} 发送。</li>
 </ol>
-<p>第一次打开时，会出现一次气泡提示，说明如何选模板、拖动和长按。上次打开的栏，下次打开编辑器时会再次打开。在折叠屏 iPhone 的内屏或横放的 iPad 上，画布在左边，工具在右边。</p>
+<p>选中贴纸后，下方会出现颜色栏和 {{> studioPanelFonts}}、{{> studioShadow}}、{{> actionDelete}}、⋯ 按钮。放到垃圾桶删除的贴纸，可用上方的撤销（PRO）回到拖动前的位置。跑步路线在 PRO 下再点一次会依次切换单色、配速和坡度着色。画布的 {{> studioCanvasSize}}（{{> shareFormatStory}}、{{> shareFormatFeed}}、{{> studioSquare}}）在 {{> studioPanelLayers}} 中选择。第一次打开时，会弹出一次说明拖动、垃圾桶和右侧工具的提示。在折叠 iPhone 的内屏或横放的 iPad 上，画布在左、工具面板在右并排显示。</p>
 </section>
 
 <section id="presets" data-ask="想用现成模板|一键完成分享卡片|换模板会换掉照片吗|有哪些模板|每次记录看到的模板数量不同" data-keys="模板 现成模板 预设 设计 布局 排版 一键 完成 预览 直接 选择 跑步 力量 17 9">
 <h2>用现成模板直接制作</h2>
-<p class="lead">在编辑器第一栏 {{> studioPanelTemplates}} 中点一个现成模板，就会直接放入用这次记录数值填好的布局。免费。</p>
+<p class="lead">在编辑器右侧工具栏的 {{> studioPanelTemplates}} 中点一个现成模板，就会直接放入用这次记录数值填好的布局。免费。</p>
 <ol class="steps">
-<li>打开编辑器，打开 {{> studioPanelTemplates}} 栏。</li>
+<li>打开编辑器，点右侧工具栏的 {{> studioPanelTemplates}}。</li>
 <li>在 {{" studioPresets}} 一行中查看用这次记录数值填好的预览，点其中一个。</li>
 <li>拖动贴纸微调，或再加贴纸。也可以点别的模板，只换布局。</li>
 </ol>
@@ -35,7 +36,7 @@
 
 <section id="stickers" data-ask="有哪些贴纸|加对话气泡|加位置图钉|放多张照片|本月跑量贴纸|加词语贴纸" data-keys="贴纸 种类 记录 指标 步频 出发时间 本周 本月 距离 跑量 日历 连续 文字 对话气泡 气泡 尾巴 位置图钉 图钉 地点 词语 标签 装饰图 图形 描边 照片贴纸 圆形 照片拼图 拼图 多张">
 <h2>贴纸种类</h2>
-<p class="lead">{{> studioPanelStickers}} 栏分为 {{> studioSectionRecord}}、{{> studioSectionText}}、{{> studioSectionWords}}、{{> studioDecoration}}、{{> studioSectionPhoto}} 几组。</p>
+<p class="lead">{{> studioPanelStickers}} 栏分为 {{> studioSectionRecord}}、{{> studioSectionText}}、{{> studioSectionWords}}、{{> studioDecoration}}、{{> studioSectionPhoto}} 几组。每一项都以用这条记录数值画出的预览显示，可按贴上后的样子挑选。</p>
 <ul>
 <li>{{> studioSectionRecord}}：跑步有 {{> studioMetricRunSummary}}、{{> studioMetricElevation}}、{{> studioRoute}}，以及步频、{{> studioMetricStartTime}}、{{> studioMetricWeekDistance}}、{{> studioMetricMonthDistance}}、{{> studioMetricMonth}}、{{> studioMetricRunStreak}}。力量有 {{> studioMetricLiftSummary}}、{{> studioMetricLiftRecord}}、{{> studioMetricBigThree}}、{{> studioMetricVolumeVsLast}}、{{> studioMetricSetChips}}、{{> studioMetricMuscles}}、{{> studioMetricDate}}、{{> studioMetricStartTime}} 等。</li>
 <li>{{> studioSectionText}}：{{> studioAddText}}、{{> studioBubble}}、{{> studioPin}}。选中对话气泡后，用 {{> studioBubbleTail}} 按钮把尾巴转到四个方向之一。</li>
@@ -73,7 +74,7 @@
 
 <section id="fonts-colors" data-ask="更换分享卡片字体|只想把数字换成另一种字体|从照片中取色|用吸管选颜色|把照片变成黑白|按配速给路线上色" data-keys="字体 数字 单位 名称 大小 字距 等宽 颜色 吸管 色码 hex 对比度 阴影 黑白 模糊 亮度 暖色 底部变暗 调整 路线颜色 配速 坡度 图层 撤销 遮挡区域">
 <h2>字体、颜色与照片</h2>
-<p class="lead">即使在同一个贴纸里，也能为 {{> studioPartValue}}、{{> studioPartUnit}}、{{> studioPartLabel}} 分别选择字体和颜色。照片可以从黑白、模糊调整到亮度、对比度。</p>
+<p class="lead">即使在同一个贴纸里，也能为 {{> studioPartValue}}、{{> studioPartUnit}}、{{> studioPartLabel}} 分别选择字体和颜色。照片可以从黑白、模糊调整到亮度、对比度。选中贴纸后，可直接在下方一栏的 {{> studioPanelFonts}} 和颜色圆点中修改。</p>
 <ul>
 <li>{{> studioPanelFonts}}：每个部分的字体、{{> studioFontSize}}、{{> studioLetterSpacing}}、{{> studioTabular}}。字体中没有的字会提示 {{" studioFontFallback}}。</li>
 <li>{{> studioPanelColors}}：基本 3 色、从照片中取的颜色、{{> studioEyedropper}}、{{> studioHex}}。会显示对比度以判断文字是否清晰，并建议 {{> studioAddShadow}}。</li>

@@ -139,5 +139,8 @@
  "评估视频会发送到服务器吗": "assessment#privacy",
  "预测半马成绩": "tools#run-calc",
  "可以用前置摄像头拍吗": "assessment#measure",
- "结果图里的橙色是什么意思": "assessment#result"
+ "结果图里的橙色是什么意思": "assessment#result",
+ "用垃圾桶删除贴纸": "sharing#studio",
+ "扫描路线二维码": "running#share-course",
+ "把跑过的路保存为路线": "running#courses"
 }

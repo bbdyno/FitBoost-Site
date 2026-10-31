@@ -10,5 +10,9 @@
   "support": {
     "title": "지원",
     "description": "FitBoost 사용 중 궁금한 점과 문의 방법을 안내합니다."
+  },
+  "location-terms": {
+    "title": "위치기반서비스 이용약관",
+    "description": "위치기반서비스 이용약관"
   }
 }

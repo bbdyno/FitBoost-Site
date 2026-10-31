@@ -1,32 +1,33 @@
-<section id="cards" data-ask="달리기 기록을 공유하고 싶어요|인스타 스토리에 달리기 올리기|공유 카드는 어떤 게 있나요|근력 운동 기록 카드 만들기" data-keys="공유 기록공유 카드 공유카드 인스타 인스타그램 스토리 피드 경로 구간 사진 스티커 투명 달리기 근력 올리기">
+<section id="cards" data-ask="달리기 기록을 공유하고 싶어요|인스타 스토리에 달리기 올리기|공유 카드는 어떤 게 있나요|근력 운동 기록 카드 만들기" data-keys="공유 기록공유 기록꾸며공유 카드 공유카드 인스타 인스타그램 스토리 피드 경로 구간 사진 스티커 투명 달리기 근력 올리기">
 <h2>공유 카드 고르기</h2>
-<p class="lead">달리기 결과의 {{> runShareOpen}}을 누르면 {{> runShareKindRoute}}·{{> runShareKindSplits}}·{{> runShareKindPhoto}}·{{> runShareKindSticker}} 카드 가운데 하나를 골라 스토리나 피드 크기로 만듭니다.</p>
+<p class="lead">달리기 결과나 운동 요약 바로 아래 {{> shareDecorate}}를 누르면 공유 화면이 열립니다. 위 칩 줄에서 {{> runShareKindRoute}}·{{> runShareKindSplits}}·{{> runShareKindPhoto}}·{{> runShareKindSticker}} 카드를 골라 스토리나 피드 크기로 만듭니다.</p>
 <ol class="steps">
-<li>달리기 결과 화면에서 {{> runShareOpen}}을 누릅니다. 지난 달리기는 {{> tabRecord}}에서 열면 됩니다.</li>
-<li>위 칩 줄에서 카드를 고르고, {{> shareFormatStory}}·{{> shareFormatFeed}} 크기와 바탕색을 고릅니다.</li>
+<li>달리기를 끝낸 결과 화면이나 근력 운동을 끝낸 요약 화면에서 {{> shareDecorate}}를 누릅니다. 지난 기록도 {{> tabRecord}}에서 열면 같은 버튼이 있습니다.</li>
+<li>위 칩 줄에서 카드를 고르고, {{> shareFormatStory}}·{{> shareFormatFeed}} 크기와 바탕색을 고릅니다. 칩 줄 맨 앞 {{> shareCustom}}은 <a href="#studio">꾸미기</a>를 엽니다.</li>
 <li>{{> runShareShowRoute}}, {{> runShareShowHeartRate}}, {{> runShareShowAscent}} 같은 넣을 칸을 켜고 끕니다.</li>
 <li>{{> shareToInstagramStory}}를 누르면 인스타그램 스토리가 바로 열립니다. 다른 곳에 보내거나 사진에 저장하려면 {{> shareOtherApps}}를 씁니다.</li>
 </ol>
-<p>{{> runShareKindSticker}} 카드는 바탕이 투명해 스토리에서 움직일 수 있는 스티커로 들어갑니다. 경로는 출발·도착 근처와 가리는 곳을 잘라 낸 길로만 그리고, 카드에는 지도 바탕·좌표·시각이 들어가지 않습니다(날짜는 들어갑니다). 근력 운동은 {{> tabRecord}}에서 연 기록의 {{> shareWorkoutSummary}}나 {{> tabStats}}의 {{> shareCardsTooltip}}로 같은 방식의 카드를 만듭니다.</p>
+<p>{{> runShareKindSticker}} 카드는 바탕이 투명해 스토리에서 움직일 수 있는 스티커로 들어갑니다. 경로는 출발·도착 근처와 가리는 곳을 잘라 낸 길로만 그리고, 카드에는 지도 바탕·좌표·시각이 들어가지 않습니다(날짜는 들어갑니다). 근력 운동은 요약 화면의 {{> shareDecorate}}나 위쪽 {{> shareWorkoutSummary}}, {{> tabStats}}의 {{> shareCardsTooltip}}로 같은 방식의 카드를 만듭니다.</p>
 </section>
 
-<section id="studio" data-ask="공유 카드를 꾸미고 싶어요|공유 카드 꾸미는 법|꾸미기 편집기는 어디서 여나요|스티커를 옮기고 크기 바꾸기|정사각 카드로 만들기|아이패드 가로 화면에서 꾸미기" data-keys="꾸미기 편집기 요술봉 스티커 끌기 옮기기 크기 회전 두손가락 캔버스 정사각 스토리 피드 투명 내보내기 칸 마지막 넓은화면 가로 아이패드 접는">
+<section id="studio" data-ask="공유 카드를 꾸미고 싶어요|공유 카드 꾸미는 법|꾸미기 편집기는 어디서 여나요|스티커를 옮기고 크기 바꾸기|스티커를 휴지통으로 지우기|정사각 카드로 만들기|아이패드 가로 화면에서 꾸미기" data-keys="꾸미기 편집기 커스텀 전체화면 스토리처럼 스티커 끌기 옮기기 크기 회전 두손가락 휴지통 지우기 다시누르기 색바꾸기 글쓰기 오른쪽 도구 캔버스 정사각 스토리 피드 투명 내보내기 넓은화면 가로 아이패드 접는">
 <h2>꾸미기 열기</h2>
-<p class="lead">달리기·근력 공유 화면 위의 요술봉 버튼({{> studioOpen}})을 누르면 꾸미기 편집기가 열립니다. 아래 칸은 {{> studioPanelTemplates}}부터 놓입니다.</p>
+<p class="lead">공유 화면 칩 줄 맨 앞 {{> shareCustom}}을 누르면 전체 화면 꾸미기가 열립니다. 인스타 스토리처럼 캔버스 위에서 바로 끌고, 쓰고, 지웁니다.</p>
 <ol class="steps">
-<li>공유 화면 오른쪽 위의 요술봉 버튼을 누릅니다.</li>
-<li>아래 칸에서 {{> studioPanelTemplates}}, {{> studioPanelStickers}}, {{> studioPanelFonts}}, {{> studioPanelColors}}, {{> studioPanelPhoto}}, {{> studioPanelLayers}}를 엽니다.</li>
-<li>스티커는 손가락으로 끌어 옮기고, 두 손가락으로 크기·회전을 바꿉니다.</li>
-<li>{{> studioCanvasSize}}에서 {{> shareFormatStory}}·{{> shareFormatFeed}}·{{> studioSquare}}를 고르고, 다 되면 사진첩에 저장하거나 스토리에 올립니다.</li>
+<li>{{> shareDecorate}}로 공유 화면을 열고 칩 줄 맨 앞 {{> shareCustom}}을 누릅니다.</li>
+<li>오른쪽 도구 줄에서 {{> studioText}}, {{> studioPanelStickers}}, {{> studioPanelTemplates}}, {{> studioPanelPhoto}}, {{> studioPanelLayers}}를 고릅니다. {{> studioText}}을 누르면 캔버스 위에서 바로 글을 씁니다.</li>
+<li>스티커는 손가락으로 끌어 옮기고, 두 손가락으로 크기·회전을 바꿉니다. 끄는 동안 아래에 뜨는 휴지통에 놓으면 지워집니다.</li>
+<li>고른 스티커를 한 번 더 누르면 색이 바뀝니다. 글이 든 스티커는 한 번 더 누르면 글을 고칩니다.</li>
+<li>다 되면 맨 아래 줄에서 사진첩에 저장하거나 {{> shareToInstagramStory}}, {{> shareOtherApps}}로 보냅니다.</li>
 </ol>
-<p>처음 열면 틀 고르기·끌기·길게 누르기를 알려 주는 말풍선이 한 번 뜹니다. 마지막에 연 칸은 다음에 꾸미기를 열 때 다시 열립니다. 접는 iPhone 안쪽 화면이나 iPad를 가로로 두면 캔버스가 왼쪽, 도구가 오른쪽에 나란히 놓입니다.</p>
+<p>스티커를 고르면 아래에 색 줄과 {{> studioPanelFonts}}·{{> studioShadow}}·{{> actionDelete}}·⋯ 버튼이 뜹니다. 휴지통에 놓아 지운 스티커는 위쪽 되돌리기(PRO)로 끌기 전 자리에 돌아옵니다. 달린 길은 PRO에서 한 번 더 누르면 단색·페이스·경사 색 입히기를 차례로 바꿉니다. 캔버스 {{> studioCanvasSize}}({{> shareFormatStory}}·{{> shareFormatFeed}}·{{> studioSquare}})는 {{> studioPanelLayers}}에서 고릅니다. 처음 열면 끌기·휴지통·오른쪽 도구를 알려 주는 말풍선이 한 번 뜹니다. 접는 iPhone 안쪽 화면이나 iPad를 가로로 두면 캔버스가 왼쪽, 도구 판이 오른쪽에 나란히 놓입니다.</p>
 </section>
 
 <section id="presets" data-ask="미리 만든 틀을 쓰고 싶어요|한 번에 공유 카드 완성하기|틀을 바꾸면 사진도 바뀌나요|어떤 틀이 있나요|보이는 틀 개수가 기록마다 달라요" data-keys="틀 미리만든틀 미리 만든 기본틀 디자인 배치 레이아웃 한번에 완성 미리보기 바로 고르기 달리기 근력 17 9">
 <h2>틀로 바로 만들기</h2>
-<p class="lead">꾸미기 첫 칸 {{> studioPanelTemplates}}에서 미리 만든 틀을 누르면 지금 기록 값으로 채운 배치가 바로 들어갑니다. 무료입니다.</p>
+<p class="lead">꾸미기 오른쪽 도구 줄의 {{> studioPanelTemplates}}에서 미리 만든 틀을 누르면 지금 기록 값으로 채운 배치가 바로 들어갑니다. 무료입니다.</p>
 <ol class="steps">
-<li>꾸미기를 열고 {{> studioPanelTemplates}} 칸을 엽니다.</li>
+<li>꾸미기를 열고 오른쪽 도구 줄의 {{> studioPanelTemplates}}를 누릅니다.</li>
 <li>{{" studioPresets}} 줄에서 지금 기록 값으로 채운 미리보기를 보고 하나를 누릅니다.</li>
 <li>스티커를 끌어 다듬거나 더 얹습니다. 다른 틀을 눌러 배치만 바꿔 볼 수도 있습니다.</li>
 </ol>
@@ -35,7 +36,7 @@
 
 <section id="stickers" data-ask="어떤 스티커가 있나요|말풍선 넣기|위치 핀 넣기|사진 여러 장 넣기|이번 달 달린 거리 스티커|낱말 스티커 넣기" data-keys="스티커 종류 기록 지표 케이던스 출발시각 이번주 이번달 거리 달력 연속 글 글넣기 말풍선 꼬리 위치핀 핀 장소 낱말 칩 꾸밈 그림 테두리 사진스티커 동그라미 사진격자 콜라주 여러장">
 <h2>스티커 종류</h2>
-<p class="lead">{{> studioPanelStickers}} 칸은 {{> studioSectionRecord}}·{{> studioSectionText}}·{{> studioSectionWords}}·{{> studioDecoration}}·{{> studioSectionPhoto}} 묶음으로 나뉩니다.</p>
+<p class="lead">{{> studioPanelStickers}} 칸은 {{> studioSectionRecord}}·{{> studioSectionText}}·{{> studioSectionWords}}·{{> studioDecoration}}·{{> studioSectionPhoto}} 묶음으로 나뉩니다. 칸마다 이 기록 값으로 그린 미리보기가 보여, 붙일 모양 그대로 고릅니다.</p>
 <ul>
 <li>{{> studioSectionRecord}}: 달리기는 {{> studioMetricRunSummary}}, {{> studioMetricElevation}}, {{> studioRoute}}에 더해 케이던스, {{> studioMetricStartTime}}, {{> studioMetricWeekDistance}}, {{> studioMetricMonthDistance}}, {{> studioMetricMonth}}, {{> studioMetricRunStreak}}. 근력은 {{> studioMetricLiftSummary}}, {{> studioMetricLiftRecord}}, {{> studioMetricBigThree}}, {{> studioMetricVolumeVsLast}}, {{> studioMetricSetChips}}, {{> studioMetricMuscles}}, {{> studioMetricDate}}, {{> studioMetricStartTime}} 등.</li>
 <li>{{> studioSectionText}}: {{> studioAddText}}, {{> studioBubble}}, {{> studioPin}}. 말풍선은 고른 뒤 {{> studioBubbleTail}} 버튼으로 꼬리를 네 방향으로 돌립니다.</li>
@@ -73,7 +74,7 @@
 
 <section id="fonts-colors" data-ask="공유 카드 글꼴 바꾸기|숫자만 다른 글꼴로 바꾸고 싶어요|사진에서 색 뽑기|스포이드로 색 고르기|사진을 흑백으로|경로 색을 페이스로 칠하기" data-keys="글꼴 폰트 숫자 단위 이름 크기 자간 숫자폭 색 색상 스포이드 색코드 hex 대비 그림자 흑백 흐림 밝기 따뜻함 아래어둡게 보정 경로색 페이스 경사 레이어 되돌리기 가림영역">
 <h2>글꼴·색·사진</h2>
-<p class="lead">한 스티커 안에서도 {{> studioPartValue}}·{{> studioPartUnit}}·{{> studioPartLabel}} 칸마다 글꼴과 색을 따로 고릅니다. 사진은 흑백·흐림부터 밝기·대비까지 고칩니다.</p>
+<p class="lead">한 스티커 안에서도 {{> studioPartValue}}·{{> studioPartUnit}}·{{> studioPartLabel}} 칸마다 글꼴과 색을 따로 고릅니다. 사진은 흑백·흐림부터 밝기·대비까지 고칩니다. 스티커를 고르면 아래에 뜨는 줄의 {{> studioPanelFonts}}와 색 점에서 바로 바꿉니다.</p>
 <ul>
 <li>{{> studioPanelFonts}}: 칸마다 글꼴, {{> studioFontSize}}, {{> studioLetterSpacing}}, {{> studioTabular}}. 글꼴에 없는 글자는 {{" studioFontFallback}}라고 알립니다.</li>
 <li>{{> studioPanelColors}}: 기본 3색, 사진에서 뽑은 색, {{> studioEyedropper}}, {{> studioHex}}. 글이 잘 읽히는지 대비를 보여 주고 {{> studioAddShadow}}를 권합니다.</li>

@@ -10,5 +10,9 @@
   "support": {
     "title": "支援",
     "description": "FitBoost 常見問題與聯絡方式。"
+  },
+  "location-terms": {
+    "title": "位置服務使用條款",
+    "description": "位置服務使用條款"
   }
 }

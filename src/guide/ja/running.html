@@ -6,7 +6,7 @@
 <li>筋トレに戻すには、同じボタンの{{> modeStrength}}をタップします。</li>
 </ol>
 <ul>
-<li>{{> tabHome}}：今日のランのカード、今週の距離と過去8週のバー、{{> courseTitle}}・{{> runZonesTitle}}・{{> runHomePlan}}へのショートカット、最近のラン。</li>
+<li>{{> tabHome}}：今日のランのカード、その下の<a href="#courses">{{> courseShelfTitle}}</a>欄、今週の距離と過去8週のバー、{{> courseTitle}}・{{> runZonesTitle}}・{{> runHomePlan}}へのショートカット、最近のラン。</li>
 <li>{{> tabRecord}}：{{> historyRunsOnly}}の表示で開き、{{> historyAllWorkouts}}に切り替えられます。</li>
 <li>{{> tabStats}}：ランの欄だけになります。筋トレの統計は、いちばん下の{{> modeCrossStrengthStats}}の行から筋トレモードで見ます。</li>
 <li>{{> tabCoach}}：タブ全体が<a href="#coach">ランニングコーチ</a>になります。</li>
@@ -46,11 +46,11 @@
 <li>{{> runSplits}}：区間ごとのペース・心拍・勾配。区間の勾配補正の値はPROです。</li>
 <li>{{> runAnalysis}} <span class="pro">PRO</span>：{{> runGap}}、{{> runDecoupling}}、{{> runTrimp}}、{{> runSessionLoad}}、ケイデンス、地形。</li>
 <li>{{> runRpeTitle}}：1〜10から選ぶと、セッション負荷とフィットネス・疲労の計算に入ります。</li>
-<li>{{> runSaveCourse}}でこの道をコースとして保存し、{{> runExport}}でGPXファイルをほかのアプリに送ります。</li>
+<li>地図の下の欄の{{> runSaveCourse}}でこの道をコースとして保存し、同じ欄の{{> courseSendToFriend}}ですぐ送ります。知っているコースを走ったときは自己ベストとの差が表示されます。{{> runExport}}でGPXファイルをほかのアプリに送ります。</li>
 </ul>
 <p>勾配補正ペースは平地だったらどのくらいかを見積もった値で、下り坂の得を大きく見積もる限界があります。心拍ドリフトは前半と後半の効率を比べるもので、強度が一定の20分を超えるランでだけ計算します。今回の記録が基準記録に使えそうなら{{> runUseBaseline}}ボタンが表示されます。過去のランは{{> tabRecord}}からタップしてもう一度開きます。</p>
 
-<p>{{> runShareOpen}}をタップすると、ルート・スプリット・写真の上・ステッカーのカードを作ってInstagramのストーリーズにすぐ投稿できます。<a href="sharing.html#cards">共有カードを選ぶ</a>をご覧ください。</p>
+<p>まとめのすぐ下の{{> shareDecorate}}をタップすると、ルート・スプリット・写真の上・ステッカーのカードを作ったり飾ったりしてInstagramのストーリーズにすぐ投稿できます。<a href="sharing.html#cards">共有カードを選ぶ</a>をご覧ください。</p>
 </section>
 
 <section id="import" data-ask="他のアプリのランを取り込みたい|ウォッチから書き出した記録ファイルを取り込みたい|TCXファイルでランの記録を入れたい|他のアプリで走ったランもカスタマイズできますか|コースファイルはコースから取り込むよう表示されます" data-keys="取り込み 取り込む 他のアプリ ウォッチ 書き出した 記録ファイル アクティビティ gpx tcx ファイル 記録 移す 読み込み ラン 結果 共有 カスタマイズ 同じ時刻 重複">
@@ -59,7 +59,7 @@
 <ol class="steps">
 <li>他のアプリやウォッチのアプリで、ランをGPXかTCXのファイルに書き出してスマホに置きます。</li>
 <li>ランニングモードの{{> tabHome}}のいちばん下にある{{> runImportFile}}をタップし、ファイルを選びます。</li>
-<li>結果画面が開いたら、アプリで計測したランと同じように{{> runShareOpen}}で共有・カスタマイズします。</li>
+<li>結果画面が開いたら、アプリで計測したランと同じように{{> shareDecorate}}で共有・カスタマイズします。</li>
 </ol>
 <p>ランとして取り込めるのは時刻の入った記録ファイルだけで、ファイルに心拍・ケイデンスがあれば一緒に読み込みます。時刻のないコースファイルを選ぶと{{" runImportFailed}}と表示されます。コースファイルは<a href="#courses">マイコースを作る・取り込む</a>から開きます。同じ時刻に始まった記録をもう一度取り込んでも新しくは作らず、すでにある記録を開きます。ほかのアプリがヘルスケアに書き込んだランは、ファイルなしで<a href="health.html#runs">ヘルスケアから入るラン</a>として取り込めます。</p>
 </section>
@@ -108,26 +108,26 @@
 <p>週間ランプランは、ランニングコーチの{{> runCoachWeekTitle}}にある{{> runCoachMakeTitle}}から作ります（PRO+）。筋トレの日と重ならないようにイージーとポイント練習を分け、筋トレの処方はそのままでランの配置だけを動かします。</p>
 </section>
 
-<section id="courses" data-ask="コースはどうやって作りますか|GPXファイルからコースを取り込みたい|地図にコースを描きたい|よく走る道をコースにしたい|同じ道の記録を比べたい" data-keys="コース マイコース 作る 地図 描く gpx tcx ファイル 取り込み 同じ道 自動 過去の自分 競う 自己ベスト マイ区間 区間記録 周回">
-<h2>マイコースを作る・取り込む</h2>
-<p class="lead">同じ道を2回走ると自動でコースになります。{{> tabMenu > courseTitle}}から、過去のラン・地図への描画・ファイルでも作れます。</p>
+<section id="courses" data-ask="コースはどうやって作りますか|走った道をコースとして保存したい|GPXファイルからコースを取り込みたい|地図にコースを描きたい|よく走る道をコースにしたい|同じ道の記録を比べたい|コースランでウォッチを使いたい" data-keys="コース マイコース コース欄 ホーム 作成 作る 保存 コースとして保存 結果 地図 描く gpx tcx ファイル 取り込み 同じ道 自動 過去の自分 勝負 ベスト 受け取った記録 マイ区間 区間記録 周回 絞り込み 近い順 ウォッチ スマートフォン 計測する機器">
+<h2>マイコースの作成と取り込み</h2>
+<p class="lead">ランニングの{{> tabHome}}の{{> courseShelfTitle}}欄に、マイコースが最近走った場所から近い順に並びます。ランの結果からワンタップで保存でき、過去のラン・地図に描く・ファイルからも作れます。</p>
 <ol class="steps">
-<li>{{> tabMenu > courseTitle}}を開き、{{> courseMake}}をタップします。</li>
-<li>{{> courseFromRun}}、{{> courseDraw}}、{{> courseFromFile}}から選びます。</li>
-<li>名前をつけて保存し、コース画面の{{> courseRunThis}}で走ります。</li>
+<li>ランを終えた結果画面の地図の下で{{> runSaveCourse}}をタップすると、すぐにコースになります。名前はランの名前が付き、コース画面で変えられます。</li>
+<li>ほかの方法は、{{> courseShelfTitle}}欄の最後のカードか{{> tabMenu > courseTitle}}の{{> courseMake}}から{{> courseFromRun}}、{{> courseDraw}}、{{> courseFromFile}}のどれかを選びます。</li>
+<li>コース画面の最初にある{{> courseRunThis}}をタップすると{{> runTitleCourse}}の画面が開きます。{{> runDeviceTitle}}で{{> runDevicePhone}}・{{> runDeviceWatch}}を選んで走ります。</li>
 </ol>
-<p>{{> courseDraw}}は地図をタップして打った点を直線でつなぎます。地図を使えない版ではこの項目は表示されません。ファイルはGPXとTCXを開けます。他のアプリで走った記録そのものを取り込むには<a href="#import">他のアプリのランを取り込む</a>を使います。コースを走ると過去の自分と競い、コース画面に{{> courseBestLabel}}と走った記録がたまります。コースの一部を{{> courseSegments}}にして、その区間の記録だけを見るのはPROです。</p>
+<p>同じ道を2回走っても自動でコースになります。{{> courseTitle}}では{{> courseFilterAll}}・{{> courseOriginReceived}}・{{> courseLoop}}・距離のチップで絞り込めます。近い順は位置情報の許可を別に使わず、いちばん最近のランを始めた場所を基準にします。コース画面の{{> courseVersus}}欄は{{> courseBestLabel}}・{{> courseVersusReceived}}・{{> courseVersusLatest}}の記録を速い順に表示し、コースを走るとその記録と勝負します。ウォッチを選ぶとウォッチにコースの線が表示され、外れると振動します。{{> courseDraw}}は地図をタップして打った点を直線でつなぎます。地図を使えない版ではこの項目は表示されません。ファイルはGPXとTCXを開けます。ほかのアプリで走った記録を丸ごと取り込むには<a href="#import">ほかのアプリのランを取り込む</a>を使います。コースの一部を{{> courseSegments}}として決めて、その区間の記録だけを見るのはPROです。</p>
 </section>
 
-<section id="share-course" data-ask="コースをほかの人に送りたい|コースを共有する方法|受け取ったコースのリンクの開き方|QRコードでコースを送りたい|コースを共有すると自分の記録も送られますか" data-keys="送る 共有 リンク qrコード qr ファイル 受け取る 受け取ったコース メッセンジャー サーバー 自分の記録 一緒に 貼り付け コピーしたリンク">
+<section id="share-course" data-ask="コースをほかの人に送りたい|友だちにコースを送りたい|受け取ったコースのリンクの開き方|友だちのスマートフォンのQRコードを読み取りたい|QRコードでコースを送りたい|コースを共有すると自分の記録も送られますか" data-keys="送る 友だちに送る 共有 リンク qrコード qr 読み取り スキャン カメラ ファイル 受け取る コースを受け取る 受け取ったコース メッセンジャー サーバー 自分の記録 一緒に 貼り付け コピーしたリンク プレビュー 隠した形">
 <h2>コースを送る・受け取る</h2>
-<p class="lead">コース画面の{{> courseSendTitle}}から、{{> courseShareLink}}・{{> courseShareQr}}・{{> courseShareFile}}のどれかで送ります。サーバーは通りません。</p>
+<p class="lead">コース画面の最初にある{{> courseSendToFriend}}をタップすると{{> courseSendTitle}}の画面が開きます。送る形を先に確かめ、{{> courseShareLinkSend}}、{{> courseShareQr}}、{{> courseShareGpx}}のどれかで送ります。サーバーは通りません。</p>
 <ol class="steps">
-<li>{{> tabMenu > courseTitle}}で送るコースを開きます。</li>
-<li>{{> courseSendTitle}}で送り方を選び、必要なら{{> courseIncludeRecord}}をオンにします。</li>
-<li>受け取った人はリンクをタップするかQRコードを読み取り、表示される{{> courseReceivedTitle}}の画面で保存します。</li>
+<li>送るコースを開き、{{> courseSendToFriend}}をタップします。ランの結果画面で保存したばかりのコースは、その場の{{> courseSendToFriend}}からすぐ送れます。</li>
+<li>プレビューで薄く外れたスタート・ゴールの部分を確かめ、必要なら{{> courseIncludeRecord}}をオンにして送り方を選びます。</li>
+<li>受け取る人はリンクをタップするか、{{> courseShelfTitle}}欄や{{> courseTitle}}の{{> courseReceive}}で{{> courseScanQr}}からQRコードを読み取り、表示される{{> courseReceivedTitle}}の画面で保存します。</li>
 </ol>
-<p>リンクをスマホのブラウザで開くと、コースの図と距離が表示され、アプリで開くボタンがあります。コピーしたリンクは{{> courseTitle}}の右上の⋯にある{{> coursePasteLink}}でも開けます。走った道から作ったコースは、リンク・QRコード・ファイルのどれで送っても、スタート・ゴール付近をランダムに隠し、非公開エリアを除いてから送ります。自分で描いたコースは描いたとおりに送ります。時刻・心拍は入れません。一緒に送る記録は区間ごとのかかった時間だけで、日付・時刻は含まず、隠したあとに残った線のスタートから数え直します。長いコースは{{" courseTooLongForLink}}と表示されるので、ファイルで送ります。</p>
+<p>{{> courseReceive}}では{{> coursePasteLink}}と{{> courseImportFile}}からも受け取れます。カメラは{{> courseScanQr}}をタップしたときだけオンになります。リンクをスマートフォンのブラウザーで開くと、コースの図と距離が表示され、アプリで開くボタンがあります。走った道から作ったコースは、リンク・QRコード・ファイルのどれで送っても、スタート・ゴール付近をランダムに隠し、非公開エリアを除いてから送ります。自宅などをさらに隠すには、画面の中の{{> courseHideMore}}で決めます。自分で描いたコースは描いたとおりに送ります。時刻・心拍は入りません。一緒に送る記録は区間ごとのかかった時間だけで、日付・時刻は入らず、隠したあとに残った線のスタートから数え直します。長いコースは{{" courseTooLongForLink}}と表示されるので、ファイルで送ります。</p>
 </section>
 
 <section id="privacy-zones" data-ask="自宅の場所を知られたくない|スタート地点を隠したい|非公開エリアはどう設定しますか|共有するときに位置を隠したい" data-keys="隠す 非公開エリア 位置 自宅 職場 スタート ゴール プライバシー ランダム 半径 共有 特定">

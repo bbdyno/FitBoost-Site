@@ -6,7 +6,7 @@
 <li>要回到力量训练，点同一按钮的 {{> modeStrength}}。</li>
 </ol>
 <ul>
-<li>{{> tabHome}}：今天的跑步卡片、本周跑量和过去 8 周的柱状图、{{> courseTitle}}·{{> runZonesTitle}}·{{> runHomePlan}} 快捷入口，以及最近的跑步。</li>
+<li>{{> tabHome}}：今天的跑步卡片、其下方的 <a href="#courses">{{> courseShelfTitle}}</a> 栏、本周跑量和过去 8 周的柱状图、{{> courseTitle}}·{{> runZonesTitle}}·{{> runHomePlan}} 快捷入口，以及最近的跑步。</li>
 <li>{{> tabRecord}}：以 {{> historyRunsOnly}} 打开，也可以切换到 {{> historyAllWorkouts}}。</li>
 <li>{{> tabStats}}：只显示跑步栏。力量统计请通过最下方的 {{> modeCrossStrengthStats}} 一行到力量模式查看。</li>
 <li>{{> tabCoach}}：整个页面变成<a href="#coach">跑步教练</a>。</li>
@@ -46,11 +46,11 @@
 <li>{{> runSplits}}：每段的配速、心率和坡度。每段的坡度修正值属于 PRO。</li>
 <li>{{> runAnalysis}} <span class="pro">PRO</span>：{{> runGap}}、{{> runDecoupling}}、{{> runTrimp}}、{{> runSessionLoad}}、步频和地形。</li>
 <li>{{> runRpeTitle}}：在 1~10 中选择后，会计入训练负荷和体能·疲劳的计算。</li>
-<li>用 {{> runSaveCourse}} 把这条路保存为路线，用 {{> runExport}} 把 GPX 文件发送到其他应用。</li>
+<li>用地图下方栏中的 {{> runSaveCourse}} 把这条路保存为路线，并用同一栏的 {{> courseSendToFriend}} 直接发送。跑的是已知路线时，会显示与个人最佳的差距。用 {{> runExport}} 把 GPX 文件发送到其他应用。</li>
 </ul>
 <p>坡度修正配速是估算在平地上会是多少的值，存在高估下坡收益的局限。心率漂移比较前半程和后半程的效率，只在强度稳定、超过 20 分钟的跑步中计算。这次成绩适合作为基准成绩时，会出现 {{> runUseBaseline}} 按钮。过去的跑步可在 {{> tabRecord}} 中点开再看。</p>
 
-<p>点 {{> runShareOpen}} 可制作路线、分段、照片或贴纸卡片，并直接发到 Instagram 快拍。见<a href="sharing.html#cards">选择分享卡片</a>。</p>
+<p>点总结正下方的 {{> shareDecorate}}，可制作或装饰路线、分段、照片或贴纸卡片，并直接发到 Instagram 快拍。见<a href="sharing.html#cards">选择分享卡片</a>。</p>
 </section>
 
 <section id="import" data-ask="想导入其他应用的跑步记录|导入手表的活动文件|用 TCX 文件加入跑步记录|其他应用跑的也能装饰吗|提示路线文件请在路线中导入" data-keys="导入 其他应用 别的应用 手表 活动文件 活动 tcx 文件 记录 转移 读取 跑步 结果 分享 装饰 同一时间 重复">
@@ -59,7 +59,7 @@
 <ol class="steps">
 <li>在其他应用或手表应用中把跑步导出为 GPX 或 TCX 文件，放到手机上。</li>
 <li>在跑步模式 {{> tabHome}} 最下方点 {{> runImportFile}}，选择文件。</li>
-<li>结果页面打开后，像在应用中测量的跑步一样，用 {{> runShareOpen}} 分享和装饰。</li>
+<li>结果页面打开后，像在应用中测量的跑步一样，用 {{> shareDecorate}} 分享和装饰。</li>
 </ol>
 <p>只有带时间的活动文件才能作为跑步导入，文件中有心率和步频时也会一并读取。选择不带时间的路线文件时，会显示 {{" runImportFailed}} 路线文件请在<a href="#courses">创建与导入我的路线</a>中打开。再次导入同一时间开始的记录时，不会新建，而是打开已有的记录。其他应用写入健康应用的跑步无需文件，见<a href="health.html#runs">从健康应用导入的跑步</a>。</p>
 </section>
@@ -108,26 +108,26 @@
 <p>每周跑步计划在跑步教练的 {{> runCoachWeekTitle}} 中通过 {{> runCoachMakeTitle}} 制定（PRO+）。它会把轻松跑和质量课错开力量训练日，力量处方保持不变，只调整跑步的安排。</p>
 </section>
 
-<section id="courses" data-ask="怎么创建路线|从 GPX 文件导入路线|在地图上画路线|把常跑的路做成路线|比较同一条路的成绩" data-keys="路线 我的路线 创建 地图 画 gpx tcx 文件 导入 同一条路 自动 过去的自己 比拼 最佳 我的分段 分段记录 环线">
+<section id="courses" data-ask="怎么创建路线|把跑过的路保存为路线|从 GPX 文件导入路线|在地图上画路线|把常跑的路做成路线|比较同一条路的成绩|跑路线时用手表" data-keys="路线 我的路线 路线栏 主页 创建 保存 保存为路线 结果 地图 画 gpx tcx 文件 导入 同一条路 自动 过去的自己 比拼 最佳 收到的成绩 我的分段 分段记录 环线 筛选 由近到远 手表 手机 测量设备">
 <h2>创建与导入我的路线</h2>
-<p class="lead">同一条路跑两次就会自动成为路线。也可以在 {{> tabMenu > courseTitle}} 中用过去的跑步、在地图上画或用文件来创建。</p>
+<p class="lead">跑步 {{> tabHome}} 的 {{> courseShelfTitle}} 栏会按离最近跑步地点的远近排列我的路线。可在跑步结果中一键保存，也可以用过去的跑步、在地图上画或用文件来创建。</p>
 <ol class="steps">
-<li>打开 {{> tabMenu > courseTitle}}，点 {{> courseMake}}。</li>
-<li>在 {{> courseFromRun}}、{{> courseDraw}}、{{> courseFromFile}} 中选一种。</li>
-<li>起名保存后，在路线页面用 {{> courseRunThis}} 开跑。</li>
+<li>在跑步结束后的结果页面地图下方点 {{> runSaveCourse}}，马上就会成为路线。名称沿用跑步名称，可在路线页面修改。</li>
+<li>其他方式：在 {{> courseShelfTitle}} 栏最后一张卡片或 {{> tabMenu > courseTitle}} 的 {{> courseMake}} 中，从 {{> courseFromRun}}、{{> courseDraw}}、{{> courseFromFile}} 中选一种。</li>
+<li>点路线页面开头的 {{> courseRunThis}}，会打开 {{> runTitleCourse}} 页面。在 {{> runDeviceTitle}} 中选择 {{> runDevicePhone}} 或 {{> runDeviceWatch}} 后开跑。</li>
 </ol>
-<p>{{> courseDraw}} 会用直线连接你在地图上点下的点。在无法使用地图的版本中，这一项会被隐藏。文件可以打开 GPX 和 TCX。要把在其他应用中跑的整条记录导入，请用<a href="#import">导入其他应用的跑步</a>。跑路线时会和过去的自己比拼，路线页面会累积 {{> courseBestLabel}} 和跑步记录。把路线的一部分设为 {{> courseSegments}}、单独查看那一段的记录属于 PRO。</p>
+<p>同一条路跑两次也会自动成为路线。在 {{> courseTitle}} 中可用 {{> courseFilterAll}}、{{> courseOriginReceived}}、{{> courseLoop}} 和距离标签筛选。由近到远的排列不另外使用位置权限，以最近一次跑步的起点为准。路线页面的 {{> courseVersus}} 栏按快慢显示 {{> courseBestLabel}}、{{> courseVersusReceived}} 和 {{> courseVersusLatest}} 成绩，跑这条路线时会与这些成绩比拼。选择手表时，手表上会显示路线，偏离时振动。{{> courseDraw}} 会用直线连接你在地图上点下的点。在无法使用地图的版本中，这一项会被隐藏。文件可以打开 GPX 和 TCX。要把在其他应用中跑的整条记录导入，请用<a href="#import">导入其他应用的跑步</a>。把路线的一部分设为 {{> courseSegments}}、单独查看那一段的记录属于 PRO。</p>
 </section>
 
-<section id="share-course" data-ask="想把路线发给别人|怎么打开收到的路线链接|用二维码发送路线|分享路线会把我的记录也发过去吗" data-keys="发送 分享 链接 二维码 qr 文件 接收 收到的路线 聊天 服务器 我的记录 一起 粘贴 复制的链接">
+<section id="share-course" data-ask="想把路线发给别人|把路线发给朋友|怎么打开收到的路线链接|扫描朋友手机上的二维码|用二维码发送路线|分享路线会把我的记录也发过去吗" data-keys="发送 发给朋友 分享 链接 二维码 qr 扫描 相机 文件 接收 接收路线 收到的路线 聊天 服务器 我的记录 一起 粘贴 复制的链接 预览 隐藏后的样子">
 <h2>发送与接收路线</h2>
-<p class="lead">在路线页面的 {{> courseSendTitle}} 中，用 {{> courseShareLink}}、{{> courseShareQr}} 或 {{> courseShareFile}} 发送。不经过服务器。</p>
+<p class="lead">点路线页面开头的 {{> courseSendToFriend}}，会打开 {{> courseSendTitle}} 页面。先看要发送的样子，再用 {{> courseShareLinkSend}}、{{> courseShareQr}} 或 {{> courseShareGpx}} 发送。不经过服务器。</p>
 <ol class="steps">
-<li>在 {{> tabMenu > courseTitle}} 中打开要发送的路线。</li>
-<li>在 {{> courseSendTitle}} 中选择发送方式，需要时打开 {{> courseIncludeRecord}}。</li>
-<li>对方点链接或扫描二维码，在弹出的 {{> courseReceivedTitle}} 窗口中保存。</li>
+<li>打开要发送的路线，点 {{> courseSendToFriend}}。在跑步结果页面刚保存的路线，可直接用那里的 {{> courseSendToFriend}} 发送。</li>
+<li>在预览中确认变淡去掉的起点和终点部分，需要时打开 {{> courseIncludeRecord}}，再选择发送方式。</li>
+<li>对方点链接，或在 {{> courseShelfTitle}} 栏或 {{> courseTitle}} 的 {{> courseReceive}} 中用 {{> courseScanQr}} 扫描二维码，在弹出的 {{> courseReceivedTitle}} 窗口中保存。</li>
 </ol>
-<p>在手机浏览器中打开链接，会显示路线图和距离，并有在应用中打开的按钮。复制的链接也可以通过 {{> courseTitle}} 右上角 ⋯ 中的 {{> coursePasteLink}} 打开。由跑过的路线生成的路线，无论用链接、二维码还是文件发送，都会随机隐藏起点和终点附近并去掉隐私区域后再发送。自己画的路线按所画原样发送。不包含时间和心率。附带的记录只有每段用时，不含日期和时刻，并从隐藏后剩下线路的起点重新计算。路线较长时会显示 {{" courseTooLongForLink}}，请用文件发送。</p>
+<p>在 {{> courseReceive}} 中也可以用 {{> coursePasteLink}} 和 {{> courseImportFile}} 接收。只有点 {{> courseScanQr}} 时才会打开相机。在手机浏览器中打开链接，会显示路线图和距离，并有在应用中打开的按钮。由跑过的路线生成的路线，无论用链接、二维码还是文件发送，都会随机隐藏起点和终点附近并去掉隐私区域后再发送。要再隐藏家等地点，可在页面中的 {{> courseHideMore}} 设置。自己画的路线按所画原样发送。不包含时间和心率。附带的记录只有每段用时，不含日期和时刻，并从隐藏后剩下线路的起点重新计算。路线较长时会显示 {{" courseTooLongForLink}}，请用文件发送。</p>
 </section>
 
 <section id="privacy-zones" data-ask="不想暴露住址|想隐藏起点|怎么设置隐私区域|分享时隐藏位置" data-keys="隐藏 隐私区域 位置 住家 公司 起点 终点 隐私 随机 半径 分享 暴露">
