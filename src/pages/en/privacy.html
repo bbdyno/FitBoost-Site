@@ -1,5 +1,5 @@
 <h1>Privacy Policy</h1>
-<p class="doc__meta">Last updated: November 1, 2026</p>
+<p class="doc__meta">Last updated: November 2, 2026</p>
 
 <p>FitBoost is a workout log app. This policy explains what information the app handles and where that information is kept.</p>
 
@@ -7,12 +7,13 @@
 <ul>
   <li>You can use the app without an account. We never ask you to sign up.</li>
   <li>Your workout and body records are stored <strong>on your device</strong>. If you turn on sync across devices, they are also stored in <strong>your own iCloud or Google Drive</strong>, where we cannot see them.</li>
-  <li>The standard setup has no server. We do not send your records to our servers.</li>
+  <li>The standard setup has no server. Only <strong>public courses</strong>, <strong>Garmin Connect linking</strong> and <strong>peer comparison</strong>, when you turn them on yourself, go through our servers; no other records are sent to our servers.</li>
   <li>We do not collect your name, email address or phone number.</li>
   <li>We collect <strong>usage statistics</strong> to see how the app is used. The contents of your workout records and advertising identifiers are not sent.</li>
   <li>While you use the app for free, <strong>Google AdMob ads</strong> appear, and the advertising identifier and device information may be sent to Google for them. Subscribing to PRO removes ads.</li>
   <li><strong>Peer comparison</strong> sends anonymous summary values (age range, sex, bodyweight range, best estimated one-rep max per exercise) only if you turn it on.</li>
   <li><strong>Run location</strong> is used only while a run is being measured, stays on your device and in your health app, and is never sent to our servers. Sending and receiving courses doesn't go through a server either.</li>
+  <li>If you turn on <strong>Garmin Connect linking</strong>, runs measured on your Garmin watch and your sleep and heart rate records come to the app through our server (Supabase, Seoul). They stay on the server only until your device downloads them (30 days at most), and we never sell them or use them for ads or AI training.</li>
 </ul>
 
 <h2>Information the app handles</h2>
@@ -50,8 +51,21 @@
 <p>A course link (bbdyno.github.io/FitBoost-Site/course.html) carries the course after the # in the address. Browsers don't send the part after # to the server, so even though opening the page sends a request to GitHub Pages like any web page, the course itself is not in it. The course page decodes it only inside your browser and uses no usage statistics or ad scripts. A received course is saved only on the receiver's device, when they save it.</p>
 
 <h3>Public courses (optional)</h3>
-<p>Public courses aren't open yet. The feature is in the app but turned off, so what follows applies from the day public courses open in the app. Until then, no course is sent to a server.</p>
+<p>Public courses open in FitBoost 1.9.1. In earlier versions the feature is turned off, so no course is sent to a server.</p>
 <p>If you choose "Share publicly" for a course, its line (with 400–600 m cut off near the start and finish), its name, its surface and terrain tags, and a hash of a random device secret used only for this feature are stored on Supabase servers in Seoul, and the line, name and tags are shown to all users. Other users can't see who posted it. Times, speed, heart rate, names and contact details are not sent. Public courses are deleted after 12 months and can be taken down in the app at any time; records of sharing and taking down are kept for 12 months. When you look for public courses, only an area of about 15 km around the place you chose is sent, and the server doesn't record it. See the <a href="location-terms.html">Location-Based Service Terms</a> for details.</p>
+
+<h3>Garmin Connect linking (optional)</h3>
+<p>The app exchanges records with Garmin Connect only if you choose "Link Garmin Connect" in Settings, sign in with your Garmin account and agree to share. Only the items you turn on in Garmin's consent screen are exchanged, and you can turn each one off in your Garmin Connect account settings. This feature is available from FitBoost 1.9.1.</p>
+<p><strong>What we receive from Garmin:</strong> runs measured on a Garmin device (start time, distance, duration, speed and pace, heart rate, cadence, power, elevation, the locations along the route you ran, and the device name), and, from the daily health summaries, sleep duration and sleep stages, overnight heart rate variability and resting heart rate. Received records are used for run records, statistics, the coach, share cards and recovery assessment.</p>
+<p><strong>What we send to Garmin:</strong> courses (name, route line, elevation, distance) and workouts (the steps, targets, and sets, reps and weights of a run prescription or strength routine) that you choose to "Send to Garmin". Courses and workouts you send are saved to your Garmin Connect account and moved to your watch, and from then on the <a href="https://www.garmin.com/privacy/connect" rel="noopener">Garmin Connect Privacy Policy</a> applies. Before sending, the app explains this and asks for your consent.</p>
+<p><strong>What we keep on our server:</strong> Garmin sends records only to our server. The server is in the Seoul (South Korea) region and is operated by Supabase, Inc. (United States). It keeps only the following.</p>
+<ul>
+  <li>Your Garmin user ID, the access and refresh tokens issued by Garmin, a hash of a random device secret used only for this feature, and the sharing items you turned on at Garmin</li>
+  <li>Runs and health summaries your device hasn't downloaded yet. They are deleted as soon as your device downloads them, and after 30 days even if it doesn't.</li>
+</ul>
+<p>Courses and workouts sent to Garmin are not stored on the server; they are only passed on to Garmin. Records downloaded to your device are stored on your device like your other workout records and follow the same rules for the health app, sync across devices and backup files.</p>
+<p>We do not sell records received from Garmin or provide them to other companies. They are not sent to ads (AdMob) or usage statistics (Firebase), and they are not processed with AI or used for AI training. When the app shows records received from Garmin, it shows Garmin as their source.</p>
+<p><strong>Unlinking:</strong> When you tap "Unlink" in the app's settings, the server removes FitBoost's registration with Garmin and immediately deletes the connection information and any records not yet downloaded. If you disconnect FitBoost in your Garmin Connect account, the connection information and records not yet downloaded are deleted right away; if you turn off one sharing item, the records for that item not yet downloaded are deleted right away. Records already on your device can be viewed, edited and deleted in the app, and exported to a backup file.</p>
 
 <h3>Photos and camera (optional)</h3>
 <p>The app accesses your photo library or camera only when you add a progress photo or pick a background photo or photo sticker for a share card. The photos you choose are stored on your device, and we do not view them. When you save a design to Photos, iPhone uses add-only access and does not read your library, and Android puts it in a FitBoost album (Android 9 and earlier use storage write permission).</p>
@@ -129,6 +143,16 @@
       <td>Person segmentation for share card editing and pose detection for movement assessment (on device)</td>
       <td>No photos or videos sent; feature performance and usage metrics</td>
     </tr>
+    <tr>
+      <td>Supabase (Seoul region server)</td>
+      <td>Server for public courses and Garmin Connect linking</td>
+      <td>Public course lines, names and tags; Garmin user ID and tokens; hash of the device secret; Garmin records not yet downloaded</td>
+    </tr>
+    <tr>
+      <td>Garmin Connect</td>
+      <td>Receiving Garmin records; sending courses and workouts to Garmin</td>
+      <td>Garmin activities and health summaries; courses and workouts you send</td>
+    </tr>
   </tbody>
 </table>
 
@@ -145,20 +169,22 @@
 <p>Subscription payments are processed through your Apple or Google account. We neither receive nor store your card number or any other payment method details.</p>
 
 <h2>If a server is connected</h2>
-<p>Features such as social features, live trainer connections and an AI coach depend on other users, so they need a server. Trainer sharing by file and sync across devices work without a server. <strong>The current release does not include these server features.</strong> If we offer them in the future, we will update this policy to describe what information is sent to the server, explain it in the app in advance, and ask for your consent.</p>
+<p>The only features that use our servers now are public courses, Garmin Connect linking and peer comparison, when you turn them on yourself; the information each one sends is described above. Features such as social features, live trainer connections and an AI coach <strong>are not in the current release.</strong> If we offer them in the future, we will update this policy to describe what information is sent to the server, explain it in the app in advance, and ask for your consent.</p>
 
 <h2>Retention and deletion</h2>
 <p>Your records are kept for as long as they remain on your device. When you delete the app, the data it created is deleted with it. You can delete individual records in the app at any time.</p>
 <p>When you delete a run, its on-device backup copy is deleted too. You can view and delete routes and heart rate written to the health app in the health app.</p>
 <p>Copies included in device backups must be managed in Apple's or Google's backup settings.</p>
 <p>Turning off sync across devices does not delete the copies left in iCloud and Google Drive. You can delete FitBoost's hidden data on iPhone in Settings → [your name] → iCloud → Manage Storage, and on Android under Manage apps in Google Drive settings.</p>
+<p>Records kept on the server for Garmin Connect linking are deleted as soon as your device downloads them, and after 30 days even if it doesn't. When you unlink, the connection information and any remaining records are deleted right away.</p>
 <p>Usage statistics are deleted after a set period according to Google Analytics retention settings. When you delete the app, its app instance ID is no longer used, and a new ID is created if you reinstall.</p>
 
 <h2>Children</h2>
 <p>FitBoost is not directed at children under 14, and we do not knowingly collect personal information from children.</p>
 
 <h2>Your rights</h2>
-<p>Because your workout and body records are on your device, you can view, correct and delete them yourself in the app. In Transfer &amp; backup in the menu, you can put all of your records into a single backup file to keep wherever you like or move to another device.</p>
+<p>Because your workout and body records are on your device, you can view, correct and delete them yourself in the app. In Transfer &amp; backup in the menu, you can put all of your records into a single backup file to keep wherever you like or move to another device. The same applies to records received from Garmin.</p>
+<p>You can withdraw Garmin Connect linking at any time with "Unlink" in the app's settings or in your Garmin Connect account settings. The connection information and records not yet downloaded are then deleted from the server.</p>
 
 <h2>Changes</h2>
 <p>If this policy changes, we will update this page and its last-updated date.</p>
