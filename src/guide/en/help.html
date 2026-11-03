@@ -88,10 +88,10 @@
 <p>You don't need Always. Once a run starts, it keeps measuring with the screen off until that run ends. If {{" runGpsSearching}} lasts a while, wait a moment somewhere with open sky. Indoors, such as on a treadmill, distance is estimated from steps instead of location, so on Android allow physical activity too.</p>
 </section>
 
-<section id="run-map" data-ask="I can't see the map of my run|There's no Draw on map option|The draw course button is missing|Only a line shows with no map" data-keys="map missing draw hidden line route base map no map route record">
+<section id="run-map" data-ask="I can't see the map of my run|I can't tap points in Draw on map|The course map doesn't load|Only a line shows with no map" data-keys="map missing draw points tap line route base map internet connection offline no map route record attribution openfreemap">
 <h2>When the map doesn't show</h2>
-<p class="lead">In builds where maps aren't available, your route is drawn as a line with no base map, and {{> courseDraw}} is hidden.</p>
-<p>If the course screen says {{" courseDrawUnavailable}}, this is why. You can still make courses with {{> courseFromRun}} or {{> courseFromFile}}, and distance, splits, and course comparisons work as usual. If you see {{" runNoTrack}}, no location was saved for that run, either because it was indoors or because location was off.</p>
+<p class="lead">The base map comes over the internet. If you're offline or the map server can't be reached, after a few seconds it switches to a route line drawn by the app, with no base map.</p>
+<p>The base map appears on the course screen, in {{> courseDraw}} when making a course, and in public courses. The run screen, run results, and course lists are always a line drawn by the app. While the map has switched to a line, you can't tap points in {{> courseDraw}}, so open it again once you're connected, or make the course with {{> courseFromRun}} or {{> courseFromFile}}. Distance, splits, and course comparisons work the same without a map. If you see {{" runNoTrack}}, no location was saved for that run, either because it was indoors or because location was off. The map is OpenFreeMap's public map, and its attribution (OpenFreeMap, OpenMapTiles, OpenStreetMap contributors) is under the info button at the bottom right of the map.</p>
 </section>
 
 <section id="course-link" data-ask="A course link I received won't open|It says that isn't a course link|Tapping a course link opened a website" data-keys="course link won't open error website browser open in app paste copy broken cut off">

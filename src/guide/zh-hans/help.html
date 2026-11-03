@@ -88,10 +88,10 @@
 <p>不需要“始终”。开始跑步后，即使关掉屏幕也会一直测到这次跑步结束。{{" runGpsSearching}} 持续很久时，请在开阔的地方稍等片刻。在跑步机这样的室内，会用步数代替位置估算距离，所以 Android 还需要允许身体活动权限。</p>
 </section>
 
-<section id="run-map" data-ask="看不到跑步路线地图|没有在地图上画这一项|找不到画路线的按钮|没有地图只显示一条线" data-keys="地图 不显示 画 没有 隐藏 线 路线 底图 位置记录">
+<section id="run-map" data-ask="看不到跑步路线地图|在地图上画时点不了点|路线地图不显示|没有地图只显示一条线" data-keys="地图 不显示 画 点 线 路线 底图 网络 连接 离线 位置记录 来源 openfreemap">
 <h2>地图不显示时</h2>
-<p class="lead">在无法使用地图的版本中，会不带底图、只用线画出跑过的路线，并隐藏 {{> courseDraw}}。</p>
-<p>创建路线页面显示 {{" courseDrawUnavailable}} 就是这种情况。仍可用 {{> courseFromRun}} 或 {{> courseFromFile}} 创建路线，距离、分段和路线比较照常可用。显示 {{" runNoTrack}} 时，表示那次跑步没有留下位置，可能是室内跑步，或当时位置权限已关闭。</p>
+<p class="lead">底图通过互联网获取。未连接互联网或连不上地图服务器时，几秒后会换成不带底图、由应用画出的路线线条。</p>
+<p>底图出现在路线页面、创建路线时的 {{> courseDraw}} 以及公开路线中。跑步中的画面、跑步结果和路线列表一直是应用画出的线条。换成线条期间无法在 {{> courseDraw}} 中点下点，请在连上网络后重新打开，或用 {{> courseFromRun}} 或 {{> courseFromFile}} 创建路线。没有地图时，距离、分段和路线比较照常可用。显示 {{" runNoTrack}} 时，表示那次跑步没有留下位置，可能是室内跑步，或当时位置权限已关闭。地图是 OpenFreeMap 的公开地图，来源标注（OpenFreeMap、OpenMapTiles、OpenStreetMap 贡献者）在地图右下角的信息按钮中。</p>
 </section>
 
 <section id="course-link" data-ask="收到的路线链接打不开|提示这不是路线链接|点路线链接打开的是网站" data-keys="路线 链接 打不开 错误 网站 浏览器 在应用中打开 粘贴 复制 损坏 截断">
