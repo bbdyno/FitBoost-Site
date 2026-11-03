@@ -43,7 +43,7 @@
 
 <main class="doc wrap">
 <h1>Privacy Policy</h1>
-<p class="doc__meta">Last updated: November 2, 2026</p>
+<p class="doc__meta">Last updated: November 3, 2026</p>
 
 <p>FitBoost is a workout log app. This policy explains what information the app handles and where that information is kept.</p>
 
@@ -57,13 +57,13 @@
   <li>While you use the app for free, <strong>Google AdMob ads</strong> appear, and the advertising identifier and device information may be sent to Google for them. Subscribing to PRO removes ads.</li>
   <li><strong>Peer comparison</strong> sends anonymous summary values (age range, sex, bodyweight range, best estimated one-rep max per exercise) only if you turn it on.</li>
   <li><strong>Run location</strong> is used only while a run is being measured, stays on your device and in your health app, and is never sent to our servers. Sending and receiving courses doesn't go through a server either.</li>
-  <li>If you turn on <strong>Garmin Connect linking</strong>, runs measured on your Garmin watch and your sleep and heart rate records come to the app through our server (Supabase, Seoul). They stay on the server only until your device downloads them (30 days at most), and we never sell them or use them for ads or AI training.</li>
+  <li>If you turn on <strong>Garmin Connect linking</strong>, runs measured on your Garmin watch, your sleep and heart rate records, and your VO2 max and fitness age come to the app through our server (Supabase, Seoul). They stay on the server only until your device downloads them (30 days at most), and we never sell them or use them for ads or AI training.</li>
 </ul>
 
 <h2>Information the app handles</h2>
 
 <h3>Workout and body records</h3>
-<p>This covers workout sessions, sets, weights, reps, routines, schedules, notes, body weight and body composition, and progress photos. This information is written <strong>only to your device's storage</strong>, and the app does not send it anywhere.</p>
+<p>This covers workout sessions, sets, weights, reps, routines, schedules, notes, body weight and body composition, cardio fitness (VO2 max) records, and progress photos. This information is written <strong>only to your device's storage</strong>, and the app does not send it anywhere.</p>
 <p>If you have device backup turned on, this information may be included in your <strong>iCloud Backup</strong> or <strong>Google automatic backup</strong>. Apple and Google handle those backups under their own policies, and we have no access to them.</p>
 
 <h3>Sync across devices (optional)</h3>
@@ -82,6 +82,7 @@
 
 <h3>Health data (optional)</h3>
 <p>Only if you allow it, the app exchanges workout records with Apple Health or Health Connect. If you decline, or turn it off later, the rest of the app keeps working as before. Health data never leaves your device. When you measure a run, time series such as the route (location, elevation and accuracy), distance and heart rate are written to the health app with that workout.</p>
+<p>For your body records, the app reads the weight, height, body fat percentage and lean body mass that other apps such as InBody or your scale saved to the health app (plus BMI and waist circumference on iPhone, and body water on Android), and keeps them as body records with the source app's name. Weight, body fat percentage and lean body mass you enter in the app are written to the health app, except where another app already saved a value for the same time. If no other app has saved a height to the health app, your profile height is written to it. For cardio fitness, the app only reads the VO2 max that devices such as Apple Watch or Galaxy Watch saved to the health app. Values read are stored on your device like other body records and used for body composition and cardio fitness trends, nutrition targets and training prescriptions; they are not sent to our server.</p>
 
 <h3>Run location and motion sensors (optional)</h3>
 <p>The app asks for location only when you measure an outdoor run with your phone. Location is used to record your route, distance and pace and to guide you along a course, and is received only from the start of a run until you finish it. So that measuring continues until that run ends even with the screen off or another app open, iPhone uses the background location mode and Android uses a location foreground service with an ongoing notification. The app does not ask for Always (background location) permission. Without location, you can still record time only or run indoors.</p>
@@ -100,12 +101,12 @@
 
 <h3>Garmin Connect linking (optional)</h3>
 <p>The app exchanges records with Garmin Connect only if you choose "Link Garmin Connect" in Settings, sign in with your Garmin account and agree to share. Only the items you turn on in Garmin's consent screen are exchanged, and you can turn each one off in your Garmin Connect account settings. This feature is available from FitBoost 1.9.1.</p>
-<p><strong>What we receive from Garmin:</strong> runs measured on a Garmin device (start time, distance, duration, speed and pace, heart rate, cadence, power, elevation, the locations along the route you ran, and the device name), and, from the daily health summaries, sleep duration and sleep stages, overnight heart rate variability and resting heart rate. Received records are used for run records, statistics, the coach, share cards and recovery assessment.</p>
+<p><strong>What we receive from Garmin:</strong> runs measured on a Garmin device (start time, distance, duration, speed and pace, heart rate, cadence, power, elevation, the locations along the route you ran, and the device name), and, from the daily health summaries, sleep duration and sleep stages, overnight heart rate variability and resting heart rate, and the user metrics Garmin calculates: running and cycling VO2 max and Garmin fitness age. Received records are used for run records, statistics, the coach, share cards, recovery assessment, and cardio fitness trends and training.</p>
 <p><strong>What we send to Garmin:</strong> courses (name, route line, elevation, distance) and workouts (the steps, targets, and sets, reps and weights of a run prescription or strength routine) that you choose to "Send to Garmin". Courses and workouts you send are saved to your Garmin Connect account and moved to your watch, and from then on the <a href="https://www.garmin.com/privacy/connect" rel="noopener">Garmin Connect Privacy Policy</a> applies. Before sending, the app explains this and asks for your consent.</p>
 <p><strong>What we keep on our server:</strong> Garmin sends records only to our server. The server is in the Seoul (South Korea) region and is operated by Supabase, Inc. (United States). It keeps only the following.</p>
 <ul>
   <li>Your Garmin user ID, the access and refresh tokens issued by Garmin, a hash of a random device secret used only for this feature, and the sharing items you turned on at Garmin</li>
-  <li>Runs and health summaries your device hasn't downloaded yet. They are deleted as soon as your device downloads them, and after 30 days even if it doesn't.</li>
+  <li>Runs, health summaries and user metrics (VO2 max and fitness age) your device hasn't downloaded yet. They are deleted as soon as your device downloads them, and after 30 days even if it doesn't.</li>
 </ul>
 <p>Courses and workouts sent to Garmin are not stored on the server; they are only passed on to Garmin. Records downloaded to your device are stored on your device like your other workout records and follow the same rules for the health app, sync across devices and backup files.</p>
 <p>We do not sell records received from Garmin or provide them to other companies. They are not sent to ads (AdMob) or usage statistics (Firebase), and they are not processed with AI or used for AI training. When the app shows records received from Garmin, it shows Garmin as their source.</p>
@@ -130,8 +131,8 @@
 <h3>Usage statistics</h3>
 <p>To understand which features are used and to improve the app, we collect usage statistics with Google's <strong>Firebase Analytics</strong>. We collect the following.</p>
 <ul>
-  <li>App usage events: app launches, screen views, workout start and completion, exercise selection, use of weight recommendations, opening the purchase screen and subscription purchases, switching training mode, starting and finishing a run, setting a reference result, saving a course, opening the share screen, and in the share editor: opening it, choosing a layout, removing a sticker and exporting</li>
-  <li>Values and categories attached to events: the number of exercises in a workout, workout duration (minutes), total number of workouts, the catalog number of the selected exercise, and the subscription product and plan type, the chosen training mode, the kind of run, the measuring device (phone or watch), whether the run followed a course, whether location was recorded, how the reference result was set, how the course was made, where sharing was opened, how the editor was entered, which layout was chosen, where it was exported (Instagram, Photos and so on), whether a photo was used (the photo itself is never sent), and the image size</li>
+  <li>App usage events: app launches, screen views, workout start and completion, exercise selection, use of weight recommendations, opening the purchase screen and subscription purchases, changing the main focus, starting and finishing a run, setting a reference result, saving a course, opening the share screen, and in the share editor: opening it, choosing a layout, removing a sticker and exporting</li>
+  <li>Values and categories attached to events: the number of exercises in a workout, workout duration (minutes), total number of workouts, the catalog number of the selected exercise, and the subscription product and plan type, the chosen main focus, the kind of run, the measuring device (phone or watch), whether the run followed a course, whether location was recorded, how the reference result was set, how the course was made, where sharing was opened, how the editor was entered, which layout was chosen, where it was exported (Instagram, Photos and so on), whether a photo was used (the photo itself is never sent), and the image size</li>
   <li>Device and app information: country, device type, operating system and app version</li>
   <li>App instance ID: a random identifier created anew each time the app is installed</li>
 </ul>
@@ -195,7 +196,7 @@
     <tr>
       <td>Garmin Connect</td>
       <td>Receiving Garmin records; sending courses and workouts to Garmin</td>
-      <td>Garmin activities and health summaries; courses and workouts you send</td>
+      <td>Garmin activities, health summaries and user metrics (VO2 max and fitness age); courses and workouts you send</td>
     </tr>
   </tbody>
 </table>
@@ -220,7 +221,7 @@
 <p>When you delete a run, its on-device backup copy is deleted too. You can view and delete routes and heart rate written to the health app in the health app.</p>
 <p>Copies included in device backups must be managed in Apple's or Google's backup settings.</p>
 <p>Turning off sync across devices does not delete the copies left in iCloud and Google Drive. You can delete FitBoost's hidden data on iPhone in Settings → [your name] → iCloud → Manage Storage, and on Android under Manage apps in Google Drive settings.</p>
-<p>Records kept on the server for Garmin Connect linking are deleted as soon as your device downloads them, and after 30 days even if it doesn't. When you unlink, the connection information and any remaining records are deleted right away.</p>
+<p>Records kept on the server for Garmin Connect linking (runs, health summaries, and user metrics such as VO2 max and fitness age) are deleted as soon as your device downloads them, and after 30 days even if it doesn't. When you unlink, the connection information and any remaining records are deleted right away.</p>
 <p>Usage statistics are deleted after a set period according to Google Analytics retention settings. When you delete the app, its app instance ID is no longer used, and a new ID is created if you reinstall.</p>
 
 <h2>Children</h2>
