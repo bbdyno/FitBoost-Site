@@ -28,23 +28,23 @@
 <li>Connect IQ 스토어에서 시계에 FitBoost를 설치합니다.</li>
 <li>휴대폰에서 {{> tabMenu > setAppSettings > setWatch > setGarminConnect}}를 누릅니다. iPhone은 가민 커넥트 앱이 열리면 시계를 골라 돌아옵니다.</li>
 </ol>
-<p>iPhone과 Android 모두 됩니다. 가민 시계로 한 운동은 휴대폰 기록에 들어가고, 가민 커넥트에도 근력 운동으로 남습니다. 가민 커넥트 계정을 이어 달리기·건강 요약을 받고 코스·운동을 보내는 것은 <a href="#garmin-connect">가민 커넥트 연결</a>입니다.</p>
+<p>iPhone과 Android 모두 됩니다. 가민 시계로 한 운동은 휴대폰 기록에 들어가고, 가민 커넥트에도 근력 운동으로 남습니다. 가민 커넥트 계정을 이어 운동·건강 요약을 받고 코스·운동을 보내는 것은 <a href="#garmin-connect">가민 커넥트 연결</a>입니다.</p>
 </section>
 
-<section id="garmin-connect" data-ask="가민 커넥트 계정을 이을 수 있나요|가민 커넥트에서 달린 기록 받기|가민 커넥트에 코스 보내기|가민 커넥트로 운동 보내기|가민 커넥트 연결 끊기|가민 수면과 심박 변이도 가져오기" data-keys="가민커넥트 커넥트 garmin connect 계정 잇기 로그인 동의 받기 수면 hrv 심박변이도 안정심박 최대산소섭취량 vo2max 체력나이 보내기 코스 운동 루틴 달력 끊기 해제">
+<section id="garmin-connect" data-ask="가민 커넥트 계정을 이을 수 있나요|가민 커넥트에서 달린 기록 받기|가민 커넥트에서 근력·자전거 운동 받기|가민 커넥트에 코스 보내기|가민 커넥트로 운동 보내기|가민 커넥트 연결 끊기|가민 수면과 심박 변이도 가져오기" data-keys="가민커넥트 커넥트 garmin connect 계정 잇기 로그인 동의 받기 운동 근력 유산소 자전거 사이클 수영 요가 필라테스 걷기 실내 수면 hrv 심박변이도 안정심박 최대산소섭취량 vo2max 체력나이 보내기 코스 운동 루틴 달력 끊기 해제">
 <h2>가민 커넥트 연결</h2>
-<p class="lead">{{> garminConnectTitle}}으로 가민 계정을 이으면 가민 시계로 잰 달리기와 수면·회복 지표가 바로 들어오고, 고른 코스와 운동을 가민으로 보냅니다. 무료입니다.</p>
+<p class="lead">{{> garminConnectTitle}}으로 가민 계정을 이으면 가민 시계로 잰 운동과 수면·회복 지표가 바로 들어오고, 고른 코스와 운동을 가민으로 보냅니다. 무료입니다.</p>
 <ol class="steps">
 <li>{{> tabMenu > setAppSettings > setWatch > garminConnectTitle}}을 누릅니다.</li>
 <li>받는 것과 보내는 것을 읽고 가민에서 로그인한 뒤, 가민 동의 화면에서 공유할 항목을 켭니다.</li>
 <li>돌아오면 앱을 열 때마다 새 기록을 받습니다. 바로 받으려면 {{> garminConnectSyncNow}}를 누릅니다.</li>
 </ol>
 <ul>
-<li>{{> garminConnectRuns}}: 경로·심박·케이던스·파워가 든 달리기가 FitBoost 달리기 기록이 됩니다.</li>
+<li>{{> garminConnectRuns}}: 달리기는 경로·심박·케이던스·파워까지 받아 FitBoost 달리기 기록이 됩니다. 실내 유산소·근력·자전거·걷기·수영·요가·필라테스 같은 다른 운동은 종류·시간·거리·평균 심박·칼로리 같은 요약만 받아, 건강 앱에서 가져온 운동처럼 근력·유산소·유연성 기록이 됩니다. 같은 운동이 건강 앱으로 먼저 들어왔거나 앱에서 기록했으면 하나만 남깁니다.</li>
 <li>{{> garminConnectHealth}}: 수면 시간과 단계, 지난밤 심박 변이도, 안정 심박을 컨디션에 쓰고, 달리기·사이클 최대산소섭취량과 가민 체력 나이를 <a href="body.html#vo2">심폐 체력</a>에 넣습니다.</li>
 <li>{{> garminConnectCourses}}·{{> garminConnectWorkouts}}: 코스 화면, 달리기 시작 화면, 루틴의 ⋯ 메뉴에서 {{> garminSendAction}}를 누르면 가민 커넥트 계정에 저장되어 시계로 옮겨집니다. 운동은 가민 커넥트 달력에 놓을 날을 고릅니다.</li>
 </ul>
-<p>항목마다 켜짐·꺼짐이 보이고, 꺼진 항목은 가민 커넥트 계정 설정의 연결된 앱에서 켭니다. {{" garminSendWatchNote}} 가민에서 받은 기록은 기기가 받아 가면 서버에서 바로, 받아 가지 않아도 30일 뒤 지웁니다. {{> garminConnectDisconnect}}를 누르면 연결을 끊고 서버에 남은 기록을 지우며, 이미 받은 달리기는 앱에 남습니다.</p>
+<p>항목마다 켜짐·꺼짐이 보이고, 꺼진 항목은 가민 커넥트 계정 설정의 연결된 앱에서 켭니다. {{" garminSendWatchNote}} 가민에서 받은 기록은 기기가 받아 가면 서버에서 바로, 받아 가지 않아도 30일 뒤 지웁니다. {{> garminConnectDisconnect}}를 누르면 연결을 끊고 서버에 남은 기록을 지우며, 이미 받은 운동은 앱에 남습니다.</p>
 </section>
 
 <section id="on-watch" data-ask="시계에서 뭘 할 수 있나요|휴대폰 없이 시계로만 운동|시계에서 무게 바꾸기|시계에서 서킷" data-keys="시계 기능 세트 완료 무게 휴식 진동 휴대폰 없이 빠른 근력 서킷 심박">

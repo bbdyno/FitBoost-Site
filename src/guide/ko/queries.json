@@ -176,5 +176,6 @@
  "가민으로 코스 보내기": "watch#garmin-connect",
  "가민 연결 끊기": "watch#garmin-connect",
  "가민 기록이 저절로 안 들어와요": "health#runs",
- "건강 앱 운동이 자동으로 들어오나요": "health#import"
+ "건강 앱 운동이 자동으로 들어오나요": "health#import",
+ "가민 커넥트 근력 운동 받기": "watch#garmin-connect"
 }

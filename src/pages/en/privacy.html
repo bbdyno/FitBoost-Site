@@ -1,5 +1,5 @@
 <h1>Privacy Policy</h1>
-<p class="doc__meta">Last updated: November 3, 2026</p>
+<p class="doc__meta">Last updated: November 4, 2026</p>
 
 <p>FitBoost is a workout log app. This policy explains what information the app handles and where that information is kept.</p>
 
@@ -13,7 +13,7 @@
   <li>While you use the app for free, <strong>Google AdMob ads</strong> appear, and the advertising identifier and device information may be sent to Google for them. Subscribing to PRO removes ads.</li>
   <li><strong>Peer comparison</strong> sends anonymous summary values (age range, sex, bodyweight range, best estimated one-rep max per exercise) only if you turn it on.</li>
   <li><strong>Run location</strong> is used only while a run is being measured, stays on your device and in your health app, and is never sent to our servers. Sending and receiving courses doesn't go through a server either.</li>
-  <li>If you turn on <strong>Garmin Connect linking</strong>, runs measured on your Garmin watch, your sleep and heart rate records, and your VO2 max and fitness age come to the app through our server (Supabase, Seoul). They stay on the server only until your device downloads them (30 days at most), and we never sell them or use them for ads or AI training.</li>
+  <li>If you turn on <strong>Garmin Connect linking</strong>, workouts measured on your Garmin watch (runs included), your sleep and heart rate records, and your VO2 max and fitness age come to the app through our server (Supabase, Seoul). Workouts other than runs come in as summaries only, without routes. They stay on the server only until your device downloads them (30 days at most), and we never sell them or use them for ads or AI training.</li>
 </ul>
 
 <h2>Information the app handles</h2>
@@ -57,12 +57,12 @@
 
 <h3>Garmin Connect linking (optional)</h3>
 <p>The app exchanges records with Garmin Connect only if you choose "Link Garmin Connect" in Settings, sign in with your Garmin account and agree to share. Only the items you turn on in Garmin's consent screen are exchanged, and you can turn each one off in your Garmin Connect account settings. This feature is available from FitBoost 1.9.1.</p>
-<p><strong>What we receive from Garmin:</strong> runs measured on a Garmin device (start time, distance, duration, speed and pace, heart rate, cadence, power, elevation, the locations along the route you ran, and the device name), and, from the daily health summaries, sleep duration and sleep stages, overnight heart rate variability and resting heart rate, and the user metrics Garmin calculates: running and cycling VO2 max and Garmin fitness age. Received records are used for run records, statistics, the coach, share cards, recovery assessment, and cardio fitness trends and training.</p>
+<p><strong>What we receive from Garmin:</strong> workouts measured on a Garmin device, daily health summaries, and the user metrics Garmin calculates. For runs, we receive the start time, distance, duration, speed and pace, heart rate, cadence, power, elevation, the locations along the route you ran, and the device name. For workouts other than runs, such as indoor cardio, strength training, cycling, walking, swimming, yoga and Pilates, we receive only a summary (type, start time, duration, distance, average heart rate and cadence, active calories, and the device name), not routes or second-by-second samples. From the health summaries we receive sleep duration and sleep stages, overnight heart rate variability and resting heart rate, and from the user metrics, running and cycling VO2 max and Garmin fitness age. Any other records Garmin may send (such as blood pressure, menstrual cycle or stress) are discarded by the server as soon as they arrive and are not used. Received records are used for workout records, statistics, the coach, share cards, recovery assessment, and cardio fitness trends and training. Workouts other than runs become strength, cardio or flexibility records, like workouts imported from the health app.</p>
 <p><strong>What we send to Garmin:</strong> courses (name, route line, elevation, distance) and workouts (the steps, targets, and sets, reps and weights of a run prescription or strength routine) that you choose to "Send to Garmin". Courses and workouts you send are saved to your Garmin Connect account and moved to your watch, and from then on the <a href="https://www.garmin.com/privacy/connect" rel="noopener">Garmin Connect Privacy Policy</a> applies. Before sending, the app explains this and asks for your consent.</p>
 <p><strong>What we keep on our server:</strong> Garmin sends records only to our server. The server is in the Seoul (South Korea) region and is operated by Supabase, Inc. (United States). It keeps only the following.</p>
 <ul>
   <li>Your Garmin user ID, the access and refresh tokens issued by Garmin, a hash of a random device secret used only for this feature, and the sharing items you turned on at Garmin</li>
-  <li>Runs, health summaries and user metrics (VO2 max and fitness age) your device hasn't downloaded yet. They are deleted as soon as your device downloads them, and after 30 days even if it doesn't.</li>
+  <li>Workouts (with routes for runs, summaries only for other workouts), health summaries and user metrics (VO2 max and fitness age) your device hasn't downloaded yet. They are deleted as soon as your device downloads them, and after 30 days even if it doesn't.</li>
 </ul>
 <p>Courses and workouts sent to Garmin are not stored on the server; they are only passed on to Garmin. Records downloaded to your device are stored on your device like your other workout records and follow the same rules for the health app, sync across devices and backup files.</p>
 <p>We do not sell records received from Garmin or provide them to other companies. They are not sent to ads (AdMob) or usage statistics (Firebase), and they are not processed with AI or used for AI training. When the app shows records received from Garmin, it shows Garmin as their source.</p>
@@ -152,7 +152,7 @@
     <tr>
       <td>Garmin Connect</td>
       <td>Receiving Garmin records; sending courses and workouts to Garmin</td>
-      <td>Garmin activities, health summaries and user metrics (VO2 max and fitness age); courses and workouts you send</td>
+      <td>Garmin workouts (with routes for runs, summaries only for other workouts), health summaries and user metrics (VO2 max and fitness age); courses and workouts you send</td>
     </tr>
   </tbody>
 </table>
@@ -177,7 +177,7 @@
 <p>When you delete a run, its on-device backup copy is deleted too. You can view and delete routes and heart rate written to the health app in the health app.</p>
 <p>Copies included in device backups must be managed in Apple's or Google's backup settings.</p>
 <p>Turning off sync across devices does not delete the copies left in iCloud and Google Drive. You can delete FitBoost's hidden data on iPhone in Settings → [your name] → iCloud → Manage Storage, and on Android under Manage apps in Google Drive settings.</p>
-<p>Records kept on the server for Garmin Connect linking (runs, health summaries, and user metrics such as VO2 max and fitness age) are deleted as soon as your device downloads them, and after 30 days even if it doesn't. When you unlink, the connection information and any remaining records are deleted right away.</p>
+<p>Records kept on the server for Garmin Connect linking (workouts including runs, health summaries, and user metrics such as VO2 max and fitness age) are deleted as soon as your device downloads them, and after 30 days even if it doesn't. When you unlink, the connection information and any remaining records are deleted right away.</p>
 <p>Usage statistics are deleted after a set period according to Google Analytics retention settings. When you delete the app, its app instance ID is no longer used, and a new ID is created if you reinstall.</p>
 
 <h2>Children</h2>

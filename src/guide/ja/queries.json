@@ -168,5 +168,6 @@
  "Garminにコースを送る": "watch#garmin-connect",
  "Garmin Connectの連携を解除": "watch#garmin-connect",
  "Garminの記録が自動で入らない": "health#runs",
- "ヘルスケアのワークアウトは自動で入る": "health#import"
+ "ヘルスケアのワークアウトは自動で入る": "health#import",
+ "Garmin Connectから筋トレを受け取る": "watch#garmin-connect"
 }

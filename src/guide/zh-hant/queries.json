@@ -168,5 +168,6 @@
  "把路線發送到 Garmin": "watch#garmin-connect",
  "取消連結 Garmin Connect": "watch#garmin-connect",
  "Garmin 紀錄沒有自動匯入": "health#runs",
- "健康 App 訓練會自動匯入嗎": "health#import"
+ "健康 App 訓練會自動匯入嗎": "health#import",
+ "從 Garmin Connect 接收力量訓練": "watch#garmin-connect"
 }

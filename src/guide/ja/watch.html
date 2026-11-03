@@ -28,23 +28,23 @@
 <li>Connect IQストアからウォッチにFitBoostをインストールします。</li>
 <li>スマホで{{> tabMenu > setAppSettings > setWatch > setGarminConnect}}をタップします。iPhoneではGarmin Connectアプリが開いたらウォッチを選んで戻ります。</li>
 </ol>
-<p>iPhoneとAndroidのどちらでも使えます。Garminウォッチで行ったワークアウトはスマホの記録に入り、Garmin Connectにも筋トレとして残ります。Garmin Connectのアカウントをつないでランや健康サマリーを受け取り、コースやワークアウトを送るのは<a href="#garmin-connect">Garmin Connect連携</a>です。</p>
+<p>iPhoneとAndroidのどちらでも使えます。Garminウォッチで行ったワークアウトはスマホの記録に入り、Garmin Connectにも筋トレとして残ります。Garmin Connectのアカウントをつないでワークアウトや健康サマリーを受け取り、コースやワークアウトを送るのは<a href="#garmin-connect">Garmin Connect連携</a>です。</p>
 </section>
 
-<section id="garmin-connect" data-ask="Garmin Connectのアカウントとつなげますか|Garmin Connectからランを受け取る|Garmin Connectにコースを送る|Garmin Connectにワークアウトを送る|Garmin Connectの連携を解除したい|Garminの睡眠と心拍変動を取り込む" data-keys="garmin connect ガーミンコネクト アカウント 連携 つなぐ ログイン 同意 受け取る 睡眠 hrv 心拍変動 安静時心拍 最大酸素摂取量 vo2max フィットネス年齢 送る コース ワークアウト ルーティン カレンダー 解除">
+<section id="garmin-connect" data-ask="Garmin Connectのアカウントとつなげますか|Garmin Connectからランを受け取る|Garmin Connectから筋トレやサイクリングを受け取る|Garmin Connectにコースを送る|Garmin Connectにワークアウトを送る|Garmin Connectの連携を解除したい|Garminの睡眠と心拍変動を取り込む" data-keys="garmin connect ガーミンコネクト アカウント 連携 つなぐ ログイン 同意 受け取る 筋トレ 有酸素 サイクリング 水泳 ヨガ ピラティス ウォーキング 屋内 睡眠 hrv 心拍変動 安静時心拍 最大酸素摂取量 vo2max フィットネス年齢 送る コース ワークアウト ルーティン カレンダー 解除">
 <h2>Garmin Connect連携</h2>
-<p class="lead">{{> garminConnectTitle}}でGarminのアカウントをつなぐと、Garminウォッチで計測したランと睡眠・回復の指標がそのまま届き、選んだコースとワークアウトをGarminに送れます。無料です。</p>
+<p class="lead">{{> garminConnectTitle}}でGarminのアカウントをつなぐと、Garminウォッチで計測したワークアウトと睡眠・回復の指標がそのまま届き、選んだコースとワークアウトをGarminに送れます。無料です。</p>
 <ol class="steps">
 <li>{{> tabMenu > setAppSettings > setWatch > garminConnectTitle}}をタップします。</li>
 <li>受け取るものと送るものを読んでGarminでログインし、Garminの同意画面で共有する項目をオンにします。</li>
 <li>戻ると、アプリを開くたびに新しい記録を受け取ります。すぐ受け取るには{{> garminConnectSyncNow}}をタップします。</li>
 </ol>
 <ul>
-<li>{{> garminConnectRuns}}：ルート・心拍・ピッチ・パワーの入ったランがFitBoostのランの記録になります。</li>
+<li>{{> garminConnectRuns}}：ランはルート・心拍・ピッチ・パワーまで受け取り、FitBoostのランの記録になります。屋内有酸素・筋トレ・サイクリング・ウォーキング・水泳・ヨガ・ピラティスなどほかのワークアウトは種類・時間・距離・平均心拍・カロリーなどの概要だけを受け取り、ヘルスケアから取り込んだワークアウトと同じく筋トレ・有酸素・柔軟性の記録になります。同じワークアウトがヘルスケアから先に入っていたり、アプリで記録していたりすれば1つだけ残します。</li>
 <li>{{> garminConnectHealth}}：睡眠時間と睡眠ステージ、前夜の心拍変動、安静時心拍をコンディションに使い、ラン・サイクリングの最大酸素摂取量とGarminのフィットネス年齢を<a href="body.html#vo2">心肺フィットネス</a>に入れます。</li>
 <li>{{> garminConnectCourses}}・{{> garminConnectWorkouts}}：コースの画面、ランの開始画面、ルーティンの⋯メニューで{{> garminSendAction}}をタップすると、Garmin Connectのアカウントに保存されてウォッチに移されます。ワークアウトはGarmin Connectのカレンダーに置く日を選びます。</li>
 </ul>
-<p>項目ごとにオン・オフが表示され、オフの項目はGarmin Connectのアカウント設定の連携アプリでオンにします。{{" garminSendWatchNote}} Garminから受け取った記録は、端末が受け取るとすぐに、受け取らなくても30日後にサーバーから削除します。{{> garminConnectDisconnect}}をタップすると連携を解除してサーバーに残った記録を削除し、すでに受け取ったランはアプリに残ります。</p>
+<p>項目ごとにオン・オフが表示され、オフの項目はGarmin Connectのアカウント設定の連携アプリでオンにします。{{" garminSendWatchNote}} Garminから受け取った記録は、端末が受け取るとすぐに、受け取らなくても30日後にサーバーから削除します。{{> garminConnectDisconnect}}をタップすると連携を解除してサーバーに残った記録を削除し、すでに受け取ったワークアウトはアプリに残ります。</p>
 </section>
 
 <section id="on-watch" data-ask="ウォッチで何ができますか|スマホなしでウォッチだけでトレーニング|ウォッチで重量を変えたい|ウォッチでサーキット" data-keys="ウォッチ 機能 セット 完了 重量 休憩 振動 スマホなし クイック 筋トレ サーキット 心拍">

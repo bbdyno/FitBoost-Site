@@ -28,23 +28,23 @@
 <li>从 Connect IQ 商店给手表安装 FitBoost。</li>
 <li>在手机上点击 {{> tabMenu > setAppSettings > setWatch > setGarminConnect}}。iPhone 会打开 Garmin Connect 应用，选好手表后返回。</li>
 </ol>
-<p>iPhone 和 Android 都支持。在 Garmin 手表上完成的训练会进入手机记录，也会以力量训练的形式保存到 Garmin Connect。关联 Garmin Connect 账户来接收跑步和健康摘要、发送路线和训练，请见<a href="#garmin-connect">关联 Garmin Connect</a>。</p>
+<p>iPhone 和 Android 都支持。在 Garmin 手表上完成的训练会进入手机记录，也会以力量训练的形式保存到 Garmin Connect。关联 Garmin Connect 账户来接收训练和健康摘要、发送路线和训练，请见<a href="#garmin-connect">关联 Garmin Connect</a>。</p>
 </section>
 
-<section id="garmin-connect" data-ask="能关联 Garmin Connect 账户吗|从 Garmin Connect 接收记录|把路线发送到 Garmin Connect|把训练发送到 Garmin Connect|取消关联 Garmin Connect|获取 Garmin 的睡眠和心率变异性" data-keys="garmin connect 佳明 账户 关联 登录 同意 接收 睡眠 hrv 心率变异性 静息心率 最大摄氧量 vo2max 体能年龄 发送 路线 训练 例行 日历 取消关联 断开">
+<section id="garmin-connect" data-ask="能关联 Garmin Connect 账户吗|从 Garmin Connect 接收记录|从 Garmin Connect 接收力量和骑行训练|把路线发送到 Garmin Connect|把训练发送到 Garmin Connect|取消关联 Garmin Connect|获取 Garmin 的睡眠和心率变异性" data-keys="garmin connect 佳明 账户 关联 连接 登录 同意 接收 力量 有氧 骑行 游泳 瑜伽 普拉提 步行 室内 睡眠 hrv 心率变异性 静息心率 最大摄氧量 vo2max 体能年龄 发送 路线 训练 例行 日历 取消关联 断开">
 <h2>关联 Garmin Connect</h2>
-<p class="lead">用 {{> garminConnectTitle}} 关联 Garmin 账户后，用 Garmin 手表测量的跑步以及睡眠和恢复指标会直接进来，也能把选好的路线和训练发送到 Garmin。免费。</p>
+<p class="lead">用 {{> garminConnectTitle}} 关联 Garmin 账户后，用 Garmin 手表测量的训练以及睡眠和恢复指标会直接进来，也能把选好的路线和训练发送到 Garmin。免费。</p>
 <ol class="steps">
 <li>点击 {{> tabMenu > setAppSettings > setWatch > garminConnectTitle}}。</li>
 <li>阅读接收和发送的内容，在 Garmin 登录，并在 Garmin 授权页面开启要共享的项目。</li>
 <li>回来后，每次打开应用都会接收新记录。想马上接收，点 {{> garminConnectSyncNow}}。</li>
 </ol>
 <ul>
-<li>{{> garminConnectRuns}}：带路线、心率、步频和功率的跑步会成为 FitBoost 跑步记录。</li>
+<li>{{> garminConnectRuns}}：跑步会连同路线、心率、步频和功率一起接收，成为 FitBoost 跑步记录。室内有氧、力量训练、骑行、步行、游泳、瑜伽、普拉提等其他训练只接收类型、时长、距离、平均心率、卡路里等摘要，会和从健康应用导入的训练一样成为力量、有氧或柔韧性记录。同一训练已从健康应用导入或已在 App 中记录时，只保留一条。</li>
 <li>{{> garminConnectHealth}}：睡眠时长和睡眠阶段、前一晚的心率变异性和静息心率用于状态判断，跑步和骑行的最大摄氧量以及 Garmin 体能年龄会放进<a href="body.html#vo2">心肺适能</a>。</li>
 <li>{{> garminConnectCourses}}、{{> garminConnectWorkouts}}：在路线画面、跑步开始画面或例行的 ⋯ 菜单中点 {{> garminSendAction}}，会保存到 Garmin Connect 账户并传到手表。训练要选择放在 Garmin Connect 日历的哪一天。</li>
 </ul>
-<p>每个项目会显示开启或关闭，关闭的项目要在 Garmin Connect 账户设置的已连接应用中开启。{{" garminSendWatchNote}} 从 Garmin 接收的记录，设备取走后立即从服务器删除，即使未取走也会在 30 天后删除。点 {{> garminConnectDisconnect}} 会取消关联并删除服务器上剩余的记录，已接收的跑步会留在应用中。</p>
+<p>每个项目会显示开启或关闭，关闭的项目要在 Garmin Connect 账户设置的已连接应用中开启。{{" garminSendWatchNote}} 从 Garmin 接收的记录，设备取走后立即从服务器删除，即使未取走也会在 30 天后删除。点 {{> garminConnectDisconnect}} 会取消关联并删除服务器上剩余的记录，已接收的训练会留在应用中。</p>
 </section>
 
 <section id="on-watch" data-ask="手表上能做什么|不带手机只用手表训练|在手表上改重量|在手表上做循环训练" data-keys="手表 功能 组 完成 重量 休息 震动 不带手机 快速 力量 循环训练 心率">
