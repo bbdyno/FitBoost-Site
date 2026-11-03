@@ -542,7 +542,7 @@ h3 .pro { font-size: 13px; }
 .week { display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px; }
 .week div { background: var(--white); border-radius: 16px; padding: 12px 10px; display: flex; flex-direction: column; gap: 22px; min-height: 120px; }
 .week b { font-size: 13px; color: var(--mute); }
-.week span { font-weight: 800; font-size: 15px; letter-spacing: -.02em; margin-top: auto; }
+.week span { font-weight: 800; font-size: 15px; letter-spacing: -.02em; margin-top: auto; hyphens: auto; -webkit-hyphens: auto; }
 .week div:not(.off) { background: var(--lime); }
 .week div:not(.off) b { color: rgba(13, 13, 14, .6); }
 
