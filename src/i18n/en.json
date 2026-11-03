@@ -159,7 +159,7 @@
     },
     "food": {
       "t": "Nutrition targets",
-      "b": "Calories and macros that adapt weekly to your weight trend",
+      "b": "Calories and macros that adapt weekly to your body composition and weight trend",
       "day": "daily target",
       "p": "Protein",
       "c": "Carbs",
@@ -219,10 +219,11 @@
       "range": "Sep 1 – Sep 30 · 14 workouts"
     },
     "run": {
-      "title": "Running mode",
-      "body": "One two-way button at the top of Home turns the whole app toward running. Track runs on your phone, Apple Watch, Galaxy Watch or Garmin, and one reference result sets your pace zones and predicted times. A single run is kept within 110% of your longest in the last 30 days, and the weekly running plan (PRO+) turns a quality run the day after legs into an easy run.",
-      "c1": "Strength",
-      "c2": "Running",
+      "title": "Strength and running in one app",
+      "body": "Strength and running share one set of screens. Home opens with today's plan, you can start the other sport right below it, and your main focus only sets the order; nothing is hidden. Track runs on your phone, Apple Watch, Galaxy Watch or Garmin, and one reference result sets your pace zones and predicted times. A single run is kept within 110% of your longest in the last 30 days, and the weekly hybrid plan (PRO+) spreads strength, circuits and runs across the week and turns a quality run the day after legs into an easy run.",
+      "c1": "Mostly strength",
+      "c2": "Strength and running",
+      "c3": "Mostly running",
       "w1": "Legs",
       "w2": "Easy run",
       "w4": "Threshold run",
@@ -230,7 +231,7 @@
     },
     "course": {
       "title": "My courses",
-      "body": "Courses gather on the running Home, nearest first. Save a run as a course in one tap and send it to a friend right away. Running the same route twice also makes a course to race your past self on, and you can draw one on the map or import GPX or TCX. Scan a friend's course QR code in the app, and share with no server. For courses made from a route you ran, the start and finish areas are hidden at random when you send.",
+      "body": "Courses gather in the running group on Home, nearest first. Save a run as a course in one tap and send it to a friend right away. Running the same route twice also makes a course to race your past self on, and you can draw one on the map or import GPX or TCX. Scan a friend's course QR code in the app, and share with no server. For courses made from a route you ran, the start and finish areas are hidden at random when you send.",
       "link": "Link",
       "qr": "QR code",
       "file": "File"
@@ -296,6 +297,7 @@
         "Plate calculator",
         "Device sync and backup files",
         "Run tracking, pace zones, my courses",
+        "Body composition trend, cardio fitness tests, Garmin Connect linking",
         "Share cards, editor layouts, stickers and saving to Photos",
         "Movement assessment tests, results and result cards",
         "3 routines, 5 custom exercises"
@@ -315,6 +317,7 @@
         "Unlimited routines and exercises",
         "Run analysis, structured runs, race-day mode",
         "Assessment results applied to your plan, video replay",
+        "Cardio fitness sessions and 6–8 week blocks",
         "Pro editing, 22 fonts, my templates"
       ]
     },
@@ -328,8 +331,8 @@
         "Deload suggestions",
         "Weekly sets per muscle",
         "Plan and auto-fill warm-up sets",
-        "Nutrition targets",
-        "Weekly running plan around strength recovery",
+        "Nutrition targets that use your body composition",
+        "Weekly hybrid plan for strength, circuits and runs",
         "Day-of adjustments from jump readiness, in-set bar speed cues",
         "Share cards ready from your template when you finish"
       ]

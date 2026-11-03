@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Health apps | FitBoost</title>
-<meta name="description" content="Send workouts to Apple Health and Health Connect, and bring in sleep and heart rate.">
+<meta name="description" content="Send workouts to Apple Health and Health Connect, and bring in sleep, heart rate, body composition, and cardio fitness.">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,7 +44,7 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="You are here"><a href="./">User Guide</a></nav>
 <h1>Health apps</h1>
-<p class="g-lede">Send workouts to Apple Health and Health Connect, and bring in sleep and heart rate.</p>
+<p class="g-lede">Send workouts to Apple Health and Health Connect, and bring in sleep, heart rate, body composition, and cardio fitness.</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">Search the guide</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="Search the guide"
@@ -64,10 +64,10 @@
 
 <section class="g-sec" id="what">
 <h2>What's shared</h2>
-<p class="lead">Finished workouts go to the health app, and watch workouts, heart rate, sleep, and body weight come back in.</p>
+<p class="lead">Finished workouts and body records go to the health app, and watch workouts, heart rate, sleep, body composition and cardio fitness come back in.</p>
 <ul>
-<li>Sent: finished strength and cardio workouts. Strength only is saved as strength training; mixed with cardio, as cross training.</li>
-<li>Read: workouts and heart rate from your watch and health app, plus sleep, HRV, resting heart rate, and body weight for readiness and recovery.</li>
+<li>Sent: finished strength and cardio workouts (strength only as strength training, mixed with cardio as cross training), the weight, body fat and lean mass you enter in the app, and your profile height if no other app has saved a height to the health app.</li>
+<li>Read: workouts and heart rate from your watch and health app; sleep, HRV and resting heart rate for readiness and recovery; weight, height, body fat and lean mass saved by apps such as InBody or your scale (plus BMI and waist on iPhone, and body water on Android); and VO2 max saved by your watch. See <a href="body.html#health-body">Body composition from the health app</a> and <a href="body.html#vo2">Cardio fitness</a>.</li>
 <li>Runs: the route (location and elevation), distance, and heart rate are written to the health app with the run. Values the health app has no place for are kept in a backup copy on the device, which goes only into backup files and isn't synced.</li>
 </ul>
 <p>On Android, step permission is requested because steps are read along with workouts.</p>
@@ -81,13 +81,13 @@
 
 <section class="g-sec" id="runs">
 <h2>Runs from your health app</h2>
-<p class="lead">Runs (outdoor and treadmill) that other apps wrote to your health app become runs in FitBoost when you import them with <span class="ui"><b>Import watch workouts</b></span>, and show up in running mode.</p>
+<p class="lead">Runs (outdoor and treadmill) that other apps wrote to your health app become FitBoost runs when you import them with <span class="ui"><b>Import watch workouts</b></span>.</p>
 <ol class="steps">
 <li>Turn on workout sharing to the health app in the app you use. On iPhone, open the Garmin Connect app's settings → Connected Apps → Apple Health and turn sharing on (apps such as Strava also write to Apple Health). On Android, turn on Health Connect sharing in apps such as Garmin Connect, Samsung Health, and Strava.</li>
 <li>In FitBoost, <a href="#connect">connect the health app</a> and tap <span class="ui"><b>Import watch workouts</b></span>. To bring in earlier runs too, tap <span class="ui"><b>Import the past year</b></span>.</li>
-<li>Open the imported run from <span class="ui"><b>Record</b></span> in running mode to see its results, then share and customize it.</li>
+<li>In <span class="ui"><b>Record</b></span>, tap the <span class="ui"><b>Runs only</b></span> chip, open the imported run to see its results, then share and customize it.</li>
 </ol>
-<p>Imported runs count in running mode's history, stats, coach, weekly distance, and share studio, and treadmill runs come in as indoor runs. Distance and time come from the health app, and the route and heart rate are read again from the health app when you open the result screen. If the health app has no route, no route is shown. The first connection reads only the last 30 days; <span class="ui"><b>Import the past year</b></span> rereads a full year and skips anything already imported. The <span class="ui"><b>Garmin runs not showing up?</b></span> row on the same screen also shows how to turn sharing on. Each import always rereads at least the last 7 days, so runs that reached the health app late come in on the next import. Runs that came in as a single cardio line before 1.8.0 are also turned into runs if they fall in that window, keeping any name or note you edited. Other cardio such as cycling stays cardio. There's no direct Garmin Connect account link, so go through the health app or <a href="running.html#import">import a GPX or TCX file</a>.</p>
+<p>Imported runs count in your history, stats, coach, weekly distance, and share studio, and treadmill runs come in as indoor runs. Distance and time come from the health app, and the route and heart rate are read again from the health app when you open the result screen. If the health app has no route, no route is shown. The first connection reads only the last 30 days; <span class="ui"><b>Import the past year</b></span> rereads a full year and skips anything already imported. The <span class="ui"><b>Garmin runs not showing up?</b></span> row on the same screen also shows how to turn sharing on. Each import always rereads at least the last 7 days, so runs that reached the health app late come in on the next import. Runs that came in as a single cardio line before 1.8.0 are also turned into runs if they fall in that window, keeping any name or note you edited. Other cardio such as cycling stays cardio. Runs measured on a Garmin watch can also come straight in without the health app through <a href="watch.html#garmin-connect">Garmin Connect linking</a>, or from <a href="running.html#import">a GPX or TCX file</a>.</p>
 </section>
 
 <section class="g-sec" id="merge">

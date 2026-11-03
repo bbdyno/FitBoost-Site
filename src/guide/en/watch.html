@@ -28,7 +28,23 @@
 <li>Install FitBoost on the watch from the Connect IQ Store.</li>
 <li>On your phone, tap {{> tabMenu > setAppSettings > setWatch > setGarminConnect}}. On iPhone, pick your watch when Garmin Connect opens, then come back.</li>
 </ol>
-<p>Works with both iPhone and Android. Workouts done on the Garmin go into your phone's records and are also saved to Garmin Connect as strength training.</p>
+<p>Works with both iPhone and Android. Workouts done on the Garmin go into your phone's records and are also saved to Garmin Connect as strength training. Linking your Garmin Connect account to receive runs and health summaries and to send courses and workouts is <a href="#garmin-connect">Garmin Connect linking</a>.</p>
+</section>
+
+<section id="garmin-connect" data-ask="Can I link my Garmin Connect account|Get runs from Garmin Connect|Send a course to Garmin Connect|Send a workout to Garmin Connect|Unlink Garmin Connect|Get Garmin sleep and HRV" data-keys="garmin connect account link sign in consent receive sleep hrv heart rate variability resting heart rate vo2 max fitness age send course workout routine calendar unlink disconnect">
+<h2>Garmin Connect linking</h2>
+<p class="lead">Link your Garmin account with {{> garminConnectTitle}} and runs measured on your Garmin watch, plus sleep and recovery data, come straight in, and you can send courses and workouts you pick to Garmin. It's free.</p>
+<ol class="steps">
+<li>Tap {{> tabMenu > setAppSettings > setWatch > garminConnectTitle}}.</li>
+<li>Read what's received and sent, sign in with Garmin, and turn on the items to share in Garmin's consent screen.</li>
+<li>Back in the app, new records come in each time you open it. To get them right away, tap {{> garminConnectSyncNow}}.</li>
+</ol>
+<ul>
+<li>{{> garminConnectRuns}}: runs with route, heart rate, cadence and power become FitBoost runs.</li>
+<li>{{> garminConnectHealth}}: sleep duration and stages, overnight HRV and resting heart rate are used for readiness, and running and cycling VO2 max and Garmin fitness age go into <a href="body.html#vo2">cardio fitness</a>.</li>
+<li>{{> garminConnectCourses}} and {{> garminConnectWorkouts}}: tap {{> garminSendAction}} on a course screen, the run start screen, or a routine's ⋯ menu, and it's saved to your Garmin Connect account and moved to your watch. For workouts, you pick the day on the Garmin Connect calendar.</li>
+</ul>
+<p>Each item shows on or off; turn off items back on under connected apps in your Garmin Connect account settings. {{" garminSendWatchNote}} Records from Garmin are deleted from the server as soon as your device downloads them, and after 30 days even if it doesn't. Tap {{> garminConnectDisconnect}} to unlink and delete what's left on the server; runs already received stay in the app.</p>
 </section>
 
 <section id="on-watch" data-ask="What can I do on the watch|Train with just my watch|Change weight on the watch|Circuits on the watch" data-keys="watch features set complete weight rest vibration without phone quick strength circuit heart rate">

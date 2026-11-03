@@ -1,12 +1,12 @@
 <section id="open" data-ask="움직임 평가는 어디서 하나요|자세 분석은 어디 있나요|유연성 검사를 하고 싶어요|체력 테스트 하는 법|어떤 검사를 할 수 있나요" data-keys="움직임평가 움직임 평가 자세분석 자세 분석 검사 테스트 체력 가동성 유연성 카메라 허브 코치 홈 메뉴 쉬운이름 전문용어">
 <h2>움직임 평가 열기</h2>
-<p class="lead">두 모드 모두 {{> tabHome}} 빠른 시작 줄 바로 아래 {{> assessEntryTitle}}(러닝 모드는 {{> assessEntryRunTitle}}) 줄, {{> tabMenu}}, {{> tabCoach}}에서 검사 목록을 엽니다.</p>
+<p class="lead">{{> tabHome}} {{> sectionStrength}} 묶음의 {{> assessEntryTitle}} 줄이나 {{> sectionRunning}} 묶음의 {{> assessEntryRunTitle}} 줄, {{> tabMenu}}, {{> tabCoach}}에서 검사 목록을 엽니다.</p>
 <ol class="steps">
-<li>{{> tabHome}}에서 {{> assessEntryTitle}}(러닝 모드는 {{> assessEntryRunTitle}})를 누릅니다. {{> tabMenu}}나 {{> tabCoach}}에도 같은 줄이 있습니다.</li>
+<li>{{> tabHome}}에서 {{> assessEntryTitle}}(근력 쪽 검사)나 {{> assessEntryRunTitle}}(러닝 자세가 앞에 오는 검사)를 누릅니다. {{> tabMenu}}의 {{> sectionStrength}}·{{> sectionRunning}} 묶음과 {{> tabCoach}}의 같은 구획에도 같은 줄이 있습니다.</li>
 <li>{{> assessGroupMobility}}·{{> assessGroupFitness}}·{{> assessGroupPower}}·{{> assessGroupBarbell}}·{{> assessGroupRunning}} 묶음에서 검사를 고릅니다.</li>
 <li>준비 화면에서 폰 놓는 법, 하는 법, 멈출 때를 읽고 시작합니다.</li>
 </ol>
-<p>검사 이름은 쉬운 말로 쓰고 그 아래 작은 글씨로 전문 용어(어깨 굴곡 등)를 함께 적습니다. 근력 모드에는 {{> mobilityTestShoulderFlexion}}·{{> mobilityTestShoulderAbduction}}·{{> mobilityTestSquatSide}}·{{> mobilityTestSquatFront}}·{{> mobilityTestSitReach}}·{{> mobilityTestToeTouch}}·{{> mobilityTestKneeExtension}}·{{> mobilityTestLegRaise}}·{{> mobilityTestKneeToWall}}·{{> mobilityTestPushUp}}·{{> mobilityTestStance}}·{{> assessTestChairStand}}·{{> jumpTestCmj}}·{{> jumpTestDrop}}·{{> barSpeedTestName}}가, 러닝 모드에는 {{> runFormTestSide}}·{{> runFormTestBack}}와 다리 가동성·체력·점프 검사가 보입니다. 재기와 결과 보기는 무료입니다.</p>
+<p>검사 이름은 쉬운 말로 쓰고 그 아래 작은 글씨로 전문 용어(어깨 굴곡 등)를 함께 적습니다. {{> assessEntryTitle}}에는 {{> mobilityTestShoulderFlexion}}·{{> mobilityTestShoulderAbduction}}·{{> mobilityTestSquatSide}}·{{> mobilityTestSquatFront}}·{{> mobilityTestSitReach}}·{{> mobilityTestToeTouch}}·{{> mobilityTestKneeExtension}}·{{> mobilityTestLegRaise}}·{{> mobilityTestKneeToWall}}·{{> mobilityTestPushUp}}·{{> mobilityTestStance}}·{{> assessTestChairStand}}·{{> jumpTestCmj}}·{{> jumpTestDrop}}·{{> barSpeedTestName}}가, {{> assessEntryRunTitle}}에는 {{> runFormTestSide}}·{{> runFormTestBack}}와 다리 가동성·체력·점프 검사가 보입니다. 재기와 결과 보기는 무료입니다.</p>
 </section>
 
 <section id="measure" data-ask="카메라로 어떻게 재나요|폰을 어디에 두나요|촬영 점검이 통과가 안 돼요|카메라 없이 잴 수 있나요|측정 영상을 남기고 싶어요" data-keys="재기 측정 카메라 폰 세우기 거치대 촬영 점검 각도 옆 정면 직접 적기 타이머 자 영상 남기기 음성 앞카메라 앞 카메라 전면 셀카 화면보기 뒤카메라">
@@ -42,7 +42,7 @@
 <li>{{> assessPlanPreviewTitle}} 목록을 보고 {{> assessPlanApply}}를 누릅니다.</li>
 <li>운동을 시작하면 목록 맨 위 줄에서 {{> assessPlanAdd}}로 웜업을 더합니다.</li>
 </ol>
-<p>반영한 뒤에도 {{> assessPlanRevert}}로 되돌릴 수 있습니다. 근력 모드에서만 근력 처방에 반영하고, 러닝 처방은 <a href="#run-form">케이던스 목표</a>가 맡습니다. 권고 문장은 무료로 누구나 봅니다.</p>
+<p>반영한 뒤에도 {{> assessPlanRevert}}로 되돌릴 수 있습니다. 검사 결과는 근력 처방에 반영하고, 러닝 처방은 <a href="#run-form">케이던스 목표</a>가 맡습니다. 권고 문장은 무료로 누구나 봅니다.</p>
 </section>
 
 <section id="jump" data-ask="점프 높이를 재고 싶어요|드롭 점프는 어떻게 하나요|슬로 모션으로 찍어야 하나요|다리 준비도가 뭔가요" data-keys="점프 반동점프 드롭점프 높이 체공 슬로모션 240 반응근력지수 rsi 다리 준비도 장면 이륙 착지">
@@ -63,12 +63,12 @@
 <li>{{> barSpeedStart}}을 누르고 세트를 합니다.</li>
 <li>{{" barSpeedPlateFound}}에서 원판이 맞으면 {{> barSpeedPlateConfirm}}, 아니면 원판 맨 위·맨 아래 끝을 눌러 정합니다.</li>
 </ol>
-<p>반복별 평균 추진 속도와 {{> barSpeedLossTitle}}이 나옵니다. 아직 실제 장비와 견주지 못한 추정치라고 함께 보여 줍니다. 속도로 1RM 비율을 추정하는 것은 PRO, 세트 중 감소율을 넘으면 끝낼 때를 알리는 것은 PRO+입니다. 근력 모드에서만 보입니다.</p>
+<p>반복별 평균 추진 속도와 {{> barSpeedLossTitle}}이 나옵니다. 아직 실제 장비와 견주지 못한 추정치라고 함께 보여 줍니다. 속도로 1RM 비율을 추정하는 것은 PRO, 세트 중 감소율을 넘으면 끝낼 때를 알리는 것은 PRO+입니다. {{> assessEntryTitle}}에서만 보입니다.</p>
 </section>
 
 <section id="run-form" data-ask="러닝 자세 분석은 어떻게 하나요|케이던스 목표를 정하고 싶어요|오버스트라이드인지 알고 싶어요|달리기 자세를 찍는 법" data-keys="러닝자세 달리기 자세 케이던스 보폭 오버스트라이드 착지 정강이 골반 고관절 내전 러닝머신 트랙 목표 걸음">
 <h2>러닝 자세와 케이던스 목표</h2>
-<p class="lead">러닝 모드 {{> tabHome}}·{{> tabCoach}}·{{> tabMenu}}의 {{> assessEntryRunTitle}}에서 {{> runFormTestSide}} 또는 {{> runFormTestBack}} 검사를 고르고, 러닝머신이나 트랙에서 달리는 모습을 찍습니다.</p>
+<p class="lead">{{> tabHome}}·{{> tabCoach}}·{{> tabMenu}}의 {{> assessEntryRunTitle}}에서 {{> runFormTestSide}} 또는 {{> runFormTestBack}} 검사를 고르고, 러닝머신이나 트랙에서 달리는 모습을 찍습니다.</p>
 <ol class="steps">
 <li>폰을 1.5m쯤 높이에 세우고 옆(또는 뒤)에서 찍습니다.</li>
 <li>결과에서 케이던스, 착지 위치, 정강이 각, 착지 발 모양 등을 봅니다.</li>

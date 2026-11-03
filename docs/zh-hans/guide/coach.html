@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>教练与循环训练 | FitBoost</title>
-<meta name="description" content="下一组重量建议、教练循环训练、每周混合训练计划和教练页的周期计划。">
+<meta name="description" content="教练页的结构、下一组重量建议、教练循环训练、每周混合训练计划、周期计划和混合赛备赛。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,14 +44,28 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="当前位置"><a href="./">使用指南</a></nav>
 <h1>教练与循环训练</h1>
-<p class="g-lede">下一组重量建议、教练循环训练、每周混合训练计划和教练页的周期计划。</p>
+<p class="g-lede">教练页的结构、下一组重量建议、教练循环训练、每周混合训练计划、周期计划和混合赛备赛。</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">搜索指南</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="搜索指南"
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#next-weight">训练中的下一组重量建议 PRO</a></li><li><a href="#circuit">教练循环训练</a></li><li><a href="#hybrid">每周混合训练计划 PRO+</a></li><li><a href="#plan">教练页的周期计划 PRO+</a></li><li><a href="#readiness">状态检查 PRO+</a></li><li><a href="#deload">减量与比赛试举重量 PRO+</a></li><li><a href="#nutrition">营养目标 PRO+</a></li><li><a href="#race">混合赛备赛</a></li></ol></nav>
+<nav class="g-toc" aria-label="本页内容"><p>本页内容</p><ol><li><a href="#overview">教练页的结构</a></li><li><a href="#next-weight">训练中的下一组重量建议 PRO</a></li><li><a href="#circuit">教练循环训练</a></li><li><a href="#hybrid">每周混合训练计划 PRO+</a></li><li><a href="#plan">教练页的周期计划 PRO+</a></li><li><a href="#readiness">状态检查 PRO+</a></li><li><a href="#deload">减量与比赛试举重量 PRO+</a></li><li><a href="#nutrition">营养目标 PRO+</a></li><li><a href="#race">混合赛备赛</a></li><li><a href="#race-team">双人、接力组别与团队分工</a></li></ol></nav>
+<section class="g-sec" id="overview">
+<h2>教练页的结构</h2>
+<p class="lead"><span class="ui"><b>教练</b></span> 最上方的公共区有 <span class="ui"><b>本周混合训练计划</b></span>、干扰提示和 <span class="ui"><b>混合赛</b></span>，下面选择<span class="ui"><b>力量</b></span>、<span class="ui"><b>跑步</b></span>、<span class="ui"><b>身体·营养</b></span>分区。</p>
+<ul>
+<li><span class="ui"><b>本周混合训练计划</b></span> <span class="pro">PRO+</span>：显示本周每天要做的训练（教练训练、例行、循环训练、跑步）以及完成和错过的日子。不是 PRO+ 时为锁定的 <span class="ui"><b>制定每周混合计划</b></span> 一行。见<a href="#hybrid">每周混合训练计划</a>。</li>
+<li><span class="ui"><b>力量训练与跑步并行时</b></span>：最近同时有力量和跑步时出现。见<a href="running.html#strength">与力量训练联动的处方</a>。</li>
+<li><span class="ui"><b>混合赛</b></span>：打开<a href="#race">混合赛备赛</a>。</li>
+<li><span class="ui"><b>力量</b></span>：<a href="#plan">周期计划</a>、减量和状态检查。只有动作评估一行免费，其余为 PRO+。</li>
+<li><span class="ui"><b>跑步</b></span>：<a href="running.html#coach">跑步教练</a>。免费。</li>
+<li><span class="ui"><b>身体·营养</b></span>：<a href="body.html#vo2">心肺适能</a>（免费），<a href="#nutrition">营养目标</a>、<a href="body.html#body-coach">体成分指导</a>以及压力与恢复（PRO+）。</li>
+</ul>
+<p>第一次会打开<a href="start.html#mix">主要项目</a>的分区（<span class="ui"><b>力量与跑步</b></span>为<span class="ui"><b>力量</b></span>），之后打开上次查看的分区。分区的位置始终按<span class="ui"><b>力量</b></span>、<span class="ui"><b>跑步</b></span>、<span class="ui"><b>身体·营养</b></span>排列。</p>
+</section>
+
 <section class="g-sec" id="next-weight">
 <h2>训练中的下一组重量建议 <span class="pro">PRO</span></h2>
 <p class="lead">完成一组并记录强度后，会据此告诉你下一组的重量，以及今天何时该停。</p>
@@ -72,33 +86,32 @@
 
 <section class="g-sec" id="hybrid">
 <h2>每周混合训练计划 <span class="pro">PRO+</span></h2>
-<p class="lead">把力量、循环训练和有氧组合成一周日程，并配合你训练的日子和时间较充裕的日子。</p>
+<p class="lead">把力量、循环训练和跑步组合成一周日程。计划只有一个，修改后会马上反映到 <span class="ui"><b>首页</b></span> 的今天卡片和 <span class="ui"><b>教练</b></span> 最上方的 <span class="ui"><b>本周混合训练计划</b></span>。</p>
 <ol class="steps">
-<li>点击 <span class="ui"><b>首页</b> → <b>训练计划</b> → <b>每周混合训练计划</b></span>。</li>
-<li>选择星期、目标、侧重、有氧、器械和年龄，点击 <span class="ui"><b>生成计划</b></span>。</li>
-<li>今天的训练会显示在 <span class="ui"><b>首页</b></span>。</li>
+<li>点击 <span class="ui"><b>首页</b> → <b>训练计划</b> → <b>每周混合训练计划</b></span>。也可以从 <span class="ui"><b>教练</b></span> 最上方的 <span class="ui"><b>本周混合训练计划</b></span> 一栏，或 <span class="ui"><b>首页</b></span> <span class="ui"><b>跑步</b></span>分组的 <span class="ui"><b>混合训练计划</b></span> 快捷入口打开。</li>
+<li>选择星期、目标、侧重、有氧、器械和年龄，点击 <span class="ui"><b>生成计划</b></span>。侧重的初始值按<a href="start.html#mix">主要项目</a>设定。</li>
+<li>今天要做的训练会显示在 <span class="ui"><b>首页</b></span> 最上方的卡片。在计划画面中，用当天一栏的 <span class="ui"><b>开始</b></span> 开始。</li>
 </ol>
-<p>错过的日子可以用 <span class="ui"><b>移动</b></span> 挪到别的日子，也可以撤销。</p>
-
-<p>重心选择 <span class="ui"><b>跑步为主</b></span> 后，就会成为跑步教练中的 <span class="ui"><b>本周跑步计划</b></span>，并把练下肢后第二天的质量课改为轻松跑。见<a href="running.html#coach">跑步教练</a>和<a href="running.html#strength">与力量训练联动的处方</a>。</p>
+<p>要更改条件，点 <span class="ui"><b>重新生成</b></span>。自己改过或放进日程的例行不会被覆盖，会保留下来。错过的日子不会挪到别天，保持错过的状态。错过力量或循环训练日的那一周，下一周计划例行的重量和次数不会增加，照上次进行。有<a href="#plan">周期计划</a>时，教练训练会依次放在计划的力量日；正在进行<a href="body.html#vo2-train">心肺适能周期</a>时，它的训练也会放在有氧日。</p>
+<p>侧重选择 <span class="ui"><b>跑步为主</b></span> 后，会成为跑步日较多的计划，并把练下肢后第二天的质量课改为轻松跑。见<a href="running.html#coach">跑步教练</a>和<a href="running.html#strength">与力量训练联动的处方</a>。</p>
 </section>
 
 <section class="g-sec" id="plan">
 <h2>教练页的周期计划 <span class="pro">PRO+</span></h2>
 <p class="lead">根据目标、比赛日期和当前 1RM 制定数周的计划，并决定每次训练的重量。</p>
 <ol class="steps">
-<li>点击 <span class="ui"><b>教练</b> → <b>制定计划</b></span>。</li>
+<li>点击 <span class="ui"><b>教练</b> → <b>力量</b> → <b>制定计划</b></span>。</li>
 <li>选择目标（力量举、力量、力量健美、增肌）、每周天数、经验、推进方式、体重和比赛日期（可选）。</li>
 <li>填写当前 1RM。不知道的话可以用重量和次数计算。</li>
 <li>点击 <span class="ui"><b>制定计划</b></span>，今天的训练会显示在教练页和首页。</li>
 </ol>
-<p>力量模式的教练页为 PRO+ 专属，没有 PRO+ 时只显示介绍和 <span class="ui"><b>了解 PRO+</b></span>。跑步模式下整个页面会变成<a href="running.html#coach">跑步教练</a>，所以周期计划要在力量模式中查看。</p>
+<p><span class="ui"><b>力量</b></span>分区的周期计划为 PRO+ 专属，没有 PRO+ 时只显示动作评估一行、介绍和 <span class="ui"><b>了解 PRO+</b></span>。有每周混合训练计划时，从 <span class="ui"><b>用教练计划安排力量日</b></span> 一行制定，教练训练会依次放在计划的力量日。</p>
 </section>
 
 <section class="g-sec" id="readiness">
 <h2>状态检查 <span class="pro">PRO+</span></h2>
 <p class="lead">训练前记录睡眠、肌肉状态、压力和精力，会据此调整当天的重量和组数。</p>
-<p>在教练页的 <span class="ui"><b>状态</b></span> 卡片点击 <span class="ui"><b>记录</b></span>，选完后点击 <span class="ui"><b>保存并应用</b></span>。有计划时也可以从首页的 <span class="ui"><b>状态</b></span> 打开。连接<a href="health.html#what">健康应用</a>后还会用到睡眠时长、HRV 和静息心率。</p>
+<p>在 <span class="ui"><b>教练</b></span> <span class="ui"><b>力量</b></span>、<span class="ui"><b>跑步</b></span>分区的 <span class="ui"><b>状态</b></span> 卡片点击 <span class="ui"><b>记录</b></span>，选完后点击 <span class="ui"><b>保存并应用</b></span>。有计划时也可以从首页的 <span class="ui"><b>状态</b></span> 打开。连接<a href="health.html#what">健康应用</a>或<a href="watch.html#garmin-connect">Garmin Connect</a>后还会用到睡眠时长、HRV 和静息心率。</p>
 </section>
 
 <section class="g-sec" id="deload">
@@ -109,20 +122,37 @@
 
 <section class="g-sec" id="nutrition">
 <h2>营养目标 <span class="pro">PRO+</span></h2>
-<p class="lead">根据体重趋势，每周重新调整热量以及碳水、蛋白质、脂肪目标。</p>
-<p>在教练页的 <span class="ui"><b>营养目标</b></span> 卡片中填写体重、身高、年龄、活动量和目标，点击 <span class="ui"><b>设定目标</b></span>。体重趋势需要在两周以上记录至少 4 次才会显示。只想算一次的话，请用<a href="tools.html#calculators">宏量计算器</a>。</p>
+<p class="lead">根据体成分或体重趋势，每周重新调整热量以及碳水、蛋白质、脂肪目标。</p>
+<p>在 <span class="ui"><b>教练</b></span> <span class="ui"><b>身体·营养</b></span>分区的 <span class="ui"><b>营养目标</b></span> 卡片中填写体重、身高、年龄、活动量和目标，点击 <span class="ui"><b>设定目标</b></span>。最近 30 天内有体成分（去脂体重）时，会用去脂体重代替体重计算维持热量和蛋白质，填写 <span class="ui"><b>目标体脂率</b></span> 后会显示目标体重（见<a href="body.html#body-coach">体成分的应用</a>）。体重趋势需要在两周以上记录至少 4 次才会显示。只想算一次的话，请用<a href="tools.html#calculators">宏量计算器</a>。</p>
 </section>
 
 <section class="g-sec" id="race">
 <h2>混合赛备赛</h2>
 <p class="lead">像正式比赛一样练习混合健身赛：跑 1 公里再做一个项目，重复 8 次，每段单独计时。免费版每周 3 次。</p>
 <ol class="steps">
-<li>打开<span class="ui"><b>首页</b> → <b>训练计划</b> → <b>混合赛备赛</b></span>。</li>
-<li>选择组别(重量)、练习范围(完整、一半、只练项目、项目后跑)和目标完赛时间，即可看到每段的量、重量和目标。</li>
-<li>点<span class="ui"><b>开始实战练习</b></span>，每完成一段就点大按钮。也可以在手表上完成。</li>
-<li>结束后会显示分段表和丢时间最多的段，点<span class="ui"><b>保存并结束</b></span>保存。</li>
+<li>打开 <span class="ui"><b>首页</b> → <b>训练计划</b> → <b>混合赛备赛</b></span>。也可以从 <span class="ui"><b>教练</b></span> 最上方的 <span class="ui"><b>混合赛</b></span> 一行打开。</li>
+<li>在<span class="ui"><b>单人</b></span>、<span class="ui"><b>双人</b></span>、<span class="ui"><b>接力（4人）</b></span>中选择<span class="ui"><b>组别(重量)</b></span>，再选择练习范围(完整、一半、只练项目、项目后跑)和<span class="ui"><b>目标完赛时间(全程)</b></span>，即可看到每段的量、重量和目标。双人和接力见<a href="#race-team">团队分工</a>。</li>
+<li>点击 <span class="ui"><b>开始实战练习</b></span>，每完成一段就按大按钮。也可以在手表上结束。</li>
+<li>全部完成后会显示分段表和落后最多的分段，用 <span class="ui"><b>保存并结束</b></span> 保存。</li>
 </ol>
-<p>设定比赛日期后，会把剩余周数分为基础、专项、实战、调整并告诉你现在该做什么，第一周测试会找出最弱的项目。比赛结束后填写正式成绩进行对比。此练习功能与任何赛事主办方无关，分段目标是公开成绩的参考值。</p>
+<p>目标可以从预设时间中选，或用 <span class="ui"><b>自定义</b></span> 填写时、分、秒（30 分钟到 5 小时）。按填写的目标重新算出分段目标，以及跑步配速、项目合计和转换时间。目标比最快的完整练习或第一周测试得出的预估快 2% 以上时，会提示可能过于勉强。分段预估依据在真实比赛中测得的研究数值和教练实践方法，没有研究的部分会另外标为现场估计。出处可在 <span class="ui"><b>计算依据</b></span> 中查看。</p>
+<p>设定比赛日期后，会把剩余周数分为基础、专项、实战、调整并告诉你现在该做什么，第一周测试会找出最弱的项目。比赛结束后填写正式成绩，与目标和练习对比。此练习功能与任何赛事主办方无关，距离、次数和重量依据公开的规则手册。</p>
+<p>在手机上开始的练习，可以在 Apple Watch、Galaxy Watch 和 Garmin 手表上测量，查看当前分段名称、量和目标、这一段用的时间以及手腕心率。结束一段时，Apple Watch 和 Galaxy Watch 点 <span class="ui"><b>本段结束</b></span>，Garmin 按开始键。跑步分段的距离用手机定位测量。</p>
+</section>
+
+<section class="g-sec" id="race-team">
+<h2>双人、接力组别与团队分工</h2>
+<p class="lead">选择<span class="ui"><b>双人</b></span>或<span class="ui"><b>接力（4人）</b></span>组别后会显示规则要点，<span class="ui"><b>团队分工</b></span>卡片会根据队员的测试，决定谁做什么、做多少。</p>
+<ol class="steps">
+<li>在 <span class="ui"><b>混合赛备赛</b></span> 中点<span class="ui"><b>双人</b></span>或<span class="ui"><b>接力（4人）</b></span>，选择组别（女子、男子、混合等）。</li>
+<li>在<span class="ui"><b>团队分工</b></span>卡片中点队员，填写<span class="ui"><b>队友测试</b></span>（1 公里跑、划船、农夫行走、药球）。自己的测试要在设定比赛日期后，在上方的备赛卡片中填写。</li>
+<li>查看团队预估、每个项目的分配，以及一起跑的配速或负责的分段。</li>
+</ol>
+<ul>
+<li>双人：每个 1 公里两人一起跑，一起跑的配速按单独跑较慢的人。项目分配让两人工作时间相同，所以较快的人做得多，并显示划船机 250 米、雪橇 12.5 米这类交替单位。混合双人两人都用男子公开组重量。</li>
+<li>接力：四人各负责两次 1 公里和其后的项目，让每人负责有自己强项的分段，使预估合计最小。混合接力需要女子 2 人、男子 2 人，各自使用自己性别的重量。</li>
+</ul>
+<p>没有测试的队员按一般成绩计算。双人练习的分段名称会附上两人的分配，接力分段会附上负责跑者的名字，也会原样传到手表。没有研究依据的交替单位（如药球 10 次）会标为现场估计。</p>
 </section>
 <nav class="g-pager" aria-label="其他主题"><a class="g-pager__prev" href="routines.html"><small>上一篇</small>例行训练与计划</a><a class="g-pager__next" href="assessment.html"><small>下一篇</small>动作评估</a></nav>
 <p class="g-contact">仍未解决？请发送邮件至 <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a>，并附上设备型号和应用版本。</p>

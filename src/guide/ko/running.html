@@ -1,25 +1,25 @@
-<section id="mode" data-ask="러닝 모드는 어떻게 켜나요|달리기 화면으로 바꾸고 싶어요|근력 모드로 돌아가고 싶어요|러닝 모드로 바꾸면 뭐가 달라지나요" data-keys="러닝모드 러닝 모드 달리기 근력모드 전환 바꾸기 아령 달리는사람 두칸 버튼 머리말 운동모드">
-<h2>러닝 모드로 바꾸기</h2>
-<p class="lead">{{> tabHome}} 머리말 오른쪽의 두 칸 버튼에서 달리는 사람 칸을 누르면 앱 전체가 러닝 모드가 됩니다. {{> tabMenu}}의 {{> menuModeTitle}} 줄에서도 바꿉니다.</p>
+<section id="mode" data-ask="러닝 모드는 어떻게 켜나요|러닝 모드가 없어졌어요|달리기 화면은 어디 있나요|근력 모드로 돌아가고 싶어요|달리기 기능은 어디서 찾나요" data-keys="러닝모드 러닝 모드 근력모드 모드 없어짐 사라짐 달리기 화면 어디 찾기 하나의앱 한화면 주종목 달리기위주 묶음 구획 운동모드 아령 달리는사람 두칸 버튼 머리말 바꾸기">
+<h2>달리기는 어디에 있나요</h2>
+<p class="lead">1.9.1부터 러닝 모드가 없고, 달리기는 근력과 같은 화면에 늘 있습니다. {{> tabHome}}의 {{> sectionRunning}} 묶음과 {{> tabStats}}·{{> tabCoach}}의 {{> sectionRunning}} 구획에서 봅니다.</p>
 <ol class="steps">
-<li>{{> tabHome}} 머리말 오른쪽 아령·달리는 사람 버튼에서 {{> modeRunning}} 칸을 누릅니다.</li>
-<li>근력으로 돌아가려면 같은 버튼의 {{> modeStrength}} 칸을 누릅니다.</li>
+<li>{{> tabHome}} 맨 위 카드가 오늘 달리기가 아니면 바로 아래 {{> runStart}}를 누릅니다. 묻는 창 없이 달리기 시작 화면이 열립니다.</li>
+<li>달리기를 먼저 보이려면 <a href="start.html#mix">{{> trainingMixTitle}}</a>을 {{> trainingMixRunning}}로 바꿉니다.</li>
 </ol>
 <ul>
-<li>{{> tabHome}}: 오늘 달리기 카드, 그 아래 <a href="#courses">{{> courseShelfTitle}}</a> 칸, 이번 주 달린 거리와 지난 8주 막대, {{> courseTitle}}·{{> runZonesTitle}}·{{> runHomePlan}} 바로 가기, 최근 달리기.</li>
-<li>{{> tabRecord}}: {{> historyRunsOnly}} 보기로 열리고, {{> historyAllWorkouts}}으로 바꿀 수 있습니다.</li>
-<li>{{> tabStats}}: 달리기 칸만 놓입니다. 근력 통계는 맨 아래 {{> modeCrossStrengthStats}} 줄로 근력 모드에서 봅니다.</li>
-<li>{{> tabCoach}}: 탭 전체가 <a href="#coach">러닝 코치</a>가 됩니다.</li>
-<li>{{> tabMenu}}: {{> courseTitle}}, {{> runZonesTitle}}, {{> runSettingsTitle}} 줄이 생깁니다.</li>
+<li>{{> tabHome}}: {{> sectionRunning}} 묶음에 <a href="#courses">{{> courseShelfTitle}}</a> 칸, 이번 주 달린 거리와 지난 8주 막대, {{> courseTitle}}·{{> runZonesTitle}}·{{> runHomeHybridPlan}} 바로 가기, {{> assessEntryRunTitle}}, 최근 달리기, {{> runImportFile}}이 있습니다.</li>
+<li>{{> tabRecord}}: {{> historyRunsOnly}} 칩으로 달리기만 봅니다.</li>
+<li>{{> tabStats}}: {{> sectionRunning}} 구획에 달리기 통계가 있습니다.</li>
+<li>{{> tabCoach}}: {{> sectionRunning}} 구획이 <a href="#coach">러닝 코치</a>이고, 블록 계획 같은 근력 코칭은 {{> sectionStrength}} 구획에 있습니다.</li>
+<li>{{> tabMenu}}: {{> sectionRunning}} 묶음에 {{> courseTitle}}, {{> runZonesTitle}}, {{> vo2Title}}, {{> runSettingsTitle}}, {{> assessEntryRunTitle}}이 있습니다.</li>
 </ul>
-<p>모드는 화면만 바꿉니다. 기록·처방·건강 앱 자료는 근력과 하나로 이어집니다. 근력 일정이 있는 날에는 홈에 {{" modeCrossStrength}} 줄이 뜹니다. 진행 중인 운동이 있으면 {{" modeLockedActive}}라고 뜨고 바뀌지 않습니다. 고른 모드는 앱을 다시 열어도 남습니다.</p>
+<p>기록·처방·건강 앱 자료는 근력과 하나로 이어집니다. 근력 운동이 진행 중이면 달리기를 시작하지 않고 까닭을 알립니다. 달리는 중에 운동을 더하려 하면 {{" exerciseBlockedDuringRun}}라고 뜹니다.</p>
 </section>
 
 <section id="start-run" data-ask="달리기는 어떻게 시작하나요|러닝 기록하는 법|휴대폰으로 달리기 재기|러닝머신에서 달린 것도 재나요|트랙에서 바퀴 세기" data-keys="시작 달리기시작 러닝 기록 재기 측정 휴대폰 기기 실내 러닝머신 트랙 자유달리기 기록재기 대회 구성훈련 인터벌 역치 언덕 gps 위성">
 <h2>달리기 시작</h2>
-<p class="lead">러닝 모드 {{> tabHome}}의 오늘 달리기 카드에서 {{> runStart}}를 누르고, 달리기 종류와 재는 기기를 고릅니다.</p>
+<p class="lead">{{> tabHome}} 맨 위 오늘 달리기 카드나 그 바로 아래 {{> runStart}}를 누르고, 달리기 종류와 재는 기기를 고릅니다.</p>
 <ol class="steps">
-<li>{{> tabHome}}의 오늘 달리기 카드에서 {{> runStart}}를 누릅니다.</li>
+<li>{{> tabHome}} 맨 위 카드가 오늘 달리기면 그 카드의 {{> runStart}}를, 근력 카드면 바로 아래 {{> runStart}}를 누릅니다.</li>
 <li>맨 위 카드는 오늘 처방(없으면 추천)입니다. 그대로 {{> runStart}}를 누르거나, 아래에서 {{> runTitleFree}}·{{> runKindTest}}·{{> runTitleCourse}}·{{> runTitleTrack}}·{{> runKindTreadmill}} 같은 종류를 고릅니다.</li>
 <li>{{> runDeviceTitle}}에서 {{> runDevicePhone}} 또는 {{> runDeviceWatch}}를 고릅니다.</li>
 <li>휴대폰으로 밖에서 처음 잴 때 위치 권한을 묻습니다. 앱을 사용하는 동안의 위치를 허용합니다.</li>
@@ -55,10 +55,10 @@
 
 <section id="import" data-ask="다른 앱 달리기 기록을 가져오고 싶어요|시계에서 내보낸 활동 파일 가져오기|TCX 파일로 달리기 기록 넣기|다른 앱에서 달린 것도 꾸밀 수 있나요|코스 파일은 코스에서 가져오라고 떠요" data-keys="가져오기 다른앱 다른 앱 시계 내보낸 활동 활동파일 gpx tcx 파일 기록 옮기기 불러오기 달리기기록 결과 공유 꾸미기 같은시각 중복">
 <h2>다른 앱 달리기 가져오기</h2>
-<p class="lead">러닝 모드 {{> tabHome}} 맨 아래 {{> runImportFile}}에서 다른 앱이나 시계가 내보낸 GPX·TCX 활동 파일을 고르면 달리기 기록이 생깁니다.</p>
+<p class="lead">{{> tabHome}} {{> sectionRunning}} 묶음 맨 아래 {{> runImportFile}}에서 다른 앱이나 시계가 내보낸 GPX·TCX 활동 파일을 고르면 달리기 기록이 생깁니다.</p>
 <ol class="steps">
 <li>다른 앱이나 시계 앱에서 달리기를 GPX나 TCX 파일로 내보내 휴대폰에 둡니다.</li>
-<li>러닝 모드 {{> tabHome}} 맨 아래의 {{> runImportFile}}을 누르고 파일을 고릅니다.</li>
+<li>{{> tabHome}} {{> sectionRunning}} 묶음 맨 아래의 {{> runImportFile}}을 누르고 파일을 고릅니다. 달리기 기록이 없으면 {{> tabStats}}의 {{> sectionRunning}} 구획에도 있습니다.</li>
 <li>결과 화면이 열리면 앱에서 잰 달리기처럼 {{> shareDecorate}}로 공유하고 꾸밉니다.</li>
 </ol>
 <p>시각이 든 활동 파일만 달리기로 가져오고, 파일에 심박·케이던스가 있으면 함께 읽습니다. 시각이 없는 코스 파일을 고르면 {{" runImportFailed}} 안내가 뜹니다. 코스 파일은 <a href="#courses">내 코스 만들기와 가져오기</a>에서 엽니다. 같은 시각에 시작한 기록을 다시 가져오면 새로 만들지 않고 이미 있는 기록을 엽니다. 다른 앱이 건강 앱에 쓴 달리기는 파일 없이 <a href="health.html#runs">건강 앱으로 들어온 달리기</a>로 가져옵니다.</p>
@@ -68,18 +68,18 @@
 <h2>기준 기록과 페이스 구간</h2>
 <p class="lead">최근 기록 하나를 기준 기록으로 넣으면 {{> runZoneEasy}}·{{> runZoneMarathon}}·{{> runZoneThreshold}}·{{> runZoneInterval}} 페이스와 예상 기록이 정해집니다.</p>
 <ol class="steps">
-<li>{{> tabMenu > runZonesTitle}}을 엽니다. 러닝 모드 홈의 {{> runZonesTitle}} 바로 가기로도 갑니다.</li>
+<li>{{> tabMenu > runZonesTitle}}을 엽니다. {{> tabHome}} {{> sectionRunning}} 묶음의 {{> runZonesTitle}} 바로 가기로도 갑니다.</li>
 <li>{{> runBaselineSet}}를 누르고 3km·5km·10km·{{> runHalf}}·{{> runFull}} 가운데 거리를 고른 뒤 {{> runBaselineTime}}을 적습니다.</li>
 <li>{{> runPredictions}}과 {{> runHrBasis}}({{> runHrBasisMax}} 또는 {{> runHrBasisThreshold}})을 확인합니다.</li>
 </ol>
 <p>페이스는 다니엘스·길버트의 산소 비용 식(VDOT)으로 계산하고, {{> runZonesHow}}에서 식과 출처를 봅니다. 기록이 없으면 {{> runKindTest}}로 재거나, 달리기 결과의 {{> runUseBaseline}}을 누릅니다. 넣은 지 8주가 지나면 다시 재 보라고 알려 줍니다.</p>
 </section>
 
-<section id="coach" data-ask="러닝 모드 코치 탭에는 뭐가 있나요|오늘 달리기 처방은 어디서 보나요|왜 이 달리기를 권하나요|다리 회복은 뭔가요|러닝 모드에서 근력 코치는 어디 있나요" data-keys="러닝코치 러닝 코치 코치탭 오늘 처방 추천 권하는 까닭 이유 다리회복 다리 회복 70% 품질 이번주 컨디션 영양 근력코치 블록 볼륨 근력모드 넘어가기">
+<section id="coach" data-ask="코치 탭의 달리기는 어디 있나요|오늘 달리기 처방은 어디서 보나요|왜 이 달리기를 권하나요|다리 회복은 뭔가요|러닝 코치는 어디 있나요" data-keys="러닝코치 러닝 코치 코치탭 달리기구획 구획 오늘 처방 추천 권하는 까닭 이유 다리회복 다리 회복 70% 품질 이번주 컨디션 근력코치 블록 볼륨">
 <h2>러닝 코치</h2>
-<p class="lead">러닝 모드에서는 {{> tabCoach}} 탭 전체가 러닝 코치가 됩니다. 맨 위 카드에서 오늘 달릴 것과 그렇게 정한 까닭을 보고 바로 {{> runStart}}을 누릅니다.</p>
+<p class="lead">{{> tabCoach}}의 공통 칸 아래에서 {{> sectionRunning}} 구획을 고르면 러닝 코치입니다. 맨 위 카드에서 오늘 달릴 것과 그렇게 정한 까닭을 보고 바로 {{> runStart}}을 누릅니다. 무료입니다.</p>
 <ol class="steps">
-<li>러닝 모드에서 {{> tabCoach}}를 엽니다. 머리말 아래에 {{" runCoachSubtitle}} 문구가 보입니다.</li>
+<li>{{> tabCoach}}를 열고 구획 고르기에서 {{> sectionRunning}}을 누릅니다. 다음에 열면 마지막에 본 구획이 열립니다.</li>
 <li>맨 위 카드에서 {{> runTodayPlan}}(하이브리드 계획의 그날 처방) 또는 {{> runSuggested}}(계획이 없을 때 권하는 달리기)을 봅니다.</li>
 <li>카드에 붙은 까닭을 읽고 {{> runStart}}을 누릅니다.</li>
 </ol>
@@ -87,10 +87,10 @@
 <li>까닭: 하체 회복 때문에 쉽게 바꿨을 때, 지난 30일 가장 긴 달리기의 110% 상한에 맞췄을 때, 기준 기록이 없어 기록 재기를 권할 때, 지난 기록에 맞춰 줄였을 때 한 줄씩 붙습니다.</li>
 <li>{{> runCoachLegsTitle}}: 하체 근력 기록이 없으면 회복을 따지지 않습니다. 하체 회복이 70% 아래거나 어제 하체를 세게 했으면 품질 달리기를 쉬운 달리기로 바꾸라고 알립니다.</li>
 <li>{{> runZonesTitle}}과 {{> runCapTitle}}: 페이스 구간, 이번 주 달린 거리와 한 번 거리 상한을 봅니다.</li>
-<li>{{> coachInterferenceTitle}}: 최근 30일 근력과 최근 7일 달리기가 둘 다 있으면 최근 7일 달린 날·시간을 알립니다. <a href="#strength">근력과 맞물린 처방</a>을 보세요.</li>
-<li>{{> runCoachWeekTitle}} <span class="pro">PRO+</span>: 무료에서는 잠긴 줄로 보입니다. PRO+는 컨디션 체크와 영양 카드도 봅니다.</li>
+<li>{{> assessEntryRunTitle}}: 러닝 자세 검사와 <a href="assessment.html#run-form">케이던스 목표</a>입니다.</li>
+<li>컨디션 체크 <span class="pro">PRO+</span>: PRO+는 이 구획에도 <a href="coach.html#readiness">컨디션 카드</a>가 있습니다.</li>
 </ul>
-<p>블록 계획·볼륨 같은 근력 코칭은 러닝 모드 {{> tabCoach}}에 없습니다. 맨 아래 {{> modeCrossStrengthCoach}} 줄을 누르면 근력 모드로 넘어갑니다. 러닝 코치를 처음 열면 소개 말풍선이 한 번 뜹니다(안내를 꺼 두었어도 한 번 뜹니다). iPad를 가로로 두면 왼쪽 메뉴의 회복 칸은 다리 회복으로, 코치 칸은 {{> largeRunCoach}}으로 바뀝니다.</p>
+<p>주간 계획·{{> coachInterferenceTitle}}·하이브리드 레이스 준비는 구획 위 <a href="coach.html#overview">공통 칸</a>에 있어 어느 구획에서나 보입니다. 블록 계획·볼륨 같은 근력 코칭은 {{> sectionStrength}} 구획에, 심폐 체력 훈련과 식단은 {{> sectionBodyNutrition}} 구획에 있습니다. {{> sectionRunning}} 구획을 처음 열면 소개 말풍선이 한 번 뜹니다. iPad와 펼친 iPhone Duo에서 코치 탭이 {{> sectionRunning}} 구획으로 열리면 왼쪽 메뉴의 코치 칸에 {{> largeRunCoach}}이, 오늘 계획이 달리기면 회복 칸에 다리 회복이 보입니다.</p>
 </section>
 
 <section id="strength" data-ask="하체 운동 다음 날 달리기는 어떻게 하나요|오늘 달리기가 쉬운 달리기로 바뀌었어요|한 번에 얼마나 길게 달려도 되나요|달리기 거리 상한은 왜 있나요|다리가 덜 풀렸어요라는 창이 떠요|근력 하고 바로 달려도 되나요|달리고 나서 하체 운동해도 되나요|달리기를 많이 하면 근력이 덜 느나요" data-keys="근력 하체 다리 다음날 쉬운달리기 품질 바꿈 처방 110% 30일 가장긴 거리상한 상한 부상 주간계획 맞물림 덜풀렸어요 다리확인 4% 늦춰 계획대로 간격 6시간 8시간 직후 하체반복 레그프레스 간섭 동시훈련 함께달릴때 메타분석">
@@ -102,15 +102,15 @@
 <li>{{" runReasonBaselineTest}}: 기준 기록이 없거나 오래됐으면 계획의 첫 품질 날을 기록 재기로 바꿉니다.</li>
 <li>{{" runLegsCheckTitle}} 창: 다리 회복이 70% 아래거나 어제 하체를 세게 한 날, 계획 없이 품질 달리기(역치·인터벌·언덕. 구성 훈련은 PRO)를 고르면 시작 전에 뜹니다. {{> runLegsEasy}}, {{> runLegsSlower}}(구간·반복은 그대로), {{> runLegsAsPlanned}} 가운데 고릅니다. 근손상 48시간 뒤 30분 기록이 4%쯤 느려졌다는 무작위 연구(Marcora 2007)를 따릅니다.</li>
 <li>근력 뒤 달리기: 근력을 끝낸 지 6시간 안에 달리기 시작 화면을 열면 맨 위에 간격 안내가 뜹니다. 근력 직후 유산소는 근력 향상이 가장 작았고, 연구진은 6시간 미만 간격을 피하라고 권했습니다(Robineau 2016).</li>
-<li>달리기 뒤 하체: 달린 지 8시간 안에 근력 {{> tabHome}}을 열고 오늘 루틴에 하체가 있으면, 오늘 카드에 하체 반복이 줄 수 있으니 무게는 그대로 두라는 줄이 붙습니다. 무게·세트는 바꾸지 않습니다. 유산소 4·8시간 뒤 레그 프레스 반복이 줄었고 24시간 뒤에는 차이가 없었으며 상체는 영향이 없었다는 연구(Sporer·Wenger 2003)를 따릅니다.</li>
-<li>{{> coachInterferenceTitle}}: 최근 30일 근력과 최근 7일 달리기가 둘 다 있으면 러닝 코치와 근력 코치에 이 줄이 뜹니다. 최근 7일 달린 날·시간과 함께, 지구력 훈련의 빈도·시간이 늘수록 근력·근비대 향상이 줄었다는 메타분석(Wilson 2012)을 알립니다. 따로 정한 기준값은 없습니다.</li>
+<li>달리기 뒤 하체: 달린 지 8시간 안에 {{> tabHome}}을 열고 오늘 근력 루틴에 하체가 있으면, 오늘 카드에 하체 반복이 줄 수 있으니 무게는 그대로 두라는 줄이 붙습니다. 무게·세트는 바꾸지 않습니다. 유산소 4·8시간 뒤 레그 프레스 반복이 줄었고 24시간 뒤에는 차이가 없었으며 상체는 영향이 없었다는 연구(Sporer·Wenger 2003)를 따릅니다.</li>
+<li>{{> coachInterferenceTitle}}: 최근 30일 근력과 최근 7일 달리기가 둘 다 있으면 {{> tabCoach}} 맨 위 공통 칸에 이 줄이 뜹니다. 최근 7일 달린 날·시간과 함께, 지구력 훈련의 빈도·시간이 늘수록 근력·근비대 향상이 줄었다는 메타분석(Wilson 2012)을 알립니다. 이번 주 하이브리드 계획이 있으면 그 계획의 근력·서킷·유산소 횟수도 함께 보여 줍니다. 따로 정한 기준값은 없습니다.</li>
 </ul>
-<p>주간 달리기 계획은 러닝 코치의 {{> runCoachWeekTitle}}에서 {{> runCoachMakeTitle}}로 짭니다(PRO+). 근력 날과 겹치지 않게 쉬운·품질 달리기를 나누고, 근력 처방은 그대로 둔 채 달리기 배치만 움직입니다.</p>
+<p>달리기를 많이 넣은 한 주 계획은 <a href="coach.html#hybrid">주간 하이브리드 계획</a>에서 {{> hybridFocus}}을 {{> hybridFocusRunning}}으로 골라 짭니다(PRO+). 근력 날과 겹치지 않게 쉬운·품질 달리기를 나누고, 하체 운동 다음 날 품질 달리기를 쉬운 달리기로 바꿉니다.</p>
 </section>
 
 <section id="courses" data-ask="코스는 어떻게 만드나요|달린 길을 코스로 저장하기|GPX 파일로 코스 가져오기|지도에 코스 그리기|자주 달리는 길을 코스로 만들기|같은 길 기록 비교하기|코스로 달릴 때 시계 쓰기" data-keys="코스 내코스 코스칸 홈 만들기 저장 코스로저장 결과 지도 그리기 gpx tcx 파일 가져오기 같은길 자동 지난나 겨루기 최고기록 받은기록 내구간 구간기록 순환 거르기 가까운순 시계 휴대폰 재는기기">
 <h2>내 코스 만들기와 가져오기</h2>
-<p class="lead">러닝 {{> tabHome}}의 {{> courseShelfTitle}} 칸에 내 코스가 최근 달린 곳에서 가까운 순으로 놓입니다. 달리기 결과에서 한 번에 저장하고, 지난 달리기·지도 그리기·파일로도 만듭니다.</p>
+<p class="lead">{{> tabHome}} {{> sectionRunning}} 묶음의 {{> courseShelfTitle}} 칸에 내 코스가 최근 달린 곳에서 가까운 순으로 놓입니다. 달리기 결과에서 한 번에 저장하고, 지난 달리기·지도 그리기·파일로도 만듭니다.</p>
 <ol class="steps">
 <li>달리기를 끝낸 결과 화면 지도 아래에서 {{> runSaveCourse}}을 누르면 바로 코스가 됩니다. 이름은 달리기 이름으로 붙고 코스 화면에서 바꿉니다.</li>
 <li>다른 방법은 {{> courseShelfTitle}} 칸 끝 카드나 {{> tabMenu > courseTitle}}의 {{> courseMake}}에서 {{> courseFromRun}}, {{> courseDraw}}, {{> courseFromFile}} 가운데 하나를 고릅니다.</li>
@@ -149,7 +149,7 @@
 <li>달리기 시작 화면의 {{> runDeviceTitle}}에서 {{> runDeviceWatch}}를 고르고 {{> runStart}}를 누릅니다.</li>
 <li>휴대폰에 {{" runSourceWatchWaiting}}가 뜨면 시계의 FitBoost에서 시작합니다.</li>
 </ol>
-<p>시계는 페이스 범위·단계·코스 선을 보여 주고, 범위를 벗어나면 진동으로 알립니다. Apple Watch는 다음 단계 5초 전에도 진동합니다. 끝나면 기록이 휴대폰으로 옵니다. 가민 시계의 위성 설정은 {{> tabMenu > runSettingsTitle > runSettingsSatellite}}에서 고르고, {{> runSettingsSatelliteMax}}는 배터리를 더 씁니다. 시계에는 모드가 따로 없고 휴대폰에서 고른 달리기를 띄웁니다.</p>
+<p>시계는 페이스 범위·단계·코스 선을 보여 주고, 범위를 벗어나면 진동으로 알립니다. Apple Watch는 다음 단계 5초 전에도 진동합니다. 끝나면 기록이 휴대폰으로 옵니다. 가민 시계의 위성 설정은 {{> tabMenu > runSettingsTitle > runSettingsSatellite}}에서 고르고, {{> runSettingsSatelliteMax}}는 배터리를 더 씁니다. 시계 대기 화면은 휴대폰의 오늘 계획을 따라 달리기 날이면 달리기를 앞세우고, 계획이 없으면 주 종목을 따릅니다.</p>
 </section>
 
 <section id="plans" data-ask="러닝 기능은 무료인가요|달리기에서 유료인 것은 뭐예요|달리기 분석은 PRO인가요|주간 달리기 계획은 어떤 구독인가요" data-keys="무료 유료 pro pro+ 프로 구독 러닝 달리기 분석 구성훈련 대회날 계획 잠김 자물쇠">
@@ -158,7 +158,7 @@
 <ul>
 <li>무료: 휴대폰·시계 세 종류로 재기, 실시간 페이스·심박, 자동 구간과 구간 기록, 기준 기록·페이스 구간·예상 기록, 내 코스(같은 길 알아보기·그리기·파일·받기), 링크·정보무늬·파일로 보내기, GPX 내보내기, 다른 앱 GPX·TCX 달리기 가져오기, 가리는 곳, 건강 앱 쓰기, 한 번 거리 상한, 지표 근거, 러닝 코치(오늘 처방과 까닭·다리 회복·페이스 구간·이번 주 거리).</li>
 <li>PRO: 경사 보정 페이스·심박 흐름·심박 부하·운동 부하·임계 속도, 근력과 합친 체력·피로, 구성 훈련(역치·인터벌·언덕 단계 안내), 대회 날 모드(목표 페이서·결승 예상), 코스 안 내 구간 기록.</li>
-<li>PRO+: 근력 회복과 맞물린 달리기 중심 주간 계획(하체 운동 다음 날 쉽게 바꾸기 포함), 러닝 코치의 컨디션 체크·영양 카드.</li>
+<li>PRO+: 달리기 중심으로도 짜는 주간 하이브리드 계획(하체 운동 다음 날 쉽게 바꾸기 포함), {{> sectionRunning}} 구획의 컨디션 체크.</li>
 </ul>
 <p>잠긴 칸에는 자물쇠가 붙고, 누르면 FitBoost PRO 화면이 열립니다. 구독이 끝나도 이미 잰 기록의 분석 값은 지워지지 않고 가려질 뿐입니다. 달리는 중 화면에는 광고를 넣지 않습니다.</p>
 </section>

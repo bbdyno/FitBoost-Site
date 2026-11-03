@@ -4,9 +4,9 @@
 <ol class="steps">
 <li>Swipe through the intro and tap start on the last screen.</li>
 <li>Enter a nickname, your sex, birth year, height, and weight.</li>
-<li>At {{> obModeTitle}}, pick {{> obModeStrength}} or {{> obModeRunning}}. Home, history and coach open in that mode, and you can switch later at the top of Home.</li>
-<li>Choose how long you've lifted weights, then pick your <a href="#goal">training goal</a>.</li>
-<li>If you have lifted before, enter your estimated squat 1RM. If you don't know it, choose that you're not sure. If you choose {{> obExpFirst}}, the app asks how often and where you train and builds a first routine that fits your goal.</li>
+<li>At {{> obModeTitle}}, pick {{> trainingMixStrength}}, {{> trainingMixHybrid}}, or {{> trainingMixRunning}}. It only sets what shows first; every strength and running feature stays available, and you can change it later in <a href="#mix">{{> trainingMixTitle}}</a>.</li>
+<li>Choose how much training you've done (running experience for {{> trainingMixRunning}}), then pick your <a href="#goal">training goal</a>. Goals closest to your main focus come first.</li>
+<li>If you have trained before, enter your estimated squat 1RM when strength is included, and a recent running result when running is included. You can skip either. If your main focus includes strength and you choose {{> obExpFirst}}, the app asks how often and where you train and builds a first routine that fits your goal.</li>
 </ol>
 <p>Your details are used to suggest weights and estimate calories burned. The weight unit (kg or lb) follows your device's region, and you can <a href="settings.html#units">change it in settings</a>.</p>
 </section>
@@ -21,22 +21,37 @@
 <p>A new goal applies from your next workout. The workout in progress and routines you made stay as they are. If you haven't picked a goal, the one guessed from your records is marked {{" trainingGoalInferred}}.</p>
 </section>
 
+<section id="mix" data-ask="What is main focus|Mostly strength or mostly running|Show running first on Home|Change my main focus|Change what shows first" data-keys="main focus mostly strength mostly running strength and running hybrid order first fold collapse expand group section settings top change one app">
+<h2>Main focus</h2>
+<p class="lead">{{> trainingMixTitle}} only decides whether strength or running shows first. It never hides a feature.</p>
+<ol class="steps">
+<li>Open {{> tabMenu > setAppSettings > trainingMixTitle}}. It's at the top of settings, under your training goal.</li>
+<li>Pick {{> trainingMixStrength}}, {{> trainingMixHybrid}}, or {{> trainingMixRunning}}.</li>
+</ol>
+<ul>
+<li>{{> tabHome}}: the order of the groups and which ones start folded change. {{> trainingMixStrength}} folds the running group, {{> trainingMixRunning}} folds the strength group, and {{> trainingMixHybrid}} keeps both open. On days with no plan, the top card also follows your main focus.</li>
+<li>{{> tabStats}} and {{> tabCoach}}: the first time you open them, your main focus's section opens ({{> sectionStrength}} for {{> trainingMixHybrid}}). After that, the last section you viewed opens.</li>
+<li>{{> tabMenu}}: the order of strength tools, running tools and calculators changes.</li>
+<li>It sets the starting focus when you first make a weekly hybrid plan.</li>
+</ul>
+<p>Main focus is separate from your <a href="#goal">training goal</a>. The goal is what you want (muscle, fat loss and so on); the main focus is what you do. The strength and running modes of 1.9.0 and earlier are gone. The first time you open 1.9.1, your main focus is set once from the mode you used, and Home shows {{" oneAppNotice}} once.</p>
+</section>
+
 <section id="account" data-ask="Do I need to sign up|Do I need an account|Where do I log in|Where are my records stored" data-keys="sign up signup register account login log in password stored server">
 <h2>No account needed</h2>
 <p class="lead">There's no sign-up or login. Your records are stored on this device.</p>
 <p>Change your nickname in {{> tabMenu > menuAccountPill > editProfile}}. Since records aren't sent to our servers, turn on <a href="sync.html#sync">sync across devices</a> or make a <a href="sync.html#backup">backup file</a> so you don't lose them with your phone.</p>
 </section>
 
-<section id="tabs" data-ask="How is the app laid out|What are the tabs at the bottom|Where do I find things" data-keys="tabs layout navigation home record stats coach menu screens">
+<section id="tabs" data-ask="How is the app laid out|What are the tabs at the bottom|Where do I find things|What are the groups on Home" data-keys="tabs layout navigation home record stats coach menu screens groups sections today card ipad duo two panes">
 <h2>How the app is laid out</h2>
-<p class="lead">The tabs at the bottom are {{> tabHome}}, {{> tabRecord}}, {{> tabStats}}, {{> tabCoach}}, and {{> tabMenu}}.</p>
+<p class="lead">The tabs at the bottom are {{> tabHome}}, {{> tabRecord}}, {{> tabStats}}, {{> tabCoach}}, and {{> tabMenu}}. Strength and running live together in one app.</p>
 <ul>
-<li>{{> tabHome}}: today's workout, {{> homeQuickRecord}}, {{> homePrograms}}, and {{> homeMyRoutines}}.</li>
-<li>{{> tabRecord}}: past workouts by date, where you edit or delete them.</li>
-<li>{{> tabStats}}: weekly goal, muscle recovery, strength balance, and volume trends.</li>
-<li>{{> tabCoach}}: PRO+ block programs and readiness coaching. Without PRO+ you'll see an introduction only.</li>
-<li>{{> tabMenu}}: {{> setAppSettings}}, {{> backupTitle}}, {{> trainerShareTitle}}, calculators, and health app connections.</li>
+<li>{{> tabHome}}: today's card at the top (today's run on a run day in your plan, today's workout on a strength or circuit day), a start button for the other sport right below it ({{> runStart}} or {{> homeStartStrength}}), then the {{> sectionStrength}}, {{> sectionRunning}}, and {{> sectionBody}} groups. The {{> sectionStrength}} group has {{> homeQuickRecord}}, {{> homePrograms}}, and {{> homeMyRoutines}}.</li>
+<li>{{> tabRecord}}: past workouts by date, where you edit or delete them. Filter with the {{> historyAllWorkouts}}, {{> historyStrengthOnly}}, and {{> historyRunsOnly}} chips.</li>
+<li>{{> tabStats}}: pick the {{> sectionStrength}}, {{> sectionRunning}}, or {{> sectionBody}} section at the top. Strength has the weekly goal, muscle recovery, strength balance and volume trends; running has distance, pace zones and predictions; body has body composition, weight and cardio fitness.</li>
+<li>{{> tabCoach}}: a shared area at the top with this week's plan, the interference note and hybrid race prep, then the {{> sectionStrength}}, {{> sectionRunning}}, and {{> sectionBodyNutrition}} sections. See <a href="coach.html#overview">How the Coach tab is laid out</a>.</li>
+<li>{{> tabMenu}}: {{> setAppSettings}}, {{> backupTitle}}, {{> trainerShareTitle}}, strength and running tools, calculators, and health app connections.</li>
 </ul>
-
-<p>Use the dumbbell and runner button at the right of the {{> tabHome}} header to switch between strength mode and <a href="running.html#mode">running mode</a>. In running mode, all five tabs turn toward running.</p>
+<p>Your <a href="#mix">main focus</a> sets the order of the groups and which ones start folded. Tap a group's title to fold or open it; the app remembers, and a folded row still shows this week's numbers. While a workout or run is in progress, the top card is the way back to it and there's no start button for the other sport. On iPad and an unfolded iPhone Duo, the app has two panes: a menu on the left with live numbers on each item, and on the right the recovery map at first, then whatever you pick in the menu.</p>
 </section>

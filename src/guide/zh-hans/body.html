@@ -1,0 +1,60 @@
+<section id="composition" data-ask="在哪里看体成分趋势|体脂量和去脂体重的变化|InBody 结果图表|想知道肌肉有没有增加|不同设备的体成分数值不一样" data-keys="体成分 趋势 体脂量 去脂体重 肌肉量 inbody 图表 7天平均 按设备 来源 水分 ffmi 去脂体重指数 增肌减脂 减脂 增肌 脂肪比例">
+<h2>体成分趋势</h2>
+<p class="lead">{{> tabRecord}} 的 {{> body}} 标签会按设备分别用 7 天平均线画出体脂量和去脂体重。也可以从 {{> tabStats}} 的{{> sectionBody}}分区和 {{> tabHome}} 的{{> sectionBody}}分组打开。</p>
+<ol class="steps">
+<li>在 {{> tabRecord > body}} 中用 {{> histAddBody}} 记录体重和体脂率，或<a href="#health-body">从健康应用获取</a>。</li>
+<li>用同一设备在两周以上测量 4 次以上后，{{> bodyCompTitle}}卡片会显示体脂量和去脂体重的趋势。</li>
+<li>在卡片末尾的 {{> bodyCompEvidence}} 中查看公式和出处。</li>
+</ol>
+<p>体成分仪每台设备的计算公式不同，所以线只连接同一设备的测量。一天内去脂体重变化很大的日子会用虚线标出，并提示这更可能是水分或饮食变化，而不是肌肉。也会显示减脂或增肌期间减少或增加的体重中脂肪所占比例，以及按身高校正的去脂体重指数（FFMI）。{{" guideBodyMeasure}}</p>
+</section>
+
+<section id="health-body" data-ask="从健康应用导入 InBody 应用的记录|想自动获取体重秤应用的体重|从 Health Connect 获取体脂|在应用中填写的体重会写入健康应用吗|会把身高写入健康应用吗" data-keys="健康应用 apple健康 health connect healthkit inbody 体重秤 智能体重秤 体重 身高 体脂率 去脂体重 腰围 体内水分 bmi 获取 写入 自动 来源">
+<h2>从健康应用获取体成分</h2>
+<p class="lead">把 InBody、体重秤等应用写入健康应用（Apple 健康、Health Connect）的体重、身高、体脂率和去脂体重，连同来源应用名称一起作为身体记录获取。在应用中填写的数值也会写入健康应用。</p>
+<ol class="steps">
+<li><a href="health.html#connect">连接健康应用</a>。</li>
+<li>在 {{> tabMenu}} 的 {{> healthKitTitle}} 或 {{> healthConnectTitle}} 中点 {{> setHealthBody}}，或在 {{> tabRecord > body}} 中点 {{> bodyCompImport}}。开启连接后，打开 {{> body}} 标签时也会获取。</li>
+</ol>
+<p>iPhone 还会读取 BMI 和腰围，Android 还会读取体内水分。第一次读取最近三个月，同一来源同一时间留下的数值合为一条记录，再次获取也不会重复。删除的记录不会再进来。在应用中填写的体重、体脂率和去脂体重会按当时的时间写入健康应用，同一时间已有其他应用的数值时不写入。健康应用里没有其他应用留下的身高时会写入个人资料的身高；健康应用的身高较新时，会把个人资料的身高改成该数值。</p>
+</section>
+
+<section id="body-coach" data-ask="会按体成分调整饮食吗|减脂时肌肉在流失|设定目标体脂率|想知道是否在增肌减脂|体成分指导是什么" data-keys="体成分指导 饮食 营养 去脂体重 肌肉流失 蛋白质 减脂速度 放慢 目标体脂率 目标体重 增肌减脂 增肌 脂肪比例 pro+">
+<h2>把体成分用于饮食和目标 <span class="pro">PRO+</span></h2>
+<p class="lead">有体成分记录时，营养目标会用去脂体重代替体重计算，{{> tabCoach}} {{> sectionBodyNutrition}}分区的{{> coachBodyTitle}}卡片会解读趋势并给出处方。</p>
+<ol class="steps">
+<li>在 {{> tabCoach}} 中选择{{> sectionBodyNutrition}}分区，在 {{> coachNutrition}} 卡片中设定<a href="coach.html#nutrition">营养目标</a>。</li>
+<li>要设定目标体脂率，在饮食设置的 {{> nutritionTargetBodyFat}} 中填写。会按保持去脂体重来显示目标体重。</li>
+<li>减脂中去脂体重减少时，{{> coachBodyTitle}}卡片会显示警告和处方，点 {{> coachBodySlowCut}} 会放慢减脂速度并提高热量。</li>
+</ol>
+<p>最近 30 天内有去脂体重时，维持热量按去脂体重计算，减脂期间蛋白质为每公斤去脂体重 2.3 克（去脂体重减少时为 3.1 克）。体脂量减少而去脂体重增加时视为增肌减脂，不削减热量；增肌期间增加的体重中脂肪超过 40% 时，会减少热量盈余。减脂速度的上限按体脂率决定。研究得出的数值和教练实践标准分开标注的依据，可在 {{> bodySourcesTitle}} 中查看。没有体成分时，仍像以前一样按体重计算。</p>
+</section>
+
+<section id="vo2" data-ask="在哪里看最大摄氧量|怎么测量心肺适能|记录 VO2max|获取 Apple Watch 的心肺适能|获取 Garmin 的 VO2max|库珀测试|体能年龄" data-keys="心肺适能 心肺 最大摄氧量 vo2max vo2 库珀 12分钟跑 5公里 实验室 气体分析 apple watch galaxy watch garmin 健康应用 来源 趋势 百分位 体能年龄 最大心率 心率比">
+<h2>心肺适能（最大摄氧量）</h2>
+<p class="lead">在{{> vo2Title}}画面中按来源汇总健康应用、Garmin、现场测量和实验室的最大摄氧量，并与同年龄、同性别的人比较。测量和查看免费。</p>
+<ol class="steps">
+<li>打开 {{> tabMenu}} {{> sectionRunning}}分组中的 {{> vo2Title}}。也可以从 {{> tabStats}} 的{{> sectionBody}}分区、{{> tabCoach}} 的{{> sectionBodyNutrition}}分区和 {{> tabHome}} 的{{> sectionBody}}分组打开。</li>
+<li>还没有数值时，用 {{> vo2CooperTitle}} 测量、点 {{> vo2HealthTitle}}，或用 {{> vo2LabTitle}} 填写在实验室测得的数值。</li>
+<li>查看最上方的数值、在同年龄同性别中的位置，以及 {{> vo2TrendsTitle}}。</li>
+</ol>
+<ul>
+<li>{{> vo2HealthTitle}}：读取 Apple Watch、Galaxy Watch 等设备写入健康应用的数值。需要先在设置中开启健康应用连接。</li>
+<li>Garmin：在<a href="watch.html#garmin-connect">关联 Garmin Connect</a>中开启健康摘要后，跑步和骑行的最大摄氧量以及 Garmin 体能年龄会进来。</li>
+<li>{{> vo2CooperTitle}}：热身后在 12 分钟内尽量跑远来测量。{{> vo2FiveKmTitle}} 会重新设定配速区间的成绩指数，不换算成最大摄氧量。</li>
+<li>{{> vo2LabTitle}}：填写用呼吸气体分析测得的数值（跑步机或自行车）和测量日期。</li>
+<li>{{> vo2MaxHrTitle}}：填写实测值后会代替按年龄的估算。有最大心率、静息心率和性别时，也会显示按心率比估算的数值。</li>
+</ul>
+<p>{{" guideVo2Max}} 最上方的数值按实验室、现场测量、设备、应用估算的顺序选取，超过 180 天的数值不使用。每个来源各用一行写明验证研究的误差；个人资料中有年龄（20–79 岁）和性别时，会用跑步机测量的参考表估算同年龄同性别中的百分位和体能年龄。用自行车测得的数值不与该表比较。出处可在 {{> vo2EvidenceOpen}} 中查看。</p>
+</section>
+
+<section id="vo2-train" data-ask="想提高最大摄氧量|VO2max 间歇训练|6 周训练周期|4 分钟 4 组间歇|心肺适能训练要付费吗" data-keys="心肺适能 训练 提高 最大摄氧量 间歇 4x4 4分钟 30秒 15秒 周期 6周 8周 重新测量 停滞 强度 心率 90% pro">
+<h2>提升心肺适能的训练 <span class="pro">PRO</span></h2>
+<p class="lead">在{{> vo2Title}}画面的 {{> vo2TrainTitle}} 中进行下一次最大摄氧量训练；用 {{> vo2BlockTitle}} 先测量、训练，再用同样方法重新测量并比较。</p>
+<ol class="steps">
+<li>在 {{> vo2TrainTitle}} 中查看下一次训练和选择它的原因，点 {{> vo2StartSession}}。在跑步开始画面选择手机或手表后开跑。</li>
+<li>要进行周期训练，在 {{> vo2BlockTitle}} 中选择时长（6 或 8 周）和每周次数，点 {{> vo2BlockStart}}。先用库珀 12 分钟跑或实验室数值测出起始值。</li>
+<li>周期结束后，用和开始时相同的方法重新测量，比较起始值和结束值。</li>
+</ol>
+<p>训练会根据上次的评估，从 4 分钟重复、30 秒·15 秒、30 秒·30 秒中选择；结束后按超过最大心率 90% 的时间和守住配速的比例，决定下一次增加、保持还是减少。心率变异性低于平时或状态较差的日子，开始时会建议改为轻松跑。周期训练会放在每周混合训练计划的有氧日；4 周数值没有变化时，会检查强度分配并提示。训练可以用 Apple Watch、Galaxy Watch 或 Garmin 手表测量，也可以通过 Garmin Connect 发送。免费版只能测量和查看，训练和周期显示为锁定的一行。</p>
+</section>

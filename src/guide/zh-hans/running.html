@@ -1,25 +1,25 @@
-<section id="mode" data-ask="怎么打开跑步模式|想把应用切换成跑步界面|想回到力量模式|切换到跑步模式后有什么变化" data-keys="跑步模式 跑步 模式 切换 力量模式 哑铃 跑者 双格按钮 顶部 训练模式">
-<h2>切换到跑步模式</h2>
-<p class="lead">点 {{> tabHome}} 顶部右侧双格按钮中的跑者一侧，整个应用就会切换到跑步模式。也可以在 {{> tabMenu}} 的 {{> menuModeTitle}} 一行切换。</p>
+<section id="mode" data-ask="怎么开启跑步模式|怎么切换到跑步界面|跑步模式不见了|跑步画面在哪里|想回到力量模式|跑步功能在哪里" data-keys="跑步模式 力量模式 模式 不见了 取消 在哪里 找 跑步画面 一个应用 主要项目 以跑步为主 分组 分区 训练模式 哑铃 跑者 按钮 顶部 切换">
+<h2>跑步在哪里</h2>
+<p class="lead">从 1.9.1 起没有跑步模式，跑步始终和力量在同一个画面里。在{{> tabHome}}的{{> sectionRunning}}分组，以及{{> tabStats}}、{{> tabCoach}}的{{> sectionRunning}}分区中查看。</p>
 <ol class="steps">
-<li>在 {{> tabHome}} 顶部右侧的哑铃和跑者按钮中点 {{> modeRunning}}。</li>
-<li>要回到力量训练，点同一按钮的 {{> modeStrength}}。</li>
+<li>{{> tabHome}}最上方的卡片不是今天的跑步时，点它正下方的 {{> runStart}}。不会询问，直接打开跑步开始画面。</li>
+<li>想先显示跑步的话，把<a href="start.html#mix">{{> trainingMixTitle}}</a>改为{{> trainingMixRunning}}。</li>
 </ol>
 <ul>
-<li>{{> tabHome}}：今天的跑步卡片、其下方的 <a href="#courses">{{> courseShelfTitle}}</a> 栏、本周跑量和过去 8 周的柱状图、{{> courseTitle}}·{{> runZonesTitle}}·{{> runHomePlan}} 快捷入口，以及最近的跑步。</li>
-<li>{{> tabRecord}}：以 {{> historyRunsOnly}} 打开，也可以切换到 {{> historyAllWorkouts}}。</li>
-<li>{{> tabStats}}：只显示跑步栏。力量统计请通过最下方的 {{> modeCrossStrengthStats}} 一行到力量模式查看。</li>
-<li>{{> tabCoach}}：整个页面变成<a href="#coach">跑步教练</a>。</li>
-<li>{{> tabMenu}}：多出 {{> courseTitle}}、{{> runZonesTitle}}、{{> runSettingsTitle}} 几行。</li>
+<li>{{> tabHome}}：{{> sectionRunning}}分组里有<a href="#courses">{{> courseShelfTitle}}</a>栏、本周跑量和最近 8 周的柱状图、{{> courseTitle}}、{{> runZonesTitle}}、{{> runHomeHybridPlan}}快捷入口、{{> assessEntryRunTitle}}、最近的跑步和 {{> runImportFile}}。</li>
+<li>{{> tabRecord}}：用{{> historyRunsOnly}}标签只看跑步。</li>
+<li>{{> tabStats}}：跑步统计在{{> sectionRunning}}分区中。</li>
+<li>{{> tabCoach}}：{{> sectionRunning}}分区就是<a href="#coach">跑步教练</a>，周期计划这类力量教练内容在{{> sectionStrength}}分区中。</li>
+<li>{{> tabMenu}}：{{> sectionRunning}}分组里有 {{> courseTitle}}、{{> runZonesTitle}}、{{> vo2Title}}、{{> runSettingsTitle}} 和 {{> assessEntryRunTitle}}。</li>
 </ul>
-<p>模式只改变界面。记录、处方和健康应用数据与力量训练合为一体。有力量训练安排的日子，首页会显示 {{" modeCrossStrength}}。有正在进行的训练时会显示 {{" modeLockedActive}}，不会切换。选好的模式在重新打开应用后仍会保留。</p>
+<p>记录、处方和健康应用数据与力量训练相连。有进行中的力量训练时不会开始跑步，并会说明原因。跑步中想添加动作时会显示 {{" exerciseBlockedDuringRun}}</p>
 </section>
 
 <section id="start-run" data-ask="怎么开始跑步|怎么记录跑步|想用手机测量跑步|跑步机上跑步也能测吗|在跑道上计圈" data-keys="开始 开始跑步 跑步 记录 测量 手机 设备 室内 跑步机 跑道 自由跑 计时测试 比赛 结构化训练 间歇 阈值 坡道 gps 卫星">
 <h2>开始跑步</h2>
-<p class="lead">在跑步模式的 {{> tabHome}}，点今天跑步卡片上的 {{> runStart}}，再选择跑步类型和测量设备。</p>
+<p class="lead">点 {{> tabHome}} 最上方今天跑步卡片或它正下方的 {{> runStart}}，再选择跑步类型和测量设备。</p>
 <ol class="steps">
-<li>在 {{> tabHome}} 点今天跑步卡片上的 {{> runStart}}。</li>
+<li>{{> tabHome}} 最上方的卡片是今天的跑步时点卡片上的 {{> runStart}}，是力量卡片时点它正下方的 {{> runStart}}。</li>
 <li>最上方的卡片是今天的处方（没有时是推荐）。可直接点 {{> runStart}}，或在下方选择 {{> runTitleFree}}、{{> runKindTest}}、{{> runTitleCourse}}、{{> runTitleTrack}}、{{> runKindTreadmill}} 等类型。</li>
 <li>在 {{> runDeviceTitle}} 中选择 {{> runDevicePhone}} 或 {{> runDeviceWatch}}。</li>
 <li>第一次用手机在户外测量时会请求位置权限。请允许使用应用期间的位置。</li>
@@ -55,10 +55,10 @@
 
 <section id="import" data-ask="想导入其他应用的跑步记录|导入手表的活动文件|用 TCX 文件加入跑步记录|其他应用跑的也能装饰吗|提示路线文件请在路线中导入" data-keys="导入 其他应用 别的应用 手表 活动文件 活动 tcx 文件 记录 转移 读取 跑步 结果 分享 装饰 同一时间 重复">
 <h2>导入其他应用的跑步</h2>
-<p class="lead">在跑步模式 {{> tabHome}} 最下方的 {{> runImportFile}} 中，选择其他应用或手表的 GPX、TCX 活动文件，就会生成一条跑步记录。</p>
+<p class="lead">在 {{> tabHome}} {{> sectionRunning}}分组最下方的 {{> runImportFile}} 中，选择其他应用或手表的 GPX、TCX 活动文件，就会生成一条跑步记录。</p>
 <ol class="steps">
 <li>在其他应用或手表应用中把跑步导出为 GPX 或 TCX 文件，放到手机上。</li>
-<li>在跑步模式 {{> tabHome}} 最下方点 {{> runImportFile}}，选择文件。</li>
+<li>在 {{> tabHome}} {{> sectionRunning}}分组最下方点 {{> runImportFile}}，选择文件。还没有跑步记录时，{{> tabStats}}的{{> sectionRunning}}分区中也有。</li>
 <li>结果页面打开后，像在应用中测量的跑步一样，用 {{> shareDecorate}} 分享和装饰。</li>
 </ol>
 <p>只有带时间的活动文件才能作为跑步导入，文件中有心率和步频时也会一并读取。选择不带时间的路线文件时，会显示 {{" runImportFailed}} 路线文件请在<a href="#courses">创建与导入我的路线</a>中打开。再次导入同一时间开始的记录时，不会新建，而是打开已有的记录。其他应用写入健康应用的跑步无需文件，见<a href="health.html#runs">从健康应用导入的跑步</a>。</p>
@@ -68,18 +68,18 @@
 <h2>基准成绩与配速区间</h2>
 <p class="lead">填写一次最近的成绩作为基准成绩，就会定出 {{> runZoneEasy}}、{{> runZoneMarathon}}、{{> runZoneThreshold}}、{{> runZoneInterval}} 配速和预计成绩。</p>
 <ol class="steps">
-<li>打开 {{> tabMenu > runZonesTitle}}。也可以从跑步模式首页的 {{> runZonesTitle}} 快捷入口进入。</li>
+<li>打开 {{> tabMenu > runZonesTitle}}。也可以从 {{> tabHome}} {{> sectionRunning}}分组的 {{> runZonesTitle}} 快捷入口进入。</li>
 <li>点 {{> runBaselineSet}}，在 3km、5km、10km、{{> runHalf}}、{{> runFull}} 中选择距离，再填写 {{> runBaselineTime}}。</li>
 <li>确认 {{> runPredictions}} 和 {{> runHrBasis}}（{{> runHrBasisMax}} 或 {{> runHrBasisThreshold}}）。</li>
 </ol>
 <p>配速按丹尼尔斯与吉尔伯特的氧耗公式（VDOT）计算，在 {{> runZonesHow}} 中可以看到公式和出处。没有成绩时，可以跑一次 {{> runKindTest}}，或在跑步结果中点 {{> runUseBaseline}}。填写满 8 周后，会提醒你再测一次。</p>
 </section>
 
-<section id="coach" data-ask="跑步模式的教练页有什么|在哪里看今天的跑步处方|为什么推荐这次跑步|腿部恢复是什么|跑步模式下力量教练在哪里" data-keys="跑步教练 教练 教练页 今天 处方 推荐 原因 为什么 腿部恢复 腿部 恢复 70% 质量课 本周 每周计划 状态 营养 力量教练 周期 训练量 力量模式 切换">
+<section id="coach" data-ask="教练页的跑步在哪里|在哪里看今天的跑步处方|今天的跑步处方|为什么推荐这次跑步|腿部恢复是什么|跑步教练在哪里" data-keys="跑步教练 跑步 教练 教练页 跑步分区 分区 今天 处方 推荐 原因 为什么 腿部恢复 腿 恢复 70% 质量课 本周 状态 力量教练 周期 训练量">
 <h2>跑步教练</h2>
-<p class="lead">跑步模式下，整个 {{> tabCoach}} 页都会变成跑步教练。在最上方的卡片中查看今天跑什么以及这样定的原因，然后直接点 {{> runStart}}。</p>
+<p class="lead">在 {{> tabCoach}} 公共区下方选择{{> sectionRunning}}分区，就是跑步教练。最上方的卡片会显示今天跑什么以及这样安排的原因，可以直接点 {{> runStart}}。免费。</p>
 <ol class="steps">
-<li>在跑步模式下打开 {{> tabCoach}}。标题下方会显示 {{" runCoachSubtitle}}。</li>
+<li>打开 {{> tabCoach}}，在分区切换中点{{> sectionRunning}}。下次会打开上次查看的分区。</li>
 <li>在最上方的卡片中查看 {{> runTodayPlan}}（混合计划当天的处方）或 {{> runSuggested}}（没有计划时推荐的跑步）。</li>
 <li>看完卡片上的原因，点 {{> runStart}}。</li>
 </ol>
@@ -87,10 +87,10 @@
 <li>原因：因下肢恢复而改轻、控制在过去 30 天最长跑步的 110% 上限内、因没有基准成绩而建议计时测试、按最近记录减量时，会各加一行说明。</li>
 <li>{{> runCoachLegsTitle}}：没有下肢力量记录时不考虑恢复。下肢恢复低于 70%，或昨天下肢练得很重时，会提示把质量课改为轻松跑。</li>
 <li>{{> runZonesTitle}} 和 {{> runCapTitle}}：查看配速区间，以及本周跑量和单次距离上限。</li>
-<li>{{> coachInterferenceTitle}}：最近 30 天有力量训练、最近 7 天也有跑步时，显示最近 7 天跑步的天数和时长。见<a href="#strength">与力量训练联动的处方</a>。</li>
-<li>{{> runCoachWeekTitle}} <span class="pro">PRO+</span>：免费时显示为锁定的一行。PRO+ 还能看到状态检查和营养卡片。</li>
+<li>{{> assessEntryRunTitle}}：跑姿测试和<a href="assessment.html#run-form">步频目标</a>。</li>
+<li>状态检查 <span class="pro">PRO+</span>：PRO+ 在这个分区也有<a href="coach.html#readiness">状态卡片</a>。</li>
 </ul>
-<p>周期计划、训练量这类力量教练内容不在跑步模式的 {{> tabCoach}} 页中。点最下方的 {{> modeCrossStrengthCoach}} 一行即可切换到力量模式。第一次打开跑步教练时，会出现一次介绍气泡（即使关闭了提示也会出现一次）。横放 iPad 时，左侧菜单的恢复项会变成腿部恢复，教练项会变成 {{> largeRunCoach}}。</p>
+<p>每周计划、{{> coachInterferenceTitle}}和混合赛备赛在分区上方的<a href="coach.html#overview">公共区</a>，任何分区都能看到。周期计划、训练量这类力量教练内容在{{> sectionStrength}}分区，心肺适能训练和饮食在{{> sectionBodyNutrition}}分区。第一次打开{{> sectionRunning}}分区时，会出现一次介绍气泡。在 iPad 和展开的 iPhone Duo 上，教练页以{{> sectionRunning}}分区打开时，左侧菜单的教练项显示 {{> largeRunCoach}}，今天计划是跑步时恢复项显示腿部恢复。</p>
 </section>
 
 <section id="strength" data-ask="练腿后第二天怎么跑|今天的跑步变成了轻松跑|一次能跑多长|为什么跑步有距离上限|提示腿部还没恢复|力量训练与跑步并行时|练完力量可以马上跑步吗|跑完步可以练下肢吗|力量和跑步一起练会影响力量增长吗" data-keys="力量 下肢 腿 第二天 轻松跑 质量课 改变 处方 110% 30天 最长 距离上限 上限 受伤 每周计划 联动 腿部还没恢复 腿部检查 放慢 4% 按计划 间隔 6小时 8小时 之后 下肢次数 腿举 干扰 同期训练 并行 荟萃分析">
@@ -102,15 +102,15 @@
 <li>{{" runReasonBaselineTest}}：没有基准成绩或成绩过旧时，计划中第一次质量课会改为计时测试。</li>
 <li>{{" runLegsCheckTitle}} 窗口：腿部恢复低于 70% 或昨天下肢练得很重的日子，在没有计划时选择质量课（阈值、间歇、坡道；结构化训练为 PRO），开始前会弹出。可选 {{> runLegsEasy}}、{{> runLegsSlower}}（分段和重复不变）或 {{> runLegsAsPlanned}}。依据一项随机研究：肌肉损伤 48 小时后，30 分钟成绩慢了约 4%（Marcora 2007）。</li>
 <li>力量训练后跑步：结束力量训练 6 小时内打开跑步开始页面，最上方会显示间隔提示。力量训练后马上做有氧时力量增长最小，研究者建议避免间隔少于 6 小时（Robineau 2016）。</li>
-<li>跑步后练下肢：跑步后 8 小时内打开力量 {{> tabHome}}，且今天的训练计划里有下肢时，今天的卡片会附一行，提示下肢次数可能减少、重量保持不变。重量和组数不会改变。依据一项研究：有氧后 4 和 8 小时腿举次数减少，24 小时后没有差别，上肢不受影响（Sporer、Wenger 2003）。</li>
-<li>{{> coachInterferenceTitle}}：最近 30 天有力量训练、最近 7 天也有跑步时，跑步教练和力量教练会显示这一行。它会列出最近 7 天跑步的天数和时长，并提示一项荟萃分析：耐力训练的频率和时长越高，力量与肌肉增长越少（Wilson 2012）。没有设定的标准值。</li>
+<li>跑步后练下肢：跑步后 8 小时内打开 {{> tabHome}}，且今天的力量例行里有下肢时，今天的卡片会附一行，提示下肢次数可能减少、重量保持不变。重量和组数不会改变。依据一项研究：有氧后 4 和 8 小时腿举次数减少，24 小时后没有差别，上肢不受影响（Sporer、Wenger 2003）。</li>
+<li>{{> coachInterferenceTitle}}：最近 30 天有力量训练、最近 7 天也有跑步时，{{> tabCoach}} 最上方的公共区会显示这一行。它会列出最近 7 天跑步的天数和时长，并提示一项荟萃分析：耐力训练的频率和时长越高，力量与肌肉增长越少（Wilson 2012）。本周有混合训练计划时，也会一起显示该计划的力量、循环训练和有氧次数。没有设定的标准值。</li>
 </ul>
-<p>每周跑步计划在跑步教练的 {{> runCoachWeekTitle}} 中通过 {{> runCoachMakeTitle}} 制定（PRO+）。它会把轻松跑和质量课错开力量训练日，力量处方保持不变，只调整跑步的安排。</p>
+<p>跑步较多的一周计划，在<a href="coach.html#hybrid">每周混合训练计划</a>中把{{> hybridFocus}}选为{{> hybridFocusRunning}}来制定（PRO+）。它会把轻松跑和质量课错开力量训练日，并把练下肢后第二天的质量课改为轻松跑。</p>
 </section>
 
 <section id="courses" data-ask="怎么创建路线|把跑过的路保存为路线|从 GPX 文件导入路线|在地图上画路线|把常跑的路做成路线|比较同一条路的成绩|跑路线时用手表" data-keys="路线 我的路线 路线栏 主页 创建 保存 保存为路线 结果 地图 画 gpx tcx 文件 导入 同一条路 自动 过去的自己 比拼 最佳 收到的成绩 我的分段 分段记录 环线 筛选 由近到远 手表 手机 测量设备">
 <h2>创建与导入我的路线</h2>
-<p class="lead">跑步 {{> tabHome}} 的 {{> courseShelfTitle}} 栏会按离最近跑步地点的远近排列我的路线。可在跑步结果中一键保存，也可以用过去的跑步、在地图上画或用文件来创建。</p>
+<p class="lead">{{> tabHome}} {{> sectionRunning}}分组的 {{> courseShelfTitle}} 栏会按离最近跑步地点的远近排列我的路线。可在跑步结果中一键保存，也可以用过去的跑步、在地图上画或用文件来创建。</p>
 <ol class="steps">
 <li>在跑步结束后的结果页面地图下方点 {{> runSaveCourse}}，马上就会成为路线。名称沿用跑步名称，可在路线页面修改。</li>
 <li>其他方式：在 {{> courseShelfTitle}} 栏最后一张卡片或 {{> tabMenu > courseTitle}} 的 {{> courseMake}} 中，从 {{> courseFromRun}}、{{> courseDraw}}、{{> courseFromFile}} 中选一种。</li>
@@ -149,7 +149,7 @@
 <li>在开始页面的 {{> runDeviceTitle}} 中选择 {{> runDeviceWatch}}，点 {{> runStart}}。</li>
 <li>手机上显示 {{" runSourceWatchWaiting}} 时，在手表的 FitBoost 中开始。</li>
 </ol>
-<p>手表会显示配速区间、步骤和路线线，超出区间时震动提醒。Apple Watch 在下一步前 5 秒也会震动。结束后记录会传到手机。Garmin 手表的卫星设置在 {{> tabMenu > runSettingsTitle > runSettingsSatellite}} 中选择，{{> runSettingsSatelliteMax}} 更耗电。手表上没有单独的模式，会显示在手机上选好的跑步。</p>
+<p>手表会显示配速区间、步骤和路线线，超出区间时震动提醒。Apple Watch 在下一步前 5 秒也会震动。结束后记录会传到手机。Garmin 手表的卫星设置在 {{> tabMenu > runSettingsTitle > runSettingsSatellite}} 中选择，{{> runSettingsSatelliteMax}} 更耗电。手表待机画面跟随手机上今天的计划，跑步日优先显示跑步，没有计划时按主要项目显示。</p>
 </section>
 
 <section id="plans" data-ask="跑步功能免费吗|跑步中哪些要付费|跑步分析是 PRO 吗|每周跑步计划属于哪个订阅" data-keys="免费 付费 pro pro+ 订阅 跑步 分析 结构化训练 比赛日 计划 锁定 锁">
@@ -158,7 +158,7 @@
 <ul>
 <li>免费：用手机和三种手表测量，实时配速和心率，自动分段与分段记录，基准成绩、配速区间和预计成绩，我的路线（识别同一条路、绘制、文件、接收），通过链接、二维码、文件发送，GPX 导出，导入其他应用的 GPX、TCX 跑步，隐私区域，写入健康应用，单次距离上限，指标依据，跑步教练（今天的处方与原因、腿部恢复、配速区间、本周跑量）。</li>
 <li>PRO：坡度修正配速、心率漂移、心率负荷、训练负荷、临界速度，与力量合并的体能·疲劳，结构化训练（阈值、间歇、坡道逐步指导），比赛日模式（目标配速员和完赛预测），路线内的我的分段记录。</li>
-<li>PRO+：配合力量恢复、以跑步为主的每周计划（包括练下肢后第二天改为轻松），以及跑步教练中的状态检查和营养卡片。</li>
+<li>PRO+：也能以跑步为主制定的每周混合训练计划（包括练下肢后第二天改为轻松），以及{{> sectionRunning}}分区的状态检查。</li>
 </ul>
 <p>锁定的栏会带锁形图标，点按会打开 FitBoost PRO 页面。订阅结束后，已测记录的分析值不会删除，只是隐藏。跑步中的屏幕不放广告。</p>
 </section>

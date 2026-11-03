@@ -1,12 +1,12 @@
 <section id="open" data-ask="動作評価はどこでできますか|フォーム分析はどこですか|柔軟性を測りたい|体力テストのやり方|どんなテストがありますか" data-keys="動作評価 フォーム分析 テスト 検査 体力 可動性 柔軟性 カメラ コーチ ホーム メニュー 名前 専門用語">
 <h2>動作評価を開く</h2>
-<p class="lead">どちらのモードでも、{{> tabHome}}のクイックスタートのすぐ下にある{{> assessEntryTitle}}（ランニングモードでは{{> assessEntryRunTitle}}）、{{> tabMenu}}、{{> tabCoach}}からテスト一覧を開きます。</p>
+<p class="lead">{{> tabHome}}の{{> sectionStrength}}グループにある{{> assessEntryTitle}}の行か、{{> sectionRunning}}グループにある{{> assessEntryRunTitle}}の行、{{> tabMenu}}、{{> tabCoach}}からテスト一覧を開きます。</p>
 <ol class="steps">
-<li>{{> tabHome}}で{{> assessEntryTitle}}（ランニングモードでは{{> assessEntryRunTitle}}）をタップします。{{> tabMenu}}と{{> tabCoach}}にも同じ行があります。</li>
+<li>{{> tabHome}}で{{> assessEntryTitle}}（筋トレ側のテスト）か{{> assessEntryRunTitle}}（ランニングフォームが先に来るテスト）をタップします。{{> tabMenu}}の{{> sectionStrength}}・{{> sectionRunning}}グループと、{{> tabCoach}}の同じセクションにも同じ行があります。</li>
 <li>{{> assessGroupMobility}}・{{> assessGroupFitness}}・{{> assessGroupPower}}・{{> assessGroupBarbell}}・{{> assessGroupRunning}}のまとまりからテストを選びます。</li>
 <li>準備画面でスマホの置き方、やり方、中止するときを読んでから始めます。</li>
 </ol>
-<p>テスト名はわかりやすい言葉で書き、その下に小さく専門用語（肩の屈曲など）を添えます。筋トレモードには{{> mobilityTestShoulderFlexion}}・{{> mobilityTestShoulderAbduction}}・{{> mobilityTestSquatSide}}・{{> mobilityTestSquatFront}}・{{> mobilityTestSitReach}}・{{> mobilityTestToeTouch}}・{{> mobilityTestKneeExtension}}・{{> mobilityTestLegRaise}}・{{> mobilityTestKneeToWall}}・{{> mobilityTestPushUp}}・{{> mobilityTestStance}}・{{> assessTestChairStand}}・{{> jumpTestCmj}}・{{> jumpTestDrop}}・{{> barSpeedTestName}}が、ランニングモードには{{> runFormTestSide}}・{{> runFormTestBack}}と脚の可動性・体力・ジャンプのテストが表示されます。測定と結果の確認は無料です。</p>
+<p>テスト名はわかりやすい言葉で書き、その下に小さく専門用語（肩の屈曲など）を添えます。{{> assessEntryTitle}}には{{> mobilityTestShoulderFlexion}}・{{> mobilityTestShoulderAbduction}}・{{> mobilityTestSquatSide}}・{{> mobilityTestSquatFront}}・{{> mobilityTestSitReach}}・{{> mobilityTestToeTouch}}・{{> mobilityTestKneeExtension}}・{{> mobilityTestLegRaise}}・{{> mobilityTestKneeToWall}}・{{> mobilityTestPushUp}}・{{> mobilityTestStance}}・{{> assessTestChairStand}}・{{> jumpTestCmj}}・{{> jumpTestDrop}}・{{> barSpeedTestName}}が、{{> assessEntryRunTitle}}には{{> runFormTestSide}}・{{> runFormTestBack}}と脚の可動性・体力・ジャンプのテストが表示されます。測定と結果の確認は無料です。</p>
 </section>
 
 <section id="measure" data-ask="カメラでどう測りますか|スマホはどこに置きますか|撮影チェックが通りません|カメラなしで測れますか|測定動画を残したい" data-keys="測定 測る カメラ スマホ 立てる 三脚 撮影 チェック 角度 横 正面 手入力 タイマー 定規 動画 音声 インカメラ 前面 自撮り 切り替え 背面">
@@ -42,7 +42,7 @@
 <li>{{> assessPlanPreviewTitle}}を確認して{{> assessPlanApply}}をタップします。</li>
 <li>運動を始めたら、一覧のいちばん上の行の{{> assessPlanAdd}}でウォームアップを加えます。</li>
 </ol>
-<p>反映したあとも{{> assessPlanRevert}}で元に戻せます。筋トレの処方は筋トレモードでだけ反映し、ランニングは<a href="#run-form">ピッチの目標</a>が担います。提案の文章は無料で誰でも読めます。</p>
+<p>反映したあとも{{> assessPlanRevert}}で元に戻せます。テストの結果は筋トレの処方に反映し、ランニングは<a href="#run-form">ピッチの目標</a>が担います。提案の文章は無料で誰でも読めます。</p>
 </section>
 
 <section id="jump" data-ask="ジャンプの高さを測りたい|ドロップジャンプのやり方|スローモーションで撮る必要がありますか|脚の準備度とは" data-keys="ジャンプ カウンタームーブメントジャンプ ドロップジャンプ 高さ 滞空 スローモーション 240 反応筋力指数 rsi 脚 準備度 場面 離地 着地">
@@ -63,12 +63,12 @@
 <li>{{> barSpeedStart}}をタップしてセットを行います。</li>
 <li>{{" barSpeedPlateFound}}で合っていれば{{> barSpeedPlateConfirm}}、違えばプレートのいちばん上と下の端をタップして決めます。</li>
 </ol>
-<p>レップごとの平均推進速度と{{> barSpeedLossTitle}}が出ます。まだ実際の機器と比べていない推定値であることも表示します。速度からの1RM比の推定はPRO、セット中に低下率を超えたら終えどきを知らせる機能はPRO+です。筋トレモードでだけ表示されます。</p>
+<p>レップごとの平均推進速度と{{> barSpeedLossTitle}}が出ます。まだ実際の機器と比べていない推定値であることも表示します。速度からの1RM比の推定はPRO、セット中に低下率を超えたら終えどきを知らせる機能はPRO+です。{{> assessEntryTitle}}でだけ表示されます。</p>
 </section>
 
 <section id="run-form" data-ask="ランニングフォームの分析のやり方|ピッチの目標を決めたい|オーバーストライドか知りたい|走る姿の撮り方" data-keys="ランニングフォーム フォーム ピッチ ケイデンス 歩幅 オーバーストライド 着地 すね 骨盤 股関節内転 トレッドミル トラック 目標">
 <h2>ランニングフォームとピッチの目標</h2>
-<p class="lead">ランニングモードの{{> tabHome}}・{{> tabCoach}}・{{> tabMenu}}の{{> assessEntryRunTitle}}で{{> runFormTestSide}}か{{> runFormTestBack}}を選び、トレッドミルやトラックで走る姿を撮ります。</p>
+<p class="lead">{{> tabHome}}・{{> tabCoach}}・{{> tabMenu}}の{{> assessEntryRunTitle}}で{{> runFormTestSide}}か{{> runFormTestBack}}を選び、トレッドミルやトラックで走る姿を撮ります。</p>
 <ol class="steps">
 <li>スマホを高さ約1.5mに立て、横（または後ろ）から撮ります。</li>
 <li>結果でピッチ、着地位置、すねの角度、着地の足の形などを見ます。</li>

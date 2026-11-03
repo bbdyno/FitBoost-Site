@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>健康应用 | FitBoost</title>
-<meta name="description" content="把训练写入 Apple 健康和 Health Connect，并读取睡眠和心率。">
+<meta name="description" content="把训练写入 Apple 健康和 Health Connect，并读取睡眠、心率、体成分和心肺适能。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,7 +44,7 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="当前位置"><a href="./">使用指南</a></nav>
 <h1>健康应用</h1>
-<p class="g-lede">把训练写入 Apple 健康和 Health Connect，并读取睡眠和心率。</p>
+<p class="g-lede">把训练写入 Apple 健康和 Health Connect，并读取睡眠、心率、体成分和心肺适能。</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">搜索指南</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="搜索指南"
@@ -64,10 +64,10 @@
 
 <section class="g-sec" id="what">
 <h2>交换的数据</h2>
-<p class="lead">把完成的训练写入健康应用，并读取手表训练以及心率、睡眠和体重。</p>
+<p class="lead">把完成的训练和身体记录写入健康应用，并读取手表训练以及心率、睡眠、体成分和心肺适能。</p>
 <ul>
-<li>写入：完成的力量和有氧训练。只有力量训练时记为力量训练，混有有氧时记为交叉训练。</li>
-<li>读取：手表和健康应用中的训练与心率，以及用于状态和恢复计算的睡眠、HRV、静息心率和体重。</li>
+<li>写入：完成的力量和有氧训练（只有力量训练时记为力量训练，混有有氧时记为交叉训练），在应用中填写的体重、体脂率和去脂体重，以及健康应用里没有其他应用的身高时的个人资料身高。</li>
+<li>读取：手表和健康应用中的训练与心率，用于状态和恢复计算的睡眠、HRV 和静息心率，InBody、体重秤等应用留下的体重、身高、体脂率和去脂体重（iPhone 还有 BMI 和腰围，Android 还有体内水分），以及手表留下的最大摄氧量。见<a href="body.html#health-body">从健康应用获取体成分</a>和<a href="body.html#vo2">心肺适能</a>。</li>
 <li>跑步：把路线（位置、海拔）、距离和心率随跑步训练一起写入健康应用。健康应用中没有位置存放的值保存在设备内的辅助副本中，这份副本只放进备份文件，不同步。</li>
 </ul>
 <p>Android 会请求步数权限，是因为读取训练时会一并读取步数。</p>
@@ -81,13 +81,13 @@
 
 <section class="g-sec" id="runs">
 <h2>从健康应用导入的跑步</h2>
-<p class="lead">其他应用写入健康应用的跑步（室外、跑步机），用 <span class="ui"><b>导入手表训练</b></span> 导入后会成为跑步记录，显示在跑步模式中。</p>
+<p class="lead">其他应用写入健康应用的跑步（室外、跑步机），用 <span class="ui"><b>导入手表训练</b></span> 导入后会成为 FitBoost 跑步记录。</p>
 <ol class="steps">
 <li>在你使用的应用中开启向健康应用共享训练。iPhone 上在 Garmin Connect App 的设置 → 已连接的应用 → Apple 健康中开启共享（Strava 等应用也会写入 Apple 健康）。Android 上在 Garmin Connect、Samsung Health、Strava 等应用中开启向 Health Connect 共享。</li>
 <li>在 FitBoost 中<a href="#connect">连接健康应用</a>，点 <span class="ui"><b>导入手表训练</b></span>。要连以前的跑步一起导入，请点 <span class="ui"><b>导入过去一年的记录</b></span>。</li>
-<li>在跑步模式的 <span class="ui"><b>记录</b></span> 中打开导入的跑步查看结果，再分享和装饰。</li>
+<li>在 <span class="ui"><b>记录</b></span> 中点<span class="ui"><b>仅跑步</b></span>标签，打开导入的跑步查看结果，再分享和装饰。</li>
 </ol>
-<p>导入的跑步会用于跑步模式的记录、统计、教练、每周跑量和装饰，跑步机跑步会作为室内跑步导入。距离和时间使用健康应用的数值，路线和心率在打开结果页面时从健康应用重新读取。健康应用中没有路线时不显示路线。第一次连接时只读取最近 30 天，点 <span class="ui"><b>导入过去一年的记录</b></span> 会重新读取一年，已导入的不会重复。同一页面的 <span class="ui"><b>看不到 Garmin 跑步记录时</b></span> 一行中也有上面的共享开启方法。每次导入都会重新读取至少最近 7 天，所以较晚写入健康应用的跑步也会在下次导入时进来。1.8.0 之前作为一行有氧导入的跑步，在这个范围内也会变成跑步记录，改过的名称和备注保持不变。骑行等其他有氧仍是有氧。没有直接连接 Garmin Connect 账户的功能，请通过健康应用，或<a href="running.html#import">用 GPX、TCX 文件导入</a>。</p>
+<p>导入的跑步会用于记录、统计、教练、每周跑量和装饰，跑步机跑步会作为室内跑步导入。距离和时间使用健康应用的数值，路线和心率在打开结果页面时从健康应用重新读取。健康应用中没有路线时不显示路线。第一次连接时只读取最近 30 天，点 <span class="ui"><b>导入过去一年的记录</b></span> 会重新读取一年，已导入的不会重复。同一页面的 <span class="ui"><b>看不到 Garmin 跑步记录时</b></span> 一行中也有上面的共享开启方法。每次导入都会重新读取至少最近 7 天，所以较晚写入健康应用的跑步也会在下次导入时进来。1.8.0 之前作为一行有氧导入的跑步，在这个范围内也会变成跑步记录，改过的名称和备注保持不变。骑行等其他有氧仍是有氧。用 Garmin 手表测量的跑步也可以通过<a href="watch.html#garmin-connect">关联 Garmin Connect</a>不经健康应用直接接收，或<a href="running.html#import">用 GPX、TCX 文件导入</a>。</p>
 </section>
 
 <section class="g-sec" id="merge">

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>ヘルスケア連携 | FitBoost</title>
-<meta name="description" content="Apple HealthとHealth Connectにワークアウトを送り、睡眠や心拍を取り込みます。">
+<meta name="description" content="Apple HealthとHealth Connectにワークアウトを送り、睡眠・心拍・体組成・心肺フィットネスを取り込みます。">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,7 +44,7 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="現在の位置"><a href="./">使い方ガイド</a></nav>
 <h1>ヘルスケア連携</h1>
-<p class="g-lede">Apple HealthとHealth Connectにワークアウトを送り、睡眠や心拍を取り込みます。</p>
+<p class="g-lede">Apple HealthとHealth Connectにワークアウトを送り、睡眠・心拍・体組成・心肺フィットネスを取り込みます。</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">ガイドを検索</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="ガイドを検索"
@@ -64,10 +64,10 @@
 
 <section class="g-sec" id="what">
 <h2>やり取りするもの</h2>
-<p class="lead">終えたワークアウトをヘルスケアに送り、ウォッチのワークアウトや心拍・睡眠・体重を取り込みます。</p>
+<p class="lead">終えたワークアウトと身体記録をヘルスケアに送り、ウォッチのワークアウトや心拍・睡眠・体組成・心肺フィットネスを取り込みます。</p>
 <ul>
-<li>送るもの：終えた筋トレ・有酸素のワークアウト。筋トレだけなら筋トレ、有酸素が混ざればクロストレーニングとして残します。</li>
-<li>取り込むもの：ウォッチとヘルスケアのワークアウト・心拍数、コンディションと回復の計算に使う睡眠・HRV・安静時心拍・体重。</li>
+<li>送るもの：終えた筋トレ・有酸素のワークアウト（筋トレだけなら筋トレ、有酸素が混ざればクロストレーニング）、アプリで入れた体重・体脂肪率・除脂肪量、ヘルスケアにほかのアプリの身長がなければプロフィールの身長。</li>
+<li>取り込むもの：ウォッチとヘルスケアのワークアウト・心拍数、コンディションと回復の計算に使う睡眠・HRV・安静時心拍、InBodyや体重計のアプリが残した体重・身長・体脂肪率・除脂肪量（iPhoneはBMI・腹囲、Androidは体水分量も）、ウォッチが残した最大酸素摂取量。<a href="body.html#health-body">ヘルスケアから体組成を取り込む</a>と<a href="body.html#vo2">心肺フィットネス</a>をご覧ください。</li>
 <li>ラン：ルート（位置・高度）・距離・心拍をランのワークアウトと一緒にヘルスケアに書き込みます。ヘルスケアに置き場のない値は端末内の補助コピーに置き、このコピーはバックアップファイルにだけ入り、同期はしません。</li>
 </ul>
 <p>Androidで歩数の権限を求めるのは、ワークアウトを読み込むときに歩数も一緒に読むためです。</p>
@@ -81,13 +81,13 @@
 
 <section class="g-sec" id="runs">
 <h2>ヘルスケアから入るラン</h2>
-<p class="lead">ほかのアプリがヘルスケアに書き込んだラン（屋外・トレッドミル）は、<span class="ui"><b>スマートウォッチの記録を取り込む</b></span>で取り込むとランの記録になり、ランニングモードに表示されます。</p>
+<p class="lead">ほかのアプリがヘルスケアに書き込んだラン（屋外・トレッドミル）は、<span class="ui"><b>スマートウォッチの記録を取り込む</b></span>で取り込むとFitBoostのランの記録になります。</p>
 <ol class="steps">
 <li>使っているアプリで、ヘルスケアへのワークアウトの共有をオンにします。iPhoneではGarmin Connectアプリの設定 → 連携アプリ → Apple Healthで共有をオンにします（StravaなどのアプリもApple Healthに書き込みます）。AndroidではGarmin Connect・Samsung Health・StravaなどのアプリでHealth Connectへの共有をオンにします。</li>
 <li>FitBoostで<a href="#connect">ヘルスケアとつなぎ</a>、<span class="ui"><b>スマートウォッチの記録を取り込む</b></span>をタップします。以前のランも入れるには<span class="ui"><b>過去1年の記録を取り込む</b></span>をタップします。</li>
-<li>ランニングモードの<span class="ui"><b>記録</b></span>で取り込んだランを開いて結果を見て、共有・カスタマイズします。</li>
+<li><span class="ui"><b>記録</b></span>で<span class="ui"><b>ランのみ</b></span>のチップをタップし、取り込んだランを開いて結果を見て、共有・カスタマイズします。</li>
 </ol>
-<p>取り込んだランは、ランニングモードの記録・統計・コーチ・週間距離とカスタマイズに使われ、トレッドミルのランは屋内ランとして入ります。距離・時間はヘルスケアの値を使い、ルート・心拍は結果画面を開いたときにヘルスケアから読み直します。ヘルスケアにルートがなければルートは表示されません。初めてつないだときは直近30日だけを読み、<span class="ui"><b>過去1年の記録を取り込む</b></span>をタップすると1年分を読み直しますが、取り込み済みのものは重複しません。同じ画面の<span class="ui"><b>Garminのランが表示されない場合</b></span>の行にも、上の共有のオンにし方があります。取り込みは少なくとも直近7日を毎回読み直すので、ヘルスケアに遅れて入ったランも次の取り込みで入ります。1.8.0より前に有酸素1行として入ったランも、この期間内ならランの記録に変わり、直した名前・メモはそのまま残ります。自転車などほかの有酸素は有酸素のままです。Garmin Connectのアカウントに直接つなぐ機能はないので、ヘルスケアを経由するか<a href="running.html#import">GPX・TCXファイルで取り込みます</a>。</p>
+<p>取り込んだランは、記録・統計・コーチ・週間距離とカスタマイズに使われ、トレッドミルのランは屋内ランとして入ります。距離・時間はヘルスケアの値を使い、ルート・心拍は結果画面を開いたときにヘルスケアから読み直します。ヘルスケアにルートがなければルートは表示されません。初めてつないだときは直近30日だけを読み、<span class="ui"><b>過去1年の記録を取り込む</b></span>をタップすると1年分を読み直しますが、取り込み済みのものは重複しません。同じ画面の<span class="ui"><b>Garminのランが表示されない場合</b></span>の行にも、上の共有のオンにし方があります。取り込みは少なくとも直近7日を毎回読み直すので、ヘルスケアに遅れて入ったランも次の取り込みで入ります。1.8.0より前に有酸素1行として入ったランも、この期間内ならランの記録に変わり、直した名前・メモはそのまま残ります。自転車などほかの有酸素は有酸素のままです。Garminウォッチで計測したランは、<a href="watch.html#garmin-connect">Garmin Connect連携</a>でヘルスケアを通さずに受け取ることも、<a href="running.html#import">GPX・TCXファイルで取り込む</a>こともできます。</p>
 </section>
 
 <section class="g-sec" id="merge">

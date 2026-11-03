@@ -1,6 +1,6 @@
-<section id="overview" data-ask="统计页能看什么|看本周训练量|和上周比较|训练量图表" data-keys="统计 图表 训练量 趋势 本周 上周 比较 目标 使用的肌肉 期间">
+<section id="overview" data-ask="统计页能看什么|查看本周训练量|和上周对比|训练量图表|跑步统计在哪里" data-keys="统计 图表 训练量 趋势 本周 上周 对比 目标 使用的肌肉 期间 分区 力量 跑步 身体 体成分 心肺">
 <h2>统计页能看到什么</h2>
-<p class="lead">{{> tabStats}} 从上到下依次是本周目标、肌肉恢复、力量平衡和训练量趋势。</p>
+<p class="lead">在 {{> tabStats}} 上方选择{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分区。{{> sectionStrength}}从上到下依次是本周目标、肌肉恢复、力量平衡和训练量趋势。</p>
 <ul>
 <li>{{> statsWeekVsLastWeek}}：把本周训练和上周比较。</li>
 <li>{{> volumeProgressTrend}}、{{> statsPeriodVolume}}：查看训练量的增长。</li>
@@ -8,7 +8,7 @@
 <li>{{> deeperAnalysis}}：进入 {{> smartWeightGuide}} 和 {{> weeklyCoachingReport}}。</li>
 </ul>
 
-<p>跑步模式下，{{> tabStats}} 只显示跑步栏。可以看到跑量、{{> runCapTitle}}、{{> runZonesTitle}} 和 {{> runPredictions}}，PRO 还能看到合并力量与跑步负荷的 {{> runStatsLoadTitle}} 和 {{> runCriticalSpeed}}。上面的力量统计在力量模式中查看，在跑步模式下点最下方的 {{> modeCrossStrengthStats}} 一行即可切换到力量模式。</p>
+<p>{{> sectionRunning}}分区有跑步距离、{{> runCapTitle}}、{{> runZonesTitle}} 和 {{> runPredictions}}，PRO 还能看到合并力量和跑步负荷的 {{> runStatsLoadTitle}} 以及 {{> runCriticalSpeed}}。{{> sectionBody}}分区有<a href="body.html#composition">体成分趋势</a>、体重和<a href="body.html#vo2">心肺适能</a>。第一次会打开<a href="start.html#mix">主要项目</a>的分区，之后打开上次查看的分区。没有记录的分区会显示开始按钮，分享按钮会打开当前分区的卡片。</p>
 </section>
 
 <section id="recovery" data-ask="肌肉恢复是怎么计算的|哪些部位还没恢复|今天该练哪里|恢复图" data-keys="恢复 肌肉 疲劳 图 部位 休息 睡眠 疼痛 恢复度 百分比">

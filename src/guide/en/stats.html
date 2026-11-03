@@ -1,6 +1,6 @@
-<section id="overview" data-ask="What can I see in the Stats tab|How much did I train this week|Compare with last week|Volume chart" data-keys="stats statistics chart graph volume trend this week last week compare goal muscles used period">
+<section id="overview" data-ask="What can I see in the Stats tab|See this week's volume|Compare with last week|Volume chart|Where are my running stats" data-keys="stats chart volume trend this week last week compare goal muscles used period section strength running body composition cardio">
 <h2>What's in the Stats tab</h2>
-<p class="lead">{{> tabStats}} shows, from the top, your weekly goal, muscle recovery, strength balance, and volume trends.</p>
+<p class="lead">Pick the {{> sectionStrength}}, {{> sectionRunning}}, or {{> sectionBody}} section at the top of {{> tabStats}}. {{> sectionStrength}} shows your weekly goal, muscle recovery, strength balance, and volume trends, from top to bottom.</p>
 <ul>
 <li>{{> statsWeekVsLastWeek}}: compares this week's training with last week.</li>
 <li>{{> volumeProgressTrend}} and {{> statsPeriodVolume}}: how your volume has grown.</li>
@@ -8,7 +8,7 @@
 <li>{{> deeperAnalysis}}: opens {{> smartWeightGuide}} and {{> weeklyCoachingReport}}.</li>
 </ul>
 
-<p>In running mode, {{> tabStats}} shows only the running sections. They show distance run, {{> runCapTitle}}, {{> runZonesTitle}}, and {{> runPredictions}}, and with PRO also {{> runStatsLoadTitle}} combining strength and running load, and {{> runCriticalSpeed}}. The strength stats above are in strength mode; tap the {{> modeCrossStrengthStats}} row at the bottom in running mode to switch.</p>
+<p>The {{> sectionRunning}} section shows distance run, {{> runCapTitle}}, {{> runZonesTitle}}, and {{> runPredictions}}, and with PRO also {{> runStatsLoadTitle}} combining strength and running load, and {{> runCriticalSpeed}}. The {{> sectionBody}} section has the <a href="body.html#composition">body composition trend</a>, body weight, and <a href="body.html#vo2">cardio fitness</a>. The first time, your <a href="start.html#mix">main focus</a>'s section opens; after that, the last one you viewed. A section with no records shows a start button, and the share button opens cards for the section you're viewing.</p>
 </section>
 
 <section id="recovery" data-ask="How is muscle recovery calculated|Which muscles are still recovering|What should I train today|Recovery map" data-keys="recovery muscle fatigue map body part rest sleep pain sore percent">

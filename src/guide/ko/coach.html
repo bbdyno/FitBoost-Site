@@ -1,3 +1,17 @@
+<section id="overview" data-ask="코치 탭 구성이 어떻게 되나요|코치 탭 맨 위 칸은 뭔가요|근력 코치와 러닝 코치는 어디 있나요|코치 탭 구획 바꾸기" data-keys="코치탭 구성 공통칸 맨위 구획 근력 달리기 몸 영양 이번주 계획 간섭 대회 하이브리드 레이스 잠금 무료">
+<h2>코치 탭 구성</h2>
+<p class="lead">{{> tabCoach}} 맨 위 공통 칸에 {{> hybridPlanWeekTitle}}, 간섭 안내, {{> runKindHybridRace}}가 있고, 그 아래에서 {{> sectionStrength}}·{{> sectionRunning}}·{{> sectionBodyNutrition}} 구획을 고릅니다.</p>
+<ul>
+<li>{{> hybridPlanWeekTitle}} <span class="pro">PRO+</span>: 이번 주 날마다 그날 할 운동(코치 세션·루틴·서킷·달리기)과 한 날·놓친 날을 보여 줍니다. PRO+가 아니면 {{> coachPlanMakeTitle}} 잠금 줄입니다. <a href="#hybrid">주간 하이브리드 계획</a>을 보세요.</li>
+<li>{{> coachInterferenceTitle}}: 최근 근력과 달리기가 함께 있을 때 뜹니다. <a href="running.html#strength">근력과 맞물린 처방</a>을 보세요.</li>
+<li>{{> runKindHybridRace}}: <a href="#race">하이브리드 레이스 준비</a>를 엽니다.</li>
+<li>{{> sectionStrength}}: <a href="#plan">블록 계획</a>, 디로드, 컨디션 체크. 움직임 평가 줄만 무료이고 나머지는 PRO+입니다.</li>
+<li>{{> sectionRunning}}: <a href="running.html#coach">러닝 코치</a>. 무료입니다.</li>
+<li>{{> sectionBodyNutrition}}: <a href="body.html#vo2">심폐 체력</a>(무료), <a href="#nutrition">영양 목표</a>·<a href="body.html#body-coach">체성분 코칭</a>·스트레스와 회복(PRO+).</li>
+</ul>
+<p>처음에는 <a href="start.html#mix">주 종목</a>의 구획이 열리고({{> trainingMixHybrid}}는 {{> sectionStrength}}), 그 뒤로는 마지막에 본 구획이 열립니다. 구획 자리는 늘 {{> sectionStrength}}·{{> sectionRunning}}·{{> sectionBodyNutrition}} 순서입니다.</p>
+</section>
+
 <section id="next-weight" data-ask="다음 세트 무게를 알려 주나요|다음에 몇 킬로 들어야 하나요|운동 중 코치 추천|언제 그만해야 하나요" data-keys="다음 무게 추천 중량 코치 세트 그만 피로 탑셋 백오프 웜업 계산">
 <h2>운동 중 다음 무게 추천 <span class="pro">PRO</span></h2>
 <p class="lead">세트를 끝내고 강도를 남기면, 그 결과로 다음 세트에 들 무게와 오늘 그만할 때를 알려 줍니다.</p>
@@ -16,35 +30,34 @@
 <p>끝나면 어땠는지 묻고, 답에 맞춰 다음 서킷을 조정합니다. <a href="watch.html#on-watch">시계</a>에서 바로 시작할 수도 있습니다.</p>
 </section>
 
-<section id="hybrid" data-ask="근력과 유산소를 함께 계획하고 싶어요|한 주 운동 계획을 짜 주나요|하이브리드 계획|운동 못 한 날 옮기기" data-keys="하이브리드 주간 계획 유산소 러닝 근력 요일 일정 옮기기 놓친">
+<section id="hybrid" data-ask="근력과 유산소를 함께 계획하고 싶어요|한 주 운동 계획을 짜 주나요|하이브리드 계획|운동 못 한 날 옮기기|주간 계획을 고치고 싶어요" data-keys="하이브리드 주간 계획 유산소 러닝 달리기 근력 서킷 요일 일정 놓친 옮기기 고치기 다시만들기 하나">
 <h2>주간 하이브리드 계획 <span class="pro">PRO+</span></h2>
-<p class="lead">근력·서킷·유산소를 섞어 한 주 일정을 짭니다. 운동하는 요일과 시간이 넉넉한 요일을 알려 주면 그에 맞춥니다.</p>
+<p class="lead">근력·서킷·달리기를 섞어 한 주 일정을 짭니다. 계획은 하나이고, 고치면 {{> tabHome}} 오늘 카드와 {{> tabCoach}} 맨 위 {{> hybridPlanWeekTitle}}에 바로 반영됩니다.</p>
 <ol class="steps">
-<li>{{> tabHome > homePrograms > hybridTitle}}을 누릅니다.</li>
-<li>요일, 목표, 무게중심, 유산소, 장비, 나이를 고르고 {{> hybridMake}}를 누릅니다.</li>
-<li>오늘 할 운동이 {{> tabHome}}에 나옵니다.</li>
+<li>{{> tabHome > homePrograms > hybridTitle}}을 누릅니다. {{> tabCoach}} 맨 위 {{> hybridPlanWeekTitle}} 칸이나 {{> tabHome}} {{> sectionRunning}} 묶음의 {{> runHomeHybridPlan}} 바로 가기로도 엽니다.</li>
+<li>요일, 목표, 무게중심, 유산소, 장비, 나이를 고르고 {{> hybridMake}}를 누릅니다. 무게중심의 처음 값은 <a href="start.html#mix">주 종목</a>을 따릅니다.</li>
+<li>오늘 할 운동이 {{> tabHome}} 맨 위 카드에 나옵니다. 계획 화면에서는 그날 칸의 {{> hybridStart}}로 시작합니다.</li>
 </ol>
-<p>놓친 날은 {{> hybridMove}}로 다른 날에 옮기고, 되돌릴 수도 있습니다.</p>
-
-<p>무게중심에서 {{> hybridFocusRunning}}을 고르면 러닝 코치의 {{> runCoachWeekTitle}}이 되고, 하체 운동 다음 날 품질 달리기를 쉬운 달리기로 바꿉니다. <a href="running.html#coach">러닝 코치</a>와 <a href="running.html#strength">근력과 맞물린 처방</a>을 보세요.</p>
+<p>조건을 바꾸려면 {{> hybridRemake}}를 누릅니다. 직접 고쳤거나 일정에 넣은 루틴은 덮어쓰지 않고 남깁니다. 놓친 날은 다른 날로 옮기지 않고 놓친 채 둡니다. 근력·서킷 날을 놓친 주의 다음 주에는 계획 루틴의 무게·횟수를 올리지 않고 지난번 그대로 합니다. <a href="#plan">블록 계획</a>이 있으면 계획의 근력 날에 코치 세션이 차례로 놓이고, <a href="body.html#vo2-train">심폐 체력 블록</a>을 하고 있으면 그 세션도 유산소 날에 놓입니다.</p>
+<p>무게중심에서 {{> hybridFocusRunning}}을 고르면 달리기 날이 많은 계획이 되고, 하체 운동 다음 날 품질 달리기를 쉬운 달리기로 바꿉니다. <a href="running.html#coach">러닝 코치</a>와 <a href="running.html#strength">근력과 맞물린 처방</a>을 보세요.</p>
 </section>
 
 <section id="plan" data-ask="코치 탭은 뭘 하나요|코치 탭이 안 열려요|블록 주기화 계획 만들기|대회 준비 계획|코치 탭에 소개만 나와요" data-keys="코치탭 블록 주기화 계획 파워리프팅 근력 근비대 대회 1RM 디로드 PRO+">
 <h2>코치 탭의 블록 계획 <span class="pro">PRO+</span></h2>
 <p class="lead">목표와 대회 날짜, 지금 1RM으로 몇 주짜리 계획을 짜고 매 운동의 무게를 정해 줍니다.</p>
 <ol class="steps">
-<li>{{> tabCoach > coachCreatePlan}}을 누릅니다.</li>
+<li>{{> tabCoach > sectionStrength > coachCreatePlan}}을 누릅니다.</li>
 <li>목표(파워리프팅·근력·파워빌딩·근비대), 주당 운동일, 경력, 진행 성향, 체중, 대회 날짜(선택)를 고릅니다.</li>
 <li>지금 1RM을 적습니다. 모르면 무게와 횟수로 계산할 수 있습니다.</li>
 <li>{{> coachSetupCreate}}를 누르면 오늘 할 운동이 코치 탭과 홈에 나옵니다.</li>
 </ol>
-<p>근력 모드의 코치 탭은 PRO+ 전용이라, PRO+가 아니면 소개와 {{> coachSeePlans}}만 보입니다. 러닝 모드에서는 탭 전체가 <a href="running.html#coach">러닝 코치</a>로 바뀌므로 블록 계획은 근력 모드에서 봅니다.</p>
+<p>{{> sectionStrength}} 구획의 블록 계획은 PRO+ 전용이라, PRO+가 아니면 움직임 평가 줄과 소개, {{> coachSeePlans}}만 보입니다. 주간 하이브리드 계획이 있으면 {{> coachHybridCoachTitle}} 줄로 만들고, 코치 세션이 계획의 근력 날에 차례로 놓입니다.</p>
 </section>
 
 <section id="readiness" data-ask="컨디션에 따라 무게를 바꿔 주나요|오늘 컨디션 체크|잠을 못 잤는데 운동해도 되나요|HRV 반영" data-keys="컨디션 체크 수면 근육통 스트레스 에너지 hrv 심박 레디니스 강도 조절">
 <h2>컨디션 체크 <span class="pro">PRO+</span></h2>
 <p class="lead">운동 전에 수면·근육 상태·스트레스·에너지를 남기면 그날 무게와 세트를 맞춰 줍니다.</p>
-<p>코치 탭의 {{> homeConditionTitle}} 카드에서 {{> coachReadinessCheck}}를 누르고, 다 고른 뒤 {{> coachSaveReadiness}}를 누릅니다. 계획이 있으면 홈의 {{> homeConditionTitle}} 칸에서도 엽니다. <a href="health.html#what">건강 앱</a>을 연결하면 수면 시간·HRV·안정 심박을 함께 씁니다.</p>
+<p>{{> tabCoach}}의 {{> sectionStrength}}·{{> sectionRunning}} 구획에 있는 {{> homeConditionTitle}} 카드에서 {{> coachReadinessCheck}}를 누르고, 다 고른 뒤 {{> coachSaveReadiness}}를 누릅니다. 계획이 있으면 홈의 {{> homeConditionTitle}} 칸에서도 엽니다. <a href="health.html#what">건강 앱</a>이나 <a href="watch.html#garmin-connect">가민 커넥트</a>를 연결하면 수면 시간·HRV·안정 심박을 함께 씁니다.</p>
 </section>
 
 <section id="deload" data-ask="디로드는 언제 하나요|계획을 한 주 늘리거나 당기기|대회 시도 무게 정하기" data-keys="디로드 휴식주 블록 연장 앞당기기 대회 시도 중량 1차 2차 3차 피로">
@@ -55,18 +68,35 @@
 
 <section id="nutrition" data-ask="식단 칼로리 목표를 정해 주나요|탄단지 목표|영양 목표 설정" data-keys="영양 식단 칼로리 열량 단백질 탄수화물 지방 탄단지 체중 감량 증량">
 <h2>영양 목표 <span class="pro">PRO+</span></h2>
-<p class="lead">체중 추세를 보고 매주 열량과 탄수화물·단백질·지방 목표를 다시 맞춥니다.</p>
-<p>코치 탭의 {{> coachNutrition}} 카드에서 체중·키·나이·활동량·목표를 넣고 {{> nutritionStart}}를 누릅니다. 체중 추세는 2주 넘게 4번 이상 기록해야 보입니다. 한 번만 계산해 보려면 <a href="tools.html#calculators">매크로 계산기</a>를 쓰세요.</p>
+<p class="lead">체성분이나 체중 추세를 보고 매주 열량과 탄수화물·단백질·지방 목표를 다시 맞춥니다.</p>
+<p>{{> tabCoach}} {{> sectionBodyNutrition}} 구획의 {{> coachNutrition}} 카드에서 체중·키·나이·활동량·목표를 넣고 {{> nutritionStart}}를 누릅니다. 최근 30일 안 체성분(제지방량)이 있으면 체중 대신 제지방량으로 유지 열량과 단백질을 계산하고, {{> nutritionTargetBodyFat}}을 넣으면 목표 체중을 보여 줍니다(<a href="body.html#body-coach">체성분 반영</a>). 체중 추세는 2주 넘게 4번 이상 기록해야 보입니다. 한 번만 계산해 보려면 <a href="tools.html#calculators">매크로 계산기</a>를 쓰세요.</p>
 </section>
 
-<section id="race" data-ask="하이브리드 대회 준비|1km 달리기와 종목 연습|대회 구간 기록|썰매 밀기 월볼 연습|대회 날짜까지 계획" data-keys="하이브리드 레이스 대회 구간 스플릿 썰매 월볼 로잉 스키 파머스 샌드백 버피 진단 목표 완주">
+<section id="race" data-ask="하이브리드 대회 준비|1km 달리기와 종목 연습|대회 구간 기록|썰매 밀기 월볼 연습|대회 날짜까지 계획|목표 완주 시간 직접 넣기|대회 연습을 시계로 재기" data-keys="하이브리드 레이스 대회 구간 스플릿 썰매 월볼 로잉 스키 파머스 샌드백 버피 진단 목표 완주 직접입력 시분초 예상 현실적 무리 근거 시계 워치 구간끝">
 <h2>하이브리드 레이스 준비</h2>
 <p class="lead">1km 달리기 뒤 종목 하나를 8번 잇는 하이브리드 피트니스 레이스를 실전처럼 연습하고, 구간마다 기록을 남깁니다. 무료는 한 주에 3번입니다.</p>
 <ol class="steps">
-<li>{{> tabHome > homePrograms > raceEntryTitle}}을 엽니다.</li>
-<li>부문(무게), 연습 범위(전체·절반·종목만·종목 뒤 달리기), 목표 완주 시간을 고르면 구간마다 양·무게·목표가 보입니다.</li>
+<li>{{> tabHome > homePrograms > raceEntryTitle}}을 엽니다. {{> tabCoach}} 맨 위 {{> runKindHybridRace}} 줄로도 엽니다.</li>
+<li>{{> raceGroupSingle}}·{{> raceGroupDoubles}}·{{> raceGroupRelay}}에서 {{> raceDivisionTitle}}을 고르고, 연습 범위(전체·절반·종목만·종목 뒤 달리기)와 {{> raceGoalTitle}}을 고르면 구간마다 양·무게·목표가 보입니다. 2인·릴레이는 <a href="#race-team">팀 분담</a>을 보세요.</li>
 <li>{{> raceStart}}를 누르고 구간을 끝낼 때마다 큰 버튼을 누릅니다. 시계에서 끝내도 됩니다.</li>
 <li>다 끝나면 구간표와 가장 많이 늦은 구간이 보이고, {{> raceSave}}로 저장합니다.</li>
 </ol>
-<p>대회 날짜를 고르면 남은 주를 기초·특화·실전·조절로 나눠 할 일을 알려 주고, 첫 주 진단으로 약한 종목을 찾아 줍니다. 대회가 끝나면 공식 기록을 적어 목표·연습과 비교합니다. 특정 대회와 관계없는 연습 기능이며, 구간 목표는 공개 결과를 모은 참고값입니다.</p>
+<p>목표는 정해 둔 시간에서 고르거나 {{> raceGoalCustom}}으로 시·분·초를 넣습니다(30분~5시간). 넣은 목표로 구간 목표와 달리기 페이스·종목 합·전환 시간이 다시 나옵니다. 가장 빠른 전체 연습이나 첫 주 진단으로 본 예상보다 2% 넘게 빠른 목표면 무리일 수 있다고 알립니다. 구간 예상은 실제 대회에서 잰 연구 값과 코칭 현장 방법론을 따르고, 연구가 없는 부분은 현장 추정이라고 따로 적습니다. {{> raceSourcesButton}}에서 출처를 봅니다.</p>
+<p>대회 날짜를 고르면 남은 주를 기초·특화·실전·조절로 나눠 할 일을 알려 주고, 첫 주 진단으로 약한 종목을 찾아 줍니다. 대회가 끝나면 공식 기록을 적어 목표·연습과 비교합니다. 특정 대회와 관계없는 연습 기능이며, 거리·횟수·무게는 공개 규정집을 따릅니다.</p>
+<p>휴대폰에서 시작한 연습은 Apple Watch·갤럭시 워치·가민 시계에서 지금 구간 이름, 양과 목표, 그 구간에 걸린 시간, 손목 심박을 보며 잽니다. 구간 끝은 Apple Watch·갤럭시 워치는 {{> raceWatchLap}}, 가민은 시작 버튼입니다. 달리기 구간 거리는 휴대폰 위치로 잽니다.</p>
+</section>
+
+<section id="race-team" data-ask="2인 대회 연습|릴레이 부문 준비|파트너와 종목 나누기|혼성 2인 무게는요|릴레이에서 누가 어느 구간을 맡나요" data-keys="2인 더블스 doubles 파트너 릴레이 relay 4인 팀 혼성 믹스드 분담 나누기 교대 번갈아 전략 팀원 진단 페이스 함께 뛰기 주자 구간 맡기">
+<h2>2인·릴레이 부문과 팀 분담</h2>
+<p class="lead">{{> raceGroupDoubles}}·{{> raceGroupRelay}} 부문을 고르면 규정 요점이 보이고, 팀원 진단으로 누가 무엇을 얼마나 맡을지 {{> raceTeamTitle}} 카드가 정해 줍니다.</p>
+<ol class="steps">
+<li>{{> raceEntryTitle}}에서 {{> raceGroupDoubles}}나 {{> raceGroupRelay}}를 누르고 부문(여자·남자·혼성 등)을 고릅니다.</li>
+<li>{{> raceTeamTitle}} 카드에서 팀원을 눌러 {{> raceMemberEditTitle}}(1km 달리기·로잉·파머스 캐리·월볼)을 적습니다. 내 진단은 대회 날짜를 정한 뒤 위 대회 준비 카드에서 적습니다.</li>
+<li>팀 예상과 종목마다 나눌 몫, 함께 뛸 페이스나 맡을 구간을 봅니다.</li>
+</ol>
+<ul>
+<li>2인: 1km는 둘이 함께 뛰고, 함께 뛸 페이스는 혼자 더 느린 사람에 맞춥니다. 종목 몫은 일하는 시간이 같도록 빠른 사람이 더 많이 맡고, 에르그 250m·썰매 12.5m처럼 바꿀 단위를 함께 보여 줍니다. 혼성 2인은 둘 다 남자 오픈 무게입니다.</li>
+<li>릴레이: 넷이 각자 1km와 그 뒤 종목을 두 번씩 맡고, 예상 합이 가장 작도록 각자 강한 종목이 있는 구간을 맡깁니다. 혼성 릴레이는 여자 2명·남자 2명이어야 하고 각자 자기 성별 무게를 듭니다.</li>
+</ul>
+<p>진단이 없는 팀원은 보통 기록으로 계산합니다. 2인 연습의 구간 이름에는 두 사람 몫이, 릴레이 구간에는 맡은 주자 이름이 붙어 시계에도 그대로 갑니다. 교대 단위 가운데 연구가 없는 것(월볼 10회 등)에는 현장 추정이라고 붙습니다.</p>
 </section>

@@ -28,7 +28,23 @@
 <li>從 Connect IQ 商店給手錶安裝 FitBoost。</li>
 <li>在手機上點選 {{> tabMenu > setAppSettings > setWatch > setGarminConnect}}。iPhone 會開啟 Garmin Connect App，選好手錶後返回。</li>
 </ol>
-<p>iPhone 和 Android 都支援。在 Garmin 手錶上完成的訓練會進入手機記錄，也會以力量訓練的形式儲存到 Garmin Connect。</p>
+<p>iPhone 和 Android 都支援。在 Garmin 手錶上完成的訓練會進入手機紀錄，也會以力量訓練的形式儲存到 Garmin Connect。連結 Garmin Connect 帳號來接收跑步和健康摘要、發送路線和訓練，請見<a href="#garmin-connect">連結 Garmin Connect</a>。</p>
+</section>
+
+<section id="garmin-connect" data-ask="能連結 Garmin Connect 帳號嗎|從 Garmin Connect 接收紀錄|把路線發送到 Garmin Connect|把訓練發送到 Garmin Connect|取消連結 Garmin Connect|取得 Garmin 的睡眠和心率變異度" data-keys="garmin connect 佳明 帳號 連結 連線 登入 同意 接收 睡眠 hrv 心率變異度 靜息心率 最大攝氧量 vo2max 體能年齡 發送 路線 訓練 例行 日曆 取消連結 斷開">
+<h2>連結 Garmin Connect</h2>
+<p class="lead">用 {{> garminConnectTitle}} 連結 Garmin 帳號後，用 Garmin 手錶測量的跑步以及睡眠和恢復指標會直接進來，也能把選好的路線和訓練發送到 Garmin。免費。</p>
+<ol class="steps">
+<li>點選 {{> tabMenu > setAppSettings > setWatch > garminConnectTitle}}。</li>
+<li>閱讀接收和發送的內容，在 Garmin 登入，並在 Garmin 授權頁面開啟要分享的項目。</li>
+<li>回來後，每次開啟 App 都會接收新紀錄。想馬上接收，點 {{> garminConnectSyncNow}}。</li>
+</ol>
+<ul>
+<li>{{> garminConnectRuns}}：帶路線、心率、步頻和功率的跑步會成為 FitBoost 跑步紀錄。</li>
+<li>{{> garminConnectHealth}}：睡眠時長和睡眠階段、前一晚的心率變異度和靜息心率用於狀態判斷，跑步和騎車的最大攝氧量以及 Garmin 體能年齡會放進<a href="body.html#vo2">心肺適能</a>。</li>
+<li>{{> garminConnectCourses}}、{{> garminConnectWorkouts}}：在路線畫面、跑步開始畫面或例行的 ⋯ 選單中點 {{> garminSendAction}}，會儲存到 Garmin Connect 帳號並傳到手錶。訓練要選擇放在 Garmin Connect 日曆的哪一天。</li>
+</ul>
+<p>每個項目會顯示開啟或關閉，關閉的項目要在 Garmin Connect 帳號設定的已連結的 App 中開啟。{{" garminSendWatchNote}} 從 Garmin 接收的紀錄，裝置取走後立即從伺服器刪除，即使未取走也會在 30 天後刪除。點 {{> garminConnectDisconnect}} 會取消連結並刪除伺服器上剩餘的紀錄，已接收的跑步會留在 App 中。</p>
 </section>
 
 <section id="on-watch" data-ask="手錶上能做什麼|不帶手機只用手錶訓練|在手錶上改重量|在手錶上做循環訓練" data-keys="手錶 功能 組 完成 重量 休息 震動 不帶手機 快速 力量 循環訓練 心率">

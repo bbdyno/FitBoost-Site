@@ -4,9 +4,9 @@
 <ol class="steps">
 <li>翻過介紹頁，在最後一頁點選開始。</li>
 <li>填寫暱稱、性別、出生年份、身高和體重。</li>
-<li>在{{> obModeTitle}}中選擇{{> obModeStrength}}或{{> obModeRunning}}。首頁、紀錄和教練會以所選模式開啟，之後可在首頁頂部切換。</li>
-<li>選擇做重量訓練的時間，接著選擇<a href="#goal">訓練目標</a>。</li>
-<li>練過的話，填寫預估的深蹲 1RM。不知道的話，可以選擇不確定。選擇 {{> obExpFirst}} 時，會詢問每週幾次、在哪裡訓練，並依所選目標產生第一個例行。</li>
+<li>在{{> obModeTitle}}中選擇{{> trainingMixStrength}}、{{> trainingMixHybrid}}或{{> trainingMixRunning}}。它只決定先顯示什麼，力量和跑步的功能都能用，之後可以在<a href="#mix">{{> trainingMixTitle}}</a>中更改。</li>
+<li>選擇訓練經驗（{{> trainingMixRunning}}時為跑步經驗），接著選擇<a href="#goal">訓練目標</a>。接近主要項目的目標排在前面。</li>
+<li>練過的話，包含力量時填寫預估的深蹲 1RM，包含跑步時填寫最近的跑步成績。不知道可以跳過。主要項目包含力量並選擇 {{> obExpFirst}} 時，會詢問每週幾次、在哪裡訓練，並按所選目標生成第一個例行。</li>
 </ol>
 <p>這些資訊用於推薦重量和估算消耗的熱量。重量單位（kg 或 lb）跟隨裝置的地區設定，之後可以<a href="settings.html#units">在設定中更改</a>。</p>
 </section>
@@ -21,22 +21,37 @@
 <p>更改後的目標從下次訓練開始生效。進行中的訓練和你自己建立的例行保持不變。沒選過目標時，根據紀錄推測的目標會標示 {{" trainingGoalInferred}}。</p>
 </section>
 
+<section id="mix" data-ask="主要項目是什麼|以力量為主和以跑步為主有什麼區別|想在首頁先看到跑步|更改主要項目|更改先顯示的順序" data-keys="主要項目 以力量為主 以跑步為主 力量與跑步 混合 順序 先顯示 折疊 展開 分組 分區 設定 最上方 更改 一個 App">
+<h2>主要項目</h2>
+<p class="lead">{{> trainingMixTitle}}只決定力量和跑步哪個先顯示，不會隱藏任何功能。</p>
+<ol class="steps">
+<li>開啟 {{> tabMenu > setAppSettings > trainingMixTitle}}。它在設定最上方、訓練目標下面。</li>
+<li>選擇{{> trainingMixStrength}}、{{> trainingMixHybrid}}或{{> trainingMixRunning}}。</li>
+</ol>
+<ul>
+<li>{{> tabHome}}：分組的順序和一開始折疊的分組會改變。{{> trainingMixStrength}}會折疊跑步分組，{{> trainingMixRunning}}會折疊力量分組，{{> trainingMixHybrid}}兩組都展開。沒有今天計畫的日子，最上方的卡片也按主要項目顯示。</li>
+<li>{{> tabStats}}、{{> tabCoach}}：第一次開啟時顯示主要項目的分區（{{> trainingMixHybrid}}為{{> sectionStrength}}），之後開啟上次查看的分區。</li>
+<li>{{> tabMenu}}：力量工具、跑步工具和計算機的順序會改變。</li>
+<li>第一次制定每週混合訓練計畫時，作為側重的初始值。</li>
+</ul>
+<p>主要項目和<a href="#goal">訓練目標</a>是兩回事。目標是你想要什麼（增肌、減脂等），主要項目是你做什麼。1.9.0 及以前的力量模式和跑步模式已經取消。第一次開啟 1.9.1 時，會按你以前用的模式設定一次主要項目，並在首頁顯示一次 {{" oneAppNotice}}。</p>
+</section>
+
 <section id="account" data-ask="需要註冊嗎|需要建立帳戶嗎|在哪裡登入|我的記錄儲存在哪裡" data-keys="註冊 帳戶 帳號 登入 密碼 儲存 伺服器">
 <h2>不需要帳戶</h2>
 <p class="lead">無需註冊或登入。記錄儲存在這台裝置上。</p>
 <p>暱稱可在 {{> tabMenu > menuAccountPill > editProfile}} 中修改。記錄不會傳送到我們的伺服器，為了在裝置丟失時也能保住記錄，請使用<a href="sync.html#sync">裝置間同步</a>或<a href="sync.html#backup">備份檔案</a>。</p>
 </section>
 
-<section id="tabs" data-ask="App 的介面是怎樣的|底部有哪些標籤|東西都在哪裡" data-keys="標籤 介面 結構 首頁 記錄 統計 教練 選單">
-<h2>介面結構</h2>
-<p class="lead">底部的標籤有 {{> tabHome}}、{{> tabRecord}}、{{> tabStats}}、{{> tabCoach}}、{{> tabMenu}} 五個。</p>
+<section id="tabs" data-ask="畫面結構是怎樣的|底部有哪些標籤|東西都在哪裡|首頁的分組是什麼" data-keys="標籤 畫面 結構 首頁 紀錄 統計 教練 選單 分組 分區 今天卡片 ipad duo 兩欄">
+<h2>畫面結構</h2>
+<p class="lead">底部的標籤有 {{> tabHome}}、{{> tabRecord}}、{{> tabStats}}、{{> tabCoach}}、{{> tabMenu}} 五個。力量和跑步在一個 App 中一起查看。</p>
 <ul>
-<li>{{> tabHome}}：今天的訓練、{{> homeQuickRecord}}、{{> homePrograms}} 和 {{> homeMyRoutines}}。</li>
-<li>{{> tabRecord}}：按日期檢視過去的訓練，並進行編輯或刪除。</li>
-<li>{{> tabStats}}：本週目標、肌肉恢復、力量平衡和訓練量趨勢。</li>
-<li>{{> tabCoach}}：PRO+ 的週期計畫和按狀態調整的指導。沒有 PRO+ 時只顯示介紹。</li>
-<li>{{> tabMenu}}：{{> setAppSettings}}、{{> backupTitle}}、{{> trainerShareTitle}}、計算機和健康 App 連線。</li>
+<li>{{> tabHome}}：最上方是今天的卡片（今天計畫是跑步日時為今天的跑步，力量或循環訓練日時為今天的訓練），下方緊接著是另一項運動的開始按鈕（{{> runStart}}或{{> homeStartStrength}}），再往下是{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分組。{{> sectionStrength}}分組裡有 {{> homeQuickRecord}}、{{> homePrograms}} 和 {{> homeMyRoutines}}。</li>
+<li>{{> tabRecord}}：按日期查看過去的訓練，並進行編輯或刪除。用{{> historyAllWorkouts}}、{{> historyStrengthOnly}}、{{> historyRunsOnly}}標籤篩選。</li>
+<li>{{> tabStats}}：在上方選擇{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分區。力量為本週目標、肌肉恢復、力量平衡和訓練量趨勢，跑步為距離、配速區間和預測成績，身體為體組成、體重和心肺適能。</li>
+<li>{{> tabCoach}}：最上方的公共區有本週計畫、干擾提示和混合賽備賽，下面選擇{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBodyNutrition}}分區。見<a href="coach.html#overview">教練頁的結構</a>。</li>
+<li>{{> tabMenu}}：{{> setAppSettings}}、{{> backupTitle}}、{{> trainerShareTitle}}、力量和跑步工具、計算機和健康 App 連線。</li>
 </ul>
-
-<p>用 {{> tabHome}} 頂部右側的啞鈴和跑者按鈕，在力量模式和<a href="running.html#mode">跑步模式</a>之間切換。跑步模式下五個標籤都會以跑步為主。</p>
+<p>分組的順序和一開始折疊哪些分組由<a href="#mix">主要項目</a>決定。點分組標題折疊或展開後會記住，折疊的一行也顯示本週數值。有進行中的訓練或跑步時，最上方的卡片會變成繼續進行，沒有另一項運動的開始按鈕。在 iPad 和展開的 iPhone Duo 上為兩欄：左側是每項都帶即時數值的選單，右側一開始是恢復地圖，在選單中選擇後右側顯示該內容。</p>
 </section>

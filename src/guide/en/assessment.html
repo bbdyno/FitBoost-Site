@@ -1,12 +1,12 @@
 <section id="open" data-ask="Where is movement assessment|Where is form analysis|I want to test my flexibility|How do I do a fitness test|Which tests can I do" data-keys="movement assessment form analysis test fitness mobility flexibility camera hub coach screening home menu plain name term">
 <h2>Opening movement assessment</h2>
-<p class="lead">In both modes, open the test list from the {{> assessEntryTitle}} row ({{> assessEntryRunTitle}} in running mode) right below the quick-start row on {{> tabHome}}, from {{> tabMenu}}, or from {{> tabCoach}}.</p>
+<p class="lead">Open the test list from the {{> assessEntryTitle}} row in the {{> sectionStrength}} group or the {{> assessEntryRunTitle}} row in the {{> sectionRunning}} group on {{> tabHome}}, from {{> tabMenu}}, or from {{> tabCoach}}.</p>
 <ol class="steps">
-<li>On {{> tabHome}}, tap {{> assessEntryTitle}} ({{> assessEntryRunTitle}} in running mode). The same row is in {{> tabMenu}} and {{> tabCoach}}.</li>
+<li>On {{> tabHome}}, tap {{> assessEntryTitle}} (strength-side tests) or {{> assessEntryRunTitle}} (running form tests first). The same rows are in the {{> sectionStrength}} and {{> sectionRunning}} groups of {{> tabMenu}} and the matching sections of {{> tabCoach}}.</li>
 <li>Pick a test from the {{> assessGroupMobility}}, {{> assessGroupFitness}}, {{> assessGroupPower}}, {{> assessGroupBarbell}} or {{> assessGroupRunning}} groups.</li>
 <li>Read how to place the phone, how to do it and when to stop on the setup screen, then start.</li>
 </ol>
-<p>Tests use plain names, with the expert term (such as shoulder flexion) in small type underneath. Strength mode shows {{> mobilityTestShoulderFlexion}}, {{> mobilityTestShoulderAbduction}}, {{> mobilityTestSquatSide}}, {{> mobilityTestSquatFront}}, {{> mobilityTestSitReach}}, {{> mobilityTestToeTouch}}, {{> mobilityTestKneeExtension}}, {{> mobilityTestLegRaise}}, {{> mobilityTestKneeToWall}}, {{> mobilityTestPushUp}}, {{> mobilityTestStance}}, {{> assessTestChairStand}}, {{> jumpTestCmj}}, {{> jumpTestDrop}}, {{> barSpeedTestName}}. Running mode shows {{> runFormTestSide}}, {{> runFormTestBack}} and the leg mobility, fitness and jump tests. Measuring and viewing results are free.</p>
+<p>Tests use plain names, with the expert term (such as shoulder flexion) in small type underneath. {{> assessEntryTitle}} shows {{> mobilityTestShoulderFlexion}}, {{> mobilityTestShoulderAbduction}}, {{> mobilityTestSquatSide}}, {{> mobilityTestSquatFront}}, {{> mobilityTestSitReach}}, {{> mobilityTestToeTouch}}, {{> mobilityTestKneeExtension}}, {{> mobilityTestLegRaise}}, {{> mobilityTestKneeToWall}}, {{> mobilityTestPushUp}}, {{> mobilityTestStance}}, {{> assessTestChairStand}}, {{> jumpTestCmj}}, {{> jumpTestDrop}}, {{> barSpeedTestName}}. {{> assessEntryRunTitle}} shows {{> runFormTestSide}}, {{> runFormTestBack}} and the leg mobility, fitness and jump tests. Measuring and viewing results are free.</p>
 </section>
 
 <section id="measure" data-ask="How do I measure with the camera|Where do I put my phone|The camera check won't pass|Can I measure without the camera|I want to keep the video" data-keys="measure camera phone stand tripod check angle side front enter manually timer ruler video keep voice front camera selfie switch rear">
@@ -42,7 +42,7 @@
 <li>Review {{> assessPlanPreviewTitle}} and tap {{> assessPlanApply}}.</li>
 <li>When you start a workout, add the warm-up with {{> assessPlanAdd}} in the line at the top of the list.</li>
 </ol>
-<p>You can undo it any time with {{> assessPlanRevert}}. Strength plans change only in strength mode; for running, the <a href="#run-form">cadence target</a> does the job. Anyone can read the suggestions for free.</p>
+<p>You can undo it any time with {{> assessPlanRevert}}. Test results change your strength plans; for running, the <a href="#run-form">cadence target</a> does the job. Anyone can read the suggestions for free.</p>
 </section>
 
 <section id="jump" data-ask="I want to measure my jump height|How do I do a drop jump|Do I need slow motion|What is leg readiness" data-keys="jump countermovement drop height flight slow motion 240 reactive strength index rsi leg readiness frame takeoff landing">
@@ -63,12 +63,12 @@
 <li>Tap {{> barSpeedStart}} and do your set.</li>
 <li>At {{" barSpeedPlateFound}}, tap {{> barSpeedPlateConfirm}} if it's right, or tap the plate's top and bottom edges.</li>
 </ol>
-<p>You get mean propulsive velocity per rep and {{> barSpeedLossTitle}}, shown as an estimate not yet compared with lab equipment. Estimating %1RM from speed is PRO, and a cue to end the set when loss passes your threshold is PRO+. It appears in strength mode only.</p>
+<p>You get mean propulsive velocity per rep and {{> barSpeedLossTitle}}, shown as an estimate not yet compared with lab equipment. Estimating %1RM from speed is PRO, and a cue to end the set when loss passes your threshold is PRO+. It appears in {{> assessEntryTitle}} only.</p>
 </section>
 
 <section id="run-form" data-ask="How do I analyze my running form|I want a cadence target|Am I overstriding|How do I film my running" data-keys="running form cadence stride overstride landing shin pelvis hip adduction treadmill track target steps">
 <h2>Running form and cadence target</h2>
-<p class="lead">In running mode, choose {{> runFormTestSide}} or {{> runFormTestBack}} from {{> assessEntryRunTitle}} on {{> tabHome}}, {{> tabCoach}} or {{> tabMenu}}, then film yourself running on a treadmill or track.</p>
+<p class="lead">Choose {{> runFormTestSide}} or {{> runFormTestBack}} from {{> assessEntryRunTitle}} on {{> tabHome}}, {{> tabCoach}} or {{> tabMenu}}, then film yourself running on a treadmill or track.</p>
 <ol class="steps">
 <li>Stand the phone about 1.5 m high and film from the side (or behind).</li>
 <li>See cadence, landing position, shin angle, foot strike and more in the result.</li>

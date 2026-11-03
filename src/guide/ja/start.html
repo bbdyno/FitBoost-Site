@@ -4,9 +4,9 @@
 <ol class="steps">
 <li>紹介画面をめくり、最後の画面で開始をタップします。</li>
 <li>ニックネーム、性別、生まれ年、身長と体重を入力します。</li>
-<li>{{> obModeTitle}}で{{> obModeStrength}}か{{> obModeRunning}}を選びます。選んだモードでホーム・記録・コーチが開き、あとからホームの上部で切り替えられます。</li>
-<li>筋トレの経験を選び、続けて<a href="#goal">トレーニング目標</a>を選びます。</li>
-<li>経験がある方はスクワットの推定1RMを入力します。わからない場合は、わからないという選択肢を選べます。{{> obExpFirst}}を選ぶと、週何回・どこでトレーニングするかを聞いて、目標に合わせた最初のルーティンを作ります。</li>
+<li>{{> obModeTitle}}で{{> trainingMixStrength}}・{{> trainingMixHybrid}}・{{> trainingMixRunning}}のどれかを選びます。先に表示する順番だけを決め、筋トレとランニングの機能はすべて使えます。あとから<a href="#mix">{{> trainingMixTitle}}</a>で変えられます。</li>
+<li>トレーニングの経験を選び（{{> trainingMixRunning}}ではランの経験）、続けて<a href="#goal">トレーニング目標</a>を選びます。メイン種目に近い目標が先に並びます。</li>
+<li>経験がある方は、筋トレが入っていればスクワットの推定1RMを、ランニングが入っていれば最近のランの記録を入力します。わからなければ飛ばせます。筋トレが入ったメイン種目で{{> obExpFirst}}を選ぶと、週何回・どこでトレーニングするかを聞いて、目標に合わせた最初のルーティンを作ります。</li>
 </ol>
 <p>入力した情報はおすすめ重量と消費カロリーの計算に使います。重量単位（kg・lb）は端末の地域設定で決まり、あとから<a href="settings.html#units">設定で変更できます</a>。</p>
 </section>
@@ -21,22 +21,37 @@
 <p>変えた目標は次のトレーニングから反映されます。進行中のトレーニングと自分で作ったルーティンはそのままです。目標を選んだことがなければ、記録から推定した目標に{{" trainingGoalInferred}}と表示されます。</p>
 </section>
 
+<section id="mix" data-ask="メイン種目とは何ですか|筋トレ中心とランニング中心の違い|ホームでランを先に表示したい|メイン種目を変えたい|先に表示する順番を変えたい" data-keys="メイン種目 筋トレ中心 ランニング中心 筋トレとランニング ハイブリッド 順番 先に 折りたたむ 開く グループ セクション 設定 いちばん上 変える ひとつのアプリ">
+<h2>メイン種目</h2>
+<p class="lead">{{> trainingMixTitle}}は、筋トレとランニングのどちらを先に表示するかだけを決めます。どの機能も隠しません。</p>
+<ol class="steps">
+<li>{{> tabMenu > setAppSettings > trainingMixTitle}}を開きます。設定のいちばん上、トレーニング目標の下にあります。</li>
+<li>{{> trainingMixStrength}}、{{> trainingMixHybrid}}、{{> trainingMixRunning}}のどれかを選びます。</li>
+</ol>
+<ul>
+<li>{{> tabHome}}：グループの順番と、最初に折りたたむグループが変わります。{{> trainingMixStrength}}はランニングのグループを、{{> trainingMixRunning}}は筋トレのグループを折りたたみ、{{> trainingMixHybrid}}は両方を開きます。今日の計画がない日のいちばん上のカードもメイン種目に従います。</li>
+<li>{{> tabStats}}・{{> tabCoach}}：初めて開くときはメイン種目のセクションが開きます（{{> trainingMixHybrid}}は{{> sectionStrength}}）。その後は最後に見たセクションが開きます。</li>
+<li>{{> tabMenu}}：筋トレのツール・ランニングのツール・計算機の順番が変わります。</li>
+<li>週間ハイブリッドプランを初めて作るとき、重点の最初の値になります。</li>
+</ul>
+<p>メイン種目は<a href="#goal">トレーニング目標</a>とは別の値です。目標は何を望むか（筋肥大・減量など）、メイン種目は何をするかです。1.9.0まであった筋トレモード・ランニングモードはなくなりました。1.9.1を初めて開くと、使っていたモードに合わせてメイン種目が一度だけ決まり、ホームに{{" oneAppNotice}}が一度表示されます。</p>
+</section>
+
 <section id="account" data-ask="会員登録は必要ですか|アカウントを作る必要がありますか|ログインはどこからしますか|記録はどこに保存されますか" data-keys="登録 会員登録 アカウント ログイン パスワード 保存 サーバー">
 <h2>アカウントは不要です</h2>
 <p class="lead">登録もログインも不要です。記録はこの端末に保存されます。</p>
 <p>ニックネームは {{> tabMenu > menuAccountPill > editProfile}} で変更します。記録は当社のサーバーに送られないため、端末をなくしても記録を守れるよう<a href="sync.html#sync">デバイス間の同期</a>や<a href="sync.html#backup">バックアップファイル</a>を使ってください。</p>
 </section>
 
-<section id="tabs" data-ask="画面の構成はどうなっていますか|下のタブには何がありますか|どこに何がありますか" data-keys="タブ 画面 構成 ホーム 記録 統計 コーチ メニュー">
+<section id="tabs" data-ask="画面の構成はどうなっていますか|下のタブには何がありますか|どこに何がありますか|ホームのグループとは" data-keys="タブ 画面 構成 ホーム 記録 統計 コーチ メニュー グループ セクション 今日のカード ipad duo 2列">
 <h2>画面の構成</h2>
-<p class="lead">下のタブは {{> tabHome}}、{{> tabRecord}}、{{> tabStats}}、{{> tabCoach}}、{{> tabMenu}} の5つです。</p>
+<p class="lead">下のタブは {{> tabHome}}、{{> tabRecord}}、{{> tabStats}}、{{> tabCoach}}、{{> tabMenu}} の5つです。筋トレとランニングをひとつのアプリでまとめて見ます。</p>
 <ul>
-<li>{{> tabHome}}：今日のワークアウト、{{> homeQuickRecord}}、{{> homePrograms}}、{{> homeMyRoutines}}があります。</li>
-<li>{{> tabRecord}}：過去のワークアウトを日付ごとに見て、編集や削除をします。</li>
-<li>{{> tabStats}}：今週の目標、筋肉の回復、筋力バランス、ボリュームの推移を見ます。</li>
-<li>{{> tabCoach}}：PRO+のブロックプログラムとコンディションに合わせたコーチングです。PRO+でない場合は紹介だけが表示されます。</li>
-<li>{{> tabMenu}}：{{> setAppSettings}}、{{> backupTitle}}、{{> trainerShareTitle}}、計算機、ヘルスケア連携があります。</li>
+<li>{{> tabHome}}：いちばん上に今日のカード（今日の計画がランの日なら今日のラン、筋トレ・サーキットの日なら今日のワークアウト）、そのすぐ下にもう一方の種目の開始ボタン（{{> runStart}}または{{> homeStartStrength}}）、その下に{{> sectionStrength}}・{{> sectionRunning}}・{{> sectionBody}}のグループがあります。{{> sectionStrength}}のグループに{{> homeQuickRecord}}、{{> homePrograms}}、{{> homeMyRoutines}}があります。</li>
+<li>{{> tabRecord}}：過去のワークアウトを日付ごとに見て、編集や削除をします。{{> historyAllWorkouts}}・{{> historyStrengthOnly}}・{{> historyRunsOnly}}のチップで絞り込みます。</li>
+<li>{{> tabStats}}：上で{{> sectionStrength}}・{{> sectionRunning}}・{{> sectionBody}}のセクションを選びます。筋トレは今週の目標・筋肉の回復・筋力バランス・ボリュームの推移、ランニングは距離・ペースゾーン・予想記録、からだは体組成・体重・心肺フィットネスです。</li>
+<li>{{> tabCoach}}：いちばん上の共通欄に今週の計画・干渉の案内・ハイブリッドレース準備があり、その下で{{> sectionStrength}}・{{> sectionRunning}}・{{> sectionBodyNutrition}}のセクションを選びます。<a href="coach.html#overview">コーチタブの構成</a>をご覧ください。</li>
+<li>{{> tabMenu}}：{{> setAppSettings}}、{{> backupTitle}}、{{> trainerShareTitle}}、筋トレ・ランニングのツール、計算機、ヘルスケア連携があります。</li>
 </ul>
-
-<p>{{> tabHome}}のヘッダー右にあるダンベル・ランナーのボタンで、筋トレモードと<a href="running.html#mode">ランニングモード</a>を切り替えます。ランニングモードでは5つのタブがラン中心に変わります。</p>
+<p>グループの順番と最初に折りたたむグループは<a href="#mix">メイン種目</a>が決めます。グループの見出しをタップして折りたたんだり開いたりするとそのまま記憶し、折りたたんだ行にも今週の数値が表示されます。進行中のワークアウトやランがあると、いちばん上のカードはその再開になり、もう一方の種目の開始ボタンはありません。iPadと開いたiPhone Duoでは、左に項目ごとに数値が付いたメニュー、右に最初は回復マップが表示され、メニューで選ぶとその内容が右に開く2列になります。</p>
 </section>

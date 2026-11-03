@@ -1,3 +1,17 @@
+<section id="overview" data-ask="How is the Coach tab laid out|What is the area at the top of the Coach tab|Where are the strength coach and running coach|Switch Coach tab sections" data-keys="coach tab layout shared area top section strength running body nutrition this week plan interference race hybrid locked free">
+<h2>How the Coach tab is laid out</h2>
+<p class="lead">The shared area at the top of {{> tabCoach}} has {{> hybridPlanWeekTitle}}, the interference note and {{> runKindHybridRace}}. Below it, pick the {{> sectionStrength}}, {{> sectionRunning}}, or {{> sectionBodyNutrition}} section.</p>
+<ul>
+<li>{{> hybridPlanWeekTitle}} <span class="pro">PRO+</span>: what to do each day this week (coach session, routine, circuit or run) and which days are done or missed. Without PRO+ it's the locked {{> coachPlanMakeTitle}} row. See <a href="#hybrid">Weekly hybrid plan</a>.</li>
+<li>{{> coachInterferenceTitle}}: appears when you've done both strength and running recently. See <a href="running.html#strength">Prescriptions that know your strength training</a>.</li>
+<li>{{> runKindHybridRace}}: opens <a href="#race">Hybrid race prep</a>.</li>
+<li>{{> sectionStrength}}: <a href="#plan">block programs</a>, deloads and the readiness check. Only the movement assessment row is free; the rest is PRO+.</li>
+<li>{{> sectionRunning}}: the <a href="running.html#coach">running coach</a>. Free.</li>
+<li>{{> sectionBodyNutrition}}: <a href="body.html#vo2">cardio fitness</a> (free), plus <a href="#nutrition">nutrition targets</a>, <a href="body.html#body-coach">body composition coaching</a> and stress and recovery (PRO+).</li>
+</ul>
+<p>The first time, your <a href="start.html#mix">main focus</a>'s section opens ({{> sectionStrength}} for {{> trainingMixHybrid}}); after that, the last section you viewed opens. The sections always sit in the same order: {{> sectionStrength}}, {{> sectionRunning}}, {{> sectionBodyNutrition}}.</p>
+</section>
+
 <section id="next-weight" data-ask="Does it tell me the weight for my next set|How much should I lift next|In-workout coaching suggestions|When should I stop" data-keys="next weight suggestion recommend coach set stop fatigue top set backoff warm-up calculate">
 <h2>Next-weight suggestions during a workout <span class="pro">PRO</span></h2>
 <p class="lead">Finish a set and log your effort, and the app tells you what to lift on the next set and when to stop for the day.</p>
@@ -16,35 +30,34 @@
 <p>When you finish, it asks how it felt and adjusts the next circuit. You can also start one from your <a href="watch.html#on-watch">watch</a>.</p>
 </section>
 
-<section id="hybrid" data-ask="Plan strength and cardio together|Can it plan my training week|Hybrid plan|Move a missed day" data-keys="hybrid weekly plan cardio running strength days schedule move missed">
+<section id="hybrid" data-ask="Plan strength and cardio together|Can it plan my training week|Hybrid plan|Move a missed workout to another day|Change my weekly plan" data-keys="hybrid weekly plan cardio running run strength circuit days schedule missed move change edit rebuild one plan">
 <h2>Weekly hybrid plan <span class="pro">PRO+</span></h2>
-<p class="lead">Mixes strength, circuits, and cardio into a weekly schedule built around the days you train and the days you have more time.</p>
+<p class="lead">It builds a week that mixes strength, circuits, and running. There's one plan, and when you change it, today's card on {{> tabHome}} and {{> hybridPlanWeekTitle}} at the top of {{> tabCoach}} update right away.</p>
 <ol class="steps">
-<li>Tap {{> tabHome > homePrograms > hybridTitle}}.</li>
-<li>Choose your days, goal, focus, cardio, equipment, and age, then tap {{> hybridMake}}.</li>
-<li>Today's session shows up in {{> tabHome}}.</li>
+<li>Tap {{> tabHome > homePrograms > hybridTitle}}. You can also open it from {{> hybridPlanWeekTitle}} at the top of {{> tabCoach}}, or from the {{> runHomeHybridPlan}} shortcut in the {{> sectionRunning}} group on {{> tabHome}}.</li>
+<li>Choose days, goal, focus, cardio, equipment, and age, then tap {{> hybridMake}}. The focus starts from your <a href="start.html#mix">main focus</a>.</li>
+<li>Today's workout shows in the top card on {{> tabHome}}. On the plan screen, start a day with its {{> hybridStart}} button.</li>
 </ol>
-<p>Use {{> hybridMove}} to shift a missed day, and undo it if needed.</p>
-
-<p>Pick {{> hybridFocusRunning}} as the emphasis, and it becomes {{> runCoachWeekTitle}} in the running coach, turning a quality run the day after a leg workout into an easy run. See <a href="running.html#coach">Running coach</a> and <a href="running.html#strength">Prescriptions that know your strength training</a>.</p>
+<p>To change the settings, tap {{> hybridRemake}}. Routines you edited yourself or put on your schedule are kept, not overwritten. A missed day stays missed and isn't moved to another day. The week after you miss a strength or circuit day, the plan's routines repeat last time's weight and reps instead of going up. If you have a <a href="#plan">block program</a>, its coach sessions go on the plan's strength days in order, and if you're doing a <a href="body.html#vo2-train">cardio fitness block</a>, its sessions go on the cardio days.</p>
+<p>Choosing {{> hybridFocusRunning}} as the focus gives a plan with more running days, and swaps a quality run for an easy run the day after a leg workout. See the <a href="running.html#coach">running coach</a> and <a href="running.html#strength">Prescriptions that know your strength training</a>.</p>
 </section>
 
 <section id="plan" data-ask="What does the Coach tab do|The Coach tab won't open|Build a periodized block program|Plan for a meet|The Coach tab only shows an introduction" data-keys="coach tab block periodization plan powerlifting strength hypertrophy meet competition 1rm deload pro+">
 <h2>Block programs in the Coach tab <span class="pro">PRO+</span></h2>
 <p class="lead">From your goal, meet date, and current 1RMs, it builds a multi-week program and sets the weights for every session.</p>
 <ol class="steps">
-<li>Tap {{> tabCoach > coachCreatePlan}}.</li>
+<li>Tap {{> tabCoach > sectionStrength > coachCreatePlan}}.</li>
 <li>Choose your goal (powerlifting, strength, powerbuilding, or hypertrophy), days per week, experience, progression style, body weight, and meet date (optional).</li>
 <li>Enter your current 1RMs. If you don't know them, calculate from a weight and reps.</li>
 <li>Tap {{> coachSetupCreate}}. Today's session appears in the Coach tab and on Home.</li>
 </ol>
-<p>In strength mode, the Coach tab is PRO+ only. Without PRO+ you'll see an introduction and {{> coachSeePlans}}. In running mode the whole tab becomes the <a href="running.html#coach">running coach</a>, so block plans are in strength mode.</p>
+<p>Block programs in the {{> sectionStrength}} section are PRO+ only. Without PRO+ you'll see the movement assessment row, an introduction, and {{> coachSeePlans}}. If you have a weekly hybrid plan, make one from the {{> coachHybridCoachTitle}} row and its coach sessions go on the plan's strength days in order.</p>
 </section>
 
 <section id="readiness" data-ask="Does it adjust weights to how I feel|Daily readiness check|I slept badly, should I train|Does it use HRV" data-keys="readiness check in sleep soreness stress energy hrv heart rate condition intensity adjust">
 <h2>Readiness check <span class="pro">PRO+</span></h2>
 <p class="lead">Log sleep, muscle soreness, stress, and energy before training, and it adjusts that day's weights and sets.</p>
-<p>Tap {{> coachReadinessCheck}} on the {{> homeConditionTitle}} card in the Coach tab, fill it in, and tap {{> coachSaveReadiness}}. With a program running, you can also open it from {{> homeConditionTitle}} on Home. Connect a <a href="health.html#what">health app</a> to include sleep duration, HRV, and resting heart rate.</p>
+<p>Tap {{> coachReadinessCheck}} on the {{> homeConditionTitle}} card in the {{> sectionStrength}} or {{> sectionRunning}} section of {{> tabCoach}}, fill it in, and tap {{> coachSaveReadiness}}. With a program running, you can also open it from {{> homeConditionTitle}} on Home. Connect a <a href="health.html#what">health app</a> or <a href="watch.html#garmin-connect">Garmin Connect</a> to include sleep duration, HRV, and resting heart rate.</p>
 </section>
 
 <section id="deload" data-ask="When should I deload|Extend or shorten a block|Pick my meet attempts" data-keys="deload rest week block extend early meet attempts opener second third fatigue">
@@ -55,18 +68,35 @@
 
 <section id="nutrition" data-ask="Can it set calorie targets|Macro targets|Set up nutrition goals" data-keys="nutrition diet calories protein carbs fat macros body weight cut bulk">
 <h2>Nutrition targets <span class="pro">PRO+</span></h2>
-<p class="lead">It reads your body-weight trend and resets your calorie, carb, protein, and fat targets every week.</p>
-<p>On the {{> coachNutrition}} card in the Coach tab, enter weight, height, age, activity, and goal, then tap {{> nutritionStart}}. The weight trend appears after at least 4 weigh-ins over more than 2 weeks. For a one-off calculation, use the <a href="tools.html#calculators">macro calculator</a>.</p>
+<p class="lead">It reads your body composition or body-weight trend and resets your calorie, carb, protein, and fat targets every week.</p>
+<p>On the {{> coachNutrition}} card in the {{> sectionBodyNutrition}} section of {{> tabCoach}}, enter weight, height, age, activity, and goal, then tap {{> nutritionStart}}. With body composition (lean mass) from the last 30 days, maintenance calories and protein come from lean mass instead of body weight, and entering {{> nutritionTargetBodyFat}} shows a goal weight (see <a href="body.html#body-coach">Using body composition</a>). The weight trend appears after at least 4 weigh-ins over more than 2 weeks. For a one-off calculation, use the <a href="tools.html#calculators">macro calculator</a>.</p>
 </section>
 
-<section id="race" data-ask="hybrid race prep|practice 1 km runs and stations|race split times|sled push wall ball practice|plan to race day" data-keys="hybrid race splits sled wall ball row ski farmers sandbag burpee test goal finish">
+<section id="race" data-ask="Prepare for a hybrid race|Practice 1 km runs and stations|Race split times|Practice sled push and wall balls|Plan up to race day|Enter my own goal finish time|Track race practice on my watch" data-keys="hybrid race split splits sled wall ball row ski farmers sandbag burpee diagnosis goal finish custom hours minutes seconds estimate realistic too fast evidence watch lap">
 <h2>Hybrid race prep</h2>
-<p class="lead">Practice a hybrid fitness race the real way, a 1 km run then one station eight times, with every segment timed. Free includes 3 practices a week.</p>
+<p class="lead">Practice a hybrid fitness race, eight rounds of a 1 km run followed by one station, as if it were the real thing, with a time for every segment. The free plan allows 3 a week.</p>
 <ol class="steps">
-<li>Open {{> tabHome > homePrograms > raceEntryTitle}}.</li>
-<li>Pick a division (weights), scope (full, half, stations only, compromised running) and goal finish time to see each segment's amount, weight and target.</li>
-<li>Tap {{> raceStart}} and tap the big button as you finish each segment. You can finish segments on your watch too.</li>
-<li>At the end you see the split table and where you lost the most time. Tap {{> raceSave}}.</li>
+<li>Open {{> tabHome > homePrograms > raceEntryTitle}}. You can also open it from the {{> runKindHybridRace}} row at the top of {{> tabCoach}}.</li>
+<li>Pick a {{> raceDivisionTitle}} under {{> raceGroupSingle}}, {{> raceGroupDoubles}}, or {{> raceGroupRelay}}, then the practice range (full, half, stations only, or run after stations) and {{> raceGoalTitle}}, and each segment's distance or reps, weight, and target appear. For doubles and relay, see <a href="#race-team">Team plan</a>.</li>
+<li>Tap {{> raceStart}} and press the big button each time you finish a segment. You can also finish it on your watch.</li>
+<li>When you're done, you'll see the split table and the segments where you lost the most time. Save with {{> raceSave}}.</li>
 </ol>
-<p>Set your race date to split the remaining weeks into base, build, peak and taper with what to do now, and a first-week test finds your weakest station. After the race, enter your official time to compare. This practice tool isn't affiliated with any race organizer; segment targets are reference values from public results.</p>
+<p>Pick a goal from the preset times, or enter hours, minutes and seconds with {{> raceGoalCustom}} (30 minutes to 5 hours). Your goal resets the segment targets and the run pace, station total and transition time. If the goal is more than 2% faster than your fastest full practice or the estimate from your week-one diagnosis, the app warns it may be too much. Segment estimates follow studies measured at real races and coaching methods, and parts with no research are marked as field estimates. See the sources under {{> raceSourcesButton}}.</p>
+<p>Pick a race date and the remaining weeks are split into base, build, peak, and taper with what to do now, and a week-one diagnosis finds your weakest station. After the race, enter your official time to compare it with your goal and practice. This is a practice tool not tied to any particular event; distances, reps and weights follow the public rulebook.</p>
+<p>A practice started on your phone can be tracked on Apple Watch, Galaxy Watch or a Garmin watch, showing the current segment, its distance or reps and target, the time on that segment, and wrist heart rate. To end a segment, tap {{> raceWatchLap}} on Apple Watch and Galaxy Watch, or press the start button on Garmin. Run segment distance is measured with your phone's location.</p>
+</section>
+
+<section id="race-team" data-ask="Practice for a doubles race|Prepare for the relay division|Split stations with my partner|What weights does mixed doubles use|Who takes which leg in a relay" data-keys="doubles partner relay team four mixed split share switch alternate strategy teammate diagnosis pace run together runner leg assign">
+<h2>Doubles and relay divisions and the team plan</h2>
+<p class="lead">Pick a {{> raceGroupDoubles}} or {{> raceGroupRelay}} division and the key rules appear, and the {{> raceTeamTitle}} card uses your teammates' diagnoses to decide who does what and how much.</p>
+<ol class="steps">
+<li>In {{> raceEntryTitle}}, tap {{> raceGroupDoubles}} or {{> raceGroupRelay}} and pick a division (women, men, mixed and so on).</li>
+<li>On the {{> raceTeamTitle}} card, tap a teammate and fill in {{> raceMemberEditTitle}} (1 km run, row, farmers carry, wall balls). Enter your own diagnosis on the race prep card above after setting a race date.</li>
+<li>See the team estimate, each station's split, and the pace to run together or the legs each person takes.</li>
+</ol>
+<ul>
+<li>Doubles: you run every 1 km together, at the pace of whoever is slower alone. Station shares are set so both work for the same time, which means the faster person does more, with switch units such as 250 m on the ergs or 12.5 m on the sled. Mixed doubles both use the men's open weights.</li>
+<li>Relay: each of the four takes a 1 km run and the station after it twice, and legs are assigned to each person's strong stations to give the lowest total. Mixed relay needs two women and two men, each using their own sex's weights.</li>
+</ul>
+<p>Teammates with no diagnosis are calculated from typical results. In doubles practice, each segment name carries both people's shares; in relay, the runner's name. These go to your watch as well. Switch units with no research behind them (such as 10 wall balls) are marked as field estimates.</p>
 </section>

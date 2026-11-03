@@ -1,3 +1,17 @@
+<section id="overview" data-ask="教练页是怎样的结构|教练页最上方那一栏是什么|力量教练和跑步教练在哪里|切换教练页的分区" data-keys="教练页 结构 公共区 最上方 分区 力量 跑步 身体 营养 本周 计划 干扰 比赛 混合赛 锁定 免费">
+<h2>教练页的结构</h2>
+<p class="lead">{{> tabCoach}} 最上方的公共区有 {{> hybridPlanWeekTitle}}、干扰提示和 {{> runKindHybridRace}}，下面选择{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBodyNutrition}}分区。</p>
+<ul>
+<li>{{> hybridPlanWeekTitle}} <span class="pro">PRO+</span>：显示本周每天要做的训练（教练训练、例行、循环训练、跑步）以及完成和错过的日子。不是 PRO+ 时为锁定的 {{> coachPlanMakeTitle}} 一行。见<a href="#hybrid">每周混合训练计划</a>。</li>
+<li>{{> coachInterferenceTitle}}：最近同时有力量和跑步时出现。见<a href="running.html#strength">与力量训练联动的处方</a>。</li>
+<li>{{> runKindHybridRace}}：打开<a href="#race">混合赛备赛</a>。</li>
+<li>{{> sectionStrength}}：<a href="#plan">周期计划</a>、减量和状态检查。只有动作评估一行免费，其余为 PRO+。</li>
+<li>{{> sectionRunning}}：<a href="running.html#coach">跑步教练</a>。免费。</li>
+<li>{{> sectionBodyNutrition}}：<a href="body.html#vo2">心肺适能</a>（免费），<a href="#nutrition">营养目标</a>、<a href="body.html#body-coach">体成分指导</a>以及压力与恢复（PRO+）。</li>
+</ul>
+<p>第一次会打开<a href="start.html#mix">主要项目</a>的分区（{{> trainingMixHybrid}}为{{> sectionStrength}}），之后打开上次查看的分区。分区的位置始终按{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBodyNutrition}}排列。</p>
+</section>
+
 <section id="next-weight" data-ask="会告诉我下一组的重量吗|下一组该举多重|训练中教练建议|什么时候该停" data-keys="下一组 重量 建议 推荐 教练 组 停止 疲劳 顶组 递减组 热身 计算">
 <h2>训练中的下一组重量建议 <span class="pro">PRO</span></h2>
 <p class="lead">完成一组并记录强度后，会据此告诉你下一组的重量，以及今天何时该停。</p>
@@ -16,35 +30,34 @@
 <p>结束后会询问感受，并据此调整下一次循环训练。也可以直接在<a href="watch.html#on-watch">手表</a>上开始。</p>
 </section>
 
-<section id="hybrid" data-ask="想把力量和有氧一起安排|能帮我安排一周的训练吗|混合训练计划|把没练的那天挪走" data-keys="混合 每周 计划 有氧 跑步 力量 星期 日程 移动 错过">
+<section id="hybrid" data-ask="想把力量和有氧一起安排|能帮我排一周训练吗|混合训练计划|错过的训练挪到别天|想修改每周计划" data-keys="混合 每周 计划 有氧 跑步 力量 循环训练 星期 日程 挪 错过 修改 重新生成 一个">
 <h2>每周混合训练计划 <span class="pro">PRO+</span></h2>
-<p class="lead">把力量、循环训练和有氧组合成一周日程，并配合你训练的日子和时间较充裕的日子。</p>
+<p class="lead">把力量、循环训练和跑步组合成一周日程。计划只有一个，修改后会马上反映到 {{> tabHome}} 的今天卡片和 {{> tabCoach}} 最上方的 {{> hybridPlanWeekTitle}}。</p>
 <ol class="steps">
-<li>点击 {{> tabHome > homePrograms > hybridTitle}}。</li>
-<li>选择星期、目标、侧重、有氧、器械和年龄，点击 {{> hybridMake}}。</li>
-<li>今天的训练会显示在 {{> tabHome}}。</li>
+<li>点击 {{> tabHome > homePrograms > hybridTitle}}。也可以从 {{> tabCoach}} 最上方的 {{> hybridPlanWeekTitle}} 一栏，或 {{> tabHome}} {{> sectionRunning}}分组的 {{> runHomeHybridPlan}} 快捷入口打开。</li>
+<li>选择星期、目标、侧重、有氧、器械和年龄，点击 {{> hybridMake}}。侧重的初始值按<a href="start.html#mix">主要项目</a>设定。</li>
+<li>今天要做的训练会显示在 {{> tabHome}} 最上方的卡片。在计划画面中，用当天一栏的 {{> hybridStart}} 开始。</li>
 </ol>
-<p>错过的日子可以用 {{> hybridMove}} 挪到别的日子，也可以撤销。</p>
-
-<p>重心选择 {{> hybridFocusRunning}} 后，就会成为跑步教练中的 {{> runCoachWeekTitle}}，并把练下肢后第二天的质量课改为轻松跑。见<a href="running.html#coach">跑步教练</a>和<a href="running.html#strength">与力量训练联动的处方</a>。</p>
+<p>要更改条件，点 {{> hybridRemake}}。自己改过或放进日程的例行不会被覆盖，会保留下来。错过的日子不会挪到别天，保持错过的状态。错过力量或循环训练日的那一周，下一周计划例行的重量和次数不会增加，照上次进行。有<a href="#plan">周期计划</a>时，教练训练会依次放在计划的力量日；正在进行<a href="body.html#vo2-train">心肺适能周期</a>时，它的训练也会放在有氧日。</p>
+<p>侧重选择 {{> hybridFocusRunning}} 后，会成为跑步日较多的计划，并把练下肢后第二天的质量课改为轻松跑。见<a href="running.html#coach">跑步教练</a>和<a href="running.html#strength">与力量训练联动的处方</a>。</p>
 </section>
 
 <section id="plan" data-ask="教练页是做什么的|教练页打不开|制定周期化计划|备赛计划|教练页只显示介绍" data-keys="教练页 周期 周期化 计划 力量举 力量 增肌 比赛 1rm 减量 pro+">
 <h2>教练页的周期计划 <span class="pro">PRO+</span></h2>
 <p class="lead">根据目标、比赛日期和当前 1RM 制定数周的计划，并决定每次训练的重量。</p>
 <ol class="steps">
-<li>点击 {{> tabCoach > coachCreatePlan}}。</li>
+<li>点击 {{> tabCoach > sectionStrength > coachCreatePlan}}。</li>
 <li>选择目标（力量举、力量、力量健美、增肌）、每周天数、经验、推进方式、体重和比赛日期（可选）。</li>
 <li>填写当前 1RM。不知道的话可以用重量和次数计算。</li>
 <li>点击 {{> coachSetupCreate}}，今天的训练会显示在教练页和首页。</li>
 </ol>
-<p>力量模式的教练页为 PRO+ 专属，没有 PRO+ 时只显示介绍和 {{> coachSeePlans}}。跑步模式下整个页面会变成<a href="running.html#coach">跑步教练</a>，所以周期计划要在力量模式中查看。</p>
+<p>{{> sectionStrength}}分区的周期计划为 PRO+ 专属，没有 PRO+ 时只显示动作评估一行、介绍和 {{> coachSeePlans}}。有每周混合训练计划时，从 {{> coachHybridCoachTitle}} 一行制定，教练训练会依次放在计划的力量日。</p>
 </section>
 
 <section id="readiness" data-ask="会按状态调整重量吗|今日状态检查|没睡好还能练吗|会用 HRV 吗" data-keys="状态 检查 睡眠 肌肉酸痛 压力 精力 hrv 心率 准备度 强度 调整">
 <h2>状态检查 <span class="pro">PRO+</span></h2>
 <p class="lead">训练前记录睡眠、肌肉状态、压力和精力，会据此调整当天的重量和组数。</p>
-<p>在教练页的 {{> homeConditionTitle}} 卡片点击 {{> coachReadinessCheck}}，选完后点击 {{> coachSaveReadiness}}。有计划时也可以从首页的 {{> homeConditionTitle}} 打开。连接<a href="health.html#what">健康应用</a>后还会用到睡眠时长、HRV 和静息心率。</p>
+<p>在 {{> tabCoach}} {{> sectionStrength}}、{{> sectionRunning}}分区的 {{> homeConditionTitle}} 卡片点击 {{> coachReadinessCheck}}，选完后点击 {{> coachSaveReadiness}}。有计划时也可以从首页的 {{> homeConditionTitle}} 打开。连接<a href="health.html#what">健康应用</a>或<a href="watch.html#garmin-connect">Garmin Connect</a>后还会用到睡眠时长、HRV 和静息心率。</p>
 </section>
 
 <section id="deload" data-ask="什么时候该减量|把周期延长或提前一周|确定比赛试举重量" data-keys="减量 减量周 周期 延长 提前 比赛 试举 第一次 第二次 第三次 疲劳">
@@ -55,18 +68,35 @@
 
 <section id="nutrition" data-ask="会帮我设定饮食热量目标吗|三大营养素目标|设置营养目标" data-keys="营养 饮食 热量 卡路里 蛋白质 碳水 脂肪 宏量 体重 减脂 增重">
 <h2>营养目标 <span class="pro">PRO+</span></h2>
-<p class="lead">根据体重趋势，每周重新调整热量以及碳水、蛋白质、脂肪目标。</p>
-<p>在教练页的 {{> coachNutrition}} 卡片中填写体重、身高、年龄、活动量和目标，点击 {{> nutritionStart}}。体重趋势需要在两周以上记录至少 4 次才会显示。只想算一次的话，请用<a href="tools.html#calculators">宏量计算器</a>。</p>
+<p class="lead">根据体成分或体重趋势，每周重新调整热量以及碳水、蛋白质、脂肪目标。</p>
+<p>在 {{> tabCoach}} {{> sectionBodyNutrition}}分区的 {{> coachNutrition}} 卡片中填写体重、身高、年龄、活动量和目标，点击 {{> nutritionStart}}。最近 30 天内有体成分（去脂体重）时，会用去脂体重代替体重计算维持热量和蛋白质，填写 {{> nutritionTargetBodyFat}} 后会显示目标体重（见<a href="body.html#body-coach">体成分的应用</a>）。体重趋势需要在两周以上记录至少 4 次才会显示。只想算一次的话，请用<a href="tools.html#calculators">宏量计算器</a>。</p>
 </section>
 
-<section id="race" data-ask="混合赛备赛|练习1公里跑和项目|比赛分段成绩|推雪橇墙球练习|到比赛日的计划" data-keys="混合赛 分段 雪橇 墙球 划船 滑雪机 农夫 沙袋 波比 测试 目标 完赛">
+<section id="race" data-ask="混合赛备赛|练习 1 公里跑和项目|比赛分段成绩|练习推雪橇和药球|备赛到比赛日的计划|自己填写目标完赛时间|用手表测量比赛练习" data-keys="混合赛 比赛 分段 雪橇 药球 划船 滑雪 农夫 沙袋 波比 测试 目标 完赛 自定义 时分秒 预估 现实 太快 依据 手表 本段结束">
 <h2>混合赛备赛</h2>
 <p class="lead">像正式比赛一样练习混合健身赛：跑 1 公里再做一个项目，重复 8 次，每段单独计时。免费版每周 3 次。</p>
 <ol class="steps">
-<li>打开{{> tabHome > homePrograms > raceEntryTitle}}。</li>
-<li>选择组别(重量)、练习范围(完整、一半、只练项目、项目后跑)和目标完赛时间，即可看到每段的量、重量和目标。</li>
-<li>点{{> raceStart}}，每完成一段就点大按钮。也可以在手表上完成。</li>
-<li>结束后会显示分段表和丢时间最多的段，点{{> raceSave}}保存。</li>
+<li>打开 {{> tabHome > homePrograms > raceEntryTitle}}。也可以从 {{> tabCoach}} 最上方的 {{> runKindHybridRace}} 一行打开。</li>
+<li>在{{> raceGroupSingle}}、{{> raceGroupDoubles}}、{{> raceGroupRelay}}中选择{{> raceDivisionTitle}}，再选择练习范围(完整、一半、只练项目、项目后跑)和{{> raceGoalTitle}}，即可看到每段的量、重量和目标。双人和接力见<a href="#race-team">团队分工</a>。</li>
+<li>点击 {{> raceStart}}，每完成一段就按大按钮。也可以在手表上结束。</li>
+<li>全部完成后会显示分段表和落后最多的分段，用 {{> raceSave}} 保存。</li>
 </ol>
-<p>设定比赛日期后，会把剩余周数分为基础、专项、实战、调整并告诉你现在该做什么，第一周测试会找出最弱的项目。比赛结束后填写正式成绩进行对比。此练习功能与任何赛事主办方无关，分段目标是公开成绩的参考值。</p>
+<p>目标可以从预设时间中选，或用 {{> raceGoalCustom}} 填写时、分、秒（30 分钟到 5 小时）。按填写的目标重新算出分段目标，以及跑步配速、项目合计和转换时间。目标比最快的完整练习或第一周测试得出的预估快 2% 以上时，会提示可能过于勉强。分段预估依据在真实比赛中测得的研究数值和教练实践方法，没有研究的部分会另外标为现场估计。出处可在 {{> raceSourcesButton}} 中查看。</p>
+<p>设定比赛日期后，会把剩余周数分为基础、专项、实战、调整并告诉你现在该做什么，第一周测试会找出最弱的项目。比赛结束后填写正式成绩，与目标和练习对比。此练习功能与任何赛事主办方无关，距离、次数和重量依据公开的规则手册。</p>
+<p>在手机上开始的练习，可以在 Apple Watch、Galaxy Watch 和 Garmin 手表上测量，查看当前分段名称、量和目标、这一段用的时间以及手腕心率。结束一段时，Apple Watch 和 Galaxy Watch 点 {{> raceWatchLap}}，Garmin 按开始键。跑步分段的距离用手机定位测量。</p>
+</section>
+
+<section id="race-team" data-ask="双人比赛练习|接力组别备赛|和搭档分配项目|混合双人用什么重量|接力谁跑哪一段" data-keys="双人 doubles 搭档 接力 relay 4人 团队 混合 分工 分配 交替 轮换 策略 队员 测试 一起跑 跑者 分段 负责">
+<h2>双人、接力组别与团队分工</h2>
+<p class="lead">选择{{> raceGroupDoubles}}或{{> raceGroupRelay}}组别后会显示规则要点，{{> raceTeamTitle}}卡片会根据队员的测试，决定谁做什么、做多少。</p>
+<ol class="steps">
+<li>在 {{> raceEntryTitle}} 中点{{> raceGroupDoubles}}或{{> raceGroupRelay}}，选择组别（女子、男子、混合等）。</li>
+<li>在{{> raceTeamTitle}}卡片中点队员，填写{{> raceMemberEditTitle}}（1 公里跑、划船、农夫行走、药球）。自己的测试要在设定比赛日期后，在上方的备赛卡片中填写。</li>
+<li>查看团队预估、每个项目的分配，以及一起跑的配速或负责的分段。</li>
+</ol>
+<ul>
+<li>双人：每个 1 公里两人一起跑，一起跑的配速按单独跑较慢的人。项目分配让两人工作时间相同，所以较快的人做得多，并显示划船机 250 米、雪橇 12.5 米这类交替单位。混合双人两人都用男子公开组重量。</li>
+<li>接力：四人各负责两次 1 公里和其后的项目，让每人负责有自己强项的分段，使预估合计最小。混合接力需要女子 2 人、男子 2 人，各自使用自己性别的重量。</li>
+</ul>
+<p>没有测试的队员按一般成绩计算。双人练习的分段名称会附上两人的分配，接力分段会附上负责跑者的名字，也会原样传到手表。没有研究依据的交替单位（如药球 10 次）会标为现场估计。</p>
 </section>

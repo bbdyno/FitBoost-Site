@@ -1,25 +1,25 @@
-<section id="mode" data-ask="How do I turn on running mode|Switch the app to running|Go back to strength mode|What changes in running mode" data-keys="running mode run switch toggle strength mode dumbbell runner two-way button header training mode">
-<h2>Switching to running mode</h2>
-<p class="lead">Tap the runner side of the two-way button at the right of the {{> tabHome}} header, and the whole app switches to running mode. You can also switch from the {{> menuModeTitle}} row in {{> tabMenu}}.</p>
+<section id="mode" data-ask="How do I turn on running mode|Running mode is gone|Where is the running screen|Go back to strength mode|Where do I find running features" data-keys="running mode strength mode mode gone missing removed where find run screen one app main focus mostly running group section training mode dumbbell runner two-way button header switch">
+<h2>Where running lives</h2>
+<p class="lead">From 1.9.1 there's no running mode; running is always on the same screens as strength. Find it in the {{> sectionRunning}} group on {{> tabHome}} and the {{> sectionRunning}} sections of {{> tabStats}} and {{> tabCoach}}.</p>
 <ol class="steps">
-<li>In the dumbbell and runner button at the right of the {{> tabHome}} header, tap {{> modeRunning}}.</li>
-<li>To go back, tap {{> modeStrength}} on the same button.</li>
+<li>If the top card on {{> tabHome}} isn't today's run, tap {{> runStart}} right below it. The run start screen opens without asking anything.</li>
+<li>To show running first, set <a href="start.html#mix">{{> trainingMixTitle}}</a> to {{> trainingMixRunning}}.</li>
 </ol>
 <ul>
-<li>{{> tabHome}}: today's run card, the <a href="#courses">{{> courseShelfTitle}}</a> row under it, this week's distance with bars for the last 8 weeks, shortcuts to {{> courseTitle}}, {{> runZonesTitle}}, and {{> runHomePlan}}, and recent runs.</li>
-<li>{{> tabRecord}}: opens on {{> historyRunsOnly}}, and you can switch to {{> historyAllWorkouts}}.</li>
-<li>{{> tabStats}}: only the running sections are shown. Strength stats are in strength mode, through the {{> modeCrossStrengthStats}} row at the bottom.</li>
-<li>{{> tabCoach}}: the whole tab becomes the <a href="#coach">running coach</a>.</li>
-<li>{{> tabMenu}}: rows for {{> courseTitle}}, {{> runZonesTitle}}, and {{> runSettingsTitle}} appear.</li>
+<li>{{> tabHome}}: the {{> sectionRunning}} group has the <a href="#courses">{{> courseShelfTitle}}</a> row, this week's distance with bars for the last 8 weeks, shortcuts to {{> courseTitle}}, {{> runZonesTitle}}, and {{> runHomeHybridPlan}}, {{> assessEntryRunTitle}}, recent runs, and {{> runImportFile}}.</li>
+<li>{{> tabRecord}}: the {{> historyRunsOnly}} chip shows only runs.</li>
+<li>{{> tabStats}}: running stats are in the {{> sectionRunning}} section.</li>
+<li>{{> tabCoach}}: the {{> sectionRunning}} section is the <a href="#coach">running coach</a>, and strength coaching such as block plans is in the {{> sectionStrength}} section.</li>
+<li>{{> tabMenu}}: the {{> sectionRunning}} group has {{> courseTitle}}, {{> runZonesTitle}}, {{> vo2Title}}, {{> runSettingsTitle}}, and {{> assessEntryRunTitle}}.</li>
 </ul>
-<p>The mode only changes the screens. Your log, prescriptions, and health app data stay in one place with your strength training. On days with strength scheduled, Home shows {{" modeCrossStrength}}. If a workout is in progress, you'll see {{" modeLockedActive}} and the mode won't change. The mode you pick stays after you reopen the app.</p>
+<p>Your log, prescriptions and health app data are shared with strength training. If a strength workout is in progress, a run won't start and the app tells you why. If you try to add an exercise during a run, you'll see {{" exerciseBlockedDuringRun}}</p>
 </section>
 
 <section id="start-run" data-ask="How do I start a run|How to record a run|Track a run with my phone|Can it track treadmill runs|Count laps on a track" data-keys="start run record track measure phone device indoor treadmill track free run time trial race structured interval threshold hill gps satellite">
 <h2>Starting a run</h2>
-<p class="lead">In running mode, tap {{> runStart}} on today's run card on {{> tabHome}}, then pick the kind of run and the device that measures it.</p>
+<p class="lead">Tap today's run card at the top of {{> tabHome}}, or {{> runStart}} right below the top card, then pick the kind of run and the device that measures it.</p>
 <ol class="steps">
-<li>On {{> tabHome}}, tap {{> runStart}} on today's run card.</li>
+<li>If the top card on {{> tabHome}} is today's run, tap {{> runStart}} on it; if it's a strength card, tap {{> runStart}} right below it.</li>
 <li>The card at the top is today's prescription (or a suggestion if there isn't one). Tap {{> runStart}} on it, or pick a kind below such as {{> runTitleFree}}, {{> runKindTest}}, {{> runTitleCourse}}, {{> runTitleTrack}}, or {{> runKindTreadmill}}.</li>
 <li>Under {{> runDeviceTitle}}, pick {{> runDevicePhone}} or {{> runDeviceWatch}}.</li>
 <li>The first time you measure outdoors with your phone, it asks for location. Allow location while using the app.</li>
@@ -55,10 +55,10 @@
 
 <section id="import" data-ask="I want to import runs from another app|Import an activity file exported from my watch|Add a run from a TCX file|Can I customize runs from other apps|It says to import course files from Courses" data-keys="import another app other apps watch exported activity activity file gpx tcx file record bring in move load run result share customize same time duplicate">
 <h2>Importing runs from other apps</h2>
-<p class="lead">Pick a GPX or TCX activity file exported from another app or watch under {{> runImportFile}} at the bottom of {{> tabHome}} in running mode, and it becomes a run in your log.</p>
+<p class="lead">Pick a GPX or TCX activity file exported from another app or watch under {{> runImportFile}} at the bottom of the {{> sectionRunning}} group on {{> tabHome}}, and it becomes a run in your log.</p>
 <ol class="steps">
 <li>Export the run as a GPX or TCX file from the other app or your watch app, and keep it on your phone.</li>
-<li>Tap {{> runImportFile}} at the bottom of {{> tabHome}} in running mode and pick the file.</li>
+<li>Tap {{> runImportFile}} at the bottom of the {{> sectionRunning}} group on {{> tabHome}} and pick the file. If you have no runs yet, it's also in the {{> sectionRunning}} section of {{> tabStats}}.</li>
 <li>When the result screen opens, share and customize it with {{> shareDecorate}} just like a run you tracked in the app.</li>
 </ol>
 <p>Only activity files with timestamps come in as runs, and heart rate and cadence are read too when the file has them. If you pick a course file without timestamps, you'll see {{" runImportFailed}} Open course files in <a href="#courses">Making and importing courses</a>. If you import a run that started at the same time again, no new one is made and the existing run opens. Runs that other apps wrote to your health app come in without a file; see <a href="health.html#runs">Runs from your health app</a>.</p>
@@ -68,18 +68,18 @@
 <h2>Reference result and pace zones</h2>
 <p class="lead">Enter one recent result as your reference, and your {{> runZoneEasy}}, {{> runZoneMarathon}}, {{> runZoneThreshold}}, and {{> runZoneInterval}} paces and predicted times are set.</p>
 <ol class="steps">
-<li>Open {{> tabMenu > runZonesTitle}}. You can also use the {{> runZonesTitle}} shortcut on the running-mode Home.</li>
+<li>Open {{> tabMenu > runZonesTitle}}. You can also use the {{> runZonesTitle}} shortcut in the {{> sectionRunning}} group on {{> tabHome}}.</li>
 <li>Tap {{> runBaselineSet}}, pick 3 km, 5 km, 10 km, {{> runHalf}}, or {{> runFull}}, and enter {{> runBaselineTime}}.</li>
 <li>Check {{> runPredictions}} and {{> runHrBasis}} ({{> runHrBasisMax}} or {{> runHrBasisThreshold}}).</li>
 </ol>
 <p>Paces come from the Daniels and Gilbert oxygen cost formula (VDOT), and {{> runZonesHow}} shows the formula and sources. Without a result, run a {{> runKindTest}} or tap {{> runUseBaseline}} on a run result. After 8 weeks, the app suggests measuring again.</p>
 </section>
 
-<section id="coach" data-ask="What's on the Coach tab in running mode|Where do I see today's run prescription|Today's run prescription|Why is this run suggested|What is leg recovery|Where is strength coaching in running mode" data-keys="running coach coach tab today prescription suggested suggestion reason why leg recovery legs 70% quality this week weekly plan readiness nutrition strength coaching block volume strength mode switch">
+<section id="coach" data-ask="Where is running on the Coach tab|Where do I see today's run prescription|Today's run prescription|Why is this run suggested|What is leg recovery|Where is the running coach" data-keys="running coach coach tab running section section today prescription suggested suggestion reason why leg recovery legs 70% quality this week readiness strength coaching block volume">
 <h2>Running coach</h2>
-<p class="lead">In running mode, the whole {{> tabCoach}} tab becomes a running coach. The top card shows what to run today and why, and you can tap {{> runStart}} right there.</p>
+<p class="lead">Pick the {{> sectionRunning}} section below the shared area of {{> tabCoach}} to get the running coach. The top card shows what to run today and why, and you can tap {{> runStart}} right there. It's free.</p>
 <ol class="steps">
-<li>Open {{> tabCoach}} in running mode. Below the header you'll see {{" runCoachSubtitle}}.</li>
+<li>Open {{> tabCoach}} and tap {{> sectionRunning}} in the section picker. Next time, the last section you viewed opens.</li>
 <li>In the top card, check {{> runTodayPlan}} (that day's prescription from your hybrid plan) or {{> runSuggested}} (the run we suggest when there's no plan).</li>
 <li>Read the reasons on the card and tap {{> runStart}}.</li>
 </ol>
@@ -87,10 +87,10 @@
 <li>Reasons: a line is added when the run was eased for leg recovery, kept within 110% of your longest run in the last 30 days, turned into a time trial because there's no reference result, or trimmed to match your recent runs.</li>
 <li>{{> runCoachLegsTitle}}: without lower-body strength records, recovery isn't taken into account. If lower-body recovery is below 70% or you trained legs hard yesterday, it tells you to swap a quality run for an easy run.</li>
 <li>{{> runZonesTitle}} and {{> runCapTitle}}: your pace zones, plus this week's distance and the single-run limit.</li>
-<li>{{> coachInterferenceTitle}}: when you have both strength training in the last 30 days and runs in the last 7 days, it shows your running days and time in the last 7 days. See <a href="#strength">Prescriptions that know your strength training</a>.</li>
-<li>{{> runCoachWeekTitle}} <span class="pro">PRO+</span>: on the free plan it shows as a locked row. With PRO+ you also see the readiness check and nutrition cards.</li>
+<li>{{> assessEntryRunTitle}}: the running form tests and your <a href="assessment.html#run-form">cadence target</a>.</li>
+<li>Readiness check <span class="pro">PRO+</span>: with PRO+, this section also has the <a href="coach.html#readiness">readiness card</a>.</li>
 </ul>
-<p>Strength coaching such as block plans and volume isn't on the {{> tabCoach}} tab in running mode. Tap the {{> modeCrossStrengthCoach}} row at the bottom to switch to strength mode. The first time you open the running coach, an intro tip shows once, even if you've turned tips off. On an iPad held sideways, the recovery item in the left menu becomes leg recovery and the coach item becomes {{> largeRunCoach}}.</p>
+<p>The weekly plan, {{> coachInterferenceTitle}} and hybrid race prep sit in the <a href="coach.html#overview">shared area</a> above the sections, so you see them in every section. Strength coaching such as block plans and volume is in the {{> sectionStrength}} section, and cardio fitness training and nutrition are in the {{> sectionBodyNutrition}} section. The first time you open the {{> sectionRunning}} section, an intro tip shows once. On iPad and an unfolded iPhone Duo, when the Coach tab opens on the {{> sectionRunning}} section, the coach item in the left menu shows {{> largeRunCoach}}, and on a run day the recovery item shows leg recovery.</p>
 </section>
 
 <section id="strength" data-ask="How should I run the day after a leg workout|Today's run changed to an easy run|How long can a single run be|Why is there a distance limit on runs|A window says my legs haven't recovered|Can I run right after lifting|Can I train legs after a run|Does running slow my strength gains" data-keys="strength legs leg day next day easy run quality changed prescription 110% 30 days longest distance limit cap injury weekly plan legs not recovered leg check 4% slower as planned gap spacing 6 hours 8 hours right after lower body reps leg press interference concurrent training alongside meta-analysis">
@@ -102,15 +102,15 @@
 <li>{{" runReasonBaselineTest}}: without a reference result, or with an old one, the plan's first quality day becomes a time trial.</li>
 <li>The {{" runLegsCheckTitle}} window: on a day your leg recovery is below 70% or you trained legs hard yesterday, picking a quality run (threshold, interval, or hills; structured sessions are PRO) without a plan shows this before you start. Choose {{> runLegsEasy}}, {{> runLegsSlower}} (laps and repeats stay the same), or {{> runLegsAsPlanned}}. This follows a randomized study in which 30-minute times were about 4% slower 48 hours after muscle damage (Marcora 2007).</li>
 <li>Running after lifting: open the run start screen within 6 hours of finishing a strength workout, and a spacing note appears at the top. Cardio right after lifting gave the smallest strength gains, and the researchers advised avoiding gaps under 6 hours (Robineau 2016).</li>
-<li>Legs after running: open strength {{> tabHome}} within 8 hours of a run with lower body in today's routine, and today's card gets a line saying lower-body reps may drop, so keep the weight. Weight and sets don't change. This follows a study in which leg press reps fell 4 and 8 hours after cardio, with no difference after 24 hours and no effect on the upper body (Sporer and Wenger 2003).</li>
-<li>{{> coachInterferenceTitle}}: when you have both strength training in the last 30 days and runs in the last 7 days, this row appears in the running coach and the strength coach. It shows your running days and time in the last 7 days, along with a meta-analysis in which strength and muscle gains shrank as endurance frequency and duration rose (Wilson 2012). There's no set threshold.</li>
+<li>Legs after running: open {{> tabHome}} within 8 hours of a run with lower body in today's strength routine, and today's card gets a line saying lower-body reps may drop, so keep the weight. Weight and sets don't change. This follows a study in which leg press reps fell 4 and 8 hours after cardio, with no difference after 24 hours and no effect on the upper body (Sporer and Wenger 2003).</li>
+<li>{{> coachInterferenceTitle}}: when you have both strength training in the last 30 days and runs in the last 7 days, this row appears in the shared area at the top of {{> tabCoach}}. It shows your running days and time in the last 7 days, along with a meta-analysis in which strength and muscle gains shrank as endurance frequency and duration rose (Wilson 2012). If you have a hybrid plan this week, it also shows that plan's strength, circuit and cardio counts. There's no set threshold.</li>
 </ul>
-<p>Make the weekly running plan from {{> runCoachMakeTitle}} under {{> runCoachWeekTitle}} in the running coach (PRO+). It spreads easy and quality runs so they don't clash with strength days, and moves only the runs, leaving your strength prescriptions as they are.</p>
+<p>For a week with lots of running, make a <a href="coach.html#hybrid">weekly hybrid plan</a> and set {{> hybridFocus}} to {{> hybridFocusRunning}} (PRO+). It spreads easy and quality runs so they don't clash with strength days, and swaps a quality run for an easy run the day after a leg workout.</p>
 </section>
 
 <section id="courses" data-ask="How do I make a course|Save a route I ran as a course|Import a course from a GPX file|Draw a course on the map|Turn a route I run often into a course|Compare runs on the same route|Use my watch on a course run" data-keys="course my courses courses row home create make save save as course result map draw gpx tcx file import same route automatic past self race best received times my segments segment loop filter nearest watch phone measure with">
 <h2>Making and importing courses</h2>
-<p class="lead">Your courses sit in the {{> courseShelfTitle}} row on the running {{> tabHome}}, nearest to where you last ran first. Save one in a tap from a run result, or make one from a past run, by drawing on the map, or from a file.</p>
+<p class="lead">Your courses sit in the {{> courseShelfTitle}} row of the {{> sectionRunning}} group on {{> tabHome}}, nearest to where you last ran first. Save one in a tap from a run result, or make one from a past run, by drawing on the map, or from a file.</p>
 <ol class="steps">
 <li>On the result screen after a run, tap {{> runSaveCourse}} under the map and it becomes a course right away. It takes the run's name, which you can change on the course screen.</li>
 <li>Otherwise, use the card at the end of the {{> courseShelfTitle}} row or {{> courseMake}} in {{> tabMenu > courseTitle}}, then pick {{> courseFromRun}}, {{> courseDraw}}, or {{> courseFromFile}}.</li>
@@ -149,7 +149,7 @@
 <li>On the start screen, under {{> runDeviceTitle}}, pick {{> runDeviceWatch}} and tap {{> runStart}}.</li>
 <li>When your phone shows {{" runSourceWatchWaiting}}, start in FitBoost on the watch.</li>
 </ol>
-<p>The watch shows pace ranges, steps, and the course line, and vibrates when you leave the range. Apple Watch also vibrates 5 seconds before the next step. When you finish, the run comes to your phone. Choose satellite settings for Garmin watches in {{> tabMenu > runSettingsTitle > runSettingsSatellite}}; {{> runSettingsSatelliteMax}} uses more battery. Watches have no separate mode and show the run you picked on your phone.</p>
+<p>The watch shows pace ranges, steps, and the course line, and vibrates when you leave the range. Apple Watch also vibrates 5 seconds before the next step. When you finish, the run comes to your phone. Choose satellite settings for Garmin watches in {{> tabMenu > runSettingsTitle > runSettingsSatellite}}; {{> runSettingsSatelliteMax}} uses more battery. The watch home screen follows today's plan on your phone and puts running first on run days; with no plan, it follows your main focus.</p>
 </section>
 
 <section id="plans" data-ask="Are running features free|What's paid in running|Is run analysis PRO|Which subscription has the weekly running plan" data-keys="free paid pro pro+ subscription running run analysis structured race day plan locked lock">
@@ -158,7 +158,7 @@
 <ul>
 <li>Free: measuring with your phone or three kinds of watch, live pace and heart rate, auto laps and splits, reference result, pace zones, and predicted times, my courses (same-route detection, drawing, files, receiving), sending by link, QR code, or file, GPX export, importing GPX or TCX runs from other apps, privacy zones, writing to health apps, the single-run limit, metric evidence, and the running coach (today's prescription and reasons, leg recovery, pace zones, this week's distance).</li>
 <li>PRO: grade-adjusted pace, heart-rate drift, heart-rate load, session load, critical speed, fitness and fatigue combined with strength, structured workouts (step-by-step threshold, interval, and hill sessions), race-day mode (goal pacer and finish prediction), and my segment records on courses.</li>
-<li>PRO+: a running-focused weekly plan that works around strength recovery (including easing off the day after a leg workout), and the readiness check and nutrition cards in the running coach.</li>
+<li>PRO+: weekly hybrid plans, including running-focused ones (with easing off the day after a leg workout), and the readiness check in the {{> sectionRunning}} section.</li>
 </ul>
 <p>Locked tiles show a lock, and tapping one opens the FitBoost PRO screen. If your subscription ends, analysis values for runs you've already recorded aren't deleted, only hidden. There are no ads on the running screen.</p>
 </section>

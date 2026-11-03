@@ -1,3 +1,17 @@
+<section id="overview" data-ask="コーチタブの構成はどうなっていますか|コーチタブのいちばん上の欄は何ですか|筋トレのコーチとランニングコーチはどこですか|コーチタブのセクションを切り替えたい" data-keys="コーチタブ 構成 共通欄 いちばん上 セクション 筋トレ ランニング からだ 栄養 今週 計画 干渉 大会 ハイブリッド レース ロック 無料">
+<h2>コーチタブの構成</h2>
+<p class="lead">{{> tabCoach}}のいちばん上の共通欄に{{> hybridPlanWeekTitle}}、干渉の案内、{{> runKindHybridRace}}があり、その下で{{> sectionStrength}}・{{> sectionRunning}}・{{> sectionBodyNutrition}}のセクションを選びます。</p>
+<ul>
+<li>{{> hybridPlanWeekTitle}} <span class="pro">PRO+</span>：今週の日ごとにその日やること（コーチのセッション・ルーティン・サーキット・ラン）と、終えた日・できなかった日を表示します。PRO+でなければ{{> coachPlanMakeTitle}}のロックされた行です。<a href="#hybrid">週間ハイブリッドプラン</a>をご覧ください。</li>
+<li>{{> coachInterferenceTitle}}：最近の筋トレとランの両方があるときに出ます。<a href="running.html#strength">筋トレと連動した処方</a>をご覧ください。</li>
+<li>{{> runKindHybridRace}}：<a href="#race">ハイブリッドレース準備</a>を開きます。</li>
+<li>{{> sectionStrength}}：<a href="#plan">ブロックプラン</a>、ディロード、コンディションチェック。動作評価の行だけが無料で、ほかはPRO+です。</li>
+<li>{{> sectionRunning}}：<a href="running.html#coach">ランニングコーチ</a>。無料です。</li>
+<li>{{> sectionBodyNutrition}}：<a href="body.html#vo2">心肺フィットネス</a>（無料）、<a href="#nutrition">栄養目標</a>・<a href="body.html#body-coach">体組成コーチング</a>・ストレスと回復（PRO+）。</li>
+</ul>
+<p>最初は<a href="start.html#mix">メイン種目</a>のセクションが開き（{{> trainingMixHybrid}}は{{> sectionStrength}}）、その後は最後に見たセクションが開きます。セクションの並びはいつも{{> sectionStrength}}・{{> sectionRunning}}・{{> sectionBodyNutrition}}の順です。</p>
+</section>
+
 <section id="next-weight" data-ask="次のセットの重量を教えてくれますか|次は何キロ持てばいいですか|ワークアウト中のコーチの提案|いつやめればいいですか" data-keys="次 重量 提案 おすすめ コーチ セット やめどき 疲労 トップセット バックオフ ウォームアップ 計算">
 <h2>ワークアウト中の次の重量の提案 <span class="pro">PRO</span></h2>
 <p class="lead">セットを終えて強度を記録すると、その結果から次のセットの重量と、今日やめるタイミングを案内します。</p>
@@ -16,35 +30,34 @@
 <p>終わるとどうだったかを聞き、答えに合わせて次のサーキットを調整します。<a href="watch.html#on-watch">ウォッチ</a>からすぐ始めることもできます。</p>
 </section>
 
-<section id="hybrid" data-ask="筋トレと有酸素を一緒に計画したい|1週間のトレーニング計画を組んでくれますか|ハイブリッドプラン|できなかった日を移したい" data-keys="ハイブリッド 週間 プラン 有酸素 ランニング 筋トレ 曜日 予定 移す できなかった">
+<section id="hybrid" data-ask="筋トレと有酸素を一緒に計画したい|1週間のトレーニング計画を組んでくれますか|ハイブリッドプラン|できなかった日を移したい|週間プランを直したい" data-keys="ハイブリッド 週間 プラン 有酸素 ランニング ラン 筋トレ サーキット 曜日 予定 移す できなかった 直す 作り直す ひとつ">
 <h2>週間ハイブリッドプラン <span class="pro">PRO+</span></h2>
-<p class="lead">筋トレ・サーキット・有酸素を組み合わせて1週間の予定を組みます。トレーニングする曜日と時間に余裕のある曜日に合わせます。</p>
+<p class="lead">筋トレ・サーキット・ランを組み合わせて1週間の予定を組みます。プランはひとつで、直すと{{> tabHome}}の今日のカードと{{> tabCoach}}のいちばん上の{{> hybridPlanWeekTitle}}にすぐ反映されます。</p>
 <ol class="steps">
-<li>{{> tabHome > homePrograms > hybridTitle}}をタップします。</li>
-<li>曜日、目標、重点、有酸素、器具、年齢を選んで{{> hybridMake}}をタップします。</li>
-<li>今日のワークアウトが{{> tabHome}}に表示されます。</li>
+<li>{{> tabHome > homePrograms > hybridTitle}}をタップします。{{> tabCoach}}のいちばん上の{{> hybridPlanWeekTitle}}欄や、{{> tabHome}}の{{> sectionRunning}}グループにある{{> runHomeHybridPlan}}のショートカットからも開けます。</li>
+<li>曜日、目標、重点、有酸素、器具、年齢を選んで{{> hybridMake}}をタップします。重点の最初の値は<a href="start.html#mix">メイン種目</a>に従います。</li>
+<li>今日のワークアウトが{{> tabHome}}のいちばん上のカードに表示されます。プランの画面では、その日の欄の{{> hybridStart}}から始めます。</li>
 </ol>
-<p>できなかった日は{{> hybridMove}}で別の日に移せ、元に戻すこともできます。</p>
-
-<p>重点で{{> hybridFocusRunning}}を選ぶと、ランニングコーチの{{> runCoachWeekTitle}}になり、下半身トレーニングの翌日のポイント練習をイージーランに変えます。<a href="running.html#coach">ランニングコーチ</a>と<a href="running.html#strength">筋トレと連動した処方</a>をご覧ください。</p>
+<p>条件を変えるときは{{> hybridRemake}}をタップします。自分で直したルーティンや予定に入れたルーティンは上書きせずに残します。できなかった日は別の日に移さず、そのまま残します。筋トレ・サーキットの日をできなかった週の翌週は、プランのルーティンの重量・回数を上げずに前回のままにします。<a href="#plan">ブロックプラン</a>があればプランの筋トレの日にコーチのセッションが順に置かれ、<a href="body.html#vo2-train">心肺フィットネスのブロック</a>を進めていればそのセッションも有酸素の日に置かれます。</p>
+<p>重点で{{> hybridFocusRunning}}を選ぶとランの日が多いプランになり、下半身トレーニングの翌日のポイント練習をイージーランに変えます。<a href="running.html#coach">ランニングコーチ</a>と<a href="running.html#strength">筋トレと連動した処方</a>をご覧ください。</p>
 </section>
 
 <section id="plan" data-ask="コーチタブでは何をしますか|コーチタブが開かない|ブロックピリオダイゼーションの計画を作る|大会に向けた計画|コーチタブに紹介しか出ない" data-keys="コーチタブ ブロック ピリオダイゼーション 計画 パワーリフティング 筋力 筋肥大 大会 1rm ディロード pro+">
 <h2>コーチタブのブロックプログラム <span class="pro">PRO+</span></h2>
 <p class="lead">目標と大会日、今の1RMから数週間のプログラムを組み、毎回のワークアウトの重量を決めます。</p>
 <ol class="steps">
-<li>{{> tabCoach > coachCreatePlan}}をタップします。</li>
+<li>{{> tabCoach > sectionStrength > coachCreatePlan}}をタップします。</li>
 <li>目標（パワーリフティング・筋力・パワービルディング・筋肥大）、週の日数、経験、進め方、体重、大会日（任意）を選びます。</li>
 <li>今の1RMを入力します。わからなければ重量と回数から計算できます。</li>
 <li>{{> coachSetupCreate}}をタップすると、今日のワークアウトがコーチタブとホームに表示されます。</li>
 </ol>
-<p>筋トレモードのコーチタブはPRO+専用のため、PRO+でない場合は紹介と{{> coachSeePlans}}だけが表示されます。ランニングモードではタブ全体が<a href="running.html#coach">ランニングコーチ</a>に変わるので、ブロックプランは筋トレモードで見ます。</p>
+<p>{{> sectionStrength}}セクションのブロックプランはPRO+専用のため、PRO+でない場合は動作評価の行と紹介、{{> coachSeePlans}}だけが表示されます。週間ハイブリッドプランがあるときは{{> coachHybridCoachTitle}}の行から作り、コーチのセッションがプランの筋トレの日に順に置かれます。</p>
 </section>
 
 <section id="readiness" data-ask="体調に合わせて重量を変えてくれますか|今日のコンディションチェック|寝不足でもトレーニングしていいですか|HRVを反映" data-keys="コンディション チェック 睡眠 筋肉痛 ストレス エネルギー hrv 心拍 レディネス 強度 調整">
 <h2>コンディションチェック <span class="pro">PRO+</span></h2>
 <p class="lead">トレーニング前に睡眠・筋肉の状態・ストレス・エネルギーを記録すると、その日の重量とセットを調整します。</p>
-<p>コーチタブの{{> homeConditionTitle}}カードで{{> coachReadinessCheck}}をタップし、すべて選んだら{{> coachSaveReadiness}}をタップします。プログラムがある場合はホームの{{> homeConditionTitle}}欄からも開けます。<a href="health.html#what">ヘルスケア</a>と連携すると、睡眠時間・HRV・安静時心拍も使います。</p>
+<p>{{> tabCoach}}の{{> sectionStrength}}・{{> sectionRunning}}セクションにある{{> homeConditionTitle}}カードで{{> coachReadinessCheck}}をタップし、すべて選んだら{{> coachSaveReadiness}}をタップします。プログラムがある場合はホームの{{> homeConditionTitle}}欄からも開けます。<a href="health.html#what">ヘルスケア</a>や<a href="watch.html#garmin-connect">Garmin Connect</a>と連携すると、睡眠時間・HRV・安静時心拍も使います。</p>
 </section>
 
 <section id="deload" data-ask="ディロードはいつしますか|ブロックを1週延ばす・早める|大会の試技重量を決めたい" data-keys="ディロード 休養週 ブロック 延長 前倒し 大会 試技 重量 第1 第2 第3 疲労">
@@ -55,18 +68,35 @@
 
 <section id="nutrition" data-ask="食事のカロリー目標を決めてくれますか|PFCの目標|栄養目標の設定" data-keys="栄養 食事 カロリー たんぱく質 炭水化物 脂質 pfc 体重 減量 増量">
 <h2>栄養目標 <span class="pro">PRO+</span></h2>
-<p class="lead">体重の推移を見て、毎週カロリーと炭水化物・たんぱく質・脂質の目標を合わせ直します。</p>
-<p>コーチタブの{{> coachNutrition}}カードで体重・身長・年齢・活動量・目標を入力し、{{> nutritionStart}}をタップします。体重の推移は2週間以上で4回以上記録すると表示されます。1回だけ計算するなら<a href="tools.html#calculators">マクロ計算機</a>を使ってください。</p>
+<p class="lead">体組成や体重の推移を見て、毎週カロリーと炭水化物・たんぱく質・脂質の目標を合わせ直します。</p>
+<p>{{> tabCoach}}の{{> sectionBodyNutrition}}セクションにある{{> coachNutrition}}カードで体重・身長・年齢・活動量・目標を入力し、{{> nutritionStart}}をタップします。直近30日以内の体組成（除脂肪量）があれば、体重の代わりに除脂肪量で維持カロリーとたんぱく質を計算し、{{> nutritionTargetBodyFat}}を入れると目標体重を表示します（<a href="body.html#body-coach">体組成の反映</a>）。体重の推移は2週間以上で4回以上記録すると表示されます。1回だけ計算するなら<a href="tools.html#calculators">マクロ計算機</a>を使ってください。</p>
 </section>
 
-<section id="race" data-ask="ハイブリッドレースの準備|1kmランと種目の練習|大会の区間記録|スレッドプッシュやウォールボールの練習|大会日までの計画" data-keys="ハイブリッド レース 区間 スプリット スレッド ウォールボール ローイング スキー ファーマーズ サンドバッグ バーピー 診断 目標">
+<section id="race" data-ask="ハイブリッドレースの準備|1kmランと種目の練習|大会の区間記録|スレッドプッシュやウォールボールの練習|大会日までの計画|完走目標を直接入力したい|大会練習をウォッチで計測したい" data-keys="ハイブリッド レース 区間 スプリット スレッド ウォールボール ローイング スキー ファーマーズ サンドバッグ バーピー 診断 目標 完走 直接入力 時分秒 予想 現実的 無理 根拠 ウォッチ 区間終了">
 <h2>ハイブリッドレース準備</h2>
 <p class="lead">1kmラン→種目を8回つなぐハイブリッドフィットネスレースを本番のように練習し、区間ごとに記録します。無料プランは週3回です。</p>
 <ol class="steps">
-<li>{{> tabHome > homePrograms > raceEntryTitle}}を開きます。</li>
-<li>部門(重量)、練習の範囲(全部・半分・種目だけ・種目後のラン)、完走目標を選ぶと区間ごとの量・重量・目標が見えます。</li>
+<li>{{> tabHome > homePrograms > raceEntryTitle}}を開きます。{{> tabCoach}}のいちばん上の{{> runKindHybridRace}}の行からも開けます。</li>
+<li>{{> raceGroupSingle}}・{{> raceGroupDoubles}}・{{> raceGroupRelay}}から{{> raceDivisionTitle}}を選び、練習の範囲(全部・半分・種目だけ・種目後のラン)と{{> raceGoalTitle}}を選ぶと区間ごとの量・重量・目標が見えます。ダブルス・リレーは<a href="#race-team">チーム分担</a>をご覧ください。</li>
 <li>{{> raceStart}}を押し、区間を終えるたびに大きなボタンを押します。ウォッチで終えても大丈夫です。</li>
 <li>終わると区間表と最も遅れた区間が出ます。{{> raceSave}}で保存します。</li>
 </ol>
-<p>大会の日付を決めると残りの週を基礎・強化・実戦・調整に分けて今やることを示し、初週の診断で弱い種目を見つけます。大会後は公式記録を入れて比べます。特定の大会とは関係のない練習機能で、区間目標は公開結果をまとめた参考値です。</p>
+<p>目標は用意された時間から選ぶか、{{> raceGoalCustom}}で時・分・秒を入れます（30分〜5時間）。入れた目標で区間目標と、ランのペース・種目の合計・トランジションの時間が出し直されます。いちばん速い全体練習か初週の診断から見た予想より2%を超えて速い目標なら、無理かもしれないと知らせます。区間の予想は実際の大会で測った研究値とコーチング現場の方法論に従い、研究がない部分は現場推定と分けて書きます。出典は{{> raceSourcesButton}}で見られます。</p>
+<p>大会の日付を決めると残りの週を基礎・強化・実戦・調整に分けて今やることを示し、初週の診断で弱い種目を見つけます。大会後は公式記録を入れて目標・練習と比べます。特定の大会とは関係のない練習機能で、距離・回数・重量は公開されているルールブックに従います。</p>
+<p>スマホで始めた練習は、Apple Watch・Galaxy Watch・Garminウォッチで、今の区間名、量と目標、その区間にかかった時間、手首の心拍を見ながら計測できます。区間の終わりはApple Watch・Galaxy Watchでは{{> raceWatchLap}}、Garminではスタートボタンです。ラン区間の距離はスマホの位置で測ります。</p>
+</section>
+
+<section id="race-team" data-ask="ダブルスの大会練習|リレー部門の準備|パートナーと種目を分けたい|ミックスダブルスの重量は|リレーで誰がどの区間を担当しますか" data-keys="ダブルス doubles パートナー リレー relay 4人 チーム ミックス 混合 分担 分ける 交代 交互 戦略 チームメンバー 診断 一緒に走る 走者 区間 担当">
+<h2>ダブルス・リレー部門とチーム分担</h2>
+<p class="lead">{{> raceGroupDoubles}}・{{> raceGroupRelay}}の部門を選ぶとルールの要点が表示され、チームメンバーの診断から、誰が何をどれだけ担当するかを{{> raceTeamTitle}}カードが決めます。</p>
+<ol class="steps">
+<li>{{> raceEntryTitle}}で{{> raceGroupDoubles}}か{{> raceGroupRelay}}をタップし、部門（女子・男子・ミックスなど）を選びます。</li>
+<li>{{> raceTeamTitle}}カードでメンバーをタップし、{{> raceMemberEditTitle}}（1kmラン・ローイング・ファーマーズキャリー・ウォールボール）を入力します。自分の診断は大会の日付を決めたあと、上の大会準備カードで入力します。</li>
+<li>チームの予想と種目ごとの分担、一緒に走るペースや担当する区間を見ます。</li>
+</ol>
+<ul>
+<li>ダブルス：1kmは2人で一緒に走り、一緒に走るペースは1人で走ると遅いほうに合わせます。種目の分担は働く時間が同じになるよう速い人が多く受け持ち、エルゴ250m・スレッド12.5mのような交代の単位も表示します。ミックスダブルスは2人とも男子オープンの重量です。</li>
+<li>リレー：4人がそれぞれ1kmとその後の種目を2回ずつ受け持ち、予想の合計がいちばん小さくなるよう各自が得意な種目のある区間を担当します。ミックスリレーは女子2人・男子2人で、それぞれ自分の性別の重量を扱います。</li>
+</ul>
+<p>診断のないメンバーは一般的な記録で計算します。ダブルスの練習では区間名に2人の分担が、リレーでは担当する走者の名前が付き、ウォッチにもそのまま送られます。交代の単位のうち研究がないもの（ウォールボール10回など）には現場推定と付きます。</p>
 </section>

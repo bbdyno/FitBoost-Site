@@ -1,6 +1,6 @@
-<section id="overview" data-ask="統計タブで何が見られますか|今週のトレーニング量を見たい|先週と比べたい|ボリュームのグラフ" data-keys="統計 グラフ ボリューム 推移 今週 先週 比較 目標 使用した筋肉 期間">
+<section id="overview" data-ask="統計タブで何が見られますか|今週のトレーニング量を見たい|先週と比べたい|ボリュームのグラフ|ランの統計はどこですか" data-keys="統計 グラフ ボリューム 推移 今週 先週 比較 目標 使用した筋肉 期間 セクション 筋トレ ランニング からだ 体組成 心肺">
 <h2>統計タブで見られること</h2>
-<p class="lead">{{> tabStats}}には、今週の目標、筋肉の回復、筋力バランス、ボリュームの推移が上から順に並んでいます。</p>
+<p class="lead">{{> tabStats}}の上で{{> sectionStrength}}・{{> sectionRunning}}・{{> sectionBody}}のセクションを選びます。{{> sectionStrength}}には、今週の目標、筋肉の回復、筋力バランス、ボリュームの推移が上から順に並んでいます。</p>
 <ul>
 <li>{{> statsWeekVsLastWeek}}：今週のトレーニングを先週と比べます。</li>
 <li>{{> volumeProgressTrend}}、{{> statsPeriodVolume}}：ボリュームがどう伸びたかを見ます。</li>
@@ -8,7 +8,7 @@
 <li>{{> deeperAnalysis}}：{{> smartWeightGuide}}と{{> weeklyCoachingReport}}に進みます。</li>
 </ul>
 
-<p>ランニングモードでは、{{> tabStats}}はランの欄だけになります。走った距離、{{> runCapTitle}}、{{> runZonesTitle}}、{{> runPredictions}}を見られ、PROでは筋トレとランの負荷を合わせた{{> runStatsLoadTitle}}と{{> runCriticalSpeed}}も見られます。上の筋トレの統計は筋トレモードで見るもので、ランニングモードのいちばん下の{{> modeCrossStrengthStats}}の行をタップすると筋トレモードに切り替わります。</p>
+<p>{{> sectionRunning}}セクションには走った距離、{{> runCapTitle}}、{{> runZonesTitle}}、{{> runPredictions}}があり、PROでは筋トレとランの負荷を合わせた{{> runStatsLoadTitle}}と{{> runCriticalSpeed}}も見られます。{{> sectionBody}}セクションには<a href="body.html#composition">体組成の推移</a>、体重、<a href="body.html#vo2">心肺フィットネス</a>があります。最初は<a href="start.html#mix">メイン種目</a>のセクションが開き、その後は最後に見たセクションが開きます。記録がないセクションには開始ボタンが表示され、共有ボタンは見ているセクションのカードを開きます。</p>
 </section>
 
 <section id="recovery" data-ask="筋肉の回復はどう計算しますか|どの部位がまだ回復していませんか|今日はどこを鍛えればいいですか|回復マップ" data-keys="回復 筋肉 疲労 マップ 部位 休む 睡眠 痛み 回復度 パーセント">

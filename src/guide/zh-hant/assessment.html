@@ -1,12 +1,12 @@
 <section id="open" data-ask="動作評估在哪裡|姿勢分析在哪裡|我想測柔韌性|怎麼做體能測試|有哪些測試" data-keys="動作評估 姿勢分析 測試 檢測 體能 靈活性 柔韌性 相機 教練 首頁 選單 名稱 術語">
 <h2>開啟動作評估</h2>
-<p class="lead">兩種模式下，都可以從{{> tabHome}}快速開始一行正下方的{{> assessEntryTitle}}（跑步模式為{{> assessEntryRunTitle}}）、{{> tabMenu}}或{{> tabCoach}}開啟測試列表。</p>
+<p class="lead">可以從{{> tabHome}}{{> sectionStrength}}分組的{{> assessEntryTitle}}一行、{{> sectionRunning}}分組的{{> assessEntryRunTitle}}一行、{{> tabMenu}}或{{> tabCoach}}開啟測試列表。</p>
 <ol class="steps">
-<li>在{{> tabHome}}點按{{> assessEntryTitle}}（跑步模式為{{> assessEntryRunTitle}}）。{{> tabMenu}}和{{> tabCoach}}裡也有同一行。</li>
+<li>在{{> tabHome}}點按{{> assessEntryTitle}}（力量方面的測試）或{{> assessEntryRunTitle}}（跑姿排在前面的測試）。{{> tabMenu}}的{{> sectionStrength}}、{{> sectionRunning}}分組和{{> tabCoach}}的對應分區裡也有同一行。</li>
 <li>從{{> assessGroupMobility}}、{{> assessGroupFitness}}、{{> assessGroupPower}}、{{> assessGroupBarbell}}、{{> assessGroupRunning}}分組中選擇測試。</li>
 <li>在準備畫面閱讀手機放法、做法和何時停止，然後開始。</li>
 </ol>
-<p>測試名稱用淺白的說法，下面用小字附上專業術語（如肩關節前屈）。力量模式會顯示{{> mobilityTestShoulderFlexion}}、{{> mobilityTestShoulderAbduction}}、{{> mobilityTestSquatSide}}、{{> mobilityTestSquatFront}}、{{> mobilityTestSitReach}}、{{> mobilityTestToeTouch}}、{{> mobilityTestKneeExtension}}、{{> mobilityTestLegRaise}}、{{> mobilityTestKneeToWall}}、{{> mobilityTestPushUp}}、{{> mobilityTestStance}}、{{> assessTestChairStand}}、{{> jumpTestCmj}}、{{> jumpTestDrop}}、{{> barSpeedTestName}}；跑步模式會顯示{{> runFormTestSide}}、{{> runFormTestBack}}以及腿部靈活性、體能和跳躍測試。測量和查看結果免費。</p>
+<p>測試名稱用淺白的說法，下面用小字附上專業術語（如肩關節前屈）。{{> assessEntryTitle}}會顯示{{> mobilityTestShoulderFlexion}}、{{> mobilityTestShoulderAbduction}}、{{> mobilityTestSquatSide}}、{{> mobilityTestSquatFront}}、{{> mobilityTestSitReach}}、{{> mobilityTestToeTouch}}、{{> mobilityTestKneeExtension}}、{{> mobilityTestLegRaise}}、{{> mobilityTestKneeToWall}}、{{> mobilityTestPushUp}}、{{> mobilityTestStance}}、{{> assessTestChairStand}}、{{> jumpTestCmj}}、{{> jumpTestDrop}}、{{> barSpeedTestName}}；{{> assessEntryRunTitle}}會顯示{{> runFormTestSide}}、{{> runFormTestBack}}以及腿部靈活性、體能和跳躍測試。測量和查看結果免費。</p>
 </section>
 
 <section id="measure" data-ask="怎麼用相機測量|手機放在哪裡|拍攝檢查一直不通過|沒有相機能測嗎|我想保留測量影片" data-keys="測量 相機 手機 直立擺放 三腳架 拍攝 檢查 角度 側面 正面 手動輸入 計時 尺 影片 語音 前置 前置鏡頭 自拍 切換 後置">
@@ -42,7 +42,7 @@
 <li>查看{{> assessPlanPreviewTitle}}後點按{{> assessPlanApply}}。</li>
 <li>開始訓練後，在列表最上方一行用{{> assessPlanAdd}}加入熱身。</li>
 </ol>
-<p>應用後也可以隨時用{{> assessPlanRevert}}復原。只有在力量模式中才會改變力量處方，跑步則由<a href="#run-form">步頻目標</a>負責。建議文字所有人都能免費查看。</p>
+<p>應用後也可以隨時用{{> assessPlanRevert}}復原。測試結果會應用到力量處方，跑步則由<a href="#run-form">步頻目標</a>負責。建議文字所有人都能免費查看。</p>
 </section>
 
 <section id="jump" data-ask="我想測跳躍高度|跳深怎麼做|需要用慢動作拍嗎|腿部準備度是什麼" data-keys="跳躍 反向縱跳 跳深 高度 滯空 慢動作 240 反應力量指數 rsi 腿部 準備度 畫面 起跳 落地">
@@ -63,12 +63,12 @@
 <li>點按{{> barSpeedStart}}後進行這一組。</li>
 <li>在{{" barSpeedPlateFound}}處，正確就點按{{> barSpeedPlateConfirm}}，不對就點按槓鈴片的最上端和最下端來確定。</li>
 </ol>
-<p>會顯示每次的平均推進速度和{{> barSpeedLossTitle}}，並註明這是尚未與實際裝置對比的估計值。用速度估算 1RM 百分比為 PRO，組中下降率超過設定時提示結束為 PRO+。只在力量模式中顯示。</p>
+<p>會顯示每次的平均推進速度和{{> barSpeedLossTitle}}，並注明這是尚未與實際裝置對比的估計值。用速度估算 1RM 百分比為 PRO，組中下降率超過設定時提示結束為 PRO+。只在{{> assessEntryTitle}}中顯示。</p>
 </section>
 
 <section id="run-form" data-ask="怎麼做跑姿分析|我想設定步頻目標|想知道是否步幅過大|怎麼拍跑步姿勢" data-keys="跑姿 跑步 姿勢 步頻 步幅 步幅過大 落地 小腿 骨盆 髖內收 跑步機 跑道 目標">
 <h2>跑姿與步頻目標</h2>
-<p class="lead">在跑步模式{{> tabHome}}、{{> tabCoach}}或{{> tabMenu}}的{{> assessEntryRunTitle}}中選擇{{> runFormTestSide}}或{{> runFormTestBack}}，拍攝自己在跑步機或跑道上跑步。</p>
+<p class="lead">在{{> tabHome}}、{{> tabCoach}}或{{> tabMenu}}的{{> assessEntryRunTitle}}中選擇{{> runFormTestSide}}或{{> runFormTestBack}}，拍攝自己在跑步機或跑道上跑步。</p>
 <ol class="steps">
 <li>把手機直立擺放在約 1.5 米高處，從側面（或背後）拍攝。</li>
 <li>在結果中查看步頻、落地位置、小腿角度、落地腳型等。</li>

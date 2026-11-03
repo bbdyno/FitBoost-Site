@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Getting started | FitBoost</title>
-<meta name="description" content="What to do after installing, your training goal, and how the screens are laid out.">
+<meta name="description" content="What to do after installing, your training goal and main focus, and how the screens are laid out.">
 <meta name="theme-color" content="#EDEDE8">
 <link rel="icon" href="../../assets/favicon.png" type="image/png">
 <link rel="apple-touch-icon" href="../../assets/icon-180.png">
@@ -44,23 +44,23 @@
 <main class="doc guide wrap">
 <nav class="g-crumb" aria-label="You are here"><a href="./">User Guide</a></nav>
 <h1>Getting started</h1>
-<p class="g-lede">What to do after installing, your training goal, and how the screens are laid out.</p>
+<p class="g-lede">What to do after installing, your training goal and main focus, and how the screens are laid out.</p>
 <form class="g-find" action="./" role="search" data-base="./">
   <label class="sr" for="g-find-q">Search the guide</label>
   <input id="g-find-q" name="q" type="search" autocomplete="off" placeholder="Search the guide"
     role="combobox" aria-expanded="false" aria-controls="g-find-list" aria-autocomplete="list">
   <ul class="g-suggest" id="g-find-list" role="listbox" hidden></ul>
 </form>
-<nav class="g-toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#first-run">When you first open the app</a></li><li><a href="#goal">Training goal</a></li><li><a href="#account">No account needed</a></li><li><a href="#tabs">How the app is laid out</a></li></ol></nav>
+<nav class="g-toc" aria-label="On this page"><p>On this page</p><ol><li><a href="#first-run">When you first open the app</a></li><li><a href="#goal">Training goal</a></li><li><a href="#mix">Main focus</a></li><li><a href="#account">No account needed</a></li><li><a href="#tabs">How the app is laid out</a></li></ol></nav>
 <section class="g-sec" id="first-run">
 <h2>When you first open the app</h2>
 <p class="lead">Swipe through three intro screens, fill in your profile, experience, and training goal, and you're ready to log.</p>
 <ol class="steps">
 <li>Swipe through the intro and tap start on the last screen.</li>
 <li>Enter a nickname, your sex, birth year, height, and weight.</li>
-<li>At <span class="ui"><b>What do you mostly train?</b></span>, pick <span class="ui"><b>Strength training</b></span> or <span class="ui"><b>Running</b></span>. Home, history and coach open in that mode, and you can switch later at the top of Home.</li>
-<li>Choose how long you've lifted weights, then pick your <a href="#goal">training goal</a>.</li>
-<li>If you have lifted before, enter your estimated squat 1RM. If you don't know it, choose that you're not sure. If you choose <span class="ui"><b>This is my first time</b></span>, the app asks how often and where you train and builds a first routine that fits your goal.</li>
+<li>At <span class="ui"><b>What do you mostly train?</b></span>, pick <span class="ui"><b>Mostly strength</b></span>, <span class="ui"><b>Strength and running</b></span>, or <span class="ui"><b>Mostly running</b></span>. It only sets what shows first; every strength and running feature stays available, and you can change it later in <a href="#mix"><span class="ui"><b>Main focus</b></span></a>.</li>
+<li>Choose how much training you've done (running experience for <span class="ui"><b>Mostly running</b></span>), then pick your <a href="#goal">training goal</a>. Goals closest to your main focus come first.</li>
+<li>If you have trained before, enter your estimated squat 1RM when strength is included, and a recent running result when running is included. You can skip either. If your main focus includes strength and you choose <span class="ui"><b>This is my first time</b></span>, the app asks how often and where you train and builds a first routine that fits your goal.</li>
 </ol>
 <p>Your details are used to suggest weights and estimate calories burned. The weight unit (kg or lb) follows your device's region, and you can <a href="settings.html#units">change it in settings</a>.</p>
 </section>
@@ -75,6 +75,22 @@
 <p>A new goal applies from your next workout. The workout in progress and routines you made stay as they are. If you haven't picked a goal, the one guessed from your records is marked <q class="say">Guessed from your records</q>.</p>
 </section>
 
+<section class="g-sec" id="mix">
+<h2>Main focus</h2>
+<p class="lead"><span class="ui"><b>Main focus</b></span> only decides whether strength or running shows first. It never hides a feature.</p>
+<ol class="steps">
+<li>Open <span class="ui"><b>Menu</b> → <b>App settings</b> → <b>Main focus</b></span>. It's at the top of settings, under your training goal.</li>
+<li>Pick <span class="ui"><b>Mostly strength</b></span>, <span class="ui"><b>Strength and running</b></span>, or <span class="ui"><b>Mostly running</b></span>.</li>
+</ol>
+<ul>
+<li><span class="ui"><b>Home</b></span>: the order of the groups and which ones start folded change. <span class="ui"><b>Mostly strength</b></span> folds the running group, <span class="ui"><b>Mostly running</b></span> folds the strength group, and <span class="ui"><b>Strength and running</b></span> keeps both open. On days with no plan, the top card also follows your main focus.</li>
+<li><span class="ui"><b>Stats</b></span> and <span class="ui"><b>Coach</b></span>: the first time you open them, your main focus's section opens (<span class="ui"><b>Strength</b></span> for <span class="ui"><b>Strength and running</b></span>). After that, the last section you viewed opens.</li>
+<li><span class="ui"><b>Menu</b></span>: the order of strength tools, running tools and calculators changes.</li>
+<li>It sets the starting focus when you first make a weekly hybrid plan.</li>
+</ul>
+<p>Main focus is separate from your <a href="#goal">training goal</a>. The goal is what you want (muscle, fat loss and so on); the main focus is what you do. The strength and running modes of 1.9.0 and earlier are gone. The first time you open 1.9.1, your main focus is set once from the mode you used, and Home shows <q class="say">Strength and running now live on one screen. Change what comes first under Settings &gt; Main focus.</q> once.</p>
+</section>
+
 <section class="g-sec" id="account">
 <h2>No account needed</h2>
 <p class="lead">There's no sign-up or login. Your records are stored on this device.</p>
@@ -83,16 +99,15 @@
 
 <section class="g-sec" id="tabs">
 <h2>How the app is laid out</h2>
-<p class="lead">The tabs at the bottom are <span class="ui"><b>Home</b></span>, <span class="ui"><b>Record</b></span>, <span class="ui"><b>Stats</b></span>, <span class="ui"><b>Coach</b></span>, and <span class="ui"><b>Menu</b></span>.</p>
+<p class="lead">The tabs at the bottom are <span class="ui"><b>Home</b></span>, <span class="ui"><b>Record</b></span>, <span class="ui"><b>Stats</b></span>, <span class="ui"><b>Coach</b></span>, and <span class="ui"><b>Menu</b></span>. Strength and running live together in one app.</p>
 <ul>
-<li><span class="ui"><b>Home</b></span>: today's workout, <span class="ui"><b>Quick record</b></span>, <span class="ui"><b>Programs</b></span>, and <span class="ui"><b>My routines</b></span>.</li>
-<li><span class="ui"><b>Record</b></span>: past workouts by date, where you edit or delete them.</li>
-<li><span class="ui"><b>Stats</b></span>: weekly goal, muscle recovery, strength balance, and volume trends.</li>
-<li><span class="ui"><b>Coach</b></span>: PRO+ block programs and readiness coaching. Without PRO+ you'll see an introduction only.</li>
-<li><span class="ui"><b>Menu</b></span>: <span class="ui"><b>App settings</b></span>, <span class="ui"><b>Transfer &amp; backup</b></span>, <span class="ui"><b>Send to trainer</b></span>, calculators, and health app connections.</li>
+<li><span class="ui"><b>Home</b></span>: today's card at the top (today's run on a run day in your plan, today's workout on a strength or circuit day), a start button for the other sport right below it (<span class="ui"><b>Start run</b></span> or <span class="ui"><b>Start strength workout</b></span>), then the <span class="ui"><b>Strength</b></span>, <span class="ui"><b>Running</b></span>, and <span class="ui"><b>Body</b></span> groups. The <span class="ui"><b>Strength</b></span> group has <span class="ui"><b>Quick record</b></span>, <span class="ui"><b>Programs</b></span>, and <span class="ui"><b>My routines</b></span>.</li>
+<li><span class="ui"><b>Record</b></span>: past workouts by date, where you edit or delete them. Filter with the <span class="ui"><b>All workouts</b></span>, <span class="ui"><b>Strength only</b></span>, and <span class="ui"><b>Runs only</b></span> chips.</li>
+<li><span class="ui"><b>Stats</b></span>: pick the <span class="ui"><b>Strength</b></span>, <span class="ui"><b>Running</b></span>, or <span class="ui"><b>Body</b></span> section at the top. Strength has the weekly goal, muscle recovery, strength balance and volume trends; running has distance, pace zones and predictions; body has body composition, weight and cardio fitness.</li>
+<li><span class="ui"><b>Coach</b></span>: a shared area at the top with this week's plan, the interference note and hybrid race prep, then the <span class="ui"><b>Strength</b></span>, <span class="ui"><b>Running</b></span>, and <span class="ui"><b>Body &amp; nutrition</b></span> sections. See <a href="coach.html#overview">How the Coach tab is laid out</a>.</li>
+<li><span class="ui"><b>Menu</b></span>: <span class="ui"><b>App settings</b></span>, <span class="ui"><b>Transfer &amp; backup</b></span>, <span class="ui"><b>Send to trainer</b></span>, strength and running tools, calculators, and health app connections.</li>
 </ul>
-
-<p>Use the dumbbell and runner button at the right of the <span class="ui"><b>Home</b></span> header to switch between strength mode and <a href="running.html#mode">running mode</a>. In running mode, all five tabs turn toward running.</p>
+<p>Your <a href="#mix">main focus</a> sets the order of the groups and which ones start folded. Tap a group's title to fold or open it; the app remembers, and a folded row still shows this week's numbers. While a workout or run is in progress, the top card is the way back to it and there's no start button for the other sport. On iPad and an unfolded iPhone Duo, the app has two panes: a menu on the left with live numbers on each item, and on the right the recovery map at first, then whatever you pick in the menu.</p>
 </section>
 <nav class="g-pager" aria-label="More topics"><a class="g-pager__next" href="running.html"><small>Next</small>Running</a></nav>
 <p class="g-contact">Still stuck? Email <a href="mailto:della.kimko@gmail.com">della.kimko@gmail.com</a> with your device and app version.</p>
