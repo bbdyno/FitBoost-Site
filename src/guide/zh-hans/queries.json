@@ -166,5 +166,7 @@
  "提高 VO2max 的训练": "body#vo2-train",
  "4 分钟间歇周期": "body#vo2-train",
  "把路线发送到 Garmin": "watch#garmin-connect",
- "取消关联 Garmin Connect": "watch#garmin-connect"
+ "取消关联 Garmin Connect": "watch#garmin-connect",
+ "Garmin 记录没有自动导入": "health#runs",
+ "健康应用训练会自动导入吗": "health#import"
 }

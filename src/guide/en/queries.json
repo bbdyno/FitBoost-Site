@@ -167,5 +167,7 @@
  "raise my vo2 max": "body#vo2-train",
  "4x4 interval block": "body#vo2-train",
  "send a course to garmin": "watch#garmin-connect",
- "unlink garmin connect": "watch#garmin-connect"
+ "unlink garmin connect": "watch#garmin-connect",
+ "garmin runs not coming in automatically": "health#runs",
+ "do health app workouts import automatically": "health#import"
 }

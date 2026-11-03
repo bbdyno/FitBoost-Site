@@ -166,5 +166,7 @@
  "VO2maxを上げるトレーニング": "body#vo2-train",
  "4分インターバルのブロック": "body#vo2-train",
  "Garminにコースを送る": "watch#garmin-connect",
- "Garmin Connectの連携を解除": "watch#garmin-connect"
+ "Garmin Connectの連携を解除": "watch#garmin-connect",
+ "Garminの記録が自動で入らない": "health#runs",
+ "ヘルスケアのワークアウトは自動で入る": "health#import"
 }
