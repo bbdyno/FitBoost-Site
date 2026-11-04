@@ -56,7 +56,7 @@
   <li>為了解應用程式的使用情形，我們蒐集<strong>使用統計資料</strong>，但不會傳送訓練紀錄的內容與廣告識別碼。</li>
   <li>免費使用期間會顯示 <strong>Google AdMob 廣告</strong>，為此廣告識別碼與裝置資訊可能會傳送給 Google。訂閱 PRO 後便不再顯示廣告。</li>
   <li>僅在您主動開啟<strong>同齡比較</strong>時，才會在訓練結束時傳送匿名彙總值（年齡層、性別、體重區間、各動作估算1RM最高值）。</li>
-  <li><strong>跑步位置</strong>僅在測量跑步期間使用，保存在裝置與健康 App 中，不會傳送到我們的伺服器。收發路線也不經過伺服器。查看路線地圖時，會從 <strong>OpenFreeMap</strong> 取得所查看區域的地圖圖磚，不會傳送路線與位置。</li>
+  <li><strong>跑步位置</strong>僅在測量跑步期間使用，保存在裝置與健康 App 中，不會傳送到我們的伺服器。收發路線也不經過伺服器。查看路線地圖時，所查看區域的地圖在 iPhone 上來自<strong>Apple 地圖</strong>，在 Android 上來自<strong>Google 地圖</strong>，不會傳送路線與位置。</li>
   <li>開啟 <strong>Garmin Connect 連結</strong>後，用 Garmin 手錶測量的訓練（包括跑步）、睡眠與心率紀錄以及最大攝氧量與體能年齡會經由我們的伺服器（Supabase，首爾）接收。跑步以外的訓練只接收摘要，不接收路線。這些紀錄只在伺服器上保留到您的裝置取走為止（最長 30 天），我們不會出售，也不會用於廣告或 AI 訓練。</li>
 </ul>
 
@@ -89,7 +89,7 @@
 <p>為測量步數、步頻與海拔，會使用動作感測器與氣壓計。在 Android 上，為讀取步數感測器會要求體能活動權限。</p>
 <p>測得的路線與心率等時間序列，在您允許時會寫入健康 App（Apple 健康、Health Connect），健康 App 中沒有位置存放的值以及為保持精確度的輔助副本會保存在裝置內。此副本只放進備份檔案，不會透過裝置間同步上傳到 iCloud 或 Google 雲端硬碟。不允許健康 App 時，同樣的內容只保存在這份副本中。訓練紀錄中只保留距離、時間、平均配速等摘要。位置與路線不會傳送到我們的伺服器或第三方。</p>
 <p>在跑步結果中選擇匯出檔案時，會把路線、時間與海拔放進一個 GPX 檔案，交給您選擇的 App。此時以及傳送由跑過的路線產生的路線時，會截掉起點和終點附近（預設 200m 再隨機加上 0~200m）以及設為隱私區域的地方。您裝置內的紀錄與結果地圖不會被截掉。 匯入其他 App 或手錶匯出的活動檔案（GPX、TCX）時，只在裝置內讀取您選擇的檔案來產生跑步紀錄，不會傳送到我們的伺服器。</p>
-<p>在路線頁面、建立路線時的在地圖上畫以及公開路線中，為繪製底圖，App 會從 OpenFreeMap（由匈牙利 Hyperknot Software Kft. 營運）的公開地圖伺服器（tiles.openfreemap.org）取得螢幕上顯示區域的地圖圖磚。此時，該伺服器及其前端的 Cloudflare 傳輸網路會像一般網頁請求一樣收到連線資訊（IP 位址、所請求地圖圖磚的位址、裝置類型）。<strong>跑過的路線與位置不會傳送到地圖伺服器。</strong>路線線條在裝置內畫在地圖上。不過由於會請求所查看區域的地圖圖磚，該伺服器可以知道您在查看哪個區域的地圖。OpenFreeMap 表示不使用帳號、Cookie 或追蹤，存取紀錄不記錄 IP 位址，錯誤紀錄中可能留下的 IP 位址會在 7 天後刪除（發生安全事件時最長 30 天）（<a href="https://openfreemap.org/privacy/" rel="noopener">OpenFreeMap 隱私權政策</a>）。繪製地圖的 MapLibre 在 App 內運作，不傳送使用統計。跑步中的畫面、跑步結果、路線清單，以及未連上網際網路時，App 不帶底圖、只畫路線線條。地圖來源標示（OpenFreeMap、OpenMapTiles、OpenStreetMap 貢獻者）在地圖右下角的資訊按鈕中。不使用 Google 地圖。</p>
+<p>在路線頁面、建立路線時的在地圖上畫以及公開路線中，底圖由手機的地圖服務繪製：iPhone 使用 Apple 地圖（美國 Apple Inc.），Android 使用 Google 地圖（美國 Google LLC）。由於需要取得螢幕上顯示區域的地圖，該公司會收到連線資訊（IP 位址、所查看的區域、裝置類型）。Android 上的 Google 地圖元件還會向 Google 傳送裝置資訊（系統版本、機型）、元件當機紀錄、用於統計使用者人數的地圖專用假名識別碼，以及平移、縮放等地圖操作紀錄。<strong>跑過的路線與位置不會傳送到地圖服務。</strong>路線線條在裝置內畫在地圖上。各公司依照<a href="https://www.apple.com/legal/privacy/" rel="noopener">Apple 隱私權政策</a>與<a href="https://policies.google.com/privacy" rel="noopener">Google 隱私權政策</a>處理這些資料。</p>
 
 <h3>傳送與接收路線（選用）</h3>
 <p>透過連結、QR 碼或檔案傳送路線時，路線名稱與路線線，以及您選擇時每 100m 的用時，會交給您選擇的 App。不經過我們的伺服器。自動辨識的同一路線、由過去的跑步或檔案產生的路線、收到的路線等來自跑過路線的路線，無論用連結、QR 碼還是檔案傳送，都會在起點和終點附近隨機截掉一段並去除隱私區域後再傳送，附上的紀錄也從截掉後路線的起點重新計算。只有自己畫的路線依所畫原樣傳送。不包含日期、時刻、心率與裝置資訊。</p>
@@ -199,9 +199,14 @@
       <td>Garmin 訓練（跑步含路線，其他訓練只有摘要）、健康摘要與使用者指標（最大攝氧量、體能年齡），您傳送的路線與訓練</td>
     </tr>
     <tr>
-      <td>OpenFreeMap（匈牙利）</td>
-      <td>取得路線頁面、建立路線與公開路線的底圖圖磚</td>
-      <td>連線資訊（IP 位址、所請求地圖圖磚的位址、裝置類型）。不傳送路線與位置。<a href="https://openfreemap.org/privacy/" rel="noopener">隱私權政策</a></td>
+      <td>Apple Maps（美國）</td>
+      <td>iPhone 路線頁面、在地圖上畫、公開路線的底圖</td>
+      <td>連線資訊（IP 位址、所查看的區域、裝置類型）。不傳送路線與位置。<a href="https://www.apple.com/legal/privacy/" rel="noopener">隱私權政策</a></td>
+    </tr>
+    <tr>
+      <td>Google Maps SDK for Android（美國）</td>
+      <td>Android 路線頁面、在地圖上畫、公開路線的底圖</td>
+      <td>連線資訊、裝置資訊、元件當機紀錄、地圖專用假名識別碼、地圖操作紀錄。不傳送路線與位置。<a href="https://policies.google.com/privacy" rel="noopener">隱私權政策</a></td>
     </tr>
   </tbody>
 </table>
