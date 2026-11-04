@@ -124,21 +124,20 @@
 <p class="lead">Tap {{> courseSendToFriend}} at the top of the course screen to open {{> courseSendTitle}}. You see the shape that will be sent first, then send it with {{> courseShareLinkSend}}, {{> courseShareQr}}, or {{> courseShareGpx}}. Nothing goes through a server.</p>
 <ol class="steps">
 <li>Open the course and tap {{> courseSendToFriend}}. A course you just saved on a run result can be sent right there with {{> courseSendToFriend}}.</li>
-<li>Check the faded start and finish in the preview, turn on {{> courseIncludeRecord}} if you want, and pick how to send it.</li>
+<li>In the preview, check for faded parts left out by your privacy zones, turn on {{> courseIncludeRecord}} if you want, and pick how to send it.</li>
 <li>The other person taps the link, or scans the QR code with {{> courseScanQr}} in {{> courseReceive}} from the {{> courseShelfTitle}} row or {{> courseTitle}}, then saves it in the {{> courseReceivedTitle}} window.</li>
 </ol>
-<p>{{> courseReceive}} also has {{> coursePasteLink}} and {{> courseImportFile}}. The camera turns on only when you tap {{> courseScanQr}}. Opened in a phone browser, the link shows the course drawing and distance with a button to open it in the app. Courses made from a route you ran have the start and finish areas hidden at random and your privacy zones removed, whether you send a link, QR code, or file. To hide more places such as home, use {{> courseHideMore}} in the window. Courses you drew go as drawn. Times and heart rate aren't included. An included record carries only the time for each stretch, with no date or clock time, counted again from the start of the trimmed line. For long courses you'll see {{" courseTooLongForLink}}, so send a file.</p>
+<p>{{> courseReceive}} also has {{> coursePasteLink}} and {{> courseImportFile}}. The camera turns on only when you tap {{> courseScanQr}}. Opened in a phone browser, the link shows the course drawing and distance with a button to open it in the app. Courses made from a route you ran aren't cut at the start or finish; only the privacy zones you set in run settings are removed, whether you send a link, QR code, or file. To hide places such as home, use {{> courseHideMore}} in the window. Courses you drew go as drawn. Times and heart rate aren't included. An included record carries only the time for each stretch, with no date or clock time, counted again from the start of the line that remains. For long courses you'll see {{" courseTooLongForLink}}, so send a file.</p>
 </section>
 
 <section id="privacy-zones" data-ask="I don't want to reveal where I live|Hide my starting point|How do I set privacy zones|Hide my location when sharing" data-keys="hide privacy zone zones location home work start finish privacy random radius share reveal">
 <h2>Hiding your location</h2>
-<p class="lead">When you send a course made from a route you ran, or export a run as a file, a random length is cut from around the start and finish. Set areas around home or work as {{> runPrivacyZones}}.</p>
+<p class="lead">The app doesn't cut the start or finish of your route. Set areas around home or work as {{> runPrivacyZones}}, and they're left out when you send a course made from a route you ran, export a run as a file, make a share card, or share a course publicly.</p>
 <ol class="steps">
 <li>Open {{> tabMenu > runSettingsTitle}}.</li>
-<li>Under {{> runSettingsTrim}}, pick a distance to hide (200 m by default). A random 0–200 m is added to it before cutting.</li>
 <li>Under {{> runPrivacyZones}}, tap {{> runPrivacyZoneAdd}} to hide the area around where your most recent run started.</li>
 </ol>
-<p>The center of each hidden circle is moved a little from the real spot and fixed once, so averaging many shared runs doesn't reveal the place. Courses you drew aren't where you actually ran, so they're sent as drawn. Result maps and records on your own device aren't hidden and stay as they are.</p>
+<p>The center of each hidden circle is moved a little from the real spot and fixed once, and each time you share, a random 0–200 m beyond the zone's edge is also left out, so averaging many shared runs doesn't reveal the place. If you set no privacy zones, the whole route goes out as it is. Courses you drew aren't where you actually ran, so they're sent as drawn. Courses sent to Garmin go to your own Garmin account, so the whole course is sent without leaving out privacy zones. Result maps and records on your own device aren't hidden and stay as they are.</p>
 </section>
 
 <section id="watch" data-ask="Record a run with Apple Watch|Track runs with a Garmin watch|Run with Galaxy Watch|It says start on your watch" data-keys="watch apple watch galaxy watch garmin run running vibration course pace range satellite band battery wrist">

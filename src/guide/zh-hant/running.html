@@ -124,21 +124,20 @@
 <p class="lead">點路線頁面開頭的 {{> courseSendToFriend}}，會開啟 {{> courseSendTitle}} 頁面。先看要傳送的樣子，再用 {{> courseShareLinkSend}}、{{> courseShareQr}} 或 {{> courseShareGpx}} 傳送。不經過伺服器。</p>
 <ol class="steps">
 <li>開啟要傳送的路線，點 {{> courseSendToFriend}}。在跑步結果頁面剛儲存的路線，可直接用那裡的 {{> courseSendToFriend}} 傳送。</li>
-<li>在預覽中確認變淡去掉的起點和終點部分，需要時開啟 {{> courseIncludeRecord}}，再選擇傳送方式。</li>
+<li>在預覽中確認是否有因隱私區域而變淡去掉的部分，需要時開啟 {{> courseIncludeRecord}}，再選擇傳送方式。</li>
 <li>對方點連結，或在 {{> courseShelfTitle}} 欄或 {{> courseTitle}} 的 {{> courseReceive}} 中用 {{> courseScanQr}} 掃描 QR 碼，在跳出的 {{> courseReceivedTitle}} 視窗中儲存。</li>
 </ol>
-<p>在 {{> courseReceive}} 中也可以用 {{> coursePasteLink}} 和 {{> courseImportFile}} 接收。只有點 {{> courseScanQr}} 時才會開啟相機。在手機瀏覽器中開啟連結，會顯示路線圖和距離，並有在 App 中開啟的按鈕。由跑過的路線產生的路線，無論用連結、QR 碼還是檔案傳送，都會隨機隱藏起點和終點附近並去掉隱私區域後再傳送。要再隱藏家等地點，可在頁面中的 {{> courseHideMore}} 設定。自己畫的路線依所畫原樣傳送。不包含時間和心率。附帶的紀錄只有每段用時，不含日期和時刻，並從隱藏後剩下線路的起點重新計算。路線較長時會顯示 {{" courseTooLongForLink}}，請用檔案傳送。</p>
+<p>在 {{> courseReceive}} 中也可以用 {{> coursePasteLink}} 和 {{> courseImportFile}} 接收。只有點 {{> courseScanQr}} 時才會開啟相機。在手機瀏覽器中開啟連結，會顯示路線圖和距離，並有在 App 中開啟的按鈕。由跑過的路線產生的路線，無論用連結、QR 碼還是檔案傳送，都不截掉起點和終點附近，只去除在跑步設定中設定的隱私區域後再傳送。要隱藏家等地點，可在頁面中的 {{> courseHideMore}} 設定。自己畫的路線依所畫原樣傳送。不包含時間和心率。附帶的紀錄只有每段用時，不含日期和時刻，並從隱藏後剩下線路的起點重新計算。路線較長時會顯示 {{" courseTooLongForLink}}，請用檔案傳送。</p>
 </section>
 
 <section id="privacy-zones" data-ask="不想暴露住址|想隱藏起點|怎麼設定隱私區域|分享時隱藏位置" data-keys="隱藏 隱私區域 位置 住家 公司 起點 終點 隱私 隨機 半徑 分享 暴露">
 <h2>隱藏位置</h2>
-<p class="lead">傳送由跑過的路線產生的路線，或把跑步匯出為檔案時，會在起點和終點附近隨機截掉一段。住家、公司附近可以設為 {{> runPrivacyZones}}。</p>
+<p class="lead">應用程式不會截掉起點和終點附近。把住家、公司附近設為 {{> runPrivacyZones}} 後，傳送由跑過的路線產生的路線、把跑步匯出為檔案、製作分享卡片和公開路線時都會去除這些地方。</p>
 <ol class="steps">
 <li>開啟 {{> tabMenu > runSettingsTitle}}。</li>
-<li>在 {{> runSettingsTrim}} 中選擇要隱藏的距離（預設 200m）。會在選定距離上隨機加上 0~200m 再截掉。</li>
 <li>在 {{> runPrivacyZones}} 中點 {{> runPrivacyZoneAdd}}，就會隱藏最近一次跑步起點的周圍。</li>
 </ol>
-<p>隱藏圓的中心會從實際位置稍作偏移並只定一次，所以即使多次傳送，也很難靠取平均找出位置。自己畫的路線不是實際跑過的位置，所以依所畫原樣傳送。你裝置裡的結果地圖和紀錄不會被隱藏，保持原樣。</p>
+<p>隱藏圓的中心會從實際位置稍作偏移並只定一次，每次傳送還會隨機多去除區域邊界外 0~200m，所以即使多次傳送，也很難靠取平均找出位置。沒有設定隱私區域時，整條路線會原樣傳出。自己畫的路線不是實際跑過的位置，所以依所畫原樣傳送。傳送到 Garmin 的路線會進入你自己的 Garmin 帳戶，所以不去除隱私區域，傳送整條路線。你裝置裡的結果地圖和紀錄不會被隱藏，保持原樣。</p>
 </section>
 
 <section id="watch" data-ask="用 Apple Watch 記錄跑步|用 Garmin 手錶測量跑步|用 Galaxy Watch 跑步|提示請在手錶上開始" data-keys="手錶 apple watch galaxy watch garmin 跑步 震動 路線 配速 區間 衛星 電量">
