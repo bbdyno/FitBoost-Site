@@ -1,6 +1,6 @@
-<section id="overview" data-ask="통계 탭에서 뭘 볼 수 있나요|이번 주 운동량 보기|지난주와 비교|볼륨 그래프|달리기 통계는 어디 있나요" data-keys="통계 그래프 볼륨 추세 이번주 지난주 비교 목표 사용근육 기간 구획 근력 달리기 몸 체성분 심폐">
-<h2>통계 탭에서 보는 것</h2>
-<p class="lead">{{> tabStats}} 위쪽에서 {{> sectionStrength}}·{{> sectionRunning}}·{{> sectionBody}} 구획을 고릅니다. {{> sectionStrength}}에는 이번 주 목표와 근육 회복, 근력 균형, 볼륨 추세가 위에서부터 차례로 있습니다.</p>
+<section id="overview" data-ask="통계는 어디서 보나요|분석 칸에서 뭘 볼 수 있나요|통계 탭이 없어졌어요|이번 주 운동량 보기|지난주와 비교|볼륨 그래프|달리기 통계는 어디 있나요" data-keys="통계 분석 기록탭 그래프 볼륨 추세 이번주 지난주 비교 목표 사용근육 기간 구획 근력 달리기 몸 체성분 심폐">
+<h2>분석 칸에서 보는 것</h2>
+<p class="lead">{{> tabRecord}} 위쪽에서 {{> recordsViewAnalysis}}을 고르고 {{> sectionStrength}}·{{> sectionRunning}}·{{> sectionBody}} 구획을 고릅니다. 2.0.0에서 통계 탭이 이 칸으로 옮겨 왔습니다. {{> sectionStrength}}에는 맨 위에 이번 주 볼륨과 지난주에 견준 한 줄이 크게 보이고, 그 아래 근육 회복, 근력 균형, 볼륨 추세가 차례로 있습니다.</p>
 <ul>
 <li>{{> statsWeekVsLastWeek}}: 이번 주 운동을 지난주와 비교합니다.</li>
 <li>{{> volumeProgressTrend}}, {{> statsPeriodVolume}}: 볼륨이 어떻게 늘었는지 봅니다.</li>
@@ -26,18 +26,18 @@
 <section id="weight-guide" data-ask="몇 회에 몇 킬로를 들어야 하나요|반복 횟수별 무게|스마트 중량 가이드|1RM으로 훈련 무게 계산" data-keys="중량 가이드 반복 횟수 무게 3회 5회 8회 10회 1rm 추정 곡선">
 <h2>스마트 중량 가이드</h2>
 <p class="lead">운동을 고르면 반복 수마다 들 수 있는 무게와 훈련에 권하는 무게를 보여 줍니다.</p>
-<p>{{> tabStats > deeperAnalysis > smartWeightGuide}}에서 엽니다. 무료는 3·5·8·10회 기본 추정값이고, PRO는 내 기록으로 그린 1–15회 반복-중량 곡선으로 다음 무게를 맞춥니다.</p>
+<p>{{> tabRecord > recordsViewAnalysis > deeperAnalysis > smartWeightGuide}}에서 엽니다. 무료는 3·5·8·10회 기본 추정값이고, PRO는 내 기록으로 그린 1–15회 반복-중량 곡선으로 다음 무게를 맞춥니다.</p>
 </section>
 
 <section id="weekly-report" data-ask="주간 리포트는 어디서 보나요|이번 주 운동 요약|정체기인지 알고 싶어요" data-keys="주간 리포트 요약 코칭 정체 다음주 제안 분석">
 <h2>주간 코칭 리포트 <span class="pro">PRO</span></h2>
 <p class="lead">한 주를 요약하고 정체 신호와 다음 운동 제안을 보여 줍니다.</p>
-<p>{{> tabStats > deeperAnalysis > weeklyCoachingReport}}에서 엽니다. 리포트의 세트 수 제안을 루틴에 바로 반영하는 것은 PRO+입니다.</p>
+<p>{{> tabRecord > recordsViewAnalysis > deeperAnalysis > weeklyCoachingReport}}에서 엽니다. 리포트의 세트 수 제안을 루틴에 바로 반영하는 것은 PRO+입니다.</p>
 </section>
 
 <section id="share" data-ask="기록을 사진으로 공유하고 싶어요|인스타에 올릴 기록 카드|운동 기록 공유" data-keys="공유 카드 이미지 사진 인스타 sns 자랑 복사">
 <h2>기록 카드 공유</h2>
-<p class="lead">{{> tabStats}}의 {{> shareCardsTooltip}} 버튼으로 기록을 그림 카드로 만들어 다른 앱에 보냅니다.</p>
+<p class="lead">{{> tabRecord > recordsViewAnalysis}} 오른쪽 위의 {{> shareCardsTooltip}} 버튼으로 기록을 그림 카드로 만들어 다른 앱에 보냅니다.</p>
 <p>한 번의 운동을 글로 보내려면 {{> tabRecord}}에서 기록의 ⋯ → {{> copySharing}}를 씁니다.</p>
 
 <p>달리기 기록 카드와 꾸미기 편집기는 <a href="sharing.html">기록 공유와 꾸미기</a>에 있습니다.</p>

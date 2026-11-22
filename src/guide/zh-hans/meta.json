@@ -1,12 +1,12 @@
 {
   "topics": [
-    {"slug": "start", "title": "入门", "description": "安装后要做的事、训练目标和主要项目，以及画面结构。"},
+    {"slug": "start", "title": "入门", "description": "安装后要做的事、训练目标和主要项目，以及五个标签页的画面结构。"},
     {"slug": "running", "title": "跑步", "description": "跑步在哪里，用手机和手表测量跑步或导入其他应用的记录，使用配速区间和我的路线。"},
     {"slug": "record", "title": "记录训练", "description": "开始训练、记录每组、结束训练，以及修改过去的记录。"},
     {"slug": "routines", "title": "例行训练与计划", "description": "创建例行训练、生成适合自己的计划、使用动作列表。"},
-    {"slug": "coach", "title": "教练与循环训练", "description": "教练页的结构、下一组重量建议、教练循环训练、每周混合训练计划、周期计划和混合赛备赛。"},
+    {"slug": "coach", "title": "计划、教练与比赛", "description": "计划标签页的结构、力量教练和下一组重量建议、教练循环训练、每周计划、周期计划，以及比赛标签页中的选择比赛、练习和成绩分析。"},
     {"slug": "assessment", "title": "动作评估", "description": "用手机相机测量灵活性、体能、跳跃、杠铃速度和跑姿，查看结果、应用到训练计划并重测的方法。"},
-    {"slug": "stats", "title": "统计与报告", "description": "统计页中的恢复、力量平衡、训练量，以及每周教练报告。"},
+    {"slug": "stats", "title": "分析与报告", "description": "记录标签页的分析中查看的恢复、力量平衡、训练量，以及每周教练报告。"},
     {"slug": "body", "title": "体成分与心肺适能", "description": "从健康应用获取体成分、按设备的趋势、用于饮食和目标，以及测量和提升最大摄氧量。"},
     {"slug": "sharing", "title": "记录分享与装饰", "description": "把跑步和力量训练记录做成分享卡片，用模板和贴纸装饰，调整字体、颜色和照片，并保存到相册或我的模板。"},
     {"slug": "tools", "title": "计算器与工具", "description": "杠铃片、1RM、强度计划计算器，我的器械和训练术语词典。"},
@@ -15,10 +15,11 @@
     {"slug": "sync", "title": "同步与备份", "description": "在设备间同步记录、换新手机、创建备份文件。"},
     {"slug": "trainer", "title": "与教练分享", "description": "把记录发给教练，以及教练查看学员记录的方法。"},
     {"slug": "subscription", "title": "免费与订阅", "description": "免费能用什么、PRO 与 PRO+ 的区别、恢复与取消。"},
-    {"slug": "settings", "title": "设置", "description": "单位、语言、主题、休息计时、小组件和锁屏等设置。"},
+    {"slug": "settings", "title": "设置", "description": "单位、语言、主题颜色、休息计时、小组件和锁屏等设置。"},
     {"slug": "help", "title": "常见问题排查", "description": "手表连接、同步、备份、订阅和跑步定位遇到问题时要检查的事项。"}
   ],
   "popular": [
+    "start#tabs",
     "sync#new-phone",
     "running#mode",
     "watch#garmin",

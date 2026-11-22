@@ -1,18 +1,19 @@
-<section id="start-workout" data-ask="怎麼開始訓練|怎麼開始記錄|用例行訓練開始|想自由訓練" data-keys="開始 訓練 今天 自由 例行 記錄">
+<section id="start-workout" data-ask="怎麼開始訓練|怎麼開始記錄|用例行訓練開始|想自由訓練|今天是跑步日但想做力量訓練" data-keys="開始 訓練 今天 自由 例行 記錄 快捷入口 力量">
 <h2>開始訓練</h2>
-<p class="lead">在 {{> tabHome}} 的今日卡片上點選 {{> actionStart}}。沒有例行訓練時會以空白訓練開始，可以自由記錄。</p>
+<p class="lead">在 {{> tabToday}} 最上方今天訓練的下面點選 {{> actionStart}}。沒有例行訓練時會以空白訓練開始，可以自由記錄。</p>
 <ol class="steps">
-<li>在 {{> tabHome}} 的今日卡片上點選 {{> actionStart}}。</li>
-<li>想換一個例行訓練，點卡片上的 ⋯ 選擇 {{> chooseRoutine}}。</li>
+<li>點選 {{> tabToday}} 最上方的 {{> actionStart}}。今天是跑步日或休息日時，點它下面快捷入口中的 {{> sectionStrength}}。</li>
+<li>想換一個例行訓練，點 {{> actionStart}} 旁的 ⋯ 選擇 {{> chooseRoutine}}。</li>
 <li>新增動作並記錄每組。</li>
 </ol>
-<p>也可以從 {{> tabHome > homeMyRoutines}} 直接開始例行訓練，或透過 {{> tabRecord > histAddWorkout > workoutStart}} 開始。</p>
+<p>也可以從 {{> tabPlan > homeMyRoutines}} 直接開始例行訓練，或透過 {{> tabRecord > histAddWorkout > workoutStart}} 開始。</p>
 </section>
 
 <section id="sets" data-ask="怎麼記錄一組|勾選完成一組|標記熱身組或遞減組|單獨設定某一組的休息時間" data-keys="組 勾選 完成 重量 次數 熱身 遞減 力竭 握法 組類型">
 <h2>記錄每組</h2>
 <p class="lead">填寫重量和次數，點該組那一行的勾，這一組就完成了。</p>
 <ul>
+<li>目前要做的這一組的重量和次數會大字顯示，用旁邊的 − ＋ 按鈕一格一格地調整。點數字可以詳細修改。</li>
 <li>想一次全部完成，點 {{> completeAllSets}}。</li>
 <li>點組號會開啟該組的詳細編輯。可以設定組類型（熱身、遞減、力竭等）、握法、強度和這一組單獨的休息時間。</li>
 <li>想新增遞減組、回退組，或一次安排剩下的組，請看<a href="#drop-backoff">遞減組、回退組與組安排</a>。</li>
@@ -21,14 +22,14 @@
 
 <section id="drop-backoff" data-ask="怎麼加遞減組|回退組怎麼做|組安排推薦|頂組和回退組的重量|遞減組要減多少重量" data-keys="遞減 遞減組 回退 回退組 頂組 組安排 推薦 減重 依據">
 <h2>遞減組、回退組與組安排</h2>
-<p class="lead">點選動作卡片上的 {{> composeChip}}，可以把剩下的組安排成 {{> composeSchemeStraight}}、{{> composeSchemeTopBackoff}} 或 {{> composeSchemeDropFinish}}，並先推薦每組的重量和次數。</p>
+<p class="lead">點選每個動作上的 {{> composeChip}} 標籤，可以把剩下的組安排成 {{> composeSchemeStraight}}、{{> composeSchemeTopBackoff}} 或 {{> composeSchemeDropFinish}}，並先推薦每組的重量和次數。</p>
 <ol class="steps">
-<li>點選動作卡片上的 {{> composeChip}}。</li>
+<li>點選要記錄的動作上的 {{> composeChip}} 標籤。</li>
 <li>選擇安排方式和組數、次數、保留次數，每組的推薦重量會隨之更新。</li>
 <li>點選 {{> composeApplyRecommended}}，或點某一列修改重量和次數後再新增。</li>
 </ol>
 <ul>
-<li>只想加遞減組或回退組時，使用動作卡片 ⋯ 中的 {{> sessionAddDropSet}}、{{> sessionAddBackoffSet}}，或組編輯視窗裡的 {{> sessionAddDropAfterSet}}。</li>
+<li>只想加遞減組或回退組時，使用每個動作 ⋯ 選單中的 {{> sessionAddDropSet}}、{{> sessionAddBackoffSet}}，或組編輯視窗裡的 {{> sessionAddDropAfterSet}}。</li>
 <li>完成遞減組前的那一組後，不休息直接進入遞減組，最後一個遞減組之後再休息，手錶的做法相同。</li>
 <li>最先選好的安排會依<a href="start.html#goal">訓練目標</a>決定。例如力量目標在大動作上用頂組加回退組，增肌目標在適合遞減的器械、纜繩和單關節動作上最後遞減。</li>
 <li>點選 {{> composeSourcesTitle}} 可查看計算重量所依據的研究和教練方法。</li>
@@ -38,7 +39,7 @@
 <section id="effort" data-ask="怎麼記錄每組的強度|輸入 RPE 或 RIR|彈出這一組感覺如何|記錄還剩幾次" data-keys="強度 rpe rir 餘力 輕鬆 吃力 極限 適中 自覺用力 剩餘次數">
 <h2>記錄每組強度</h2>
 <p class="lead">完成一組後，完成按鈕上方會出現一行{{" effortQuickTitle}}和四個選項。選擇後會用於計算下一組重量，不選則直接繼續。</p>
-<p>可在{{> tabMenu > setAppSettings > settingsWorkout > effortPromptSetting}}中選擇{{> effortPromptInline}}、{{> effortPromptSheet}}或{{> effortPromptOff}}。關閉後手錶也不再詢問。要記錄數值，請點按該組填寫 RIR 或 RPE。</p>
+<p>可在{{> tabMe > setAppSettings > settingsWorkout > effortPromptSetting}}中選擇{{> effortPromptInline}}、{{> effortPromptSheet}}或{{> effortPromptOff}}。關閉後手錶也不再詢問。要記錄數值，請點按該組填寫 RIR 或 RPE。</p>
 </section>
 
 <section id="rest-timer" data-ask="休息計時怎麼用|想延長休息時間|跳過休息計時|計時器不出現" data-keys="休息 計時 計時器 間歇 倒數計時 10秒">
@@ -73,7 +74,7 @@
 
 <section id="past" data-ask="想補記已經做過的訓練|忘了記錄昨天的訓練|快速記錄是什麼|按過去的日期新增記錄|補記有氧會自動填卡路里嗎" data-keys="快速記錄 過去 昨天 忘了 補記 日期 新增 計畫 有氧 卡路里 自動 估算">
 <h2>記錄已完成的訓練</h2>
-<p class="lead">用 {{> tabHome}} 的 {{> homeQuickRecord}} 或 {{> tabRecord > histAddWorkout > recordPastWorkout}}，連同日期補錄過去的訓練。</p>
+<p class="lead">用 {{> tabToday}} 快捷入口中的 {{> homeQuickRecord}} 或 {{> tabRecord > histAddWorkout > recordPastWorkout}}，連同日期補錄過去的訓練。</p>
 <p>同一選單的 {{> homeAddScheduled}} 可以把之後的訓練加入日程。有進行中的訓練時 {{> homeQuickRecord}} 打不開，請先結束那次訓練。</p>
 <p>有氧訓練修改時間或距離後，不用點計算機也會立即估算並填入卡路里。手動填寫的卡路里和從健康 App 匯入的值保持不變；沒有體重紀錄時不會估算，而是提示你。</p>
 </section>
@@ -92,17 +93,17 @@
 <section id="body" data-ask="怎麼記錄體重|記錄體重變化|拍體型照片|記錄體脂率" data-keys="體重 體脂 骨骼肌 身體 體組成 照片 體型">
 <h2>記錄體重和照片</h2>
 <p class="lead">在 {{> tabRecord}} 的 {{> body}} 標籤中，用 {{> histAddBody}} 記錄體重、體脂率和骨骼肌量，並查看體組成趨勢。</p>
-<p>體型照片在 {{> photos}} 標籤用 {{> histAddPhoto}} 紀錄。紀錄的體重會用於力量平衡的體重倍數、有氧熱量計算和營養目標。體組成測量結果可以<a href="tools.html#inbody">從檔案匯入</a>或<a href="body.html#health-body">從健康 App 取得</a>，按裝置的趨勢在<a href="body.html#composition">體組成趨勢</a>中。</p>
+<p>{{> body}} 標籤最上方會大字顯示最近的體重以及與上次的差值。體型照片在 {{> photos}} 標籤用 {{> histAddPhoto}} 紀錄。紀錄的體重會用於力量平衡的體重倍數、有氧熱量計算和營養目標。體組成測量結果可以<a href="tools.html#inbody">從檔案匯入</a>或<a href="body.html#health-body">從健康 App 取得</a>，按裝置的趨勢在<a href="body.html#composition">體組成趨勢</a>中。</p>
 </section>
 
 <section id="notes" data-ask="備註寫在哪裡|動作要領備註|想集中檢視備註|附加照片或影片" data-keys="備註 筆記 照片 影片 動作要領 置頂 全部備註">
 <h2>備註</h2>
 <p class="lead">訓練中用動作的 ⋯ → {{> notes}}，結束後在總結頁的 {{> workoutNotes}} 中記錄。</p>
-<p>像動作要領這類要反覆檢視的備註，請在 {{> homeExerciseList}} 中開啟動作，用 {{> addExerciseNote}} 記錄。可以附加照片或影片並置頂。所有備註都能在 {{> tabMenu > menuAllMemos}} 中集中檢視。</p>
+<p>像動作要領這類要反覆檢視的備註，請在 {{> homeExerciseList}} 中開啟動作，用 {{> addExerciseNote}} 記錄。可以附加照片或影片並置頂。所有備註都能在 {{> tabMe > menuAllMemos}} 中集中檢視。</p>
 </section>
 
-<section id="voice" data-ask="能朗讀下一組吗|休息結束語音提醒|開啟語音提示|剩10秒提醒" data-keys="語音 朗讀 提示 休息 10秒 新紀錄 耳機">
-<h2>力量训練語音提示</h2>
-<p class="lead">開啟後，會在休息剩 10 秒和結束時讀出下一組的重量和次數，创新紀錄時也會提醒。</p>
-<p>在{{> tabMenu > setAppSettings > setVoiceCoach}}中開啟。第一次休息時，完成按鈕上方也會出現一行開啟提示。只在打開應用時播报，應用在後台時用通知提醒。手錶會在剩 10 秒時短震一次。</p>
+<section id="voice" data-ask="能朗讀下一組嗎|休息結束語音提醒|開啟語音提示|剩10秒提醒" data-keys="語音 朗讀 提示 休息 10秒 新紀錄 耳機">
+<h2>力量訓練語音提示</h2>
+<p class="lead">開啟後，會在休息剩 10 秒和結束時讀出下一組的重量和次數，創新紀錄時也會提醒。</p>
+<p>在{{> tabMe > setAppSettings > setVoiceCoach}}中開啟。第一次休息時，完成按鈕上方也會出現一行開啟提示。只在開啟 App 時播報，App 在背景時用通知提醒。手錶會在剩 10 秒時短震一次。</p>
 </section>

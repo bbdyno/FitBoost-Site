@@ -1,6 +1,6 @@
 <section id="watch" data-ask="My watch won't connect|Watch not connected|FitBoost doesn't show on my Apple Watch|Galaxy Watch won't connect|Couldn't send to my watch" data-keys="watch connect not working failed error waiting install pair pairing">
 <h2>When your watch won't connect</h2>
-<p class="lead">Use the message under {{> setWatchStatus}} in {{> tabMenu > setAppSettings > setWatch}} to find the cause.</p>
+<p class="lead">Use the message under {{> setWatchStatus}} in {{> tabMe > setAppSettings > setWatch}} to find the cause.</p>
 <ul>
 <li>{{" watchNotPaired}} Check that the phone and watch are paired in the watch's companion app (Watch app or Galaxy Wearable).</li>
 <li>{{" watchAppMissing}} Install FitBoost on your <a href="watch.html#apple-watch">Apple Watch</a> or <a href="watch.html#galaxy-watch">Galaxy Watch</a>.</li>
@@ -23,7 +23,7 @@
 
 <section id="sync" data-ask="Sync isn't working|iCloud sync failed|Google Drive permission|My records don't show on my other device" data-keys="sync failed not working error icloud google drive permission storage full update internet">
 <h2>When sync isn't working</h2>
-<p class="lead">Check the message in {{> tabMenu > setAppSettings > cloudSyncTitle}}.</p>
+<p class="lead">Check the message in {{> tabMe > setAppSettings > cloudSyncTitle}}.</p>
 <ul>
 <li>{{" cloudSyncFailICloudSignedOut}}</li>
 <li>{{" cloudSyncFailDrivePermission}}</li>
@@ -61,7 +61,7 @@
 <section id="cant-start" data-ask="Quick record won't open|It says finish the workout in progress first|I can't start a new workout" data-keys="in progress workout finish first quick record won't open can't start">
 <h2>When it says a workout is in progress</h2>
 <p class="lead">If you see {{" finishWorkoutProgressFirst}}, a workout is still open.</p>
-<p>Go back with {{> homeContinueWorkout}} on today's card in {{> tabHome}} and tap {{> finishWorkout}}, or discard it with {{> workoutFinish}} if you don't need it, then start again.</p>
+<p>Go back with {{> homeContinueWorkout}} at the top of {{> tabToday}} and tap {{> finishWorkout}}, or discard it with {{> workoutFinish}} if you don't need it, then start again.</p>
 
 <p>If you try to add an exercise during a run you'll see {{" exerciseBlockedDuringRun}}, and a run won't start while a strength workout is in progress. Finish the open workout or run first.</p>
 </section>
@@ -97,5 +97,5 @@
 <section id="course-link" data-ask="A course link I received won't open|It says that isn't a course link|Tapping a course link opened a website" data-keys="course link won't open error website browser open in app paste copy broken cut off">
 <h2>When a course link won't open</h2>
 <p class="lead">Tapping a course link opens a course page in your browser. Tap the button there to open it in FitBoost.</p>
-<p>Without the app, you can get it from the same page. If you see {{" courseLinkInvalid}}, the end of the link may have been cut off by the messenger, so ask for it again or get a file instead. Open a copied link with {{> coursePasteLink}} under ⋯ at the top right of {{> tabMenu > courseTitle}}. The course page decodes the course in the link only inside your browser and sends it nowhere.</p>
+<p>Without the app, you can get it from the same page. If you see {{" courseLinkInvalid}}, the end of the link may have been cut off by the messenger, so ask for it again or get a file instead. Open a copied link with {{> tabMe > courseTitle > courseReceive > coursePasteLink}}. The course page decodes the course in the link only inside your browser and sends it nowhere.</p>
 </section>

@@ -2,7 +2,7 @@
 <h2>裝置間同步</h2>
 <p class="lead">在同一帳戶的裝置之間自動同步記錄。iPhone 和 iPad 用 iCloud，Android 用 Google 雲端硬碟。免費。</p>
 <ol class="steps">
-<li>開啟 {{> tabMenu > setAppSettings > cloudSyncTitle}}。</li>
+<li>開啟 {{> tabMe > setAppSettings > cloudSyncTitle}}。</li>
 <li>開啟同步。想立即同步就點 {{> cloudSyncNow}}。</li>
 <li>在另一台裝置上用同一帳戶同樣開啟。</li>
 </ol>
@@ -23,9 +23,9 @@
 <h2>轉移到新手機</h2>
 <p class="lead">同一系統之間用裝置間同步或裝置備份，iPhone 與 Android 之間用備份檔案轉移。</p>
 <ol class="steps">
-<li>在舊手機上點選 {{> tabMenu > backupTitle > backupExportTitle}}。</li>
+<li>在舊手機上點選 {{> tabMe > backupTitle > backupExportTitle}}。</li>
 <li>透過聊天軟體、郵件或雲端硬碟等把檔案發到新手機。</li>
-<li>在新手機上用 {{> tabMenu > backupTitle > backupImportTitle}} 開啟這個檔案。</li>
+<li>在新手機上用 {{> tabMe > backupTitle > backupImportTitle}} 開啟這個檔案。</li>
 <li>選擇 {{> backupModeReplace}}。</li>
 </ol>
 <p>同一系統的話，只要開啟<a href="#sync">裝置間同步</a>即可。如果開啟了裝置備份（iCloud 備份或 Google 自動備份），在新裝置上恢復 App 時記錄也會一起帶過去。訂閱不會隨檔案轉移，請看<a href="subscription.html#restore">還原購買</a>。</p>
@@ -34,13 +34,13 @@
 
 <section id="backup" data-ask="怎麼建立備份檔案|想把記錄存成檔案|給備份加密碼" data-keys="備份 檔案 儲存 匯出 密碼 保管 fitboost">
 <h2>建立備份檔案</h2>
-<p class="lead">用 {{> tabMenu > backupTitle > backupExportTitle}} 把全部記錄存成一個檔案。免費。</p>
+<p class="lead">用 {{> tabMe > backupTitle > backupExportTitle}} 把全部記錄存成一個檔案。免費。</p>
 <p>包含訓練記錄、例行訓練、日程、身體記錄、照片和設定。可以設定密碼，但忘記密碼就無法開啟檔案，請另外記好。</p>
 </section>
 
 <section id="restore" data-ask="匯入備份檔案|替換和合併的區別|想合併兩台裝置的記錄|恢復備份" data-keys="匯入 恢復 讀取 替換 合併 覆蓋 撤銷">
 <h2>匯入備份檔案</h2>
-<p class="lead">在 {{> tabMenu > backupTitle > backupImportTitle}} 中選擇 .fitboost 檔案，再選擇替換或合併。</p>
+<p class="lead">在 {{> tabMe > backupTitle > backupImportTitle}} 中選擇 .fitboost 檔案，再選擇替換或合併。</p>
 <ul>
 <li>{{> backupModeReplace}}（免費）：清除這台裝置上的記錄，換成檔案裡的內容。替換前的記錄會自動備份，可以撤銷。</li>
 <li>{{> backupModeMerge}}（PRO）：把檔案內容加到當前記錄中。同一條記錄保留最後編輯的那份，一方已刪除的記錄會重新出現。</li>

@@ -1,18 +1,19 @@
-<section id="start-workout" data-ask="How do I start a workout|How do I start logging|Start a workout from a routine|I want to train without a plan" data-keys="start begin workout today free routine log logging">
+<section id="start-workout" data-ask="How do I start a workout|How do I start logging|Start a workout from a routine|I want to train without a plan|It's a run day but I want to do strength" data-keys="start begin workout today free routine log logging shortcut shortcuts strength lift">
 <h2>Starting a workout</h2>
-<p class="lead">Tap {{> actionStart}} on today's card in {{> tabHome}}. If you have no routine, you start an empty workout and log freely.</p>
+<p class="lead">Tap {{> actionStart}} under today's workout at the top of {{> tabToday}}. If you have no routine, you start an empty workout and log freely.</p>
 <ol class="steps">
-<li>Tap {{> actionStart}} on today's card in {{> tabHome}}.</li>
-<li>To use a different routine, tap ⋯ on the card and pick {{> chooseRoutine}}.</li>
+<li>Tap {{> actionStart}} at the top of {{> tabToday}}. If today is a run day or a rest day, tap {{> sectionStrength}} in the shortcuts below it.</li>
+<li>To use a different routine, tap ⋯ next to {{> actionStart}} and pick {{> chooseRoutine}}.</li>
 <li>Add exercises and log your sets.</li>
 </ol>
-<p>You can also start a routine straight from {{> tabHome > homeMyRoutines}}, or go to {{> tabRecord > histAddWorkout > workoutStart}}.</p>
+<p>You can also start a routine straight from {{> tabPlan > homeMyRoutines}}, or go to {{> tabRecord > histAddWorkout > workoutStart}}.</p>
 </section>
 
 <section id="sets" data-ask="How do I log a set|Check off a set|Mark warm-up or drop sets|Set a different rest for one set" data-keys="set sets check complete weight reps warm-up warmup drop failure grip set type">
 <h2>Logging sets</h2>
 <p class="lead">Enter the weight and reps, then tap the check on the set row to finish that set.</p>
 <ul>
+<li>The weight and reps of the set you're on are shown large, and the − and + buttons beside them change them one step at a time. Tap a number to edit it in detail.</li>
 <li>To finish them all at once, tap {{> completeAllSets}}.</li>
 <li>Tap the set number to open the set details. Choose the set type (warm-up, drop, failure, and more), grip, effort, and a rest time for that set only.</li>
 <li>To add drop or back-off sets, or plan the remaining sets at once, see <a href="#drop-backoff">Drop sets, back-off sets, and set plans</a>.</li>
@@ -21,9 +22,9 @@
 
 <section id="drop-backoff" data-ask="How do I add a drop set|How do back-off sets work|Set plan suggestion|Back-off weight after a top set|How much do I drop the weight" data-keys="drop drop set back-off backoff top set plan set plan suggest reduce descending strip sources">
 <h2>Drop sets, back-off sets, and set plans</h2>
-<p class="lead">Tap {{> composeChip}} on an exercise to plan the remaining sets as {{> composeSchemeStraight}}, {{> composeSchemeTopBackoff}}, or {{> composeSchemeDropFinish}}, with a suggested weight and reps for every set.</p>
+<p class="lead">Tap the {{> composeChip}} chip on an exercise to plan the remaining sets as {{> composeSchemeStraight}}, {{> composeSchemeTopBackoff}}, or {{> composeSchemeDropFinish}}, with a suggested weight and reps for every set.</p>
 <ol class="steps">
-<li>Tap {{> composeChip}} on the exercise.</li>
+<li>Tap the {{> composeChip}} chip on the exercise you're logging.</li>
 <li>Choose the setup, sets, reps, and reps in reserve. The suggested weight for each set updates.</li>
 <li>Tap {{> composeApplyRecommended}}, or tap a row to change its weight and reps first.</li>
 </ol>
@@ -38,7 +39,7 @@
 <section id="effort" data-ask="How do I log how hard a set was|Enter RPE or RIR|What is the how did that set feel popup|Log reps in reserve" data-keys="effort rpe rir reps in reserve easy hard limit exertion intensity">
 <h2>Logging effort</h2>
 <p class="lead">When you finish a set, {{" effortQuickTitle}} and four chips appear in one row above Done. Pick one to feed your next-weight math, or ignore it to move on without effort.</p>
-<p>Choose how you're asked in {{> tabMenu > setAppSettings > settingsWorkout > effortPromptSetting}}: {{> effortPromptInline}}, {{> effortPromptSheet}} or {{> effortPromptOff}}. If you turn it off, your watch stops asking too. To log numbers, tap the set and enter RIR or RPE.</p>
+<p>Choose how you're asked in {{> tabMe > setAppSettings > settingsWorkout > effortPromptSetting}}: {{> effortPromptInline}}, {{> effortPromptSheet}} or {{> effortPromptOff}}. If you turn it off, your watch stops asking too. To log numbers, tap the set and enter RIR or RPE.</p>
 </section>
 
 <section id="rest-timer" data-ask="How do I use the rest timer|Make my rest longer|Skip the rest timer|The timer doesn't show up" data-keys="rest timer break interval countdown 10 seconds">
@@ -73,7 +74,7 @@
 
 <section id="past" data-ask="Log a workout I already did|I forgot to log yesterday|What is quick record|Add a workout for a past date|Does past cardio fill in calories automatically" data-keys="quick record past yesterday forgot later earlier date add schedule cardio calories automatic estimate">
 <h2>Logging a past workout</h2>
-<p class="lead">Use {{> homeQuickRecord}} in {{> tabHome}} or {{> tabRecord > histAddWorkout > recordPastWorkout}} to enter a workout with its date.</p>
+<p class="lead">Use {{> homeQuickRecord}} in the shortcuts on {{> tabToday}} or {{> tabRecord > histAddWorkout > recordPastWorkout}} to enter a workout with its date.</p>
 <p>{{> homeAddScheduled}} in the same menu puts a future workout on your schedule. {{> homeQuickRecord}} won't open while a workout is in progress, so finish that one first.</p>
 <p>For cardio, changing the time or distance fills in estimated calories right away, no calculator needed. Calories you typed or imported from a health app stay as they are, and without a body weight on record the app tells you instead of guessing.</p>
 </section>
@@ -92,17 +93,17 @@
 <section id="body" data-ask="How do I log my body weight|Track weight changes|Take progress photos|Log body fat" data-keys="body weight bodyweight body fat muscle mass progress photo photos inbody">
 <h2>Body weight and photos</h2>
 <p class="lead">In the {{> body}} tab of {{> tabRecord}}, use {{> histAddBody}} to log weight, body fat, and skeletal muscle mass, and see your body composition trend.</p>
-<p>Progress photos go in the {{> photos}} tab with {{> histAddPhoto}}. Your logged weight is used for strength-to-bodyweight levels, cardio calorie estimates, and nutrition targets. Body composition results can be <a href="tools.html#inbody">imported from a file</a> or <a href="body.html#health-body">read from the health app</a>, and the per-device trend is in the <a href="body.html#composition">body composition trend</a>.</p>
+<p>The top of the {{> body}} tab shows your latest weight in large type with the change from last time. Progress photos go in the {{> photos}} tab with {{> histAddPhoto}}. Your logged weight is used for strength-to-bodyweight levels, cardio calorie estimates, and nutrition targets. Body composition results can be <a href="tools.html#inbody">imported from a file</a> or <a href="body.html#health-body">read from the health app</a>, and the per-device trend is in the <a href="body.html#composition">body composition trend</a>.</p>
 </section>
 
 <section id="notes" data-ask="Where do I add notes|Notes about my form|See all my notes in one place|Attach a photo or video" data-keys="notes note memo photo video form pin all memos">
 <h2>Notes</h2>
 <p class="lead">During a workout, use ⋯ → {{> notes}} on an exercise. Afterwards, use {{> workoutNotes}} on the summary.</p>
-<p>For notes you'll keep coming back to, like form cues, open the exercise in {{> homeExerciseList}} and use {{> addExerciseNote}}. You can attach photos or videos and pin notes to the top. See every note in {{> tabMenu > menuAllMemos}}.</p>
+<p>For notes you'll keep coming back to, like form cues, open the exercise in {{> homeExerciseList}} and use {{> addExerciseNote}}. You can attach photos or videos and pin notes to the top. See every note in {{> tabMe > menuAllMemos}}.</p>
 </section>
 
 <section id="voice" data-ask="Can it read my next set out loud|voice cue when rest ends|turn on voice coach|ten seconds left announcement" data-keys="voice audio spoken coach rest next set record earphones">
 <h2>Voice coach for lifts</h2>
 <p class="lead">With it on, your next set's weight and reps are read out at 10 seconds left and when rest ends, and new records are called out.</p>
-<p>Turn it on in {{> tabMenu > setAppSettings > setVoiceCoach}}. The first time you rest, a one-row offer also appears above Done. It speaks only while the app is open; otherwise you get a notification. Watches buzz once at 10 seconds.</p>
+<p>Turn it on in {{> tabMe > setAppSettings > setVoiceCoach}}. The first time you rest, a one-row offer also appears above Done. It speaks only while the app is open; otherwise you get a notification. Watches buzz once at 10 seconds.</p>
 </section>

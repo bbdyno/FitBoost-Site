@@ -1,6 +1,6 @@
-<section id="overview" data-ask="統計タブで何が見られますか|今週のトレーニング量を見たい|先週と比べたい|ボリュームのグラフ|ランの統計はどこですか" data-keys="統計 グラフ ボリューム 推移 今週 先週 比較 目標 使用した筋肉 期間 セクション 筋トレ ランニング からだ 体組成 心肺">
-<h2>統計タブで見られること</h2>
-<p class="lead">{{> tabStats}}の上で{{> sectionStrength}}・{{> sectionRunning}}・{{> sectionBody}}のセクションを選びます。{{> sectionStrength}}には、今週の目標、筋肉の回復、筋力バランス、ボリュームの推移が上から順に並んでいます。</p>
+<section id="overview" data-ask="統計はどこで見られますか|分析タブで何が見られますか|統計タブがなくなりました|今週のトレーニング量を見たい|先週と比べたい|ボリュームのグラフ|ランの統計はどこですか" data-keys="統計 分析 記録タブ グラフ ボリューム 推移 今週 先週 比較 目標 使用した筋肉 期間 セクション 筋トレ ランニング からだ 体組成 心肺">
+<h2>分析タブで見られること</h2>
+<p class="lead">{{> tabRecord}}の上で{{> recordsViewAnalysis}}を選び、{{> sectionStrength}}・{{> sectionRunning}}・{{> sectionBody}}のセクションを選びます。2.0.0で統計タブがここに移りました。{{> sectionStrength}}には、いちばん上に今週のボリュームと先週と比べたひとことが大きく表示され、その下に筋肉の回復、筋力バランス、ボリュームの推移が順に並んでいます。</p>
 <ul>
 <li>{{> statsWeekVsLastWeek}}：今週のトレーニングを先週と比べます。</li>
 <li>{{> volumeProgressTrend}}、{{> statsPeriodVolume}}：ボリュームがどう伸びたかを見ます。</li>
@@ -26,18 +26,18 @@
 <section id="weight-guide" data-ask="何回なら何キロ持てばいいですか|回数ごとの重量|スマート重量ガイド|1RMからトレーニング重量を計算" data-keys="重量 ガイド 回数 レップ 3回 5回 8回 10回 1rm 推定 カーブ">
 <h2>スマート重量ガイド</h2>
 <p class="lead">種目を選ぶと、回数ごとに持てる重量とトレーニングにすすめる重量を表示します。</p>
-<p>{{> tabStats > deeperAnalysis > smartWeightGuide}}で開きます。無料は3・5・8・10回の基本推定値で、PROは自分の記録から描いた1–15回の回数・重量カーブで次の重量を合わせます。</p>
+<p>{{> tabRecord > recordsViewAnalysis > deeperAnalysis > smartWeightGuide}}で開きます。無料は3・5・8・10回の基本推定値で、PROは自分の記録から描いた1–15回の回数・重量カーブで次の重量を合わせます。</p>
 </section>
 
 <section id="weekly-report" data-ask="週間レポートはどこで見られますか|今週のまとめ|停滞しているか知りたい" data-keys="週間 レポート まとめ コーチング 停滞 来週 提案 分析">
 <h2>週間コーチングレポート <span class="pro">PRO</span></h2>
 <p class="lead">1週間をまとめ、停滞のサインと次のワークアウトの提案を表示します。</p>
-<p>{{> tabStats > deeperAnalysis > weeklyCoachingReport}}で開きます。レポートのセット数の提案をルーティンにそのまま反映する機能はPRO+です。</p>
+<p>{{> tabRecord > recordsViewAnalysis > deeperAnalysis > weeklyCoachingReport}}で開きます。レポートのセット数の提案をルーティンにそのまま反映する機能はPRO+です。</p>
 </section>
 
 <section id="share" data-ask="記録を画像で共有したい|インスタに載せる記録カード|ワークアウトを共有" data-keys="共有 カード 画像 写真 インスタ sns コピー">
 <h2>記録カードの共有</h2>
-<p class="lead">{{> tabStats}}の{{> shareCardsTooltip}}ボタンで、記録を画像カードにしてほかのアプリに送ります。</p>
+<p class="lead">{{> tabRecord > recordsViewAnalysis}}の右上にある{{> shareCardsTooltip}}ボタンで、記録を画像カードにしてほかのアプリに送ります。</p>
 <p>1回のワークアウトをテキストで送るには、{{> tabRecord}}で記録の⋯ → {{> copySharing}}を使います。</p>
 
 <p>ランの共有カードと編集画面は<a href="sharing.html">記録の共有とカスタマイズ</a>にあります。</p>

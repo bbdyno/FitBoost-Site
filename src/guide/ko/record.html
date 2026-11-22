@@ -1,18 +1,19 @@
-<section id="start-workout" data-ask="운동을 시작하려면|운동 기록은 어떻게 시작하나요|루틴으로 운동 시작|자유롭게 운동하고 싶어요" data-keys="시작 운동시작 오늘 자유 운동 루틴 기록하기">
+<section id="start-workout" data-ask="운동을 시작하려면|운동 기록은 어떻게 시작하나요|루틴으로 운동 시작|자유롭게 운동하고 싶어요|달리기 날인데 근력 운동을 하고 싶어요" data-keys="시작 운동시작 오늘 자유 운동 루틴 기록하기 바로가기 근력">
 <h2>운동 시작하기</h2>
-<p class="lead">{{> tabHome}}의 오늘 카드에서 {{> actionStart}}를 누르면 됩니다. 루틴이 없으면 빈 운동으로 시작해 자유롭게 기록합니다.</p>
+<p class="lead">{{> tabToday}} 맨 위 오늘 운동 아래의 {{> actionStart}}를 누르면 됩니다. 루틴이 없으면 빈 운동으로 시작해 자유롭게 기록합니다.</p>
 <ol class="steps">
-<li>{{> tabHome}}의 오늘 카드에서 {{> actionStart}}를 누릅니다.</li>
-<li>다른 루틴으로 하려면 카드의 ⋯에서 {{> chooseRoutine}}을 고릅니다.</li>
+<li>{{> tabToday}} 맨 위의 {{> actionStart}}를 누릅니다. 오늘이 달리기 날이나 쉬는 날이면 그 아래 바로가기의 {{> sectionStrength}}을 누릅니다.</li>
+<li>다른 루틴으로 하려면 {{> actionStart}} 옆 ⋯에서 {{> chooseRoutine}}을 고릅니다.</li>
 <li>운동을 더하고 세트를 기록합니다.</li>
 </ol>
-<p>{{> tabHome > homeMyRoutines}}에서 루틴을 바로 시작하거나, {{> tabRecord > histAddWorkout > workoutStart}}로 시작할 수도 있습니다.</p>
+<p>{{> tabPlan > homeMyRoutines}}에서 루틴을 바로 시작하거나, {{> tabRecord > histAddWorkout > workoutStart}}로 시작할 수도 있습니다.</p>
 </section>
 
 <section id="sets" data-ask="세트는 어떻게 기록하나요|세트 완료 체크|웜업 세트 드롭 세트 표시|세트 휴식 시간을 따로 정하고 싶어요" data-keys="세트 체크 완료 무게 횟수 반복 웜업 드롭 실패 그립 세트타입">
 <h2>세트 기록하기</h2>
 <p class="lead">무게와 횟수를 적고 세트 줄의 체크를 누르면 그 세트가 끝납니다.</p>
 <ul>
+<li>지금 할 세트의 무게와 횟수가 크게 보이고, 옆의 − ＋ 단추로 한 칸씩 고칩니다. 수를 누르면 자세히 고칩니다.</li>
 <li>한꺼번에 끝내려면 {{> completeAllSets}}를 누릅니다.</li>
 <li>세트 번호를 누르면 그 세트를 자세히 고치는 창이 열립니다. 세트 타입(웜업·드롭·실패 등), 그립, 강도, 그 세트만의 휴식 시간을 정합니다.</li>
 <li>드롭·백오프 세트를 넣거나 남은 세트를 한 번에 짜려면 <a href="#drop-backoff">드롭·백오프와 세트 구성</a>을 보세요.</li>
@@ -21,14 +22,14 @@
 
 <section id="drop-backoff" data-ask="드롭 세트 넣는 법|백오프 세트는 어떻게 하나요|세트 구성 추천|탑셋 백오프 무게 계산|드롭 세트 무게를 얼마나 내려요" data-keys="드롭 드롭세트 백오프 탑셋 탑세트 구성 세트구성 추천 감량 디센딩 스트립 근거">
 <h2>드롭·백오프와 세트 구성</h2>
-<p class="lead">운동 카드의 {{> composeChip}}을 누르면 남은 세트를 {{> composeSchemeStraight}}·{{> composeSchemeTopBackoff}}·{{> composeSchemeDropFinish}} 가운데 하나로 짜고, 세트마다 무게와 횟수를 먼저 권합니다.</p>
+<p class="lead">운동마다 있는 {{> composeChip}} 칩을 누르면 남은 세트를 {{> composeSchemeStraight}}·{{> composeSchemeTopBackoff}}·{{> composeSchemeDropFinish}} 가운데 하나로 짜고, 세트마다 무게와 횟수를 먼저 권합니다.</p>
 <ol class="steps">
-<li>운동 카드의 {{> composeChip}}을 누릅니다.</li>
+<li>기록할 운동의 {{> composeChip}} 칩을 누릅니다.</li>
 <li>구성과 세트 수·횟수·남길 여유를 고르면 세트마다 추천 무게가 바뀝니다.</li>
 <li>{{> composeApplyRecommended}}를 누르거나, 줄을 눌러 무게·횟수를 고친 뒤 넣습니다.</li>
 </ol>
 <ul>
-<li>드롭이나 백오프만 붙이려면 운동 카드 ⋯의 {{> sessionAddDropSet}}·{{> sessionAddBackoffSet}}, 세트 편집 창의 {{> sessionAddDropAfterSet}}를 씁니다.</li>
+<li>드롭이나 백오프만 붙이려면 운동별 ⋯ 메뉴의 {{> sessionAddDropSet}}·{{> sessionAddBackoffSet}}, 세트 편집 창의 {{> sessionAddDropAfterSet}}를 씁니다.</li>
 <li>드롭 앞 세트를 끝내면 쉬지 않고 바로 드롭으로 넘어가고, 마지막 드롭 뒤에 쉽니다. 시계에서도 같습니다.</li>
 <li>처음 골라진 구성은 <a href="start.html#goal">운동 목표</a>를 따릅니다. 예를 들어 근력은 큰 운동에 탑셋 + 백오프, 근비대는 드롭이 맞는 머신·케이블·고립 운동에 마지막 드롭으로 엽니다.</li>
 <li>{{> composeSourcesTitle}}를 누르면 무게 계산에 쓴 연구와 코칭 방법을 볼 수 있습니다.</li>
@@ -38,7 +39,7 @@
 <section id="effort" data-ask="세트 강도는 어떻게 남기나요|RPE RIR 입력|이번 세트 어땠나요가 떠요|여유 몇 개 남았는지 적기" data-keys="강도 rpe rir 여유 힘듦 한계 적당 운동자각도 남은횟수">
 <h2>세트 강도 남기기</h2>
 <p class="lead">세트를 끝내면 완료 버튼 위에 {{" effortQuickTitle}}와 네 단계 칩이 한 줄로 뜹니다. 고르면 다음 무게 계산에 반영되고, 안 누르면 강도 없이 넘어갑니다.</p>
-<p>묻는 방식은 {{> tabMenu > setAppSettings > settingsWorkout > effortPromptSetting}}에서 {{> effortPromptInline}}·{{> effortPromptSheet}}·{{> effortPromptOff}} 중에 고릅니다. 묻지 않기로 하면 시계도 묻지 않습니다. 숫자로 남기려면 세트를 눌러 RIR이나 RPE를 적습니다.</p>
+<p>묻는 방식은 {{> tabMe > setAppSettings > settingsWorkout > effortPromptSetting}}에서 {{> effortPromptInline}}·{{> effortPromptSheet}}·{{> effortPromptOff}} 중에 고릅니다. 묻지 않기로 하면 시계도 묻지 않습니다. 숫자로 남기려면 세트를 눌러 RIR이나 RPE를 적습니다.</p>
 </section>
 
 <section id="rest-timer" data-ask="휴식 타이머 쓰는 법|쉬는 시간을 늘리고 싶어요|휴식 타이머 건너뛰기|타이머가 안 떠요" data-keys="휴식 타이머 쉬는시간 인터벌 카운트다운 10초">
@@ -73,7 +74,7 @@
 
 <section id="past" data-ask="이미 한 운동을 나중에 기록하고 싶어요|어제 운동을 깜빡했어요|빠른기록은 뭔가요|지난 날짜로 기록 추가|지난 유산소 칼로리가 자동으로 채워지나요" data-keys="빠른기록 지난 어제 깜빡 나중에 과거 날짜 추가 예정 유산소 칼로리 자동 추정">
 <h2>이미 한 운동 기록하기</h2>
-<p class="lead">{{> tabHome}}의 {{> homeQuickRecord}}이나 {{> tabRecord > histAddWorkout > recordPastWorkout}}로 지난 운동을 날짜와 함께 적어 넣습니다.</p>
+<p class="lead">{{> tabToday}} 바로가기의 {{> homeQuickRecord}}이나 {{> tabRecord > histAddWorkout > recordPastWorkout}}로 지난 운동을 날짜와 함께 적어 넣습니다.</p>
 <p>같은 메뉴의 {{> homeAddScheduled}}로 앞으로 할 운동을 일정에 넣을 수도 있습니다. 진행 중인 운동이 있으면 {{> homeQuickRecord}}이 열리지 않으니 먼저 그 운동을 끝내 주세요.</p>
 <p>유산소는 시간이나 거리를 고치면 계산기를 누르지 않아도 칼로리를 추정해 바로 채웁니다. 직접 적은 칼로리와 건강 앱에서 가져온 값은 그대로 두고, 몸무게 기록이 없으면 추정하지 않고 알려 드립니다.</p>
 </section>
@@ -92,17 +93,17 @@
 <section id="body" data-ask="몸무게 기록하는 법|체중 변화 기록|눈바디 사진 남기기|체지방률 기록" data-keys="몸무게 체중 체지방 골격근 신체 인바디 눈바디 사진 포토 바디프로필">
 <h2>체중과 사진 기록</h2>
 <p class="lead">{{> tabRecord}}의 {{> body}} 칸에서 {{> histAddBody}}로 체중·체지방률·골격근량을 남기고, 체성분 추세를 봅니다.</p>
-<p>몸 사진은 {{> photos}} 칸의 {{> histAddPhoto}}로 남깁니다. 남긴 체중은 근력 균형의 체중 대비 수준, 유산소 칼로리 계산, 영양 목표에 쓰입니다. 체성분 측정 결과는 <a href="tools.html#inbody">파일로 불러오거나</a> <a href="body.html#health-body">건강 앱에서 받을</a> 수 있고, 기기별 추세는 <a href="body.html#composition">체성분 추세</a>에 있습니다.</p>
+<p>{{> body}} 칸 맨 위에는 최근 체중과 지난번과의 차이가 크게 보입니다. 몸 사진은 {{> photos}} 칸의 {{> histAddPhoto}}로 남깁니다. 남긴 체중은 근력 균형의 체중 대비 수준, 유산소 칼로리 계산, 영양 목표에 쓰입니다. 체성분 측정 결과는 <a href="tools.html#inbody">파일로 불러오거나</a> <a href="body.html#health-body">건강 앱에서 받을</a> 수 있고, 기기별 추세는 <a href="body.html#composition">체성분 추세</a>에 있습니다.</p>
 </section>
 
 <section id="notes" data-ask="메모는 어디에 남기나요|운동 자세 메모|메모를 모아 보고 싶어요|사진이나 동영상 첨부" data-keys="메모 노트 사진 동영상 영상 자세 고정 전체메모">
 <h2>메모</h2>
 <p class="lead">운동 중에는 운동별 ⋯ → {{> notes}}, 끝난 뒤에는 요약 화면의 {{> workoutNotes}}에 남깁니다.</p>
-<p>자세처럼 계속 볼 메모는 {{> homeExerciseList}}에서 운동을 열고 {{> addExerciseNote}}로 남기세요. 사진·동영상을 붙이고 위에 고정할 수 있습니다. 모든 메모는 {{> tabMenu > menuAllMemos}}에서 모아 봅니다.</p>
+<p>자세처럼 계속 볼 메모는 {{> homeExerciseList}}에서 운동을 열고 {{> addExerciseNote}}로 남기세요. 사진·동영상을 붙이고 위에 고정할 수 있습니다. 모든 메모는 {{> tabMe > menuAllMemos}}에서 모아 봅니다.</p>
 </section>
 
 <section id="voice" data-ask="휴식이 끝나면 음성으로 알려 주나요|다음 세트 무게를 읽어 주나요|음성 안내 켜기|10초 남았다고 말해 줘요" data-keys="음성 안내 목소리 읽어주기 휴식 10초 신기록 이어폰">
 <h2>근력 운동 음성 안내</h2>
 <p class="lead">켜 두면 휴식이 10초 남았을 때와 끝날 때 다음 세트 무게·횟수를 읽어 주고, 신기록이면 알려 줍니다.</p>
-<p>{{> tabMenu > setAppSettings > setVoiceCoach}}에서 켭니다. 처음 쉴 때 완료 버튼 위에 켜기를 권하는 한 줄도 뜹니다. 앱을 보고 있을 때만 말하고, 앱이 뒤에 있으면 알림으로 알립니다. 시계는 10초 전에 짧게 진동합니다.</p>
+<p>{{> tabMe > setAppSettings > setVoiceCoach}}에서 켭니다. 처음 쉴 때 완료 버튼 위에 켜기를 권하는 한 줄도 뜹니다. 앱을 보고 있을 때만 말하고, 앱이 뒤에 있으면 알림으로 알립니다. 시계는 10초 전에 짧게 진동합니다.</p>
 </section>

@@ -1,6 +1,6 @@
 <section id="watch" data-ask="手錶連不上|手錶連線不了|Apple Watch 上沒有 FitBoost|Galaxy Watch 連不上|傳送到手錶失敗" data-keys="手錶 連線 連不上 失敗 錯誤 等待 安裝 配對">
 <h2>手錶連不上時</h2>
-<p class="lead">根據 {{> tabMenu > setAppSettings > setWatch}} 中 {{> setWatchStatus}} 顯示的文字找出原因。</p>
+<p class="lead">根據 {{> tabMe > setAppSettings > setWatch}} 中 {{> setWatchStatus}} 顯示的文字找出原因。</p>
 <ul>
 <li>{{" watchNotPaired}}請在手錶的配套 App（Watch App 或 Galaxy Wearable）中確認手機和手錶已配對。</li>
 <li>{{" watchAppMissing}}請在 <a href="watch.html#apple-watch">Apple Watch</a> 或 <a href="watch.html#galaxy-watch">Galaxy Watch</a> 上安裝 FitBoost。</li>
@@ -23,7 +23,7 @@
 
 <section id="sync" data-ask="同步不了|iCloud 同步失敗|Google 雲端硬碟權限|另一台裝置上看不到記錄" data-keys="同步 失敗 不了 錯誤 icloud google drive 雲端硬碟 權限 空間 更新 網路">
 <h2>同步不了時</h2>
-<p class="lead">檢視 {{> tabMenu > setAppSettings > cloudSyncTitle}} 中顯示的文字。</p>
+<p class="lead">檢視 {{> tabMe > setAppSettings > cloudSyncTitle}} 中顯示的文字。</p>
 <ul>
 <li>{{" cloudSyncFailICloudSignedOut}}</li>
 <li>{{" cloudSyncFailDrivePermission}}</li>
@@ -61,7 +61,7 @@
 <section id="cant-start" data-ask="快速記錄打不開|提示請先完成進行中的訓練|無法開始新的訓練" data-keys="進行中 訓練 先完成 快速記錄 打不開 無法開始">
 <h2>提示有進行中的訓練時</h2>
 <p class="lead">看到 {{" finishWorkoutProgressFirst}} 時，說明還有未結束的訓練。</p>
-<p>用 {{> tabHome}} 今日卡片上的 {{> homeContinueWorkout}} 回去並點選 {{> finishWorkout}}；如果不需要，就用 {{> workoutFinish}} 丟棄後重新開始。</p>
+<p>用 {{> tabToday}} 最上方的 {{> homeContinueWorkout}} 回去並點選 {{> finishWorkout}}；如果不需要，就用 {{> workoutFinish}} 丟棄後重新開始。</p>
 
 <p>跑步中想添加動作時會顯示 {{" exerciseBlockedDuringRun}}，有進行中的力量訓練時也不能開始跑步。請先結束開啟的訓練或跑步。</p>
 </section>
@@ -97,5 +97,5 @@
 <section id="course-link" data-ask="收到的路線連結打不開|提示這不是路線連結|點路線連結開啟的是網站" data-keys="路線 連結 打不開 錯誤 網站 瀏覽器 在App中開啟 貼上 複製 損壞 截斷">
 <h2>路線連結打不開時</h2>
 <p class="lead">點路線連結會在瀏覽器中開啟路線頁面。在那裡點在 App 中開啟的按鈕，就會轉到 FitBoost。</p>
-<p>沒有安裝 App 時，可以在同一頁面下載。顯示 {{" courseLinkInvalid}} 時，連結結尾可能被通訊軟體截斷了，請重新取得或改用檔案。複製的連結可以透過 {{> tabMenu > courseTitle}} 右上角 ⋯ 中的 {{> coursePasteLink}} 開啟。路線頁面只在瀏覽器內解開連結中的路線並顯示，不會傳送到任何地方。</p>
+<p>沒有安裝 App 時，可以在同一頁面下載。顯示 {{" courseLinkInvalid}} 時，連結結尾可能被通訊軟體截斷了，請重新取得或改用檔案。複製的連結可以透過 {{> tabMe > courseTitle > courseReceive > coursePasteLink}} 開啟。路線頁面只在瀏覽器內解開連結中的路線並顯示，不會傳送到任何地方。</p>
 </section>

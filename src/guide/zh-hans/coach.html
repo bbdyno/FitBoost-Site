@@ -1,21 +1,22 @@
-<section id="overview" data-ask="教练页是怎样的结构|教练页最上方那一栏是什么|力量教练和跑步教练在哪里|切换教练页的分区" data-keys="教练页 结构 公共区 最上方 分区 力量 跑步 身体 营养 本周 计划 干扰 比赛 混合赛 锁定 免费">
-<h2>教练页的结构</h2>
-<p class="lead">{{> tabCoach}} 最上方的公共区有 {{> hybridPlanWeekTitle}}、干扰提示和 {{> runKindHybridRace}}，下面选择{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBodyNutrition}}分区。</p>
+<section id="overview" data-ask="计划页是怎样的结构|教练页去哪了|力量教练和跑步教练在哪里|切换教练画面的分区|计划页的胶囊按钮是什么" data-keys="计划页 计划标签 计划 教练页 教练标签 教练 结构 胶囊 按钮 组成 内容 分区 身体 营养 本周 十二周 12周 条 阶段 基础 专项 实战 减量 干扰 比赛 备赛 锁定 免费">
+<h2>计划页与教练画面</h2>
+<p class="lead">{{> tabPlan}} 里有本周每天要做的训练和 {{> planSourcesTitle}} 胶囊按钮。2.0.0 取消了教练页，改用 {{> planCoachStrength}}、{{> planCoachRunning}} 胶囊按钮打开教练画面。</p>
 <ul>
-<li>{{> hybridPlanWeekTitle}} <span class="pro">PRO+</span>：显示本周每天要做的训练（教练训练、例行、循环训练、跑步）以及完成和错过的日子。不是 PRO+ 时为锁定的 {{> coachPlanMakeTitle}} 一行。见<a href="#hybrid">每周混合训练计划</a>。</li>
+<li>最上方的条：设定了比赛日期时，显示把到比赛为止的十二周按 {{> planPhaseShortBase}}、{{> planPhaseShortBuild}}、{{> planPhaseShortPeak}}、{{> planPhaseShortTaper}} 阶段画出的条。没有备赛但有每周计划时，显示本周每天按项目颜色立起柱子的条。</li>
+<li>{{> planWeekThis}} <span class="pro">PRO+</span>：从周一到周日显示每天要做的训练（教练训练、例行、循环训练、跑步）以及完成和错过的日子，没有计划的那天是 {{> coachRestDay}}。点一行会打开计划画面。不是 PRO+ 时为锁定的 {{> coachPlanMakeTitle}} 一行。见<a href="#hybrid">每周计划</a>。</li>
 <li>{{> coachInterferenceTitle}}：最近同时有力量和跑步时出现。见<a href="running.html#strength">与力量训练联动的处方</a>。</li>
-<li>{{> runKindHybridRace}}：打开<a href="#race">混合赛备赛</a>。</li>
-<li>{{> sectionStrength}}：<a href="#plan">周期计划</a>、减量和状态检查。只有动作评估一行免费，其余为 PRO+。</li>
-<li>{{> sectionRunning}}：<a href="running.html#coach">跑步教练</a>。免费。</li>
-<li>{{> sectionBodyNutrition}}：<a href="body.html#vo2">心肺适能</a>（免费），<a href="#nutrition">营养目标</a>、<a href="body.html#body-coach">体成分指导</a>以及压力与恢复（PRO+）。</li>
+<li>{{> raceHubTitle}} 胶囊按钮：跳转到 {{> tabRace}}。见<a href="#race">备赛与练习</a>。</li>
+<li>{{> sectionStrength}} 胶囊按钮：{{> planCoachStrength}}（<a href="#plan">周期计划</a>、减量和状态检查。只有动作评估一行免费，其余为 PRO+）、{{> homePrograms}}、{{> homeMyRoutines}}、{{> assessEntryTitle}}、{{> circuitTitle}}。</li>
+<li>{{> sectionRunning}} 胶囊按钮：{{> planCoachRunning}}（<a href="running.html#coach">跑步教练</a>，免费）、{{> assessEntryRunTitle}}、{{> runZonesTitle}}。</li>
+<li>教练画面的{{> sectionBodyNutrition}}分区：<a href="body.html#vo2">心肺适能</a>（免费），<a href="#nutrition">营养目标</a>、<a href="body.html#body-coach">体成分指导</a>以及压力与恢复（PRO+）。在教练画面上方的分区切换中打开。</li>
 </ul>
-<p>第一次会打开<a href="start.html#mix">主要项目</a>的分区（{{> trainingMixHybrid}}为{{> sectionStrength}}），之后打开上次查看的分区。分区的位置始终按{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBodyNutrition}}排列。</p>
+<p>胶囊按钮中力量和跑步的顺序跟随<a href="start.html#mix">主要项目</a>。教练画面会以所点胶囊按钮对应的分区打开，上方分区切换的位置始终按{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBodyNutrition}}排列。</p>
 </section>
 
 <section id="next-weight" data-ask="会告诉我下一组的重量吗|下一组该举多重|训练中教练建议|什么时候该停" data-keys="下一组 重量 建议 推荐 教练 组 停止 疲劳 顶组 递减组 热身 计算">
 <h2>训练中的下一组重量建议 <span class="pro">PRO</span></h2>
 <p class="lead">完成一组并记录强度后，会据此告诉你下一组的重量，以及今天何时该停。</p>
-<p>建议可在 {{> tabMenu > setAppSettings > settingsWorkout > setSessionCoach}} 中开关。免费用户每次训练会看到一次试用提示。PRO+ 还会根据顶组强度当场调整递减组重量，并预先填好热身组。</p>
+<p>建议可在 {{> tabMe > setAppSettings > settingsWorkout > setSessionCoach}} 中开关。免费用户每次训练会看到一次试用提示。PRO+ 还会根据顶组强度当场调整递减组重量，并预先填好热身组。</p>
 <p>建议仅供训练参考，不是医疗建议。如有疼痛，请减轻重量并用 <a href="record.html#exercise-menu">{{> painHereAction}}</a> 记录。</p>
 </section>
 
@@ -23,74 +24,98 @@
 <h2>教练循环训练</h2>
 <p class="lead">选择时长、器械和强度，就会安排当天的循环训练。免费每周 3 次，PRO 不限。</p>
 <ol class="steps">
-<li>点击 {{> tabHome > homePrograms > circuitTitle}}。也可以在今日卡片的 ⋯ → {{> circuitEntry}} 打开。</li>
+<li>点击 {{> tabToday}} 快捷入口中的 {{> todayQuickCircuit}}。也可以从 {{> tabPlan}} 的 {{> circuitTitle}} 胶囊按钮，或 {{> tabToday}} 中 {{> actionStart}} 旁的 ⋯ → {{> circuitEntry}} 打开。</li>
 <li>第一次选择时长、器械和强度并点击 {{> circuitMake}}。之后会按上次的条件直接显示预览。</li>
 <li>在预览中选择 {{> circuitRegenerate}}、{{> circuitSaveRoutine}} 或 {{> circuitSettings}}（语音提示、音效），然后点击 {{> circuitStart}}。</li>
 </ol>
 <p>结束后会询问感受，并据此调整下一次循环训练。也可以直接在<a href="watch.html#on-watch">手表</a>上开始。</p>
 </section>
 
-<section id="hybrid" data-ask="想把力量和有氧一起安排|能帮我排一周训练吗|混合训练计划|错过的训练挪到别天|想修改每周计划" data-keys="混合 每周 计划 有氧 跑步 力量 循环训练 星期 日程 挪 错过 修改 重新生成 一个">
-<h2>每周混合训练计划 <span class="pro">PRO+</span></h2>
-<p class="lead">把力量、循环训练和跑步组合成一周日程。计划只有一个，修改后会马上反映到 {{> tabHome}} 的今天卡片和 {{> tabCoach}} 最上方的 {{> hybridPlanWeekTitle}}。</p>
+<section id="hybrid" data-ask="想把力量和有氧一起安排|想把跑步和力量一起安排|能帮我排一周训练吗|制定每周计划|混合训练计划|错过的训练挪到别天|想修改每周计划" data-keys="混合 每周 每周计划 周计划 计划 有氧 跑步 力量 循环训练 星期 日程 挪 错过 修改 重新生成 一个 周一 本周">
+<h2>每周计划 <span class="pro">PRO+</span></h2>
+<p class="lead">把力量、循环训练和跑步组合成一周日程。计划只有一个，修改后会马上反映到 {{> tabToday}} 的今天训练和 {{> tabPlan}} 的 {{> planWeekThis}} 列表。</p>
 <ol class="steps">
-<li>点击 {{> tabHome > homePrograms > hybridTitle}}。也可以从 {{> tabCoach}} 最上方的 {{> hybridPlanWeekTitle}} 一栏，或 {{> tabHome}} {{> sectionRunning}}分组的 {{> runHomeHybridPlan}} 快捷入口打开。</li>
+<li>在 {{> tabPlan}} 点 {{> coachPlanMakeTitle}} 一行。已有计划时，点 {{> planWeekThis}} 列表中的一行。也可以从 {{> tabPlan > homePrograms > hybridTitle}}，或 {{> tabToday > todayWeek}} 画面{{> sectionRunning}}分组的 {{> runHomeHybridPlan}} 快捷入口打开。</li>
 <li>选择星期、目标、侧重、有氧、器械和年龄，点击 {{> hybridMake}}。侧重的初始值按<a href="start.html#mix">主要项目</a>设定。</li>
-<li>今天要做的训练会显示在 {{> tabHome}} 最上方的卡片。在计划画面中，用当天一栏的 {{> hybridStart}} 开始。</li>
+<li>今天要做的训练会显示在 {{> tabToday}} 最上方。在计划画面中，用当天一栏的 {{> hybridStart}} 开始。</li>
 </ol>
-<p>要更改条件，点 {{> hybridRemake}}。自己改过或放进日程的例行不会被覆盖，会保留下来。错过的日子不会挪到别天，保持错过的状态。错过力量或循环训练日的那一周，下一周计划例行的重量和次数不会增加，照上次进行。有<a href="#plan">周期计划</a>时，教练训练会依次放在计划的力量日；正在进行<a href="body.html#vo2-train">心肺适能周期</a>时，它的训练也会放在有氧日。</p>
+<p>要更改条件，点 {{> hybridRemake}}。计划的一周不受设置中每周开始日的影响，始终是周一到周日。自己改过或放进日程的例行不会被覆盖，会保留下来。错过的日子不会挪到别天，保持错过的状态。错过力量或循环训练日的那一周，下一周计划例行的重量和次数不会增加，照上次进行。有<a href="#plan">周期计划</a>时，教练训练会依次放在计划的力量日；正在进行<a href="body.html#vo2-train">心肺适能周期</a>时，它的训练也会放在有氧日。</p>
 <p>侧重选择 {{> hybridFocusRunning}} 后，会成为跑步日较多的计划，并把练下肢后第二天的质量课改为轻松跑。见<a href="running.html#coach">跑步教练</a>和<a href="running.html#strength">与力量训练联动的处方</a>。</p>
 </section>
 
-<section id="plan" data-ask="教练页是做什么的|教练页打不开|制定周期化计划|备赛计划|教练页只显示介绍" data-keys="教练页 周期 周期化 计划 力量举 力量 增肌 比赛 1rm 减量 pro+">
-<h2>教练页的周期计划 <span class="pro">PRO+</span></h2>
+<section id="plan" data-ask="力量教练是做什么的|教练页打不开|制定周期化计划|备赛计划|力量教练只显示介绍" data-keys="教练页 力量教练 教练 周期 周期化 计划 力量举 力量 增肌 比赛 1rm 减量 pro+">
+<h2>力量教练的周期计划 <span class="pro">PRO+</span></h2>
 <p class="lead">根据目标、比赛日期和当前 1RM 制定数周的计划，并决定每次训练的重量。</p>
 <ol class="steps">
-<li>点击 {{> tabCoach > sectionStrength > coachCreatePlan}}。</li>
+<li>点击 {{> tabPlan > planCoachStrength > coachCreatePlan}}。</li>
 <li>选择目标（力量举、力量、力量健美、增肌）、每周天数、经验、推进方式、体重和比赛日期（可选）。</li>
 <li>填写当前 1RM。不知道的话可以用重量和次数计算。</li>
-<li>点击 {{> coachSetupCreate}}，今天的训练会显示在教练页和首页。</li>
+<li>点击 {{> coachSetupCreate}}，今天的训练会显示在教练画面和 {{> tabToday}}。</li>
 </ol>
-<p>{{> sectionStrength}}分区的周期计划为 PRO+ 专属，没有 PRO+ 时只显示动作评估一行、介绍和 {{> coachSeePlans}}。有每周混合训练计划时，从 {{> coachHybridCoachTitle}} 一行制定，教练训练会依次放在计划的力量日。</p>
+<p>{{> sectionStrength}}分区的周期计划为 PRO+ 专属，没有 PRO+ 时只显示动作评估一行、介绍和 {{> coachSeePlans}}。有每周计划时，从 {{> coachHybridCoachTitle}} 一行制定，教练训练会依次放在计划的力量日。</p>
 </section>
 
 <section id="readiness" data-ask="会按状态调整重量吗|今日状态检查|没睡好还能练吗|会用 HRV 吗" data-keys="状态 检查 睡眠 肌肉酸痛 压力 精力 hrv 心率 准备度 强度 调整">
 <h2>状态检查 <span class="pro">PRO+</span></h2>
 <p class="lead">训练前记录睡眠、肌肉状态、压力和精力，会据此调整当天的重量和组数。</p>
-<p>在 {{> tabCoach}} {{> sectionStrength}}、{{> sectionRunning}}分区的 {{> homeConditionTitle}} 卡片点击 {{> coachReadinessCheck}}，选完后点击 {{> coachSaveReadiness}}。有计划时也可以从首页的 {{> homeConditionTitle}} 打开。连接<a href="health.html#what">健康应用</a>或<a href="watch.html#garmin-connect">Garmin Connect</a>后还会用到睡眠时长、HRV 和静息心率。</p>
+<p>在从 {{> tabPlan}} 的 {{> planCoachStrength}}、{{> planCoachRunning}} 打开的教练画面中，点击 {{> homeConditionTitle}} 卡片上的 {{> coachReadinessCheck}}，选完后点击 {{> coachSaveReadiness}}。有计划时也可以从 {{> tabToday}} 的 {{> homeConditionTitle}} 打开。连接<a href="health.html#what">健康应用</a>或<a href="watch.html#garmin-connect">Garmin Connect</a>后还会用到睡眠时长、HRV 和静息心率。</p>
 </section>
 
 <section id="deload" data-ask="什么时候该减量|把周期延长或提前一周|确定比赛试举重量" data-keys="减量 减量周 周期 延长 提前 比赛 试举 第一次 第二次 第三次 疲劳">
 <h2>减量与比赛试举重量 <span class="pro">PRO+</span></h2>
-<p class="lead">根据成绩和疲劳的变化，在教练页建议减量或延长当前周期。</p>
+<p class="lead">根据成绩和疲劳的变化，在力量教练画面建议减量或延长当前周期。</p>
 <p>当近期成绩下滑、练得比计划更吃力、状态持续偏低，或距上次减量已过 6 周时，会建议减量。计划进入赛前几周（巅峰期、减量期）时，还会显示第一、二、三次试举的重量。</p>
 </section>
 
 <section id="nutrition" data-ask="会帮我设定饮食热量目标吗|三大营养素目标|设置营养目标" data-keys="营养 饮食 热量 卡路里 蛋白质 碳水 脂肪 宏量 体重 减脂 增重">
 <h2>营养目标 <span class="pro">PRO+</span></h2>
 <p class="lead">根据体成分或体重趋势，每周重新调整热量以及碳水、蛋白质、脂肪目标。</p>
-<p>在 {{> tabCoach}} {{> sectionBodyNutrition}}分区的 {{> coachNutrition}} 卡片中填写体重、身高、年龄、活动量和目标，点击 {{> nutritionStart}}。最近 30 天内有体成分（去脂体重）时，会用去脂体重代替体重计算维持热量和蛋白质，填写 {{> nutritionTargetBodyFat}} 后会显示目标体重（见<a href="body.html#body-coach">体成分的应用</a>）。体重趋势需要在两周以上记录至少 4 次才会显示。只想算一次的话，请用<a href="tools.html#calculators">宏量计算器</a>。</p>
+<p>在从 {{> tabPlan}} 打开的教练画面中，在{{> sectionBodyNutrition}}分区的 {{> coachNutrition}} 卡片里填写体重、身高、年龄、活动量和目标，点击 {{> nutritionStart}}。最近 30 天内有体成分（去脂体重）时，会用去脂体重代替体重计算维持热量和蛋白质，填写 {{> nutritionTargetBodyFat}} 后会显示目标体重（见<a href="body.html#body-coach">体成分的应用</a>）。体重趋势需要在两周以上记录至少 4 次才会显示。只想算一次的话，请用<a href="tools.html#calculators">宏量计算器</a>。</p>
 </section>
 
-<section id="race" data-ask="混合赛备赛|练习 1 公里跑和项目|比赛分段成绩|练习推雪橇和药球|备赛到比赛日的计划|自己填写目标完赛时间|用手表测量比赛练习" data-keys="混合赛 比赛 分段 雪橇 药球 划船 滑雪 农夫 沙袋 波比 测试 目标 完赛 自定义 时分秒 预估 现实 太快 依据 手表 本段结束">
-<h2>混合赛备赛</h2>
-<p class="lead">像正式比赛一样练习混合健身赛：跑 1 公里再做一个项目，重复 8 次，每段单独计时。免费版每周 3 次。</p>
+<section id="race" data-ask="混合赛备赛|比赛页能做什么|练习 1 公里跑和项目|比赛分段成绩|练习推雪橇和药球|备赛到比赛日的计划|自己填写目标完赛时间|用手表测量比赛练习" data-keys="混合赛 比赛 比赛页 比赛标签 比赛练习 练习 分段 分段线 转换 限时 重量 距离 雪橇 药球 划船 滑雪 农夫 沙袋 波比 测试 目标 完赛 自定义 时分秒 预估 现实 太快 依据 手表 本段结束">
+<h2>备赛与练习</h2>
+<p class="lead">在 {{> tabRace}} 中，按正在准备的比赛的每个分段计时，像正式比赛一样练习并留下记录。练习免费，每周最多 3 次。</p>
 <ol class="steps">
-<li>打开 {{> tabHome > homePrograms > raceEntryTitle}}。也可以从 {{> tabCoach}} 最上方的 {{> runKindHybridRace}} 一行打开。</li>
-<li>在{{> raceGroupSingle}}、{{> raceGroupDoubles}}、{{> raceGroupRelay}}中选择{{> raceDivisionTitle}}，再选择练习范围(完整、一半、只练项目、项目后跑)和{{> raceGoalTitle}}，即可看到每段的量、重量和目标。双人和接力见<a href="#race-team">团队分工</a>。</li>
-<li>点击 {{> raceStart}}，每完成一段就按大按钮。也可以在手表上结束。</li>
+<li>打开 {{> tabRace}}。最上方显示现在准备的比赛，想换成别的比赛就点 {{> raceFormatChange}}（<a href="#race-format">选择比赛与自己创建</a>）。</li>
+<li>点 {{> todayQuickRace}} 打开备赛画面。{{> tabToday}} 快捷入口中的 {{> todayQuickRace}} 也会打开同一画面。</li>
+<li>选择{{> raceDivisionTitle}}、{{> raceModeTitle}}和{{> raceGoalTitle}}，即可用分段线看到每段的量、重量和目标。想单独测量进入项目前的移动时间，就打开 {{> raceTransitionsTitle}}。双人和接力见<a href="#race-team">团队分工</a>。</li>
+<li>点击 {{> raceStart}}，每完成一段就按下方的大按钮。也可以在手表上结束。</li>
 <li>全部完成后会显示分段表和落后最多的分段，用 {{> raceSave}} 保存。</li>
 </ol>
-<p>目标可以从预设时间中选，或用 {{> raceGoalCustom}} 填写时、分、秒（30 分钟到 5 小时）。按填写的目标重新算出分段目标，以及跑步配速、项目合计和转换时间。目标比最快的完整练习或第一周测试得出的预估快 2% 以上时，会提示可能过于勉强。分段预估依据在真实比赛中测得的研究数值和教练实践方法，没有研究的部分会另外标为现场估计。出处可在 {{> raceSourcesButton}} 中查看。</p>
-<p>设定比赛日期后，会把剩余周数分为基础、专项、实战、调整并告诉你现在该做什么，第一周测试会找出最弱的项目。比赛结束后填写正式成绩，与目标和练习对比。此练习功能与任何赛事主办方无关，距离、次数和重量依据公开的规则手册。</p>
-<p>在手机上开始的练习，可以在 Apple Watch、Galaxy Watch 和 Garmin 手表上测量，查看当前分段名称、量和目标、这一段用的时间以及手腕心率。结束一段时，Apple Watch 和 Galaxy Watch 点 {{> raceWatchLap}}，Garmin 按开始键。跑步分段的距离用手机定位测量。</p>
+<p>练习中，这一段的用时显示得最大，下方是离目标还剩的时间，以及画出已完成、当前和下一个分段的分段线。以重量或距离决胜的分段会倒计限时，进入下一段时会询问举起的重量或完成的距离。点 {{> raceEnterLater}} 的话，之后在分段表的 {{> raceValueEmpty}} 中补填。限时过了也不会自动进入下一段，只会提醒。</p>
+<p>目标可以从预设时间中选，或用 {{> raceGoalCustom}} 填写时、分、秒（5 分钟到 5 小时）。按填写的目标重新算出分段目标，以及跑步配速、项目合计和转换时间。目标比最快的完整练习或第一周测试得出的预估快 2% 以上时，会提示可能过于勉强。分段预估依据在真实比赛中测得的研究数值和教练实践方法，没有研究的部分会另外标为现场估计。出处可在 {{> raceSourcesButton}} 中查看。没有完赛者分布数据的比赛，不会把目标拆成分段或编造预估，而是与你过去的练习对比；不只以时间决胜的比赛没有完赛时间目标。</p>
+<p>在备赛画面用 {{> racePickDate}} 选定比赛日期后，会把剩余周数分为 {{> planPhaseShortBase}}、{{> planPhaseShortBuild}}、{{> planPhaseShortPeak}}、{{> planPhaseShortTaper}} 并告诉你现在该做什么，{{> tabRace}} 和 {{> tabPlan}} 会显示离比赛还剩的天数和当前阶段。有分布数据的比赛，第一周测试还会找出较弱的项目。此练习功能与任何赛事主办方无关，距离、次数和重量依据公开的规则，未能从官方资料确认的数值会显示为 {{" raceFormatUnconfirmed}}。</p>
+<p>在手机上开始的练习，可以在 Apple Watch、Galaxy Watch 和 Garmin 手表上测量，查看当前分段名称、量和目标、这一段用的时间以及手腕心率。结束一段时，Apple Watch 和 Galaxy Watch 点 {{> raceWatchLap}}，Garmin 按开始键。跑步分段的距离用手机定位测量。需要填写重量或距离的分段，在手表上进入下一段时会不带数值结束，请在手机的分段表中补填。</p>
+</section>
+
+<section id="race-format" data-ask="可以选哪些比赛形式|更换比赛形式|想自己创建健身房的比赛|没有跑步的比赛也能练吗|自己编排比赛分段|跑步比赛在哪里准备" data-keys="选择比赛 比赛 形式 赛制 十一种 11 选择 更换 更换比赛 我的比赛 自己创建 自定义 模拟赛 健身房 分段 添加跑步 添加项目 已确认 未确认 部分未确认 时间限制 限时 跑步比赛 马拉松 半马 商标">
+<h2>选择比赛与自己创建</h2>
+<p class="lead">点 {{> tabRace}} 的 {{> raceFormatChange}}，可在 {{> raceFormatPickTitle}} 画面从十一种混合赛形式中选择，或用 {{> raceCustomTitle}} 创建自己的比赛。</p>
+<ol class="steps">
+<li>点 {{> tabRace}} 最上方比赛名称旁的 {{> raceFormatChange}}。</li>
+<li>每种形式都会显示通用名称、分段数、画出分段顺序的小条和确认状态（{{> raceFormatStatusConfirmed}}、{{> raceFormatStatusPartial}}）。点其中一个，会用分段线显示各组别的分段。</li>
+<li>点 {{> raceFormatUse}}，这场比赛就成为 {{> raceFormatMine}}，练习、录入成绩和每周计划中的比赛练习日都会按它的分段顺序进行。</li>
+</ol>
+<p>在 {{> raceCustomTitle}} 中填写 {{> raceCustomName}}，用 {{> raceCustomAddRun}} 和 {{> raceCustomAddStation}} 依次排好分段，再点 {{> raceCustomSave}}。项目要填写名称、数量（米、次数、卡路里）和重量。没有跑步的比赛、跑步距离不同的比赛、以重量或距离决胜的比赛，也都在同一画面练习。{{> raceFormatPickTitle}} 画面和 {{> tabRace}} 下方的 {{> raceRunRaceTitle}} 一行用于马拉松、半马这类跑步比赛，会以已选中 {{> runTitleRace}} 的状态打开跑步开始画面（PRO）。比赛名称是各主办方的商标，FitBoost 是独立应用，与任何比赛都没有合作或赞助关系。</p>
+</section>
+
+<section id="race-result" data-ask="想录入比赛成绩|查看比赛成绩分析|想知道在哪一段损失了时间|用成绩链接导入比赛成绩|查看比赛百分位|过往比赛的成绩在哪里" data-keys="比赛成绩 成绩 结果 录入成绩 录入 完赛时间 分段成绩 分析 比赛分析 百分位 排名 损失时间 下一个目标 成绩链接 链接 读取 过往比赛 练习记录">
+<h2>录入比赛成绩与分析</h2>
+<p class="lead">用 {{> tabRace}} 的 {{> raceResultAddShort}} 填写比赛的完赛时间和分段成绩后，可在 {{> raceAnalysisTitle}} 中查看在哪里损失了时间。</p>
+<ol class="steps">
+<li>在 {{> tabRace}} 点 {{> raceResultAddShort}}。</li>
+<li>填写 {{> raceResultTotalLabel}}，再按所选比赛的分段顺序，把知道的 {{> raceResultSplitsTitle}} 填上。不知道的可以留空。</li>
+<li>点 {{> raceResultSave}}。</li>
+</ol>
+<p>分析依次是一行结论、完赛时间、分段条、损失时间最多的分段、{{> raceAnalysisSegmentsTitle}} 和下一个目标。有完赛者分布数据的比赛，会显示与同组别完赛者相比的百分位，并可用 {{> raceCoachSetGoal}} 把下一个目标设为比赛目标。没有分布数据的比赛，不会编造百分位和下一个目标，而是与同一比赛中你过去的成绩对比。没有分段成绩时，只按完赛时间来看。成绩网站收录的比赛，可在 {{> raceResultModeLink}} 中粘贴自己的成绩链接，只读取这一条。录入的成绩和过去的练习会累积在 {{> tabRace}} 的 {{> racePastTitle}} 中，点一下即可再次打开。</p>
 </section>
 
 <section id="race-team" data-ask="双人比赛练习|接力组别备赛|和搭档分配项目|混合双人用什么重量|接力谁跑哪一段" data-keys="双人 doubles 搭档 接力 relay 4人 团队 混合 分工 分配 交替 轮换 策略 队员 测试 一起跑 跑者 分段 负责">
 <h2>双人、接力组别与团队分工</h2>
 <p class="lead">选择{{> raceGroupDoubles}}或{{> raceGroupRelay}}组别后会显示规则要点，{{> raceTeamTitle}}卡片会根据队员的测试，决定谁做什么、做多少。</p>
 <ol class="steps">
-<li>在 {{> raceEntryTitle}} 中点{{> raceGroupDoubles}}或{{> raceGroupRelay}}，选择组别（女子、男子、混合等）。</li>
+<li>在从 {{> tabRace}} 的 {{> todayQuickRace}} 打开的备赛画面中点{{> raceGroupDoubles}}或{{> raceGroupRelay}}，选择组别（女子、男子、混合等）。</li>
 <li>在{{> raceTeamTitle}}卡片中点队员，填写{{> raceMemberEditTitle}}（1 公里跑、划船、农夫行走、药球）。自己的测试要在设定比赛日期后，在上方的备赛卡片中填写。</li>
 <li>查看团队预估、每个项目的分配，以及一起跑的配速或负责的分段。</li>
 </ol>

@@ -2,7 +2,7 @@
 <h2>デバイス間の同期</h2>
 <p class="lead">同じアカウントの端末どうしで記録を自動でそろえます。iPhone・iPadはiCloud、AndroidはGoogleドライブを使います。無料です。</p>
 <ol class="steps">
-<li>{{> tabMenu > setAppSettings > cloudSyncTitle}}を開きます。</li>
+<li>{{> tabMe > setAppSettings > cloudSyncTitle}}を開きます。</li>
 <li>同期をオンにします。すぐにそろえるには{{> cloudSyncNow}}をタップします。</li>
 <li>ほかの端末でも同じアカウントで同じようにオンにします。</li>
 </ol>
@@ -23,9 +23,9 @@
 <h2>新しいスマホに移す</h2>
 <p class="lead">同じOSどうしならデバイス間の同期か端末のバックアップで、iPhoneとAndroidのあいだはバックアップファイルで移します。</p>
 <ol class="steps">
-<li>以前のスマホで{{> tabMenu > backupTitle > backupExportTitle}}をタップします。</li>
+<li>以前のスマホで{{> tabMe > backupTitle > backupExportTitle}}をタップします。</li>
 <li>作ったファイルをメッセンジャー・メール・クラウドなどで新しいスマホに送ります。</li>
-<li>新しいスマホで{{> tabMenu > backupTitle > backupImportTitle}}からそのファイルを開きます。</li>
+<li>新しいスマホで{{> tabMe > backupTitle > backupImportTitle}}からそのファイルを開きます。</li>
 <li>{{> backupModeReplace}}を選びます。</li>
 </ol>
 <p>同じOSなら<a href="#sync">デバイス間の同期</a>をオンにしておくだけでも移せます。端末のバックアップ（iCloudバックアップ・Googleの自動バックアップ）がオンなら、新しい端末でアプリを復元するときにも一緒に引き継がれます。サブスクリプションはファイルでは移らないので、<a href="subscription.html#restore">購入の復元</a>を見てください。</p>
@@ -34,13 +34,13 @@
 
 <section id="backup" data-ask="バックアップファイルの作り方|記録をファイルに保存したい|バックアップにパスワードをかける" data-keys="バックアップ ファイル 保存 書き出し パスワード 暗証 保管 fitboost">
 <h2>バックアップファイルを作る</h2>
-<p class="lead">{{> tabMenu > backupTitle > backupExportTitle}}で記録全体を1つのファイルにします。無料です。</p>
+<p class="lead">{{> tabMe > backupTitle > backupExportTitle}}で記録全体を1つのファイルにします。無料です。</p>
 <p>ワークアウトの記録、ルーティン、予定、身体記録、写真、設定が入ります。パスワードをかけられますが、忘れるとファイルを開けなくなるので、別にメモしておいてください。</p>
 </section>
 
 <section id="restore" data-ask="バックアップファイルを読み込む|置き換えと統合の違い|2台の記録をまとめたい|バックアップの復元" data-keys="読み込み 復元 取り込み 置き換え 統合 マージ 上書き 元に戻す">
 <h2>バックアップファイルを読み込む</h2>
-<p class="lead">{{> tabMenu > backupTitle > backupImportTitle}}で.fitboostファイルを選び、置き換えか統合かを選びます。</p>
+<p class="lead">{{> tabMe > backupTitle > backupImportTitle}}で.fitboostファイルを選び、置き換えか統合かを選びます。</p>
 <ul>
 <li>{{> backupModeReplace}}（無料）：この端末の記録を消してファイルの内容に置き換えます。置き換える前の記録は自動でバックアップされ、元に戻せます。</li>
 <li>{{> backupModeMerge}}（PRO）：今の記録にファイルの内容を加えます。同じ記録はあとから編集したほうが残り、片方で削除した記録は再び現れます。</li>

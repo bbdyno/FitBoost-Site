@@ -1,6 +1,6 @@
-<section id="overview" data-ask="统计页能看什么|查看本周训练量|和上周对比|训练量图表|跑步统计在哪里" data-keys="统计 图表 训练量 趋势 本周 上周 对比 目标 使用的肌肉 期间 分区 力量 跑步 身体 体成分 心肺">
-<h2>统计页能看到什么</h2>
-<p class="lead">在 {{> tabStats}} 上方选择{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分区。{{> sectionStrength}}从上到下依次是本周目标、肌肉恢复、力量平衡和训练量趋势。</p>
+<section id="overview" data-ask="统计在哪里看|分析栏能看什么|统计页不见了|查看本周训练量|和上周对比|训练量图表|跑步统计在哪里" data-keys="统计 分析 分析栏 记录页 记录标签 图表 训练量 趋势 本周 上周 对比 目标 使用的肌肉 期间 分区 力量 跑步 身体 体成分 心肺">
+<h2>分析栏能看到什么</h2>
+<p class="lead">在 {{> tabRecord}} 上方选择 {{> recordsViewAnalysis}}，再选择{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分区。2.0.0 把统计页移到了这一栏。{{> sectionStrength}}最上方大字显示本周训练量和与上周对比的一行，下面依次是肌肉恢复、力量平衡和训练量趋势。</p>
 <ul>
 <li>{{> statsWeekVsLastWeek}}：把本周训练和上周比较。</li>
 <li>{{> volumeProgressTrend}}、{{> statsPeriodVolume}}：查看训练量的增长。</li>
@@ -26,18 +26,18 @@
 <section id="weight-guide" data-ask="做几次该用多重|不同次数的重量|智能重量指南|用 1RM 计算训练重量" data-keys="重量 指南 次数 3次 5次 8次 10次 1rm 预估 曲线">
 <h2>智能重量指南</h2>
 <p class="lead">选择动作后，显示每个次数能举起的重量和建议的训练重量。</p>
-<p>从 {{> tabStats > deeperAnalysis > smartWeightGuide}} 打开。免费提供 3、5、8、10 次的基本估算，PRO 会用根据自己记录画出的 1–15 次的次数与重量曲线来确定下一组重量。</p>
+<p>从 {{> tabRecord > recordsViewAnalysis > deeperAnalysis > smartWeightGuide}} 打开。免费提供 3、5、8、10 次的基本估算，PRO 会用根据自己记录画出的 1–15 次的次数与重量曲线来确定下一组重量。</p>
 </section>
 
 <section id="weekly-report" data-ask="每周报告在哪里看|本周训练总结|想知道是否进入平台期" data-keys="每周 报告 总结 教练 平台期 停滞 下周 建议 分析">
 <h2>每周教练报告 <span class="pro">PRO</span></h2>
 <p class="lead">总结一周训练，显示平台期信号和下次训练的建议。</p>
-<p>从 {{> tabStats > deeperAnalysis > weeklyCoachingReport}} 打开。把报告中的组数建议直接应用到例行训练属于 PRO+ 功能。</p>
+<p>从 {{> tabRecord > recordsViewAnalysis > deeperAnalysis > weeklyCoachingReport}} 打开。把报告中的组数建议直接应用到例行训练属于 PRO+ 功能。</p>
 </section>
 
 <section id="share" data-ask="想把记录分享成图片|发到社交平台的记录卡片|分享训练" data-keys="分享 卡片 图片 照片 朋友圈 社交 复制">
 <h2>分享记录卡片</h2>
-<p class="lead">用 {{> tabStats}} 中的 {{> shareCardsTooltip}} 按钮，把记录做成图片卡片发到其他应用。</p>
+<p class="lead">用 {{> tabRecord > recordsViewAnalysis}} 右上角的 {{> shareCardsTooltip}} 按钮，把记录做成图片卡片发到其他应用。</p>
 <p>想用文字分享一次训练，可在 {{> tabRecord}} 中点该记录的 ⋯ → {{> copySharing}}。</p>
 
 <p>跑步分享卡片和装饰编辑器见<a href="sharing.html">记录分享与装饰</a>。</p>

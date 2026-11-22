@@ -68,7 +68,7 @@
   "recov": {
     "label": "Recovery map",
     "title": "See what's still recovering, right on your body.",
-    "body": "Recent effort and time since each session show how recovered each muscle is. On days you'd hit something still sore, the home screen tells you first.",
+    "body": "Recent effort and time since each session show how recovered each muscle is. On days you'd hit something still sore, the Today tab tells you first.",
     "after": "after leg day",
     "tired": "Fatigued",
     "mid": "Recovering",
@@ -220,7 +220,7 @@
     },
     "run": {
       "title": "Strength and running in one app",
-      "body": "Strength and running share one set of screens. Home opens with today's plan, you can start the other sport right below it, and your main focus only sets the order; nothing is hidden. Track runs on your phone, Apple Watch, Galaxy Watch or Garmin, and one reference result sets your pace zones and predicted times. A single run is kept within 110% of your longest in the last 30 days, and the weekly hybrid plan (PRO+) spreads strength, circuits and runs across the week and turns a quality run the day after legs into an easy run.",
+      "body": "Strength and running live in one app. The Today tab leads with the one thing to do today, and the shortcuts right below start strength, a run, a circuit or race practice; your main focus only sets the order, and nothing is hidden. In the Race tab, pick one of 11 hybrid race formats or build your own, and practice timing each segment. Track runs on your phone, Apple Watch, Galaxy Watch or Garmin, and one reference result sets your pace zones and predicted times. A single run is kept within 110% of your longest in the last 30 days, and the weekly plan (PRO+) spreads strength, circuits and runs across the week and turns a quality run the day after legs into an easy run.",
       "c1": "Mostly strength",
       "c2": "Strength and running",
       "c3": "Mostly running",
@@ -231,7 +231,7 @@
     },
     "course": {
       "title": "My courses",
-      "body": "Courses gather in the running group on Home, nearest first. Save a run as a course in one tap and send it to a friend right away. Running the same route twice also makes a course to race your past self on, and you can draw one on the map or import GPX or TCX. Scan a friend's course QR code in the app, and share with no server. When you send, only the privacy zones you set in run settings are left out.",
+      "body": "Your courses gather in the running group of the This week screen on the Today tab, nearest first. Save a run as a course in one tap and send it to a friend right away. Running the same route twice also makes a course to race your past self on, and you can draw one on the map or import GPX or TCX. Scan a friend's course QR code in the app, and share with no server. When you send, only the privacy zones you set in run settings are left out.",
       "link": "Link",
       "qr": "QR code",
       "file": "File"
@@ -297,6 +297,7 @@
         "Plate calculator",
         "Device sync and backup files",
         "Run tracking, pace zones, my courses",
+        "11 race formats and your own, result analysis, segment-timed practice 3 times a week",
         "Body composition trend, cardio fitness tests, Garmin Connect linking",
         "Share cards, editor layouts, stickers and saving to Photos",
         "Movement assessment tests, results and result cards",
@@ -332,7 +333,7 @@
         "Weekly sets per muscle",
         "Plan and auto-fill warm-up sets",
         "Nutrition targets that use your body composition",
-        "Weekly hybrid plan for strength, circuits and runs",
+        "Weekly plan for strength, circuits and runs",
         "Day-of adjustments from jump readiness, in-set bar speed cues",
         "Share cards ready from your template when you finish"
       ]

@@ -1,18 +1,19 @@
-<section id="start-workout" data-ask="ワークアウトを始めるには|記録はどうやって始めますか|ルーティンで始める|自由にトレーニングしたい" data-keys="開始 始める ワークアウト 今日 自由 ルーティン 記録">
+<section id="start-workout" data-ask="ワークアウトを始めるには|記録はどうやって始めますか|ルーティンで始める|自由にトレーニングしたい|ランの日に筋トレをしたい" data-keys="開始 始める ワークアウト 今日 自由 ルーティン 記録 ショートカット 筋トレ">
 <h2>ワークアウトを始める</h2>
-<p class="lead">{{> tabHome}}の今日のカードで{{> actionStart}}をタップします。ルーティンがなければ空のワークアウトで始まり、自由に記録できます。</p>
+<p class="lead">{{> tabToday}}のいちばん上、今日のワークアウトの下にある{{> actionStart}}をタップします。ルーティンがなければ空のワークアウトで始まり、自由に記録できます。</p>
 <ol class="steps">
-<li>{{> tabHome}}の今日のカードで{{> actionStart}}をタップします。</li>
-<li>別のルーティンにするには、カードの⋯から{{> chooseRoutine}}を選びます。</li>
+<li>{{> tabToday}}のいちばん上の{{> actionStart}}をタップします。今日がランの日や休養日なら、その下のショートカットにある{{> sectionStrength}}をタップします。</li>
+<li>別のルーティンにするには、{{> actionStart}}の横の⋯から{{> chooseRoutine}}を選びます。</li>
 <li>種目を追加してセットを記録します。</li>
 </ol>
-<p>{{> tabHome > homeMyRoutines}}からルーティンをすぐ始めたり、{{> tabRecord > histAddWorkout > workoutStart}}から始めたりもできます。</p>
+<p>{{> tabPlan > homeMyRoutines}}からルーティンをすぐ始めたり、{{> tabRecord > histAddWorkout > workoutStart}}から始めたりもできます。</p>
 </section>
 
 <section id="sets" data-ask="セットはどうやって記録しますか|セット完了のチェック|ウォームアップやドロップセットにしたい|セットごとに休憩時間を変えたい" data-keys="セット チェック 完了 重量 回数 レップ ウォームアップ ドロップ 限界 グリップ セットタイプ">
 <h2>セットを記録する</h2>
 <p class="lead">重量と回数を入力し、セットの行のチェックをタップするとそのセットが完了します。</p>
 <ul>
+<li>これから行うセットの重量と回数が大きく表示され、横の− ＋ボタンで1段階ずつ直します。数字をタップすると細かく直せます。</li>
 <li>まとめて完了するには{{> completeAllSets}}をタップします。</li>
 <li>セット番号をタップすると、そのセットの詳細を編集する画面が開きます。セットタイプ（ウォームアップ・ドロップ・限界など）、グリップ、強度、そのセットだけの休憩時間を決めます。</li>
 <li>ドロップ・バックオフセットを入れたり、残りのセットをまとめて組んだりするには<a href="#drop-backoff">ドロップ・バックオフとセット構成</a>をご覧ください。</li>
@@ -21,14 +22,14 @@
 
 <section id="drop-backoff" data-ask="ドロップセットの入れ方|バックオフセットはどうやるの|セット構成のおすすめ|トップセットとバックオフの重量|ドロップでどのくらい重量を下げる" data-keys="ドロップ ドロップセット バックオフ トップセット 構成 セット構成 おすすめ 減量 ディセンディング ストリップ 根拠">
 <h2>ドロップ・バックオフとセット構成</h2>
-<p class="lead">種目カードの{{> composeChip}}をタップすると、残りのセットを{{> composeSchemeStraight}}・{{> composeSchemeTopBackoff}}・{{> composeSchemeDropFinish}}のいずれかで組み、セットごとの重量と回数を先におすすめします。</p>
+<p class="lead">種目ごとにある{{> composeChip}}チップをタップすると、残りのセットを{{> composeSchemeStraight}}・{{> composeSchemeTopBackoff}}・{{> composeSchemeDropFinish}}のいずれかで組み、セットごとの重量と回数を先におすすめします。</p>
 <ol class="steps">
-<li>種目カードの{{> composeChip}}をタップします。</li>
+<li>記録する種目の{{> composeChip}}チップをタップします。</li>
 <li>構成とセット数・回数・余力を選ぶと、セットごとのおすすめ重量が変わります。</li>
 <li>{{> composeApplyRecommended}}をタップするか、行をタップして重量・回数を直してから入れます。</li>
 </ol>
 <ul>
-<li>ドロップやバックオフだけを付けるには、種目カード⋯の{{> sessionAddDropSet}}・{{> sessionAddBackoffSet}}、セット編集画面の{{> sessionAddDropAfterSet}}を使います。</li>
+<li>ドロップやバックオフだけを付けるには、種目ごとの⋯メニューの{{> sessionAddDropSet}}・{{> sessionAddBackoffSet}}、セット編集画面の{{> sessionAddDropAfterSet}}を使います。</li>
 <li>ドロップの前のセットを終えると休まずにすぐドロップへ進み、最後のドロップの後に休みます。ウォッチでも同じです。</li>
 <li>最初に選ばれる構成は<a href="start.html#goal">トレーニング目標</a>に従います。たとえば筋力は大きな種目でトップセット＋バックオフ、筋肥大はドロップに向くマシン・ケーブル・単関節種目で最後にドロップを選びます。</li>
 <li>{{> composeSourcesTitle}}をタップすると、重量の計算に使った研究とコーチングの方法を見られます。</li>
@@ -38,7 +39,7 @@
 <section id="effort" data-ask="セットの強度はどう記録しますか|RPEやRIRを入力したい|このセットはどうでしたかと表示される|あと何回できたかを記録" data-keys="強度 rpe rir 余裕 きつい 限界 ちょうど 主観的運動強度 残り回数">
 <h2>セットの強度を記録する</h2>
 <p class="lead">セットを終えると、完了ボタンの上に{{" effortQuickTitle}}と4つのチップが1行で出ます。選ぶと次の重量計算に反映され、押さなければ強度なしで進みます。</p>
-<p>聞き方は{{> tabMenu > setAppSettings > settingsWorkout > effortPromptSetting}}で{{> effortPromptInline}}・{{> effortPromptSheet}}・{{> effortPromptOff}}から選びます。聞かない設定にするとウォッチも聞きません。数値で残すにはセットをタップしてRIRかRPEを入れます。</p>
+<p>聞き方は{{> tabMe > setAppSettings > settingsWorkout > effortPromptSetting}}で{{> effortPromptInline}}・{{> effortPromptSheet}}・{{> effortPromptOff}}から選びます。聞かない設定にするとウォッチも聞きません。数値で残すにはセットをタップしてRIRかRPEを入れます。</p>
 </section>
 
 <section id="rest-timer" data-ask="休憩タイマーの使い方|休憩を長くしたい|休憩タイマーをスキップ|タイマーが出ない" data-keys="休憩 タイマー インターバル カウントダウン 10秒">
@@ -73,7 +74,7 @@
 
 <section id="past" data-ask="済んだワークアウトをあとから記録したい|昨日の記録を忘れた|クイック記録とは|過去の日付で記録を追加|過去の有酸素のカロリーは自動で入りますか" data-keys="クイック記録 過去 昨日 忘れた あとで 日付 追加 予定 有酸素 カロリー 自動 推定">
 <h2>済んだワークアウトを記録する</h2>
-<p class="lead">{{> tabHome}}の{{> homeQuickRecord}}か、{{> tabRecord > histAddWorkout > recordPastWorkout}}で、過去のワークアウトを日付と一緒に入力します。</p>
+<p class="lead">{{> tabToday}}のショートカットにある{{> homeQuickRecord}}か、{{> tabRecord > histAddWorkout > recordPastWorkout}}で、過去のワークアウトを日付と一緒に入力します。</p>
 <p>同じメニューの{{> homeAddScheduled}}で、これからのワークアウトを予定に入れることもできます。進行中のワークアウトがあると{{> homeQuickRecord}}は開かないので、先にそちらを終えてください。</p>
 <p>有酸素は時間や距離を直すと、計算機を押さなくても消費カロリーを推定してすぐ入れます。自分で入れたカロリーとヘルスケアから取り込んだ値はそのままで、体重の記録がなければ推定せずにお知らせします。</p>
 </section>
@@ -92,17 +93,17 @@
 <section id="body" data-ask="体重を記録する方法|体重の変化を記録|体型の写真を残したい|体脂肪率を記録" data-keys="体重 体脂肪 骨格筋 身体 体組成 写真 フォト ボディ">
 <h2>体重と写真の記録</h2>
 <p class="lead">{{> tabRecord}}の{{> body}}タブで、{{> histAddBody}}から体重・体脂肪率・骨格筋量を記録し、体組成の推移を見ます。</p>
-<p>体の写真は{{> photos}}タブの{{> histAddPhoto}}で残します。記録した体重は、筋力バランスの体重比レベル、有酸素カロリー計算、栄養目標に使われます。体組成の測定結果は<a href="tools.html#inbody">ファイルから読み込む</a>か<a href="body.html#health-body">ヘルスケアから取り込む</a>ことができ、機器ごとの推移は<a href="body.html#composition">体組成の推移</a>にあります。</p>
+<p>{{> body}}タブのいちばん上には、最近の体重と前回との差が大きく表示されます。体の写真は{{> photos}}タブの{{> histAddPhoto}}で残します。記録した体重は、筋力バランスの体重比レベル、有酸素カロリー計算、栄養目標に使われます。体組成の測定結果は<a href="tools.html#inbody">ファイルから読み込む</a>か<a href="body.html#health-body">ヘルスケアから取り込む</a>ことができ、機器ごとの推移は<a href="body.html#composition">体組成の推移</a>にあります。</p>
 </section>
 
 <section id="notes" data-ask="メモはどこに残しますか|フォームのメモ|メモをまとめて見たい|写真や動画を添付" data-keys="メモ ノート 写真 動画 フォーム 固定 メモ一覧">
 <h2>メモ</h2>
 <p class="lead">ワークアウト中は種目の⋯ → {{> notes}}、終わったあとはまとめ画面の{{> workoutNotes}}に残します。</p>
-<p>フォームのように何度も見るメモは、{{> homeExerciseList}}で種目を開いて{{> addExerciseNote}}で残してください。写真や動画を添付し、上に固定できます。すべてのメモは{{> tabMenu > menuAllMemos}}でまとめて見られます。</p>
+<p>フォームのように何度も見るメモは、{{> homeExerciseList}}で種目を開いて{{> addExerciseNote}}で残してください。写真や動画を添付し、上に固定できます。すべてのメモは{{> tabMe > menuAllMemos}}でまとめて見られます。</p>
 </section>
 
 <section id="voice" data-ask="次のセットを読み上げてくれますか|休憩終了を音声で知らせて|音声ガイドをオンにしたい|残り10秒を教えて" data-keys="音声 読み上げ ガイド 休憩 10秒 自己ベスト イヤホン">
 <h2>筋トレの音声ガイド</h2>
 <p class="lead">オンにすると、休憩の残り10秒と終了時に次のセットの重量・回数を読み上げ、自己ベストも知らせます。</p>
-<p>{{> tabMenu > setAppSettings > setVoiceCoach}}でオンにします。初めて休憩するとき完了ボタンの上にオンにする1行も出ます。アプリを開いているときだけ話し、裏にあるときは通知で知らせます。ウォッチは10秒前に短く振動します。</p>
+<p>{{> tabMe > setAppSettings > setVoiceCoach}}でオンにします。初めて休憩するとき完了ボタンの上にオンにする1行も出ます。アプリを開いているときだけ話し、裏にあるときは通知で知らせます。ウォッチは10秒前に短く振動します。</p>
 </section>

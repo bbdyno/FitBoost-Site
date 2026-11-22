@@ -1,6 +1,6 @@
-<section id="overview" data-ask="What can I see in the Stats tab|See this week's volume|Compare with last week|Volume chart|Where are my running stats" data-keys="stats chart volume trend this week last week compare goal muscles used period section strength running body composition cardio">
-<h2>What's in the Stats tab</h2>
-<p class="lead">Pick the {{> sectionStrength}}, {{> sectionRunning}}, or {{> sectionBody}} section at the top of {{> tabStats}}. {{> sectionStrength}} shows your weekly goal, muscle recovery, strength balance, and volume trends, from top to bottom.</p>
+<section id="overview" data-ask="Where do I see my stats|What can I see in the Analysis view|The Stats tab is gone|See this week's volume|Compare with last week|Volume chart|Where are my running stats" data-keys="stats analysis record tab chart volume trend this week last week compare goal muscles used period section strength running body composition cardio">
+<h2>What's in the Analysis view</h2>
+<p class="lead">Pick {{> recordsViewAnalysis}} at the top of {{> tabRecord}}, then the {{> sectionStrength}}, {{> sectionRunning}}, or {{> sectionBody}} section. The Stats tab moved here in 2.0.0. {{> sectionStrength}} shows this week's volume in large type at the top with one line comparing it to last week, then muscle recovery, strength balance, and volume trends below.</p>
 <ul>
 <li>{{> statsWeekVsLastWeek}}: compares this week's training with last week.</li>
 <li>{{> volumeProgressTrend}} and {{> statsPeriodVolume}}: how your volume has grown.</li>
@@ -26,18 +26,18 @@
 <section id="weight-guide" data-ask="How much should I lift for 5 reps|Weight for each rep range|Smart weight guide|Training weights from my 1RM" data-keys="weight guide reps rep range 3 5 8 10 1rm estimate curve">
 <h2>Smart weight guide</h2>
 <p class="lead">Pick an exercise to see what you can lift at each rep count and the weight recommended for training.</p>
-<p>Open it from {{> tabStats > deeperAnalysis > smartWeightGuide}}. Free shows standard estimates for 3, 5, 8, and 10 reps; PRO uses a 1–15 rep curve built from your own records to set your next weight.</p>
+<p>Open it from {{> tabRecord > recordsViewAnalysis > deeperAnalysis > smartWeightGuide}}. Free shows standard estimates for 3, 5, 8, and 10 reps; PRO uses a 1–15 rep curve built from your own records to set your next weight.</p>
 </section>
 
 <section id="weekly-report" data-ask="Where is the weekly report|Summary of my week|Am I plateauing" data-keys="weekly report summary coaching plateau stall next week suggestions analysis">
 <h2>Weekly coaching report <span class="pro">PRO</span></h2>
 <p class="lead">Sums up your week and shows plateau signals and suggestions for your next sessions.</p>
-<p>Open it from {{> tabStats > deeperAnalysis > weeklyCoachingReport}}. Applying its set-count suggestions straight to your routines is PRO+.</p>
+<p>Open it from {{> tabRecord > recordsViewAnalysis > deeperAnalysis > weeklyCoachingReport}}. Applying its set-count suggestions straight to your routines is PRO+.</p>
 </section>
 
 <section id="share" data-ask="Share my stats as an image|Make a card for Instagram|Share a workout" data-keys="share card image picture instagram social copy">
 <h2>Sharing stat cards</h2>
-<p class="lead">Use the {{> shareCardsTooltip}} button in {{> tabStats}} to turn your stats into image cards and send them to other apps.</p>
+<p class="lead">Use the {{> shareCardsTooltip}} button at the top right of {{> tabRecord > recordsViewAnalysis}} to turn your stats into image cards and send them to other apps.</p>
 <p>To share one workout as text, use ⋯ → {{> copySharing}} on it in {{> tabRecord}}.</p>
 
 <p>Run share cards and the editor are covered in <a href="sharing.html">Sharing and customizing</a>.</p>

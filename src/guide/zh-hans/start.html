@@ -1,57 +1,57 @@
-<section id="first-run" data-ask="安装后要做什么|第一次打开应用|怎么开始使用|一开始要填什么" data-keys="第一次 安装 开始 引导 个人资料 昵称 性别 出生年份 身高 体重 经验 目标 深蹲">
+<section id="first-run" data-ask="安装后要做什么|第一次打开应用|怎么开始使用|一开始要填什么|在初次引导中回到上一个问题" data-keys="第一次 安装 开始 引导 初次引导 个人资料 我的信息 昵称 性别 出生年份 身高 体重 经验 目标 深蹲 地点 次数 没有的器械 返回 上一步">
 <h2>第一次打开时</h2>
-<p class="lead">翻过三页介绍，填写个人资料和训练经验、目标，就可以开始记录了。</p>
+<p class="lead">翻过三页介绍，再一页一页选好个人信息、主要项目和经验、训练目标，就可以开始记录了。主要项目包含力量时还多一页。</p>
 <ol class="steps">
-<li>翻过介绍页，在最后一页点击开始。</li>
-<li>填写昵称、性别、出生年份、身高和体重。</li>
-<li>在{{> obModeTitle}}中选择{{> trainingMixStrength}}、{{> trainingMixHybrid}}或{{> trainingMixRunning}}。它只决定先显示什么，力量和跑步的功能都能用，之后可以在<a href="#mix">{{> trainingMixTitle}}</a>中更改。</li>
-<li>选择训练经验（{{> trainingMixRunning}}时为跑步经验），接着选择<a href="#goal">训练目标</a>。接近主要项目的目标排在前面。</li>
-<li>练过的话，包含力量时填写预估的深蹲 1RM，包含跑步时填写最近的跑步成绩。不知道可以跳过。主要项目包含力量并选择 {{> obExpFirst}} 时，会询问每周几次、在哪里训练，并按所选目标生成第一个例行。</li>
+<li>翻过三页介绍，在最后一页点击 {{> onboardingStart}}。</li>
+<li>在 {{" obProfileTitle}} 一页一次填好昵称、性别、出生年份、身高和体重。出生年份、身高和体重点各自那一行来选择。</li>
+<li>在{{> obModeTitle}}中选择{{> trainingMixStrength}}、{{> trainingMixHybrid}}或{{> trainingMixRunning}}，并在同一页下方选择训练经验（{{> trainingMixRunning}}时为跑步经验）。主要项目包含跑步且练过的话，还可以在它下面填写最近的跑步成绩，没有就留空。主要项目只决定先显示什么，力量和跑步的功能都能用，之后可以在<a href="#mix">{{> trainingMixTitle}}</a>中更改。</li>
+<li>选择<a href="#goal">训练目标</a>。接近主要项目的目标排在前面，列表上方会显示所选目标的默认值（{{> obGoalFxProgram}}、{{> obGoalFxCardio}}、{{> obGoalDiet}}）。{{> trainingMixRunning}}到这里结束。</li>
+<li>主要项目包含力量时还多一页。选了 {{> obExpShortFirst}} 的人选择在哪里训练和每周几次（在健身房时还要选 {{> gymMissingTitle}}），并得到按所选目标生成的第一个例行。练过的人填写预估的深蹲 1RM，不知道就点 {{> notSure}} 或 {{> obSquatFromLift}}。</li>
 </ol>
-<p>这些信息用于推荐重量和估算消耗的热量。重量单位（kg 或 lb）跟随设备的地区设置，之后可以<a href="settings.html#units">在设置中更改</a>。</p>
+<p>每个问题页都可以用左上角的 {{> actionBack}} 按钮回到上一页修改，已选的值会保留。在最后一页点 {{> onboardingStart}} 即完成。这些信息用于推荐重量和估算消耗的热量。重量单位（kg 或 lb）跟随设备的地区设置，之后可以<a href="settings.html#units">在设置中更改</a>。</p>
 </section>
 
 <section id="goal" data-ask="在哪里更改训练目标|想把目标改成减脂|力量和增肌怎么选|设定目标后有什么变化" data-keys="目标 训练目标 力量 增肌 减脂 减肥 增肌减脂 肌肉耐力 混合训练 体能 健康 更改">
 <h2>训练目标</h2>
 <p class="lead">选择训练目标后，计划生成、教练、饮食的初始值和组安排推荐都会按目标调整。</p>
 <ol class="steps">
-<li>点击 {{> tabHome}} 日期旁的目标标签，或进入 {{> tabMenu > setAppSettings > trainingGoalTitle}}。</li>
+<li>点 {{> tabToday}} 最下方的 {{> todayWeek}} 一行，在打开的画面最上方点训练目标一行，或进入 {{> tabMe > setAppSettings > trainingGoalTitle}}。</li>
 <li>从 {{> trainingGoalStrength}}、{{> trainingGoalHypertrophy}}、{{> trainingGoalFatLoss}}、{{> trainingGoalRecomp}}、{{> trainingGoalEndurance}}、{{> trainingGoalHybrid}}、{{> trainingGoalHealth}} 中选择一个。</li>
 </ol>
 <p>更改后的目标从下次训练开始生效。进行中的训练和你自己建的例行保持不变。没选过目标时，根据记录推测的目标会标注 {{" trainingGoalInferred}}。</p>
 </section>
 
-<section id="mix" data-ask="主要项目是什么|以力量为主和以跑步为主有什么区别|想在首页先看到跑步|更改主要项目|更改先显示的顺序" data-keys="主要项目 以力量为主 以跑步为主 力量与跑步 混合 顺序 先显示 折叠 展开 分组 分区 设置 最上方 更改 一个应用">
+<section id="mix" data-ask="主要项目是什么|以力量为主和以跑步为主有什么区别|想先看到跑步|想在首页先看到跑步|更改主要项目|更改先显示的顺序" data-keys="主要项目 以力量为主 以跑步为主 力量与跑步 混合 顺序 先显示 折叠 展开 分组 分区 设置 最上方 更改 一个应用 本周">
 <h2>主要项目</h2>
 <p class="lead">{{> trainingMixTitle}}只决定力量和跑步哪个先显示，不会隐藏任何功能。</p>
 <ol class="steps">
-<li>打开 {{> tabMenu > setAppSettings > trainingMixTitle}}。它在设置最上方、训练目标下面。</li>
+<li>打开 {{> tabMe > setAppSettings > trainingMixTitle}}。它在设置最上方、训练目标下面。</li>
 <li>选择{{> trainingMixStrength}}、{{> trainingMixHybrid}}或{{> trainingMixRunning}}。</li>
 </ol>
 <ul>
-<li>{{> tabHome}}：分组的顺序和一开始折叠的分组会改变。{{> trainingMixStrength}}会折叠跑步分组，{{> trainingMixRunning}}会折叠力量分组，{{> trainingMixHybrid}}两组都展开。没有今天计划的日子，最上方的卡片也按主要项目显示。</li>
-<li>{{> tabStats}}、{{> tabCoach}}：第一次打开时显示主要项目的分区（{{> trainingMixHybrid}}为{{> sectionStrength}}），之后打开上次查看的分区。</li>
-<li>{{> tabMenu}}：力量工具、跑步工具和计算器的顺序会改变。</li>
-<li>第一次制定每周混合训练计划时，作为侧重的初始值。</li>
+<li>{{> tabToday}}：没有今天计划的日子，最上方显示的内容按主要项目决定（{{> trainingMixRunning}}为跑步，其余为力量）。{{> todayWeek}}画面中分组的顺序和一开始折叠的分组也会改变。{{> trainingMixStrength}}会折叠跑步分组，{{> trainingMixRunning}}会折叠力量分组，{{> trainingMixHybrid}}两组都展开。</li>
+<li>{{> tabPlan}}：{{> planSourcesTitle}}中力量和跑步的顺序会改变。{{> tabRecord > recordsViewAnalysis}}第一次打开时显示主要项目的分区（{{> trainingMixHybrid}}为{{> sectionStrength}}），之后打开上次查看的分区。</li>
+<li>{{> tabMe}}：力量工具、跑步工具和计算器的顺序会改变。</li>
+<li>第一次制定每周计划时，作为侧重的初始值。</li>
 </ul>
-<p>主要项目和<a href="#goal">训练目标</a>是两回事。目标是你想要什么（增肌、减脂等），主要项目是你做什么。1.9.0 及以前的力量模式和跑步模式已经取消。第一次打开 1.9.1 时，会按你以前用的模式设定一次主要项目，并在首页显示一次 {{" oneAppNotice}}。</p>
+<p>主要项目和<a href="#goal">训练目标</a>是两回事。目标是你想要什么（增肌、减脂等），主要项目是你做什么。1.9.0 及以前的力量模式和跑步模式已经取消。第一次打开 1.9.1 时，会按你以前用的模式设定一次主要项目，并在 {{> tabToday}} 显示一次 {{" oneAppNotice}}。</p>
 </section>
 
 <section id="account" data-ask="需要注册吗|需要创建账户吗|在哪里登录|我的记录保存在哪里" data-keys="注册 账户 账号 登录 密码 保存 服务器">
 <h2>不需要账户</h2>
 <p class="lead">无需注册或登录。记录保存在这台设备上。</p>
-<p>昵称可在 {{> tabMenu > menuAccountPill > editProfile}} 中修改。记录不会发送到我们的服务器，为了在设备丢失时也能保住记录，请使用<a href="sync.html#sync">设备间同步</a>或<a href="sync.html#backup">备份文件</a>。</p>
+<p>昵称可在 {{> tabMe > menuAccountPill > editProfile}} 中修改。记录不会发送到我们的服务器，为了在设备丢失时也能保住记录，请使用<a href="sync.html#sync">设备间同步</a>或<a href="sync.html#backup">备份文件</a>。</p>
 </section>
 
-<section id="tabs" data-ask="画面结构是怎样的|底部有哪些标签|东西都在哪里|首页的分组是什么" data-keys="标签 画面 结构 首页 记录 统计 教练 菜单 分组 分区 今天卡片 ipad duo 两栏">
+<section id="tabs" data-ask="画面结构是怎样的|底部有哪些标签|东西都在哪里|标签变了|菜单标签去哪了|今天页的快捷入口是什么|显示今天休息|首页的分组在哪里" data-keys="标签 标签页 画面 结构 今天 计划 比赛 记录 我的 首页 统计 教练 菜单 分析 本周 分组 分区 快捷入口 五个 休息日 今天休息 恢复地图 结构条 分段线 今年 齿轮 ipad duo 两栏 2.0.0 改版">
 <h2>画面结构</h2>
-<p class="lead">底部的标签有 {{> tabHome}}、{{> tabRecord}}、{{> tabStats}}、{{> tabCoach}}、{{> tabMenu}} 五个。力量和跑步在一个应用中一起查看。</p>
+<p class="lead">底部的标签有 {{> tabToday}}、{{> tabPlan}}、{{> tabRace}}、{{> tabRecord}}、{{> tabMe}} 五个。2.0.0 把首页、记录、统计、教练、菜单改成了这样：统计移到 {{> tabRecord}} 的 {{> recordsViewAnalysis}} 栏，教练、训练计划和例行移到 {{> tabPlan}}，菜单移到 {{> tabMe}}。</p>
 <ul>
-<li>{{> tabHome}}：最上方是今天的卡片（今天计划是跑步日时为今天的跑步，力量或循环训练日时为今天的训练），下方紧接着是另一项运动的开始按钮（{{> runStart}}或{{> homeStartStrength}}），再往下是{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分组。{{> sectionStrength}}分组里有 {{> homeQuickRecord}}、{{> homePrograms}} 和 {{> homeMyRoutines}}。</li>
-<li>{{> tabRecord}}：按日期查看过去的训练，并进行编辑或删除。用{{> historyAllWorkouts}}、{{> historyStrengthOnly}}、{{> historyRunsOnly}}标签筛选。</li>
-<li>{{> tabStats}}：在上方选择{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分区。力量为本周目标、肌肉恢复、力量平衡和训练量趋势，跑步为距离、配速区间和预测成绩，身体为体成分、体重和心肺适能。</li>
-<li>{{> tabCoach}}：最上方的公共区有本周计划、干扰提示和混合赛备赛，下面选择{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBodyNutrition}}分区。见<a href="coach.html#overview">教练页的结构</a>。</li>
-<li>{{> tabMenu}}：{{> setAppSettings}}、{{> backupTitle}}、{{> trainerShareTitle}}、力量和跑步工具、计算器和健康应用连接。</li>
+<li>{{> tabToday}}：最上方大大地显示今天要做的一件事。力量日是肌肉恢复地图，跑步日是训练结构条，比赛练习日是分段线，用它下面的按钮开始。紧接着的五个快捷入口（{{> sectionStrength}}、{{> sectionRunning}}、{{> todayQuickCircuit}}、{{> todayQuickRace}}、{{> homeQuickRecord}}）可以直接开始其他训练。点最下方的 {{> todayWeek}} 一行，会打开有{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分组的画面。休息日会显示 {{" todayRestTitle}} 和恢复地图，快捷入口照常保留。</li>
+<li>{{> tabPlan}}：有本周每天要做的训练和 {{> planSourcesTitle}}。{{> raceHubTitle}}、{{> planCoachStrength}}、{{> homePrograms}}、{{> homeMyRoutines}}、{{> assessEntryTitle}}、{{> circuitTitle}}、{{> planCoachRunning}}、{{> assessEntryRunTitle}}、{{> runZonesTitle}} 都从这里打开。见<a href="coach.html#overview">计划页与教练画面</a>。</li>
+<li>{{> tabRace}}：选择混合赛形式或自己创建，进行逐段计时的练习并查看比赛成绩分析。见<a href="coach.html#race">备赛与练习</a>。</li>
+<li>{{> tabRecord}}：在上方选择 {{> recordsViewLog}} 和 {{> recordsViewAnalysis}} 栏。{{> recordsViewLog}} 栏是日历和过去的训练列表，用{{> historyAllWorkouts}}、{{> historyStrengthOnly}}、{{> historyRunsOnly}}标签筛选。日历的每一天会立起项目颜色的柱子（力量为桃色，跑步为天蓝色，比赛为主题色），越高表示那天练得越久。{{> recordsViewAnalysis}} 栏就是以前的统计，可选择{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分区。见<a href="stats.html#overview">分析栏能看到什么</a>。</li>
+<li>{{> tabMe}}：最上方是把今年每周做的训练按项目颜色叠起来的条和 FitBoost PRO 一行，下面是力量工具、跑步工具、健康应用连接、{{> backupTitle}}、{{> trainerShareTitle}} 和 {{> calculators}}。{{> setAppSettings}} 是右上角的齿轮按钮。</li>
 </ul>
-<p>分组的顺序和一开始折叠哪些分组由<a href="#mix">主要项目</a>决定。点分组标题折叠或展开后会记住，折叠的一行也显示本周数值。有进行中的训练或跑步时，最上方的卡片会变成继续进行，没有另一项运动的开始按钮。在 iPad 和展开的 iPhone Duo 上为两栏：左侧是每项都带实时数值的菜单，右侧一开始是恢复地图，在菜单中选择后右侧显示该内容。</p>
+<p>{{> todayWeek}}画面中分组的顺序和一开始折叠哪些分组由<a href="#mix">主要项目</a>决定。点分组标题折叠或展开后会记住，折叠的一行也显示本周数值。有进行中的训练或跑步时，{{> tabToday}}最上方会变成继续进行，快捷入口中不属于正在进行项目的格子会变淡，点了会告诉你原因。升级到 2.0.0 后第一次打开时，{{> tabToday}}会显示一次 {{" tabsNotice}}。在 iPad 和展开的 iPhone Duo 上为两栏：左侧是每项都带实时数值的菜单，右侧一开始是恢复地图，在菜单中选择后右侧显示该内容。</p>
 </section>

@@ -1,6 +1,6 @@
 <section id="watch" data-ask="手表连不上|手表连接不了|Apple Watch 上没有 FitBoost|Galaxy Watch 连不上|发送到手表失败" data-keys="手表 连接 连不上 失败 错误 等待 安装 配对">
 <h2>手表连不上时</h2>
-<p class="lead">根据 {{> tabMenu > setAppSettings > setWatch}} 中 {{> setWatchStatus}} 显示的文字查找原因。</p>
+<p class="lead">根据 {{> tabMe > setAppSettings > setWatch}} 中 {{> setWatchStatus}} 显示的文字查找原因。</p>
 <ul>
 <li>{{" watchNotPaired}}请在手表的配套应用（Watch 应用或 Galaxy Wearable）中确认手机和手表已配对。</li>
 <li>{{" watchAppMissing}}请在 <a href="watch.html#apple-watch">Apple Watch</a> 或 <a href="watch.html#galaxy-watch">Galaxy Watch</a> 上安装 FitBoost。</li>
@@ -23,7 +23,7 @@
 
 <section id="sync" data-ask="同步不了|iCloud 同步失败|Google 云端硬盘权限|另一台设备上看不到记录" data-keys="同步 失败 不了 错误 icloud google drive 云端硬盘 权限 空间 更新 网络">
 <h2>同步不了时</h2>
-<p class="lead">查看 {{> tabMenu > setAppSettings > cloudSyncTitle}} 中显示的文字。</p>
+<p class="lead">查看 {{> tabMe > setAppSettings > cloudSyncTitle}} 中显示的文字。</p>
 <ul>
 <li>{{" cloudSyncFailICloudSignedOut}}</li>
 <li>{{" cloudSyncFailDrivePermission}}</li>
@@ -61,7 +61,7 @@
 <section id="cant-start" data-ask="快速记录打不开|提示请先完成进行中的训练|无法开始新的训练" data-keys="进行中 训练 先完成 快速记录 打不开 无法开始">
 <h2>提示有进行中的训练时</h2>
 <p class="lead">看到 {{" finishWorkoutProgressFirst}} 时，说明还有未结束的训练。</p>
-<p>用 {{> tabHome}} 今日卡片上的 {{> homeContinueWorkout}} 回去并点击 {{> finishWorkout}}；如果不需要，就用 {{> workoutFinish}} 丢弃后重新开始。</p>
+<p>用 {{> tabToday}} 最上方的 {{> homeContinueWorkout}} 回去并点击 {{> finishWorkout}}；如果不需要，就用 {{> workoutFinish}} 丢弃后重新开始。</p>
 
 <p>跑步中想添加动作时会显示 {{" exerciseBlockedDuringRun}}，有进行中的力量训练时也不能开始跑步。请先结束打开的训练或跑步。</p>
 </section>
@@ -97,5 +97,5 @@
 <section id="course-link" data-ask="收到的路线链接打不开|提示这不是路线链接|点路线链接打开的是网站" data-keys="路线 链接 打不开 错误 网站 浏览器 在应用中打开 粘贴 复制 损坏 截断">
 <h2>路线链接打不开时</h2>
 <p class="lead">点路线链接会在浏览器中打开路线页面。在那里点在应用中打开的按钮，就会转到 FitBoost。</p>
-<p>没有安装应用时，可以在同一页面下载。显示 {{" courseLinkInvalid}} 时，链接末尾可能被聊天软件截断了，请重新获取或改用文件。复制的链接可以通过 {{> tabMenu > courseTitle}} 右上角 ⋯ 中的 {{> coursePasteLink}} 打开。路线页面只在浏览器内解开链接中的路线并显示，不会发送到任何地方。</p>
+<p>没有安装应用时，可以在同一页面下载。显示 {{" courseLinkInvalid}} 时，链接末尾可能被聊天软件截断了，请重新获取或改用文件。复制的链接可以通过 {{> tabMe > courseTitle > courseReceive > coursePasteLink}} 打开。路线页面只在浏览器内解开链接中的路线并显示，不会发送到任何地方。</p>
 </section>

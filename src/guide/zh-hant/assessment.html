@@ -1,8 +1,8 @@
-<section id="open" data-ask="動作評估在哪裡|姿勢分析在哪裡|我想測柔韌性|怎麼做體能測試|有哪些測試" data-keys="動作評估 姿勢分析 測試 檢測 體能 靈活性 柔韌性 相機 教練 首頁 選單 名稱 術語">
+<section id="open" data-ask="動作評估在哪裡|姿勢分析在哪裡|我想測柔韌性|怎麼做體能測試|有哪些測試" data-keys="動作評估 姿勢分析 測試 檢測 體能 靈活性 柔韌性 相機 教練 計畫 我的 本週 首頁 選單 名稱 術語">
 <h2>開啟動作評估</h2>
-<p class="lead">可以從{{> tabHome}}{{> sectionStrength}}分組的{{> assessEntryTitle}}一行、{{> sectionRunning}}分組的{{> assessEntryRunTitle}}一行、{{> tabMenu}}或{{> tabCoach}}開啟測試列表。</p>
+<p class="lead">可以從{{> tabPlan}}的{{> assessEntryTitle}}、{{> assessEntryRunTitle}}膠囊按鈕、{{> tabMe}}，或{{> tabToday > todayWeek}}畫面的{{> sectionStrength}}、{{> sectionRunning}}分組開啟測試列表。</p>
 <ol class="steps">
-<li>在{{> tabHome}}點按{{> assessEntryTitle}}（力量方面的測試）或{{> assessEntryRunTitle}}（跑姿排在前面的測試）。{{> tabMenu}}的{{> sectionStrength}}、{{> sectionRunning}}分組和{{> tabCoach}}的對應分區裡也有同一行。</li>
+<li>在{{> tabPlan}}點按{{> assessEntryTitle}}（力量方面的測試）或{{> assessEntryRunTitle}}（跑姿排在前面的測試）。{{> tabMe}}的{{> sectionStrength}}、{{> sectionRunning}}分組、{{> tabToday > todayWeek}}畫面的同名分組以及教練畫面裡也有同一行。</li>
 <li>從{{> assessGroupMobility}}、{{> assessGroupFitness}}、{{> assessGroupPower}}、{{> assessGroupBarbell}}、{{> assessGroupRunning}}分組中選擇測試。</li>
 <li>在準備畫面閱讀手機放法、做法和何時停止，然後開始。</li>
 </ol>
@@ -21,7 +21,7 @@
 <p>想一個人測量時看著螢幕，就點按預覽右上角的{{> assessCameraFront}}。選好的鏡頭下次測量也會沿用。很多前置鏡頭每秒格數較低，所以{{> jumpTestCmj}}、{{> jumpTestDrop}}用後置鏡頭更準確，跑姿側面拍攝可能測不出觸地時間。</p>
 </section>
 
-<section id="result" data-ask="怎麼看評估結果|測量誤差是什麼|最小可檢測變化是什麼|左右差異怎麼看|參考範圍從哪裡来" data-keys="結果 解讀 測量誤差 最小可檢測變化 變化 左右 差異 參考 範圍 百分位 年齡 出處 依據 危險訊號 圖 點 角度 人體模型 較弱 橘色 綠色">
+<section id="result" data-ask="怎麼看評估結果|測量誤差是什麼|最小可檢測變化是什麼|左右差異怎麼看|參考範圍從哪裡來" data-keys="結果 解讀 測量誤差 最小可檢測變化 變化 左右 差異 參考 範圍 百分位 年齡 出處 依據 危險訊號 圖 點 角度 人體模型 較弱 橘色 綠色">
 <h2>看懂結果</h2>
 <p class="lead">結果會同時顯示數值和測量誤差、與上次相比的變化、左右差異和研究參考範圍。</p>
 <ul>
@@ -52,7 +52,7 @@
 <li>在準備畫面用應用拍攝，或從照片中選擇慢動作影片。</li>
 <li>查看應用找到的畫面是否正確，不對時用{{> jumpFramePrev}}、{{> jumpFrameNext}}逐格移動。</li>
 </ol>
-<p>反向縱跳測量幾次後，會用你自己紀錄的波動来看{{> jumpReadinessTitle}}。PRO+ 會在準備度低的日子建議把當天的下肢處方和品質跑減輕一級。不是每秒 240 格的影片不會被接受。</p>
+<p>反向縱跳測量幾次後，會用你自己紀錄的波動來看{{> jumpReadinessTitle}}。PRO+ 會在準備度低的日子建議把當天的下肢處方和品質跑減輕一級。不是每秒 240 格的影片不會被接受。</p>
 </section>
 
 <section id="bar-speed" data-ask="我想測槓鈴速度|怎麼測槓鈴速度|速度下降率是什麼|能用速度估算 1RM 嗎" data-keys="槓鈴速度 槓鈴 vbt 速度 軌跡 槓鈴片 下降率 1rm 組 深蹲 臥推 硬舉">
@@ -68,13 +68,13 @@
 
 <section id="run-form" data-ask="怎麼做跑姿分析|我想設定步頻目標|想知道是否步幅過大|怎麼拍跑步姿勢" data-keys="跑姿 跑步 姿勢 步頻 步幅 步幅過大 落地 小腿 骨盆 髖內收 跑步機 跑道 目標">
 <h2>跑姿與步頻目標</h2>
-<p class="lead">在{{> tabHome}}、{{> tabCoach}}或{{> tabMenu}}的{{> assessEntryRunTitle}}中選擇{{> runFormTestSide}}或{{> runFormTestBack}}，拍攝自己在跑步機或跑道上跑步。</p>
+<p class="lead">在{{> tabPlan}}或{{> tabMe}}的{{> assessEntryRunTitle}}中選擇{{> runFormTestSide}}或{{> runFormTestBack}}，拍攝自己在跑步機或跑道上跑步。</p>
 <ol class="steps">
 <li>把手機直立擺放在約 1.5 米高處，從側面（或背後）拍攝。</li>
 <li>在結果中查看步頻、落地位置、小腿角度、落地腳型等。</li>
 <li>點按{{> runFormTargetTitle}}中的{{> runFormTargetOn}}後，輕松跑時超出範圍，手機和手錶會提醒。</li>
 </ol>
-<p>步頻目標是在相同速度下比現在提高 5–10% 的範圍。加入跑步中提醒為 PRO，PRO+ 會在每週跑步計畫中加入姿勢練习。Apple Watch、Galaxy Watch 和 Garmin 也能看到目標範圍。</p>
+<p>步頻目標是在相同速度下比現在提高 5–10% 的範圍。加入跑步中提醒為 PRO，PRO+ 會在每週跑步計畫中加入姿勢練習。Apple Watch、Galaxy Watch 和 Garmin 也能看到目標範圍。</p>
 </section>
 
 <section id="retest" data-ask="什麼時候該重測|收到了重測提醒|想重看測量影片|和第一次比較|影片占用儲存空間" data-keys="重測 再測 提醒 間隔 週 影片 重播 並排 首次 比較 儲存空間 刪除 0.25倍">
@@ -90,11 +90,11 @@
 <section id="member" data-ask="教練可以評估會員嗎|我想產生會員報告|會員照片同意" data-keys="教練 會員 評估 報告 檔案 同意 照片 影片 年齡 性別">
 <h2>教練評估會員</h2>
 <p class="lead">教練在會員紀錄畫面用{{> assessMemberMeasure}}為會員測量，用{{> assessMemberReport}}傳送包含紀錄和評估的檔案。</p>
-<p>會員的年齡和性別只用于選擇參考值，只儲存在本裝置。只有開啟{{> assessMemberConsent}}時才保留照片和影片，報告中只放已模糊臉部的照片。會員評估中沒有跑姿和槓鈴速度。也請参阅<a href="trainer.html">與教練分享</a>。</p>
+<p>會員的年齡和性別只用於選擇參考值，只儲存在本裝置。只有開啟{{> assessMemberConsent}}時才保留照片和影片，報告中只放已模糊臉部的照片。會員評估中沒有跑姿和槓鈴速度。也請參閱<a href="trainer.html">與教練分享</a>。</p>
 </section>
 
-<section id="privacy" data-ask="評估影片會去哪裡|相機畫面會傳送到伺服器嗎|評估紀錄也會備份嗎" data-keys="影片 相機 伺服器 隱私 裝置内 備份 同步 照片 臉部">
+<section id="privacy" data-ask="評估影片會去哪裡|相機畫面會傳送到伺服器嗎|評估紀錄也會備份嗎" data-keys="影片 相機 伺服器 隱私 裝置內 備份 同步 照片 臉部">
 <h2>影片和紀錄在哪裡</h2>
 <p class="lead">影片和關節位置只在裝置上分析，不會傳送到伺服器。</p>
-<p>測得的數字與其他訓練紀錄一樣會進入備份檔案和裝置間同步。測量影片和已模糊臉部的场景照片只儲存在本裝置，不進入備份和同步。詳情請見<a href="../privacy.html">隱私政策</a>。</p>
+<p>測得的數字與其他訓練紀錄一樣會進入備份檔案和裝置間同步。測量影片和已模糊臉部的場景照片只儲存在本裝置，不進入備份和同步。詳情請見<a href="../privacy.html">隱私政策</a>。</p>
 </section>

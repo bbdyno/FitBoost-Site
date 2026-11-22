@@ -1,12 +1,12 @@
 {
   "topics": [
-    {"slug": "start", "title": "入門", "description": "安裝後要做的事、訓練目標和主要項目，以及畫面結構。"},
+    {"slug": "start", "title": "入門", "description": "安裝後要做的事、訓練目標和主要項目，以及五個分頁的畫面結構。"},
     {"slug": "running", "title": "跑步", "description": "跑步在哪裡，用手機和手錶測量跑步或匯入其他 App 的紀錄，使用配速區間和我的路線。"},
     {"slug": "record", "title": "記錄訓練", "description": "開始訓練、記錄每組、結束訓練，以及修改過去的記錄。"},
     {"slug": "routines", "title": "例行訓練與計畫", "description": "建立例行訓練、生成適合自己的計畫、使用動作列表。"},
-    {"slug": "coach", "title": "教練與循環訓練", "description": "教練頁的結構、下一組重量建議、教練循環訓練、每週混合訓練計畫、週期計畫和混合賽備賽。"},
+    {"slug": "coach", "title": "計畫、教練與比賽", "description": "計畫分頁的結構、肌力教練和下一組重量建議、教練循環訓練、每週計畫、週期計畫，以及比賽分頁中的選擇比賽、練習和成績分析。"},
     {"slug": "assessment", "title": "動作評估", "description": "用手機相機測量靈活性、體能、跳躍、槓鈴速度和跑姿，查看結果、套用到訓練計畫並重測的方法。"},
-    {"slug": "stats", "title": "統計與報告", "description": "統計頁中的恢復、力量平衡、訓練量，以及每週教練報告。"},
+    {"slug": "stats", "title": "分析與報告", "description": "記錄分頁的分析中查看的恢復、力量平衡、訓練量，以及每週教練報告。"},
     {"slug": "body", "title": "體組成與心肺適能", "description": "從健康 App 取得體組成、按裝置的趨勢、用於飲食和目標，以及測量和提升最大攝氧量。"},
     {"slug": "sharing", "title": "紀錄分享與裝飾", "description": "把跑步和力量訓練紀錄做成分享卡片，用範本和貼紙裝飾，調整字體、顏色和照片，並儲存到相簿或我的範本。"},
     {"slug": "tools", "title": "計算機與工具", "description": "槓片、1RM、強度計畫計算機，我的器材和訓練術語詞典。"},
@@ -15,10 +15,11 @@
     {"slug": "sync", "title": "同步與備份", "description": "在裝置間同步記錄、換新手機、建立備份檔案。"},
     {"slug": "trainer", "title": "與教練分享", "description": "把記錄發給教練，以及教練檢視學員紀錄的方法。"},
     {"slug": "subscription", "title": "免費與訂閱", "description": "免費能用什麼、PRO 與 PRO+ 的區別、還原與取消。"},
-    {"slug": "settings", "title": "設定", "description": "單位、語言、主題、休息計時、小工具和鎖定畫面等設定。"},
+    {"slug": "settings", "title": "設定", "description": "單位、語言、主題顏色、休息計時、小工具和鎖定畫面等設定。"},
     {"slug": "help", "title": "常見問題排查", "description": "手錶連線、同步、備份、訂閱和跑步定位遇到問題時要檢查的事項。"}
   ],
   "popular": [
+    "start#tabs",
     "sync#new-phone",
     "running#mode",
     "watch#garmin",

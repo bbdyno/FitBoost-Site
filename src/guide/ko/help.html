@@ -1,6 +1,6 @@
 <section id="watch" data-ask="시계가 연결이 안 돼요|시계 연결 안 됨|애플워치에 FitBoost가 안 보여요|갤럭시워치 연결 안 됨|시계로 보내지 못했어요" data-keys="시계 워치 연결 안됨 실패 오류 대기 설치 짝 페어링">
 <h2>시계가 연결되지 않을 때</h2>
-<p class="lead">{{> tabMenu > setAppSettings > setWatch}}의 {{> setWatchStatus}}에 뜨는 문구로 원인을 찾습니다.</p>
+<p class="lead">{{> tabMe > setAppSettings > setWatch}}의 {{> setWatchStatus}}에 뜨는 문구로 원인을 찾습니다.</p>
 <ul>
 <li>{{" watchNotPaired}}: 휴대폰과 시계가 짝지어져 있는지 시계 앱(Watch 앱·Galaxy Wearable)에서 확인하세요.</li>
 <li>{{" watchAppMissing}}: <a href="watch.html#apple-watch">Apple Watch</a>나 <a href="watch.html#galaxy-watch">갤럭시 워치</a>에 FitBoost를 설치하세요.</li>
@@ -23,7 +23,7 @@
 
 <section id="sync" data-ask="동기화가 안 돼요|아이클라우드 동기화 실패|구글 드라이브 권한|다른 기기에 기록이 안 보여요" data-keys="동기화 실패 안됨 오류 아이클라우드 구글드라이브 권한 저장공간 업데이트 인터넷">
 <h2>동기화가 안 될 때</h2>
-<p class="lead">{{> tabMenu > setAppSettings > cloudSyncTitle}}에 뜨는 문구를 확인합니다.</p>
+<p class="lead">{{> tabMe > setAppSettings > cloudSyncTitle}}에 뜨는 문구를 확인합니다.</p>
 <ul>
 <li>{{" cloudSyncFailICloudSignedOut}}</li>
 <li>{{" cloudSyncFailDrivePermission}}</li>
@@ -61,7 +61,7 @@
 <section id="cant-start" data-ask="빠른기록이 안 열려요|진행 중인 운동을 먼저 완료해 주세요라고 떠요|새 운동이 시작이 안 돼요" data-keys="진행중 운동 먼저 완료 빠른기록 안열림 시작 안됨">
 <h2>진행 중인 운동이 있다고 할 때</h2>
 <p class="lead">{{" finishWorkoutProgressFirst}} 문구가 뜨면 열려 있는 운동이 있는 것입니다.</p>
-<p>{{> tabHome}} 오늘 카드의 {{> homeContinueWorkout}} 버튼으로 돌아가 {{> finishWorkout}}을 누르거나, 필요 없으면 {{> workoutFinish}}로 버린 뒤 다시 시작하세요.</p>
+<p>{{> tabToday}} 맨 위의 {{> homeContinueWorkout}} 버튼으로 돌아가 {{> finishWorkout}}을 누르거나, 필요 없으면 {{> workoutFinish}}로 버린 뒤 다시 시작하세요.</p>
 
 <p>달리는 중에 운동을 더하려 하면 {{" exerciseBlockedDuringRun}}라고 뜨고, 근력 운동이 진행 중이면 달리기도 시작하지 않습니다. 열린 운동이나 달리기를 먼저 끝내세요.</p>
 </section>
@@ -97,5 +97,5 @@
 <section id="course-link" data-ask="받은 코스 링크가 안 열려요|코스 링크가 아니에요라고 떠요|코스 링크를 눌렀더니 사이트가 열려요" data-keys="코스 링크 안열림 오류 사이트 브라우저 앱에서열기 붙여넣기 복사 깨짐 잘림">
 <h2>코스 링크가 열리지 않을 때</h2>
 <p class="lead">코스 링크를 누르면 브라우저에 코스 페이지가 열립니다. 거기서 앱으로 여는 버튼을 누르면 FitBoost로 넘어갑니다.</p>
-<p>앱이 없으면 같은 페이지에서 받을 수 있습니다. {{" courseLinkInvalid}}가 뜨면 메신저에서 링크 끝이 잘렸을 수 있으니 다시 받거나 파일로 받아 주세요. 복사한 링크는 {{> tabMenu > courseTitle}} 오른쪽 위 ⋯의 {{> coursePasteLink}}로 엽니다. 코스 페이지는 링크 안의 코스를 브라우저 안에서만 풀어 보여 주고 어디에도 보내지 않습니다.</p>
+<p>앱이 없으면 같은 페이지에서 받을 수 있습니다. {{" courseLinkInvalid}}가 뜨면 메신저에서 링크 끝이 잘렸을 수 있으니 다시 받거나 파일로 받아 주세요. 복사한 링크는 {{> tabMe > courseTitle > courseReceive > coursePasteLink}}로 엽니다. 코스 페이지는 링크 안의 코스를 브라우저 안에서만 풀어 보여 주고 어디에도 보내지 않습니다.</p>
 </section>

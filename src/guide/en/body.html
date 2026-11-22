@@ -1,6 +1,6 @@
 <section id="composition" data-ask="Where do I see my body composition trend|Fat mass and lean mass changes|InBody results chart|Am I gaining muscle|Body composition differs between devices" data-keys="body composition trend fat mass lean mass muscle inbody chart 7-day average per device source water ffmi fat-free mass index recomp cut bulk fat share">
 <h2>Body composition trend</h2>
-<p class="lead">The {{> body}} tab of {{> tabRecord}} draws fat mass and lean mass as 7-day average lines, separately for each device. You can also open it from the {{> sectionBody}} section of {{> tabStats}} and the {{> sectionBody}} group on {{> tabHome}}.</p>
+<p class="lead">The {{> body}} tab of {{> tabRecord}} draws fat mass and lean mass as 7-day average lines, separately for each device. You can also open it from the {{> sectionBody}} section of {{> tabRecord > recordsViewAnalysis}} and the {{> sectionBody}} group on the {{> tabToday > todayWeek}} screen.</p>
 <ol class="steps">
 <li>In {{> tabRecord > body}}, log weight and body fat with {{> histAddBody}}, or <a href="#health-body">get them from the health app</a>.</li>
 <li>After 4 or more measurements on the same device over more than 2 weeks, the {{> bodyCompTitle}} card shows fat mass and lean mass trends.</li>
@@ -14,16 +14,16 @@
 <p class="lead">Weight, height, body fat and lean mass that InBody or scale apps saved to the health app (Apple Health or Health Connect) come in as body records with the source app's name. Values you enter in the app are saved to the health app too.</p>
 <ol class="steps">
 <li><a href="health.html#connect">Connect the health app</a>.</li>
-<li>Tap {{> setHealthBody}} in {{> healthKitTitle}} or {{> healthConnectTitle}} in {{> tabMenu}}, or {{> bodyCompImport}} in {{> tabRecord > body}}. With the connection on, values also come in when you open the {{> body}} tab.</li>
+<li>Tap {{> setHealthBody}} in {{> healthKitTitle}} or {{> healthConnectTitle}} in {{> tabMe}}, or {{> bodyCompImport}} in {{> tabRecord > body}}. With the connection on, values also come in when you open the {{> body}} tab.</li>
 </ol>
 <p>iPhone also reads BMI and waist, and Android body water. The first read covers the last three months; values from the same source at the same time become one record, and reading again doesn't create duplicates. Records you delete don't come back. Weight, body fat and lean mass you enter in the app are written to the health app at that time, unless another app already has a value for that time. If no other app has saved a height to the health app, your profile height is written; if the health app's height is newer, your profile height is updated to it.</p>
 </section>
 
 <section id="body-coach" data-ask="Does it adjust my diet to body composition|I'm losing muscle while cutting|Set a target body fat|Am I recomping|What is body composition coaching" data-keys="body composition coaching diet nutrition lean mass muscle loss protein slow the cut target body fat goal weight recomp bulk fat share pro+">
 <h2>Using body composition for diet and goals <span class="pro">PRO+</span></h2>
-<p class="lead">With body composition records, nutrition targets are calculated from lean mass instead of body weight, and the {{> coachBodyTitle}} card in the {{> sectionBodyNutrition}} section of {{> tabCoach}} reads the trend and tells you what to change.</p>
+<p class="lead">With body composition records, nutrition targets are calculated from lean mass instead of body weight, and the {{> coachBodyTitle}} card in the {{> sectionBodyNutrition}} section of the coach screen reads the trend and tells you what to change.</p>
 <ol class="steps">
-<li>Pick the {{> sectionBodyNutrition}} section in {{> tabCoach}} and set <a href="coach.html#nutrition">nutrition targets</a> on the {{> coachNutrition}} card.</li>
+<li>On {{> tabPlan}}, tap {{> planCoachStrength}} or {{> planCoachRunning}} to open the coach screen, pick the {{> sectionBodyNutrition}} section at the top, and set <a href="coach.html#nutrition">nutrition targets</a> on the {{> coachNutrition}} card.</li>
 <li>To set a target body fat, enter it in {{> nutritionTargetBodyFat}} in the nutrition setup. It shows a goal weight assuming you keep your lean mass.</li>
 <li>If lean mass drops while cutting, the {{> coachBodyTitle}} card shows a warning and what to do; tap {{> coachBodySlowCut}} to slow the rate of loss and raise calories.</li>
 </ol>
@@ -34,7 +34,7 @@
 <h2>Cardio fitness (VO2 max)</h2>
 <p class="lead">The {{> vo2Title}} screen gathers VO2 max from the health app, Garmin, field tests and the lab, shows each source separately, and compares you with people of the same age and sex. Measuring and viewing are free.</p>
 <ol class="steps">
-<li>Open {{> vo2Title}} in the {{> sectionRunning}} group of {{> tabMenu}}. You can also open it from the {{> sectionBody}} section of {{> tabStats}}, the {{> sectionBodyNutrition}} section of {{> tabCoach}}, and the {{> sectionBody}} group on {{> tabHome}}.</li>
+<li>Open {{> vo2Title}} in the {{> sectionRunning}} group of {{> tabMe}}. You can also open it from the {{> sectionBody}} section of {{> tabRecord > recordsViewAnalysis}}, the {{> sectionBodyNutrition}} section of the coach screen, the {{> sectionBody}} group on the {{> tabToday > todayWeek}} screen, and the {{> vo2Title}} row on the run start screen.</li>
 <li>If there's no value yet, measure with {{> vo2CooperTitle}}, tap {{> vo2HealthTitle}}, or enter a lab value with {{> vo2LabTitle}}.</li>
 <li>Check the top value, where you stand among people of the same age and sex, and {{> vo2TrendsTitle}}.</li>
 </ol>
@@ -56,5 +56,5 @@
 <li>For a block, choose the length (6 or 8 weeks) and sessions per week in {{> vo2BlockTitle}} and tap {{> vo2BlockStart}}. Measure a starting value first with the Cooper 12-minute run or a lab value.</li>
 <li>When the block ends, measure again the same way you started and compare the start and end values.</li>
 </ol>
-<p>Sessions are chosen from 4-minute repeats, 30 s/15 s and 30 s/30 s based on your last ratings, and afterwards the time above 90% of max heart rate and how well you held the pace decide whether the next one goes up, stays or comes down. On days when HRV is below your usual or readiness is low, an easy run is suggested when you start. Block sessions go on the cardio days of your weekly hybrid plan, and if the value hasn't moved in 4 weeks, the app checks how your intensity is split and tells you. Sessions can be tracked on Apple Watch, Galaxy Watch or a Garmin watch, or sent through Garmin Connect. On the free plan you can measure and view; sessions and blocks show as locked rows.</p>
+<p>Sessions are chosen from 4-minute repeats, 30 s/15 s and 30 s/30 s based on your last ratings, and afterwards the time above 90% of max heart rate and how well you held the pace decide whether the next one goes up, stays or comes down. On days when HRV is below your usual or readiness is low, an easy run is suggested when you start. Block sessions go on the cardio days of your weekly plan, and if the value hasn't moved in 4 weeks, the app checks how your intensity is split and tells you. Sessions can be tracked on Apple Watch, Galaxy Watch or a Garmin watch, or sent through Garmin Connect. On the free plan you can measure and view; sessions and blocks show as locked rows.</p>
 </section>

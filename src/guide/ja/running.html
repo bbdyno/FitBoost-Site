@@ -1,52 +1,52 @@
-<section id="mode" data-ask="ランニングモードはどうやってオンにしますか|ランニングモードがなくなりました|ランの画面はどこですか|筋トレモードに戻したい|ランニングの機能はどこにありますか" data-keys="ランニングモード 筋トレモード モード なくなった 消えた どこ 探す ランの画面 ひとつのアプリ メイン種目 ランニング中心 グループ セクション トレーニングモード ダンベル ランナー ボタン ヘッダー 切り替え">
+<section id="mode" data-ask="ランニングモードはどうやってオンにしますか|ランニングモードがなくなりました|ランの画面はどこですか|筋トレモードに戻したい|ランニングの機能はどこにありますか" data-keys="ランニングモード 筋トレモード モード なくなった 消えた どこ 探す ランの画面 ひとつのアプリ メイン種目 ランニング中心 グループ セクション トレーニングモード ダンベル ランナー ボタン ヘッダー 切り替え ショートカット 今週 今日">
 <h2>ランニングはどこにありますか</h2>
-<p class="lead">1.9.1からランニングモードはなく、ランニングは筋トレと同じ画面にいつもあります。{{> tabHome}}の{{> sectionRunning}}グループと、{{> tabStats}}・{{> tabCoach}}の{{> sectionRunning}}セクションで見ます。</p>
+<p class="lead">ランニングモードはなく、ランニングは筋トレと同じ画面にいつもあります。{{> tabToday}}のショートカットにある{{> sectionRunning}}から始め、{{> tabToday > todayWeek}}画面の{{> sectionRunning}}グループ、{{> tabRecord > recordsViewAnalysis}}の{{> sectionRunning}}セクション、{{> tabPlan > planCoachRunning}}で見ます。</p>
 <ol class="steps">
-<li>{{> tabHome}}のいちばん上のカードが今日のランでなければ、そのすぐ下の{{> runStart}}をタップします。何も聞かれずにランの開始画面が開きます。</li>
+<li>{{> tabToday}}のいちばん上が今日のランならその下の{{> runStart}}を、そうでなければショートカットの{{> sectionRunning}}をタップします。何も聞かれずにランの開始画面が開きます。</li>
 <li>ランニングを先に表示したいときは、<a href="start.html#mix">{{> trainingMixTitle}}</a>を{{> trainingMixRunning}}に変えます。</li>
 </ol>
 <ul>
-<li>{{> tabHome}}：{{> sectionRunning}}グループに<a href="#courses">{{> courseShelfTitle}}</a>欄、今週走った距離と過去8週の棒グラフ、{{> courseTitle}}・{{> runZonesTitle}}・{{> runHomeHybridPlan}}のショートカット、{{> assessEntryRunTitle}}、最近のラン、{{> runImportFile}}があります。</li>
+<li>{{> tabToday > todayWeek}}：{{> sectionRunning}}グループに<a href="#courses">{{> courseShelfTitle}}</a>欄、今週走った距離と過去8週の棒グラフ、{{> courseTitle}}・{{> runZonesTitle}}・{{> runHomeHybridPlan}}のショートカット、{{> assessEntryRunTitle}}、最近のラン、{{> runImportFile}}があります。</li>
 <li>{{> tabRecord}}：{{> historyRunsOnly}}のチップでランだけを見ます。</li>
-<li>{{> tabStats}}：{{> sectionRunning}}セクションにランの統計があります。</li>
-<li>{{> tabCoach}}：{{> sectionRunning}}セクションが<a href="#coach">ランニングコーチ</a>で、ブロックプランのような筋トレのコーチングは{{> sectionStrength}}セクションにあります。</li>
-<li>{{> tabMenu}}：{{> sectionRunning}}グループに{{> courseTitle}}、{{> runZonesTitle}}、{{> vo2Title}}、{{> runSettingsTitle}}、{{> assessEntryRunTitle}}があります。</li>
+<li>{{> tabRecord > recordsViewAnalysis}}：{{> sectionRunning}}セクションにランの統計があります。</li>
+<li>{{> tabPlan}}：{{> planCoachRunning}}が<a href="#coach">ランニングコーチ</a>で、{{> assessEntryRunTitle}}と{{> runZonesTitle}}もここから開きます。ブロックプランのような筋トレのコーチングは{{> planCoachStrength}}にあります。</li>
+<li>{{> tabMe}}：{{> sectionRunning}}グループに{{> courseTitle}}、{{> runZonesTitle}}、{{> vo2Title}}、{{> runSettingsTitle}}、{{> assessEntryRunTitle}}があります。</li>
 </ul>
 <p>記録・処方・ヘルスケアのデータは筋トレとひとつにつながっています。筋トレのワークアウトが進行中のときはランを始めず、その理由を知らせます。ラン中に種目を追加しようとすると{{" exerciseBlockedDuringRun}}と表示されます。</p>
 </section>
 
-<section id="start-run" data-ask="ランはどうやって始めますか|ランを記録する方法|スマホでランを計測したい|トレッドミルのランも計測できますか|トラックで周回を数えたい" data-keys="開始 ラン開始 ランニング 記録 計測 スマホ 機器 室内 トレッドミル トラック フリーラン タイムトライアル レース 構成トレーニング インターバル 閾値 坂 gps 衛星">
+<section id="start-run" data-ask="ランはどうやって始めますか|ランを記録する方法|スマホでランを計測したい|トレッドミルのランも計測できますか|トラックで周回を数えたい|ランの種類をタップしたのに始まらない" data-keys="開始 ラン開始 ランニング 記録 計測 スマホ 機器 室内 トレッドミル トラック フリーラン フリー タイムトライアル コース レース 構成トレーニング インターバル 閾値 坂 gps 衛星 種類 選ぶ 下のボタン 構成の帯">
 <h2>ランを始める</h2>
-<p class="lead">{{> tabHome}}のいちばん上にある今日のランのカードか、そのすぐ下の{{> runStart}}をタップし、ランの種類と計測する機器を選びます。</p>
+<p class="lead">{{> tabToday}}の{{> runStart}}かショートカットの{{> sectionRunning}}でランの開始画面を開き、ランの種類と計測する機器を選んでから、画面下の{{> runStart}}をタップします。種類はタップしても選ぶだけで、開始は下のボタンひとつです。</p>
 <ol class="steps">
-<li>{{> tabHome}}のいちばん上のカードが今日のランならそのカードの{{> runStart}}を、筋トレのカードならすぐ下の{{> runStart}}をタップします。</li>
-<li>いちばん上のカードは今日の処方（なければおすすめ）です。そのまま{{> runStart}}をタップするか、下から{{> runTitleFree}}・{{> runKindTest}}・{{> runTitleCourse}}・{{> runTitleTrack}}・{{> runKindTreadmill}}などの種類を選びます。</li>
+<li>{{> tabToday}}のいちばん上が今日のランならその下の{{> runStart}}を、そうでなければショートカットの{{> sectionRunning}}をタップします。</li>
+<li>いちばん上に今日の処方（なければおすすめ）がワークアウト構成の帯で表示されます。そのまま走るか、下の丸いボタンから{{> runPickFree}}・{{> runKindTest}}・{{> runTitleTrack}}・{{> runKindTreadmill}}・{{> runPickCourse}}・{{> runTitleRace}}を選びます。{{> runKindStructured}}はその下の行から選びます。選ぶといちばん上がそのランに変わり、いちばん上のチップをタップすると今日のランに戻ります。</li>
 <li>{{> runDeviceTitle}}で{{> runDevicePhone}}か{{> runDeviceWatch}}を選びます。</li>
-<li>スマホで初めて屋外を計測するとき、位置情報の許可を求めます。アプリの使用中の位置情報を許可します。</li>
+<li>画面下の{{> runStart}}をタップします。スマホで初めて屋外を計測するとき、位置情報の許可を求めます。アプリの使用中の位置情報を許可します。</li>
 </ol>
-<p>{{> runDevicePhone}}はスマホの衛星測位で計測し、画面を消してもそのランが終わるまで計測を続けます。{{> runKindTreadmill}}は位置情報を使わず歩数で距離を見積もります。{{> runKindTest}}は全力で走ってペースゾーンを決める日です。{{> runKindStructured}}（閾値・インターバル・坂のステップ案内）と{{> runTitleRace}}（目標タイムのペースとゴール予想）はPROです。ウォッチで計測する方法は<a href="#watch">ウォッチで走る</a>にあります。</p>
+<p>{{> runDevicePhone}}はスマホの衛星測位で計測し、画面を消してもそのランが終わるまで計測を続けます。{{> runPickFree}}と{{> runKindTreadmill}}は時間（20・30・45・60分）も選べます。{{> runKindTreadmill}}は位置情報を使わず歩数で距離を見積もります。{{> runKindTest}}は全力で走ってペースゾーンを決める日です。{{> runKindStructured}}（閾値・インターバル・坂のステップ案内）と{{> runTitleRace}}（目標タイムのペースとゴール予想）はPROです。{{> runTitleRace}}をタップしたら、距離と目標タイムを決めて{{> select}}をタップします。右上の歯車ボタンは{{> runSettingsTitle}}です。ウォッチで計測する方法は<a href="#watch">ウォッチで走る</a>にあります。</p>
 </section>
 
 <section id="during" data-ask="ラン中の画面には何が表示されますか|ランの音声ガイドをオンオフしたい|信号で止まると時間は進みますか|ラップボタンは何ですか" data-keys="ラン中 画面 ペース 現在ペース 距離 時間 心拍 ケイデンス ラップ 上り 平均 一時停止 終了 音声ガイド イヤホン オートポーズ オートラップ 目標 範囲 速すぎ 遅すぎ 信号">
 <h2>ラン中の画面と音声ガイド</h2>
-<p class="lead">ラン中は距離と現在のペースが大きく表示され、その下に勾配補正ペース・心拍・ケイデンス・ラップ・上り・平均ペースの欄が並びます。</p>
+<p class="lead">ラン中は現在のペースがいちばん大きく表示され、その下に時間・距離・心拍が1行で、平均ペース・勾配補正ペース・ケイデンス・ラップ・上りが行で並びます。</p>
 <ul>
-<li>上部に計測している機器（{{> runSourcePhone}}など）と位置情報の状態（{{> runGpsSearching}}など）が表示されます。</li>
-<li>目標のあるステップでは{{> runTarget}}のバーが{{> runInRange}}・{{> runTooFast}}・{{> runTooSlow}}を知らせます。</li>
+<li>下部に計測している機器（{{> runSourcePhone}}など）と位置情報の状態（{{> runGpsSearching}}など）が表示されます。</li>
+<li>目標のあるステップでは、現在のペースの下にある範囲の帯と{{> runTarget}}の行が{{> runInRange}}・{{> runTooFast}}・{{> runTooSlow}}を知らせます。構成トレーニングでは、ワークアウト構成の帯の上にいまの位置が表示されます。</li>
 <li>{{> runLap}}で自分でラップを切り、{{> runPause}}・{{> runResume}}・{{> runFinish}}を使います。構成トレーニングでは{{> runNextStepButton}}で次へ進みます。</li>
 <li>コースを走ると残りの距離と過去の自分より前か後ろかが表示され、外れると{{" runOffCourse}}と知らせます。</li>
 </ul>
-<p>音声ガイドはラップ・ステップ・範囲外・コース外れをイヤホンで伝えます。スマホで計測するときはスマホから流れ、ウォッチで計測するときはウォッチが振動で知らせます。{{> tabMenu > runSettingsTitle}}で{{> runSettingsVoice}}、{{> runSettingsAutoPause}}、{{> runSettingsLap}}、{{> runSettingsPaceWindow}}を変えます。{{> runSettingsAutoPause}}をオンにすると、信号待ちのように立ち止まった時間は数えません。</p>
+<p>音声ガイドはラップ・ステップ・範囲外・コース外れをイヤホンで伝えます。スマホで計測するときはスマホから流れ、ウォッチで計測するときはウォッチが振動で知らせます。{{> tabMe > runSettingsTitle}}（ランの開始画面の右上にある歯車ボタンからも開けます）で{{> runSettingsVoice}}、{{> runSettingsAutoPause}}、{{> runSettingsLap}}、{{> runSettingsPaceWindow}}を変えます。{{> runSettingsAutoPause}}をオンにすると、信号待ちのように立ち止まった時間は数えません。</p>
 </section>
 
 <section id="result" data-ask="ランの結果はどこで見られますか|勾配補正ペースとは何ですか|心拍ドリフトとは何ですか|この数字はどうやって出したのですか|ランの記録をGPXで書き出したい" data-keys="結果 地図 スプリット 分析 指標 根拠 式 限界 勾配補正 gap 心拍ドリフト デカップリング 心拍負荷 trimp セッション負荷 強度 rpe 書き出し gpx ファイル">
 <h2>結果と指標の根拠</h2>
-<p class="lead">終えると、走った道の地図、距離・時間・平均ペース・上り、{{> runSplits}}、{{> runAnalysis}}が表示されます。指標をタップすると式・根拠・限界を見られます。</p>
+<p class="lead">終えると、走った道の地図、大きく表示された距離、時間・平均ペース・上り、{{> runSplits}}、{{> runAnalysis}}が表示されます。指標をタップすると式・根拠・限界を見られます。</p>
 <ul>
 <li>{{> runSplits}}：区間ごとのペース・心拍・勾配。区間の勾配補正の値はPROです。</li>
 <li>{{> runAnalysis}} <span class="pro">PRO</span>：{{> runGap}}、{{> runDecoupling}}、{{> runTrimp}}、{{> runSessionLoad}}、ケイデンス、地形。</li>
 <li>{{> runRpeTitle}}：1〜10から選ぶと、セッション負荷とフィットネス・疲労の計算に入ります。</li>
-<li>地図の下の欄の{{> runSaveCourse}}でこの道をコースとして保存し、同じ欄の{{> courseSendToFriend}}ですぐ送ります。知っているコースを走ったときは自己ベストとの差が表示されます。{{> runExport}}でGPXファイルをほかのアプリに送ります。</li>
+<li>{{> shareDecorate}}の下にあるコースの行の{{> runSaveCourse}}でこの道をコースとして保存し、同じ行の{{> courseSendToFriend}}ですぐ送ります。知っているコースを走ったときは自己ベストとの差が表示されます。いちばん下の{{> runExport}}でGPXファイルをほかのアプリに送ります。</li>
 </ul>
 <p>勾配補正ペースは平地だったらどのくらいかを見積もった値で、下り坂の得を大きく見積もる限界があります。心拍ドリフトは前半と後半の効率を比べるもので、強度が一定の20分を超えるランでだけ計算します。今回の記録が基準記録に使えそうなら{{> runUseBaseline}}ボタンが表示されます。過去のランは{{> tabRecord}}からタップしてもう一度開きます。</p>
 
@@ -55,10 +55,10 @@
 
 <section id="import" data-ask="他のアプリのランを取り込みたい|ウォッチから書き出した記録ファイルを取り込みたい|TCXファイルでランの記録を入れたい|他のアプリで走ったランもカスタマイズできますか|コースファイルはコースから取り込むよう表示されます" data-keys="取り込み 取り込む 他のアプリ ウォッチ 書き出した 記録ファイル アクティビティ gpx tcx ファイル 記録 移す 読み込み ラン 結果 共有 カスタマイズ 同じ時刻 重複">
 <h2>他のアプリのランを取り込む</h2>
-<p class="lead">{{> tabHome}}の{{> sectionRunning}}グループのいちばん下にある{{> runImportFile}}で、他のアプリやウォッチが書き出したGPX・TCXの記録ファイルを選ぶと、ランの記録ができます。</p>
+<p class="lead">{{> tabToday > todayWeek}}画面の{{> sectionRunning}}グループのいちばん下にある{{> runImportFile}}で、他のアプリやウォッチが書き出したGPX・TCXの記録ファイルを選ぶと、ランの記録ができます。</p>
 <ol class="steps">
 <li>他のアプリやウォッチのアプリで、ランをGPXかTCXのファイルに書き出してスマホに置きます。</li>
-<li>{{> tabHome}}の{{> sectionRunning}}グループのいちばん下にある{{> runImportFile}}をタップし、ファイルを選びます。ランの記録がまだなければ、{{> tabStats}}の{{> sectionRunning}}セクションにもあります。</li>
+<li>{{> tabToday}}のいちばん下の{{> todayWeek}}の行をタップして開いた画面で、{{> sectionRunning}}グループのいちばん下にある{{> runImportFile}}をタップし、ファイルを選びます。ランの記録がまだなければ、{{> tabRecord > recordsViewAnalysis}}の{{> sectionRunning}}セクションにもあります。</li>
 <li>結果画面が開いたら、アプリで計測したランと同じように{{> shareDecorate}}で共有・カスタマイズします。</li>
 </ol>
 <p>ランとして取り込めるのは時刻の入った記録ファイルだけで、ファイルに心拍・ケイデンスがあれば一緒に読み込みます。時刻のないコースファイルを選ぶと{{" runImportFailed}}と表示されます。コースファイルは<a href="#courses">マイコースを作る・取り込む</a>から開きます。同じ時刻に始まった記録をもう一度取り込んでも新しくは作らず、すでにある記録を開きます。ほかのアプリがヘルスケアに書き込んだランは、ファイルなしでアプリを開いたときに自動で入ります。<a href="health.html#runs">ヘルスケアから入るラン</a>をご覧ください。</p>
@@ -68,20 +68,20 @@
 <h2>基準記録とペースゾーン</h2>
 <p class="lead">最近の記録をひとつ基準記録として入れると、{{> runZoneEasy}}・{{> runZoneMarathon}}・{{> runZoneThreshold}}・{{> runZoneInterval}}のペースと予想タイムが決まります。</p>
 <ol class="steps">
-<li>{{> tabMenu > runZonesTitle}}を開きます。{{> tabHome}}の{{> sectionRunning}}グループにある{{> runZonesTitle}}のショートカットからも開けます。</li>
+<li>{{> tabMe > runZonesTitle}}を開きます。{{> tabPlan}}の{{> runZonesTitle}}のチップや、{{> tabToday > todayWeek}}画面の{{> sectionRunning}}グループにある{{> runZonesTitle}}のショートカットからも開けます。</li>
 <li>{{> runBaselineSet}}をタップし、3km・5km・10km・{{> runHalf}}・{{> runFull}}から距離を選んで{{> runBaselineTime}}を入れます。</li>
 <li>{{> runPredictions}}と{{> runHrBasis}}（{{> runHrBasisMax}}または{{> runHrBasisThreshold}}）を確認します。</li>
 </ol>
 <p>ペースはダニエルズとギルバートの酸素コストの式（VDOT）で計算し、{{> runZonesHow}}で式と出典を見られます。記録がなければ{{> runKindTest}}で測るか、ランの結果の{{> runUseBaseline}}をタップします。入れてから8週たつと、もう一度測るようにお知らせします。</p>
 </section>
 
-<section id="coach" data-ask="コーチタブのランニングはどこですか|今日のラン処方はどこで見ますか|今日のラン処方|なぜこのランをすすめるのですか|脚の回復とは何ですか|ランニングコーチはどこですか" data-keys="ランニングコーチ ランニング コーチ コーチタブ ランニングセクション セクション 今日 処方 おすすめ 理由 脚の回復 脚 回復 70% ポイント練習 今週 コンディション 筋トレのコーチ ブロック ボリューム">
+<section id="coach" data-ask="ランニングコーチはどこですか|今日のラン処方はどこで見ますか|今日のラン処方|なぜこのランをすすめるのですか|脚の回復とは何ですか|コーチタブのランニングはどこへ行きましたか" data-keys="ランニングコーチ ランニング コーチ コーチタブ プランタブ プラン チップ ランニングセクション セクション 今日 処方 おすすめ 理由 脚の回復 脚 回復 70% ポイント練習 今週 コンディション 筋トレのコーチ ブロック ボリューム">
 <h2>ランニングコーチ</h2>
-<p class="lead">{{> tabCoach}}の共通欄の下で{{> sectionRunning}}セクションを選ぶと、ランニングコーチです。いちばん上のカードで今日走る内容とその理由を見て、そのまま{{> runStart}}をタップできます。無料です。</p>
+<p class="lead">{{> tabPlan}}の{{> planCoachRunning}}のチップをタップすると、ランニングコーチが開きます。いちばん上で今日走る内容とその理由を見て、そのまま{{> runStart}}をタップできます。無料です。</p>
 <ol class="steps">
-<li>{{> tabCoach}}を開き、セクションの切り替えで{{> sectionRunning}}をタップします。次からは最後に見たセクションが開きます。</li>
-<li>いちばん上のカードで{{> runTodayPlan}}（ハイブリッドプランのその日の処方）か{{> runSuggested}}（プランがないときにすすめるラン）を確認します。</li>
-<li>カードに付いた理由を読み、{{> runStart}}をタップします。</li>
+<li>{{> tabPlan}}で{{> planCoachRunning}}をタップします。コーチ画面が{{> sectionRunning}}セクションで開き、上のセクションの切り替えで{{> sectionStrength}}・{{> sectionBodyNutrition}}セクションに移れます。</li>
+<li>いちばん上で{{> runTodayPlan}}（週間プランのその日の処方）か{{> runSuggested}}（プランがないときにすすめるラン）を確認します。</li>
+<li>付いている理由を読み、{{> runStart}}をタップします。</li>
 </ol>
 <ul>
 <li>理由：下半身の回復のために軽くしたとき、過去30日の最長ランの110%の上限に合わせたとき、基準記録がないのでタイムトライアルをすすめるとき、最近の記録に合わせて減らしたときに1行ずつ付きます。</li>
@@ -90,38 +90,38 @@
 <li>{{> assessEntryRunTitle}}：ランニングフォームのテストと<a href="assessment.html#run-form">ピッチの目標</a>です。</li>
 <li>コンディションチェック <span class="pro">PRO+</span>：PRO+ではこのセクションにも<a href="coach.html#readiness">コンディションのカード</a>があります。</li>
 </ul>
-<p>週間計画・{{> coachInterferenceTitle}}・ハイブリッドレース準備はセクションの上の<a href="coach.html#overview">共通欄</a>にあり、どのセクションでも見えます。ブロックプランやボリュームのような筋トレのコーチングは{{> sectionStrength}}セクションに、心肺フィットネスのトレーニングと食事は{{> sectionBodyNutrition}}セクションにあります。{{> sectionRunning}}セクションを初めて開くと、紹介の吹き出しが一度だけ出ます。iPadと開いたiPhone Duoでコーチタブが{{> sectionRunning}}セクションで開くと、左のメニューのコーチの項目に{{> largeRunCoach}}が、今日の計画がランなら回復の項目に脚の回復が表示されます。</p>
+<p>週間プラン・{{> coachInterferenceTitle}}・大会準備は<a href="coach.html#overview">{{> tabPlan}}</a>にあります。ブロックプランやボリュームのような筋トレのコーチングはコーチ画面の{{> sectionStrength}}セクションに、心肺フィットネスのトレーニングと食事は{{> sectionBodyNutrition}}セクションにあります。{{> sectionRunning}}セクションを初めて開くと、紹介の吹き出しが一度だけ出ます。iPadと開いたiPhone Duoでは、今日の計画がランなら左のメニューの回復の項目に脚の回復が表示されます。</p>
 </section>
 
 <section id="strength" data-ask="下半身トレーニングの翌日はどう走ればいいですか|今日のランがイージーランに変わりました|1回にどのくらい長く走っていいですか|ランの距離上限はなぜありますか|脚がまだ回復していませんという画面が出ます|筋トレのすぐ後に走ってもいいですか|走った後に下半身を鍛えてもいいですか|ランと筋トレを並行すると筋力が伸びにくいですか" data-keys="筋トレ 下半身 脚 翌日 イージーラン ポイント練習 変更 処方 110% 30日 最長 距離上限 上限 けが 週間プラン 連動 脚がまだ回復していません 脚の確認 4% 落として 予定どおり 間隔 6時間 8時間 直後 下半身の回数 レッグプレス 干渉 並行トレーニング 並行して走る メタ分析">
 <h2>筋トレと連動した処方</h2>
 <p class="lead">1回のランの距離は、過去30日の最長ランの110%以内をおすすめします。週間ランプランを使うと、下半身トレーニングの翌日のポイント練習をイージーランに変えます。</p>
 <ul>
-<li>{{" runReasonCapped}}：5,200人を18か月追った観察研究で、この線を超えたランのけがのリスクが高くなっていました。自分で延ばしても止めず、知らせるだけです。いまの上限は{{> tabStats}}の{{> runCapTitle}}にあります。</li>
-<li>{{" runReasonLegs}} <span class="pro">PRO+</span>：筋損傷の2日後に30分ランのタイムが約4%遅くなったというランダム化試験に従います。変わった日だけ、今日のカードに理由が1行つきます。</li>
+<li>{{" runReasonCapped}}：5,200人を18か月追った観察研究で、この線を超えたランのけがのリスクが高くなっていました。自分で延ばしても止めず、知らせるだけです。いまの上限は{{> tabRecord > recordsViewAnalysis}}の{{> sectionRunning}}セクションにある{{> runCapTitle}}で確認できます。</li>
+<li>{{" runReasonLegs}} <span class="pro">PRO+</span>：筋損傷の2日後に30分ランのタイムが約4%遅くなったというランダム化試験に従います。変わった日だけ、{{> tabToday}}の今日のランに理由が1行つきます。</li>
 <li>{{" runReasonBaselineTest}}：基準記録がないか古い場合は、プランの最初のポイント練習をタイムトライアルに変えます。</li>
 <li>{{" runLegsCheckTitle}}の画面：脚の回復が70%未満か昨日下半身を強く鍛えた日に、プランなしでポイント練習（閾値・インターバル・坂。構成練習はPRO）を選ぶと、開始前に表示されます。{{> runLegsEasy}}、{{> runLegsSlower}}（区間・反復はそのまま）、{{> runLegsAsPlanned}}から選びます。筋損傷の48時間後に30分の記録が約4%遅くなったというランダム化研究（Marcora 2007）に従います。</li>
-<li>筋トレの後のラン：筋トレを終えてから6時間以内にランの開始画面を開くと、いちばん上に間隔の案内が出ます。筋トレ直後の有酸素運動は筋力の伸びがもっとも小さく、研究者は6時間未満の間隔を避けるよう勧めています（Robineau 2016）。</li>
-<li>ランの後の下半身：走ってから8時間以内に{{> tabHome}}を開き、今日の筋トレのルーティンに下半身があると、今日のカードに「下半身の回数が減ることがあるので重量はそのまま」という行がつきます。重量・セットは変えません。有酸素運動の4・8時間後にレッグプレスの回数が減り、24時間後には差がなく、上半身には影響がなかったという研究（Sporer・Wenger 2003）に従います。</li>
-<li>{{> coachInterferenceTitle}}：直近30日の筋トレと直近7日のランの両方があると、{{> tabCoach}}のいちばん上の共通欄にこの行が出ます。直近7日に走った日数・時間とともに、持久系トレーニングの頻度・時間が増えるほど筋力・筋肥大の伸びが小さくなったというメタ分析（Wilson 2012）を知らせます。今週のハイブリッドプランがあれば、そのプランの筋トレ・サーキット・有酸素の回数も一緒に表示します。決まった基準値はありません。</li>
+<li>筋トレの後のラン：筋トレを終えてから6時間以内にランの開始画面を開くと、上部に間隔の案内が出ます。筋トレ直後の有酸素運動は筋力の伸びがもっとも小さく、研究者は6時間未満の間隔を避けるよう勧めています（Robineau 2016）。</li>
+<li>ランの後の下半身：走ってから8時間以内に{{> tabToday}}を開き、今日の筋トレのルーティンに下半身があると、いちばん上の今日のワークアウトに「下半身の回数が減ることがあるので重量はそのまま」という行がつきます。重量・セットは変えません。有酸素運動の4・8時間後にレッグプレスの回数が減り、24時間後には差がなく、上半身には影響がなかったという研究（Sporer・Wenger 2003）に従います。</li>
+<li>{{> coachInterferenceTitle}}：直近30日の筋トレと直近7日のランの両方があると、{{> tabPlan}}の今週の一覧の下にこの行が出ます。直近7日に走った日数・時間とともに、持久系トレーニングの頻度・時間が増えるほど筋力・筋肥大の伸びが小さくなったというメタ分析（Wilson 2012）を知らせます。今週のプランがあれば、そのプランの筋トレ・サーキット・有酸素の回数も一緒に表示します。決まった基準値はありません。</li>
 </ul>
-<p>ランを多く入れた1週間の計画は、<a href="coach.html#hybrid">週間ハイブリッドプラン</a>で{{> hybridFocus}}を{{> hybridFocusRunning}}にして作ります（PRO+）。筋トレの日と重ならないようにイージーとポイント練習を分け、下半身トレーニングの翌日のポイント練習をイージーランに変えます。</p>
+<p>ランを多く入れた1週間の計画は、<a href="coach.html#hybrid">週間プラン</a>で{{> hybridFocus}}を{{> hybridFocusRunning}}にして作ります（PRO+）。筋トレの日と重ならないようにイージーとポイント練習を分け、下半身トレーニングの翌日のポイント練習をイージーランに変えます。</p>
 </section>
 
-<section id="courses" data-ask="コースはどうやって作りますか|走った道をコースとして保存したい|GPXファイルからコースを取り込みたい|地図にコースを描きたい|よく走る道をコースにしたい|同じ道の記録を比べたい|コースランでウォッチを使いたい" data-keys="コース マイコース コース欄 ホーム 作成 作る 保存 コースとして保存 結果 地図 描く gpx tcx ファイル 取り込み 同じ道 自動 過去の自分 勝負 ベスト 受け取った記録 マイ区間 区間記録 周回 絞り込み 近い順 ウォッチ スマートフォン 計測する機器">
+<section id="courses" data-ask="コースはどうやって作りますか|走った道をコースとして保存したい|GPXファイルからコースを取り込みたい|地図にコースを描きたい|よく走る道をコースにしたい|同じ道の記録を比べたい|コースランでウォッチを使いたい" data-keys="コース マイコース コースを取り込む コース欄 今週 作成 作る 保存 コースとして保存 結果 地図 描く gpx tcx ファイル 取り込み 同じ道 自動 過去の自分 勝負 ベスト 受け取った記録 マイ区間 区間記録 周回 絞り込み 近い順 ウォッチ スマートフォン 計測する機器">
 <h2>マイコースの作成と取り込み</h2>
-<p class="lead">{{> tabHome}}の{{> sectionRunning}}グループにある{{> courseShelfTitle}}欄に、マイコースが最近走った場所から近い順に並びます。ランの結果からワンタップで保存でき、過去のラン・地図に描く・ファイルからも作れます。</p>
+<p class="lead">{{> tabToday > todayWeek}}画面の{{> sectionRunning}}グループにある{{> courseShelfTitle}}欄に、マイコースが最近走った場所から近い順に並びます。ランの結果からワンタップで保存でき、過去のラン・地図に描く・ファイルからも作れます。</p>
 <ol class="steps">
-<li>ランを終えた結果画面の地図の下で{{> runSaveCourse}}をタップすると、すぐにコースになります。名前はランの名前が付き、コース画面で変えられます。</li>
-<li>ほかの方法は、{{> courseShelfTitle}}欄の最後のカードか{{> tabMenu > courseTitle}}の{{> courseMake}}から{{> courseFromRun}}、{{> courseDraw}}、{{> courseFromFile}}のどれかを選びます。</li>
-<li>コース画面の最初にある{{> courseRunThis}}をタップすると{{> runTitleCourse}}の画面が開きます。{{> runDeviceTitle}}で{{> runDevicePhone}}・{{> runDeviceWatch}}を選んで走ります。</li>
+<li>ランを終えた結果画面で、{{> shareDecorate}}の下にあるコースの行の{{> runSaveCourse}}をタップすると、すぐにコースになります。名前はランの名前が付き、コース画面で変えられます。</li>
+<li>ほかの方法は、{{> courseShelfTitle}}欄か{{> tabMe > courseTitle}}画面の下にある{{> courseMake}}から{{> courseFromRun}}、{{> courseDraw}}、{{> courseFromFile}}のどれかを選びます。</li>
+<li>コース画面の下にある{{> courseRunThis}}をタップすると{{> runTitleCourse}}の画面が開きます。{{> runDeviceTitle}}で{{> runDevicePhone}}・{{> runDeviceWatch}}を選び、下の{{> runStart}}をタップします。ランの開始画面の{{> runPickCourse}}の丸いボタンからもコースを選べます。</li>
 </ol>
 <p>同じ道を2回走っても自動でコースになります。{{> courseTitle}}では{{> courseFilterAll}}・{{> courseOriginReceived}}・{{> courseLoop}}・距離のチップで絞り込めます。近い順は位置情報の許可を別に使わず、いちばん最近のランを始めた場所を基準にします。コース画面の{{> courseVersus}}欄は{{> courseBestLabel}}・{{> courseVersusReceived}}・{{> courseVersusLatest}}の記録を速い順に表示し、コースを走るとその記録と勝負します。ウォッチを選ぶとウォッチにコースの線が表示され、外れると振動します。{{> courseDraw}}は地図をタップして打った点を直線でつなぎます。地図を動かして拡大しながら、道に沿って点を打ちます。ファイルはGPXとTCXを開けます。ほかのアプリで走った記録を丸ごと取り込むには<a href="#import">ほかのアプリのランを取り込む</a>を使います。コースの一部を{{> courseSegments}}として決めて、その区間の記録だけを見るのはPROです。</p>
 </section>
 
 <section id="share-course" data-ask="コースをほかの人に送りたい|友だちにコースを送りたい|受け取ったコースのリンクの開き方|友だちのスマートフォンのQRコードを読み取りたい|QRコードでコースを送りたい|コースを共有すると自分の記録も送られますか" data-keys="送る 友だちに送る 共有 リンク qrコード qr 読み取り スキャン カメラ ファイル 受け取る コースを受け取る 受け取ったコース メッセンジャー サーバー 自分の記録 一緒に 貼り付け コピーしたリンク プレビュー 隠した形">
 <h2>コースを送る・受け取る</h2>
-<p class="lead">コース画面の最初にある{{> courseSendToFriend}}をタップすると{{> courseSendTitle}}の画面が開きます。送る形を先に確かめ、{{> courseShareLinkSend}}、{{> courseShareQr}}、{{> courseShareGpx}}のどれかで送ります。サーバーは通りません。</p>
+<p class="lead">コース画面の地図の下にある{{> courseSendToFriend}}をタップすると{{> courseSendTitle}}の画面が開きます。送る形を先に確かめ、{{> courseShareLinkSend}}、{{> courseShareQr}}、{{> courseShareGpx}}のどれかで送ります。サーバーは通りません。</p>
 <ol class="steps">
 <li>送るコースを開き、{{> courseSendToFriend}}をタップします。ランの結果画面で保存したばかりのコースは、その場の{{> courseSendToFriend}}からすぐ送れます。</li>
 <li>プレビューで非公開エリアのため薄く外れた部分がないか確かめ、必要なら{{> courseIncludeRecord}}をオンにして送り方を選びます。</li>
@@ -134,7 +134,7 @@
 <h2>位置を隠す</h2>
 <p class="lead">アプリはスタート・ゴール付近を切り取りません。自宅や職場の周辺を{{> runPrivacyZones}}にしておくと、走った道から作ったコースを送るとき、ランをファイルに書き出すとき、共有カードと公開コースでその場所を除きます。</p>
 <ol class="steps">
-<li>{{> tabMenu > runSettingsTitle}}を開きます。</li>
+<li>{{> tabMe > runSettingsTitle}}を開きます。</li>
 <li>{{> runPrivacyZones}}の{{> runPrivacyZoneAdd}}をタップすると、いちばん最近のランを始めた場所の周辺を隠します。</li>
 </ol>
 <p>隠す円の中心は実際の位置から少しずらして一度だけ決め、送るたびに境界の外側0〜200mもランダムに除くので、何度送っても平均を取って場所を割り出しにくくなっています。非公開エリアを設定しなければ、ルート全体がそのまま送られます。自分で描いたコースは実際に走った場所ではないため、描いたとおりに送ります。Garminに送るコースは自分のGarminアカウントに届くため、非公開エリアも除かずにコース全体を送ります。自分の端末の中の結果の地図と記録は隠さず、そのまま残ります。</p>
@@ -148,7 +148,7 @@
 <li>開始画面の{{> runDeviceTitle}}で{{> runDeviceWatch}}を選び、{{> runStart}}をタップします。</li>
 <li>スマホに{{" runSourceWatchWaiting}}と表示されたら、ウォッチのFitBoostで開始します。</li>
 </ol>
-<p>ウォッチはペース範囲・ステップ・コースの線を表示し、範囲を外れると振動で知らせます。Apple Watchは次のステップの5秒前にも振動します。終わると記録がスマホに届きます。Garminウォッチの衛星設定は{{> tabMenu > runSettingsTitle > runSettingsSatellite}}で選び、{{> runSettingsSatelliteMax}}はバッテリーを多く使います。ウォッチの待機画面はスマホの今日の計画に従い、ランの日はランを先に表示し、計画がなければメイン種目に従います。</p>
+<p>ウォッチはペース範囲・ステップ・コースの線を表示し、範囲を外れると振動で知らせます。Apple Watchは次のステップの5秒前にも振動します。終わると記録がスマホに届きます。Garminウォッチの衛星設定は{{> tabMe > runSettingsTitle > runSettingsSatellite}}で選び、{{> runSettingsSatelliteMax}}はバッテリーを多く使います。ウォッチの待機画面はスマホの今日の計画に従い、ランの日はランを先に表示し、計画がなければメイン種目に従います。</p>
 </section>
 
 <section id="plans" data-ask="ランニングの機能は無料ですか|ランで有料なのは何ですか|ランの分析はPROですか|週間ランプランはどのプランですか" data-keys="無料 有料 pro pro+ プロ サブスクリプション ランニング ラン 分析 構成トレーニング レース当日 プラン ロック 鍵">
@@ -157,7 +157,7 @@
 <ul>
 <li>無料：スマホと3種類のウォッチでの計測、リアルタイムのペース・心拍、オートラップとスプリット、基準記録・ペースゾーン・予想タイム、マイコース（同じ道の検出・描画・ファイル・受け取り）、リンク・QRコード・ファイルでの送信、GPXの書き出し、他のアプリのGPX・TCXのラン取り込み、非公開エリア、ヘルスケアへの書き込み、1回の距離上限、指標の根拠、ランニングコーチ（今日の処方と理由・脚の回復・ペースゾーン・今週の距離）。</li>
 <li>PRO：勾配補正ペース・心拍ドリフト・心拍負荷・セッション負荷・臨界速度、筋トレと合わせたフィットネス・疲労、構成トレーニング（閾値・インターバル・坂のステップ案内）、レース当日モード（目標ペーサー・ゴール予想）、コース内のマイ区間の記録。</li>
-<li>PRO+：ラン中心にも組める週間ハイブリッドプラン（下半身トレーニングの翌日を軽めにする調整を含む）、{{> sectionRunning}}セクションのコンディションチェック。</li>
+<li>PRO+：ラン中心にも組める週間プラン（下半身トレーニングの翌日を軽めにする調整を含む）、ランニングコーチのコンディションチェック。</li>
 </ul>
 <p>ロックされた欄には鍵のマークがつき、タップするとFitBoost PROの画面が開きます。サブスクリプションが終わっても、すでに計測した記録の分析値は消えず、隠れるだけです。ラン中の画面には広告を入れません。</p>
 </section>

@@ -1,6 +1,6 @@
 <section id="watch" data-ask="ウォッチがつながらない|ウォッチの接続ができない|Apple WatchにFitBoostが表示されない|Galaxy Watchがつながらない|ウォッチに送れなかった" data-keys="ウォッチ 接続 つながらない 失敗 エラー 待機 インストール ペアリング">
 <h2>ウォッチがつながらないとき</h2>
-<p class="lead">{{> tabMenu > setAppSettings > setWatch}}の{{> setWatchStatus}}に表示される文言で原因を探します。</p>
+<p class="lead">{{> tabMe > setAppSettings > setWatch}}の{{> setWatchStatus}}に表示される文言で原因を探します。</p>
 <ul>
 <li>{{" watchNotPaired}}：スマホとウォッチがペアリングされているか、ウォッチのアプリ（WatchアプリやGalaxy Wearable）で確認してください。</li>
 <li>{{" watchAppMissing}}：<a href="watch.html#apple-watch">Apple Watch</a>か<a href="watch.html#galaxy-watch">Galaxy Watch</a>にFitBoostをインストールしてください。</li>
@@ -23,7 +23,7 @@
 
 <section id="sync" data-ask="同期できない|同期されない|iCloud同期に失敗|Googleドライブの権限|ほかの端末に記録が表示されない" data-keys="同期 失敗 できない エラー icloud googleドライブ 権限 容量 アップデート インターネット">
 <h2>同期できないとき</h2>
-<p class="lead">{{> tabMenu > setAppSettings > cloudSyncTitle}}に表示される文言を確認します。</p>
+<p class="lead">{{> tabMe > setAppSettings > cloudSyncTitle}}に表示される文言を確認します。</p>
 <ul>
 <li>{{" cloudSyncFailICloudSignedOut}}</li>
 <li>{{" cloudSyncFailDrivePermission}}</li>
@@ -61,7 +61,7 @@
 <section id="cant-start" data-ask="クイック記録が開かない|進行中のワークアウトを先に完了してくださいと表示される|新しいワークアウトを始められない" data-keys="進行中 ワークアウト 先に 完了 クイック記録 開かない 始められない">
 <h2>進行中のワークアウトがあると言われたとき</h2>
 <p class="lead">{{" finishWorkoutProgressFirst}}と表示されたら、開いたままのワークアウトがあります。</p>
-<p>{{> tabHome}}の今日のカードの{{> homeContinueWorkout}}で戻って{{> finishWorkout}}をタップするか、不要なら{{> workoutFinish}}で破棄してから始め直してください。</p>
+<p>{{> tabToday}}のいちばん上の{{> homeContinueWorkout}}ボタンで戻って{{> finishWorkout}}をタップするか、不要なら{{> workoutFinish}}で破棄してから始め直してください。</p>
 
 <p>ラン中に種目を追加しようとすると{{" exerciseBlockedDuringRun}}と表示され、筋トレのワークアウトが進行中のときはランも始まりません。開いているワークアウトやランを先に終えてください。</p>
 </section>
@@ -97,5 +97,5 @@
 <section id="course-link" data-ask="受け取ったコースのリンクが開きません|コースのリンクではありませんと表示されます|コースのリンクをタップしたらサイトが開きました" data-keys="コース リンク 開かない エラー サイト ブラウザ アプリで開く 貼り付け コピー 壊れた 切れた">
 <h2>コースのリンクが開かないとき</h2>
 <p class="lead">コースのリンクをタップすると、ブラウザでコースのページが開きます。そこでアプリで開くボタンをタップするとFitBoostに移ります。</p>
-<p>アプリがない場合は同じページから入手できます。{{" courseLinkInvalid}}と表示されたら、メッセンジャーでリンクの末尾が切れたのかもしれません。もう一度受け取るか、ファイルで受け取ってください。コピーしたリンクは{{> tabMenu > courseTitle}}の右上の⋯にある{{> coursePasteLink}}で開けます。コースのページはリンクの中のコースをブラウザの中だけで読み解いて表示し、どこにも送りません。</p>
+<p>アプリがない場合は同じページから入手できます。{{" courseLinkInvalid}}と表示されたら、メッセンジャーでリンクの末尾が切れたのかもしれません。もう一度受け取るか、ファイルで受け取ってください。コピーしたリンクは{{> tabMe > courseTitle > courseReceive > coursePasteLink}}で開けます。コースのページはリンクの中のコースをブラウザの中だけで読み解いて表示し、どこにも送りません。</p>
 </section>

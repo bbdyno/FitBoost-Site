@@ -1,7 +1,7 @@
 <section id="plates" data-ask="杠铃上该挂哪些片|杠铃片计算器怎么用|每边挂多少公斤" data-keys="杠铃片 杠铃 杆 每边 计算 挂片 重量">
 <h2>杠铃片计算器</h2>
 <p class="lead">输入目标重量，就会告诉你每边要挂哪些杠铃片。免费。</p>
-<p>在 {{> tabMenu}} 的 {{> calculators}} 区域点击 {{> plateChip}}。杠铃杆重量和手上的杠铃片请在<a href="#equipment">{{> gymTitle}}</a>中设置，并用计算器里的 {{> plateCalcChange}} 切换器械。</p>
+<p>在 {{> tabMe}} 的 {{> calculators}} 区域点击 {{> plateChip}}。杠铃杆重量和手上的杠铃片请在<a href="#equipment">{{> gymTitle}}</a>中设置，并用计算器里的 {{> plateCalcChange}} 切换器械。</p>
 </section>
 
 <section id="one-rm" data-ask="怎么计算 1RM|估算最大重量|计算 5x5 或 531 的重量" data-keys="1rm 最大重量 估算 计算器 强度 计划 5x5 531 gvt 百分比">
@@ -12,42 +12,42 @@
 
 <section id="calculators" data-ask="有氧热量计算|计算每日热量|三大营养素计算器|跑步机消耗热量" data-keys="热量 卡路里 有氧 跑步机 划船 测功仪 宏量 三大营养素 蛋白质 计算器">
 <h2>有氧、热量与宏量计算器</h2>
-<p class="lead">在 {{> tabMenu}} 的 {{> calculators}} 区域打开有氧、热量和宏量计算器。</p>
+<p class="lead">在 {{> tabMe}} 的 {{> calculators}} 区域打开有氧、热量和宏量计算器。</p>
 <ul>
 <li>{{> cardioCalculatorTitle}}：根据跑步机速度、坡度或测功仪配速计算消耗热量。</li>
 <li>{{> calorieCalculator}}：根据运动强度（MET）、时长和体重估算消耗热量。</li>
 <li>{{> macroCalculator}}：计算目标热量以及碳水、蛋白质和脂肪。</li>
 </ul>
-<p>所有工具都集中在 {{> tabMenu > menuAllTools}}。</p>
+<p>所有工具都集中在 {{> tabMe > menuAllTools}}。</p>
 </section>
 
 <section id="equipment" data-ask="按我健身房的杠铃片推荐重量|修改杠铃杆重量|设置哑铃重量间隔|登记器械" data-keys="器械 健身房 杠铃杆 杠铃 杠铃片 哑铃 壶铃 器械配重 间隔 登记">
 <h2>我的器械</h2>
 <p class="lead">填好杠铃杆和杠铃片、哑铃和壶铃的间隔、器械每格配重后，杠铃片计算会按这套器械进行。</p>
-<p>从 {{> tabMenu > setAppSettings > settingsWorkout > gymTitle}} 打开。免费只能保存一个地点，保存多个地点或把推荐重量调整为这套器械能凑出的重量属于 PRO 功能。</p>
+<p>从 {{> tabMe > setAppSettings > settingsWorkout > gymTitle}} 打开。免费只能保存一个地点，保存多个地点或把推荐重量调整为这套器械能凑出的重量属于 PRO 功能。</p>
 </section>
 
 <section id="glossary" data-ask="什么是递减组|想知道训练术语的意思|什么是 RPE|术语词典" data-keys="术语 词典 意思 含义 定义 递减组 rpe rir 减量 顶组 超级组 amrap">
 <h2>训练术语词典</h2>
-<p class="lead">在 {{> tabMenu > glTitle}} 中查找递减组、RPE 等不熟悉的词。</p>
+<p class="lead">在 {{> tabMe > glTitle}} 中查找递减组、RPE 等不熟悉的词。</p>
 <p>术语分为组、强度、计划三类，每条都写了是什么、怎么做、什么时候用和注意事项。</p>
 </section>
 
 <section id="inbody" data-ask="想录入 InBody 结果|导入体成分数据" data-keys="inbody 体成分 体脂 骨骼肌 csv json 导入">
 <h2>导入体成分数据</h2>
 <p class="lead">从 CSV 或 JSON 文件导入体成分测量结果，存入身体记录。</p>
-<p>在 {{> tabMenu > menuAllTools > importBodyComposition}} 中选择文件。InBody、体重秤等应用写入健康应用的数值，不用文件也能<a href="body.html#health-body">从健康应用获取</a>。</p>
+<p>在 {{> tabMe > menuAllTools > importBodyComposition}} 中选择文件。InBody、体重秤等应用写入健康应用的数值，不用文件也能<a href="body.html#health-body">从健康应用获取</a>。</p>
 </section>
 
 <section id="missing-equipment" data-ask="去掉健身房没有的器械|没有绳索器械|没有器械时的替代动作|今日推荐怎么选" data-keys="没有的器械 器械 绳索 器械 雪橇 替代 今日推荐 恢复">
 <h2>这里没有的器械与今日推荐</h2>
-<p class="lead">在{{> tabMenu > setAppSettings > settingsWorkout > gymTitle}}的{{> gymMissingTitle}}中选择器械后，需要这些器械的动作会从替换动作、计划生成和今日推荐中去掉。</p>
-<p>没有日程的日子，首页今日卡片会以{{> todayEyebrowPick}}挑选主要部位恢复最好、休息最久的训练计划，并最多显示三行原因。</p>
+<p class="lead">在{{> tabMe > setAppSettings > settingsWorkout > gymTitle}}的{{> gymMissingTitle}}中选择器械后，需要这些器械的动作会从替换动作、计划生成和今日推荐中去掉。</p>
+<p>没有日程的日子，{{> tabToday}} 最上方会以{{> todayEyebrowPick}}挑选主要部位恢复最好、休息最久的训练计划，并最多显示三行原因。</p>
 </section>
 
 <section id="run-calc" data-ask="预测半马成绩|配速计算器|用10公里成绩预测马拉松|每公里5分钟半马要多久|跑步计算器在哪里" data-keys="跑步 计算器 配速 成绩 预测 马拉松 半马 10公里 5公里 基准成绩 距离 时间">
 <h2>跑步计算器</h2>
-<p class="lead">在{{> tabMenu}}的计算器栏打开{{> runCalcTitle}}，使用{{> runCalcPaceTitle}}和{{> runCalcPredictTitle}}。</p>
+<p class="lead">在{{> tabMe}}的计算器栏打开{{> runCalcTitle}}，使用{{> runCalcPaceTitle}}和{{> runCalcPredictTitle}}。</p>
 <ul>
 <li>{{> runCalcPaceTitle}}：选择距离，输入成绩或配速其中之一，即可算出另一项。</li>
 <li>{{> runCalcPredictTitle}}：用一个距离的成绩预测其他距离的成绩，并显示出处。可用{{> runCalcUseBaseline}}把它设为配速区间的基准成绩。</li>

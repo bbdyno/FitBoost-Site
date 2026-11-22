@@ -3,7 +3,7 @@
 <p class="lead">iPhoneとペアリングしたApple WatchにFitBoostをインストールし、スマホで{{> setWatchLink}}をオンにします。</p>
 <ol class="steps">
 <li>iPhoneのWatchアプリ（またはウォッチのApp Store）からFitBoostをインストールします。</li>
-<li>スマホで{{> tabMenu > setAppSettings > setWatch}}を開きます。</li>
+<li>スマホで{{> tabMe > setAppSettings > setWatch}}を開きます。</li>
 <li>{{> setWatchLink}}をオンにし、{{> setWatchStatus}}でつながっているか確認します。</li>
 </ol>
 <p>ウォッチはワークアウト中の心拍とアクティブカロリーを表示し、終えたワークアウトをヘルスケアに保存します。</p>
@@ -14,7 +14,7 @@
 <p class="lead">AndroidスマホとペアリングしたGalaxy WatchなどのWear OSウォッチで使えます。</p>
 <ol class="steps">
 <li>ウォッチのPlayストアでFitBoostを探してインストールします。</li>
-<li>スマホで{{> tabMenu > setAppSettings > setWatch}}を開き、{{> setWatchLink}}をオンにします。</li>
+<li>スマホで{{> tabMe > setAppSettings > setWatch}}を開き、{{> setWatchLink}}をオンにします。</li>
 <li>{{> setWatchStatus}}でつながっているか確認します。</li>
 </ol>
 <p>トレーニング中はウォッチに進行中のワークアウトの通知が表示されます。</p>
@@ -26,7 +26,7 @@
 <ol class="steps">
 <li>Garmin Connectアプリにウォッチをつなぎます。</li>
 <li>Connect IQストアからウォッチにFitBoostをインストールします。</li>
-<li>スマホで{{> tabMenu > setAppSettings > setWatch > setGarminConnect}}をタップします。iPhoneではGarmin Connectアプリが開いたらウォッチを選んで戻ります。</li>
+<li>スマホで{{> tabMe > setAppSettings > setWatch > setGarminConnect}}をタップします。iPhoneではGarmin Connectアプリが開いたらウォッチを選んで戻ります。</li>
 </ol>
 <p>iPhoneとAndroidのどちらでも使えます。Garminウォッチで行ったワークアウトはスマホの記録に入り、Garmin Connectにも筋トレとして残ります。Garmin Connectのアカウントをつないでワークアウトや健康サマリーを受け取り、コースやワークアウトを送るのは<a href="#garmin-connect">Garmin Connect連携</a>です。</p>
 </section>
@@ -35,7 +35,7 @@
 <h2>Garmin Connect連携</h2>
 <p class="lead">{{> garminConnectTitle}}でGarminのアカウントをつなぐと、Garminウォッチで計測したワークアウトと睡眠・回復の指標がそのまま届き、選んだコースとワークアウトをGarminに送れます。無料です。</p>
 <ol class="steps">
-<li>{{> tabMenu > setAppSettings > setWatch > garminConnectTitle}}をタップします。</li>
+<li>{{> tabMe > setAppSettings > setWatch > garminConnectTitle}}をタップします。</li>
 <li>受け取るものと送るものを読んでGarminでログインし、Garminの同意画面で共有する項目をオンにします。</li>
 <li>戻ると、アプリを開くたびに新しい記録を受け取ります。すぐ受け取るには{{> garminConnectSyncNow}}をタップします。</li>
 </ol>
@@ -55,6 +55,7 @@
 <li>クイック筋トレ開始：スマホなしでウォッチからすぐ始めます。</li>
 <li>コーチサーキット：時間を選ぶとスマホがサーキットを組み、ウォッチで進めます。</li>
 <li>セットの完了と取り消し、強度4段階の選択、ワークアウトを終えてスマホに送る。</li>
+<li>セットの帯：Apple WatchとGalaxy Watchの筋トレ画面では、終えたセット、いまのセット、残りのセットが帯で表示されます。Garminウォッチではセットの点で表示されます。</li>
 <li>ラン：ペース範囲・ステップ・コースの線を見ながら走り、終えたら記録をスマホに送ります。<a href="running.html#watch">ウォッチで走る</a>をご覧ください。</li>
 </ul>
 <p>Apple Watchでは重量をダブルタップしてからDigital Crownで変えます。Garminウォッチは、スマホが離れているときに終えたワークアウトを保存しておき、近づいたら送ります。</p>
@@ -62,6 +63,6 @@
 
 <section id="send" data-ask="スマホで始めたワークアウトをウォッチに送る|ウォッチにワークアウトが出ない|今のワークアウトをウォッチへ" data-keys="送る 転送 ウォッチへ 現在 ワークアウト 続ける">
 <h2>今のワークアウトをウォッチに送る</h2>
-<p class="lead">スマホで先にワークアウトを始めてから、{{> tabMenu > setAppSettings > setWatch > setSendToWatch}}をタップします。</p>
+<p class="lead">スマホで先にワークアウトを始めてから、{{> tabMe > setAppSettings > setWatch > setSendToWatch}}をタップします。</p>
 <p>ウォッチアプリでスマホのワークアウトを読み込んでもかまいません。つながらないときは<a href="help.html#watch">困ったとき</a>を見てください。</p>
 </section>

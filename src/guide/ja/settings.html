@@ -1,23 +1,23 @@
 <section id="units" data-ask="ポンドに変えたい|ポンド|キログラムに設定|単位の変更|マイルに変えたい" data-keys="単位 ポンド lb lbs キログラム kg マイル キロメートル km 重量単位 距離">
 <h2>重量・距離の単位</h2>
-<p class="lead">{{> tabMenu > setAppSettings > settingsGeneral}}の{{> setWeightUnit}}でキログラムとポンドから選びます。</p>
-<p>プレート計算も選んだ単位で行います。同じ画面で{{> setLengthUnit}}と{{> setWeekStart}}も変えられます。1つの種目だけポンドで記録するには、ワークアウト中に⋯ → {{> exerciseUnitToLb}}をタップします。</p>
+<p class="lead">{{> tabMe > setAppSettings > settingsGeneral}}の{{> setWeightUnit}}でキログラムとポンドから選びます。</p>
+<p>{{> setAppSettings}}は{{> tabMe}}の右上にある歯車ボタンから開きます。プレート計算も選んだ単位で行います。同じ画面で{{> setLengthUnit}}と{{> setWeekStart}}も変えられます。1つの種目だけポンドで記録するには、ワークアウト中に⋯ → {{> exerciseUnitToLb}}をタップします。</p>
 </section>
 
 <section id="language" data-ask="言語を変えたい|英語に変えたい|日本語や中国語の対応" data-keys="言語 英語 日本語 中国語 韓国語 翻訳 language">
 <h2>言語</h2>
-<p class="lead">{{> tabMenu > setAppSettings > settingsLanguage}}で、韓国語、英語、日本語、簡体字中国語、繁体字中国語から選びます。</p>
+<p class="lead">{{> tabMe > setAppSettings > settingsLanguage}}で、韓国語、英語、日本語、簡体字中国語、繁体字中国語から選びます。</p>
 <p>{{> langSystem}}を選ぶと端末の言語に合わせます。</p>
 </section>
 
-<section id="theme" data-ask="ダークモード|テーマカラーを変えたい|画面を暗くしたい" data-keys="ダークモード ライト 暗く 明るく テーマ 色 カラー 表示モード">
-<h2>表示モードとテーマ</h2>
-<p class="lead">{{> tabMenu > setAppSettings > settingsAppearance}}でライト・ダーク・{{> appearanceSystem}}から選び、{{> settingsTheme}}でアクセントカラーを選びます。</p>
+<section id="theme" data-ask="ダークモード|テーマカラーを変えたい|画面を暗くしたい|ライトモードで使いたい|表示モードの設定がなくなりました" data-keys="ダークモード ライト ライトモード 暗く 明るく テーマ 色 カラー アクセントカラー アクセント 表示モード 端末の設定 なくなった">
+<h2>テーマカラーとダーク画面</h2>
+<p class="lead">{{> tabMe > setAppSettings > settingsTheme}}でアクセントカラーを選びます。2.0.0から表示モード（ライト・ダーク・端末の設定）の設定はなくなり、端末がライトモードでもアプリはダークの画面ひとつで表示されます。</p>
 </section>
 
 <section id="rest-timer" data-ask="デフォルトの休憩時間を変えたい|休憩の通知音を消したい|画面を消してもタイマーを鳴らしたい|休憩時間の自動調整" data-keys="休憩 タイマー デフォルト 時間 通知音 音 音量 バックグラウンド カウントダウン 自動調整 間隔">
 <h2>休憩タイマーの設定</h2>
-<p class="lead">{{> tabMenu > setAppSettings > settingsRestTimer}}で、デフォルトの休憩時間、通知音、タイマーの動作を決めます。</p>
+<p class="lead">{{> tabMe > setAppSettings > settingsRestTimer}}で、デフォルトの休憩時間、通知音、タイマーの動作を決めます。</p>
 <ul>
 <li>{{> setDefaultRest}}、{{> setRestStep}}、{{> setRestSound}}</li>
 <li>{{> setBackgroundTimer}}：アプリを離れてもタイマーが動き、終わると知らせます。</li>
@@ -27,7 +27,7 @@
 
 <section id="workout-settings" data-ask="ワークアウト中のコーチをオフにしたい|RPEではなくRIRで記録したい|同じ種目を2回入れたい|ワークアウト中に画面が消えないようにしたい" data-keys="ワークアウト ルーティン 設定 コーチ 提案 rpe rir 重複 スワイプ 削除 次の種目 画面 オン">
 <h2>ワークアウト設定</h2>
-<p class="lead">{{> tabMenu > setAppSettings > settingsWorkout}}で、ワークアウト画面の動作を変えます。</p>
+<p class="lead">{{> tabMe > setAppSettings > settingsWorkout}}で、ワークアウト画面の動作を変えます。</p>
 <ul>
 <li>{{> gymTitle}}：手持ちのバー・プレート・ダンベルを入れます。</li>
 <li>RPE/RIR：セットの強度をどちらで記録するか選びます。</li>
@@ -39,15 +39,16 @@
 
 <section id="notifications" data-ask="ワークアウトの通知を受け取りたい|ワークアウト予定の通知|通知をオフにしたい" data-keys="通知 プッシュ 予定 リマインダー タイマー 権限">
 <h2>通知</h2>
-<p class="lead">{{> tabMenu > setAppSettings > settingsNotification}}で{{> setNotifyBackgroundTimer}}と{{> setNotifySchedule}}をオン・オフします。</p>
+<p class="lead">{{> tabMe > setAppSettings > settingsNotification}}で{{> setNotifyBackgroundTimer}}と{{> setNotifySchedule}}をオン・オフします。</p>
 <p>通知が届かないときは、端末の設定でFitBoostの通知が許可されているか確認してください。</p>
 </section>
 
 <section id="widgets" data-ask="ホーム画面にウィジェットを追加|ロック画面にワークアウトを表示|ライブアクティビティ|ダイナミックアイランド" data-keys="ウィジェット ロック画面 ライブアクティビティ ダイナミックアイランド ライブ通知 ホーム画面 カスタマイズ">
 <h2>ウィジェットとロック画面</h2>
-<p class="lead">{{> tabMenu > setAppSettings > surfaceSettingsTitle}}で{{> surfaceTabLive}}と{{> surfaceTabWidgets}}を選びます。</p>
+<p class="lead">{{> tabMe > setAppSettings > surfaceSettingsTitle}}で{{> surfaceTabLive}}と{{> surfaceTabWidgets}}を選びます。</p>
 <ul>
 <li>無料では今日のワークアウトのウィジェットを使えます。ほかのウィジェットとカスタマイズ、ロック画面のライブアクティビティ（Androidはライブ通知）はPROです。コンディション・回復・コーチプログラムのウィジェットはPRO+です。</li>
+<li>ウィジェットのカスタマイズの{{> widgetPresetBackground}}は、{{> widgetBgDark}}と{{> widgetBgAccent}}から選びます。ウィジェットとロック画面もアプリと同じ暗い色です。</li>
 <li>ライブアクティビティはiOS 16.1以降で使えます。</li>
 <li>iPhone：ホーム画面を長押しし、左上の編集 → ウィジェットを追加でFitBoostを探します。</li>
 <li>Android：ホーム画面を長押しし、ウィジェットでFitBoostを探します。</li>
@@ -56,6 +57,6 @@
 
 <section id="delete-all" data-ask="すべての記録を消して最初から|データを初期化したい|退会したい" data-keys="初期化 全削除 すべて消す リセット 退会 最初から">
 <h2>すべての記録を削除</h2>
-<p class="lead">{{> tabMenu > setAppSettings}}のいちばん下の{{> settingsDeleteLocalData}}で、この端末の記録をすべて消します。</p>
+<p class="lead">{{> tabMe > setAppSettings}}のいちばん下の{{> settingsDeleteLocalData}}で、この端末の記録をすべて消します。</p>
 <p class="tip">元に戻せません。消す前に<a href="sync.html#backup">バックアップファイル</a>を作っておいてください。</p>
 </section>

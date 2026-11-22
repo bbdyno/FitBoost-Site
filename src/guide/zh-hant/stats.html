@@ -1,6 +1,6 @@
-<section id="overview" data-ask="統計頁能看什麼|查看本週訓練量|和上週對比|訓練量圖表|跑步統計在哪裡" data-keys="統計 圖表 訓練量 趨勢 本週 上週 對比 目標 使用的肌肉 期間 分區 力量 跑步 身體 體組成 心肺">
-<h2>統計頁能看到什麼</h2>
-<p class="lead">在 {{> tabStats}} 上方選擇{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分區。{{> sectionStrength}}從上到下依次是本週目標、肌肉恢復、力量平衡和訓練量趨勢。</p>
+<section id="overview" data-ask="統計在哪裡看|分析欄能看什麼|統計頁不見了|查看本週訓練量|和上週對比|訓練量圖表|跑步統計在哪裡" data-keys="統計 分析 分析欄 紀錄頁 紀錄標籤 圖表 訓練量 趨勢 本週 上週 對比 目標 使用的肌肉 期間 分區 力量 跑步 身體 體組成 心肺">
+<h2>分析欄能看到什麼</h2>
+<p class="lead">在 {{> tabRecord}} 上方選擇 {{> recordsViewAnalysis}}，再選擇{{> sectionStrength}}、{{> sectionRunning}}、{{> sectionBody}}分區。2.0.0 把統計頁移到了這一欄。{{> sectionStrength}}最上方大字顯示本週訓練量和與上週對比的一行，下面依次是肌肉恢復、力量平衡和訓練量趨勢。</p>
 <ul>
 <li>{{> statsWeekVsLastWeek}}：把本週訓練和上週比較。</li>
 <li>{{> volumeProgressTrend}}、{{> statsPeriodVolume}}：檢視訓練量的增長。</li>
@@ -26,18 +26,18 @@
 <section id="weight-guide" data-ask="做幾次該用多重|不同次數的重量|智慧重量指南|用 1RM 計算訓練重量" data-keys="重量 指南 次數 3次 5次 8次 10次 1rm 預估 曲線">
 <h2>智慧重量指南</h2>
 <p class="lead">選擇動作後，顯示每個次數能舉起的重量和建議的訓練重量。</p>
-<p>從 {{> tabStats > deeperAnalysis > smartWeightGuide}} 開啟。免費提供 3、5、8、10 次的基本估算，PRO 會用根據自己記錄畫出的 1–15 次的次數與重量曲線來確定下一組重量。</p>
+<p>從 {{> tabRecord > recordsViewAnalysis > deeperAnalysis > smartWeightGuide}} 開啟。免費提供 3、5、8、10 次的基本估算，PRO 會用根據自己記錄畫出的 1–15 次的次數與重量曲線來確定下一組重量。</p>
 </section>
 
 <section id="weekly-report" data-ask="每週報告在哪裡看|本週訓練總結|想知道是否進入平台期" data-keys="每週 報告 總結 教練 平台期 停滯 下週 建議 分析">
 <h2>每週教練報告 <span class="pro">PRO</span></h2>
 <p class="lead">總結一週訓練，顯示平台期訊號和下次訓練的建議。</p>
-<p>從 {{> tabStats > deeperAnalysis > weeklyCoachingReport}} 開啟。把報告中的組數建議直接套用到例行訓練屬於 PRO+ 功能。</p>
+<p>從 {{> tabRecord > recordsViewAnalysis > deeperAnalysis > weeklyCoachingReport}} 開啟。把報告中的組數建議直接套用到例行訓練屬於 PRO+ 功能。</p>
 </section>
 
 <section id="share" data-ask="想把記錄分享成圖片|發到社交平台的記錄卡片|分享訓練" data-keys="分享 卡片 圖片 照片 朋友圈 社交 複製">
 <h2>分享記錄卡片</h2>
-<p class="lead">用 {{> tabStats}} 中的 {{> shareCardsTooltip}} 按鈕，把記錄做成圖片卡片發到其他 App。</p>
+<p class="lead">用 {{> tabRecord > recordsViewAnalysis}} 右上角的 {{> shareCardsTooltip}} 按鈕，把記錄做成圖片卡片發到其他 App。</p>
 <p>想用文字分享一次訓練，可在 {{> tabRecord}} 中點該記錄的 ⋯ → {{> copySharing}}。</p>
 
 <p>跑步分享卡片和裝飾編輯器見<a href="sharing.html">紀錄分享與裝飾</a>。</p>
